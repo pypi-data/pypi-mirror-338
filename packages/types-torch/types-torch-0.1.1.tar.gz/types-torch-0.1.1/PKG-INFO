@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: types-torch
+Version: 0.1.1
+Summary: Typing stubs for torch
+Home-page: https://github.com/yourusername/types-torch
+Author: Matichon Maneegard
+Author-email: matichon.man@float16.cloud
+License: "MIT AND (Apache-2.0 OR BSD-2-Clause)"
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Typing :: Typed
+Description-Content-Type: text/markdown
