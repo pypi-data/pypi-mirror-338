@@ -1,0 +1,2 @@
+[console_scripts]
+zenbot-pi = zenbot.main:main
