@@ -1,0 +1,12 @@
+astropy
+astroquery
+matplotlib
+numpy
+pandas
+photutils
+Requests
+scipy
+seaborn
+sep
+skyfield
+tqdm

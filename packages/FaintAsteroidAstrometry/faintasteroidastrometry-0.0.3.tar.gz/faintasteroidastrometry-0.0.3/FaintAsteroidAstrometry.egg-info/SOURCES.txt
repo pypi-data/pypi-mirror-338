@@ -1,0 +1,10 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+FaintAsteroidAstrometry.egg-info/PKG-INFO
+FaintAsteroidAstrometry.egg-info/SOURCES.txt
+FaintAsteroidAstrometry.egg-info/dependency_links.txt
+FaintAsteroidAstrometry.egg-info/requires.txt
+FaintAsteroidAstrometry.egg-info/top_level.txt

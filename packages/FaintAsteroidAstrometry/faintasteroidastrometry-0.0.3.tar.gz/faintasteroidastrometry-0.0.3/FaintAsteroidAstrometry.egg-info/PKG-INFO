@@ -1,0 +1,47 @@
+Metadata-Version: 2.4
+Name: FaintAsteroidAstrometry
+Version: 0.0.3
+Summary: A sofetware to make astrometry for faint asteroid/object using stacking method and trailed star extraction
+Home-page: https://hh.com
+Author: Huang Hao
+Author-email: Huang Hao <ironlionwg@outlook.com>
+Project-URL: Homepage, https://gitee.com/ironlionwg/faint-asteroid-astrometry
+Project-URL: Bug Tracker, https://gitee.com/ironlionwg/faint-asteroid-astrometry/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: astropy
+Requires-Dist: astroquery
+Requires-Dist: matplotlib
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: photutils
+Requires-Dist: Requests
+Requires-Dist: scipy
+Requires-Dist: seaborn
+Requires-Dist: sep
+Requires-Dist: skyfield
+Requires-Dist: tqdm
+Dynamic: author
+Dynamic: home-page
+Dynamic: license-file
+Dynamic: requires-python
+
+<!--
+ * @Author: 
+ * HuangHao ironlionwg@outlook.com
+ * @Date: 2023-11-13 20:14:58
+ * @LastEditors: HuangHao ironlionwg@outlook.com
+ * @LastEditTime: 2025-04-01 16:13:35
+ * @Description: 
+ * 
+ * Copyright (c) 2025 by HuangHao ironlionwg@outlook.com, All Rights Reserved. 
+-->
+1. main file in ./src for main function.
+
+
+
+

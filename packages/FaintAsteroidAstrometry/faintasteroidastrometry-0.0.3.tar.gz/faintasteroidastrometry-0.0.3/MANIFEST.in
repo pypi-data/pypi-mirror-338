@@ -1,0 +1,14 @@
+# 忽略测试文件夹
+test/
+
+# 忽略__pycache__文件夹
+**/__pycache__
+
+# 忽略.vscode文件夹
+.vscode/
+
+# 忽略参考性文件
+git_upload_method.md
+setup.py
+FASTA.yaml
+**/requirements.txt

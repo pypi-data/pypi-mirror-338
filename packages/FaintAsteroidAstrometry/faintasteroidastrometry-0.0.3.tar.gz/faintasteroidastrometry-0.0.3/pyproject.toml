@@ -1,0 +1,29 @@
+[project]
+name = "FaintAsteroidAstrometry"
+version = "0.0.3"
+
+authors = [
+  { name = "Huang Hao", email = "ironlionwg@outlook.com" },
+]
+
+dependencies = [
+    "astropy", "astroquery", "matplotlib", "numpy",
+    "pandas", "photutils", "Requests", "scipy",
+    "seaborn", "sep", "skyfield", "tqdm"
+]
+description = "A sofetware to make astrometry for faint asteroid/object using stacking method and trailed star extraction"
+readme = "README.md"
+requires-python = ">=3.10"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project.urls]
+"Homepage" = "https://gitee.com/ironlionwg/faint-asteroid-astrometry"
+"Bug Tracker" = "https://gitee.com/ironlionwg/faint-asteroid-astrometry/issues"
