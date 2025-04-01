@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: pwn-flashlib
+Version: 0.0.1
+Summary: A wrapper around pwntools for more abstraction and stuff that I really use
+Home-page: https://github.com/theflash2k/flashlib
+Author: TheFlash2k
+Author-email: alitaqi2000@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# flashlib
+
+---
+
+A wrapper around pwntools but also with a few of the functions that I use on a daily basis.
+
+---
+
+I'll definitely write a more detailed documentation once I have completed my library.
+
