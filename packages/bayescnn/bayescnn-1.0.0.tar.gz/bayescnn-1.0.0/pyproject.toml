@@ -1,0 +1,32 @@
+[project]
+name = "bayescnn"
+version = "1.0.0"
+description = "Add your description here"
+authors = [{ name = "Samuel Ball", email = "stmball@gmail.com" }]
+dependencies = [
+  "torch>=2.6.0",
+  "numpy>=2.2.4",
+  "matplotlib>=3.10.1",
+  "scikit-learn>=1.6.1",
+  "torchvision>=0.21.0",
+  "rich>=13.9.4",
+  "torch-summary>=1.4.5",
+  "jupyter>=1.1.1",
+  "unet>=0.8.1",
+]
+readme = "README.md"
+requires-python = ">= 3.8"
+
+[build-system]
+requires = ["hatchling==1.26.3"]
+build-backend = "hatchling.build"
+
+[tool.rye]
+managed = true
+dev-dependencies = ["pytest>=8.3.5"]
+
+[tool.hatch.metadata]
+allow-direct-references = true
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/bayescnn"]
