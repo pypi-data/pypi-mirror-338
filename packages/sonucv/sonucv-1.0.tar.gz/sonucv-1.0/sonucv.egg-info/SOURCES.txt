@@ -1,0 +1,8 @@
+setup.py
+sonucv/__init__.py
+sonucv/resume.py
+sonucv.egg-info/PKG-INFO
+sonucv.egg-info/SOURCES.txt
+sonucv.egg-info/dependency_links.txt
+sonucv.egg-info/entry_points.txt
+sonucv.egg-info/top_level.txt

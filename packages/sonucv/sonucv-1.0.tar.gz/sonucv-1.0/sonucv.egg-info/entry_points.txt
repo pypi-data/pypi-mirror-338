@@ -1,0 +1,2 @@
+[console_scripts]
+resumeviewer = sonucv.resume:show_resume
