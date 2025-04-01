@@ -1,0 +1,14 @@
+Metadata-Version: 2.4
+Name: types-transformers
+Version: 0.1.0
+Summary: Typing stubs for transformers
+Home-page: https://github.com/yourusername/types-transformers
+Author: Matichon Maneegard
+Author-email: matichon.man@float16.cloud
+License: "MIT AND (Apache-2.0 OR BSD-2-Clause)"
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Typing :: Typed
+Description-Content-Type: text/markdown
+Dynamic: classifier
