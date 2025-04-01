@@ -1,0 +1,2 @@
+[console_scripts]
+pyrcodio = pyrcodio.cli:main

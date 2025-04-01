@@ -1,0 +1,11 @@
+pyrcodio/__init__.py,sha256=lsZm3n76K86k6xQfNcQpakgJPFMUBpByH6rgnKZ6pu4,142
+pyrcodio/cli.py,sha256=clgMsbFBI4MR6IpPWHvYZj2Hd5RJapqfKWgSyU4kbNc,67
+pyrcodio/core.py,sha256=H1LpGKSnZkHiFf3EC8J7FkbLGHR36Yuefl0nXmRH3Gw,5901
+pyrcodio/data/attributes_misc.txt,sha256=S9pAR0ph3Q6EHw-adhdF6L00OCPJHkkjQ6pleXEbARc,881
+pyrcodio/data/subjects_church.txt,sha256=ZW57CgKGQSHaVb68BIKO7sEhCaX6VgjRhNmeLzpsTrM,34
+pyrcodio-0.1.0.dist-info/licenses/LICENSE,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pyrcodio-0.1.0.dist-info/METADATA,sha256=NmlOm0_4Ku_cdrapxpmHPltFDvv6SC_7F5mUiowmSYE,1790
+pyrcodio-0.1.0.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+pyrcodio-0.1.0.dist-info/entry_points.txt,sha256=Fgye0UbV8NfHyuLEJ7D_11QT2wc65u0c35OTiXbbM40,47
+pyrcodio-0.1.0.dist-info/top_level.txt,sha256=DL_yhr8_tXCob0ty9SUZTNSCTwFmfSKphHhPKMoZVTs,9
+pyrcodio-0.1.0.dist-info/RECORD,,
