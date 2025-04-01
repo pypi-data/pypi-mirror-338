@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+pyrcodio/__init__.py
+pyrcodio/cli.py
+pyrcodio/core.py
+pyrcodio.egg-info/PKG-INFO
+pyrcodio.egg-info/SOURCES.txt
+pyrcodio.egg-info/dependency_links.txt
+pyrcodio.egg-info/entry_points.txt
+pyrcodio.egg-info/top_level.txt
+pyrcodio/data/attributes_misc.txt
+pyrcodio/data/subjects_church.txt
