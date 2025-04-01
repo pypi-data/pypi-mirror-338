@@ -1,0 +1,16 @@
+LICENSE
+README.md
+pyproject.toml
+src/pykeybindmanager/__init__.py
+src/pykeybindmanager/exceptions.py
+src/pykeybindmanager/keys.py
+src/pykeybindmanager/manager.py
+src/pykeybindmanager/sound_player.py
+src/pykeybindmanager.egg-info/PKG-INFO
+src/pykeybindmanager.egg-info/SOURCES.txt
+src/pykeybindmanager.egg-info/dependency_links.txt
+src/pykeybindmanager.egg-info/requires.txt
+src/pykeybindmanager.egg-info/top_level.txt
+src/pykeybindmanager/sounds/__init__.py
+src/pykeybindmanager/sounds/doubleping.wav
+src/pykeybindmanager/sounds/singleping.wav
