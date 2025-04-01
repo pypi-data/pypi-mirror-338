@@ -1,0 +1,6 @@
+test_post_ensemble (__main__.Test2Phase.test_post_ensemble) ... ok
+
+----------------------------------------------------------------------
+Ran 1 test in 80.288s
+
+OK

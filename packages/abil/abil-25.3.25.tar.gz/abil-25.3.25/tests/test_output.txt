@@ -1,0 +1,14 @@
+E
+======================================================================
+ERROR: test_post_ensemble (__main__.Test2Phase.test_post_ensemble)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/phyto-2/Abil/tests/test.py", line 97, in setUp
+    with open(os.path.join(self.workspace, 'tests/2-phase.yml'), 'r') as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: './tests/2-phase.yml'
+
+----------------------------------------------------------------------
+Ran 1 test in 0.001s
+
+FAILED (errors=1)

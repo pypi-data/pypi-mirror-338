@@ -1,0 +1,1178 @@
+length of y:
+1308
+training regressor
+{'regressor__estimator__n_estimators': [100], 'regressor__estimator__max_features': [4], 'regressor__estimator__max_depth': [50], 'regressor__estimator__min_samples_leaf': [0.5], 'regressor__estimator__max_samples': [0.5]}
+Fitting 3 folds for each of 1 candidates, totalling 3 fits
+exported model to: ./tests/ModelOutput/2-phase/model/rf/Emiliania_huxleyi_reg.sav
+exported scoring to: ./tests/ModelOutput/2-phase/scoring/rf/Emiliania_huxleyi_reg.sav
+reg rRMSE: 198%
+reg rMAE: 150%
+reg R2: -0.2
+training classifier
+length of y_clf:
+1308
+[1. 1. 1. ... 1. 1. 0.]
+Fitting 3 folds for each of 1 candidates, totalling 3 fits
+exported model to:./tests/ModelOutput/2-phase/model/rf/Emiliania_huxleyi_clf.sav
+exported scoring to: ./tests/ModelOutput/2-phase/scoring/rf/Emiliania_huxleyi_clf.sav
+[0.87219634 0.86072291 0.89937026]
+clf balanced accuracy 0.88
+training zero-inflated regressor
+exported model to: ./tests/ModelOutput/2-phase/model/rf/Emiliania_huxleyi_zir.sav
+exported scoring to: ./tests/ModelOutput/2-phase/scoring/rf/Emiliania_huxleyi_zir.sav
+zir rRMSE: 146%
+zir rMAE: 76%
+zir R2: 0.22
+execution time: 7.152557373046875e-07 seconds
+training regressor
+{'regressor__estimator__learning_rate': [0.05], 'regressor__estimator__n_estimators': [69], 'regressor__estimator__max_depth': [7], 'regressor__estimator__subsample': [0.8], 'regressor__estimator__colsample_bytree': [0.5], 'regressor__estimator__gamma': [1], 'regressor__estimator__reg_alpha': [0.1]}
+Fitting 3 folds for each of 1 candidates, totalling 3 fits
+exported model to: ./tests/ModelOutput/2-phase/model/xgb/Emiliania_huxleyi_reg.sav
+exported scoring to: ./tests/ModelOutput/2-phase/scoring/xgb/Emiliania_huxleyi_reg.sav
+reg rRMSE: 206%
+reg rMAE: 154%
+reg R2: -0.31
+training classifier
+length of y_clf:
+1308
+[1. 1. 1. ... 1. 1. 0.]
+Fitting 3 folds for each of 1 candidates, totalling 3 fits
+exported model to:./tests/ModelOutput/2-phase/model/xgb/Emiliania_huxleyi_clf.sav
+exported scoring to: ./tests/ModelOutput/2-phase/scoring/xgb/Emiliania_huxleyi_clf.sav
+[0.67844203 0.62840752 0.65243271]
+clf balanced accuracy 0.65
+training zero-inflated regressor
+exported model to: ./tests/ModelOutput/2-phase/model/xgb/Emiliania_huxleyi_zir.sav
+exported scoring to: ./tests/ModelOutput/2-phase/scoring/xgb/Emiliania_huxleyi_zir.sav
+zir rRMSE: 173%
+zir rMAE: 89%
+zir R2: -0.09
+execution time: 9.5367431640625e-07 seconds
+training regressor
+{'regressor__estimator__max_samples': [0.2], 'regressor__estimator__max_features': [0.2], 'regressor__estimator__estimator__leaf_size': [25], 'regressor__estimator__estimator__n_neighbors': [3]}
+Fitting 3 folds for each of 1 candidates, totalling 3 fits
+exported model to: ./tests/ModelOutput/2-phase/model/knn/Emiliania_huxleyi_reg.sav
+exported scoring to: ./tests/ModelOutput/2-phase/scoring/knn/Emiliania_huxleyi_reg.sav
+reg rRMSE: 188%
+reg rMAE: 146%
+reg R2: -0.09
+training classifier
+length of y_clf:
+1308
+[1. 1. 1. ... 1. 1. 0.]
+Fitting 3 folds for each of 1 candidates, totalling 3 fits
+exported model to:./tests/ModelOutput/2-phase/model/knn/Emiliania_huxleyi_clf.sav
+exported scoring to: ./tests/ModelOutput/2-phase/scoring/knn/Emiliania_huxleyi_clf.sav
+[0.60571946 0.62405107 0.62508627]
+clf balanced accuracy 0.62
+training zero-inflated regressor
+exported model to: ./tests/ModelOutput/2-phase/model/knn/Emiliania_huxleyi_zir.sav
+exported scoring to: ./tests/ModelOutput/2-phase/scoring/knn/Emiliania_huxleyi_zir.sav
+zir rRMSE: 182%
+zir rMAE: 96%
+zir R2: -0.2
+execution time: 7.152557373046875e-07 seconds
+initialized prediction
+number of models in ensemble:3
+predicting zero-inflated regressor
+===================
+DEBUG OF ZIR MODELS
+===================
+rf
+<class 'abil.zir.ZeroInflatedRegressor'>
+<class 'pandas.core.frame.DataFrame'>
+<class 'pandas.core.frame.DataFrame'>
+transformer : None
+transformation is None
+model is classifier
+model not cloned
+model is:  RandomForestClassifier(max_depth=50, max_samples=0.8, oob_score=True,
+                       random_state=1)
+model inferred to be RF
+features_for_members: [[0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2]]
+model is a classifier
+model is:  RandomForestClassifier(max_depth=50, max_samples=0.8, oob_score=True,
+                       random_state=1)
+model inferred to be RF
+features_for_members: [[0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2]]
+results.shape:  (436, 100)
+model not cloned
+model is:  RandomForestClassifier(max_depth=50, max_samples=0.8, oob_score=True,
+                       random_state=1)
+model inferred to be RF
+features_for_members: [[0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2]]
+model is a classifier
+model is:  RandomForestClassifier(max_depth=50, max_samples=0.8, oob_score=True,
+                       random_state=1)
+model inferred to be RF
+features_for_members: [[0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2]]
+results.shape:  (436, 100)
+model not cloned
+model is:  RandomForestClassifier(max_depth=50, max_samples=0.8, oob_score=True,
+                       random_state=1)
+model inferred to be RF
+features_for_members: [[0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2]]
+model is a classifier
+model is:  RandomForestClassifier(max_depth=50, max_samples=0.8, oob_score=True,
+                       random_state=1)
+model inferred to be RF
+features_for_members: [[0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2]]
+results.shape:  (436, 100)
+model is:  RandomForestClassifier(max_depth=50, max_samples=0.8, oob_score=True,
+                       random_state=1)
+model inferred to be RF
+features_for_members: [[0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2]]
+results.shape:  (300, 100)
+transformer : None
+transformation is None
+model not cloned
+model is:  RandomForestRegressor(max_depth=50, max_features=4, max_samples=0.5,
+                      min_samples_leaf=0.5, oob_score=True, random_state=1)
+model inferred to be RF
+features_for_members: [[0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2]]
+model is a regressor
+model is:  RandomForestRegressor(max_depth=50, max_features=4, max_samples=0.5,
+                      min_samples_leaf=0.5, oob_score=True, random_state=1)
+model inferred to be RF
+features_for_members: [[0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2]]
+results.shape:  (436, 100)
+model not cloned
+model is:  RandomForestRegressor(max_depth=50, max_features=4, max_samples=0.5,
+                      min_samples_leaf=0.5, oob_score=True, random_state=1)
+model inferred to be RF
+features_for_members: [[0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2]]
+model is a regressor
+model is:  RandomForestRegressor(max_depth=50, max_features=4, max_samples=0.5,
+                      min_samples_leaf=0.5, oob_score=True, random_state=1)
+model inferred to be RF
+features_for_members: [[0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2]]
+results.shape:  (436, 100)
+model not cloned
+model is:  RandomForestRegressor(max_depth=50, max_features=4, max_samples=0.5,
+                      min_samples_leaf=0.5, oob_score=True, random_state=1)
+model inferred to be RF
+features_for_members: [[0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2]]
+model is a regressor
+model is:  RandomForestRegressor(max_depth=50, max_features=4, max_samples=0.5,
+                      min_samples_leaf=0.5, oob_score=True, random_state=1)
+model inferred to be RF
+features_for_members: [[0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2]]
+results.shape:  (436, 100)
+model is:  RandomForestRegressor(max_depth=50, max_features=4, max_samples=0.5,
+                      min_samples_leaf=0.5, oob_score=True, random_state=1)
+model inferred to be RF
+features_for_members: [[0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2]]
+results.shape:  (300, 100)
+finished exporting summary stats to:  ./tests/ModelOutput/2-phase/predictions/rf/clf/Emiliania_huxleyi.nc
+finished exporting summary stats to:  ./tests/ModelOutput/2-phase/predictions/rf/reg/Emiliania_huxleyi.nc
+finished exporting summary stats to:  ./tests/ModelOutput/2-phase/predictions/rf/Emiliania_huxleyi.nc
+predicting zero-inflated regressor
+===================
+DEBUG OF ZIR MODELS
+===================
+knn
+<class 'abil.zir.ZeroInflatedRegressor'>
+<class 'pandas.core.frame.DataFrame'>
+<class 'pandas.core.frame.DataFrame'>
+transformer : None
+transformation is None
+model is classifier
+model not cloned
+model is:  BaggingClassifier(estimator=KNeighborsClassifier(leaf_size=25, n_neighbors=3),
+                  max_features=0.2, max_samples=0.2, n_estimators=3,
+                  random_state=1)
+model inferred to be B-KNN
+features_for_members: [array([1]), array([2]), array([0])]
+model is a classifier
+model is:  BaggingClassifier(estimator=KNeighborsClassifier(leaf_size=25, n_neighbors=3),
+                  max_features=0.2, max_samples=0.2, n_estimators=3,
+                  random_state=1)
+model inferred to be B-KNN
+features_for_members: [array([1]), array([2]), array([0])]
+results.shape:  (436, 3)
+model not cloned
+model is:  BaggingClassifier(estimator=KNeighborsClassifier(leaf_size=25, n_neighbors=3),
+                  max_features=0.2, max_samples=0.2, n_estimators=3,
+                  random_state=1)
+model inferred to be B-KNN
+features_for_members: [array([1]), array([2]), array([0])]
+model is a classifier
+model is:  BaggingClassifier(estimator=KNeighborsClassifier(leaf_size=25, n_neighbors=3),
+                  max_features=0.2, max_samples=0.2, n_estimators=3,
+                  random_state=1)
+model inferred to be B-KNN
+features_for_members: [array([1]), array([2]), array([0])]
+results.shape:  (436, 3)
+model not cloned
+model is:  BaggingClassifier(estimator=KNeighborsClassifier(leaf_size=25, n_neighbors=3),
+                  max_features=0.2, max_samples=0.2, n_estimators=3,
+                  random_state=1)
+model inferred to be B-KNN
+features_for_members: [array([1]), array([2]), array([0])]
+model is a classifier
+model is:  BaggingClassifier(estimator=KNeighborsClassifier(leaf_size=25, n_neighbors=3),
+                  max_features=0.2, max_samples=0.2, n_estimators=3,
+                  random_state=1)
+model inferred to be B-KNN
+features_for_members: [array([1]), array([2]), array([0])]
+results.shape:  (436, 3)
+model is:  BaggingClassifier(estimator=KNeighborsClassifier(leaf_size=25, n_neighbors=3),
+                  max_features=0.2, max_samples=0.2, n_estimators=3,
+                  random_state=1)
+model inferred to be B-KNN
+features_for_members: [array([1]), array([2]), array([0])]
+results.shape:  (300, 3)
+transformer : None
+transformation is None
+model not cloned
+model is:  BaggingRegressor(estimator=KNeighborsRegressor(leaf_size=25, n_neighbors=3),
+                 max_features=0.2, max_samples=0.2, n_estimators=3,
+                 random_state=1)
+model inferred to be B-KNN
+features_for_members: [array([1]), array([2]), array([0])]
+model is a regressor
+model is:  BaggingRegressor(estimator=KNeighborsRegressor(leaf_size=25, n_neighbors=3),
+                 max_features=0.2, max_samples=0.2, n_estimators=3,
+                 random_state=1)
+model inferred to be B-KNN
+features_for_members: [array([1]), array([2]), array([0])]
+results.shape:  (436, 3)
+model not cloned
+model is:  BaggingRegressor(estimator=KNeighborsRegressor(leaf_size=25, n_neighbors=3),
+                 max_features=0.2, max_samples=0.2, n_estimators=3,
+                 random_state=1)
+model inferred to be B-KNN
+features_for_members: [array([1]), array([2]), array([0])]
+model is a regressor
+model is:  BaggingRegressor(estimator=KNeighborsRegressor(leaf_size=25, n_neighbors=3),
+                 max_features=0.2, max_samples=0.2, n_estimators=3,
+                 random_state=1)
+model inferred to be B-KNN
+features_for_members: [array([1]), array([2]), array([0])]
+results.shape:  (436, 3)
+model not cloned
+model is:  BaggingRegressor(estimator=KNeighborsRegressor(leaf_size=25, n_neighbors=3),
+                 max_features=0.2, max_samples=0.2, n_estimators=3,
+                 random_state=1)
+model inferred to be B-KNN
+features_for_members: [array([1]), array([2]), array([0])]
+model is a regressor
+model is:  BaggingRegressor(estimator=KNeighborsRegressor(leaf_size=25, n_neighbors=3),
+                 max_features=0.2, max_samples=0.2, n_estimators=3,
+                 random_state=1)
+model inferred to be B-KNN
+features_for_members: [array([1]), array([2]), array([0])]
+results.shape:  (436, 3)
+model is:  BaggingRegressor(estimator=KNeighborsRegressor(leaf_size=25, n_neighbors=3),
+                 max_features=0.2, max_samples=0.2, n_estimators=3,
+                 random_state=1)
+model inferred to be B-KNN
+features_for_members: [array([1]), array([2]), array([0])]
+results.shape:  (300, 3)
+finished exporting summary stats to:  ./tests/ModelOutput/2-phase/predictions/knn/clf/Emiliania_huxleyi.nc
+finished exporting summary stats to:  ./tests/ModelOutput/2-phase/predictions/knn/reg/Emiliania_huxleyi.nc
+finished exporting summary stats to:  ./tests/ModelOutput/2-phase/predictions/knn/Emiliania_huxleyi.nc
+predicting zero-inflated regressor
+===================
+DEBUG OF ZIR MODELS
+===================
+xgb
+<class 'abil.zir.ZeroInflatedRegressor'>
+<class 'pandas.core.frame.DataFrame'>
+<class 'pandas.core.frame.DataFrame'>
+transformer : None
+transformation is None
+model is classifier
+model not cloned
+model is:  XGBClassifier(base_score=None, booster=None, callbacks=None,
+              colsample_bylevel=None, colsample_bynode=None,
+              colsample_bytree=0.6, early_stopping_rounds=None,
+              enable_categorical=False, eval_metric=None, feature_types=None,
+              gamma=1, gpu_id=None, grow_policy=None, importance_type=None,
+              interaction_constraints=None, learning_rate=0.01, max_bin=None,
+              max_cat_threshold=None, max_cat_to_onehot=None,
+              max_delta_step=None, max_depth=4, max_leaves=None,
+              min_child_weight=None, missing=nan, monotone_constraints=None,
+              n_estimators=69, n_jobs=None, nthread=1, num_parallel_tree=None,
+              predictor=None, ...)
+model is XGBoost
+n_estimators:  69
+booster : <xgboost.core.Booster object at 0x78bf917af470>
+model is a classifier
+model is:  XGBClassifier(base_score=None, booster=None, callbacks=None,
+              colsample_bylevel=None, colsample_bynode=None,
+              colsample_bytree=0.6, early_stopping_rounds=None,
+              enable_categorical=False, eval_metric=None, feature_types=None,
+              gamma=1, gpu_id=None, grow_policy=None, importance_type=None,
+              interaction_constraints=None, learning_rate=0.01, max_bin=None,
+              max_cat_threshold=None, max_cat_to_onehot=None,
+              max_delta_step=None, max_depth=4, max_leaves=None,
+              min_child_weight=None, missing=nan, monotone_constraints=None,
+              n_estimators=69, n_jobs=None, nthread=1, num_parallel_tree=None,
+              predictor=None, ...)
+model is XGBoost
+n_estimators:  69
+booster : <xgboost.core.Booster object at 0x78bf917af470>
+results.shape:  (436, 69)
+model not cloned
+model is:  XGBClassifier(base_score=None, booster=None, callbacks=None,
+              colsample_bylevel=None, colsample_bynode=None,
+              colsample_bytree=0.6, early_stopping_rounds=None,
+              enable_categorical=False, eval_metric=None, feature_types=None,
+              gamma=1, gpu_id=None, grow_policy=None, importance_type=None,
+              interaction_constraints=None, learning_rate=0.01, max_bin=None,
+              max_cat_threshold=None, max_cat_to_onehot=None,
+              max_delta_step=None, max_depth=4, max_leaves=None,
+              min_child_weight=None, missing=nan, monotone_constraints=None,
+              n_estimators=69, n_jobs=None, nthread=1, num_parallel_tree=None,
+              predictor=None, ...)
+model is XGBoost
+n_estimators:  69
+booster : <xgboost.core.Booster object at 0x78bf917af470>
+model is a classifier
+model is:  XGBClassifier(base_score=None, booster=None, callbacks=None,
+              colsample_bylevel=None, colsample_bynode=None,
+              colsample_bytree=0.6, early_stopping_rounds=None,
+              enable_categorical=False, eval_metric=None, feature_types=None,
+              gamma=1, gpu_id=None, grow_policy=None, importance_type=None,
+              interaction_constraints=None, learning_rate=0.01, max_bin=None,
+              max_cat_threshold=None, max_cat_to_onehot=None,
+              max_delta_step=None, max_depth=4, max_leaves=None,
+              min_child_weight=None, missing=nan, monotone_constraints=None,
+              n_estimators=69, n_jobs=None, nthread=1, num_parallel_tree=None,
+              predictor=None, ...)
+model is XGBoost
+n_estimators:  69
+booster : <xgboost.core.Booster object at 0x78bf917af470>
+results.shape:  (436, 69)
+model not cloned
+model is:  XGBClassifier(base_score=None, booster=None, callbacks=None,
+              colsample_bylevel=None, colsample_bynode=None,
+              colsample_bytree=0.6, early_stopping_rounds=None,
+              enable_categorical=False, eval_metric=None, feature_types=None,
+              gamma=1, gpu_id=None, grow_policy=None, importance_type=None,
+              interaction_constraints=None, learning_rate=0.01, max_bin=None,
+              max_cat_threshold=None, max_cat_to_onehot=None,
+              max_delta_step=None, max_depth=4, max_leaves=None,
+              min_child_weight=None, missing=nan, monotone_constraints=None,
+              n_estimators=69, n_jobs=None, nthread=1, num_parallel_tree=None,
+              predictor=None, ...)
+model is XGBoost
+n_estimators:  69
+booster : <xgboost.core.Booster object at 0x78bf917af470>
+model is a classifier
+model is:  XGBClassifier(base_score=None, booster=None, callbacks=None,
+              colsample_bylevel=None, colsample_bynode=None,
+              colsample_bytree=0.6, early_stopping_rounds=None,
+              enable_categorical=False, eval_metric=None, feature_types=None,
+              gamma=1, gpu_id=None, grow_policy=None, importance_type=None,
+              interaction_constraints=None, learning_rate=0.01, max_bin=None,
+              max_cat_threshold=None, max_cat_to_onehot=None,
+              max_delta_step=None, max_depth=4, max_leaves=None,
+              min_child_weight=None, missing=nan, monotone_constraints=None,
+              n_estimators=69, n_jobs=None, nthread=1, num_parallel_tree=None,
+              predictor=None, ...)
+model is XGBoost
+n_estimators:  69
+booster : <xgboost.core.Booster object at 0x78bf917af470>
+results.shape:  (436, 69)
+model is:  XGBClassifier(base_score=None, booster=None, callbacks=None,
+              colsample_bylevel=None, colsample_bynode=None,
+              colsample_bytree=0.6, early_stopping_rounds=None,
+              enable_categorical=False, eval_metric=None, feature_types=None,
+              gamma=1, gpu_id=None, grow_policy=None, importance_type=None,
+              interaction_constraints=None, learning_rate=0.01, max_bin=None,
+              max_cat_threshold=None, max_cat_to_onehot=None,
+              max_delta_step=None, max_depth=4, max_leaves=None,
+              min_child_weight=None, missing=nan, monotone_constraints=None,
+              n_estimators=69, n_jobs=None, nthread=1, num_parallel_tree=None,
+              predictor=None, ...)
+model is XGBoost
+n_estimators:  69
+booster : <xgboost.core.Booster object at 0x78bf917af470>
+results.shape:  (300, 69)
+transformer : None
+transformation is None
+model not cloned
+model is:  XGBRegressor(base_score=None, booster=None, callbacks=None,
+             colsample_bylevel=None, colsample_bynode=None,
+             colsample_bytree=0.5, early_stopping_rounds=None,
+             enable_categorical=False, eval_metric=None, feature_types=None,
+             gamma=1, gpu_id=None, grow_policy=None, importance_type=None,
+             interaction_constraints=None, learning_rate=0.05, max_bin=None,
+             max_cat_threshold=None, max_cat_to_onehot=None,
+             max_delta_step=None, max_depth=7, max_leaves=None,
+             min_child_weight=None, missing=nan, monotone_constraints=None,
+             n_estimators=69, n_jobs=None, nthread=1, num_parallel_tree=None,
+             objective='reg:tweedie', ...)
+model is XGBoost
+n_estimators:  69
+booster : <xgboost.core.Booster object at 0x78bf92ca4e30>
+model is a regressor
+model is:  XGBRegressor(base_score=None, booster=None, callbacks=None,
+             colsample_bylevel=None, colsample_bynode=None,
+             colsample_bytree=0.5, early_stopping_rounds=None,
+             enable_categorical=False, eval_metric=None, feature_types=None,
+             gamma=1, gpu_id=None, grow_policy=None, importance_type=None,
+             interaction_constraints=None, learning_rate=0.05, max_bin=None,
+             max_cat_threshold=None, max_cat_to_onehot=None,
+             max_delta_step=None, max_depth=7, max_leaves=None,
+             min_child_weight=None, missing=nan, monotone_constraints=None,
+             n_estimators=69, n_jobs=None, nthread=1, num_parallel_tree=None,
+             objective='reg:tweedie', ...)
+model is XGBoost
+n_estimators:  69
+booster : <xgboost.core.Booster object at 0x78bf92ca4e30>
+results.shape:  (436, 69)
+model not cloned
+model is:  XGBRegressor(base_score=None, booster=None, callbacks=None,
+             colsample_bylevel=None, colsample_bynode=None,
+             colsample_bytree=0.5, early_stopping_rounds=None,
+             enable_categorical=False, eval_metric=None, feature_types=None,
+             gamma=1, gpu_id=None, grow_policy=None, importance_type=None,
+             interaction_constraints=None, learning_rate=0.05, max_bin=None,
+             max_cat_threshold=None, max_cat_to_onehot=None,
+             max_delta_step=None, max_depth=7, max_leaves=None,
+             min_child_weight=None, missing=nan, monotone_constraints=None,
+             n_estimators=69, n_jobs=None, nthread=1, num_parallel_tree=None,
+             objective='reg:tweedie', ...)
+model is XGBoost
+n_estimators:  69
+booster : <xgboost.core.Booster object at 0x78bf92ca4e30>
+model is a regressor
+model is:  XGBRegressor(base_score=None, booster=None, callbacks=None,
+             colsample_bylevel=None, colsample_bynode=None,
+             colsample_bytree=0.5, early_stopping_rounds=None,
+             enable_categorical=False, eval_metric=None, feature_types=None,
+             gamma=1, gpu_id=None, grow_policy=None, importance_type=None,
+             interaction_constraints=None, learning_rate=0.05, max_bin=None,
+             max_cat_threshold=None, max_cat_to_onehot=None,
+             max_delta_step=None, max_depth=7, max_leaves=None,
+             min_child_weight=None, missing=nan, monotone_constraints=None,
+             n_estimators=69, n_jobs=None, nthread=1, num_parallel_tree=None,
+             objective='reg:tweedie', ...)
+model is XGBoost
+n_estimators:  69
+booster : <xgboost.core.Booster object at 0x78bf92ca4e30>
+results.shape:  (436, 69)
+model not cloned
+model is:  XGBRegressor(base_score=None, booster=None, callbacks=None,
+             colsample_bylevel=None, colsample_bynode=None,
+             colsample_bytree=0.5, early_stopping_rounds=None,
+             enable_categorical=False, eval_metric=None, feature_types=None,
+             gamma=1, gpu_id=None, grow_policy=None, importance_type=None,
+             interaction_constraints=None, learning_rate=0.05, max_bin=None,
+             max_cat_threshold=None, max_cat_to_onehot=None,
+             max_delta_step=None, max_depth=7, max_leaves=None,
+             min_child_weight=None, missing=nan, monotone_constraints=None,
+             n_estimators=69, n_jobs=None, nthread=1, num_parallel_tree=None,
+             objective='reg:tweedie', ...)
+model is XGBoost
+n_estimators:  69
+booster : <xgboost.core.Booster object at 0x78bf92ca4e30>
+model is a regressor
+model is:  XGBRegressor(base_score=None, booster=None, callbacks=None,
+             colsample_bylevel=None, colsample_bynode=None,
+             colsample_bytree=0.5, early_stopping_rounds=None,
+             enable_categorical=False, eval_metric=None, feature_types=None,
+             gamma=1, gpu_id=None, grow_policy=None, importance_type=None,
+             interaction_constraints=None, learning_rate=0.05, max_bin=None,
+             max_cat_threshold=None, max_cat_to_onehot=None,
+             max_delta_step=None, max_depth=7, max_leaves=None,
+             min_child_weight=None, missing=nan, monotone_constraints=None,
+             n_estimators=69, n_jobs=None, nthread=1, num_parallel_tree=None,
+             objective='reg:tweedie', ...)
+model is XGBoost
+n_estimators:  69
+booster : <xgboost.core.Booster object at 0x78bf92ca4e30>
+results.shape:  (436, 69)
+model is:  XGBRegressor(base_score=None, booster=None, callbacks=None,
+             colsample_bylevel=None, colsample_bynode=None,
+             colsample_bytree=0.5, early_stopping_rounds=None,
+             enable_categorical=False, eval_metric=None, feature_types=None,
+             gamma=1, gpu_id=None, grow_policy=None, importance_type=None,
+             interaction_constraints=None, learning_rate=0.05, max_bin=None,
+             max_cat_threshold=None, max_cat_to_onehot=None,
+             max_delta_step=None, max_depth=7, max_leaves=None,
+             min_child_weight=None, missing=nan, monotone_constraints=None,
+             n_estimators=69, n_jobs=None, nthread=1, num_parallel_tree=None,
+             objective='reg:tweedie', ...)
+model is XGBoost
+n_estimators:  69
+booster : <xgboost.core.Booster object at 0x78bf92ca4e30>
+results.shape:  (300, 69)
+finished exporting summary stats to:  ./tests/ModelOutput/2-phase/predictions/xgb/clf/Emiliania_huxleyi.nc
+finished exporting summary stats to:  ./tests/ModelOutput/2-phase/predictions/xgb/reg/Emiliania_huxleyi.nc
+finished exporting summary stats to:  ./tests/ModelOutput/2-phase/predictions/xgb/Emiliania_huxleyi.nc
+loading clf
+loading reg
+loading clf
+loading reg
+loading clf
+loading reg
+defining voting regressor
+optimal clf threshold:  0.45961064535495244
+defining ZIR
+predicting ZIR
+transformer : None
+transformation is None
+model is classifier
+model not cloned
+model is:  VotingClassifier(estimators=[('clf1',
+                              Pipeline(steps=[('preprocessor',
+                                               ColumnTransformer(transformers=[('num',
+                                                                                Pipeline(steps=[('scaler',
+                                                                                                 StandardScaler())]),
+                                                                                array([0, 1, 2]))])),
+                                              ('estimator',
+                                               RandomForestClassifier(max_depth=50,
+                                                                      max_samples=0.8,
+                                                                      oob_score=True,
+                                                                      random_state=1))])),
+                             ('clf2',
+                              Pipeline(steps=[('preprocessor',
+                                               ColumnTransformer(transformers=[('num...
+                                                             learning_rate=0.01,
+                                                             max_bin=None,
+                                                             max_cat_threshold=None,
+                                                             max_cat_to_onehot=None,
+                                                             max_delta_step=None,
+                                                             max_depth=4,
+                                                             max_leaves=None,
+                                                             min_child_weight=None,
+                                                             missing=nan,
+                                                             monotone_constraints=None,
+                                                             n_estimators=69,
+                                                             n_jobs=None,
+                                                             nthread=1,
+                                                             num_parallel_tree=None,
+                                                             predictor=None, ...))]))],
+                 voting='soft',
+                 weights=[0.37868363184623666, 0.29901324067962515,
+                          0.32230312747413825])
+Voting regressor or stacked
+features_for_members: [[0, 1, 2], [0, 1, 2], [0, 1, 2]]
+model is a classifier
+model is:  VotingClassifier(estimators=[('clf1',
+                              Pipeline(steps=[('preprocessor',
+                                               ColumnTransformer(transformers=[('num',
+                                                                                Pipeline(steps=[('scaler',
+                                                                                                 StandardScaler())]),
+                                                                                array([0, 1, 2]))])),
+                                              ('estimator',
+                                               RandomForestClassifier(max_depth=50,
+                                                                      max_samples=0.8,
+                                                                      oob_score=True,
+                                                                      random_state=1))])),
+                             ('clf2',
+                              Pipeline(steps=[('preprocessor',
+                                               ColumnTransformer(transformers=[('num...
+                                                             learning_rate=0.01,
+                                                             max_bin=None,
+                                                             max_cat_threshold=None,
+                                                             max_cat_to_onehot=None,
+                                                             max_delta_step=None,
+                                                             max_depth=4,
+                                                             max_leaves=None,
+                                                             min_child_weight=None,
+                                                             missing=nan,
+                                                             monotone_constraints=None,
+                                                             n_estimators=69,
+                                                             n_jobs=None,
+                                                             nthread=1,
+                                                             num_parallel_tree=None,
+                                                             predictor=None, ...))]))],
+                 voting='soft',
+                 weights=[0.37868363184623666, 0.29901324067962515,
+                          0.32230312747413825])
+Voting regressor or stacked
+features_for_members: [[0, 1, 2], [0, 1, 2], [0, 1, 2]]
+results.shape:  (436, 3)
+model not cloned
+model is:  VotingClassifier(estimators=[('clf1',
+                              Pipeline(steps=[('preprocessor',
+                                               ColumnTransformer(transformers=[('num',
+                                                                                Pipeline(steps=[('scaler',
+                                                                                                 StandardScaler())]),
+                                                                                array([0, 1, 2]))])),
+                                              ('estimator',
+                                               RandomForestClassifier(max_depth=50,
+                                                                      max_samples=0.8,
+                                                                      oob_score=True,
+                                                                      random_state=1))])),
+                             ('clf2',
+                              Pipeline(steps=[('preprocessor',
+                                               ColumnTransformer(transformers=[('num...
+                                                             learning_rate=0.01,
+                                                             max_bin=None,
+                                                             max_cat_threshold=None,
+                                                             max_cat_to_onehot=None,
+                                                             max_delta_step=None,
+                                                             max_depth=4,
+                                                             max_leaves=None,
+                                                             min_child_weight=None,
+                                                             missing=nan,
+                                                             monotone_constraints=None,
+                                                             n_estimators=69,
+                                                             n_jobs=None,
+                                                             nthread=1,
+                                                             num_parallel_tree=None,
+                                                             predictor=None, ...))]))],
+                 voting='soft',
+                 weights=[0.37868363184623666, 0.29901324067962515,
+                          0.32230312747413825])
+Voting regressor or stacked
+features_for_members: [[0, 1, 2], [0, 1, 2], [0, 1, 2]]
+model is a classifier
+model is:  VotingClassifier(estimators=[('clf1',
+                              Pipeline(steps=[('preprocessor',
+                                               ColumnTransformer(transformers=[('num',
+                                                                                Pipeline(steps=[('scaler',
+                                                                                                 StandardScaler())]),
+                                                                                array([0, 1, 2]))])),
+                                              ('estimator',
+                                               RandomForestClassifier(max_depth=50,
+                                                                      max_samples=0.8,
+                                                                      oob_score=True,
+                                                                      random_state=1))])),
+                             ('clf2',
+                              Pipeline(steps=[('preprocessor',
+                                               ColumnTransformer(transformers=[('num...
+                                                             learning_rate=0.01,
+                                                             max_bin=None,
+                                                             max_cat_threshold=None,
+                                                             max_cat_to_onehot=None,
+                                                             max_delta_step=None,
+                                                             max_depth=4,
+                                                             max_leaves=None,
+                                                             min_child_weight=None,
+                                                             missing=nan,
+                                                             monotone_constraints=None,
+                                                             n_estimators=69,
+                                                             n_jobs=None,
+                                                             nthread=1,
+                                                             num_parallel_tree=None,
+                                                             predictor=None, ...))]))],
+                 voting='soft',
+                 weights=[0.37868363184623666, 0.29901324067962515,
+                          0.32230312747413825])
+Voting regressor or stacked
+features_for_members: [[0, 1, 2], [0, 1, 2], [0, 1, 2]]
+results.shape:  (436, 3)
+model not cloned
+model is:  VotingClassifier(estimators=[('clf1',
+                              Pipeline(steps=[('preprocessor',
+                                               ColumnTransformer(transformers=[('num',
+                                                                                Pipeline(steps=[('scaler',
+                                                                                                 StandardScaler())]),
+                                                                                array([0, 1, 2]))])),
+                                              ('estimator',
+                                               RandomForestClassifier(max_depth=50,
+                                                                      max_samples=0.8,
+                                                                      oob_score=True,
+                                                                      random_state=1))])),
+                             ('clf2',
+                              Pipeline(steps=[('preprocessor',
+                                               ColumnTransformer(transformers=[('num...
+                                                             learning_rate=0.01,
+                                                             max_bin=None,
+                                                             max_cat_threshold=None,
+                                                             max_cat_to_onehot=None,
+                                                             max_delta_step=None,
+                                                             max_depth=4,
+                                                             max_leaves=None,
+                                                             min_child_weight=None,
+                                                             missing=nan,
+                                                             monotone_constraints=None,
+                                                             n_estimators=69,
+                                                             n_jobs=None,
+                                                             nthread=1,
+                                                             num_parallel_tree=None,
+                                                             predictor=None, ...))]))],
+                 voting='soft',
+                 weights=[0.37868363184623666, 0.29901324067962515,
+                          0.32230312747413825])
+Voting regressor or stacked
+features_for_members: [[0, 1, 2], [0, 1, 2], [0, 1, 2]]
+model is a classifier
+model is:  VotingClassifier(estimators=[('clf1',
+                              Pipeline(steps=[('preprocessor',
+                                               ColumnTransformer(transformers=[('num',
+                                                                                Pipeline(steps=[('scaler',
+                                                                                                 StandardScaler())]),
+                                                                                array([0, 1, 2]))])),
+                                              ('estimator',
+                                               RandomForestClassifier(max_depth=50,
+                                                                      max_samples=0.8,
+                                                                      oob_score=True,
+                                                                      random_state=1))])),
+                             ('clf2',
+                              Pipeline(steps=[('preprocessor',
+                                               ColumnTransformer(transformers=[('num...
+                                                             learning_rate=0.01,
+                                                             max_bin=None,
+                                                             max_cat_threshold=None,
+                                                             max_cat_to_onehot=None,
+                                                             max_delta_step=None,
+                                                             max_depth=4,
+                                                             max_leaves=None,
+                                                             min_child_weight=None,
+                                                             missing=nan,
+                                                             monotone_constraints=None,
+                                                             n_estimators=69,
+                                                             n_jobs=None,
+                                                             nthread=1,
+                                                             num_parallel_tree=None,
+                                                             predictor=None, ...))]))],
+                 voting='soft',
+                 weights=[0.37868363184623666, 0.29901324067962515,
+                          0.32230312747413825])
+Voting regressor or stacked
+features_for_members: [[0, 1, 2], [0, 1, 2], [0, 1, 2]]
+results.shape:  (436, 3)
+model is:  VotingClassifier(estimators=[('clf1',
+                              Pipeline(steps=[('preprocessor',
+                                               ColumnTransformer(transformers=[('num',
+                                                                                Pipeline(steps=[('scaler',
+                                                                                                 StandardScaler())]),
+                                                                                array([0, 1, 2]))])),
+                                              ('estimator',
+                                               RandomForestClassifier(max_depth=50,
+                                                                      max_samples=0.8,
+                                                                      oob_score=True,
+                                                                      random_state=1))])),
+                             ('clf2',
+                              Pipeline(steps=[('preprocessor',
+                                               ColumnTransformer(transformers=[('num...
+                                                             learning_rate=0.01,
+                                                             max_bin=None,
+                                                             max_cat_threshold=None,
+                                                             max_cat_to_onehot=None,
+                                                             max_delta_step=None,
+                                                             max_depth=4,
+                                                             max_leaves=None,
+                                                             min_child_weight=None,
+                                                             missing=nan,
+                                                             monotone_constraints=None,
+                                                             n_estimators=69,
+                                                             n_jobs=None,
+                                                             nthread=1,
+                                                             num_parallel_tree=None,
+                                                             predictor=None, ...))]))],
+                 voting='soft',
+                 weights=[0.37868363184623666, 0.29901324067962515,
+                          0.32230312747413825])
+Voting regressor or stacked
+features_for_members: [[0, 1, 2], [0, 1, 2], [0, 1, 2]]
+results.shape:  (300, 3)
+transformer : None
+transformation is None
+model not cloned
+model is:  VotingRegressor(estimators=[('reg1',
+                             TransformedTargetRegressor(func=<bound method LogGridSearch.do_log of <abil.log_grid_search.LogGridSearch object at 0x78befcda28d0>>,
+                                                        inverse_func=<bound method LogGridSearch.do_exp of <abil.log_grid_search.LogGridSearch object at 0x78bf9160b140>>,
+                                                        regressor=Pipeline(steps=[('preprocessor',
+                                                                                   ColumnTransformer(transformers=[('num',...
+                                                                                                learning_rate=0.05,
+                                                                                                max_bin=None,
+                                                                                                max_cat_threshold=None,
+                                                                                                max_cat_to_onehot=None,
+                                                                                                max_delta_step=None,
+                                                                                                max_depth=7,
+                                                                                                max_leaves=None,
+                                                                                                min_child_weight=None,
+                                                                                                missing=nan,
+                                                                                                monotone_constraints=None,
+                                                                                                n_estimators=69,
+                                                                                                n_jobs=None,
+                                                                                                nthread=1,
+                                                                                                num_parallel_tree=None,
+                                                                                                objective='reg:tweedie', ...))])))],
+                weights=[0.37868363184623666, 0.29901324067962515,
+                         0.32230312747413825])
+Voting regressor or stacked
+features_for_members: [[0, 1, 2], [0, 1, 2], [0, 1, 2]]
+model is a regressor
+model is:  VotingRegressor(estimators=[('reg1',
+                             TransformedTargetRegressor(func=<bound method LogGridSearch.do_log of <abil.log_grid_search.LogGridSearch object at 0x78befcda28d0>>,
+                                                        inverse_func=<bound method LogGridSearch.do_exp of <abil.log_grid_search.LogGridSearch object at 0x78bf9160b140>>,
+                                                        regressor=Pipeline(steps=[('preprocessor',
+                                                                                   ColumnTransformer(transformers=[('num',...
+                                                                                                learning_rate=0.05,
+                                                                                                max_bin=None,
+                                                                                                max_cat_threshold=None,
+                                                                                                max_cat_to_onehot=None,
+                                                                                                max_delta_step=None,
+                                                                                                max_depth=7,
+                                                                                                max_leaves=None,
+                                                                                                min_child_weight=None,
+                                                                                                missing=nan,
+                                                                                                monotone_constraints=None,
+                                                                                                n_estimators=69,
+                                                                                                n_jobs=None,
+                                                                                                nthread=1,
+                                                                                                num_parallel_tree=None,
+                                                                                                objective='reg:tweedie', ...))])))],
+                weights=[0.37868363184623666, 0.29901324067962515,
+                         0.32230312747413825])
+Voting regressor or stacked
+features_for_members: [[0, 1, 2], [0, 1, 2], [0, 1, 2]]
+results.shape:  (436, 3)
+model not cloned
+model is:  VotingRegressor(estimators=[('reg1',
+                             TransformedTargetRegressor(func=<bound method LogGridSearch.do_log of <abil.log_grid_search.LogGridSearch object at 0x78befcda28d0>>,
+                                                        inverse_func=<bound method LogGridSearch.do_exp of <abil.log_grid_search.LogGridSearch object at 0x78bf9160b140>>,
+                                                        regressor=Pipeline(steps=[('preprocessor',
+                                                                                   ColumnTransformer(transformers=[('num',...
+                                                                                                learning_rate=0.05,
+                                                                                                max_bin=None,
+                                                                                                max_cat_threshold=None,
+                                                                                                max_cat_to_onehot=None,
+                                                                                                max_delta_step=None,
+                                                                                                max_depth=7,
+                                                                                                max_leaves=None,
+                                                                                                min_child_weight=None,
+                                                                                                missing=nan,
+                                                                                                monotone_constraints=None,
+                                                                                                n_estimators=69,
+                                                                                                n_jobs=None,
+                                                                                                nthread=1,
+                                                                                                num_parallel_tree=None,
+                                                                                                objective='reg:tweedie', ...))])))],
+                weights=[0.37868363184623666, 0.29901324067962515,
+                         0.32230312747413825])
+Voting regressor or stacked
+features_for_members: [[0, 1, 2], [0, 1, 2], [0, 1, 2]]
+model is a regressor
+model is:  VotingRegressor(estimators=[('reg1',
+                             TransformedTargetRegressor(func=<bound method LogGridSearch.do_log of <abil.log_grid_search.LogGridSearch object at 0x78befcda28d0>>,
+                                                        inverse_func=<bound method LogGridSearch.do_exp of <abil.log_grid_search.LogGridSearch object at 0x78bf9160b140>>,
+                                                        regressor=Pipeline(steps=[('preprocessor',
+                                                                                   ColumnTransformer(transformers=[('num',...
+                                                                                                learning_rate=0.05,
+                                                                                                max_bin=None,
+                                                                                                max_cat_threshold=None,
+                                                                                                max_cat_to_onehot=None,
+                                                                                                max_delta_step=None,
+                                                                                                max_depth=7,
+                                                                                                max_leaves=None,
+                                                                                                min_child_weight=None,
+                                                                                                missing=nan,
+                                                                                                monotone_constraints=None,
+                                                                                                n_estimators=69,
+                                                                                                n_jobs=None,
+                                                                                                nthread=1,
+                                                                                                num_parallel_tree=None,
+                                                                                                objective='reg:tweedie', ...))])))],
+                weights=[0.37868363184623666, 0.29901324067962515,
+                         0.32230312747413825])
+Voting regressor or stacked
+features_for_members: [[0, 1, 2], [0, 1, 2], [0, 1, 2]]
+results.shape:  (436, 3)
+model not cloned
+model is:  VotingRegressor(estimators=[('reg1',
+                             TransformedTargetRegressor(func=<bound method LogGridSearch.do_log of <abil.log_grid_search.LogGridSearch object at 0x78befcda28d0>>,
+                                                        inverse_func=<bound method LogGridSearch.do_exp of <abil.log_grid_search.LogGridSearch object at 0x78bf9160b140>>,
+                                                        regressor=Pipeline(steps=[('preprocessor',
+                                                                                   ColumnTransformer(transformers=[('num',...
+                                                                                                learning_rate=0.05,
+                                                                                                max_bin=None,
+                                                                                                max_cat_threshold=None,
+                                                                                                max_cat_to_onehot=None,
+                                                                                                max_delta_step=None,
+                                                                                                max_depth=7,
+                                                                                                max_leaves=None,
+                                                                                                min_child_weight=None,
+                                                                                                missing=nan,
+                                                                                                monotone_constraints=None,
+                                                                                                n_estimators=69,
+                                                                                                n_jobs=None,
+                                                                                                nthread=1,
+                                                                                                num_parallel_tree=None,
+                                                                                                objective='reg:tweedie', ...))])))],
+                weights=[0.37868363184623666, 0.29901324067962515,
+                         0.32230312747413825])
+Voting regressor or stacked
+features_for_members: [[0, 1, 2], [0, 1, 2], [0, 1, 2]]
+model is a regressor
+model is:  VotingRegressor(estimators=[('reg1',
+                             TransformedTargetRegressor(func=<bound method LogGridSearch.do_log of <abil.log_grid_search.LogGridSearch object at 0x78befcda28d0>>,
+                                                        inverse_func=<bound method LogGridSearch.do_exp of <abil.log_grid_search.LogGridSearch object at 0x78bf9160b140>>,
+                                                        regressor=Pipeline(steps=[('preprocessor',
+                                                                                   ColumnTransformer(transformers=[('num',...
+                                                                                                learning_rate=0.05,
+                                                                                                max_bin=None,
+                                                                                                max_cat_threshold=None,
+                                                                                                max_cat_to_onehot=None,
+                                                                                                max_delta_step=None,
+                                                                                                max_depth=7,
+                                                                                                max_leaves=None,
+                                                                                                min_child_weight=None,
+                                                                                                missing=nan,
+                                                                                                monotone_constraints=None,
+                                                                                                n_estimators=69,
+                                                                                                n_jobs=None,
+                                                                                                nthread=1,
+                                                                                                num_parallel_tree=None,
+                                                                                                objective='reg:tweedie', ...))])))],
+                weights=[0.37868363184623666, 0.29901324067962515,
+                         0.32230312747413825])
+Voting regressor or stacked
+features_for_members: [[0, 1, 2], [0, 1, 2], [0, 1, 2]]
+results.shape:  (436, 3)
+model is:  VotingRegressor(estimators=[('reg1',
+                             TransformedTargetRegressor(func=<bound method LogGridSearch.do_log of <abil.log_grid_search.LogGridSearch object at 0x78befcda28d0>>,
+                                                        inverse_func=<bound method LogGridSearch.do_exp of <abil.log_grid_search.LogGridSearch object at 0x78bf9160b140>>,
+                                                        regressor=Pipeline(steps=[('preprocessor',
+                                                                                   ColumnTransformer(transformers=[('num',...
+                                                                                                learning_rate=0.05,
+                                                                                                max_bin=None,
+                                                                                                max_cat_threshold=None,
+                                                                                                max_cat_to_onehot=None,
+                                                                                                max_delta_step=None,
+                                                                                                max_depth=7,
+                                                                                                max_leaves=None,
+                                                                                                min_child_weight=None,
+                                                                                                missing=nan,
+                                                                                                monotone_constraints=None,
+                                                                                                n_estimators=69,
+                                                                                                n_jobs=None,
+                                                                                                nthread=1,
+                                                                                                num_parallel_tree=None,
+                                                                                                objective='reg:tweedie', ...))])))],
+                weights=[0.37868363184623666, 0.29901324067962515,
+                         0.32230312747413825])
+Voting regressor or stacked
+features_for_members: [[0, 1, 2], [0, 1, 2], [0, 1, 2]]
+results.shape:  (300, 3)
+finished exporting summary stats to:  ./tests/ModelOutput/2-phase/predictions/ens/clf/Emiliania_huxleyi.nc
+finished exporting summary stats to:  ./tests/ModelOutput/2-phase/predictions/ens/reg/Emiliania_huxleyi.nc
+finished exporting summary stats to:  ./tests/ModelOutput/2-phase/predictions/ens/Emiliania_huxleyi.nc
+exporting ZIR object
+exporting to ens:  ./tests/ModelOutput/2-phase/model/ens/Emiliania_huxleyi_zir.sav
+exporting ensemble scores to: ./tests/ModelOutput/2-phase/scoring/ens/Emiliania_huxleyi_zir.sav
+finished
+execution time: 53.29274892807007 seconds
+======================
+DEBUG OF PREDICT SUMS
+======================
+RF mean sum: <xarray.DataArray 'mean' ()>
+array(16096.04367964)
+XGB mean sum: <xarray.DataArray 'mean' ()>
+array(4603.00840592)
+RF ci95_UL sum: <xarray.DataArray 'ci95_UL' ()>
+array(140.14908257)
+XGB ci95_UL sum: <xarray.DataArray 'ci95_UL' ()>
+array(154.04579396)
+merging...
+./tests/ModelOutput/2-phase/predictions/ens
+finished merging NetCDF files
+Model configuration exported to: ./tests/ModelOutput/2-phase/posts/model_config.yml
+the target is:
+Emiliania huxleyi
+finished merging parameters
+the target is:
+Emiliania huxleyi
+finished merging parameters
+the target is:
+Emiliania huxleyi
+finished merging parameters
+models included in merge performance!
+['rf', 'knn', 'xgb']
+finished merging performance
+finished merging performance
+finished merging performance
+finished merging performance
+[0.5]
+finished estimating pg poc
+finished calculating shannon diversity
+finished calculating total
+                         Emiliania huxleyi  ...  Emiliania huxleyi_resid
+lat   lon    depth time                     ...                         
+-64.0 -170.0 100.0 12               1130.0  ...                      NaN
+       175.0 0.0   1               96109.0  ...                      NaN
+-63.0 -142.0 40.0  12                796.0  ...                      NaN
+             60.0  12               1180.0  ...                      NaN
+      -66.0  5.0   2                 441.0  ...                      NaN
+
+[5 rows x 3 columns]
+exported d to: ./tests/ModelOutput/2-phase/posts/test_obs_poc.csv
+training merged with predictions
+export_ds
+dataframe: 
+                         Emiliania huxleyi  shannon  ...  feature_2  feature_3
+lat   lon    depth time                              ...                      
+-90.0 -130.0 20.0  0             25.753696      0.0  ...  -0.639487   0.992251
+      -100.0 40.0  10            31.181868      0.0  ...   0.549936  -1.965486
+      -70.0  110.0 0             23.018151      0.0  ...  -0.516895  -0.722528
+      -60.0  30.0  10            24.810411      0.0  ...   0.264687   0.924840
+       30.0  140.0 0             22.143002      0.0  ...   0.711435  -1.101798
+
+[5 rows x 7 columns]
+                         Emiliania huxleyi  shannon  ...  feature_2  feature_3
+lat   lon    depth time                              ...                      
+-90.0 -130.0 20.0  0             25.753696      0.0  ...  -0.639487   0.992251
+      -100.0 40.0  10            31.181868      0.0  ...   0.549936  -1.965486
+      -70.0  110.0 0             23.018151      0.0  ...  -0.516895  -0.722528
+      -60.0  30.0  10            24.810411      0.0  ...   0.264687   0.924840
+       30.0  140.0 0             22.143002      0.0  ...   0.711435  -1.101798
+
+[5 rows x 7 columns]
+exported ds to: ./tests/ModelOutput/2-phase/posts/test_mean_poc.nc
+Processing target: Emiliania huxleyi
+Initiate integrated_total
+All monthly totals: [2.94008006e+16 3.43816255e+16]
+Processing target: total
+Initiate integrated_total
+All monthly totals: [2.94008006e+16 3.43816255e+16]
+Exported totals
+Processing target: Emiliania huxleyi
+Initiate integrated_total
+Final integrated total: 6.378242615736059e+16
+Processing target: total
+Initiate integrated_total
+Final integrated total: 6.378242615736059e+16
+Exported totals
+merging...
+./tests/ModelOutput/2-phase/predictions/ens
+finished merging NetCDF files
+Model configuration exported to: ./tests/ModelOutput/2-phase/posts/model_config.yml
+the target is:
+Emiliania huxleyi
+finished merging parameters
+the target is:
+Emiliania huxleyi
+finished merging parameters
+the target is:
+Emiliania huxleyi
+finished merging parameters
+models included in merge performance!
+['rf', 'knn', 'xgb']
+finished merging performance
+finished merging performance
+finished merging performance
+finished merging performance
+[0.5]
+finished estimating pg poc
+finished calculating shannon diversity
+finished calculating total
+                         Emiliania huxleyi  ...  Emiliania huxleyi_resid
+lat   lon    depth time                     ...                         
+-64.0 -170.0 100.0 12               1130.0  ...                      NaN
+       175.0 0.0   1               96109.0  ...                      NaN
+-63.0 -142.0 40.0  12                796.0  ...                      NaN
+             60.0  12               1180.0  ...                      NaN
+      -66.0  5.0   2                 441.0  ...                      NaN
+
+[5 rows x 3 columns]
+exported d to: ./tests/ModelOutput/2-phase/posts/test_obs_poc.csv
+training merged with predictions
+export_ds
+dataframe: 
+                         Emiliania huxleyi  shannon  ...  feature_2  feature_3
+lat   lon    depth time                              ...                      
+-90.0 -160.0 130.0 10            26.340194      0.0  ...  -1.204128  -0.195501
+      -130.0 20.0  0             27.620918      0.0  ...  -0.639487   0.992251
+      -100.0 40.0  10            47.472379      0.0  ...   0.549936  -1.965486
+      -70.0  50.0  10            26.766322      0.0  ...  -0.060788  -0.326395
+             110.0 0             26.709039      0.0  ...  -0.516895  -0.722528
+
+[5 rows x 7 columns]
+                         Emiliania huxleyi  shannon  ...  feature_2  feature_3
+lat   lon    depth time                              ...                      
+-90.0 -160.0 130.0 10            26.340194      0.0  ...  -1.204128  -0.195501
+      -130.0 20.0  0             27.620918      0.0  ...  -0.639487   0.992251
+      -100.0 40.0  10            47.472379      0.0  ...   0.549936  -1.965486
+      -70.0  50.0  10            26.766322      0.0  ...  -0.060788  -0.326395
+             110.0 0             26.709039      0.0  ...  -0.516895  -0.722528
+
+[5 rows x 7 columns]
+exported ds to: ./tests/ModelOutput/2-phase/posts/test_ci95_UL_poc.nc
+Processing target: Emiliania huxleyi
+Initiate integrated_total
+All monthly totals: [4.22976156e+16 5.29901178e+16]
+Processing target: total
+Initiate integrated_total
+All monthly totals: [4.22976156e+16 5.29901178e+16]
+Exported totals
+Processing target: Emiliania huxleyi
+Initiate integrated_total
+Final integrated total: 9.528773333358266e+16
+Processing target: total
+Initiate integrated_total
+Final integrated total: 9.528773333358266e+16
+Exported totals
+merging...
+./tests/ModelOutput/2-phase/predictions/ens
+finished merging NetCDF files
+Model configuration exported to: ./tests/ModelOutput/2-phase/posts/model_config.yml
+the target is:
+Emiliania huxleyi
+finished merging parameters
+the target is:
+Emiliania huxleyi
+finished merging parameters
+the target is:
+Emiliania huxleyi
+finished merging parameters
+models included in merge performance!
+['rf', 'knn', 'xgb']
+finished merging performance
+finished merging performance
+finished merging performance
+finished merging performance
+[0.5]
+finished estimating pg poc
+finished calculating shannon diversity
+finished calculating total
+                         Emiliania huxleyi  ...  Emiliania huxleyi_resid
+lat   lon    depth time                     ...                         
+-64.0 -170.0 100.0 12               1130.0  ...                      NaN
+       175.0 0.0   1               96109.0  ...                      NaN
+-63.0 -142.0 40.0  12                796.0  ...                      NaN
+             60.0  12               1180.0  ...                      NaN
+      -66.0  5.0   2                 441.0  ...                      NaN
+
+[5 rows x 3 columns]
+exported d to: ./tests/ModelOutput/2-phase/posts/test_obs_poc.csv
+training merged with predictions
+export_ds
+dataframe: 
+                         Emiliania huxleyi  shannon  ...  feature_2  feature_3
+lat   lon    depth time                              ...                      
+-90.0 -100.0 40.0  10            20.367228      0.0  ...   0.549936  -1.965486
+       30.0  140.0 0             18.170867      0.0  ...   0.711435  -1.101798
+       80.0  70.0  0             18.556437      0.0  ...  -1.087458  -1.033310
+-80.0 -110.0 140.0 10            13.089795      0.0  ...  -1.703447   0.091258
+      -90.0  80.0  10            27.923863      0.0  ...   0.181325  -1.297453
+
+[5 rows x 7 columns]
+                         Emiliania huxleyi  shannon  ...  feature_2  feature_3
+lat   lon    depth time                              ...                      
+-90.0 -100.0 40.0  10            20.367228      0.0  ...   0.549936  -1.965486
+       30.0  140.0 0             18.170867      0.0  ...   0.711435  -1.101798
+       80.0  70.0  0             18.556437      0.0  ...  -1.087458  -1.033310
+-80.0 -110.0 140.0 10            13.089795      0.0  ...  -1.703447   0.091258
+      -90.0  80.0  10            27.923863      0.0  ...   0.181325  -1.297453
+
+[5 rows x 7 columns]
+exported ds to: ./tests/ModelOutput/2-phase/posts/test_ci95_LL_poc.nc
+Processing target: Emiliania huxleyi
+Initiate integrated_total
+All monthly totals: [1.23440226e+16 1.33754686e+16]
+Processing target: total
+Initiate integrated_total
+All monthly totals: [1.23440226e+16 1.33754686e+16]
+Exported totals
+Processing target: Emiliania huxleyi
+Initiate integrated_total
+Final integrated total: 2.5719491201254016e+16
+Processing target: total
+Initiate integrated_total
+Final integrated total: 2.5719491201254016e+16
+Exported totals
+.
+----------------------------------------------------------------------
+Ran 1 test in 77.276s
+
+OK
