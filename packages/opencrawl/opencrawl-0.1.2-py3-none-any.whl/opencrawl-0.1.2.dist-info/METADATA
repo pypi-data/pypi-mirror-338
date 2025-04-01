@@ -1,0 +1,34 @@
+Metadata-Version: 2.4
+Name: opencrawl
+Version: 0.1.2
+Summary: Integrated website crawler and content analysis library
+Home-page: https://github.com/opencrawl/opencrawl
+Author: OpenCrawl Team
+Author-email: info@opencrawl.org
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Python: >=3.8
+License-File: LICENSE
+Requires-Dist: pathik>=0.1.0
+Requires-Dist: bhumi>=0.1.0
+Requires-Dist: satya>=0.1.0
+Requires-Dist: python-dotenv>=0.21.0
+Requires-Dist: psycopg2-binary>=2.9.0
+Provides-Extra: dev
+Requires-Dist: pytest>=7.0.0; extra == "dev"
+Requires-Dist: black>=23.0.0; extra == "dev"
+Requires-Dist: isort>=5.10.0; extra == "dev"
+Requires-Dist: mypy>=0.991; extra == "dev"
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: home-page
+Dynamic: license-file
+Dynamic: provides-extra
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
