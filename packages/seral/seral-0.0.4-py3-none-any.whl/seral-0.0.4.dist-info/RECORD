@@ -1,0 +1,9 @@
+sbd.py,sha256=W791zap5rl_EvNGZYBIkIiHKk1Cp8OJyqWRsAx2xcKI,2082
+dataset/industrial.py,sha256=zeoscl7DEgX76-Tpor0UpbPpdJw1WXZXMKZDU1oz4kY,8884
+etsc/etsc.py,sha256=PWzU_MU3jJ2FAT9qAPsMnr2hyBcB6jtIb35by0WVTpg,15159
+segmentation/segmentation.py,sha256=B0Sxe2e8EQJh5HulpaDtbcLo7UhUlZU9BoDYqsktovI,1536
+seral/seral.py,sha256=CMQvhhPpBr-OKMhy2_sHPPFmVuTnikTE3E6mZ1wKUj8,24783
+seral-0.0.4.dist-info/METADATA,sha256=u13pqnlZcMwHzFNFhXWiNrwRqJHZYb3DKu4fUt3_mq4,3898
+seral-0.0.4.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+seral-0.0.4.dist-info/top_level.txt,sha256=E7DS64eUkmPGzhsLt-yrytXt7abfVC5XcXuCk4cfhCw,36
+seral-0.0.4.dist-info/RECORD,,
