@@ -1,0 +1,9 @@
+setup.py
+pyxtractors/__init__.py
+pyxtractors/extractor.py
+pyxtractors/processor.py
+pyxtractors.egg-info/PKG-INFO
+pyxtractors.egg-info/SOURCES.txt
+pyxtractors.egg-info/dependency_links.txt
+pyxtractors.egg-info/top_level.txt
+tests/test_extractor.py
