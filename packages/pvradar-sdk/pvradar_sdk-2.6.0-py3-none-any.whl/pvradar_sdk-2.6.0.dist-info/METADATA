@@ -1,0 +1,53 @@
+Metadata-Version: 2.2
+Name: pvradar-sdk
+Version: 2.6.0
+Summary: PVRADAR SDK and API client
+Author-email: Kostiantyn Pogorelov <kp@pvradar.com>
+Project-URL: homepage, https://pvradar.com
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.12
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: httpx>=0.27
+Requires-Dist: pandas>=2.2.2
+Requires-Dist: platformdirs>=4.2.1
+Requires-Dist: pvlib==0.11.2
+Requires-Dist: pydantic>=2.8.2
+Requires-Dist: scipy>=1.14.1
+Requires-Dist: pint>=0.24
+Requires-Dist: authlib>=1.3.2
+Requires-Dist: nest-asyncio>=1.6.0
+Requires-Dist: timezonefinder>=6.5.8
+Requires-Dist: debugpy>=1.8.12
+Requires-Dist: orjson>=3.10.15
+Provides-Extra: dev
+Requires-Dist: pytest==8.3.3; extra == "dev"
+Requires-Dist: pyright==1.1.391; extra == "dev"
+Requires-Dist: pandas-stubs==2.2.3.241126; extra == "dev"
+Requires-Dist: ruff==0.9.3; extra == "dev"
+Provides-Extra: lmdb
+Requires-Dist: lmdb>=1.6.2; extra == "lmdb"
+
+Software Developer Kit (SDK) for PVRADAR platform.
+
+https://pvradar.com
+
+# Installation
+
+```sh
+pip install pvradar-sdk
+```
+
+# Usage
+
+```python
+from pvradar.sdk import PvradarSite, attrs, describe
+
+site = PvradarSite(location=(-23, 115), interval='2020..2023')
+ghi = site.resource(attrs(resource_type='global_horizontal_irradiance'))
+print(ghi)
+print(describe(ghi))
+```
+
+Please, contact PVRADAR for more details and features.
