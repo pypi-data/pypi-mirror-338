@@ -1,0 +1,18 @@
+[package]
+name = "ms2rescore-rs"
+version = "0.4.2"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+[lib]
+name = "ms2rescore_rs"
+crate-type = ["cdylib"]
+
+[features]
+default = ["thermo"]
+thermo = ["mzdata/thermo"]
+
+[dependencies]
+pyo3 = { version = "0.23.3", features = ["anyhow"] }
+mzdata = "0.48.3"
+timsrust = "0.4.1"
