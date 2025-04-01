@@ -1,0 +1,9 @@
+yandex_delivery/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+yandex_delivery/client.py,sha256=s18Hj3GFDWWbGz7VV2_ZFEKfrxrzsG1Dj8S32ZKRUcA,14448
+yandex_delivery/enums.py,sha256=Uy7mCXmhn-oV01WzY0rSElzbLOY8eQuYUUSr-l7L5dg,3654
+yandex_delivery/exceptions.py,sha256=kbqkWlAVvmikTpggRkjDNav5r9gGrkbegUpjEFE4kL4,1696
+yandex_delivery/objects.py,sha256=8HGQBVbamlbxsnJhm9A2c_L0p0vjszHLUWRNGrKYdpU,17598
+yandex_delivery_sdk-0.1.4.dist-info/LICENSE,sha256=QQLES6NumuR5K1xhLc99w31i4ZabltDgQ4hm0MwS3RI,1073
+yandex_delivery_sdk-0.1.4.dist-info/METADATA,sha256=76HEiJTB3A-DDW-thRP7D8XpGghSLjoZWziQ42ZkLfo,6671
+yandex_delivery_sdk-0.1.4.dist-info/WHEEL,sha256=fGIA9gx4Qxk2KDKeNJCbOEwSrmLtjWCwzBz351GyrPQ,88
+yandex_delivery_sdk-0.1.4.dist-info/RECORD,,
