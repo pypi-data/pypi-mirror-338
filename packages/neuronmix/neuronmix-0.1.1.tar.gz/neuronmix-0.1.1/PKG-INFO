@@ -1,0 +1,59 @@
+Metadata-Version: 2.4
+Name: neuronmix
+Version: 0.1.1
+Summary: Neuron-level mixed activation layer for PyTorch
+Home-page: https://github.com/ajaviaad/neuronmix
+Author: Muhammad Adeel Javaid
+Author-email: ajavaid@ieee.org
+License: MIT
+Project-URL: Documentation, https://github.com/ajaviaad/neuronmix
+Project-URL: Source, https://github.com/ajaviaad/neuronmix
+Project-URL: Tracker, https://github.com/ajaviaad/neuronmix/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: torch
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: license
+Dynamic: license-file
+Dynamic: project-url
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+# NeuronMix 🧠
+
+NeuronMix is a lightweight PyTorch module for applying **neuron-level mixed activations** automatically.
+
+## Features
+- Mix ReLU, GELU, Swish across channel groups
+- Plug-and-play with any CNN layer
+- Great for adversarial robustness and experimentation
+
+## Installation
+
+Clone or install via pip:
+
+```bash
+pip install .
+```
+
+## Usage
+
+```python
+from neuronmix import AutoMixedActivation
+
+act = AutoMixedActivation()
+out = act(input_tensor)  # Tensor shape: (B, C, H, W)
+```
+
+## License
+MIT © Muhammad Adeel Javaid
