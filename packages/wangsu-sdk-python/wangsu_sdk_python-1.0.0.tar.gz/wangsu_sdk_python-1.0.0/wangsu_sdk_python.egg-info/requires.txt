@@ -1,0 +1,5 @@
+requests>=2.10.0
+alibabacloud_tea<1.0.0,>=0.3.3
+alibabacloud_tea_openapi<1.0.0,>=0.3.6
+alibabacloud_tea_console<1.0.0,>=0.0.1
+alibabacloud_tea_util<1.0.0,>=0.3.8
