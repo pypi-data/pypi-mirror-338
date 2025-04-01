@@ -1,0 +1,2 @@
+[console_scripts]
+sc-banker-acceptance-report = sc_banker_acceptance_report.main:main
