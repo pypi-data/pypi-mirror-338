@@ -1,0 +1,7 @@
+README.md
+pyproject.toml
+setup.py
+openrv_stubs.egg-info/PKG-INFO
+openrv_stubs.egg-info/SOURCES.txt
+openrv_stubs.egg-info/dependency_links.txt
+openrv_stubs.egg-info/top_level.txt
