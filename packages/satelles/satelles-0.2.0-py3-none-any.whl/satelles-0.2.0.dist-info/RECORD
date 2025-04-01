@@ -1,0 +1,15 @@
+satelles/__init__.py,sha256=cVy3mq23swD6BKjsKlUGU0itsAEGH7-X1RlRoFNMWGI,1646
+satelles/common.py,sha256=96XpqYqs_SUaPUl0utQ_kuy3iKKbdz3_anGN9cW0qyc,631
+satelles/constants.py,sha256=oaiqjQe-xsHGd7NHagPTXHc4_rAZZKc1sOHGMdr9jb0,421
+satelles/coordinates.py,sha256=Ym4PA914NLc_IG_LoTwbdIF9GQtnBAC5yKUSCxD5iNw,3968
+satelles/earth.py,sha256=Ss-RPOT4QXQ4xnwGP4mAZsYvIdgw03UPPaaCHYgINrk,787
+satelles/kepler.py,sha256=A-JYwMxoaxciGVTAVkUlYr1iPDILvhCivzNCRl9ANAA,5179
+satelles/orbit.py,sha256=fK--dN6I1XKU8WH4LojhFWL5dheWr2jl6QWdUzMDxU8,1195
+satelles/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+satelles/satellite.py,sha256=OFpoyZUZ-OB6jd5swumjr6qdeT3uR6zID157IoJreQ8,7065
+satelles/tle.py,sha256=N_nHiQoh7BjL99D1nJo6QvfUGnz6tt3WiHIv7wCuM60,20057
+satelles/vector.py,sha256=xkmzk_Q--8IuYG4ccTIJro2VLDl2DmBOx7Pnn-YTi5w,1923
+satelles-0.2.0.dist-info/METADATA,sha256=pVn6LlbSX3R8I3jZjyLUUa7-E-N1wdihRDB5WXrHG7c,4337
+satelles-0.2.0.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+satelles-0.2.0.dist-info/licenses/LICENSE,sha256=jHblKj3g6JEPKRCGlMqRHrCdZIyN_3NFu0aHrQht3FU,1075
+satelles-0.2.0.dist-info/RECORD,,
