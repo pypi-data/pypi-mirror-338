@@ -1,0 +1,357 @@
+{
+    "list all files in the directory": {
+        "linux": "ls -la",
+        "mac": "ls -la",
+        "windows": "dir"
+    },
+    "show current directory": {
+        "linux": "pwd",
+        "mac": "pwd",
+        "windows": "cd"
+    },
+    "go to home directory": {
+        "linux": "cd ~",
+        "mac": "cd ~",
+        "windows": "cd %USERPROFILE%"
+    },
+    "go back one directory": {
+        "linux": "cd ..",
+        "mac": "cd ..",
+        "windows": "cd .."
+    },
+    "create a new folder {folder_name}": {
+        "linux": "mkdir {folder_name}",
+        "mac": "mkdir {folder_name}",
+        "windows": "mkdir {folder_name}"
+    },
+    "delete {file_name} file": {
+        "linux": "rm {file_name}",
+        "mac": "rm {file_name}",
+        "windows": "del {file_name}"
+    },
+    "delete a folder {folder_name}": {
+        "linux": "rm -r {folder_name}",
+        "mac": "rm -r {folder_name}",
+        "windows": "rmdir /s /q {folder_name}"
+    },
+    "move {source} to {destination}": {
+        "linux": "mv {source} {destination}/",
+        "mac": "mv {source} {destination}/",
+        "windows": "move {source} {destination}\\"
+    },
+    "copy {source} to {destination}": {
+        "linux": "cp -r {source} {destination}",
+        "mac": "cp -r {source} {destination}",
+        "windows": "xcopy {source} {destination} /E /I"
+    },
+    "rename {old_name} to {new_name}": {
+        "linux": "mv {old_name} {new_name}",
+        "mac": "mv {old_name} {new_name}",
+        "windows": "rename {old_name} {new_name}"
+    },
+    "find a file named {file_name}": {
+        "linux": "find . -name {file_name}",
+        "mac": "find . -name {file_name}",
+        "windows": "where {file_name}"
+    },
+    "show file permissions of {file_name}": {
+        "linux": "ls -l {file_name}",
+        "mac": "ls -l {file_name}",
+        "windows": "icacls {file_name}"
+    },
+    "check disk space": {
+        "linux": "df -h",
+        "mac": "df -h",
+        "windows": "wmic logicaldisk get size,freespace,caption"
+    },
+    "check memory usage": {
+        "linux": "free -h",
+        "mac": "vm_stat",
+        "windows": "wmic OS get FreePhysicalMemory,TotalVisibleMemorySize /Value"
+    },
+    "show running processes": {
+        "linux": "ps aux",
+        "mac": "ps aux",
+        "windows": "tasklist"
+    },
+    "kill process with id {process_id}": {
+        "linux": "kill {process_id}",
+        "mac": "kill {process_id}",
+        "windows": "taskkill /PID {process_id} /F"
+    },
+    "restart the system": {
+        "linux": "sudo reboot",
+        "mac": "sudo reboot",
+        "windows": "shutdown /r /t 0"
+    },
+    "shutdown the system": {
+        "linux": "sudo shutdown now",
+        "mac": "sudo shutdown -h now",
+        "windows": "shutdown /s /t 0"
+    },
+    "show my ip address": {
+        "linux": "ip a",
+        "mac": "ifconfig",
+        "windows": "ipconfig | findstr /C:\"IPv4\""
+    },
+    "check internet connectivity": {
+        "linux": "ping -c 4 google.com",
+        "mac": "ping -c 4 google.com",
+        "windows": "ping google.com"
+    },
+    "list open network ports": {
+        "linux": "netstat -tulnp",
+        "mac": "netstat -an",
+        "windows": "netstat -ano"
+    },
+    "flush dns cache": {
+        "linux": "sudo resolvectl flush-caches",
+        "mac": "sudo dscacheutil -flushcache",
+        "windows": "ipconfig /flushdns"
+    },
+    "update all installed packages": {
+        "linux": "sudo apt update && sudo apt upgrade -y",
+        "mac": "brew update && brew upgrade",
+        "windows": "winget upgrade --all"
+    },
+    "install python": {
+        "linux": "sudo apt install python3",
+        "mac": "brew install python",
+        "windows": "winget install Python.Python.3"
+    },
+    "clone a repo from github {repo_url}": {
+        "linux": "git clone {repo_url}",
+        "mac": "git clone {repo_url}",
+        "windows": "git clone {repo_url}"
+    },
+    "check git status": {
+        "linux": "git status",
+        "mac": "git status",
+        "windows": "git status"
+    },
+    "create a new virtual environment named {venv_name}": {
+        "linux": "python3 -m venv {venv_name}",
+        "mac": "python3 -m venv {venv_name}",
+        "windows": "python -m venv {venv_name}"
+    },
+    "activate virtual environment": {
+        "linux": "source venv/bin/activate",
+        "mac": "source venv/bin/activate",
+        "windows": "venv\\Scripts\\activate.bat"
+    },
+    "install requirements from requirements.txt": {
+        "linux": "pip install -r requirements.txt",
+        "mac": "pip install -r requirements.txt",
+        "windows": "pip install -r requirements.txt"
+    },
+    "run a python script {script_name}": {
+        "linux": "python3 {script_name}",
+        "mac": "python3 {script_name}",
+        "windows": "python {script_name}"
+    },
+    "open vscode": {
+        "linux": "code .",
+        "mac": "code .",
+        "windows": "code ."
+    },
+    "clear terminal screen": {
+        "linux": "clear",
+        "mac": "clear",
+        "windows": "cls"
+    },
+    "list installed pip packages": {
+        "linux": "pip list",
+        "mac": "pip list",
+        "windows": "pip list"
+    },
+    "compress {folder_name} into zip": {
+        "linux": "zip -r {folder_name}.zip {folder_name}",
+        "mac": "zip -r {folder_name}.zip {folder_name}",
+        "windows": "Compress-Archive -Path {folder_name} -DestinationPath {folder_name}.zip"
+    },
+    "extract zip archive {zip_name}": {
+        "linux": "unzip {zip_name}",
+        "mac": "unzip {zip_name}",
+        "windows": "Expand-Archive -Path {zip_name} -DestinationPath {zip_name.replace('.zip', '')}"
+    },
+    "switch to root user": {
+        "linux": "sudo su",
+        "mac": "sudo su",
+        "windows": "runas /user:Administrator cmd"
+    },
+    "open notepad": {
+        "windows": "notepad",
+        "linux": "gedit"
+    },
+    "list MySQL databases": {
+        "linux": "mysql -u root -p -e 'SHOW DATABASES;'",
+        "mac": "mysql -u root -p -e 'SHOW DATABASES;'",
+        "windows": "mysql -u root -p -e 'SHOW DATABASES;'"
+    },
+    "backup PostgreSQL database {db_name}": {
+        "linux": "pg_dump -U postgres {db_name} > {db_name}.sql",
+        "mac": "pg_dump -U postgres {db_name} > {db_name}.sql",
+        "windows": "pg_dump -U postgres {db_name} -f {db_name}.sql"
+    },
+    "restore PostgreSQL database {db_name}": {
+        "linux": "psql -U postgres -d {db_name} -f {db_name}.sql",
+        "mac": "psql -U postgres -d {db_name} -f {db_name}.sql",
+        "windows": "psql -U postgres -d {db_name} -f {db_name}.sql"
+    },
+    "create a new MySQL database {db_name}": {
+        "linux": "mysql -u root -p -e 'CREATE DATABASE {db_name};'",
+        "mac": "mysql -u root -p -e 'CREATE DATABASE {db_name};'",
+        "windows": "mysql -u root -p -e 'CREATE DATABASE {db_name};'"
+    },
+    "backup MySQL database {db_name}": {
+        "linux": "mysqldump -u root -p {db_name} > {db_name}.sql",
+        "mac": "mysqldump -u root -p {db_name} > {db_name}.sql",
+        "windows": "mysqldump -u root -p {db_name} > {db_name}.sql"
+    },
+    "restore MySQL database {db_name}": {
+        "linux": "mysql -u root -p {db_name} < {db_name}.sql",
+        "mac": "mysql -u root -p {db_name} < {db_name}.sql",
+        "windows": "mysql -u root -p {db_name} < {db_name}.sql"
+    },
+    "list all running processes": {
+        "linux": "ps aux",
+        "mac": "ps aux",
+        "windows": "tasklist"
+    },
+    "find a process by name {process_name}": {
+        "linux": "ps aux | grep {process_name}",
+        "mac": "ps aux | grep {process_name}",
+        "windows": "tasklist | findstr {process_name}"
+    },
+    "kill a process by PID {pid}": {
+        "linux": "kill {pid}",
+        "mac": "kill {pid}",
+        "windows": "taskkill /PID {pid} /F"
+    },
+    "restart network service": {
+        "linux": "systemctl restart networking",
+        "mac": "sudo ifconfig en0 down; sudo ifconfig en0 up",
+        "windows": "netsh interface set interface name=\"Wi-Fi\" admin=disable && netsh interface set interface name=\"Wi-Fi\" admin=enable"
+    },
+    "check disk usage": {
+        "linux": "df -h",
+        "mac": "df -h",
+        "windows": "wmic logicaldisk get size,freespace,caption"
+    },
+    "create a new user {username}": {
+        "linux": "sudo useradd -m {username}",
+        "mac": "sudo dscl . -create /Users/{username}",
+        "windows": "net user {username} /add"
+    },
+    "delete a user {username}": {
+        "linux": "sudo userdel -r {username}",
+        "mac": "sudo dscl . -delete /Users/{username}",
+        "windows": "net user {username} /delete"
+    },
+    "list all users": {
+        "linux": "cut -d: -f1 /etc/passwd",
+        "mac": "dscl . list /Users",
+        "windows": "net user"
+    },
+   
+    "list open network connections": {
+        "linux": "netstat -tulnp",
+        "mac": "netstat -an",
+        "windows": "netstat -an"
+    },
+    "kill process by PID {pid}": {
+        "linux": "kill -9 {pid}",
+        "mac": "kill -9 {pid}",
+        "windows": "taskkill /PID {pid} /F"
+    },
+    "list running processes": {
+        "linux": "ps aux",
+        "mac": "ps aux",
+        "windows": "tasklist"
+    },
+    "find file {file_name}": {
+        "linux": "find / -name {file_name} 2>/dev/null",
+        "mac": "find / -name {file_name} 2>/dev/null",
+        "windows": "dir /s /b {file_name}"
+    },
+    "compress folder {folder_name}": {
+        "linux": "tar -czvf {folder_name}.tar.gz {folder_name}",
+        "mac": "tar -czvf {folder_name}.tar.gz {folder_name}",
+        "windows": "tar -a -c -f {folder_name}.zip {folder_name}"
+    },
+    "extract archive {archive_name}": {
+        "linux": "tar -xzvf {archive_name}.tar.gz",
+        "mac": "tar -xzvf {archive_name}.tar.gz",
+        "windows": "tar -xf {archive_name}.zip"
+    },
+    "ping a server {server}": {
+        "linux": "ping -c 4 {server}",
+        "mac": "ping -c 4 {server}",
+        "windows": "ping {server}"
+    },
+    "show system uptime": {
+        "linux": "uptime",
+        "mac": "uptime",
+        "windows": "systeminfo | find \"System Boot Time\""
+    },
+    "create a new user {user_name}": {
+        "linux": "sudo adduser {user_name}",
+        "mac": "sudo dscl . -create /Users/{user_name}",
+        "windows": "net user {user_name} /add"
+    },
+    "delete user {user_name}": {
+        "linux": "sudo deluser {user_name}",
+        "mac": "sudo dscl . -delete /Users/{user_name}",
+        "windows": "net user {user_name} /delete"
+    },
+    "update system packages": {
+        "linux": "sudo apt update && sudo apt upgrade -y",
+        "mac": "brew update && brew upgrade",
+        "windows": "winget upgrade --all"
+    },
+    "check current IP address": {
+        "linux": "ip a",
+        "mac": "ifconfig",
+        "windows": "ipconfig"
+    },
+    "restart system": {
+        "linux": "sudo reboot",
+        "mac": "sudo shutdown -r now",
+        "windows": "shutdown /r /t 0"
+    },
+    "shut down system": {
+        "linux": "sudo shutdown -h now",
+        "mac": "sudo shutdown -h now",
+        "windows": "shutdown /s /t 0"
+    },
+    "create a new directory {dir_name}": {
+        "linux": "mkdir {dir_name}",
+        "mac": "mkdir {dir_name}",
+        "windows": "mkdir {dir_name}"
+    },
+    "remove a directory {dir_name}": {
+        "linux": "rm -rf {dir_name}",
+        "mac": "rm -rf {dir_name}",
+        "windows": "rmdir /s /q {dir_name}"
+    },
+    "check running services": {
+        "linux": "systemctl list-units --type=service --state=running",
+        "mac": "launchctl list",
+        "windows": "net start"
+    },
+    "start service {service_name}": {
+        "linux": "sudo systemctl start {service_name}",
+        "mac": "sudo launchctl start {service_name}",
+        "windows": "net start {service_name}"
+    },
+    "stop service {service_name}": {
+        "linux": "sudo systemctl stop {service_name}",
+        "mac": "sudo launchctl stop {service_name}",
+        "windows": "net stop {service_name}"
+    }
+
+
+}
+
+
+    
