@@ -1,0 +1,63 @@
+Metadata-Version: 2.4
+Name: wangsu-sdk-python
+Version: 1.0.0
+Summary: Wangsu SDK for Python
+Home-page: https://github.com/wangsu-api/wangsu-sdk-python
+Author: wangsu-api
+Platform: any
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Information Technology
+Classifier: Intended Audience :: System Administrators
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Python: >=3.6
+License-File: LICENSE
+Requires-Dist: requests>=2.10.0
+Requires-Dist: alibabacloud_tea<1.0.0,>=0.3.3
+Requires-Dist: alibabacloud_tea_openapi<1.0.0,>=0.3.6
+Requires-Dist: alibabacloud_tea_console<1.0.0,>=0.0.1
+Requires-Dist: alibabacloud_tea_util<1.0.0,>=0.3.8
+Dynamic: author
+Dynamic: classifier
+Dynamic: description
+Dynamic: home-page
+Dynamic: license-file
+Dynamic: platform
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+============================
+Wangsu SDK for Python
+============================
+
+Wangsu Python SDK is the official software development kit, which allows Python developers to write software that makes use of Wangsu API services like CDN and Security.
+
+The SDK works on Python versions:
+
+   * 3.6 and greater
+
+Quick Start
+-----------
+First, install the library:
+
+.. code-block:: sh
+
+    $ pip install wangsu-sdk-python
+
+or download source code from github and install:
+
+.. code-block:: sh
+
+    $ git clone https://github.com/wangsu-api/wangsu-sdk-python.git
+    $ cd wangsu-sdk-python
+    $ python setup.py install
