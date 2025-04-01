@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: invoice-tools
+Version: 0.1
+Summary: A simple utility for generating invoices, costs, and durations
+Home-page: https://github.com/yourusername/invoice_tools
+Author: Your Name
+Author-email: your.email@example.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+
+UNKNOWN
+

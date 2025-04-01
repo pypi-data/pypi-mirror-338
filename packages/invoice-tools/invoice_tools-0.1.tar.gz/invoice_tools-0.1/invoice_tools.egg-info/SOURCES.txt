@@ -1,0 +1,6 @@
+README.md
+setup.py
+invoice_tools.egg-info/PKG-INFO
+invoice_tools.egg-info/SOURCES.txt
+invoice_tools.egg-info/dependency_links.txt
+invoice_tools.egg-info/top_level.txt
