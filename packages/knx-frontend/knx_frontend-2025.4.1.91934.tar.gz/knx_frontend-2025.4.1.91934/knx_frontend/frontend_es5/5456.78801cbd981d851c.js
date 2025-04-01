@@ -1,0 +1,859 @@
+/*! For license information please see 5456.78801cbd981d851c.js.LICENSE.txt */
+"use strict";(self.webpackChunkknx_frontend=self.webpackChunkknx_frontend||[]).push([["5456"],{14920:function(e,t,i){i.d(t,{P:()=>a});const a=e=>e.preventDefault()},80058:function(e,t,i){i.d(t,{J:()=>s,_:()=>n});i(9359),i(52924),i(19134),i(5740);const a=/{%|{{/,s=e=>a.test(e),n=e=>{if(!e)return!1;if("string"==typeof e)return s(e);if("object"==typeof e){return(Array.isArray(e)?e:Object.values(e)).some((e=>e&&n(e)))}return!1}},68061:function(e,t,i){i.d(t,{v:()=>a});i(71695),i(69235),i(12385),i(19134),i(32517),i(11740),i(92519),i(42179),i(89256),i(24931),i(88463),i(57449),i(19814),i(47021);const a=(e,t)=>{if(e===t)return!0;if(e&&t&&"object"==typeof e&&"object"==typeof t){if(e.constructor!==t.constructor)return!1;let i,s;if(Array.isArray(e)){if(s=e.length,s!==t.length)return!1;for(i=s;0!=i--;)if(!a(e[i],t[i]))return!1;return!0}if(e instanceof Map&&t instanceof Map){if(e.size!==t.size)return!1;for(i of e.entries())if(!t.has(i[0]))return!1;for(i of e.entries())if(!a(i[1],t.get(i[0])))return!1;return!0}if(e instanceof Set&&t instanceof Set){if(e.size!==t.size)return!1;for(i of e.entries())if(!t.has(i[0]))return!1;return!0}if(ArrayBuffer.isView(e)&&ArrayBuffer.isView(t)){if(s=e.length,s!==t.length)return!1;for(i=s;0!=i--;)if(e[i]!==t[i])return!1;return!0}if(e.constructor===RegExp)return e.source===t.source&&e.flags===t.flags;if(e.valueOf!==Object.prototype.valueOf)return e.valueOf()===t.valueOf();if(e.toString!==Object.prototype.toString)return e.toString()===t.toString();const n=Object.keys(e);if(s=n.length,s!==Object.keys(t).length)return!1;for(i=s;0!=i--;)if(!Object.prototype.hasOwnProperty.call(t,n[i]))return!1;for(i=s;0!=i--;){const s=n[i];if(!a(e[s],t[s]))return!1}return!0}return e!=e&&t!=t}},87902:function(e,t,i){var a=i(73577),s=i(50778),n=i(47208),r=i(82687);(0,a.Z)([(0,s.Mo)("ha-device-trigger-picker")],(function(e,t){return{F:class extends t{constructor(){super(n.KL,n.r3,(e=>({device_id:e||"",trigger:"device",domain:"",entity_id:""}))),e(this)}},d:[{kind:"get",key:"NO_AUTOMATION_TEXT",value:function(){return this.hass.localize("ui.panel.config.devices.automation.triggers.no_triggers")}},{kind:"get",key:"UNKNOWN_AUTOMATION_TEXT",value:function(){return this.hass.localize("ui.panel.config.devices.automation.triggers.unknown_trigger")}}]}}),r.g)},28368:function(e,t,i){var a=i(73577),s=i(72621),n=(i(71695),i(40251),i(47021),i(57243)),r=i(93958),o=i(97536),d=i(46289),l=i(50778),u=i(11297);let c,h=e=>e;(0,a.Z)([(0,l.Mo)("ha-check-list-item")],(function(e,t){class i extends t{constructor(...t){super(...t),e(this)}}return{F:i,d:[{kind:"method",key:"onChange",value:async function(e){(0,s.Z)(i,"onChange",this,3)([e]),(0,u.B)(this,e.type)}},{kind:"field",static:!0,key:"styles",value(){return[d.W,o.W,(0,n.iv)(c||(c=h`
+      :host {
+        --mdc-theme-secondary: var(--primary-color);
+      }
+
+      :host([graphic="avatar"]) .mdc-deprecated-list-item__graphic,
+      :host([graphic="medium"]) .mdc-deprecated-list-item__graphic,
+      :host([graphic="large"]) .mdc-deprecated-list-item__graphic,
+      :host([graphic="control"]) .mdc-deprecated-list-item__graphic {
+        margin-inline-end: var(--mdc-list-item-graphic-margin, 16px);
+        margin-inline-start: 0px;
+        direction: var(--direction);
+      }
+      .mdc-deprecated-list-item__meta {
+        flex-shrink: 0;
+        direction: var(--direction);
+        margin-inline-start: auto;
+        margin-inline-end: 0;
+      }
+      .mdc-deprecated-list-item__graphic {
+        margin-top: var(--check-list-item-graphic-margin-top);
+      }
+      :host([graphic="icon"]) .mdc-deprecated-list-item__graphic {
+        margin-inline-start: 0;
+        margin-inline-end: var(--mdc-list-item-graphic-margin, 32px);
+      }
+    `))]}}]}}),r.F)},12328:function(e,t,i){i.d(t,{x:()=>a});i(63721),i(52247),i(9359),i(31526);const a=e=>{const t={};return e.forEach((e=>{var i,s;if(void 0!==(null===(i=e.description)||void 0===i?void 0:i.suggested_value)&&null!==(null===(s=e.description)||void 0===s?void 0:s.suggested_value))t[e.name]=e.description.suggested_value;else if("default"in e)t[e.name]=e.default;else if("expandable"===e.type){const i=a(e.schema);(e.required||Object.keys(i).length)&&(t[e.name]=i)}else if(e.required){if("boolean"===e.type)t[e.name]=!1;else if("string"===e.type)t[e.name]="";else if("integer"===e.type)t[e.name]="valueMin"in e?e.valueMin:0;else if("constant"===e.type)t[e.name]=e.value;else if("float"===e.type)t[e.name]=0;else if("select"===e.type){if(e.options.length){const i=e.options[0];t[e.name]=Array.isArray(i)?i[0]:i}}else if("positive_time_period_dict"===e.type)t[e.name]={hours:0,minutes:0,seconds:0};else if("selector"in e){const i=e.selector;var n;if("device"in i)t[e.name]=null!==(n=i.device)&&void 0!==n&&n.multiple?[]:"";else if("entity"in i){var r;t[e.name]=null!==(r=i.entity)&&void 0!==r&&r.multiple?[]:""}else if("area"in i){var o;t[e.name]=null!==(o=i.area)&&void 0!==o&&o.multiple?[]:""}else if("label"in i){var d;t[e.name]=null!==(d=i.label)&&void 0!==d&&d.multiple?[]:""}else if("boolean"in i)t[e.name]=!1;else if("addon"in i||"attribute"in i||"file"in i||"icon"in i||"template"in i||"text"in i||"theme"in i||"object"in i)t[e.name]="";else if("number"in i){var l,u;t[e.name]=null!==(l=null===(u=i.number)||void 0===u?void 0:u.min)&&void 0!==l?l:0}else if("select"in i){var c;if(null!==(c=i.select)&&void 0!==c&&c.options.length){const a=i.select.options[0],s="string"==typeof a?a:a.value;t[e.name]=i.select.multiple?[s]:s}}else if("country"in i){var h;null!==(h=i.country)&&void 0!==h&&null!==(h=h.countries)&&void 0!==h&&h.length&&(t[e.name]=i.country.countries[0])}else if("language"in i){var g;null!==(g=i.language)&&void 0!==g&&null!==(g=g.languages)&&void 0!==g&&g.length&&(t[e.name]=i.language.languages[0])}else if("duration"in i)t[e.name]={hours:0,minutes:0,seconds:0};else if("time"in i)t[e.name]="00:00:00";else if("date"in i||"datetime"in i){const i=(new Date).toISOString().slice(0,10);t[e.name]=`${i}T00:00:00`}else if("color_rgb"in i)t[e.name]=[0,0,0];else if("color_temp"in i){var v,p;t[e.name]=null!==(v=null===(p=i.color_temp)||void 0===p?void 0:p.min_mireds)&&void 0!==v?v:153}else if("action"in i||"trigger"in i||"condition"in i)t[e.name]=[];else{if(!("media"in i)&&!("target"in i))throw new Error(`Selector ${Object.keys(i)[0]} not supported in initial form data`);t[e.name]={}}}}else;})),t}},89348:function(e,t,i){var a=i(73577),s=i(72621),n=(i(19083),i(71695),i(9359),i(56475),i(1331),i(70104),i(40251),i(61006),i(47021),i(57243)),r=i(50778),o=(i(68107),i(57708)),d=i(45779);const l={},u=(0,d.XM)(class extends d.Xe{constructor(){super(...arguments),this.st=l}render(e,t){return t()}update(e,[t,i]){if(Array.isArray(t)){if(Array.isArray(this.st)&&this.st.length===t.length&&t.every(((e,t)=>e===this.st[t])))return o.Jb}else if(this.st===t)return o.Jb;return this.st=Array.isArray(t)?Array.from(t):t,this.render(t,i)}});var c=i(27486),h=i(11297);i(92745),i(19423),i(81804);const g=async e=>e.callWS({type:"config/auth/list"});i(59897),i(61893),i(87319);var v=i(32770),p=(i(58130),i(35359)),m=i(46799),f=i(43420);let y,_,k,b=e=>e;(0,a.Z)([(0,r.Mo)("ha-user-badge")],(function(e,t){class i extends t{constructor(...t){super(...t),e(this)}}return{F:i,d:[{kind:"field",decorators:[(0,r.Cb)({attribute:!1})],key:"hass",value:void 0},{kind:"field",decorators:[(0,r.Cb)({attribute:!1})],key:"user",value:void 0},{kind:"field",decorators:[(0,r.SB)()],key:"_personPicture",value:void 0},{kind:"field",key:"_personEntityId",value:void 0},{kind:"method",key:"willUpdate",value:function(e){if((0,s.Z)(i,"willUpdate",this,3)([e]),e.has("user"))return void this._getPersonPicture();const t=e.get("hass");if(this._personEntityId&&t&&this.hass.states[this._personEntityId]!==t.states[this._personEntityId]){const e=this.hass.states[this._personEntityId];e?this._personPicture=e.attributes.entity_picture:this._getPersonPicture()}else!this._personEntityId&&t&&this._getPersonPicture()}},{kind:"method",key:"render",value:function(){if(!this.hass||!this.user)return n.Ld;const e=this._personPicture;if(e)return(0,n.dy)(y||(y=b`<div
+        style=${0}
+        class="picture"
+      ></div>`),(0,m.V)({backgroundImage:`url(${this.hass.hassUrl(e)})`}));const t=(i=this.user.name)?i.trim().split(" ").slice(0,3).map((e=>e.substring(0,1))).join(""):"?";var i;return(0,n.dy)(_||(_=b`<div
+      class="initials ${0}"
+    >
+      ${0}
+    </div>`),(0,p.$)({long:t.length>2}),t)}},{kind:"method",key:"_getPersonPicture",value:function(){if(this._personEntityId=void 0,this._personPicture=void 0,this.hass&&this.user)for(const e of Object.values(this.hass.states))if(e.attributes.user_id===this.user.id&&"person"===(0,f.N)(e)){this._personEntityId=e.entity_id,this._personPicture=e.attributes.entity_picture;break}}},{kind:"field",static:!0,key:"styles",value(){return(0,n.iv)(k||(k=b`
+    :host {
+      display: contents;
+    }
+    .picture {
+      width: 40px;
+      height: 40px;
+      background-size: cover;
+      border-radius: 50%;
+    }
+    .initials {
+      display: inline-block;
+      box-sizing: border-box;
+      width: 40px;
+      line-height: 40px;
+      border-radius: 50%;
+      text-align: center;
+      background-color: var(--light-primary-color);
+      text-decoration: none;
+      color: var(--text-light-primary-color, var(--primary-text-color));
+      overflow: hidden;
+    }
+    .initials.long {
+      font-size: 80%;
+    }
+  `))}}]}}),n.oi);i(74064);let $,C,x,w,L=e=>e,A=(0,a.Z)(null,(function(e,t){class i extends t{constructor(...t){super(...t),e(this)}}return{F:i,d:[{kind:"field",key:"hass",value:void 0},{kind:"field",decorators:[(0,r.Cb)()],key:"label",value:void 0},{kind:"field",decorators:[(0,r.Cb)({attribute:!1})],key:"noUserLabel",value:void 0},{kind:"field",decorators:[(0,r.Cb)()],key:"value",value(){return""}},{kind:"field",decorators:[(0,r.Cb)({attribute:!1})],key:"users",value:void 0},{kind:"field",decorators:[(0,r.Cb)({type:Boolean})],key:"disabled",value(){return!1}},{kind:"field",key:"_sortedUsers",value(){return(0,c.Z)((e=>e?e.filter((e=>!e.system_generated)).sort(((e,t)=>(0,v.$K)(e.name,t.name,this.hass.locale.language))):[]))}},{kind:"method",key:"render",value:function(){var e,t;return(0,n.dy)($||($=L`
+      <ha-select
+        .label=${0}
+        .disabled=${0}
+        .value=${0}
+        @selected=${0}
+      >
+        ${0}
+        ${0}
+      </ha-select>
+    `),this.label,this.disabled,this.value,this._userChanged,0===(null===(e=this.users)||void 0===e?void 0:e.length)?(0,n.dy)(C||(C=L`<mwc-list-item value="">
+              ${0}
+            </mwc-list-item>`),this.noUserLabel||(null===(t=this.hass)||void 0===t?void 0:t.localize("ui.components.user-picker.no_user"))):"",this._sortedUsers(this.users).map((e=>(0,n.dy)(x||(x=L`
+            <ha-list-item graphic="avatar" .value=${0}>
+              <ha-user-badge
+                .hass=${0}
+                .user=${0}
+                slot="graphic"
+              ></ha-user-badge>
+              ${0}
+            </ha-list-item>
+          `),e.id,this.hass,e,e.name))))}},{kind:"method",key:"firstUpdated",value:function(e){(0,s.Z)(i,"firstUpdated",this,3)([e]),void 0===this.users&&g(this.hass).then((e=>{this.users=e}))}},{kind:"method",key:"_userChanged",value:function(e){const t=e.target.value;t!==this.value&&(this.value=t,setTimeout((()=>{(0,h.B)(this,"value-changed",{value:t}),(0,h.B)(this,"change")}),0))}},{kind:"field",static:!0,key:"styles",value(){return(0,n.iv)(w||(w=L`
+    :host {
+      display: inline-block;
+    }
+    mwc-list {
+      display: block;
+    }
+  `))}}]}}),n.oi);customElements.define("ha-user-picker",A);let M,z,B,V=e=>e;(0,a.Z)([(0,r.Mo)("ha-users-picker")],(function(e,t){class i extends t{constructor(...t){super(...t),e(this)}}return{F:i,d:[{kind:"field",decorators:[(0,r.Cb)({attribute:!1})],key:"hass",value:void 0},{kind:"field",decorators:[(0,r.Cb)({attribute:!1})],key:"value",value:void 0},{kind:"field",decorators:[(0,r.Cb)({attribute:"picked-user-label"})],key:"pickedUserLabel",value:void 0},{kind:"field",decorators:[(0,r.Cb)({attribute:"pick-user-label"})],key:"pickUserLabel",value:void 0},{kind:"field",decorators:[(0,r.Cb)({attribute:!1})],key:"users",value:void 0},{kind:"field",decorators:[(0,r.Cb)({type:Boolean})],key:"disabled",value(){return!1}},{kind:"method",key:"firstUpdated",value:function(e){(0,s.Z)(i,"firstUpdated",this,3)([e]),void 0===this.users&&g(this.hass).then((e=>{this.users=e}))}},{kind:"method",key:"render",value:function(){if(!this.hass||!this.users)return n.Ld;const e=this._notSelectedUsers(this.users,this.value);return(0,n.dy)(M||(M=V`
+      ${0}
+      <ha-user-picker
+        .label=${0}
+        .hass=${0}
+        .users=${0}
+        .disabled=${0}
+        @value-changed=${0}
+      ></ha-user-picker>
+    `),u([e],(()=>{var t;return null===(t=this.value)||void 0===t?void 0:t.map(((t,i)=>(0,n.dy)(z||(z=V`
+            <div>
+              <ha-user-picker
+                .label=${0}
+                .noUserLabel=${0}
+                .index=${0}
+                .hass=${0}
+                .value=${0}
+                .users=${0}
+                .disabled=${0}
+                @value-changed=${0}
+              ></ha-user-picker>
+              <ha-icon-button
+                .userId=${0}
+                .label=${0}
+                .path=${0}
+                @click=${0}
+              >
+                ></ha-icon-button
+              >
+            </div>
+          `),this.pickedUserLabel,this.hass.localize("ui.components.user-picker.remove_user"),i,this.hass,t,this._notSelectedUsersAndSelected(t,this.users,e),this.disabled,this._userChanged,t,this.hass.localize("ui.components.user-picker.remove_user"),"M19,6.41L17.59,5L12,10.59L6.41,5L5,6.41L10.59,12L5,17.59L6.41,19L12,13.41L17.59,19L19,17.59L13.41,12L19,6.41Z",this._removeUser)))})),this.pickUserLabel||this.hass.localize("ui.components.user-picker.add_user"),this.hass,e,this.disabled||!(null!=e&&e.length),this._addUser)}},{kind:"field",key:"_notSelectedUsers",value(){return(0,c.Z)(((e,t)=>t?null==e?void 0:e.filter((e=>!e.system_generated&&!t.includes(e.id))):null==e?void 0:e.filter((e=>!e.system_generated))))}},{kind:"field",key:"_notSelectedUsersAndSelected",value(){return(e,t,i)=>{const a=null==t?void 0:t.find((t=>t.id===e));return a?i?[...i,a]:[a]:i}}},{kind:"get",key:"_currentUsers",value:function(){return this.value||[]}},{kind:"method",key:"_updateUsers",value:async function(e){this.value=e,(0,h.B)(this,"value-changed",{value:e})}},{kind:"method",key:"_userChanged",value:function(e){e.stopPropagation();const t=e.currentTarget.index,i=e.detail.value,a=[...this._currentUsers];""===i?a.splice(t,1):a.splice(t,1,i),this._updateUsers(a)}},{kind:"method",key:"_addUser",value:async function(e){e.stopPropagation();const t=e.detail.value;if(e.currentTarget.value="",!t)return;const i=this._currentUsers;i.includes(t)||this._updateUsers([...i,t])}},{kind:"method",key:"_removeUser",value:function(e){const t=e.currentTarget.userId;this._updateUsers(this._currentUsers.filter((e=>e!==t)))}},{kind:"field",static:!0,key:"styles",value(){return(0,n.iv)(B||(B=V`
+    :host {
+      display: block;
+    }
+    div {
+      display: flex;
+      align-items: center;
+    }
+  `))}}]}}),n.oi)},1284:function(e,t,i){i.a(e,(async function(e,a){try{i.d(t,{a:()=>te});var s=i(73577),n=i(72621),r=(i(71695),i(9359),i(70104),i(19423),i(40251),i(47021),i(60738)),o=i(57243),d=i(50778),l=i(35359),u=i(90842),c=i(38653),h=i(11297),g=i(14920),v=i(81036),p=i(81928),m=i(5280),f=i(56587),y=(i(17949),i(43745),i(88002),i(98094),i(1192),i(2383),i(59897),i(70596),i(74064),i(88241)),_=i(28273),k=i(34290),b=i(61339),$=i(92777),C=i(4557),x=i(66193),w=(i(24285),i(44348),i(44337)),L=i(66296),A=(i(45111),i(10282),i(65242)),M=(i(76174),i(29666),i(31147),i(35848),i(9241),i(30944),i(9342),i(52696),i(77652),i(23137)),z=i(94757),B=e([w,L,A,M,z,_]);[w,L,A,M,z,_]=B.then?(await B)():B;let V,O,H,j,U,Z,T,P,I,E,S,F=e=>e;const q="M11,4H13V16L18.5,10.5L19.92,11.92L12,19.84L4.08,11.92L5.5,10.5L11,16V4Z",R="M13,20H11V8L5.5,13.5L4.08,12.08L12,4.16L19.92,12.08L18.5,13.5L13,8V20Z",N="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z",D="M19,3L13,9L15,11L22,4V3M12,12.5A0.5,0.5 0 0,1 11.5,12A0.5,0.5 0 0,1 12,11.5A0.5,0.5 0 0,1 12.5,12A0.5,0.5 0 0,1 12,12.5M6,20A2,2 0 0,1 4,18C4,16.89 4.9,16 6,16A2,2 0 0,1 8,18C8,19.11 7.1,20 6,20M6,8A2,2 0 0,1 4,6C4,4.89 4.9,4 6,4A2,2 0 0,1 8,6C8,7.11 7.1,8 6,8M9.64,7.64C9.87,7.14 10,6.59 10,6A4,4 0 0,0 6,2A4,4 0 0,0 2,6A4,4 0 0,0 6,10C6.59,10 7.14,9.87 7.64,9.64L10,12L7.64,14.36C7.14,14.13 6.59,14 6,14A4,4 0 0,0 2,18A4,4 0 0,0 6,22A4,4 0 0,0 10,18C10,17.41 9.87,16.86 9.64,16.36L12,14L19,21H22V20L9.64,7.64Z",W="M11,17H4A2,2 0 0,1 2,15V3A2,2 0 0,1 4,1H16V3H4V15H11V13L15,16L11,19V17M19,21V7H8V13H6V7A2,2 0 0,1 8,5H19A2,2 0 0,1 21,7V21A2,2 0 0,1 19,23H8A2,2 0 0,1 6,21V19H8V21H19Z",G="M19,4H15.5L14.5,3H9.5L8.5,4H5V6H19M6,19A2,2 0 0,0 8,21H16A2,2 0 0,0 18,19V7H6V19Z",K="M12,16A2,2 0 0,1 14,18A2,2 0 0,1 12,20A2,2 0 0,1 10,18A2,2 0 0,1 12,16M12,10A2,2 0 0,1 14,12A2,2 0 0,1 12,14A2,2 0 0,1 10,12A2,2 0 0,1 12,10M12,4A2,2 0 0,1 14,6A2,2 0 0,1 12,8A2,2 0 0,1 10,6A2,2 0 0,1 12,4Z",X="M10 7V9H9V15H10V17H6V15H7V9H6V7H10M16 7C17.11 7 18 7.9 18 9V15C18 16.11 17.11 17 16 17H12V7M16 9H14V15H16V9Z",Y="M12,20C7.59,20 4,16.41 4,12C4,7.59 7.59,4 12,4C16.41,4 20,7.59 20,12C20,16.41 16.41,20 12,20M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M10,16.5L16,12L10,7.5V16.5Z",J="M3 6V8H14V6H3M3 10V12H14V10H3M20 10.1C19.9 10.1 19.7 10.2 19.6 10.3L18.6 11.3L20.7 13.4L21.7 12.4C21.9 12.2 21.9 11.8 21.7 11.6L20.4 10.3C20.3 10.2 20.2 10.1 20 10.1M18.1 11.9L12 17.9V20H14.1L20.2 13.9L18.1 11.9M3 14V16H10V14H3Z",Q="M18,17H10.5L12.5,15H18M6,17V14.5L13.88,6.65C14.07,6.45 14.39,6.45 14.59,6.65L16.35,8.41C16.55,8.61 16.55,8.92 16.35,9.12L8.47,17M19,3H5C3.89,3 3,3.89 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V5C21,3.89 20.1,3 19,3Z",ee="M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M12,4C16.41,4 20,7.59 20,12C20,16.41 16.41,20 12,20C7.59,20 4,16.41 4,12C4,7.59 7.59,4 12,4M9,9V15H15V9",te=(e,t)=>{var i,a,s;t.stopPropagation();const n=null===(i=t.currentTarget)||void 0===i?void 0:i.name;if(!n)return;const r=(null===(a=t.detail)||void 0===a?void 0:a.value)||(null===(s=t.currentTarget)||void 0===s?void 0:s.value);if((e.trigger[n]||"")===r)return;let o;void 0===r||""===r?(o=Object.assign({},e.trigger),delete o[n]):o=Object.assign(Object.assign({},e.trigger),{},{[n]:r}),(0,h.B)(e,"value-changed",{value:o})};(0,s.Z)([(0,d.Mo)("ha-automation-trigger-row")],(function(e,t){class i extends t{constructor(...t){super(...t),e(this)}}return{F:i,d:[{kind:"field",decorators:[(0,d.Cb)({attribute:!1})],key:"hass",value:void 0},{kind:"field",decorators:[(0,d.Cb)({attribute:!1})],key:"trigger",value:void 0},{kind:"field",decorators:[(0,d.Cb)({type:Boolean})],key:"disabled",value(){return!1}},{kind:"field",decorators:[(0,d.Cb)({type:Boolean})],key:"first",value:void 0},{kind:"field",decorators:[(0,d.Cb)({type:Boolean})],key:"last",value:void 0},{kind:"field",decorators:[(0,d.SB)()],key:"_warnings",value:void 0},{kind:"field",decorators:[(0,d.SB)()],key:"_yamlMode",value(){return!1}},{kind:"field",decorators:[(0,d.SB)()],key:"_requestShowId",value(){return!1}},{kind:"field",decorators:[(0,d.SB)()],key:"_triggered",value:void 0},{kind:"field",decorators:[(0,d.SB)()],key:"_triggerColor",value(){return!1}},{kind:"field",decorators:[(0,d.IO)("ha-yaml-editor")],key:"_yamlEditor",value:void 0},{kind:"field",decorators:[(0,u.t)({key:"automationClipboard",state:!1,subscribe:!0,storage:"sessionStorage"})],key:"_clipboard",value:void 0},{kind:"field",decorators:[(0,d.SB)(),(0,r.F_)({context:b.we,subscribe:!0})],key:"_entityReg",value:void 0},{kind:"field",key:"_triggerUnsub",value:void 0},{kind:"method",key:"render",value:function(){if(!this.trigger)return o.Ld;const e=(0,$.j2)(this.trigger)?"list":this.trigger.trigger,t=void 0!==customElements.get(`ha-automation-trigger-${e}`),i=this._yamlMode||!t,a="id"in this.trigger||this._requestShowId;return(0,o.dy)(V||(V=F`
+      <ha-card outlined>
+        ${0}
+
+        <ha-expansion-panel left-chevron>
+          <ha-svg-icon
+            slot="leading-icon"
+            class="trigger-icon"
+            .path=${0}
+          ></ha-svg-icon>
+          <h3 slot="header">
+            ${0}
+          </h3>
+
+          <slot name="icons" slot="icons"></slot>
+
+          <ha-md-button-menu
+            slot="icons"
+            @click=${0}
+            @keydown=${0}
+            @closed=${0}
+            positioning="fixed"
+          >
+            <ha-icon-button
+              slot="trigger"
+              .label=${0}
+              .path=${0}
+            ></ha-icon-button>
+
+            <ha-md-menu-item
+              .clickAction=${0}
+              .disabled=${0}
+            >
+              ${0}
+              <ha-svg-icon slot="start" .path=${0}></ha-svg-icon>
+            </ha-md-menu-item>
+
+            <ha-md-menu-item
+              .clickAction=${0}
+              .disabled=${0}
+            >
+              ${0}
+              <ha-svg-icon slot="start" .path=${0}></ha-svg-icon>
+            </ha-md-menu-item>
+
+            <ha-md-divider role="separator" tabindex="-1"></ha-md-divider>
+
+            <ha-md-menu-item
+              .clickAction=${0}
+              .disabled=${0}
+            >
+              ${0}
+              <ha-svg-icon
+                slot="start"
+                .path=${0}
+              ></ha-svg-icon>
+            </ha-md-menu-item>
+
+            <ha-md-menu-item
+              .clickAction=${0}
+              .disabled=${0}
+            >
+              ${0}
+              <ha-svg-icon slot="start" .path=${0}></ha-svg-icon>
+            </ha-md-menu-item>
+
+            <ha-md-menu-item
+              .clickAction=${0}
+              .disabled=${0}
+            >
+              ${0}
+              <ha-svg-icon slot="start" .path=${0}></ha-svg-icon>
+            </ha-md-menu-item>
+
+            <ha-md-menu-item
+              .clickAction=${0}
+              .disabled=${0}
+            >
+              ${0}
+              <ha-svg-icon slot="start" .path=${0}></ha-svg-icon
+            ></ha-md-menu-item>
+
+            <ha-md-menu-item
+              .clickAction=${0}
+              .disabled=${0}
+            >
+              ${0}
+              <ha-svg-icon slot="start" .path=${0}></ha-svg-icon
+            ></ha-md-menu-item>
+
+            <ha-md-menu-item
+              .clickAction=${0}
+              .disabled=${0}
+            >
+              ${0}
+              <ha-svg-icon slot="start" .path=${0}></ha-svg-icon>
+            </ha-md-menu-item>
+
+            <ha-md-divider role="separator" tabindex="-1"></ha-md-divider>
+
+            <ha-md-menu-item
+              .clickAction=${0}
+              .disabled=${0}
+            >
+              ${0}
+              <ha-svg-icon
+                slot="start"
+                .path=${0}
+              ></ha-svg-icon>
+            </ha-md-menu-item>
+            <ha-md-menu-item
+              .clickAction=${0}
+              class="warning"
+              .disabled=${0}
+            >
+              ${0}
+              <ha-svg-icon
+                class="warning"
+                slot="start"
+                .path=${0}
+              ></ha-svg-icon>
+            </ha-md-menu-item>
+          </ha-md-button-menu>
+
+          <div
+            class=${0}
+          >
+            ${0}
+            ${0}
+          </div>
+        </ha-expansion-panel>
+
+        <div
+          class="triggered ${0}"
+          @click=${0}
+        >
+          ${0}
+        </div>
+      </ha-card>
+    `),"enabled"in this.trigger&&!1===this.trigger.enabled?(0,o.dy)(O||(O=F`
+              <div class="disabled-bar">
+                ${0}
+              </div>
+            `),this.hass.localize("ui.panel.config.automation.editor.actions.disabled")):o.Ld,$.uW[e],(0,_.R)(this.trigger,this.hass,this._entityReg),g.P,v.U,v.U,this.hass.localize("ui.common.menu"),K,this._renameTrigger,this.disabled||"list"===e,this.hass.localize("ui.panel.config.automation.editor.triggers.rename"),Q,this._showTriggerId,this.disabled||"list"===e,this.hass.localize("ui.panel.config.automation.editor.triggers.edit_id"),X,this._duplicateTrigger,this.disabled,this.hass.localize("ui.panel.config.automation.editor.triggers.duplicate"),W,this._copyTrigger,this.disabled,this.hass.localize("ui.panel.config.automation.editor.triggers.copy"),N,this._cutTrigger,this.disabled,this.hass.localize("ui.panel.config.automation.editor.triggers.cut"),D,this._moveUp,this.disabled||this.first,this.hass.localize("ui.panel.config.automation.editor.move_up"),R,this._moveDown,this.disabled||this.last,this.hass.localize("ui.panel.config.automation.editor.move_down"),q,this._toggleYamlMode,!t,this.hass.localize("ui.panel.config.automation.editor.edit_"+(i?"ui":"yaml")),J,this._onDisable,this.disabled||"list"===e,"enabled"in this.trigger&&!1===this.trigger.enabled?this.hass.localize("ui.panel.config.automation.editor.actions.enable"):this.hass.localize("ui.panel.config.automation.editor.actions.disable"),"enabled"in this.trigger&&!1===this.trigger.enabled?Y:ee,this._onDelete,this.disabled,this.hass.localize("ui.panel.config.automation.editor.actions.delete"),G,(0,l.$)({"card-content":!0,disabled:"enabled"in this.trigger&&!1===this.trigger.enabled}),this._warnings?(0,o.dy)(H||(H=F`<ha-alert
+                  alert-type="warning"
+                  .title=${0}
+                >
+                  ${0}
+                  ${0}
+                </ha-alert>`),this.hass.localize("ui.errors.config.editor_not_supported"),this._warnings.length&&void 0!==this._warnings[0]?(0,o.dy)(j||(j=F` <ul>
+                        ${0}
+                      </ul>`),this._warnings.map((e=>(0,o.dy)(U||(U=F`<li>${0}</li>`),e)))):"",this.hass.localize("ui.errors.config.edit_in_yaml_supported")):"",i?(0,o.dy)(Z||(Z=F`
+                  ${0}
+                  <ha-yaml-editor
+                    .hass=${0}
+                    .defaultValue=${0}
+                    .readOnly=${0}
+                    @value-changed=${0}
+                  ></ha-yaml-editor>
+                `),t?"":(0,o.dy)(T||(T=F`
+                        ${0}
+                      `),this.hass.localize("ui.panel.config.automation.editor.triggers.unsupported_platform",{platform:e})),this.hass,this.trigger,this.disabled,this._onYamlChange):(0,o.dy)(P||(P=F`
+                  ${0}
+                  <div
+                    @ui-mode-not-available=${0}
+                    @value-changed=${0}
+                  >
+                    ${0}
+                  </div>
+                `),a&&!(0,$.j2)(this.trigger)?(0,o.dy)(I||(I=F`
+                        <ha-textfield
+                          .label=${0}
+                          .value=${0}
+                          .disabled=${0}
+                          @change=${0}
+                        >
+                        </ha-textfield>
+                      `),this.hass.localize("ui.panel.config.automation.editor.triggers.id"),this.trigger.id||"",this.disabled,this._idChanged):"",this._handleUiModeNotAvailable,this._onUiChanged,(0,c.h)(`ha-automation-trigger-${e}`,{hass:this.hass,trigger:this.trigger,disabled:this.disabled})),(0,l.$)({active:void 0!==this._triggered,accent:this._triggerColor}),this._showTriggeredInfo,this.hass.localize("ui.panel.config.automation.editor.triggers.triggered"))}},{kind:"method",key:"updated",value:function(e){(0,n.Z)(i,"updated",this,3)([e]),e.has("trigger")&&this._subscribeTrigger()}},{kind:"method",key:"connectedCallback",value:function(){(0,n.Z)(i,"connectedCallback",this,3)([]),this.hasUpdated&&this.trigger&&this._subscribeTrigger()}},{kind:"method",key:"disconnectedCallback",value:function(){(0,n.Z)(i,"disconnectedCallback",this,3)([]),this._triggerUnsub&&(this._triggerUnsub.then((e=>e())),this._triggerUnsub=void 0),this._doSubscribeTrigger.cancel()}},{kind:"method",key:"_subscribeTrigger",value:function(){this._triggerUnsub&&(this._triggerUnsub.then((e=>e())),this._triggerUnsub=void 0),this._doSubscribeTrigger()}},{kind:"field",key:"_doSubscribeTrigger",value(){return(0,f.D)((async()=>{let e;const t=this.trigger;this._triggerUnsub&&(this._triggerUnsub.then((e=>e())),this._triggerUnsub=void 0);if(!(await(0,k.w)(this.hass,{triggers:t})).triggers.valid||this.trigger!==t)return;const i=(0,y.Xm)(this.hass,(t=>{void 0!==e?(clearTimeout(e),this._triggerColor=!this._triggerColor):this._triggerColor=!1,this._triggered=t,e=window.setTimeout((()=>{this._triggered=void 0,e=void 0}),5e3)}),t);i.catch((()=>{this._triggerUnsub===i&&(this._triggerUnsub=void 0)})),this._triggerUnsub=i}),5e3)}},{kind:"method",key:"_handleUiModeNotAvailable",value:function(e){this._warnings=(0,m.p)(this.hass,e.detail).warnings,this._yamlMode||(this._yamlMode=!0)}},{kind:"method",key:"_setClipboard",value:function(){this._clipboard=Object.assign(Object.assign({},this._clipboard),{},{trigger:this.trigger})}},{kind:"field",key:"_onDelete",value(){return()=>{(0,C.g7)(this,{title:this.hass.localize("ui.panel.config.automation.editor.triggers.delete_confirm_title"),text:this.hass.localize("ui.panel.config.automation.editor.triggers.delete_confirm_text"),dismissText:this.hass.localize("ui.common.cancel"),confirmText:this.hass.localize("ui.common.delete"),destructive:!0,confirm:()=>{(0,h.B)(this,"value-changed",{value:null})}})}}},{kind:"field",key:"_onDisable",value(){return()=>{var e;if((0,$.j2)(this.trigger))return;const t=!(null===(e=this.trigger.enabled)||void 0===e||e),i=Object.assign(Object.assign({},this.trigger),{},{enabled:t});var a;((0,h.B)(this,"value-changed",{value:i}),this._yamlMode)&&(null===(a=this._yamlEditor)||void 0===a||a.setValue(i))}}},{kind:"method",key:"_idChanged",value:function(e){var t;if((0,$.j2)(this.trigger))return;const i=e.target.value;if(i===(null!==(t=this.trigger.id)&&void 0!==t?t:""))return;this._requestShowId=!0;const a=Object.assign({},this.trigger);i?a.id=i:delete a.id,(0,h.B)(this,"value-changed",{value:a})}},{kind:"method",key:"_onYamlChange",value:function(e){e.stopPropagation(),e.detail.isValid&&(this._warnings=void 0,(0,h.B)(this,"value-changed",{value:(0,y.W9)(e.detail.value)}))}},{kind:"method",key:"_onUiChanged",value:function(e){if((0,$.j2)(this.trigger))return;e.stopPropagation();const t=Object.assign(Object.assign({},this.trigger.alias?{alias:this.trigger.alias}:{}),e.detail.value);(0,h.B)(this,"value-changed",{value:t})}},{kind:"method",key:"_switchUiMode",value:function(){this._warnings=void 0,this._yamlMode=!1}},{kind:"method",key:"_switchYamlMode",value:function(){this._warnings=void 0,this._yamlMode=!0}},{kind:"method",key:"_showTriggeredInfo",value:function(){(0,C.Ys)(this,{title:this.hass.localize("ui.panel.config.automation.editor.triggers.triggering_event_detail"),text:(0,o.dy)(E||(E=F`
+        <ha-yaml-editor
+          read-only
+          .hass=${0}
+          .defaultValue=${0}
+        ></ha-yaml-editor>
+      `),this.hass,this._triggered)})}},{kind:"field",key:"_renameTrigger",value(){return async()=>{if((0,$.j2)(this.trigger))return;const e=await(0,C.D9)(this,{title:this.hass.localize("ui.panel.config.automation.editor.triggers.change_alias"),inputLabel:this.hass.localize("ui.panel.config.automation.editor.triggers.alias"),inputType:"string",placeholder:(0,p.f)((0,_.R)(this.trigger,this.hass,this._entityReg,!0)),defaultValue:this.trigger.alias,confirmText:this.hass.localize("ui.common.submit")});if(null!==e){const i=Object.assign({},this.trigger);var t;if(""===e?delete i.alias:i.alias=e,(0,h.B)(this,"value-changed",{value:i}),this._yamlMode)null===(t=this._yamlEditor)||void 0===t||t.setValue(i)}}}},{kind:"field",key:"_showTriggerId",value(){return()=>{this._requestShowId=!0,this.expand()}}},{kind:"field",key:"_duplicateTrigger",value(){return()=>{(0,h.B)(this,"duplicate")}}},{kind:"field",key:"_copyTrigger",value(){return()=>{this._setClipboard()}}},{kind:"field",key:"_cutTrigger",value(){return()=>{this._setClipboard(),(0,h.B)(this,"value-changed",{value:null})}}},{kind:"field",key:"_moveUp",value(){return()=>{(0,h.B)(this,"move-up")}}},{kind:"field",key:"_moveDown",value(){return()=>{(0,h.B)(this,"move-down")}}},{kind:"field",key:"_toggleYamlMode",value(){return()=>{this._yamlMode?this._switchUiMode():this._switchYamlMode(),this.expand()}}},{kind:"method",key:"expand",value:function(){this.updateComplete.then((()=>{this.shadowRoot.querySelector("ha-expansion-panel").expanded=!0}))}},{kind:"get",static:!0,key:"styles",value:function(){return[x.Qx,(0,o.iv)(S||(S=F`
+        .disabled {
+          opacity: 0.5;
+          pointer-events: none;
+        }
+        ha-expansion-panel {
+          --expansion-panel-summary-padding: 0 0 0 8px;
+          --expansion-panel-content-padding: 0;
+        }
+        h3 {
+          margin: 0;
+          font-size: inherit;
+          font-weight: inherit;
+        }
+        .trigger-icon {
+          display: none;
+        }
+        @media (min-width: 870px) {
+          .trigger-icon {
+            display: inline-block;
+            color: var(--secondary-text-color);
+            opacity: 0.9;
+          }
+        }
+        .card-content {
+          padding: 16px;
+        }
+        .disabled-bar {
+          background: var(--divider-color, #e0e0e0);
+          text-align: center;
+          border-top-right-radius: var(--ha-card-border-radius, 12px);
+          border-top-left-radius: var(--ha-card-border-radius, 12px);
+        }
+        .triggered {
+          cursor: pointer;
+          position: absolute;
+          top: 0px;
+          right: 0px;
+          left: 0px;
+          text-transform: uppercase;
+          font-weight: bold;
+          font-size: 14px;
+          background-color: var(--primary-color);
+          color: var(--text-primary-color);
+          max-height: 0px;
+          overflow: hidden;
+          transition: max-height 0.3s;
+          text-align: center;
+          border-top-right-radius: var(--ha-card-border-radius, 12px);
+          border-top-left-radius: var(--ha-card-border-radius, 12px);
+        }
+        .triggered.active {
+          max-height: 100px;
+        }
+        .triggered:hover {
+          opacity: 0.8;
+        }
+        .triggered.accent {
+          background-color: var(--accent-color);
+          color: var(--text-accent-color, var(--text-primary-color));
+        }
+        ha-textfield {
+          display: block;
+          margin-bottom: 24px;
+        }
+        ha-md-menu-item > ha-svg-icon {
+          --mdc-icon-size: 24px;
+        }
+      `))]}}]}}),o.oi);a()}catch(V){a(V)}}))},41181:function(e,t,i){i.a(e,(async function(e,t){try{var a=i(73577),s=i(72621),n=(i(71695),i(9359),i(56475),i(31526),i(19423),i(40251),i(11740),i(46692),i(47021),i(12582)),r=i(57243),o=i(50778),d=i(91583),l=i(90842),u=i(11297),c=i(85233),h=i(30137),g=(i(20095),i(43527),i(14002),i(10508),i(92777)),v=i(6625),p=i(1284),m=e([p]);p=(m.then?(await m)():m)[0];let f,y,_,k,b=e=>e;const $="M7,19V17H9V19H7M11,19V17H13V19H11M15,19V17H17V19H15M7,15V13H9V15H7M11,15V13H13V15H11M15,15V13H17V15H15M7,11V9H9V11H7M11,11V9H13V11H11M15,11V9H17V11H15M7,7V5H9V7H7M11,7V5H13V7H11M15,7V5H17V7H15Z",C="M19,13H13V19H11V13H5V11H11V5H13V11H19V13Z";(0,a.Z)([(0,o.Mo)("ha-automation-trigger")],(function(e,t){class i extends t{constructor(...t){super(...t),e(this)}}return{F:i,d:[{kind:"field",decorators:[(0,o.Cb)({attribute:!1})],key:"hass",value:void 0},{kind:"field",decorators:[(0,o.Cb)({attribute:!1})],key:"triggers",value:void 0},{kind:"field",decorators:[(0,o.Cb)({type:Boolean})],key:"disabled",value(){return!1}},{kind:"field",decorators:[(0,o.SB)()],key:"_showReorder",value(){return!1}},{kind:"field",decorators:[(0,l.t)({key:"automationClipboard",state:!0,subscribe:!0,storage:"sessionStorage"})],key:"_clipboard",value:void 0},{kind:"field",key:"_focusLastTriggerOnChange",value(){return!1}},{kind:"field",key:"_triggerKeys",value(){return new WeakMap}},{kind:"field",key:"_unsubMql",value:void 0},{kind:"method",key:"connectedCallback",value:function(){(0,s.Z)(i,"connectedCallback",this,3)([]),this._unsubMql=(0,c.K)("(min-width: 600px)",(e=>{this._showReorder=e}))}},{kind:"method",key:"disconnectedCallback",value:function(){var e;(0,s.Z)(i,"disconnectedCallback",this,3)([]),null===(e=this._unsubMql)||void 0===e||e.call(this),this._unsubMql=void 0}},{kind:"method",key:"render",value:function(){return(0,r.dy)(f||(f=b`
+      <ha-sortable
+        handle-selector=".handle"
+        draggable-selector="ha-automation-trigger-row"
+        .disabled=${0}
+        group="triggers"
+        invert-swap
+        @item-moved=${0}
+        @item-added=${0}
+        @item-removed=${0}
+      >
+        <div class="triggers">
+          ${0}
+          <div class="buttons">
+            <ha-button
+              outlined
+              .label=${0}
+              .disabled=${0}
+              @click=${0}
+            >
+              <ha-svg-icon .path=${0} slot="icon"></ha-svg-icon>
+            </ha-button>
+          </div>
+        </div>
+      </ha-sortable>
+    `),!this._showReorder||this.disabled,this._triggerMoved,this._triggerAdded,this._triggerRemoved,(0,d.r)(this.triggers,(e=>this._getKey(e)),((e,t)=>(0,r.dy)(y||(y=b`
+              <ha-automation-trigger-row
+                .sortableData=${0}
+                .index=${0}
+                .first=${0}
+                .last=${0}
+                .trigger=${0}
+                @duplicate=${0}
+                @move-down=${0}
+                @move-up=${0}
+                @value-changed=${0}
+                .hass=${0}
+                .disabled=${0}
+              >
+                ${0}
+              </ha-automation-trigger-row>
+            `),e,t,0===t,t===this.triggers.length-1,e,this._duplicateTrigger,this._moveDown,this._moveUp,this._triggerChanged,this.hass,this.disabled,this._showReorder&&!this.disabled?(0,r.dy)(_||(_=b`
+                      <div class="handle" slot="icons">
+                        <ha-svg-icon .path=${0}></ha-svg-icon>
+                      </div>
+                    `),$):r.Ld))),this.hass.localize("ui.panel.config.automation.editor.triggers.add"),this.disabled,this._addTriggerDialog,C)}},{kind:"method",key:"_addTriggerDialog",value:function(){var e,t;(0,v._)(this,{type:"trigger",add:this._addTrigger,clipboardItem:null!==(e=this._clipboard)&&void 0!==e&&e.trigger?(0,g.j2)(this._clipboard.trigger)?"list":null===(t=this._clipboard)||void 0===t||null===(t=t.trigger)||void 0===t?void 0:t.trigger:void 0})}},{kind:"field",key:"_addTrigger",value(){return e=>{let t;if(e===v.I)t=this.triggers.concat((0,n.Z)(this._clipboard.trigger));else{const i=e,a=customElements.get(`ha-automation-trigger-${i}`);t=this.triggers.concat(Object.assign({},a.defaultConfig))}this._focusLastTriggerOnChange=!0,(0,u.B)(this,"value-changed",{value:t})}}},{kind:"method",key:"updated",value:function(e){if((0,s.Z)(i,"updated",this,3)([e]),e.has("triggers")&&this._focusLastTriggerOnChange){this._focusLastTriggerOnChange=!1;const e=this.shadowRoot.querySelector("ha-automation-trigger-row:last-of-type");e.updateComplete.then((()=>{e.expand(),e.scrollIntoView(),e.focus()}))}}},{kind:"method",key:"expandAll",value:function(){this.shadowRoot.querySelectorAll("ha-automation-trigger-row").forEach((e=>{e.expand()}))}},{kind:"method",key:"_getKey",value:function(e){return this._triggerKeys.has(e)||this._triggerKeys.set(e,Math.random().toString()),this._triggerKeys.get(e)}},{kind:"method",key:"_moveUp",value:function(e){e.stopPropagation();const t=e.target.index,i=t-1;this._move(t,i)}},{kind:"method",key:"_moveDown",value:function(e){e.stopPropagation();const t=e.target.index,i=t+1;this._move(t,i)}},{kind:"method",key:"_move",value:function(e,t){const i=this.triggers.concat(),a=i.splice(e,1)[0];i.splice(t,0,a),this.triggers=i,(0,u.B)(this,"value-changed",{value:i})}},{kind:"method",key:"_triggerMoved",value:function(e){e.stopPropagation();const{oldIndex:t,newIndex:i}=e.detail;this._move(t,i)}},{kind:"method",key:"_triggerAdded",value:async function(e){e.stopPropagation();const{index:t,data:i}=e.detail,a=[...this.triggers.slice(0,t),i,...this.triggers.slice(t)];this.triggers=a,await(0,h.y)(),(0,u.B)(this,"value-changed",{value:this.triggers})}},{kind:"method",key:"_triggerRemoved",value:async function(e){e.stopPropagation();const{index:t}=e.detail,i=this.triggers[t];this.triggers=this.triggers.filter((e=>e!==i)),await(0,h.y)();const a=this.triggers.filter((e=>e!==i));(0,u.B)(this,"value-changed",{value:a})}},{kind:"method",key:"_triggerChanged",value:function(e){e.stopPropagation();const t=[...this.triggers],i=e.detail.value,a=e.target.index;if(null===i)t.splice(a,1);else{const e=this._getKey(t[a]);this._triggerKeys.set(i,e),t[a]=i}(0,u.B)(this,"value-changed",{value:t})}},{kind:"method",key:"_duplicateTrigger",value:function(e){e.stopPropagation();const t=e.target.index;(0,u.B)(this,"value-changed",{value:this.triggers.concat((0,n.Z)(this.triggers[t]))})}},{kind:"field",static:!0,key:"styles",value(){return(0,r.iv)(k||(k=b`
+    .triggers {
+      padding: 16px;
+      margin: -16px;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+    .sortable-ghost {
+      background: none;
+      border-radius: var(--ha-card-border-radius, 12px);
+    }
+    .sortable-drag {
+      background: none;
+    }
+    ha-automation-trigger-row {
+      display: block;
+      scroll-margin-top: 48px;
+    }
+    ha-svg-icon {
+      height: 20px;
+    }
+    .handle {
+      padding: 12px;
+      cursor: move; /* fallback if grab cursor is unsupported */
+      cursor: grab;
+    }
+    .handle ha-svg-icon {
+      pointer-events: none;
+      height: 24px;
+    }
+    .buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      order: 1;
+    }
+  `))}}]}}),r.oi);t()}catch(f){t(f)}}))},24285:function(e,t,i){var a=i(73577),s=(i(71695),i(19423),i(88044),i(47021),i(57243)),n=i(50778),r=i(27486),o=i(11297),d=(i(42877),i(28571));let l,u=e=>e;(0,a.Z)([(0,n.Mo)("ha-automation-trigger-calendar")],(function(e,t){return{F:class extends t{constructor(...t){super(...t),e(this)}},d:[{kind:"field",decorators:[(0,n.Cb)({attribute:!1})],key:"hass",value:void 0},{kind:"field",decorators:[(0,n.Cb)({attribute:!1})],key:"trigger",value:void 0},{kind:"field",decorators:[(0,n.Cb)({type:Boolean})],key:"disabled",value(){return!1}},{kind:"field",key:"_schema",value(){return(0,r.Z)((e=>[{name:"entity_id",required:!0,selector:{entity:{domain:"calendar"}}},{name:"event",type:"select",required:!0,options:[["start",e("ui.panel.config.automation.editor.triggers.type.calendar.start")],["end",e("ui.panel.config.automation.editor.triggers.type.calendar.end")]]},{name:"offset",required:!0,selector:{duration:{}}},{name:"offset_type",type:"select",required:!0,options:[["before",e("ui.panel.config.automation.editor.triggers.type.calendar.before")],["after",e("ui.panel.config.automation.editor.triggers.type.calendar.after")]]}]))}},{kind:"get",static:!0,key:"defaultConfig",value:function(){return{trigger:"calendar",entity_id:"",event:"start",offset:"0"}}},{kind:"method",key:"render",value:function(){const e=this._schema(this.hass.localize),t=this.trigger.offset,i=(0,d.c)(t);let a="after";("object"==typeof t&&i.hours<0||"string"==typeof t&&t.startsWith("-"))&&(i.hours=Math.abs(i.hours),a="before");const n=Object.assign(Object.assign({},this.trigger),{},{offset:i,offset_type:a});return(0,s.dy)(l||(l=u`
+      <ha-form
+        .schema=${0}
+        .data=${0}
+        .hass=${0}
+        .disabled=${0}
+        .computeLabel=${0}
+        @value-changed=${0}
+      ></ha-form>
+    `),e,n,this.hass,this.disabled,this._computeLabelCallback,this._valueChanged)}},{kind:"method",key:"_valueChanged",value:function(e){var t,i,a;e.stopPropagation();const s=e.detail.value.offset,n="before"===e.detail.value.offset_type?"-":"",r=Object.assign(Object.assign({},e.detail.value),{},{offset:`${n}${null!==(t=s.hours)&&void 0!==t?t:0}:${null!==(i=s.minutes)&&void 0!==i?i:0}:${null!==(a=s.seconds)&&void 0!==a?a:0}`});delete r.offset_type,(0,o.B)(this,"value-changed",{value:r})}},{kind:"field",key:"_computeLabelCallback",value(){return e=>{switch(e.name){case"entity_id":return this.hass.localize("ui.components.entity.entity-picker.entity");case"event":return this.hass.localize("ui.panel.config.automation.editor.triggers.type.calendar.event")}return""}}}]}}),s.oi)},44348:function(e,t,i){var a=i(73577),s=(i(71695),i(9359),i(70104),i(19423),i(40251),i(47021),i(57243)),n=i(50778),r=i(24785),o=i(11297),d=(i(70596),i(59897),i(4557));let l,u,c,h=e=>e;const g="^[^.。,，?¿？؟!！;；:：]+$";(0,a.Z)([(0,n.Mo)("ha-automation-trigger-conversation")],(function(e,t){return{F:class extends t{constructor(...t){super(...t),e(this)}},d:[{kind:"field",decorators:[(0,n.Cb)({attribute:!1})],key:"hass",value:void 0},{kind:"field",decorators:[(0,n.Cb)({attribute:!1})],key:"trigger",value:void 0},{kind:"field",decorators:[(0,n.Cb)({type:Boolean})],key:"disabled",value(){return!1}},{kind:"field",decorators:[(0,n.IO)("#option_input",!0)],key:"_optionInput",value:void 0},{kind:"get",static:!0,key:"defaultConfig",value:function(){return{trigger:"conversation",command:""}}},{kind:"method",key:"render",value:function(){const{command:e}=this.trigger,t=e?(0,r.r)(e):[];return(0,s.dy)(l||(l=h`${0}
+      <ha-textfield
+        class="flex-auto"
+        id="option_input"
+        .label=${0}
+        .validationMessage=${0}
+        autoValidate
+        pattern=${0}
+        @keydown=${0}
+        @change=${0}
+      ></ha-textfield>`),t.length?t.map(((e,t)=>(0,s.dy)(u||(u=h`
+              <ha-textfield
+                class="option"
+                iconTrailing
+                .index=${0}
+                .value=${0}
+                .validationMessage=${0}
+                autoValidate
+                validateOnInitialRender
+                pattern=${0}
+                @change=${0}
+              >
+                <ha-icon-button
+                  @click=${0}
+                  slot="trailingIcon"
+                  .path=${0}
+                ></ha-icon-button>
+              </ha-textfield>
+            `),t,e,this.hass.localize("ui.panel.config.automation.editor.triggers.type.conversation.no_punctuation"),g,this._updateOption,this._removeOption,"M19,6.41L17.59,5L12,10.59L6.41,5L5,6.41L10.59,12L5,17.59L6.41,19L12,13.41L17.59,19L19,17.59L13.41,12L19,6.41Z"))):s.Ld,this.hass.localize("ui.panel.config.automation.editor.triggers.type.conversation.add_sentence"),this.hass.localize("ui.panel.config.automation.editor.triggers.type.conversation.no_punctuation"),g,this._handleKeyAdd,this._addOption)}},{kind:"method",key:"_handleKeyAdd",value:function(e){e.stopPropagation(),"Enter"===e.key&&this._addOption()}},{kind:"method",key:"_addOption",value:function(){const e=this._optionInput;null!=e&&e.value&&((0,o.B)(this,"value-changed",{value:Object.assign(Object.assign({},this.trigger),{},{command:this.trigger.command.length?[...Array.isArray(this.trigger.command)?this.trigger.command:[this.trigger.command],e.value]:e.value})}),e.value="")}},{kind:"method",key:"_updateOption",value:async function(e){const t=e.target.index,i=[...Array.isArray(this.trigger.command)?this.trigger.command:[this.trigger.command]];i.splice(t,1,e.target.value),(0,o.B)(this,"value-changed",{value:Object.assign(Object.assign({},this.trigger),{},{command:i})})}},{kind:"method",key:"_removeOption",value:async function(e){const t=e.target.parentElement.index;if(!(await(0,d.g7)(this,{title:this.hass.localize("ui.panel.config.automation.editor.triggers.type.conversation.delete"),text:this.hass.localize("ui.panel.config.automation.editor.triggers.type.conversation.confirm_delete"),destructive:!0})))return;let i;Array.isArray(this.trigger.command)?(i=[...this.trigger.command],i.splice(t,1)):i="",(0,o.B)(this,"value-changed",{value:Object.assign(Object.assign({},this.trigger),{},{command:i})})}},{kind:"field",static:!0,key:"styles",value(){return(0,s.iv)(c||(c=h`
+    .layout {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      align-items: center;
+      justify-content: flex-start;
+    }
+    .option {
+      margin-top: 4px;
+    }
+    mwc-button {
+      margin-left: 8px;
+      margin-inline-start: 8px;
+      margin-inline-end: initial;
+    }
+    ha-textfield {
+      display: block;
+      margin-bottom: 8px;
+      --textfield-icon-trailing-padding: 0;
+    }
+    ha-textfield > ha-icon-button {
+      position: relative;
+      right: -8px;
+      --mdc-icon-button-size: 36px;
+      --mdc-icon-size: 20px;
+      color: var(--secondary-text-color);
+      inset-inline-start: initial;
+      inset-inline-end: -8px;
+      direction: var(--direction);
+    }
+    #option_input {
+      margin-top: 8px;
+    }
+    .header {
+      margin-top: 8px;
+      margin-bottom: 8px;
+    }
+  `))}}]}}),s.oi)},44337:function(e,t,i){i.a(e,(async function(e,t){try{var a=i(73577),s=(i(52247),i(71695),i(9359),i(31526),i(19423),i(40251),i(47021),i(60738)),n=i(57243),r=i(50778),o=i(27486),d=i(11297),l=i(68061),u=i(66912),c=(i(87902),i(42877),i(12328)),h=i(61339),g=i(47208),v=e([u]);u=(v.then?(await v)():v)[0];let p,m,f,y=e=>e;(0,a.Z)([(0,r.Mo)("ha-automation-trigger-device")],(function(e,t){class i extends t{constructor(...t){super(...t),e(this)}}return{F:i,d:[{kind:"field",decorators:[(0,r.Cb)({attribute:!1})],key:"hass",value:void 0},{kind:"field",decorators:[(0,r.Cb)({type:Object})],key:"trigger",value:void 0},{kind:"field",decorators:[(0,r.Cb)({type:Boolean})],key:"disabled",value(){return!1}},{kind:"field",decorators:[(0,r.SB)()],key:"_deviceId",value:void 0},{kind:"field",decorators:[(0,r.SB)()],key:"_capabilities",value:void 0},{kind:"field",decorators:[(0,r.SB)(),(0,s.F_)({context:h.we,subscribe:!0})],key:"_entityReg",value:void 0},{kind:"field",key:"_origTrigger",value:void 0},{kind:"get",static:!0,key:"defaultConfig",value:function(){return{trigger:"device",device_id:"",domain:"",entity_id:""}}},{kind:"field",key:"_extraFieldsData",value(){return(0,o.Z)(((e,t)=>{const i=(0,c.x)(t.extra_fields);return t.extra_fields.forEach((t=>{void 0!==e[t.name]&&(i[t.name]=e[t.name])})),i}))}},{kind:"method",key:"shouldUpdate",value:function(e){return!e.has("trigger")||(!this.trigger.device_id||this.trigger.device_id in this.hass.devices||((0,d.B)(this,"ui-mode-not-available",Error(this.hass.localize("ui.panel.config.automation.editor.edit_unknown_device"))),!1))}},{kind:"method",key:"render",value:function(){var e;const t=this._deviceId||this.trigger.device_id;return(0,n.dy)(p||(p=y`
+      <ha-device-picker
+        .value=${0}
+        @value-changed=${0}
+        .hass=${0}
+        .disabled=${0}
+        .label=${0}
+      ></ha-device-picker>
+      <ha-device-trigger-picker
+        .value=${0}
+        .deviceId=${0}
+        @value-changed=${0}
+        .hass=${0}
+        .disabled=${0}
+        .label=${0}
+      ></ha-device-trigger-picker>
+      ${0}
+    `),t,this._devicePicked,this.hass,this.disabled,this.hass.localize("ui.panel.config.automation.editor.triggers.type.device.label"),this.trigger,t,this._deviceTriggerPicked,this.hass,this.disabled,this.hass.localize("ui.panel.config.automation.editor.triggers.type.device.trigger"),null!==(e=this._capabilities)&&void 0!==e&&e.extra_fields?(0,n.dy)(m||(m=y`
+            <ha-form
+              .hass=${0}
+              .data=${0}
+              .schema=${0}
+              .disabled=${0}
+              .computeLabel=${0}
+              .computeHelper=${0}
+              @value-changed=${0}
+            ></ha-form>
+          `),this.hass,this._extraFieldsData(this.trigger,this._capabilities),this._capabilities.extra_fields,this.disabled,(0,g.kJ)(this.hass,this.trigger),(0,g.Md)(this.hass,this.trigger),this._extraFieldsChanged):"")}},{kind:"method",key:"firstUpdated",value:function(){this._capabilities||this._getCapabilities(),this.trigger&&(this._origTrigger=this.trigger)}},{kind:"method",key:"updated",value:function(e){if(!e.has("trigger"))return;const t=e.get("trigger");t&&!(0,g.hH)(this._entityReg,t,this.trigger)&&this._getCapabilities()}},{kind:"method",key:"_getCapabilities",value:async function(){const e=this.trigger;if(this._capabilities=e.domain?await(0,g.hA)(this.hass,e):void 0,this._capabilities){const e=Object.assign(Object.assign({},this.trigger),this._extraFieldsData(this.trigger,this._capabilities));(0,l.v)(this.trigger,e)||(0,d.B)(this,"value-changed",{value:e})}}},{kind:"method",key:"_devicePicked",value:function(e){e.stopPropagation(),this._deviceId=e.target.value,void 0===this._deviceId&&(0,d.B)(this,"value-changed",{value:Object.assign(Object.assign({},i.defaultConfig),{},{trigger:"device"})})}},{kind:"method",key:"_deviceTriggerPicked",value:function(e){e.stopPropagation();let t=e.detail.value;this._origTrigger&&(0,g.hH)(this._entityReg,this._origTrigger,t)&&(t=this._origTrigger),this.trigger.id&&(t.id=this.trigger.id),(0,d.B)(this,"value-changed",{value:t})}},{kind:"method",key:"_extraFieldsChanged",value:function(e){e.stopPropagation(),(0,d.B)(this,"value-changed",{value:Object.assign(Object.assign({},this.trigger),e.detail.value)})}},{kind:"field",static:!0,key:"styles",value(){return(0,n.iv)(f||(f=y`
+    ha-device-picker {
+      display: block;
+      margin-bottom: 24px;
+    }
+
+    ha-form {
+      display: block;
+      margin-top: 24px;
+    }
+  `))}}]}}),n.oi);t()}catch(p){t(p)}}))},66296:function(e,t,i){i.a(e,(async function(e,t){try{var a=i(73577),s=(i(71695),i(19423),i(47021),i(57243)),n=i(50778),r=i(11297),o=(i(70596),i(27196),i(89348),i(1284)),d=e([o]);o=(d.then?(await d)():d)[0];let l,u,c=e=>e;(0,a.Z)([(0,n.Mo)("ha-automation-trigger-event")],(function(e,t){return{F:class extends t{constructor(...t){super(...t),e(this)}},d:[{kind:"field",decorators:[(0,n.Cb)({attribute:!1})],key:"hass",value:void 0},{kind:"field",decorators:[(0,n.Cb)({attribute:!1})],key:"trigger",value:void 0},{kind:"field",decorators:[(0,n.Cb)({type:Boolean})],key:"disabled",value(){return!1}},{kind:"get",static:!0,key:"defaultConfig",value:function(){return{trigger:"event",event_type:""}}},{kind:"method",key:"render",value:function(){const{event_type:e,event_data:t,context:i}=this.trigger;return(0,s.dy)(l||(l=c`
+      <ha-textfield
+        .label=${0}
+        name="event_type"
+        .value=${0}
+        .disabled=${0}
+        @change=${0}
+      ></ha-textfield>
+      <ha-yaml-editor
+        .hass=${0}
+        .label=${0}
+        .name=${0}
+        .readOnly=${0}
+        .defaultValue=${0}
+        @value-changed=${0}
+      ></ha-yaml-editor>
+      <br />
+      ${0}
+      <ha-users-picker
+        .pickedUserLabel=${0}
+        .pickUserLabel=${0}
+        .hass=${0}
+        .disabled=${0}
+        .value=${0}
+        @value-changed=${0}
+      ></ha-users-picker>
+    `),this.hass.localize("ui.panel.config.automation.editor.triggers.type.event.event_type"),e,this.disabled,this._valueChanged,this.hass,this.hass.localize("ui.panel.config.automation.editor.triggers.type.event.event_data"),"event_data",this.disabled,t,this._dataChanged,this.hass.localize("ui.panel.config.automation.editor.triggers.type.event.context_users"),this.hass.localize("ui.panel.config.automation.editor.triggers.type.event.context_user_picked"),this.hass.localize("ui.panel.config.automation.editor.triggers.type.event.context_user_pick"),this.hass,this.disabled,this._wrapUsersInArray(null==i?void 0:i.user_id),this._usersChanged)}},{kind:"method",key:"_wrapUsersInArray",value:function(e){return e?"string"==typeof e?[e]:e:[]}},{kind:"method",key:"_valueChanged",value:function(e){e.stopPropagation(),(0,o.a)(this,e)}},{kind:"method",key:"_dataChanged",value:function(e){e.stopPropagation(),e.detail.isValid&&(0,o.a)(this,e)}},{kind:"method",key:"_usersChanged",value:function(e){e.stopPropagation();const t=Object.assign({},this.trigger);!e.detail.value.length&&t.context?delete t.context.user_id:(t.context||(t.context={}),t.context.user_id=e.detail.value),(0,r.B)(this,"value-changed",{value:t})}},{kind:"field",static:!0,key:"styles",value(){return(0,s.iv)(u||(u=c`
+    ha-textfield {
+      display: block;
+    }
+  `))}}]}}),s.oi);t()}catch(l){t(l)}}))},45111:function(e,t,i){var a=i(73577),s=(i(71695),i(47021),i(42877),i(57243)),n=i(50778),r=i(27486),o=i(11297);let d,l=e=>e;(0,a.Z)([(0,n.Mo)("ha-automation-trigger-geo_location")],(function(e,t){return{F:class extends t{constructor(...t){super(...t),e(this)}},d:[{kind:"field",decorators:[(0,n.Cb)({attribute:!1})],key:"hass",value:void 0},{kind:"field",decorators:[(0,n.Cb)({attribute:!1})],key:"trigger",value:void 0},{kind:"field",decorators:[(0,n.Cb)({type:Boolean})],key:"disabled",value(){return!1}},{kind:"field",key:"_schema",value(){return(0,r.Z)((e=>[{name:"source",selector:{text:{}}},{name:"zone",selector:{entity:{domain:"zone"}}},{name:"event",type:"select",required:!0,options:[["enter",e("ui.panel.config.automation.editor.triggers.type.geo_location.enter")],["leave",e("ui.panel.config.automation.editor.triggers.type.geo_location.leave")]]}]))}},{kind:"get",static:!0,key:"defaultConfig",value:function(){return{trigger:"geo_location",source:"",zone:"",event:"enter"}}},{kind:"method",key:"render",value:function(){return(0,s.dy)(d||(d=l`
+      <ha-form
+        .schema=${0}
+        .data=${0}
+        .hass=${0}
+        .disabled=${0}
+        .computeLabel=${0}
+        @value-changed=${0}
+      ></ha-form>
+    `),this._schema(this.hass.localize),this.trigger,this.hass,this.disabled,this._computeLabelCallback,this._valueChanged)}},{kind:"method",key:"_valueChanged",value:function(e){e.stopPropagation();const t=e.detail.value;(0,o.B)(this,"value-changed",{value:t})}},{kind:"field",key:"_computeLabelCallback",value(){return e=>this.hass.localize(`ui.panel.config.automation.editor.triggers.type.geo_location.${e.name}`)}}]}}),s.oi)},10282:function(e,t,i){var a=i(73577),s=(i(71695),i(47021),i(42877),i(57243)),n=i(50778),r=i(27486),o=i(11297);let d,l,u=e=>e;(0,a.Z)([(0,n.Mo)("ha-automation-trigger-homeassistant")],(function(e,t){return{F:class extends t{constructor(...t){super(...t),e(this)}},d:[{kind:"field",decorators:[(0,n.Cb)({attribute:!1})],key:"hass",value:void 0},{kind:"field",decorators:[(0,n.Cb)({attribute:!1})],key:"trigger",value:void 0},{kind:"field",decorators:[(0,n.Cb)({type:Boolean})],key:"disabled",value(){return!1}},{kind:"field",key:"_schema",value(){return(0,r.Z)((e=>[{name:"event",type:"select",required:!0,options:[["start",e("ui.panel.config.automation.editor.triggers.type.homeassistant.start")],["shutdown",e("ui.panel.config.automation.editor.triggers.type.homeassistant.shutdown")]]}]))}},{kind:"get",static:!0,key:"defaultConfig",value:function(){return{trigger:"homeassistant",event:"start"}}},{kind:"method",key:"render",value:function(){return(0,s.dy)(d||(d=u`
+      <ha-form
+        .schema=${0}
+        .data=${0}
+        .hass=${0}
+        .disabled=${0}
+        .computeLabel=${0}
+        @value-changed=${0}
+      ></ha-form>
+    `),this._schema(this.hass.localize),this.trigger,this.hass,this.disabled,this._computeLabelCallback,this._valueChanged)}},{kind:"method",key:"_valueChanged",value:function(e){e.stopPropagation();const t=e.detail.value;(0,o.B)(this,"value-changed",{value:t})}},{kind:"field",key:"_computeLabelCallback",value(){return e=>this.hass.localize(`ui.panel.config.automation.editor.triggers.type.homeassistant.${e.name}`)}},{kind:"field",static:!0,key:"styles",value(){return(0,s.iv)(l||(l=u`
+    label {
+      display: flex;
+      align-items: center;
+    }
+  `))}}]}}),s.oi)},65242:function(e,t,i){i.a(e,(async function(e,t){try{var a=i(73577),s=(i(71695),i(47021),i(57243)),n=i(50778),r=i(24785),o=i(41181),d=i(1284),l=e([o,d]);[o,d]=l.then?(await l)():l;let u,c,h=e=>e;(0,a.Z)([(0,n.Mo)("ha-automation-trigger-list")],(function(e,t){return{F:class extends t{constructor(...t){super(...t),e(this)}},d:[{kind:"field",decorators:[(0,n.Cb)({attribute:!1})],key:"hass",value:void 0},{kind:"field",decorators:[(0,n.Cb)({attribute:!1})],key:"trigger",value:void 0},{kind:"field",decorators:[(0,n.Cb)({type:Boolean})],key:"disabled",value(){return!1}},{kind:"get",static:!0,key:"defaultConfig",value:function(){return{triggers:[]}}},{kind:"method",key:"render",value:function(){const e=(0,r.r)(this.trigger.triggers);return(0,s.dy)(u||(u=h`
+      <ha-automation-trigger
+        .triggers=${0}
+        .hass=${0}
+        .disabled=${0}
+        .name=${0}
+        @value-changed=${0}
+      ></ha-automation-trigger>
+    `),e,this.hass,this.disabled,"triggers",this._valueChanged)}},{kind:"method",key:"_valueChanged",value:function(e){(0,d.a)(this,e)}},{kind:"field",static:!0,key:"styles",value(){return(0,s.iv)(c||(c=h``))}}]}}),s.oi);t()}catch(u){t(u)}}))},76174:function(e,t,i){var a=i(73577),s=(i(71695),i(47021),i(57243)),n=i(50778),r=i(11297);i(42877);let o,d=e=>e;const l=[{name:"topic",required:!0,selector:{text:{}}},{name:"payload",selector:{text:{}}}];(0,a.Z)([(0,n.Mo)("ha-automation-trigger-mqtt")],(function(e,t){return{F:class extends t{constructor(...t){super(...t),e(this)}},d:[{kind:"field",decorators:[(0,n.Cb)({attribute:!1})],key:"hass",value:void 0},{kind:"field",decorators:[(0,n.Cb)({attribute:!1})],key:"trigger",value:void 0},{kind:"field",decorators:[(0,n.Cb)({type:Boolean})],key:"disabled",value(){return!1}},{kind:"get",static:!0,key:"defaultConfig",value:function(){return{trigger:"mqtt",topic:""}}},{kind:"method",key:"render",value:function(){return(0,s.dy)(o||(o=d`
+      <ha-form
+        .schema=${0}
+        .data=${0}
+        .hass=${0}
+        .disabled=${0}
+        .computeLabel=${0}
+        @value-changed=${0}
+      ></ha-form>
+    `),l,this.trigger,this.hass,this.disabled,this._computeLabelCallback,this._valueChanged)}},{kind:"method",key:"_valueChanged",value:function(e){e.stopPropagation();const t=e.detail.value;(0,r.B)(this,"value-changed",{value:t})}},{kind:"field",key:"_computeLabelCallback",value(){return e=>this.hass.localize(`ui.panel.config.automation.editor.triggers.type.mqtt.${e.name}`)}}]}}),s.oi)},29666:function(e,t,i){var a=i(73577),s=(i(52247),i(71695),i(19423),i(88044),i(47021),i(57243)),n=i(50778),r=i(27486),o=i(28571),d=i(11297),l=i(80058),u=(i(42877),i(24785));let c,h=e=>e;(0,a.Z)([(0,n.Mo)("ha-automation-trigger-numeric_state")],(function(e,t){return{F:class extends t{constructor(...t){super(...t),e(this)}},d:[{kind:"field",decorators:[(0,n.Cb)({attribute:!1})],key:"hass",value:void 0},{kind:"field",decorators:[(0,n.Cb)({attribute:!1})],key:"trigger",value:void 0},{kind:"field",decorators:[(0,n.Cb)({type:Boolean})],key:"disabled",value(){return!1}},{kind:"field",decorators:[(0,n.SB)()],key:"_inputAboveIsEntity",value:void 0},{kind:"field",decorators:[(0,n.SB)()],key:"_inputBelowIsEntity",value:void 0},{kind:"field",key:"_schema",value(){return(0,r.Z)(((e,t,i,a)=>[{name:"entity_id",required:!0,selector:{entity:{multiple:!0}}},{name:"attribute",selector:{attribute:{entity_id:t?t[0]:void 0,hide_attributes:["access_token","auto_update","available_modes","away_mode","changed_by","code_arm_required","code_format","color_mode","color_modes","current_activity","device_class","editable","effect_list","effect","entity_id","entity_picture","event_type","event_types","fan_mode","fan_modes","fan_speed_list","forecast","friendly_name","frontend_stream_type","has_date","has_time","hs_color","hvac_mode","hvac_modes","icon","id","latest_version","max_color_temp_kelvin","max_mireds","max_temp","media_album_name","media_artist","media_content_type","media_position_updated_at","media_title","min_color_temp_kelvin","min_mireds","min_temp","mode","next_dawn","next_dusk","next_midnight","next_noon","next_rising","next_setting","operation_list","operation_mode","options","percentage_step","precipitation_unit","preset_mode","preset_modes","pressure_unit","release_notes","release_summary","release_url","restored","rgb_color","rgbw_color","shuffle","skipped_version","sound_mode_list","sound_mode","source_list","source_type","source","state_class","step","supported_color_modes","supported_features","swing_mode","swing_modes","target_temp_step","temperature_unit","title","token","unit_of_measurement","user_id","uuid","visibility_unit","wind_speed_unit","xy_color"]}}},{name:"lower_limit",type:"select",required:!0,options:[["value",e("ui.panel.config.automation.editor.triggers.type.numeric_state.type_value")],["input",e("ui.panel.config.automation.editor.triggers.type.numeric_state.type_input")]]},...i?[{name:"above",selector:{entity:{domain:["input_number","number","sensor"]}}}]:[{name:"above",selector:{number:{mode:"box",min:Number.MIN_SAFE_INTEGER,max:Number.MAX_SAFE_INTEGER,step:.1}}}],{name:"upper_limit",type:"select",required:!0,options:[["value",e("ui.panel.config.automation.editor.triggers.type.numeric_state.type_value")],["input",e("ui.panel.config.automation.editor.triggers.type.numeric_state.type_input")]]},...a?[{name:"below",selector:{entity:{domain:["input_number","number","sensor"]}}}]:[{name:"below",selector:{number:{mode:"box",min:Number.MIN_SAFE_INTEGER,max:Number.MAX_SAFE_INTEGER,step:.1}}}],{name:"value_template",selector:{template:{}}},{name:"for",selector:{duration:{}}}]))}},{kind:"method",key:"willUpdate",value:function(e){var t,i;this._inputAboveIsEntity=null!==(t=this._inputAboveIsEntity)&&void 0!==t?t:"string"==typeof this.trigger.above&&(this.trigger.above.startsWith("input_number.")||this.trigger.above.startsWith("number.")||this.trigger.above.startsWith("sensor.")),this._inputBelowIsEntity=null!==(i=this._inputBelowIsEntity)&&void 0!==i?i:"string"==typeof this.trigger.below&&(this.trigger.below.startsWith("input_number.")||this.trigger.below.startsWith("number.")||this.trigger.below.startsWith("sensor.")),e.has("trigger")&&this.trigger&&(0,l._)(this.trigger.for)&&(0,d.B)(this,"ui-mode-not-available",Error(this.hass.localize("ui.errors.config.no_template_editor_support")))}},{kind:"get",static:!0,key:"defaultConfig",value:function(){return{trigger:"numeric_state",entity_id:[]}}},{kind:"field",key:"_data",value(){return(0,r.Z)(((e,t,i)=>Object.assign(Object.assign({lower_limit:e?"input":"value",upper_limit:t?"input":"value"},i),{},{entity_id:(0,u.r)(i.entity_id),for:(0,o.c)(i.for)})))}},{kind:"method",key:"render",value:function(){const e=this._schema(this.hass.localize,this.trigger.entity_id,this._inputAboveIsEntity,this._inputBelowIsEntity),t=this._data(this._inputAboveIsEntity,this._inputBelowIsEntity,this.trigger);return(0,s.dy)(c||(c=h`
+      <ha-form
+        .hass=${0}
+        .data=${0}
+        .schema=${0}
+        .disabled=${0}
+        @value-changed=${0}
+        .computeLabel=${0}
+      ></ha-form>
+    `),this.hass,t,e,this.disabled,this._valueChanged,this._computeLabelCallback)}},{kind:"method",key:"_valueChanged",value:function(e){e.stopPropagation();const t=Object.assign({},e.detail.value);this._inputAboveIsEntity="input"===t.lower_limit,this._inputBelowIsEntity="input"===t.upper_limit,delete t.lower_limit,delete t.upper_limit,""===t.value_template&&delete t.value_template,(0,d.B)(this,"value-changed",{value:t})}},{kind:"field",key:"_computeLabelCallback",value(){return e=>{switch(e.name){case"entity_id":return this.hass.localize("ui.components.entity.entity-picker.entity");case"attribute":return this.hass.localize("ui.components.entity.entity-attribute-picker.attribute");case"for":return this.hass.localize("ui.panel.config.automation.editor.triggers.type.state.for");default:return this.hass.localize(`ui.panel.config.automation.editor.triggers.type.numeric_state.${e.name}`)}}}}]}}),s.oi)},31147:function(e,t,i){var a=i(73577),s=(i(71695),i(47021),i(27486)),n=i(57243),r=i(50778),o=i(11297);i(43527),i(28368),i(59897),i(70596),i(42877);let d,l,u=e=>e;const c=["added","removed"];(0,a.Z)([(0,r.Mo)("ha-automation-trigger-persistent_notification")],(function(e,t){return{F:class extends t{constructor(...t){super(...t),e(this)}},d:[{kind:"field",decorators:[(0,r.Cb)({attribute:!1})],key:"hass",value:void 0},{kind:"field",decorators:[(0,r.Cb)({attribute:!1})],key:"trigger",value:void 0},{kind:"field",decorators:[(0,r.Cb)({type:Boolean})],key:"disabled",value(){return!1}},{kind:"field",key:"_schema",value(){return(0,s.Z)((e=>[{name:"notification_id",required:!1,selector:{text:{}}},{name:"update_type",type:"multi_select",required:!1,options:[["added",e("ui.panel.config.automation.editor.triggers.type.persistent_notification.update_types.added")],["removed",e("ui.panel.config.automation.editor.triggers.type.persistent_notification.update_types.removed")],["current",e("ui.panel.config.automation.editor.triggers.type.persistent_notification.update_types.current")],["updated",e("ui.panel.config.automation.editor.triggers.type.persistent_notification.update_types.updated")]]}]))}},{kind:"get",static:!0,key:"defaultConfig",value:function(){return{trigger:"persistent_notification",update_type:[...c],notification_id:""}}},{kind:"method",key:"render",value:function(){const e=this._schema(this.hass.localize);return(0,n.dy)(d||(d=u`
+      <ha-form
+        .schema=${0}
+        .data=${0}
+        .hass=${0}
+        .disabled=${0}
+        .computeLabel=${0}
+        @value-changed=${0}
+      ></ha-form>
+    `),e,this.trigger,this.hass,this.disabled,this._computeLabelCallback,this._valueChanged)}},{kind:"method",key:"_valueChanged",value:function(e){e.stopPropagation();const t=e.detail.value;(0,o.B)(this,"value-changed",{value:t})}},{kind:"field",key:"_computeLabelCallback",value(){return e=>this.hass.localize(`ui.panel.config.automation.editor.triggers.type.persistent_notification.${e.name}`)}},{kind:"field",static:!0,key:"styles",value(){return(0,n.iv)(l||(l=u`
+    ha-textfield {
+      display: block;
+    }
+  `))}}]}}),n.oi)},35848:function(e,t,i){var a=i(73577),s=(i(52247),i(71695),i(9359),i(31526),i(19423),i(47021),i(57243)),n=i(50778),r=i(62900),o=i(27486),d=i(24785),l=i(11297),u=i(80058),c=i(75649),h=(i(42877),i(28571));let g,v=e=>e;const p=(0,r.f0)(c.G,(0,r.Ry)({alias:(0,r.jt)((0,r.Z_)()),trigger:(0,r.i0)("state"),entity_id:(0,r.jt)((0,r.G0)([(0,r.Z_)(),(0,r.IX)((0,r.Z_)())])),attribute:(0,r.jt)((0,r.Z_)()),from:(0,r.jt)((0,r.AG)((0,r.Z_)())),to:(0,r.jt)((0,r.AG)((0,r.Z_)())),for:(0,r.jt)((0,r.G0)([(0,r.Rx)(),(0,r.Z_)(),c.H]))})),m="__ANY_STATE_IGNORE_ATTRIBUTES__";(0,a.Z)([(0,n.Mo)("ha-automation-trigger-state")],(function(e,t){return{F:class extends t{constructor(...t){super(...t),e(this)}},d:[{kind:"field",decorators:[(0,n.Cb)({attribute:!1})],key:"hass",value:void 0},{kind:"field",decorators:[(0,n.Cb)({attribute:!1})],key:"trigger",value:void 0},{kind:"field",decorators:[(0,n.Cb)({type:Boolean})],key:"disabled",value(){return!1}},{kind:"get",static:!0,key:"defaultConfig",value:function(){return{trigger:"state",entity_id:[]}}},{kind:"field",key:"_schema",value(){return(0,o.Z)(((e,t,i)=>[{name:"entity_id",required:!0,selector:{entity:{multiple:!0}}},{name:"attribute",selector:{attribute:{entity_id:t?t[0]:void 0,hide_attributes:["access_token","available_modes","code_arm_required","code_format","color_modes","device_class","editable","effect_list","entity_id","entity_picture","event_types","fan_modes","fan_speed_list","friendly_name","frontend_stream_type","has_date","has_time","hvac_modes","icon","id","max_color_temp_kelvin","max_mireds","max_temp","max","min_color_temp_kelvin","min_mireds","min_temp","min","mode","operation_list","options","percentage_step","precipitation_unit","preset_modes","pressure_unit","sound_mode_list","source_list","state_class","step","supported_color_modes","supported_features","swing_modes","target_temp_step","temperature_unit","token","unit_of_measurement","visibility_unit","wind_speed_unit"]}}},{name:"from",selector:{state:{extra_options:i?[]:[{label:e("ui.panel.config.automation.editor.triggers.type.state.any_state_ignore_attributes"),value:m}],entity_id:t?t[0]:void 0,attribute:i}}},{name:"to",selector:{state:{extra_options:i?[]:[{label:e("ui.panel.config.automation.editor.triggers.type.state.any_state_ignore_attributes"),value:m}],entity_id:t?t[0]:void 0,attribute:i}}},{name:"for",selector:{duration:{}}}]))}},{kind:"method",key:"shouldUpdate",value:function(e){if(!e.has("trigger"))return!0;if(this.trigger.for&&"object"==typeof this.trigger.for&&0===this.trigger.for.milliseconds&&delete this.trigger.for.milliseconds,this.trigger&&(0,u._)(this.trigger))return(0,l.B)(this,"ui-mode-not-available",Error(this.hass.localize("ui.errors.config.no_template_editor_support"))),!1;try{(0,r.hu)(this.trigger,p)}catch(t){return(0,l.B)(this,"ui-mode-not-available",t),!1}return!0}},{kind:"method",key:"render",value:function(){const e=(0,h.c)(this.trigger.for),t=Object.assign(Object.assign({},this.trigger),{},{entity_id:(0,d.r)(this.trigger.entity_id),for:e});t.attribute||null!==t.to||(t.to=m),t.attribute||null!==t.from||(t.from=m);const i=this._schema(this.hass.localize,this.trigger.entity_id,this.trigger.attribute);return(0,s.dy)(g||(g=v`
+      <ha-form
+        .hass=${0}
+        .data=${0}
+        .schema=${0}
+        @value-changed=${0}
+        .computeLabel=${0}
+        .disabled=${0}
+      ></ha-form>
+    `),this.hass,t,i,this._valueChanged,this._computeLabelCallback,this.disabled)}},{kind:"method",key:"_valueChanged",value:function(e){e.stopPropagation();const t=e.detail.value;t.to===m&&(t.to=t.attribute?void 0:null),t.from===m&&(t.from=t.attribute?void 0:null),Object.keys(t).forEach((e=>void 0===t[e]||""===t[e]?delete t[e]:{})),(0,l.B)(this,"value-changed",{value:t})}},{kind:"field",key:"_computeLabelCallback",value(){return e=>this.hass.localize("entity_id"===e.name?"ui.components.entity.entity-picker.entity":`ui.panel.config.automation.editor.triggers.type.state.${e.name}`)}}]}}),s.oi)},9241:function(e,t,i){var a=i(73577),s=(i(71695),i(47021),i(57243)),n=i(50778),r=i(27486),o=i(11297);i(42877);let d,l=e=>e;(0,a.Z)([(0,n.Mo)("ha-automation-trigger-sun")],(function(e,t){return{F:class extends t{constructor(...t){super(...t),e(this)}},d:[{kind:"field",decorators:[(0,n.Cb)({attribute:!1})],key:"hass",value:void 0},{kind:"field",decorators:[(0,n.Cb)({attribute:!1})],key:"trigger",value:void 0},{kind:"field",decorators:[(0,n.Cb)({type:Boolean})],key:"disabled",value(){return!1}},{kind:"field",key:"_schema",value(){return(0,r.Z)((e=>[{name:"event",type:"select",required:!0,options:[["sunrise",e("ui.panel.config.automation.editor.triggers.type.sun.sunrise")],["sunset",e("ui.panel.config.automation.editor.triggers.type.sun.sunset")]]},{name:"offset",selector:{text:{}}}]))}},{kind:"get",static:!0,key:"defaultConfig",value:function(){return{trigger:"sun",event:"sunrise",offset:0}}},{kind:"method",key:"render",value:function(){const e=this._schema(this.hass.localize);return(0,s.dy)(d||(d=l`
+      <ha-form
+        .schema=${0}
+        .data=${0}
+        .hass=${0}
+        .disabled=${0}
+        .computeLabel=${0}
+        @value-changed=${0}
+      ></ha-form>
+    `),e,this.trigger,this.hass,this.disabled,this._computeLabelCallback,this._valueChanged)}},{kind:"method",key:"_valueChanged",value:function(e){e.stopPropagation();const t=e.detail.value;(0,o.B)(this,"value-changed",{value:t})}},{kind:"field",key:"_computeLabelCallback",value(){return e=>this.hass.localize(`ui.panel.config.automation.editor.triggers.type.sun.${e.name}`)}}]}}),s.oi)},30944:function(e,t,i){var a=i(73577),s=i(72621),n=(i(71695),i(61893),i(9359),i(70104),i(19423),i(40251),i(47021),i(87319),i(57243)),r=i(50778),o=i(11297),d=i(32770);i(58130);let l,u,c,h=e=>e;(0,a.Z)([(0,r.Mo)("ha-automation-trigger-tag")],(function(e,t){class i extends t{constructor(...t){super(...t),e(this)}}return{F:i,d:[{kind:"field",decorators:[(0,r.Cb)({attribute:!1})],key:"hass",value:void 0},{kind:"field",decorators:[(0,r.Cb)({attribute:!1})],key:"trigger",value:void 0},{kind:"field",decorators:[(0,r.Cb)({type:Boolean})],key:"disabled",value(){return!1}},{kind:"field",decorators:[(0,r.SB)()],key:"_tags",value:void 0},{kind:"get",static:!0,key:"defaultConfig",value:function(){return{trigger:"tag",tag_id:""}}},{kind:"method",key:"firstUpdated",value:function(e){(0,s.Z)(i,"firstUpdated",this,3)([e]),this._fetchTags()}},{kind:"method",key:"render",value:function(){return this._tags?(0,n.dy)(l||(l=h`
+      <ha-select
+        .label=${0}
+        .disabled=${0}
+        .value=${0}
+        @selected=${0}
+      >
+        ${0}
+      </ha-select>
+    `),this.hass.localize("ui.panel.config.automation.editor.triggers.type.tag.label"),this.disabled||0===this._tags.length,this.trigger.tag_id,this._tagChanged,this._tags.map((e=>(0,n.dy)(u||(u=h`
+            <mwc-list-item .value=${0}>
+              ${0}
+            </mwc-list-item>
+          `),e.id,e.name||e.id)))):n.Ld}},{kind:"method",key:"_fetchTags",value:async function(){this._tags=(await(async e=>e.callWS({type:"tag/list"}))(this.hass)).sort(((e,t)=>(0,d.fe)(e.name||e.id,t.name||t.id,this.hass.locale.language)))}},{kind:"method",key:"_tagChanged",value:function(e){e.target.value&&this._tags&&this.trigger.tag_id!==e.target.value&&(0,o.B)(this,"value-changed",{value:Object.assign(Object.assign({},this.trigger),{},{tag_id:e.target.value})})}},{kind:"field",static:!0,key:"styles",value(){return(0,n.iv)(c||(c=h`
+    ha-select {
+      display: block;
+    }
+  `))}}]}}),n.oi)},9342:function(e,t,i){var a=i(73577),s=(i(52247),i(71695),i(9359),i(68107),i(19423),i(47021),i(54993),i(57243)),n=i(50778),r=(i(42877),i(28571)),o=i(11297),d=i(80058);let l,u=e=>e;const c=[{name:"value_template",required:!0,selector:{template:{}}},{name:"for",selector:{duration:{}}}];(0,a.Z)([(0,n.Mo)("ha-automation-trigger-template")],(function(e,t){return{F:class extends t{constructor(...t){super(...t),e(this)}},d:[{kind:"field",decorators:[(0,n.Cb)({attribute:!1})],key:"hass",value:void 0},{kind:"field",decorators:[(0,n.Cb)({attribute:!1})],key:"trigger",value:void 0},{kind:"field",decorators:[(0,n.Cb)({type:Boolean})],key:"disabled",value(){return!1}},{kind:"get",static:!0,key:"defaultConfig",value:function(){return{trigger:"template",value_template:""}}},{kind:"method",key:"willUpdate",value:function(e){e.has("trigger")&&this.trigger&&(0,d._)(this.trigger.for)&&(0,o.B)(this,"ui-mode-not-available",Error(this.hass.localize("ui.errors.config.no_template_editor_support")))}},{kind:"method",key:"render",value:function(){const e=(0,r.c)(this.trigger.for),t=Object.assign(Object.assign({},this.trigger),{},{for:e});return(0,s.dy)(l||(l=u`
+      <ha-form
+        .hass=${0}
+        .data=${0}
+        .schema=${0}
+        @value-changed=${0}
+        .computeLabel=${0}
+        .disabled=${0}
+      ></ha-form>
+    `),this.hass,t,c,this._valueChanged,this._computeLabelCallback,this.disabled)}},{kind:"method",key:"_valueChanged",value:function(e){e.stopPropagation();const t=e.detail.value;t.for&&Object.values(t.for).every((e=>0===e))&&delete t.for,(0,o.B)(this,"value-changed",{value:t})}},{kind:"field",key:"_computeLabelCallback",value(){return e=>this.hass.localize(`ui.panel.config.automation.editor.triggers.type.template.${e.name}`)}}]}}),s.oi)},52696:function(e,t,i){var a=i(73577),s=(i(52247),i(63434),i(19083),i(71695),i(19423),i(96829),i(47021),i(57243)),n=i(50778),r=i(27486),o=i(11297),d=(i(42877),i(79575));let l,u=e=>e;const c="time",h="entity",g=["sensor","input_datetime"];(0,a.Z)([(0,n.Mo)("ha-automation-trigger-time")],(function(e,t){return{F:class extends t{constructor(...t){super(...t),e(this)}},d:[{kind:"field",decorators:[(0,n.Cb)({attribute:!1})],key:"hass",value:void 0},{kind:"field",decorators:[(0,n.Cb)({attribute:!1})],key:"trigger",value:void 0},{kind:"field",decorators:[(0,n.Cb)({type:Boolean})],key:"disabled",value(){return!1}},{kind:"field",decorators:[(0,n.SB)()],key:"_inputMode",value:void 0},{kind:"get",static:!0,key:"defaultConfig",value:function(){return{trigger:"time",at:""}}},{kind:"field",key:"_schema",value(){return(0,r.Z)(((e,t)=>[{name:"mode",type:"select",required:!0,options:[[c,e("ui.panel.config.automation.editor.triggers.type.time.type_value")],[h,e("ui.panel.config.automation.editor.triggers.type.time.type_input")]]},...t===c?[{name:"time",selector:{time:{}}}]:[{name:"entity",selector:{entity:{filter:[{domain:"input_datetime"},{domain:"sensor",device_class:"timestamp"}]}}},{name:"offset",selector:{text:{}}}]]))}},{kind:"method",key:"willUpdate",value:function(e){e.has("trigger")&&this.trigger&&Array.isArray(this.trigger.at)&&(0,o.B)(this,"ui-mode-not-available",Error(this.hass.localize("ui.errors.config.editor_not_supported")))}},{kind:"field",key:"_data",value(){return(0,r.Z)(((e,t)=>{const i="object"==typeof t?t.entity_id:t&&g.includes((0,d.M)(t))?t:void 0,a=i?void 0:t,s="object"==typeof t?t.offset:void 0;return{mode:null!=e?e:i?h:c,entity:i,time:a,offset:s}}))}},{kind:"method",key:"render",value:function(){const e=this.trigger.at;if(Array.isArray(e))return s.Ld;const t=this._data(this._inputMode,e),i=this._schema(this.hass.localize,t.mode);return(0,s.dy)(l||(l=u`
+      <ha-form
+        .hass=${0}
+        .data=${0}
+        .schema=${0}
+        .disabled=${0}
+        @value-changed=${0}
+        .computeLabel=${0}
+      ></ha-form>
+    `),this.hass,t,i,this.disabled,this._valueChanged,this._computeLabelCallback)}},{kind:"method",key:"_valueChanged",value:function(e){e.stopPropagation();const t=Object.assign({},e.detail.value);this._inputMode=t.mode,t.mode===c?(delete t.entity,delete t.offset):delete t.time,(0,o.B)(this,"value-changed",{value:Object.assign(Object.assign({},this.trigger),{},{at:t.offset?{entity_id:t.entity,offset:t.offset}:t.entity||t.time})})}},{kind:"field",key:"_computeLabelCallback",value(){return e=>"time"===e.name?this.hass.localize("ui.panel.config.automation.editor.triggers.type.time.at"):this.hass.localize(`ui.panel.config.automation.editor.triggers.type.time.${e.name}`)}}]}}),s.oi)},77652:function(e,t,i){var a=i(73577),s=(i(71695),i(47021),i(57243)),n=i(50778),r=i(11297);i(42877);let o,d=e=>e;const l=[{name:"hours",selector:{text:{}}},{name:"minutes",selector:{text:{}}},{name:"seconds",selector:{text:{}}}];(0,a.Z)([(0,n.Mo)("ha-automation-trigger-time_pattern")],(function(e,t){return{F:class extends t{constructor(...t){super(...t),e(this)}},d:[{kind:"field",decorators:[(0,n.Cb)({attribute:!1})],key:"hass",value:void 0},{kind:"field",decorators:[(0,n.Cb)({attribute:!1})],key:"trigger",value:void 0},{kind:"field",decorators:[(0,n.Cb)({type:Boolean})],key:"disabled",value(){return!1}},{kind:"get",static:!0,key:"defaultConfig",value:function(){return{trigger:"time_pattern"}}},{kind:"method",key:"render",value:function(){return(0,s.dy)(o||(o=d`
+      <ha-form
+        .hass=${0}
+        .schema=${0}
+        .data=${0}
+        .disabled=${0}
+        .computeLabel=${0}
+        .computeHelper=${0}
+        @value-changed=${0}
+      ></ha-form>
+    `),this.hass,l,this.trigger,this.disabled,this._computeLabelCallback,this._computeHelperCallback,this._valueChanged)}},{kind:"method",key:"_valueChanged",value:function(e){e.stopPropagation();const t=e.detail.value;(0,r.B)(this,"value-changed",{value:t})}},{kind:"field",key:"_computeLabelCallback",value(){return e=>this.hass.localize(`ui.panel.config.automation.editor.triggers.type.time_pattern.${e.name}`)}},{kind:"field",key:"_computeHelperCallback",value(){return e=>this.hass.localize("ui.panel.config.automation.editor.triggers.type.time_pattern.help")}}]}}),s.oi)},23137:function(e,t,i){i.a(e,(async function(e,t){try{var a=i(73577),s=i(72621),n=(i(19083),i(71695),i(92745),i(82328),i(55751),i(26200),i(25754),i(22246),i(19423),i(40251),i(19134),i(61006),i(97003),i(92789),i(36810),i(14953),i(58402),i(31503),i(16440),i(2213),i(57385),i(71375),i(15524),i(20267),i(21917),i(56193),i(25020),i(45729),i(47021),i(34028),i(21478),i(35911),i(57243)),r=i(50778),o=i(11297),d=i(52170),l=i(85690),u=i(81036),c=(i(43527),i(28368),i(59897),i(70596),i(46694)),h=i(1284),g=e([h]);h=(g.then?(await g)():g)[0];let v,p,m,f=e=>e;const y="M12,15.5A3.5,3.5 0 0,1 8.5,12A3.5,3.5 0 0,1 12,8.5A3.5,3.5 0 0,1 15.5,12A3.5,3.5 0 0,1 12,15.5M19.43,12.97C19.47,12.65 19.5,12.33 19.5,12C19.5,11.67 19.47,11.34 19.43,11L21.54,9.37C21.73,9.22 21.78,8.95 21.66,8.73L19.66,5.27C19.54,5.05 19.27,4.96 19.05,5.05L16.56,6.05C16.04,5.66 15.5,5.32 14.87,5.07L14.5,2.42C14.46,2.18 14.25,2 14,2H10C9.75,2 9.54,2.18 9.5,2.42L9.13,5.07C8.5,5.32 7.96,5.66 7.44,6.05L4.95,5.05C4.73,4.96 4.46,5.05 4.34,5.27L2.34,8.73C2.21,8.95 2.27,9.22 2.46,9.37L4.57,11C4.53,11.34 4.5,11.67 4.5,12C4.5,12.33 4.53,12.65 4.57,12.97L2.46,14.63C2.27,14.78 2.21,15.05 2.34,15.27L4.34,18.73C4.46,18.95 4.73,19.03 4.95,18.95L7.44,17.94C7.96,18.34 8.5,18.68 9.13,18.93L9.5,21.58C9.54,21.82 9.75,22 10,22H14C14.25,22 14.46,21.82 14.5,21.58L14.87,18.93C15.5,18.67 16.04,18.34 16.56,17.94L19.05,18.95C19.27,19.03 19.54,18.95 19.66,18.73L21.66,15.27C21.78,15.05 21.73,14.78 21.54,14.63L19.43,12.97Z",_="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z",k=["GET","HEAD","POST","PUT"],b=["POST","PUT"],$="";(0,a.Z)([(0,r.Mo)("ha-automation-trigger-webhook")],(function(e,t){class i extends t{constructor(...t){super(...t),e(this)}}return{F:i,d:[{kind:"field",decorators:[(0,r.Cb)({attribute:!1})],key:"hass",value:void 0},{kind:"field",decorators:[(0,r.Cb)({attribute:!1})],key:"trigger",value:void 0},{kind:"field",decorators:[(0,r.Cb)({type:Boolean})],key:"disabled",value(){return!1}},{kind:"field",decorators:[(0,r.SB)()],key:"_config",value:void 0},{kind:"field",key:"_unsub",value:void 0},{kind:"get",static:!0,key:"defaultConfig",value:function(){return{trigger:"webhook",allowed_methods:[...b],local_only:!0,webhook_id:$}}},{kind:"method",key:"connectedCallback",value:function(){(0,s.Z)(i,"connectedCallback",this,3)([]);const e={callback:e=>{this._config=e}};(0,o.B)(this,"subscribe-automation-config",e),this._unsub=e.unsub}},{kind:"method",key:"disconnectedCallback",value:function(){(0,s.Z)(i,"disconnectedCallback",this,3)([]),this._unsub&&this._unsub()}},{kind:"method",key:"_generateWebhookId",value:function(){var e;const t=crypto.getRandomValues(new Uint8Array(18)),i=btoa(String.fromCharCode(...t)).replace(/\+/g,"-").replace(/\//g,"_");return`${(0,d.l)((null===(e=this._config)||void 0===e?void 0:e.alias)||"","-")}-${i}`}},{kind:"method",key:"willUpdate",value:function(e){(0,s.Z)(i,"willUpdate",this,3)([e]),e.has("trigger")&&(void 0===this.trigger.allowed_methods&&(this.trigger.allowed_methods=[...b]),void 0===this.trigger.local_only&&(this.trigger.local_only=!0),this.trigger.webhook_id===$&&(this.trigger.webhook_id=this._generateWebhookId()))}},{kind:"method",key:"render",value:function(){const{allowed_methods:e,local_only:t,webhook_id:i}=this.trigger;return(0,n.dy)(v||(v=f`
+      <div class="flex">
+        <ha-textfield
+          name="webhook_id"
+          .label=${0}
+          .helper=${0}
+          .disabled=${0}
+          iconTrailing
+          .value=${0}
+          @input=${0}
+        >
+          <ha-icon-button
+            @click=${0}
+            slot="trailingIcon"
+            .label=${0}
+            .path=${0}
+          ></ha-icon-button>
+        </ha-textfield>
+        <ha-button-menu multi @closed=${0}>
+          <ha-icon-button
+            slot="trigger"
+            .label=${0}
+            .path=${0}
+          ></ha-icon-button>
+          ${0}
+          <li divider role="separator"></li>
+          <ha-check-list-item
+            left
+            @request-selected=${0}
+            .selected=${0}
+          >
+            ${0}
+          </ha-check-list-item>
+        </ha-button-menu>
+      </div>
+    `),this.hass.localize("ui.panel.config.automation.editor.triggers.type.webhook.webhook_id"),this.hass.localize("ui.panel.config.automation.editor.triggers.type.webhook.webhook_id_helper"),this.disabled,i||"",this._valueChanged,this._copyUrl,this.hass.localize("ui.panel.config.automation.editor.triggers.type.webhook.copy_url"),_,u.U,this.hass.localize("ui.panel.config.automation.editor.triggers.type.webhook.webhook_settings"),y,k.map((t=>(0,n.dy)(p||(p=f`
+              <ha-check-list-item
+                left
+                .value=${0}
+                @request-selected=${0}
+                .selected=${0}
+              >
+                ${0}
+              </ha-check-list-item>
+            `),t,this._allowedMethodsChanged,e.includes(t),t))),this._localOnlyChanged,t,this.hass.localize("ui.panel.config.automation.editor.triggers.type.webhook.local_only"))}},{kind:"method",key:"_valueChanged",value:function(e){(0,h.a)(this,e)}},{kind:"method",key:"_localOnlyChanged",value:function(e){if(e.stopPropagation(),this.trigger.local_only===e.detail.selected)return;const t=Object.assign(Object.assign({},this.trigger),{},{local_only:e.detail.selected});(0,o.B)(this,"value-changed",{value:t})}},{kind:"method",key:"_allowedMethodsChanged",value:function(e){var t,i;e.stopPropagation();const a=e.target.value,s=e.detail.selected;if(s===(null===(t=this.trigger.allowed_methods)||void 0===t?void 0:t.includes(a)))return;const n=[...null!==(i=this.trigger.allowed_methods)&&void 0!==i?i:[]];s?n.push(a):n.splice(n.indexOf(a),1);const r=Object.assign(Object.assign({},this.trigger),{},{allowed_methods:n});(0,o.B)(this,"value-changed",{value:r})}},{kind:"method",key:"_copyUrl",value:async function(e){const t=e.target.parentElement,i=this.hass.hassUrl(`/api/webhook/${t.value}`);await(0,l.v)(i),(0,c.C)(this,{message:this.hass.localize("ui.common.copied_clipboard")})}},{kind:"field",static:!0,key:"styles",value(){return(0,n.iv)(m||(m=f`
+    .flex {
+      display: flex;
+    }
+
+    ha-textfield {
+      flex: 1;
+    }
+
+    ha-textfield > ha-icon-button {
+      --mdc-icon-button-size: 24px;
+      --mdc-icon-size: 18px;
+      color: var(--secondary-text-color);
+    }
+
+    ha-button-menu {
+      padding-top: 4px;
+    }
+  `))}}]}}),n.oi);t()}catch(v){t(v)}}))},94757:function(e,t,i){i.a(e,(async function(e,t){try{var a=i(73577),s=(i(71695),i(19423),i(47021),i(59498)),n=(i(52158),i(57243)),r=i(50778),o=i(11297),d=i(43420),l=i(43559),u=e([s]);s=(u.then?(await u)():u)[0];let h,g,v=e=>e;function p(e){return(0,l.t)(e)&&"zone"!==(0,d.N)(e)}const m=["zone"];(0,a.Z)([(0,r.Mo)("ha-automation-trigger-zone")],(function(e,t){return{F:class extends t{constructor(...t){super(...t),e(this)}},d:[{kind:"field",decorators:[(0,r.Cb)({attribute:!1})],key:"hass",value:void 0},{kind:"field",decorators:[(0,r.Cb)({attribute:!1})],key:"trigger",value:void 0},{kind:"field",decorators:[(0,r.Cb)({type:Boolean})],key:"disabled",value(){return!1}},{kind:"get",static:!0,key:"defaultConfig",value:function(){return{trigger:"zone",entity_id:"",zone:"",event:"enter"}}},{kind:"method",key:"render",value:function(){const{entity_id:e,zone:t,event:i}=this.trigger;return(0,n.dy)(h||(h=v`
+      <ha-entity-picker
+        .label=${0}
+        .value=${0}
+        .disabled=${0}
+        @value-changed=${0}
+        .hass=${0}
+        allow-custom-entity
+        .entityFilter=${0}
+      ></ha-entity-picker>
+      <ha-entity-picker
+        .label=${0}
+        .value=${0}
+        .disabled=${0}
+        @value-changed=${0}
+        .hass=${0}
+        allow-custom-entity
+        .includeDomains=${0}
+      ></ha-entity-picker>
+
+      <label>
+        ${0}
+        <ha-formfield
+          .disabled=${0}
+          .label=${0}
+        >
+          <ha-radio
+            name="event"
+            value="enter"
+            .disabled=${0}
+            .checked=${0}
+            @change=${0}
+          ></ha-radio>
+        </ha-formfield>
+        <ha-formfield
+          .disabled=${0}
+          .label=${0}
+        >
+          <ha-radio
+            name="event"
+            value="leave"
+            .disabled=${0}
+            .checked=${0}
+            @change=${0}
+          ></ha-radio>
+        </ha-formfield>
+      </label>
+    `),this.hass.localize("ui.panel.config.automation.editor.triggers.type.zone.entity"),e,this.disabled,this._entityPicked,this.hass,p,this.hass.localize("ui.panel.config.automation.editor.triggers.type.zone.zone"),t,this.disabled,this._zonePicked,this.hass,m,this.hass.localize("ui.panel.config.automation.editor.triggers.type.zone.event"),this.disabled,this.hass.localize("ui.panel.config.automation.editor.triggers.type.zone.enter"),this.disabled,"enter"===i,this._radioGroupPicked,this.disabled,this.hass.localize("ui.panel.config.automation.editor.triggers.type.zone.leave"),this.disabled,"leave"===i,this._radioGroupPicked)}},{kind:"method",key:"_entityPicked",value:function(e){e.stopPropagation(),(0,o.B)(this,"value-changed",{value:Object.assign(Object.assign({},this.trigger),{},{entity_id:e.detail.value})})}},{kind:"method",key:"_zonePicked",value:function(e){e.stopPropagation(),(0,o.B)(this,"value-changed",{value:Object.assign(Object.assign({},this.trigger),{},{zone:e.detail.value})})}},{kind:"method",key:"_radioGroupPicked",value:function(e){e.stopPropagation(),(0,o.B)(this,"value-changed",{value:Object.assign(Object.assign({},this.trigger),{},{event:e.target.value})})}},{kind:"field",static:!0,key:"styles",value(){return(0,n.iv)(g||(g=v`
+    label {
+      display: flex;
+      align-items: center;
+    }
+    ha-entity-picker {
+      display: block;
+      margin-bottom: 24px;
+    }
+  `))}}]}}),n.oi);t()}catch(c){t(c)}}))},93958:function(e,t,i){i.d(t,{F:()=>p});i(71695),i(40251),i(47021);var a=i(9065),s=i(50778),n=i(92444),r=i(76688);let o=class extends n.A{};o.styles=[r.W],o=(0,a.__decorate)([(0,s.Mo)("mwc-checkbox")],o);var d=i(57243),l=i(35359),u=i(65703);let c,h,g,v=e=>e;class p extends u.K{constructor(){super(...arguments),this.left=!1,this.graphic="control"}render(){const e={"mdc-deprecated-list-item__graphic":this.left,"mdc-deprecated-list-item__meta":!this.left},t=this.renderText(),i=this.graphic&&"control"!==this.graphic&&!this.left?this.renderGraphic():(0,d.dy)(c||(c=v``)),a=this.hasMeta&&this.left?this.renderMeta():(0,d.dy)(h||(h=v``)),s=this.renderRipple();return(0,d.dy)(g||(g=v`
+      ${0}
+      ${0}
+      ${0}
+      <span class=${0}>
+        <mwc-checkbox
+            reducedTouchTarget
+            tabindex=${0}
+            .checked=${0}
+            ?disabled=${0}
+            @change=${0}>
+        </mwc-checkbox>
+      </span>
+      ${0}
+      ${0}`),s,i,this.left?"":t,(0,l.$)(e),this.tabindex,this.selected,this.disabled,this.onChange,this.left?t:"",a)}async onChange(e){const t=e.target;this.selected===t.checked||(this._skipPropRequest=!0,this.selected=t.checked,await this.updateComplete,this._skipPropRequest=!1)}}(0,a.__decorate)([(0,s.IO)("slot")],p.prototype,"slotElement",void 0),(0,a.__decorate)([(0,s.IO)("mwc-checkbox")],p.prototype,"checkboxElement",void 0),(0,a.__decorate)([(0,s.Cb)({type:Boolean})],p.prototype,"left",void 0),(0,a.__decorate)([(0,s.Cb)({type:String,reflect:!0})],p.prototype,"graphic",void 0)},97536:function(e,t,i){i.d(t,{W:()=>s});let a;const s=(0,i(57243).iv)(a||(a=(e=>e)`:host(:not([twoline])){height:56px}:host(:not([left])) .mdc-deprecated-list-item__meta{height:40px;width:40px}`))}}]);
+//# sourceMappingURL=5456.78801cbd981d851c.js.map
