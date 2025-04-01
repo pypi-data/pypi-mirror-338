@@ -1,0 +1,13 @@
+lite_mcp_client/__init__.py,sha256=kA0L5Wg179pDCxXruB38FiXTYFR7j5MovXZ-wmFIZsM,83
+lite_mcp_client/cli.py,sha256=qejCZCdyD8uhIUdDTkt2xIG_e-NTEhLqx7FruVL9NmE,8952
+lite_mcp_client/client.py,sha256=r1c0iQzKUjTx09VHJvKEMG5u3a7lPpRNWarQU5sUBjg,26129
+lite_mcp_client/config.py,sha256=J2hC1IoGsAWIOWEitFhOWvcZNJG3TS2Su0raKnTfuRs,4258
+lite_mcp_client/connection.py,sha256=VDgUc616s_sW6w89nQVbafE3YeTGPaignWb0AaeoHd0,26985
+lite_mcp_client/llm_processing.py,sha256=9Kgk1jrVfdFnnisRe62GHEkTf59v9Qgi2M_g_-q2rXA,27375
+lite_mcp_client/main.py,sha256=-6M1kOk9pEIYU8Ys7jfmqgtauSNY0dzy5w03mjiQJPg,11881
+lite_mcp_client/utils.py,sha256=ymw6IvlC8DU_dtp09wrH-Q9_4Bzin-zLtp7XRxd-eEQ,5041
+lite_mcp_client-0.1.0.dist-info/METADATA,sha256=TbFgZbic8MIotbeg7A6MLP5QZYyMGNv5zilPCAeN2rI,6380
+lite_mcp_client-0.1.0.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+lite_mcp_client-0.1.0.dist-info/entry_points.txt,sha256=gBFa9MULsvYgBubIH2cukY-cNAm36qdXobOHw1gBpS4,69
+lite_mcp_client-0.1.0.dist-info/top_level.txt,sha256=wKKF_dDjnpm-8MlvrRbyRmE36sNSnz_1mgT-Gbgx_-8,16
+lite_mcp_client-0.1.0.dist-info/RECORD,,

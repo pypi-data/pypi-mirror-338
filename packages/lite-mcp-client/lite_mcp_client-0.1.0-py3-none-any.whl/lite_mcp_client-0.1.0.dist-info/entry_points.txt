@@ -1,0 +1,2 @@
+[console_scripts]
+lite-mcp-client = lite_mcp_client.main:entry_point
