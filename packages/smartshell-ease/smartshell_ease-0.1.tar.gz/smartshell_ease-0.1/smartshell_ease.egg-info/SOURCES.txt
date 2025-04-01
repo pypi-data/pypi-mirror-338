@@ -1,0 +1,13 @@
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+smartshell_ease/__init__.py
+smartshell_ease/commands.json
+smartshell_ease/smartshell.py
+smartshell_ease.egg-info/PKG-INFO
+smartshell_ease.egg-info/SOURCES.txt
+smartshell_ease.egg-info/dependency_links.txt
+smartshell_ease.egg-info/entry_points.txt
+smartshell_ease.egg-info/requires.txt
+smartshell_ease.egg-info/top_level.txt
