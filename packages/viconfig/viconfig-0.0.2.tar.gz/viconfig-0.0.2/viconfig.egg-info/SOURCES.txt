@@ -1,0 +1,12 @@
+LICENSE.txt
+README.md
+pyproject.toml
+viconfig/Config.py
+viconfig/FType.py
+viconfig/Field.py
+viconfig/__init__.py
+viconfig.egg-info/PKG-INFO
+viconfig.egg-info/SOURCES.txt
+viconfig.egg-info/dependency_links.txt
+viconfig.egg-info/requires.txt
+viconfig.egg-info/top_level.txt

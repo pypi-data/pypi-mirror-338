@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools >= 77.0.3", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "viconfig"
+version = "0.0.2"
+description = "带数据验证的服务器配置信息库"
+requires-python = ">= 3.8"
+authors = [
+    { name = "zhoubinzyb", email = "2314910401@qq.com" }
+]
+readme = "README.md"
+keywords = ["服务器配置信息"]
+dependencies = [
+    "pathlib"
+]
+license = "MIT AND (Apache-2.0 OR BSD-2-Clause)"
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "Topic :: Software Development :: Build Tools",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+]
