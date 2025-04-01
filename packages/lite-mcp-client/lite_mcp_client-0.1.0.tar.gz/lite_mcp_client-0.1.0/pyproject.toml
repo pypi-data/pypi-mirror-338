@@ -1,0 +1,16 @@
+[project]
+name = "lite-mcp-client"
+version = "0.1.0"
+description = "一个基于命令行的轻量级MCP客户端"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "langchain-anthropic>=0.3.10",
+    "langchain-aws>=0.2.18",
+    "langchain-google-genai>=2.1.2",
+    "langchain-openai>=0.3.11",
+    "mcp>=1.6.0",
+]
+
+[project.scripts]
+lite-mcp-client = "lite_mcp_client.main:entry_point"

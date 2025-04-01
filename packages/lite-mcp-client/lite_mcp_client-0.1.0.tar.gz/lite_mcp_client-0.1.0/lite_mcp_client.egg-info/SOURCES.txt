@@ -1,0 +1,16 @@
+README.md
+pyproject.toml
+lite_mcp_client/__init__.py
+lite_mcp_client/cli.py
+lite_mcp_client/client.py
+lite_mcp_client/config.py
+lite_mcp_client/connection.py
+lite_mcp_client/llm_processing.py
+lite_mcp_client/main.py
+lite_mcp_client/utils.py
+lite_mcp_client.egg-info/PKG-INFO
+lite_mcp_client.egg-info/SOURCES.txt
+lite_mcp_client.egg-info/dependency_links.txt
+lite_mcp_client.egg-info/entry_points.txt
+lite_mcp_client.egg-info/requires.txt
+lite_mcp_client.egg-info/top_level.txt
