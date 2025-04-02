@@ -1,0 +1,13 @@
+omegacloud_cli/__init__.py,sha256=vD69uyEXJ6Oxki-m-DpN7FJ09PwnWJFlLf3I2Hu-yBs,79
+omegacloud_cli/api.py,sha256=1ABPsp6heDkJ_EQJvit_u4g8GMD00YkVuNbsUiG-lH0,10783
+omegacloud_cli/main.py,sha256=zRbWnf2ZLTSs5bsv5ge0NBnc5M-Zxhvs_w-M6M5NdXI,55151
+omegacloud_cli/utils.py,sha256=b-ENQsir0li-22Y7kbl656g30JQMJ3tsSwdx4TPXAV8,4205
+omegacloud_cli/common/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+omegacloud_cli/common/enums.py,sha256=Z8Nm_D4PGL3vlAed6g8Afih1kNHHL1OgDjAm9N5Is_8,508
+omegacloud_cli/common/schemas.py,sha256=H3v7_Y42roKxQVvYIQCRH7KVykLMXR9Gq8p5tSbx5dg,2576
+omegacloud_cli/controllers/filesync.py,sha256=NYq_ODdGog3wjIq_zjrpnqtWq3S1gUSycpVAH9Sgckk,16420
+omegacloud_cli-0.1.0.dist-info/METADATA,sha256=yjqqWFyn6O-T-ALjYSCdv74l59bc5XRulNhCq-lnAbI,2208
+omegacloud_cli-0.1.0.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+omegacloud_cli-0.1.0.dist-info/entry_points.txt,sha256=JMJDKrY4tPPnaO8VSyk9vZNhHmLAyrn1A7S-VAi3VCU,50
+omegacloud_cli-0.1.0.dist-info/licenses/LICENSE,sha256=q3CfE9TUnOyaL8tBfNKauiS0Sw7v36lXc_VJTuTXqlY,665
+omegacloud_cli-0.1.0.dist-info/RECORD,,
