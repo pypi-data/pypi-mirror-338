@@ -1,0 +1,8 @@
+LICENSE
+README.md
+pyproject.toml
+dbt_mcp/__init__.py
+dbt_mcp.egg-info/PKG-INFO
+dbt_mcp.egg-info/SOURCES.txt
+dbt_mcp.egg-info/dependency_links.txt
+dbt_mcp.egg-info/top_level.txt
