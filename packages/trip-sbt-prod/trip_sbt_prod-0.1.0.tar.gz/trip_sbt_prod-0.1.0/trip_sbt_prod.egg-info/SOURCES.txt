@@ -1,0 +1,5 @@
+setup.py
+trip_sbt_prod.egg-info/PKG-INFO
+trip_sbt_prod.egg-info/SOURCES.txt
+trip_sbt_prod.egg-info/dependency_links.txt
+trip_sbt_prod.egg-info/top_level.txt
