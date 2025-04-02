@@ -1,0 +1,27 @@
+{% load i18n %}
+
+<script type="application/javascript">
+    let taxsystemsettings = {
+        // Core
+        corporation_id: {{ corporation_id }},
+        csrf: "{{ csrf_token }}",
+        // URLs
+        corporationmanageDashboardUrl: "/taxsystem/api/corporation/{{ corporation_id }}/view/dashboard/",
+        corporationPaymentsUrl: "/taxsystem/api/corporation/{{ corporation_id }}/view/payments/",
+        corporationOwnPaymentsUrl: "/taxsystem/api/corporation/{{ corporation_id }}/view/own-payments/",
+        corporationMembersUrl: "/taxsystem/api/corporation/{{ corporation_id }}/view/members/",
+        corporationPaymentSystemUrl: "/taxsystem/api/corporation/{{ corporation_id }}/view/paymentsystem/",
+        // Update URLs
+        corporationUpdateTaxUrl: "/taxsystem/corporation/{{ corporation_id }}/manage/update_tax/",
+        corporationUpdatePeriodUrl: "/taxsystem/corporation/{{ corporation_id }}/manage/update_period/",
+
+        // Translations
+        translations: {
+            days: '{% translate "days" %}',
+            enterTaxAmount: "{% translate 'Enter Tax Amount' %}",
+            enterTaxPeriod: "{% translate 'Enter Tax Period' %}",
+            internalServerError: "{% translate 'Internal Server Error' %}",
+            hasPaid: "{% translate 'Tax Paid' %}",
+        }
+    };
+</script>
