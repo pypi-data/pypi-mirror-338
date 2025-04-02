@@ -1,0 +1,3 @@
+include src/AstroToolkit/Examples/*.fits
+include src/AstroToolkit/Examples/*.txt
+include src/AstroToolkit/Plotting/*.fits
