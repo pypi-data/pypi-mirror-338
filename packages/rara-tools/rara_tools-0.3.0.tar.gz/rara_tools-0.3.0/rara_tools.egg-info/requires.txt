@@ -1,0 +1,11 @@
+elasticsearch==8.*
+elasticsearch_dsl==8.*
+minio==7.*
+requests
+iso639-lang
+pymarc
+glom
+
+[testing]
+pytest>=8.0
+pytest-order
