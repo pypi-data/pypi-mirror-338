@@ -1,0 +1,43 @@
+Metadata-Version: 2.4
+Name: meteofr
+Version: 0.0.1
+Summary: Access Meteo France API to fetch weather data.
+Project-URL: Documentation, https://github.com/goodfr/meteofr#readme
+Project-URL: Issues, https://github.com/goodfr/meteofr/issues
+Project-URL: Source, https://github.com/goodfr/meteofr
+Author-email: goodfr <44895259+goodfr@users.noreply.github.com>
+License-Expression: MIT
+License-File: LICENSE.txt
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+# meteofr
+
+[![PyPI - Version](https://img.shields.io/pypi/v/meteofr.svg)](https://pypi.org/project/meteofr)
+[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/meteofr.svg)](https://pypi.org/project/meteofr)
+
+-----
+
+## Table of Contents
+
+- [Installation](#installation)
+- [License](#license)
+
+## Installation
+
+```console
+pip install meteofr
+```
+
+## License
+
+`meteofr` is distributed under the terms of the [MIT](https://spdx.org/licenses/MIT.html) license.
