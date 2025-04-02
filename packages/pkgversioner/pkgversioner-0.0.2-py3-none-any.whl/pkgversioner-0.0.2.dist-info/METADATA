@@ -1,0 +1,13 @@
+Metadata-Version: 2.3
+Name: pkgversioner
+Version: 0.0.2
+Summary: Package versioning tools for Python projects
+Author: Danny Stewart
+Author-email: danny@stewart.cc
+Requires-Python: >=3.12
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Description-Content-Type: text/markdown
+
+
