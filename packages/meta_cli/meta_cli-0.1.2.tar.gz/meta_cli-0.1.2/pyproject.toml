@@ -1,0 +1,23 @@
+[project]
+name = "meta_cli"
+version = "0.1.2"
+description = ""
+authors = [{ name = "will895", email = "will8958785@gmail.com" }]
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = ["deepdiff (>=8.4.2,<9.0.0)", "pytest (>=8.3.5,<9.0.0)"]
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+
+[tool.setuptools]
+packages = ["meta_cli"]
+
+
+[tool.setuptools.package-dir]
+me_cli = "meta_cli"
+
+[tool.setuptools.exclude-package-data]
+"*" = ["config/*", "docs/*", "logs/*"]
