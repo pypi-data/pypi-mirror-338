@@ -1,0 +1,246 @@
+Metadata-Version: 2.4
+Name: jupyter-notebook-mcp
+Version: 0.1.0
+Summary: Jupyter Notebook MCP Server
+Project-URL: Homepage, https://github.com/yourusername/jupyter-notebook-mcp
+Project-URL: Bug Tracker, https://github.com/yourusername/jupyter-notebook-mcp/issues
+Project-URL: Documentation, https://github.com/yourusername/jupyter-notebook-mcp#readme
+Author-email: Your Name <your.email@example.com>
+License: MIT
+License-File: LICENSE
+Keywords: ai,claude,jupyter,mcp,model-context-protocol,notebook
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Python: >=3.10
+Requires-Dist: ipykernel>=6.9.0
+Requires-Dist: jupyter-client==8.6.3
+Requires-Dist: matplotlib==3.5.0
+Requires-Dist: mcp==1.6.0
+Requires-Dist: nbclient==0.6.0
+Requires-Dist: nbformat==5.9.2
+Requires-Dist: numpy==1.24.0
+Requires-Dist: pandas==1.5.0
+Requires-Dist: pydantic==2.7.2
+Requires-Dist: pyzmq==25.1.0
+Description-Content-Type: text/markdown
+
+# Jupyter Notebook MCP Server
+
+**Jupyter NotebookをModel Context Protocol (MCP)を通じて操作するためのサーバー**
+
+[![PyPI](https://img.shields.io/pypi/v/jupyter-notebook-mcp.svg)](https://pypi.org/project/jupyter-notebook-mcp/)
+[![MIT License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+[![Python Version](https://img.shields.io/badge/python-3.10%2B-blue)](https://www.python.org/downloads/)
+[![Documentation](https://img.shields.io/badge/docs-latest-brightgreen.svg)](https://github.com/yourusername/jupyter-notebook-mcp)
+
+Jupyter NotebookをModel Context Protocol (MCP)を通じて操作するためのサーバーです。このサーバーを使用することで、Jupyter Notebookのセルの追加、編集、削除、実行、結果取得などの操作をMCPクライアント（例：Claude）から行うことができます。
+
+## 目次
+
+* [概要](#概要)
+* [インストール](#インストール)
+  * [依存関係のインストール](#依存関係のインストール)
+  * [Claudeデスクトップでの利用](#claudeデスクトップでの利用)
+* [クイックスタート](#クイックスタート)
+* [機能](#機能)
+  * [ノートブック操作](#ノートブック操作)
+  * [セル操作](#セル操作)
+  * [カーネル情報](#カーネル情報)
+* [使用例](#使用例)
+* [高度な使い方](#高度な使い方)
+* [開発](#開発)
+  * [テスト](#テスト)
+  * [テストの構成](#テストの構成)
+* [貢献](#貢献)
+* [ライセンス](#ライセンス)
+* [謝辞](#謝辞)
+
+## 概要
+
+Jupyter Notebook MCP ServerはJupyter NotebookをModel Context Protocol (MCP)を通じて操作するためのサーバーです。MCPクライアント（Claude AIなど）からJupyter Notebookを制御し、データ分析や機械学習のワークフローを自動化できます。
+
+## インストール
+
+### 依存関係のインストール
+
+```bash
+# PyPIからインストール
+pip install jupyter-notebook-mcp
+
+# または開発版をインストール
+uv pip install -e "git+https://github.com/yourusername/jupyter-notebook-mcp.git#egg=jupyter-notebook-mcp"
+
+# 開発モードでインストール（開発ツールを含む）
+uv pip install -e ".[dev]"
+
+# uvコマンドを使用する場合
+uv add jupyter-notebook-mcp
+# 開発用
+uv add -e .
+```
+
+### Claudeデスクトップでの利用
+
+サーバーが起動したら、MCPコマンドラインツールを使って、Claudeデスクトップアプリにインストールできます:
+
+```bash
+# サーバーの起動
+python -m jupyter_notebook_mcp
+
+# Claudeにインストール
+mcp install -m jupyter_notebook_mcp
+
+# または特定のスクリプトを指定してインストール
+mcp install src/jupyter_notebook_mcp_server.py
+
+# カスタム名を付ける場合
+mcp install src/jupyter_notebook_mcp_server.py --name "Jupyter Notebook操作"
+
+# 環境変数を設定する場合
+mcp install src/jupyter_notebook_mcp_server.py -v JUPYTER_PATH=/path/to/notebooks
+```
+
+## クイックスタート
+
+```python
+# Jupyter Notebook MCPサーバーを使った基本的な操作例
+
+# サーバーを起動
+python -m jupyter_notebook_mcp
+
+# Claudeで以下のような指示を与える
+# 「新しいノートブックを作成して、pandas DataFrameを使ったデータ分析コードを追加してください」
+```
+
+## 機能
+
+### ノートブック操作
+
+- ノートブックを開く/保存する
+- ノートブックの内容を取得する
+- 新規ノートブックの作成
+
+### セル操作
+
+- コードセル/マークダウンセルの追加
+- セルの編集/削除
+- セルの実行
+- セルのソースコード/出力結果の取得
+
+### カーネル情報
+
+- 利用可能なカーネルの一覧取得
+- カーネル接続情報の管理
+
+## 使用例
+
+Claude AIに以下のような指示を出すことができます:
+
+- 「新しいノートブックを作成して、pandas DataFrameを使ったサンプルコードを追加してください」
+- 「3番目のセルを実行して結果を表示してください」
+- 「すべてのセルを実行してください」
+- 「2番目のセルのコードを修正して、matplotlibでグラフを描画するようにしてください」
+
+## 高度な使い方
+
+### カスタムサーバーの作成
+
+```python
+from jupyter_notebook_mcp import JupyterMCP
+
+# カスタムサーバーの作成
+jupyter_mcp = JupyterMCP("カスタムJupyterMCP")
+
+# カスタムツールの追加
+@jupyter_mcp.mcp.tool()
+def custom_tool(parameter: str) -> str:
+    return f"カスタム機能: {parameter}"
+
+# サーバーの実行
+if __name__ == "__main__":
+    jupyter_mcp.run(host="0.0.0.0", port=8080)
+```
+
+### APIサーバーとの統合
+
+Jupyter Notebook MCPサーバーは既存のASGIアプリケーションにマウントすることもできます：
+
+```python
+from starlette.applications import Starlette
+from starlette.routing import Mount
+from jupyter_notebook_mcp import JupyterMCP
+
+jupyter_mcp = JupyterMCP()
+
+# 既存のASGIサーバーにマウント
+app = Starlette(
+    routes=[
+        Mount('/jupyter-notebook-mcp', app=jupyter_mcp.mcp.sse_app()),
+    ]
+)
+```
+
+## 開発
+
+### テスト
+
+テストの実行方法：
+
+```bash
+# すべてのテストを実行
+python -m pytest
+
+# 特定のテストモジュールを実行
+python -m pytest tests/test_notebook_operations.py
+
+# 詳細な実行ログを表示
+python -m pytest -v
+
+# テストカバレッジレポートを生成
+python -m pytest --cov=src
+```
+
+### テストの構成
+
+テストは以下のように構成されています：
+
+- `conftest.py` - 共通のフィクスチャとユーティリティ関数
+- `test_mcp_server.py` - MCPサーバー自体のテスト
+- `test_notebook_operations.py` - ノートブック操作に関するテスト
+- `test_cell_operations.py` - セル操作に関するテスト
+- `test_execution.py` - ノートブックとセルの実行に関するテスト
+- `fixtures/` - テスト用のフィクスチャファイル
+
+テストでは以下のフィクスチャが利用可能です：
+
+- `jupyter_mcp` - JupyterMCPインスタンス
+- `sample_notebook_path` - サンプルノートブックへのパス
+- `temp_notebook` - テスト用の一時的なノートブック
+
+#### 注意事項
+
+- セルの実行テストは環境によって失敗する場合があります
+- テストではMCP APIの特性上、asyncio関数を使用しています
+- テスト実行にはpytest-asyncioプラグインが必要です
+
+## 貢献
+
+プルリクエストやイシューは歓迎します。大きな変更を加える前には、まずイシューで議論することをお勧めします。
+
+1. リポジトリをフォークする
+2. フィーチャーブランチを作成する (`git checkout -b feature/amazing-feature`)
+3. 変更をコミットする (`git commit -m 'Add amazing feature'`)
+4. ブランチをプッシュする (`git push origin feature/amazing-feature`)
+5. プルリクエストを作成する
+
+## ライセンス
+
+このプロジェクトはMITライセンスの下で公開されています - 詳細は[LICENSE](LICENSE)ファイルをご覧ください。
+
+## 謝辞
+
+このプロジェクトは[Model Context Protocol](https://github.com/modelcontextprotocol/python-sdk)のPython SDKを使用しています。
