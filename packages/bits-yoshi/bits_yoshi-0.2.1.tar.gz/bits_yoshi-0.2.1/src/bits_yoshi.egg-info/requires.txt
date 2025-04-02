@@ -1,0 +1,8 @@
+logzero
+edlib
+numpy
+matplotlib
+pyfastx
+pysam
+igv-notebook
+plotly_light>=1.0
