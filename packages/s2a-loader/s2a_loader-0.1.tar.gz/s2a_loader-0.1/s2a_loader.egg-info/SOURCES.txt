@@ -1,0 +1,6 @@
+README.md
+setup.py
+s2a_loader.egg-info/PKG-INFO
+s2a_loader.egg-info/SOURCES.txt
+s2a_loader.egg-info/dependency_links.txt
+s2a_loader.egg-info/top_level.txt
