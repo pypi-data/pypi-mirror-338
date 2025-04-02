@@ -1,0 +1,6 @@
+module.py
+pyproject.toml
+instra.asset_extraction.egg-info/PKG-INFO
+instra.asset_extraction.egg-info/SOURCES.txt
+instra.asset_extraction.egg-info/dependency_links.txt
+instra.asset_extraction.egg-info/top_level.txt
