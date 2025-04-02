@@ -1,0 +1,5 @@
+setup.py
+trip_golang_prod.egg-info/PKG-INFO
+trip_golang_prod.egg-info/SOURCES.txt
+trip_golang_prod.egg-info/dependency_links.txt
+trip_golang_prod.egg-info/top_level.txt
