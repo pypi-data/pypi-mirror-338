@@ -1,0 +1,10 @@
+flocky/__init__.py,sha256=sXLh7g3KC4QCFxcZGBTpG2scR7hmmBsMjq6LqRptkRg,22
+flocky/_modidx.py,sha256=IIkJ9c0cjOLTC_ikOVMOUzTwB_iFe8jo63driRrXm9g,1860
+flocky/api.py,sha256=eqb9SpDVTcGygYFjWe094sqPWJTyRAaKB8RA9NJpz6U,4859
+flocky/core.py,sha256=9hoWdgVPVZSQtWIEZOi8wFb4PBjYrW-6a2I0vUp-M3g,1281
+flocky-0.0.1.dist-info/licenses/LICENSE,sha256=xV8xoN4VOL0uw9X8RSs2IMuD_Ss_a9yAbtGNeBWZwnw,11337
+flocky-0.0.1.dist-info/METADATA,sha256=4LccjmVtk9sXTKHebasn5XHn7WdawaO3WcfZLzRGxvg,6113
+flocky-0.0.1.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+flocky-0.0.1.dist-info/entry_points.txt,sha256=dK4KWkLm69tEp53eR6v94HHacd5uCG9OT6ZFzpRQ12o,34
+flocky-0.0.1.dist-info/top_level.txt,sha256=GoIgFM6tTJB2bG3e5QPzQSEDwlsYigDPa2akUz0ugmo,7
+flocky-0.0.1.dist-info/RECORD,,
