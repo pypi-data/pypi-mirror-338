@@ -1,0 +1,6 @@
+pypne/__init__.py,sha256=JLgdJztS3LE8Ya_BKGIHF-mjNXc5CpCCwJZKgVuRUG0,32
+pypne/libcpp/pypne_cpp.cp38-win_amd64.pyd,sha256=qLgWBxmutI3m22i_7PTf9HG1SMI8uDCOLoo64psDXPQ,649728
+pypne/pnextract.py,sha256=tTDHGb-tr8IrLoHKvhcsQ5oaRgAILXK7jDUjPkK-m2g,3701
+pypne-0.0.5.dist-info/METADATA,sha256=tCJv-Xgx2Dx_GO3egEoJrkAi4oPir-8rQxP07LsytAg,73
+pypne-0.0.5.dist-info/WHEEL,sha256=9H8MzBlYLrtPAqiRjqg810R3jn3-7qlAOGj95CJw-NI,104
+pypne-0.0.5.dist-info/RECORD,,
