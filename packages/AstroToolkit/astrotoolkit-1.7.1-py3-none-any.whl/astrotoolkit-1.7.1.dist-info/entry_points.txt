@@ -1,0 +1,10 @@
+[console_scripts]
+ATKalias = bin.atkalias_command:main
+ATKconfig = bin.atkconfig_command:main
+ATKconv = bin.atkconv_command:main
+ATKepoch = bin.atkepoch_command:main
+ATKgui = bin.opengui_command:main
+ATKoverlay = bin.atkoverlay_command:main
+ATKquery = bin.atkquery_command:main
+ATKread = bin.atkread_command:main
+ATKsearch = bin.atksearch_command:main
