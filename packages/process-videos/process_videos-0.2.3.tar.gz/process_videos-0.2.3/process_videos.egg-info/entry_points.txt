@@ -1,0 +1,2 @@
+[console_scripts]
+process-videos = process_videos.cli:main
