@@ -1,0 +1,11 @@
+README.md
+setup.py
+vikdatashift/__init__.py
+vikdatashift/csv_to_db.py
+vikdatashift/db_to_csv.py
+vikdatashift/db_to_db.py
+vikdatashift.egg-info/PKG-INFO
+vikdatashift.egg-info/SOURCES.txt
+vikdatashift.egg-info/dependency_links.txt
+vikdatashift.egg-info/requires.txt
+vikdatashift.egg-info/top_level.txt
