@@ -1,0 +1,24 @@
+[project]
+name = "binaryninja-mcp"
+description = "MCP Server for Binary Ninja"
+readme = "README.md"
+authors = [
+    { name = "ttimasdf", email = "opensource@rabit.pw" }
+]
+requires-python = ">=3.10"
+dependencies = [
+    "mcp>=1.6.0",
+]
+
+dynamic = ["version"]
+
+[project.scripts]
+binaryninja-mcp = "binaryninja_mcp:main"
+
+[build-system]
+requires = ["hatchling", "hatch-nodejs-version"]
+build-backend = "hatchling.build"
+
+[tool.hatch.version]
+source = "nodejs"
+path = "plugin.json"
