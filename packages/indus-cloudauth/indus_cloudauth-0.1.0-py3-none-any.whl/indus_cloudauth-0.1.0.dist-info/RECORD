@@ -1,0 +1,15 @@
+indus_cloudauth/__init__.py,sha256=SE_Xna7LLrqsQOU_o0GNxQ7TNHwsfPeLkMVT1J4uXmU,244
+indus_cloudauth/auth.py,sha256=ElJmPo3jM0iJ7EDXYcuFDAbOKfOV6wwoFvzyTj6wgbo,1707
+indus_cloudauth/cloud/__init__.py,sha256=ewMH5HwAV0R1Fk9XlR73BF5E4MR0xpsGRQZAbJgkNKw,389
+indus_cloudauth/cloud/aws.py,sha256=oTreINE58QXWamkdZcTcPVSAz1v_6kpX6jobhFhZpYc,1444
+indus_cloudauth/cloud/local.py,sha256=MRMCAOqqmHVNu838rK32igO246NpO2Q_yVuhZZYu3fo,1502
+indus_cloudauth/cloud/provider.py,sha256=QW6ZiFTQ-8nFXHHfdTCteogF2dcsWXQILT12Qjg0gUQ,183
+indus_cloudauth/crypto/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+indus_cloudauth/crypto/hmac256.py,sha256=kVKHKRMyuU-if_iDewxbtUU9PHeOsfSkGJXoJXtwi4U,5468
+indus_cloudauth/exception/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+indus_cloudauth/exception/custom.py,sha256=AjLG-UDEjyiJMmilonEdhaDICehU_nTpW6Q_Drfil1A,1550
+indus_cloudauth-0.1.0.dist-info/licenses/LICENSE,sha256=S3lwPI4b4bTNnokUcDh1qHcsZpRy44WvcVKpIFOy6vA,1091
+indus_cloudauth-0.1.0.dist-info/METADATA,sha256=nsQOtSJt2YvbIxpTDjBElBUqEbYz0jnPF9yBMuSzltk,4457
+indus_cloudauth-0.1.0.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+indus_cloudauth-0.1.0.dist-info/top_level.txt,sha256=E90xS95yzguKCbERZ6-9MOl7YCVivYw4zvESr6lvLF4,16
+indus_cloudauth-0.1.0.dist-info/RECORD,,
