@@ -1,0 +1,8 @@
+LICENSE.txt
+README.md
+pyproject.toml
+placeholder/__init__.py
+stripe_checkout.egg-info/PKG-INFO
+stripe_checkout.egg-info/SOURCES.txt
+stripe_checkout.egg-info/dependency_links.txt
+stripe_checkout.egg-info/top_level.txt
