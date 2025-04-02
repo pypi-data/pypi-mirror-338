@@ -1,0 +1,5 @@
+ocrd >= 3.0.2
+click
+tesserocr >= 2.5.2
+shapely >= 2.0
+scipy

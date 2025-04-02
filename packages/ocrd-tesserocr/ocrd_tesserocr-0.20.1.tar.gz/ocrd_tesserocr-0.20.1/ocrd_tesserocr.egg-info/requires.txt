@@ -1,0 +1,10 @@
+ocrd>=3.0.2
+click
+tesserocr>=2.5.2
+shapely>=2.0
+scipy
+
+[test]
+pytest>=4.4.0
+pytest-xdist
+coverage>=4.5.2
