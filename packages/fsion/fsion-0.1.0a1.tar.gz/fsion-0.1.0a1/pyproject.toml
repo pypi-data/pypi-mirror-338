@@ -1,0 +1,37 @@
+[project]
+name = "fsion"
+version = "0.1.0a1"
+description = """FSion (fusion: /ˈfjuʒən/) is a library designed to expose
+filesystem-like API's from various backends (Google Drive, S3, GCS, local
+filesystem etc.)
+"""
+readme = "README.md"
+authors = [
+    { name = "Roni Bytyqi", email = "imscytha@protonmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "pydantic>=2.11.1",
+]
+license = "MIT"
+
+[project.scripts]
+fsion = "fsion:main"
+
+[project.urls]
+Repository = "https://github.com/imscytha/FSion.git"
+Issues = "https://github.com/imscytha/FSion/issues"
+
+[project.optional-dependencies]
+drive = [
+    "google-api-python-client>=2.166.0",
+    "google-auth-httplib2>=0.2.0",
+    "google-auth-oauthlib>=1.2.1",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.black]
+line-length = 79
