@@ -1,0 +1,9 @@
+README.md
+setup.cfg
+setup.py
+./computerai/__init__.py
+computerai/__init__.py
+computerai.egg-info/PKG-INFO
+computerai.egg-info/SOURCES.txt
+computerai.egg-info/dependency_links.txt
+computerai.egg-info/top_level.txt
