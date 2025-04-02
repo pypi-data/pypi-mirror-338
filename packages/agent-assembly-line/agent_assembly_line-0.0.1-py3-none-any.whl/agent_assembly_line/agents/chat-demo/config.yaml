@@ -1,0 +1,16 @@
+name: "Chat Demo"
+description: "This is a demo of a chat"
+data:
+  file: "example.txt"
+prompt:
+  template: "rag_template.txt"
+llm:
+  model-identifier: "ollama:gemma2:latest"
+  embeddings: "nomic-embed-text"
+
+  # model-identifier: "openai:gpt-3.5-turbo-instruct"
+  # model-identifier: "openai:gpt-4o"
+  # embeddings: "text-embedding-ada-002"
+
+use-memory: true
+memory-prompt: "Summarize the following conversation history between a user and a chatbot. Capture key topics, user questions, and the chatbot’s responses while keeping it concise. Exclude small talk unless relevant."
