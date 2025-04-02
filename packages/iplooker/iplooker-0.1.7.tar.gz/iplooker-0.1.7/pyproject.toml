@@ -1,0 +1,28 @@
+[project]
+name = "iplooker"
+version = "0.1.7"
+description = "Look up location, ISP, and more about an IP address from multiple sources"
+authors = [{ name = "Danny Stewart", email = "danny@stewart.cc" }]
+urls = { repository = "https://github.com/dannystewart/iplooker" }
+readme = "README.md"
+license = "MIT"
+license-files = ["LICENSE"]
+requires-python = ">=3.12,<3.14"
+dependencies = [
+    "arguer (>=0.1.0,<0.2.0)",
+    "pycountry (>=24.6.1,<25.0.0)",
+    "requests (>=2.32.3,<3.0.0)",
+    "shelper (>=0.1.0,<0.2.0)",
+    "textparse (>=0.1.0,<0.2.0)",
+]
+
+[tool.poetry.group.dev.dependencies]
+ruff = ">=0.11.2"
+mypy = ">=1.15.0"
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[project.scripts]
+iplooker = "iplooker.ip_lookup:main"
