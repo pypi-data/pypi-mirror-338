@@ -1,0 +1,12 @@
+diff_pdf_visually/__init__.py,sha256=t5l2oDQ2ivJFBTRI8zVcke6XJMA27G15_OirM-I-Yfc,283
+diff_pdf_visually/__main__.py,sha256=G0yzCvIGeqDLBh--QkHSi90leqhQ_cHCJdUr5IwAmRE,3132
+diff_pdf_visually/constants.py,sha256=pRtmgQurFBOIa-0wNWksRqafpbxi3l01u1GNCJamPJE,819
+diff_pdf_visually/diff.py,sha256=daPvOfK35S0ngyKj-c9ak6mp4xccSpltbZ32wkeUGxw,8335
+diff_pdf_visually/external_programs.py,sha256=gxyGIv8WOSAnuMrdCW8M9ATJX_i1IjIyjoDm17YgTf4,1867
+diff_pdf_visually/polyfill.py,sha256=BOEyRZA6cZoj7FMaCCGs0xlIGI_gTjmH9JzU0PD-qZQ,338
+diff_pdf_visually-1.8.1.dist-info/METADATA,sha256=S_yuJS9gjSOB830PDyy1uboE5-LajSSjfVbZz4ZmcKM,7940
+diff_pdf_visually-1.8.1.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+diff_pdf_visually-1.8.1.dist-info/entry_points.txt,sha256=Y9j_raEb_FdevqkQc-eo4-LbfML9PRvRJ3N-TchuX1Q,70
+diff_pdf_visually-1.8.1.dist-info/licenses/LICENSE-APACHE,sha256=zUDo5Z3pVykHY4aJJn1rv2GxmJfvZc1Cf21-rmMKnuo,9750
+diff_pdf_visually-1.8.1.dist-info/licenses/LICENSE-MIT,sha256=53rvpPjT6Cj60G6uWH55Fwn0CYW-JEwufJHxP-03DvU,1067
+diff_pdf_visually-1.8.1.dist-info/RECORD,,
