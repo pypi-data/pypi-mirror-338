@@ -1,0 +1,8 @@
+LICENSE.txt
+README.md
+pyproject.toml
+ansible_inventory_generator.egg-info/PKG-INFO
+ansible_inventory_generator.egg-info/SOURCES.txt
+ansible_inventory_generator.egg-info/dependency_links.txt
+ansible_inventory_generator.egg-info/top_level.txt
+placeholder/__init__.py
