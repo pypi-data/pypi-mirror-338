@@ -1,0 +1,6 @@
+[console_scripts]
+szn-libeaas-docs = szn_libeaas.docs_utils:open_readme
+szn-libeaas-fetch = szn_libeaas.post_install:fetch_docs
+
+[distutils.commands]
+fetch_docs = szn_libeaas.post_install:fetch_docs
