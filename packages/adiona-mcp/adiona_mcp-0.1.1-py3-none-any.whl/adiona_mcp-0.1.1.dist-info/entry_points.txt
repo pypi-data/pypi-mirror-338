@@ -1,0 +1,2 @@
+[console_scripts]
+adiona-mcp = adiona_mcp:main
