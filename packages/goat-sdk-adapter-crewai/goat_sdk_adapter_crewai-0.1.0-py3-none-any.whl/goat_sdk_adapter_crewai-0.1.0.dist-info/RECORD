@@ -1,0 +1,5 @@
+goat_adapters/crewai/__init__.py,sha256=uowv1Phaq_EjSPCCWgtmXC7jCNKA435fmf7L2dHTg0E,76
+goat_adapters/crewai/adapter.py,sha256=Uaqv-QMJ31PrkIZYVebDzhgHiH_UwJDeuVu9rAfvsnM,2534
+goat_sdk_adapter_crewai-0.1.0.dist-info/METADATA,sha256=KL3X3zSr736QeRMucVzk1P_wQKR3w_cOb7CuiZ1rU14,3747
+goat_sdk_adapter_crewai-0.1.0.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+goat_sdk_adapter_crewai-0.1.0.dist-info/RECORD,,
