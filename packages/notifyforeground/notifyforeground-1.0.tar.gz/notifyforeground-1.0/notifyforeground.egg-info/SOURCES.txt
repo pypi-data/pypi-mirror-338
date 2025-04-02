@@ -1,0 +1,13 @@
+README.md
+setup.py
+notifyforeground/__init__.py
+notifyforeground/__main__.py
+notifyforeground/base.py
+notifyforeground/core.py
+notifyforeground/styles.py
+notifyforeground/sword.py
+notifyforeground.egg-info/PKG-INFO
+notifyforeground.egg-info/SOURCES.txt
+notifyforeground.egg-info/dependency_links.txt
+notifyforeground.egg-info/requires.txt
+notifyforeground.egg-info/top_level.txt
