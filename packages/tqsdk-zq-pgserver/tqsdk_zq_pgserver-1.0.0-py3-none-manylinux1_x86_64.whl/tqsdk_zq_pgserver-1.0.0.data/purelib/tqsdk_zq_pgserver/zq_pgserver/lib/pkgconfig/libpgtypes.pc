@@ -1,0 +1,9 @@
+Name: libpgtypes
+Description: PostgreSQL libpgtypes library
+Url: https://www.postgresql.org/
+Version: 14.15
+Requires: 
+Requires.private: 
+Cflags: -I/home/runner/work/tqsdk-zq-pgserver/tqsdk-zq-pgserver/tqsdk_zq_pgserver/zq_pgserver/include
+Libs: -L/home/runner/work/tqsdk-zq-pgserver/tqsdk-zq-pgserver/tqsdk_zq_pgserver/zq_pgserver/lib -lpgtypes
+Libs.private:  -lpgcommon -lpgport -lm
