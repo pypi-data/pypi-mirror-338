@@ -1,0 +1,57 @@
+Metadata-Version: 2.4
+Name: neuronmix
+Version: 0.1.2
+Summary: Neuron-level mixed activation layer for PyTorch
+Home-page: https://github.com/ajaviaad/neuronmix
+Author: Muhammad Adeel Javaid
+Author-email: ajavaid@ieee.org
+License: MIT
+Project-URL: Documentation, https://github.com/ajaviaad/neuronmix
+Project-URL: Source, https://github.com/ajaviaad/neuronmix
+Project-URL: Tracker, https://github.com/ajaviaad/neuronmix/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: torch
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: license
+Dynamic: license-file
+Dynamic: project-url
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+# NeuronMix 🧠
+
+[![PyPI version](https://img.shields.io/pypi/v/neuronmix.svg)](https://pypi.org/project/neuronmix/)
+[![Python](https://img.shields.io/pypi/pyversions/neuronmix.svg)](https://pypi.org/project/neuronmix/)
+[![License](https://img.shields.io/github/license/ajaviaad/neuronmix)](https://github.com/ajaviaad/neuronmix/blob/main/LICENSE)
+
+NeuronMix is a lightweight PyTorch module for applying **neuron-level mixed activations** automatically.  
+It splits input tensors along channels and applies different activation functions like ReLU, GELU, and Swish — enabling better feature diversity and adversarial robustness.
+
+---
+
+## 🚀 Features
+
+- ✅ Drop-in activation layer for PyTorch
+- 🧠 Mixes ReLU, GELU, and Swish across channels
+- 🔁 Works with CNNs, ResNet, and custom models
+- 🔒 Designed for adversarial robustness
+
+---
+
+## 📦 Installation
+
+Install directly from PyPI:
+
+```bash
+pip install neuronmix
