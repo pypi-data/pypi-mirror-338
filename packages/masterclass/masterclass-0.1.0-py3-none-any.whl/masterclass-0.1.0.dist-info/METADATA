@@ -1,0 +1,20 @@
+Metadata-Version: 2.3
+Name: masterclass
+Version: 0.1.0
+Summary: Definitive Python singleton implementation
+Author: Danny Stewart
+Author-email: danny@stewart.cc
+Requires-Python: >=3.12
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Description-Content-Type: text/markdown
+
+# Masterclass
+
+[![PyPI version](https://img.shields.io/pypi/v/masterclass.svg)](https://pypi.org/project/masterclass/)
+[![Python versions](https://img.shields.io/pypi/pyversions/masterclass.svg)](https://pypi.org/project/masterclass/)
+[![PyPI downloads](https://img.shields.io/pypi/dm/masterclass.svg)](https://pypi.org/project/masterclass/)
+
+One class to rule them all: the definitive singleton implementation for Python. Thread-safe, type-friendly, elegantly simple.
+
