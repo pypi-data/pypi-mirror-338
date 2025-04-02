@@ -1,0 +1,24 @@
+###########
+# HTCondor template
+###########
+
+executable  = ${exe}
+arguments   = --run job.run --iseed $$$$([ProcId+${start_seed}])
+output      = job.s$$$$([ProcId+${start_seed}]).out
+error       = job.s$$$$([ProcId+${start_seed}]).err
+log         = job.log
+getenv      = True
+
+initialdir   = ${job_path}
+
++MaxRuntime = ${max_runtime}
+
++RequestCpus = ${ncores}
+
+should_transfer_files   = YES
+when_to_transfer_output = ON_EXIT_OR_EVICT
+transfer_input_files    = ${input_files}
+
+queue ${nseed}
+
+
