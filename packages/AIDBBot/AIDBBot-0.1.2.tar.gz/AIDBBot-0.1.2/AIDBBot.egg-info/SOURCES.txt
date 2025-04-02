@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+AIDBBot.egg-info/PKG-INFO
+AIDBBot.egg-info/SOURCES.txt
+AIDBBot.egg-info/dependency_links.txt
+AIDBBot.egg-info/requires.txt
+AIDBBot.egg-info/top_level.txt
+dbqna/__init__.py
+dbqna/db_helper.py
+dbqna/dbqna.py
+test/test.py
