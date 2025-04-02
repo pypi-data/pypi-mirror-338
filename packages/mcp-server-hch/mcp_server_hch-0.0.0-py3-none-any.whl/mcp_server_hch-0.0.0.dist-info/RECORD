@@ -1,0 +1,9 @@
+mcp_server_hch/__init__.py,sha256=bGLiX7XuhVsS-PJdoRIWXiilZ3NTAQ7fb9_8kkNzLlM,216
+mcp_server_hch/__main__.py,sha256=bk3OLtrqHCA3gMHTLC25rShaO0ulcep1aC7VPM5D-ak,55
+mcp_server_hch/load.py,sha256=I28oGFiQwicfeXL5hJ7L_Z-dodZIoRKUINdFTrz3THU,4832
+mcp_server_hch/server.py,sha256=Xgr5grujMxJYwJ2FspuIQt8BrWKh6HSkG62lZnW4FrI,10682
+mcp_server_hch/docs/hch_knowledge_base_ref.xlsx,sha256=4WafFCDyqdZHbfXEbdDC-L3i_-XMk93Weg9qHTPBE4I,157428
+mcp_server_hch-0.0.0.dist-info/METADATA,sha256=3jOsnsNCsAEGmzzmwKPEW3Mw0X9Sw8vI9gWC4m1ccXc,5310
+mcp_server_hch-0.0.0.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+mcp_server_hch-0.0.0.dist-info/entry_points.txt,sha256=a2Shj2EpoyyPQvt4HWzY0x3mo0ujhmOhHO1E4dYyVpE,55
+mcp_server_hch-0.0.0.dist-info/RECORD,,
