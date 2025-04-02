@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+boolean_query_parser/__init__.py
+boolean_query_parser/parser.py
+boolean_query_parser.egg-info/PKG-INFO
+boolean_query_parser.egg-info/SOURCES.txt
+boolean_query_parser.egg-info/dependency_links.txt
+boolean_query_parser.egg-info/requires.txt
+boolean_query_parser.egg-info/top_level.txt
+tests/__init__.py
+tests/test_parser.py
