@@ -1,0 +1,8 @@
+bird_ospf_map/__init__.py,sha256=ZAdR95C0xefy16g3cToabXdIEQKbpTGK9ibg3NDotDQ,74
+bird_ospf_map/cli.py,sha256=2okRby7JoV-dOl3-NrV6sMGeR6Ck0FpgqxP74NBGExI,2475
+bird_ospf_map/misc.py,sha256=ciLs-WS2Ijxzh2h1n1Z45ghTAHJ4lSyOAbppZYO1eeM,8463
+bird_ospf_map-0.1.6.dist-info/LICENSE,sha256=LMUnaS81JauDFlfQ711HGmozTW3k6b9pClpTCiOwB1I,1078
+bird_ospf_map-0.1.6.dist-info/METADATA,sha256=82RH3RAHANvGxSL3WUK00jsfLuNapOjeShglrtZ71Zg,1586
+bird_ospf_map-0.1.6.dist-info/WHEEL,sha256=XbeZDeTWKc1w7CSIyre5aMDU_-PohRwTQceYnisIYYY,88
+bird_ospf_map-0.1.6.dist-info/entry_points.txt,sha256=uMcx4vCKSYg5TXVrRNEWNLf2A_OZB4zS3EjEJwDxP64,55
+bird_ospf_map-0.1.6.dist-info/RECORD,,
