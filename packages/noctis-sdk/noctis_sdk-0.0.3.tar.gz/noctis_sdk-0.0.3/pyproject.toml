@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=78.0.1"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "noctis-sdk"  # <<< REQUIRED
+version = "0.0.3" # <<< REQUIRED - Match the version in noctis_sdk/__init__.py
+authors = [
+  { name="NoctisNet Team", email="support@noctisnet.com" },
+]
+description = "Python SDK for the NoctisNet API"
+readme = "noctis_sdk_README.md"
+requires-python = ">=3.9"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    #"License :: OSI Approved :: MIT License", # Choose your license
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "urllib3 >= 2.1.0, < 3.0.0",
+    "python-dateutil >= 2.8.2",
+    "pydantic >= 2",
+    "typing-extensions >= 4.7.1",
+]
+
+
+[project.urls]
+"Homepage" = "https://github.com/NoctisNet/noctis-sdk-python" # Update URL
+"Bug Tracker" = "https://github.com/NoctisNet/noctis-sdk-python/issues" # Update URL
