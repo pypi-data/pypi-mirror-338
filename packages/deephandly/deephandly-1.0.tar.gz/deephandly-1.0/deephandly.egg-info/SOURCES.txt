@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+deephandly/__init__.py
+deephandly/main.py
+deephandly.egg-info/PKG-INFO
+deephandly.egg-info/SOURCES.txt
+deephandly.egg-info/dependency_links.txt
+deephandly.egg-info/top_level.txt
