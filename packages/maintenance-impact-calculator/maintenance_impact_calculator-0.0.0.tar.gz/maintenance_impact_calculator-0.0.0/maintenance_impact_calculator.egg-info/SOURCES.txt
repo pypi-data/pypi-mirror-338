@@ -1,0 +1,8 @@
+LICENSE.txt
+README.md
+pyproject.toml
+maintenance_impact_calculator.egg-info/PKG-INFO
+maintenance_impact_calculator.egg-info/SOURCES.txt
+maintenance_impact_calculator.egg-info/dependency_links.txt
+maintenance_impact_calculator.egg-info/top_level.txt
+placeholder/__init__.py
