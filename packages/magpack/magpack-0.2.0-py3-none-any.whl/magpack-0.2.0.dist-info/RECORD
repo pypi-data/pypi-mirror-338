@@ -1,0 +1,12 @@
+magpack/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+magpack/_ovf_reader.py,sha256=85LGz6UKBbFeURrL0YebLfaGgvnS4nANQAk-Sd3Ge-I,3227
+magpack/image_utils.py,sha256=EDbCTZvL47inZdmkx5ZtM6uFesvBbrNPcFwNNIrU7i8,12452
+magpack/io.py,sha256=RWvMyRgBb52OlYKZrt7EtzmrQoNAGZpAIuS_ip_l_rs,7734
+magpack/rotations.py,sha256=dQ1Tg7E8_2qsPENwkGzqQu6AU31V3j2D1IoaFchijeo,8809
+magpack/structures.py,sha256=j-vGhtUoq8IvD7Phl16XK6x7O-nQIqVEkHqfOFHF5U4,8370
+magpack/vectorop.py,sha256=4q6XOgHyt-nyBx4XhKiWZdMcrA7muTSZZPd_oAMBLrI,12448
+magpack-0.2.0.dist-info/licenses/LICENSE.txt,sha256=qhMlsiDkf11MhDCC7AnhOwibe5Oo-ef8feDoB7K904E,1461
+magpack-0.2.0.dist-info/METADATA,sha256=RfO9cxmLXfTAQ-0fvGSkmk9PiWDrXaNZ5GBl0FzGD08,1020
+magpack-0.2.0.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+magpack-0.2.0.dist-info/top_level.txt,sha256=MjuCYNc9lBO-tyU3oww4tnUWO2mBpQWkOwU0LXlO9f4,8
+magpack-0.2.0.dist-info/RECORD,,
