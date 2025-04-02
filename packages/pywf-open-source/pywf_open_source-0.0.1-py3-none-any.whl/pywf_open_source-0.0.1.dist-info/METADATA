@@ -1,0 +1,122 @@
+Metadata-Version: 2.3
+Name: pywf_open_source
+Version: 0.0.1
+Summary: Python Workflow for open source project.
+License: MIT
+Author: Sanhe Hu
+Author-email: husanhe@gmail.com
+Maintainer: Sanhe Hu
+Maintainer-email: husanhe@gmail.com
+Requires-Python: >=3.9,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Dist: PyGithub (>=2.5.0,<3.0.0)
+Requires-Dist: requests (>=2.23.3,<3.0.0)
+Project-URL: Changelog, https://github.com/MacHu-GWU/pywf_open_source-project/blob/main/release-history.rst
+Project-URL: Documentation, https://pywf-open-source.readthedocs.io/en/latest/
+Project-URL: Download, https://pypi.org/pypi/pywf-open-source#files
+Project-URL: Homepage, https://github.com/MacHu-GWU/pywf_open_source-project
+Project-URL: Issues, https://github.com/MacHu-GWU/pywf_open_source-project/issues
+Project-URL: Repository, https://github.com/MacHu-GWU/pywf_open_source-project
+Description-Content-Type: text/x-rst
+
+
+.. image:: https://readthedocs.org/projects/pywf-open-source/badge/?version=latest
+    :target: https://pywf-open-source.readthedocs.io/en/latest/
+    :alt: Documentation Status
+
+.. image:: https://github.com/MacHu-GWU/pywf_open_source-project/actions/workflows/main.yml/badge.svg
+    :target: https://github.com/MacHu-GWU/pywf_open_source-project/actions?query=workflow:CI
+
+.. .. image:: https://codecov.io/gh/MacHu-GWU/pywf_open_source-project/branch/main/graph/badge.svg
+    :target: https://codecov.io/gh/MacHu-GWU/pywf_open_source-project
+
+.. image:: https://img.shields.io/pypi/v/pywf-open-source.svg
+    :target: https://pypi.python.org/pypi/pywf-open-source
+
+.. image:: https://img.shields.io/pypi/l/pywf-open-source.svg
+    :target: https://pypi.python.org/pypi/pywf-open-source
+
+.. image:: https://img.shields.io/pypi/pyversions/pywf-open-source.svg
+    :target: https://pypi.python.org/pypi/pywf-open-source
+
+.. image:: https://img.shields.io/badge/Release_History!--None.svg?style=social
+    :target: https://github.com/MacHu-GWU/pywf_open_source-project/blob/main/release-history.rst
+
+.. image:: https://img.shields.io/badge/STAR_Me_on_GitHub!--None.svg?style=social
+    :target: https://github.com/MacHu-GWU/pywf_open_source-project
+
+------
+
+.. image:: https://img.shields.io/badge/Link-Document-blue.svg
+    :target: https://pywf-open-source.readthedocs.io/en/latest/
+
+.. image:: https://img.shields.io/badge/Link-API-blue.svg
+    :target: https://pywf-open-source.readthedocs.io/en/latest/py-modindex.html
+
+.. image:: https://img.shields.io/badge/Link-Install-blue.svg
+    :target: `install`_
+
+.. image:: https://img.shields.io/badge/Link-GitHub-blue.svg
+    :target: https://github.com/MacHu-GWU/pywf_open_source-project
+
+.. image:: https://img.shields.io/badge/Link-Submit_Issue-blue.svg
+    :target: https://github.com/MacHu-GWU/pywf_open_source-project/issues
+
+.. image:: https://img.shields.io/badge/Link-Request_Feature-blue.svg
+    :target: https://github.com/MacHu-GWU/pywf_open_source-project/issues
+
+.. image:: https://img.shields.io/badge/Link-Download-blue.svg
+    :target: https://pypi.org/pypi/pywf-open-source#files
+
+
+Welcome to ``pywf_open_source`` Documentation
+==============================================================================
+.. image:: https://pywf-open-source.readthedocs.io/en/latest/_static/pywf_open_source-logo.png
+    :target: https://pywf-open-source.readthedocs.io/en/latest/
+
+``pywf_open_source`` streamlines open source Python project development by providing a unified workflow automation framework. It eliminates the cognitive overhead of switching between projects by normalizing common development tasks through a consistent interface.
+
+The library automates common operations for projects using:
+
+- A public `GitHub repo <https://github.com/>`_ to host your project.
+- A public `ReadTheDocs <https://readthedocs.org/>`_ project to host your documentation.
+- Use `GitHub Actions <https://github.com/features/actions>`_ to run your test.
+- Use `Codecov.io <https://about.codecov.io/>`_ to publish your test coverage result.
+- Use `PyPI <https://pypi.org/>`_ to publish your package.
+- Use `GitHub Release <https://docs.github.com/en/repositories/releasing-projects-on-github/about-releases>`_ to track your historical assets.
+
+It assumes the following code folder structure::
+
+    /${package_name}
+    /${package_name}/__init__.py
+    /${package_name}/*.py
+    /docs
+    /docs/source # documentation source folder
+    /docs/source/conf.py # sphinx doc configuration file
+    /tests # unit test folder
+    /pyproject.toml # Python project configuration file, no setup.py
+
+It implements the best practice mentioned in `THIS DOCUMENT <https://dev-exp-share.readthedocs.io/en/latest/search.html?q=The+New+Way+-+Python+Workflow+%28pywf%29+Library+Collection&check_keywords=yes&area=default>`_.
+
+
+.. _install:
+
+Install
+------------------------------------------------------------------------------
+
+``pywf_open_source`` is released on PyPI, so all you need is to:
+
+.. code-block:: console
+
+    $ pip install pywf-open-source
+
+To upgrade to latest version:
+
+.. code-block:: console
+
+    $ pip install --upgrade pywf-open-source
+
