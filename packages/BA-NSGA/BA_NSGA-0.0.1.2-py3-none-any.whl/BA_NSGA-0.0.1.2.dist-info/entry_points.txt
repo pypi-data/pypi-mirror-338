@@ -1,0 +1,2 @@
+[console_scripts]
+BANSGA = ba_nsga.main:main
