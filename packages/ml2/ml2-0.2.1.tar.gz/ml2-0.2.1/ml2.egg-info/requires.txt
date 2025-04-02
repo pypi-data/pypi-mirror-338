@@ -1,0 +1,71 @@
+docker
+google-cloud-storage
+grpcio
+matplotlib
+nltk
+pandas
+sly
+tqdm
+wandb
+
+[:platform_machine != "arm64" or platform_system != "Darwin"]
+grpcio-tools
+numpy
+
+[:platform_machine == "arm64" and platform_system == "Darwin"]
+grpcio-tools==1.62.3
+protobuf==4.25.5
+numpy<2.0
+
+[dev]
+black
+flake8
+flake8-quotes
+grpcio-tools
+isort
+mypy
+mypy-protobuf
+pre-commit
+pytest
+rbql
+rstcheck
+sphinx==4.0.2
+
+[full]
+ml2[hf,jp,pt,ray,tf]
+
+[hf]
+datasets
+transformers
+
+[jp]
+jupyter
+
+[package]
+setuptools>=46.4
+wheel
+build
+twine
+
+[pt]
+torch
+
+[ray]
+ray[default,tune]
+
+[tf]
+
+[tf-legacy]
+
+[tf-legacy:platform_machine != "arm64" or platform_system != "Darwin"]
+tensorflow<2.12,>=2.10.0
+
+[tf-legacy:platform_machine == "arm64" and platform_system == "Darwin"]
+tensorflow-macos<2.12,>=2.10.0
+
+[tf:platform_machine != "arm64" or platform_system != "Darwin"]
+tensorflow>=2.13
+
+[tf:platform_machine == "arm64" and platform_system == "Darwin"]
+tensorflow==2.14
+tensorflow-metal==1.1.0
