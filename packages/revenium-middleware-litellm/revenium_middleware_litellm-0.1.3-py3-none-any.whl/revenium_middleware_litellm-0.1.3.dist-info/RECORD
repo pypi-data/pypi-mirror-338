@@ -1,0 +1,6 @@
+litellm_proxy/__init__.py,sha256=TdQzvRGL0WSlo9LLryzGHq1pclYQs_G1H0sPB6JT2r0,296
+litellm_proxy/middleware.py,sha256=iyP5tHazhH3PDdZjvR58BhjmWDctcvn3UWhI2bNvIFI,6612
+revenium_middleware_litellm-0.1.3.dist-info/METADATA,sha256=t1R17qg9hP57mAat2QGHJffW3SnxS0hXnxWy45_Nbpw,6760
+revenium_middleware_litellm-0.1.3.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+revenium_middleware_litellm-0.1.3.dist-info/top_level.txt,sha256=YlyCgk6WCf45egdNrGodzbJc5UgOzLbUfdnPgRy-2O8,14
+revenium_middleware_litellm-0.1.3.dist-info/RECORD,,
