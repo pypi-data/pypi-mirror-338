@@ -1,0 +1,10 @@
+apirotater/__init__.py,sha256=Q19N8zTA_SbETLMWV2gw-NaryYngHD9oICyxKTmQdnQ,693
+apirotater/manager.py,sha256=3kzFtuNF1S2D7klKNmTDvmrJM2qudIK46_nGY9BrbG8,10127
+apirotater/utils.py,sha256=YowJu-g0M1ml35TaC_LW_gM1Kn1SgpIvhDPQNtnh_2s,2206
+tests/__init__.py,sha256=Nqnn8clbgv-5l0PgxcTOldg8mkMKrFn4TvPL-rYUUGg,1
+tests/test_manager.py,sha256=9sBpbQlh9AMbs8S6xynaDwAzw38V_emDRWwb9ey_Usc,3726
+apirotater-0.2.0.dist-info/LICENSE,sha256=iR9sBC2IYggMDqatkAIdiX414rXpf3XdosaAg-3oeJE,1087
+apirotater-0.2.0.dist-info/METADATA,sha256=Rhh3ksKUIvqWhK2fIrYgzoBvBlj7D-X1dA9Ra3tOXos,6091
+apirotater-0.2.0.dist-info/WHEEL,sha256=PZUExdf71Ui_so67QXpySuHtCi3-J3wvF4ORK6k_S8U,91
+apirotater-0.2.0.dist-info/top_level.txt,sha256=XPNpU-WGb6004LryxtN7EP9DqMubjZk5Bx4jq8wywBc,17
+apirotater-0.2.0.dist-info/RECORD,,
