@@ -1,0 +1,5 @@
+setup.py
+tencentcloud_sdk_python_ctrip.egg-info/PKG-INFO
+tencentcloud_sdk_python_ctrip.egg-info/SOURCES.txt
+tencentcloud_sdk_python_ctrip.egg-info/dependency_links.txt
+tencentcloud_sdk_python_ctrip.egg-info/top_level.txt
