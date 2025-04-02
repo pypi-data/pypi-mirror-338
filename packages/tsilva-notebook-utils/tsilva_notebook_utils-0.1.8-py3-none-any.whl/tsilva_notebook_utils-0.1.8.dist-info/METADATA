@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: tsilva-notebook-utils
+Version: 0.1.8
+Summary: Utility functions for Jupyter/Colab notebooks
+Home-page: UNKNOWN
+Author: Tiago Silva
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.6
+Requires-Dist: imageio>=2.0.0
+Requires-Dist: ipython>=7.0.0
+Requires-Dist: numpy>=1.19.0
+Requires-Dist: opencv-python>=4.0.0
+
+UNKNOWN
+
+
