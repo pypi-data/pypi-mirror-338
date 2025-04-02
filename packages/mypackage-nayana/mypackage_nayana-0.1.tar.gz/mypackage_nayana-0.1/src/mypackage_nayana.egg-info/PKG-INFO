@@ -1,0 +1,9 @@
+Metadata-Version: 2.4
+Name: mypackage_nayana
+Version: 0.1
+Summary: A sample Python package
+Author: Your Name
+License: MIT
+Dynamic: author
+Dynamic: license
+Dynamic: summary

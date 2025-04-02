@@ -1,0 +1,11 @@
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/mypackage_nayana/__init__.py
+src/mypackage_nayana/core.py
+src/mypackage_nayana/nonstandardcode.py
+src/mypackage_nayana.egg-info/PKG-INFO
+src/mypackage_nayana.egg-info/SOURCES.txt
+src/mypackage_nayana.egg-info/dependency_links.txt
+src/mypackage_nayana.egg-info/top_level.txt
