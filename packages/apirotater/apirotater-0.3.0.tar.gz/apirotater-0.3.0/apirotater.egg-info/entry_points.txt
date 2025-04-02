@@ -1,0 +1,2 @@
+[console_scripts]
+apirotater-setup = apirotater.setup_keys:main
