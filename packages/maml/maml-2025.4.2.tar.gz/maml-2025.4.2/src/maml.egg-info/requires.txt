@@ -1,0 +1,11 @@
+numpy
+scipy
+pymatgen
+mp-api
+scikit-learn>=1.6.1
+
+[deep]
+tensorflow>=2
+
+[symbolic]
+cvxpy
