@@ -1,0 +1,26 @@
+[project]
+name = "shelper"
+version = "0.1.1"
+description = "The shell helper"
+authors = [{ name = "Danny Stewart", email = "danny@stewart.cc" }]
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "halo (>=0.0.31,<0.0.32)",
+    "logician (>=0.2.2,<0.3.0)",
+    "pkgversioner (>=0.0.2,<0.0.3)",
+    "textparse (>=0.0.1)",
+]
+
+[tool.poetry.group.dev.dependencies]
+mypy = ">=1.15.0"
+pdoc = ">=15.0.1"
+pre-commit = ">=4.2.0"
+ruff = ">=0.11.2"
+logician = { path = "../logician", develop = true }
+pkgversioner = { path = "../pkgversioner", develop = true }
+textparse = { path = "../textparse", develop = true }
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
