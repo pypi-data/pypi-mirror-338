@@ -1,0 +1,16 @@
+numpy<2.2.0,>=1.26.0
+tensorflow<3.0.0,>=2.19.0
+opencv-python<5.0.0.0,>=4.11.0.86
+tqdm<5.0.0,>=4.67.1
+scikit-learn<2.0.0,>=1.6.1
+joblib<2.0.0,>=1.4.2
+requests<3.0.0,>=2.32.3
+tifffile<2026.0.0,>=2025.3.30
+numpy<2.2.0,>=1.26.0
+tensorflow<3.0.0,>=2.19.0
+opencv-python<5.0.0.0,>=4.11.0.86
+tqdm<5.0.0,>=4.67.1
+scikit-learn<2.0.0,>=1.6.1
+joblib<2.0.0,>=1.4.2
+requests<3.0.0,>=2.32.3
+tifffile<2026.0.0,>=2025.3.30

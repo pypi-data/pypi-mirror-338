@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+pickshot/__init__.py
+pickshot/pickshot.py
+pickshot.egg-info/PKG-INFO
+pickshot.egg-info/SOURCES.txt
+pickshot.egg-info/dependency_links.txt
+pickshot.egg-info/requires.txt
+pickshot.egg-info/top_level.txt
