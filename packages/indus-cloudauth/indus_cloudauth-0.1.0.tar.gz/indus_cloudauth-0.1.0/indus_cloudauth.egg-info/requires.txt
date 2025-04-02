@@ -1,0 +1,6 @@
+boto3==1.37.24
+
+[test]
+pytest>=7.4.0
+pytest-cov>=3.0.0
+pytest-mock>=3.9.0
