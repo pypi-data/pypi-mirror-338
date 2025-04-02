@@ -1,0 +1,8 @@
+LICENSE.txt
+README.md
+pyproject.toml
+capacity_planning.egg-info/PKG-INFO
+capacity_planning.egg-info/SOURCES.txt
+capacity_planning.egg-info/dependency_links.txt
+capacity_planning.egg-info/top_level.txt
+placeholder/__init__.py
