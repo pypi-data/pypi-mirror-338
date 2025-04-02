@@ -1,0 +1,5 @@
+xorq_datafusion-0.1.0.dist-info/METADATA,sha256=7zqzESVoRGBnLRmXSTdLUUOn_Q1sSbFsohr_hmiuPtM,403
+xorq_datafusion-0.1.0.dist-info/WHEEL,sha256=RdYej9g_futKd6Tdhfgw26Xz0AC-l7pOevjJbjFph0M,90
+xorq_datafusion/__init__.py,sha256=-_gOmR8guRFOPa-OJUXKWwF8Z_pHOxWf6SzncRYiLws,4379
+xorq_datafusion/_internal.pyd,sha256=YtDAmrZZY1snz_S5X3FdarB5cWYy18jdGQojTpogBSM,77196288
+xorq_datafusion-0.1.0.dist-info/RECORD,,
