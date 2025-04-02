@@ -1,0 +1,1 @@
+(()=>{"use strict";document.addEventListener("DOMContentLoaded",(()=>{const e=document.getElementById("file-editor"),t=document.getElementById("save-indicator");let d=e.value;e.addEventListener("input",(()=>{return n=e.value===d,t.classList.toggle("saved",n),void t.classList.toggle("unsaved",!n);var n}))}))})();
