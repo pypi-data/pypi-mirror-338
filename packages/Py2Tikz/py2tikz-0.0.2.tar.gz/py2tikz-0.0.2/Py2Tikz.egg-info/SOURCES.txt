@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+Py2Tikz/__init__.py
+Py2Tikz/py2tikz.py
+Py2Tikz.egg-info/PKG-INFO
+Py2Tikz.egg-info/SOURCES.txt
+Py2Tikz.egg-info/dependency_links.txt
+Py2Tikz.egg-info/requires.txt
+Py2Tikz.egg-info/top_level.txt
+tests/__init__.py
+tests/test.py
