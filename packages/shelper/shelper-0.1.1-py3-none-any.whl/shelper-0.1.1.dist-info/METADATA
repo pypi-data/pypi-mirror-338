@@ -1,0 +1,25 @@
+Metadata-Version: 2.3
+Name: shelper
+Version: 0.1.1
+Summary: The shell helper
+Author: Danny Stewart
+Author-email: danny@stewart.cc
+Requires-Python: >=3.12
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Dist: halo (>=0.0.31,<0.0.32)
+Requires-Dist: logician (>=0.2.2,<0.3.0)
+Requires-Dist: pkgversioner (>=0.0.2,<0.0.3)
+Requires-Dist: textparse (>=0.0.1)
+Description-Content-Type: text/markdown
+
+# Shelper
+
+[![PyPI version](https://img.shields.io/pypi/v/shelper.svg)](https://pypi.org/project/shelper/)
+[![Python versions](https://img.shields.io/pypi/pyversions/shelper.svg)](https://pypi.org/project/shelper/)
+[![PyPI downloads](https://img.shields.io/pypi/dm/shelper.svg)](https://pypi.org/project/shelper/)
+[![License](https://img.shields.io/pypi/l/shelper.svg)](https://github.com/dannystewart/shelper/blob/main/LICENSE)
+
+The shell helper.
+
