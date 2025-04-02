@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+platform_checker/__init__.py
+platform_checker/detector.py
+platform_checker.egg-info/PKG-INFO
+platform_checker.egg-info/SOURCES.txt
+platform_checker.egg-info/dependency_links.txt
+platform_checker.egg-info/top_level.txt
+tests/test_detector.py
