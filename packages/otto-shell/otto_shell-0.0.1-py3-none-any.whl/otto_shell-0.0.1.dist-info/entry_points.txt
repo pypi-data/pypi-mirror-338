@@ -1,0 +1,2 @@
+[console_scripts]
+os = otto_shell.cli:app
