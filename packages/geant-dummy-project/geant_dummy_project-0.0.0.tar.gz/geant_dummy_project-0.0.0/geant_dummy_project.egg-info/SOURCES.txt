@@ -1,0 +1,8 @@
+LICENSE.txt
+README.md
+pyproject.toml
+geant_dummy_project.egg-info/PKG-INFO
+geant_dummy_project.egg-info/SOURCES.txt
+geant_dummy_project.egg-info/dependency_links.txt
+geant_dummy_project.egg-info/top_level.txt
+placeholder/__init__.py
