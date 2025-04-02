@@ -1,0 +1,20 @@
+Metadata-Version: 2.2
+Name: acc_provision
+Version: 6.1.1.3
+Summary: Tool to provision ACI for ACI Containers Controller  Build info: Git commit ID: 3f7e8b09bcfbba464e5a12926193f164c2c103b4 Build time: 04-02-2025.05:43:37.UTC 
+Home-page: http://github.com/noironetworks/acc-provision/
+Author: Cisco Systems, Inc.
+Author-email: apicapi@noironetworks.com
+License: http://www.apache.org/licenses/LICENSE-2.0
+Requires-Dist: requests
+Requires-Dist: pyyaml
+Requires-Dist: jinja2
+Requires-Dist: pyopenssl
+Requires-Dist: MarkupSafe
+Requires-Dist: ruamel.yaml
+Dynamic: author
+Dynamic: author-email
+Dynamic: home-page
+Dynamic: license
+Dynamic: requires-dist
+Dynamic: summary
