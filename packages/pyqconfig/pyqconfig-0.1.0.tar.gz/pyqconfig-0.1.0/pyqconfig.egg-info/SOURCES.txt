@@ -1,0 +1,5 @@
+setup.py
+pyqconfig.egg-info/PKG-INFO
+pyqconfig.egg-info/SOURCES.txt
+pyqconfig.egg-info/dependency_links.txt
+pyqconfig.egg-info/top_level.txt
