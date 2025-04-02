@@ -1,0 +1,2 @@
+[console_scripts]
+mcp-github-trending = mcp_server_github_trending:main
