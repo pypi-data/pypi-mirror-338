@@ -1,0 +1,46 @@
+Metadata-Version: 2.4
+Name: safeline
+Version: 0.0.7
+Summary: A simple SDK for SafeLine CE.
+Author-email: AlliotTech <alliot@iots.vip>
+Project-URL: Homepage, https://github.com/AlliotTech/python-safeline
+Project-URL: Issues, https://github.com/AlliotTech/python-safeline/issues
+Keywords: waf,safeline
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests
+Requires-Dist: pyotp
+Dynamic: license-file
+
+Python SafeLine is a python wrapper for the `SafeLine WAF`  
+### Install  
+``` shell  
+pip install safeline  
+```
+
+### Example  
+``` python3  
+import safeline
+
+if __name__ == '__main__':
+    BASE_URL = "https://xxx.com"
+    API_TOKEN = "IX62FxxxxxxxxxxW2WB4C"
+
+    waf = SafeLine(BASE_URL,
+                   API_TOKEN
+                   )
+
+    # list all certification  
+    print(waf.certification.list)
+    
+    # certification 
+    waf.certification.update(cert_id, crt, key)
+    
+    # ip_group
+    waf.ip_group.update(ipgroup_id, ipgroup_list)
+
+```
