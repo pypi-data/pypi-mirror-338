@@ -1,0 +1,9 @@
+Metadata-Version: 2.4
+Name: pandas_rs9
+Version: 0.1
+Summary: A library for running different recommendation system experiments
+Author: JKBlake
+Requires-Python: >=3.6
+Dynamic: author
+Dynamic: requires-python
+Dynamic: summary
