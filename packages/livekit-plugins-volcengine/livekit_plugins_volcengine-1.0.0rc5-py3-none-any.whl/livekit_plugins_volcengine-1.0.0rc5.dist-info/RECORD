@@ -1,0 +1,9 @@
+livekit/plugins/volcengine/__init__.py,sha256=B_zTGJWOe30Gcdvi-eRKnZbztNsefq5qVLD3-v4D34Q,489
+livekit/plugins/volcengine/log.py,sha256=0Zn4o7OuZdKZiShQNa1xOFwHx8XJHoE59cnJNqvjdsg,81
+livekit/plugins/volcengine/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+livekit/plugins/volcengine/tts.py,sha256=FJnvi1wtOkpM_uoYCS3eaki44arFMzT083b8m6pbCco,15764
+livekit/plugins/volcengine/version.py,sha256=77mLgLTRBaV7TWhPUO9NO9K_0-q3bBp92jRdUCLbolo,26
+livekit_plugins_volcengine-1.0.0rc5.dist-info/METADATA,sha256=FYI1tye0OuE3eiT4Layryu3GlCKoxBMdlHfboimLFAM,2217
+livekit_plugins_volcengine-1.0.0rc5.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+livekit_plugins_volcengine-1.0.0rc5.dist-info/licenses/LICENSE,sha256=-CIYNcpAsbPTuOK4oEJOYQkO5UfmGioTbaLgUdLskH8,1066
+livekit_plugins_volcengine-1.0.0rc5.dist-info/RECORD,,
