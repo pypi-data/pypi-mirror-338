@@ -1,0 +1,3 @@
+[console_scripts]
+gitai = ai_toolkit.git_diff:main
+gitai-setup = ai_toolkit.setup:main
