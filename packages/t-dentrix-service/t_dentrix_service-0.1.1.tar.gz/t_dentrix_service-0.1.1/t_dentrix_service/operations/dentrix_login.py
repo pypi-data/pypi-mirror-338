@@ -1,0 +1,139 @@
+"""Contains DentrixServiceLogin object."""
+
+from requests.sessions import Session
+from typing import Any, Union
+
+from RPA.Browser.Selenium import Selenium
+from SeleniumLibrary.errors import ElementNotFound
+from selenium.common.exceptions import ElementClickInterceptedException
+from SeleniumLibrary.errors import NoOpenBrowser
+from selenium.webdriver.chrome.options import Options
+from fake_useragent import UserAgent
+from retry import retry
+
+from t_dentrix_service.consts.locators import Locators
+from t_dentrix_service.consts.urls.dentrix_urls import DentrixUrls
+
+USER_AGENT = UserAgent(os="windows", min_percentage=1.3).chrome
+
+
+class DentrixServiceLogin:
+    """Segment of Dentrix Service solely responsible with the authentication process."""
+
+    def __init__(self, credentials: Union[dict, tuple, Any]) -> None:
+        """Constructs Dentrix Service."""
+        self.session = Session()
+        self.credentials = credentials
+        self._set_credentials()
+        self.browser = Selenium()
+        # self._set_proxy(bw_get_item(CONFIG.CREDENTIAL_GROUPS["nordvpn"]))
+
+    def _set_credentials(self):
+        if isinstance(self.credentials, tuple):
+            self.username, self.password = self.credentials
+        elif isinstance(self.credentials, dict):
+            self.username, self.password = self.credentials["username"], self.credentials["password"]
+        else:
+            try:
+                self.username, self.password = self.credentials.username, self.credentials.password
+            except AttributeError:
+                raise ValueError(f"Unrecognizable credentials object given: {type(self.credentials)}")
+
+    def _click_element_if_exists(self, locator: str) -> None:
+        """Clicks the element if it is visible; handles exceptions silently."""
+        try:
+            self.browser.click_element_when_visible(locator)
+        except (ElementNotFound, AssertionError, ElementClickInterceptedException):
+            pass
+
+    def _get_index(self) -> dict:
+        """Retrieves index information.
+
+        Raises:
+            HTTPError: Raised if the GET request fails for any reason.
+
+        Returns:
+            dict: The JSON response.
+        """
+        response = self.session.get(DentrixUrls.INDEX_URL, headers=self._headers())
+        response.raise_for_status()
+        return response.json()
+
+    @staticmethod
+    def _headers(content_type: str = "application/json; charset=UTF-8", add_headers: dict = None) -> dict:
+        """Returns the headers for the request with customizable content-type.
+
+        Args:
+            content_type (str): The content type of the request.
+            add_headers (dict): Additional headers to add to the request.
+
+        Returns:
+            dict: The headers for the request.
+        """
+        headers = {"User-Agent": USER_AGENT, "x-requested-with": "XMLHttpRequest"}
+        if content_type:
+            headers["Content-Type"] = content_type
+
+        if add_headers:
+            for key, value in add_headers.items():
+                headers[key] = value
+        return headers
+
+    def _open_browser(self) -> None:
+        """Opens a new browser instance, sets its window size, and maximizes it."""
+        browser_options = Options()
+        browser_options.add_argument("--no-sandbox")
+        browser_options.add_argument("--disable-dev-shm-usage")
+        self.browser.open_available_browser(
+            url=DentrixUrls.LOGIN_URL,
+            headless=True,
+            browser_selection="Chrome",
+            user_agent=USER_AGENT,
+            options=browser_options,
+        )
+        self.browser.set_window_size(1920, 1080)
+        self.browser.maximize_browser_window()
+
+    @retry(tries=3, delay=1, backoff=2)
+    def login_to_dentrix(self) -> None:
+        """Logs into the Dentrix application and sets cookies for the session.
+
+        Raises:
+            Exception: Raised if logging into Dentrix fails at any stage, providing details about the specific error.
+        """
+        try:
+            self._login()
+            self._set_cookies()
+            self._get_index()
+
+        except Exception as error:
+            self.browser.capture_page_screenshot("Login_failed_Attempt.png")
+            self.browser.close_all_browsers()
+            raise Exception("Logging into Dentrix failed") from error
+
+    def _login(self) -> None:
+        """Automates the login process into the Dentrix system."""
+        if self.is_browser_open():
+            self.logout_and_close_browser()
+        self._open_browser()
+        self.browser.input_text_when_element_is_visible(Locators.Login.ORGANIZATION_XP, "SDP")
+        self.browser.input_text_when_element_is_visible(Locators.Login.USERNAME_XP, self.credentials["username"])
+        self.browser.input_text_when_element_is_visible(Locators.Login.PASSWORD_XP, self.credentials["password"])
+        self.browser.click_element_when_visible(Locators.Login.SEND_XP)
+        self.browser.wait_until_element_is_visible(Locators.Login.OVERVIEW_XP, timeout=60)
+
+    def _set_cookies(self) -> None:
+        """Transfers cookies from the Selenium browser instance to the requests session object."""
+        for name, value in self.browser.get_cookies(as_dict=True).items():
+            self.session.cookies.set(name, value)
+
+    def is_browser_open(self) -> bool:
+        """Check if the browser is open."""
+        try:
+            return self.browser.driver is not None
+        except NoOpenBrowser:
+            return False
+
+    def logout_and_close_browser(self) -> None:
+        """Logout and close the browser."""
+        self.browser.close_browser()
