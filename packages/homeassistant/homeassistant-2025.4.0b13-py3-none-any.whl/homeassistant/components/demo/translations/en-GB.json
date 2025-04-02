@@ -1,0 +1,80 @@
+{
+    "entity": {
+        "climate": {
+            "ubercool": {
+                "state_attributes": {
+                    "fan_mode": {
+                        "state": {
+                            "auto_high": "Auto High",
+                            "auto_low": "Auto Low",
+                            "on_high": "On High",
+                            "on_low": "On Low"
+                        }
+                    },
+                    "swing_horizontal_mode": {
+                        "state": {
+                            "auto": "Auto",
+                            "off": "Off",
+                            "rangefull": "Full range"
+                        }
+                    },
+                    "swing_mode": {
+                        "state": {
+                            "1": "1",
+                            "2": "2",
+                            "3": "3",
+                            "auto": "Auto",
+                            "off": "Off"
+                        }
+                    }
+                }
+            }
+        },
+        "event": {
+            "push": {
+                "state_attributes": {
+                    "event_type": {
+                        "state": {
+                            "pressed": "Pressed"
+                        }
+                    }
+                }
+            }
+        },
+        "fan": {
+            "demo": {
+                "state_attributes": {
+                    "preset_mode": {
+                        "state": {
+                            "on": "On",
+                            "smart": "Smart"
+                        }
+                    }
+                }
+            }
+        },
+        "sensor": {
+            "thermostat_mode": {
+                "name": "Thermostat mode",
+                "state": {
+                    "away": "Away"
+                }
+            }
+        },
+        "vacuum": {
+            "model_s": {
+                "state_attributes": {
+                    "cleaned_area": {
+                        "name": "Cleaned Area"
+                    }
+                }
+            }
+        }
+    },
+    "services": {
+        "randomize_device_tracker_data": {
+            "description": "Demonstrates using a device tracker to see where devices are located.",
+            "name": "Randomise device tracker data"
+        }
+    }
+}

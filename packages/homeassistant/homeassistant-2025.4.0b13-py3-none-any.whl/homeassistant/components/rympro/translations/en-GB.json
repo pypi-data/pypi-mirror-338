@@ -1,0 +1,23 @@
+{
+    "config": {
+        "abort": {
+            "reauth_successful": "Re-authentication was successful"
+        }
+    },
+    "entity": {
+        "sensor": {
+            "daily_consumption": {
+                "name": "Daily consumption"
+            },
+            "monthly_consumption": {
+                "name": "Monthly consumption"
+            },
+            "monthly_forecast": {
+                "name": "Monthly forecast"
+            },
+            "total_consumption": {
+                "name": "Total consumption"
+            }
+        }
+    }
+}

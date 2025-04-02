@@ -1,0 +1,92 @@
+{
+    "config": {
+        "error": {
+            "another_device": "The IP address or hostname of another Brother printer was used."
+        },
+        "step": {
+            "reconfigure": {
+                "data": {
+                    "host": "Host"
+                },
+                "data_description": {
+                    "host": "The hostname or IP address of the Brother printer to control."
+                },
+                "description": "Update configuration for {printer_name}."
+            },
+            "user": {
+                "data_description": {
+                    "host": "The hostname or IP address of the Brother printer to control."
+                }
+            }
+        }
+    },
+    "entity": {
+        "sensor": {
+            "belt_unit_remaining_life": {
+                "name": "Belt unit remaining lifetime"
+            },
+            "black_drum_page_counter": {
+                "name": "Black drum page counter",
+                "unit_of_measurement": "pages"
+            },
+            "black_drum_remaining_life": {
+                "name": "Black drum remaining lifetime"
+            },
+            "black_drum_remaining_pages": {
+                "unit_of_measurement": "pages"
+            },
+            "bw_pages": {
+                "unit_of_measurement": "pages"
+            },
+            "color_pages": {
+                "name": "Colour pages",
+                "unit_of_measurement": "pages"
+            },
+            "cyan_drum_page_counter": {
+                "unit_of_measurement": "pages"
+            },
+            "cyan_drum_remaining_pages": {
+                "unit_of_measurement": "pages"
+            },
+            "drum_page_counter": {
+                "unit_of_measurement": "pages"
+            },
+            "drum_remaining_pages": {
+                "unit_of_measurement": "pages"
+            },
+            "duplex_unit_page_counter": {
+                "unit_of_measurement": "pages"
+            },
+            "magenta_drum_page_counter": {
+                "unit_of_measurement": "pages"
+            },
+            "magenta_drum_remaining_pages": {
+                "unit_of_measurement": "pages"
+            },
+            "page_counter": {
+                "unit_of_measurement": "pages"
+            },
+            "yellow_drum_page_counter": {
+                "unit_of_measurement": "pages"
+            },
+            "yellow_drum_remaining_pages": {
+                "name": "Yellow drum remaining pages",
+                "unit_of_measurement": "pages"
+            },
+            "yellow_ink_remaining": {
+                "name": "Yellow ink remaining"
+            },
+            "yellow_toner_remaining": {
+                "name": "Yellow toner remaining"
+            }
+        }
+    },
+    "exceptions": {
+        "cannot_connect": {
+            "message": "An error occurred while connecting to the {device} printer: {error}"
+        },
+        "update_error": {
+            "message": "An error occurred while retrieving data from the {device} printer: {error}"
+        }
+    }
+}
