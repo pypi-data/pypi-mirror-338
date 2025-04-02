@@ -1,0 +1,10 @@
+captcha/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+captcha/exceptions.py,sha256=NJsd3FKceSYlSLaYo0KANBEm9QjfEbWztoRCVMjIoSM,1237
+captcha/solver.py,sha256=U-meAv0kg4L6PwSWGhN-XH0KWCXhlY8ydv2qTajq2mw,9123
+captcha/utils.py,sha256=1rPNTUVJn86VdQ3N-mmWe5WWuEyetdLc9AlBjRgSAe4,2628
+master_scramazon/AmazonScraper.py,sha256=5swJ5MUdZb8jAFpuBfbtrb6z-tIsqJe8ecCJO_KxrFU,15496
+master_scramazon/__init__.py,sha256=I0maTCWv7MZbbWZboTu5jEk2tfeDV2yi3utB5W2As8w,40
+master_scramazon-0.1.0.dist-info/METADATA,sha256=5sQCR84hqBwKIPyaqxSCz9MoX-BSQ4Z3Y0s-7tOwqxY,3029
+master_scramazon-0.1.0.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+master_scramazon-0.1.0.dist-info/top_level.txt,sha256=iW2yD4XAnmWu-gvFpJuGGisb3ENJ-jWZEgD0ZPMYX7E,25
+master_scramazon-0.1.0.dist-info/RECORD,,
