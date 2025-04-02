@@ -1,0 +1,14 @@
+{
+    "config": {
+        "abort": {
+            "already_configured": "Account is already configured"
+        }
+    },
+    "entity": {
+        "binary_sensor": {
+            "wash_cycle": {
+                "name": "Cycle"
+            }
+        }
+    }
+}

@@ -1,0 +1,31 @@
+{
+    "config": {
+        "step": {
+            "user": {
+                "data": {
+                    "max_sub_interval": "Max sub-interval"
+                },
+                "data_description": {
+                    "max_sub_interval": "Applies time based integration if the source did not change for this duration. Use 0 for no time based updates."
+                }
+            }
+        }
+    },
+    "selector": {
+        "method": {
+            "options": {
+                "left": "Left Riemann sum",
+                "right": "Right Riemann sum",
+                "trapezoidal": "Trapezoidal rule"
+            }
+        },
+        "unit_time": {
+            "options": {
+                "d": "Days",
+                "h": "Hours",
+                "min": "Minutes",
+                "s": "Seconds"
+            }
+        }
+    }
+}

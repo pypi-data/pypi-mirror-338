@@ -1,0 +1,10 @@
+{
+    "config": {
+        "abort": {
+            "station_not_found": "Station ID not found at GeoSphere Austria"
+        },
+        "error": {
+            "station_not_found": "Station ID not found at GeoSphere Austria"
+        }
+    }
+}
