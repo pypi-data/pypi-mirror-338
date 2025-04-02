@@ -1,0 +1,2 @@
+[console_scripts]
+review = gemini.review_code:command_review
