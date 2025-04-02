@@ -1,0 +1,14 @@
+pywsgiapp/WSGIApp.py,sha256=TvpocBIgVSyN7_1y2vNb6IfrOeBL_OzQAmdny0tHAl4,2199
+pywsgiapp/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pywsgiapp/config/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pywsgiapp/config/config.py,sha256=ZxXZO77Bnw1vANZX7KSRFjYUkfcj0RhP7IRaXB5Fc5c,176
+pywsgiapp/examples/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pywsgiapp/examples/basic.py,sha256=dGmrZ2MMmrJBdj2JnvQaB7UBdvsgZv7FxcZETTIBAeU,401
+pywsgiapp/support/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pywsgiapp/support/parseEnviron.py,sha256=v2K_N5slJ7cePz1WDsO19CnTSEaDna9LZyhc-LrJWvA,1761
+pywsgiapp/support/parseMultipartForm.py,sha256=7I4XFze3VYePP_Q6IWCXAnQNOP6YmNER_pv91YZ3sSA,1988
+pywsgiapp-0.0.1.dist-info/licenses/LICENSE,sha256=RNqsd6o7ndtcDNcz5SPOWO9Y1zO7aKXR42F2yDD6YKQ,1057
+pywsgiapp-0.0.1.dist-info/METADATA,sha256=vRucu9RneHyClISKsXdYFX0-xyZcWDppdakpC0l21JI,588
+pywsgiapp-0.0.1.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+pywsgiapp-0.0.1.dist-info/top_level.txt,sha256=4TYc6zYs_GQTxOijWf3Zi2UMFteDEqYJxqYRZNuKohg,10
+pywsgiapp-0.0.1.dist-info/RECORD,,
