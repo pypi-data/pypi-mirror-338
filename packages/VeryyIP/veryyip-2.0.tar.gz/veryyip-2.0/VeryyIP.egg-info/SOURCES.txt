@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+VeryyIP.egg-info/PKG-INFO
+VeryyIP.egg-info/SOURCES.txt
+VeryyIP.egg-info/dependency_links.txt
+VeryyIP.egg-info/requires.txt
+VeryyIP.egg-info/top_level.txt
