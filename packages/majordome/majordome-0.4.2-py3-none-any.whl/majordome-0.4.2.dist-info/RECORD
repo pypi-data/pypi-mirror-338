@@ -1,0 +1,11 @@
+majordome/__init__.py,sha256=lVL4VPz3c4kWCgjPtL4uuQLNmgwK92q1ffAsv5El02k,25
+majordome/common.py,sha256=PYtBALgoAXSEikksB5PJAzxauzPEBL1XJ9gic_nZGag,343
+majordome/combustion/__init__.py,sha256=lVL4VPz3c4kWCgjPtL4uuQLNmgwK92q1ffAsv5El02k,25
+majordome/combustion/analysis.py,sha256=AgSwTAhrDQKk5TE0wvo8BpMzSWoISoz--zXX1Sc5WMw,15986
+majordome/simulation/__init__.py,sha256=lVL4VPz3c4kWCgjPtL4uuQLNmgwK92q1ffAsv5El02k,25
+majordome/simulation/fluent.py,sha256=rCIabmnf1LSDayMHEQ1TfkgLPdFMz0XBRnJgYUHLq-I,9552
+majordome-0.4.2.dist-info/licenses/LICENSE,sha256=yIHGICtlJpULP0MxLleymKJBcMOuQWmc6LBfM3SUQqw,1098
+majordome-0.4.2.dist-info/METADATA,sha256=nId9yAFjJgzLrO6xYaLlZi_8A-YbocArO1ueAenzvTs,1271
+majordome-0.4.2.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+majordome-0.4.2.dist-info/top_level.txt,sha256=Ci_XCZfOgX7KoJGgXpMCtTia1qg8qO732kEyj8z0vpY,10
+majordome-0.4.2.dist-info/RECORD,,
