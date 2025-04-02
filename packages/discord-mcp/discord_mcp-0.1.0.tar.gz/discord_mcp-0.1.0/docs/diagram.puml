@@ -1,0 +1,20 @@
+@startuml
+!theme plain
+skinparam componentStyle rectangle
+
+component "Discord API" as discordapi #LightBlue
+component "Auto Exporter" as exporter #PaleGreen
+component "Discord Data" as data #LightYellow
+component "MCP Server" as mcp #Orange
+component "BM25 Search" as bm25search #Pink
+component "Claude" as claude #LightGray
+component "Web UI" as webui #LightCyan
+
+discordapi <-- exporter
+exporter --> data
+data --> bm25search
+bm25search <- mcp
+mcp <- claude
+mcp <--> webui
+
+@enduml

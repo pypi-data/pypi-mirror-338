@@ -1,0 +1,494 @@
+{% extends "base.html" %}
+
+{% block title %}Discord MCP - Exporter Dashboard{% endblock %}
+
+{% block content %}
+<div class="row mb-4">
+    <div class="col-md-6">
+        <div class="card shadow-sm h-100">
+            <div class="card-header">
+                <h5 class="card-title mb-0">
+                    <i class="bi bi-info-circle me-2"></i>
+                    Exporter Status
+                </h5>
+            </div>
+            <div class="card-body">
+                <div class="status-container">
+                    <div class="mb-3">
+                        <span class="text-muted">Status:</span>
+                        <span id="exporter-status" class="ms-2 badge {% if status.is_running %}bg-success{% else %}bg-secondary{% endif %}">
+                            {% if status.is_running %}Running{% else %}Idle{% endif %}
+                        </span>
+                    </div>
+                    <div class="mb-3">
+                        <span class="text-muted">Last Export:</span>
+                        <span id="last-export-time" class="ms-2">{{ status.last_export_time or 'Never' }}</span>
+                    </div>
+                    <div class="mb-3">
+                        <span class="text-muted">Total Exports:</span>
+                        <span id="export-count" class="ms-2">{{ status.export_count }}</span>
+                    </div>
+                    <div class="mb-3">
+                        <span class="text-muted">Search System:</span>
+                        <span id="search-status" class="ms-2 badge bg-success">
+                            BM25 Active
+                        </span>
+                    </div>
+                    <div class="mt-4">
+                        <button id="run-export-btn" class="btn btn-primary" {% if status.is_running %}disabled{% endif %}>
+                            <i class="bi bi-cloud-download me-1"></i>
+                            Run Export Now
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6">
+        <div class="card shadow-sm h-100">
+            <div class="card-header">
+                <h5 class="card-title mb-0">
+                    <i class="bi bi-gear-wide-connected me-2"></i>
+                    Configuration Summary
+                </h5>
+            </div>
+            <div class="card-body">
+                <div class="mb-3">
+                    <span class="text-muted">Data Directory:</span>
+                    <span class="ms-2">{{ config.discord_data_dir }}</span>
+                </div>
+                <div class="mb-3">
+                    <span class="text-muted">Search Algorithm:</span>
+                    <span class="ms-2">BM25 Relevance Scoring</span>
+                </div>
+                <div class="mb-3">
+                    <span class="text-muted">Export Format:</span>
+                    <span class="ms-2">{{ config.export_format }}</span>
+                </div>
+                <div class="mb-3">
+                    <span class="text-muted">Max Hours Per Export:</span>
+                    <span class="ms-2">{{ config.max_hours_per_export }} hours</span>
+                </div>
+                <div class="mb-3">
+                    <span class="text-muted">Export Interval:</span>
+                    <span class="ms-2">{{ config.export_interval_hours }} hours</span>
+                </div>
+                <div class="mb-3">
+                    <span class="text-muted">Discord Token:</span>
+                    <span class="ms-2">{{ "Configured" if config.token else "Not Configured" }}</span>
+                </div>
+                <div class="mb-3">
+                    <span class="text-muted">Channels Configured:</span>
+                    <span class="ms-2">{{ channels|length }}</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row mb-4">
+    <div class="col-md-12">
+        <div class="card shadow-sm">
+            <div class="card-header">
+                <h5 class="card-title mb-0">
+                    <i class="bi bi-hash me-2"></i>
+                    Configured Channels
+                </h5>
+            </div>
+            <div class="card-body">
+                {% if channels %}
+                    <div class="table-responsive">
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th>Server</th>
+                                    <th>Channel</th>
+                                    <th>Channel ID</th>
+                                    <th>Last Export</th>
+                                    <th>Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {% if channel_details %}
+                                    {% for channel in channel_details %}
+                                        <tr>
+                                            <td>{{ channel.server_name }}</td>
+                                            <td><span class="text-channel">#{{ channel.channel_name }}</span></td>
+                                            <td><code>{{ channel.id }}</code></td>
+                                            <td>{{ channel.last_export if channel.last_export != 'Never' else 'Never attempted' }}</td>
+                                            <td>
+                                                <div class="btn-group">
+                                                    <button class="btn btn-sm btn-outline-primary export-channel-btn me-1" data-channel-id="{{ channel.id }}" title="Export this channel">
+                                                        <i class="bi bi-cloud-download"></i>
+                                                    </button>
+                                                    <button class="btn btn-sm btn-outline-warning delete-data-btn me-1" data-channel-id="{{ channel.id }}" title="Delete channel data">
+                                                        <i class="bi bi-eraser"></i>
+                                                    </button>
+                                                    <button class="btn btn-sm btn-outline-danger remove-channel-btn" data-channel-id="{{ channel.id }}" title="Remove channel from monitoring and delete its data">
+                                                        <i class="bi bi-trash"></i>
+                                                    </button>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    {% endfor %}
+                                {% else %}
+                                    {% for channel_id in channels %}
+                                        <tr>
+                                            <td>Unknown</td>
+                                            <td>Unknown</td>
+                                            <td><code>{{ channel_id }}</code></td>
+                                            <td>{{ status.last_exports.get(channel_id, 'Never attempted') }}</td>
+                                            <td>
+                                                <div class="btn-group">
+                                                    <button class="btn btn-sm btn-outline-primary export-channel-btn me-1" data-channel-id="{{ channel_id }}" title="Export this channel">
+                                                        <i class="bi bi-cloud-download"></i>
+                                                    </button>
+                                                    <button class="btn btn-sm btn-outline-warning delete-data-btn me-1" data-channel-id="{{ channel_id }}" title="Delete channel data">
+                                                        <i class="bi bi-eraser"></i>
+                                                    </button>
+                                                    <button class="btn btn-sm btn-outline-danger remove-channel-btn" data-channel-id="{{ channel_id }}" title="Remove channel from monitoring and delete its data">
+                                                        <i class="bi bi-trash"></i>
+                                                    </button>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    {% endfor %}
+                                    {% if not channel_details and channels and config.token %}
+                                        <tr>
+                                            <td colspan="5" class="text-center">
+                                                <div class="alert alert-info mb-0 py-2">
+                                                    <small>
+                                                        Channel details not loaded. 
+                                                        <a href="{{ url_for('channels_page') }}">Visit the Channels page</a> 
+                                                        to refresh server and channel information.
+                                                    </small>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    {% endif %}
+                                {% endif %}
+                            </tbody>
+                        </table>
+                    </div>
+                {% else %}
+                    <div class="alert alert-warning">
+                        No channels configured. <a href="{{ url_for('channels_page') }}">Add some channels</a> to start exporting.
+                    </div>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
+
+{% block scripts %}
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const runExportBtn = document.getElementById('run-export-btn');
+    const removeChannelBtns = document.querySelectorAll('.remove-channel-btn');
+    const exportChannelBtns = document.querySelectorAll('.export-channel-btn');
+    
+    // Handle export channel buttons
+    exportChannelBtns.forEach(btn => {
+        btn.addEventListener('click', function() {
+            const channelId = this.dataset.channelId;
+            const row = this.closest('tr');
+            const channelName = row.querySelector('.text-channel') ? row.querySelector('.text-channel').textContent : 'this channel';
+            
+            // Disable button and show loading state
+            this.disabled = true;
+            this.innerHTML = '<span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>';
+            
+            // Disable all export buttons while processing
+            document.querySelectorAll('.export-channel-btn, #run-export-btn').forEach(btn => {
+                btn.disabled = true;
+            });
+            
+            fetch('/api/export-channel', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({ channel_id: channelId })
+            })
+            .then(response => response.json())
+            .then(data => {
+                // Re-enable the button
+                this.disabled = false;
+                this.innerHTML = '<i class="bi bi-cloud-download"></i>';
+                
+                // Re-enable all export buttons
+                document.querySelectorAll('.export-channel-btn').forEach(btn => {
+                    btn.disabled = false;
+                });
+                
+                // Re-enable the main export button
+                runExportBtn.disabled = false;
+                runExportBtn.innerHTML = '<i class="bi bi-cloud-download me-1"></i> Run Export Now';
+                
+                if (data.success) {
+                    showAlert(`Successfully exported ${channelName}`, 'success');
+                    
+                    // Update last export time in the row
+                    const lastExportCell = row.querySelector('td:nth-child(4)');
+                    if (lastExportCell && data.last_exports && data.last_exports[channelId]) {
+                        lastExportCell.textContent = data.last_exports[channelId];
+                    }
+                    
+                    // Update overall status
+                    updateStatus();
+                } else {
+                    showAlert(data.message, 'warning');
+                    
+                    // Update last export time anyway if available
+                    if (data.last_exports && data.last_exports[channelId]) {
+                        const lastExportCell = row.querySelector('td:nth-child(4)');
+                        if (lastExportCell) {
+                            lastExportCell.textContent = data.last_exports[channelId];
+                        }
+                    }
+                }
+            })
+            .catch(error => {
+                console.error('Error:', error);
+                showAlert('An error occurred while exporting the channel', 'danger');
+                this.disabled = false;
+                this.innerHTML = '<i class="bi bi-cloud-download"></i>';
+                
+                // Re-enable all export buttons
+                document.querySelectorAll('.export-channel-btn').forEach(btn => {
+                    btn.disabled = false;
+                });
+                
+                // Re-enable the main export button
+                runExportBtn.disabled = false;
+                runExportBtn.innerHTML = '<i class="bi bi-cloud-download me-1"></i> Run Export Now';
+            });
+        });
+    });
+    
+    // Handle delete data buttons
+    const deleteDataBtns = document.querySelectorAll('.delete-data-btn');
+    deleteDataBtns.forEach(btn => {
+        btn.addEventListener('click', function() {
+            const channelId = this.dataset.channelId;
+            const row = this.closest('tr');
+            const channelName = row.querySelector('.text-channel') ? row.querySelector('.text-channel').textContent : 'this channel';
+            
+            if (confirm(`Are you sure you want to delete all data for ${channelName}? This will remove all exported messages and cached entries for this channel, but keep the channel in monitoring.`)) {
+                // Disable button and show loading state
+                this.disabled = true;
+                this.innerHTML = '<span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>';
+                
+                fetch('/api/delete-channel-data', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({ channel_id: channelId })
+                })
+                .then(response => response.json())
+                .then(data => {
+                    // Re-enable the button
+                    this.disabled = false;
+                    this.innerHTML = '<i class="bi bi-eraser"></i>';
+                    
+                    if (data.success) {
+                        // Reset the last export time to "Never attempted" in the UI
+                        const lastExportCell = row.querySelector('td:nth-child(4)');
+                        if (lastExportCell) {
+                            lastExportCell.textContent = 'Never attempted';
+                        }
+                        
+                        showAlert(`Successfully deleted data for ${channelName}`, 'success');
+                        
+                        // Update overall status
+                        updateStatus();
+                    } else {
+                        showAlert('Failed to delete channel data: ' + data.message, 'danger');
+                    }
+                })
+                .catch(error => {
+                    console.error('Error:', error);
+                    showAlert('An error occurred while deleting channel data', 'danger');
+                    this.disabled = false;
+                    this.innerHTML = '<i class="bi bi-eraser"></i>';
+                });
+            }
+        });
+    });
+    
+    // Handle remove channel buttons
+    removeChannelBtns.forEach(btn => {
+        btn.addEventListener('click', function() {
+            const channelId = this.dataset.channelId;
+            const row = this.closest('tr');
+            const channelName = row.querySelector('.text-channel') ? row.querySelector('.text-channel').textContent : 'this channel';
+            
+            if (confirm(`Are you sure you want to remove ${channelName} from monitoring? This will also delete all exported data for this channel.`)) {
+                // Disable button and show loading state
+                this.disabled = true;
+                this.innerHTML = '<span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>';
+                
+                fetch('/api/remove-channel', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({ channel_id: channelId })
+                })
+                .then(response => response.json())
+                .then(data => {
+                    if (data.success) {
+                        // Remove the row from the table
+                        row.remove();
+                        showAlert(`Channel removed successfully`, 'success');
+                        
+                        // Update channel count in the config summary
+                        const channelsCountElement = document.querySelector('.status-container .mb-3:nth-child(7) .ms-2');
+                        if (channelsCountElement) {
+                            const currentCount = parseInt(channelsCountElement.textContent);
+                            if (!isNaN(currentCount)) {
+                                channelsCountElement.textContent = (currentCount - 1).toString();
+                            }
+                        }
+                    } else {
+                        showAlert('Failed to remove channel: ' + data.message, 'danger');
+                        this.disabled = false;
+                        this.innerHTML = '<i class="bi bi-trash"></i>';
+                    }
+                })
+                .catch(error => {
+                    console.error('Error:', error);
+                    showAlert('An error occurred while removing the channel', 'danger');
+                    this.disabled = false;
+                    this.innerHTML = '<i class="bi bi-trash"></i>';
+                });
+            }
+        });
+    });
+    
+    // Handle export button click
+    runExportBtn.addEventListener('click', function() {
+        runExportBtn.disabled = true;
+        runExportBtn.innerHTML = '<span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span> Running...';
+        
+        fetch('/api/export', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            }
+        })
+        .then(response => response.json())
+        .then(data => {
+            if (data.success) {
+                showAlert('Export completed successfully', 'success');
+                
+                // If API returned last_exports, update the channel table directly
+                if (data.last_exports) {
+                    const channelRows = document.querySelectorAll('table tbody tr');
+                    channelRows.forEach(row => {
+                        const channelIdCell = row.querySelector('td:nth-child(3) code');
+                        if (channelIdCell) {
+                            const channelId = channelIdCell.textContent.trim();
+                            const lastExportCell = row.querySelector('td:nth-child(4)');
+                            if (lastExportCell && data.last_exports[channelId]) {
+                                lastExportCell.textContent = data.last_exports[channelId];
+                            }
+                        }
+                    });
+                }
+                
+                // Update other status elements via API
+                updateStatus();
+            } else {
+                showAlert('Export failed: ' + data.message, 'danger');
+                runExportBtn.disabled = false;
+                runExportBtn.innerHTML = '<i class="bi bi-cloud-download me-1"></i> Run Export Now';
+            }
+        })
+        .catch(error => {
+            console.error('Error:', error);
+            showAlert('An error occurred while running export', 'danger');
+            runExportBtn.disabled = false;
+            runExportBtn.innerHTML = '<i class="bi bi-cloud-download me-1"></i> Run Export Now';
+        });
+    });
+    
+    
+    // Function to update status
+    function updateStatus() {
+        fetch('/api/status')
+        .then(response => response.json())
+        .then(data => {
+            document.getElementById('exporter-status').textContent = data.is_running ? 'Running' : 'Idle';
+            document.getElementById('exporter-status').className = 'ms-2 badge ' + (data.is_running ? 'bg-success' : 'bg-secondary');
+            
+            document.getElementById('last-export-time').textContent = data.last_export_time || 'Never';
+            document.getElementById('export-count').textContent = data.export_count;
+            document.getElementById('search-status').textContent = 'BM25 Active';
+            document.getElementById('search-status').className = 'ms-2 badge bg-success';
+            
+            // Update the last export timestamps in the channel table
+            if (data.last_exports) {
+                const channelRows = document.querySelectorAll('table tbody tr');
+                channelRows.forEach(row => {
+                    const channelIdCell = row.querySelector('td:nth-child(3) code');
+                    if (channelIdCell) {
+                        const channelId = channelIdCell.textContent.trim();
+                        const lastExportCell = row.querySelector('td:nth-child(4)');
+                        if (lastExportCell && data.last_exports[channelId]) {
+                            lastExportCell.textContent = data.last_exports[channelId];
+                        }
+                    }
+                });
+            }
+            
+            // Enable export button if not running
+            runExportBtn.disabled = data.is_running;
+            runExportBtn.innerHTML = data.is_running ? 
+                '<span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span> Running...' : 
+                '<i class="bi bi-cloud-download me-1"></i> Run Export Now';
+            
+            // If still running, check again in 2 seconds
+            if (data.is_running) {
+                setTimeout(updateStatus, 2000);
+            }
+        })
+        .catch(error => {
+            console.error('Error updating status:', error);
+        });
+    }
+    
+    // Function to show alerts
+    function showAlert(message, type) {
+        const alertContainer = document.createElement('div');
+        alertContainer.className = `alert alert-${type} alert-dismissible fade show`;
+        alertContainer.innerHTML = `
+            ${message}
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        `;
+        
+        // Get content container and first row
+        const container = document.querySelector('.container.my-4');
+        
+        // Insert alert at the top of the container, before any content
+        if (container) {
+            container.prepend(alertContainer);
+        } else {
+            // Fallback in case structure changes
+            document.querySelector('.container').prepend(alertContainer);
+        }
+        
+        // Auto dismiss after 5 seconds
+        setTimeout(() => {
+            alertContainer.remove();
+        }, 5000);
+    }
+    
+    // Update status periodically
+    setInterval(updateStatus, 30000);
+});
+</script>
+{% endblock %}

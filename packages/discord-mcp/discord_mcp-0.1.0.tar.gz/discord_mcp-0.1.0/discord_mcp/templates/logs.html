@@ -1,0 +1,405 @@
+{% extends "base.html" %}
+
+{% block title %}Discord MCP - Exporter Logs{% endblock %}
+
+{% block head %}
+<style>
+    .log-container {
+        background-color: var(--dark-tertiary);
+        border-radius: 0.5rem;
+        padding: 1rem;
+        font-family: 'Courier New', monospace;
+        font-size: 0.9rem;
+        color: var(--dark-text);
+        height: 70vh;
+        overflow-y: auto;
+        white-space: pre-wrap;
+        word-wrap: break-word;
+    }
+    
+    .log-line {
+        margin-bottom: 0.2rem;
+        line-height: 1.4;
+    }
+    
+    .log-debug { color: #8a8e94; }
+    .log-info { color: #dcddde; }
+    .log-warning { color: var(--dark-warning); }
+    .log-error { color: var(--dark-danger); }
+    .log-critical { color: #ff73fa; }
+    
+    .log-controls {
+        margin-bottom: 1rem;
+    }
+    
+    .log-filters .btn-check:checked + .btn-outline-secondary {
+        background-color: var(--dark-accent);
+        border-color: var(--dark-accent);
+    }
+    
+    #log-search {
+        background-color: var(--dark-input);
+        color: var(--dark-text);
+        border-color: var(--dark-border);
+    }
+    
+    .log-timestamp {
+        color: var(--dark-text-muted);
+        margin-right: 0.5rem;
+    }
+</style>
+{% endblock %}
+
+{% block content %}
+<div class="row mb-4">
+    <div class="col-md-12">
+        <div class="card shadow-sm">
+            <div class="card-header bg-primary">
+                <h5 class="card-title mb-0 d-flex justify-content-between align-items-center">
+                    <span>
+                        <i class="bi bi-file-text me-2"></i>
+                        Application Logs
+                    </span>
+                    <div class="btn-group btn-group-sm">
+                        <button id="download-logs" class="btn btn-sm btn-outline-light">
+                            <i class="bi bi-download me-1"></i>
+                            Download
+                        </button>
+                        <button id="clear-logs-btn" class="btn btn-sm btn-outline-light">
+                            <i class="bi bi-trash me-1"></i>
+                            Clear View
+                        </button>
+                        <button id="toggle-auto-refresh" class="btn btn-sm btn-outline-light active">
+                            <i class="bi bi-arrow-repeat me-1"></i>
+                            Auto-Refresh
+                        </button>
+                    </div>
+                </h5>
+            </div>
+            <div class="card-body">
+                <div class="log-controls d-flex justify-content-between">
+                    <div class="log-filters btn-group" role="group">
+                        <input type="checkbox" class="btn-check" id="filter-debug" autocomplete="off" checked>
+                        <label class="btn btn-outline-secondary btn-sm" for="filter-debug">Debug</label>
+                        
+                        <input type="checkbox" class="btn-check" id="filter-info" autocomplete="off" checked>
+                        <label class="btn btn-outline-secondary btn-sm" for="filter-info">Info</label>
+                        
+                        <input type="checkbox" class="btn-check" id="filter-warning" autocomplete="off" checked>
+                        <label class="btn btn-outline-secondary btn-sm" for="filter-warning">Warning</label>
+                        
+                        <input type="checkbox" class="btn-check" id="filter-error" autocomplete="off" checked>
+                        <label class="btn btn-outline-secondary btn-sm" for="filter-error">Error</label>
+                        
+                        <input type="checkbox" class="btn-check" id="filter-critical" autocomplete="off" checked>
+                        <label class="btn btn-outline-secondary btn-sm" for="filter-critical">Critical</label>
+                    </div>
+                    
+                    <div class="log-search">
+                        <div class="input-group input-group-sm">
+                            <input type="text" id="log-search" class="form-control" placeholder="Search logs...">
+                            <button id="log-search-clear" class="btn btn-outline-secondary" type="button">
+                                <i class="bi bi-x"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="log-container" id="log-container">
+                    <div id="log-content">
+                        {% for log in logs %}
+                            <div class="log-line log-{{ log.level|lower }}">
+                                <span class="log-timestamp">{{ log.timestamp }}</span>
+                                <span class="log-message">{{ log.message }}</span>
+                            </div>
+                        {% endfor %}
+                    </div>
+                </div>
+                
+                <div class="mt-3 d-flex justify-content-between align-items-center">
+                    <div>
+                        <select id="log-file-selector" class="form-select form-select-sm" style="width: auto;">
+                            {% for file in log_files %}
+                                <option value="{{ file.name }}" {% if file.name == current_log %}selected{% endif %}>{{ file.name }}</option>
+                            {% endfor %}
+                        </select>
+                    </div>
+                    <div>
+                        <span class="text-muted">Last updated: <span id="last-updated">{{ last_updated }}</span></span>
+                        <button id="refresh-logs" class="btn btn-sm btn-outline-secondary ms-2">
+                            <i class="bi bi-arrow-clockwise"></i>
+                            Refresh Now
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-12">
+        <div class="card shadow-sm">
+            <div class="card-header">
+                <h5 class="card-title mb-0">
+                    <i class="bi bi-gear me-2"></i>
+                    Log Settings
+                </h5>
+            </div>
+            <div class="card-body">
+                <form id="log-settings-form" class="row g-3">
+                    <div class="col-md-6">
+                        <label for="log-lines" class="form-label">Maximum Lines to Display</label>
+                        <input type="number" class="form-control" id="log-lines" value="{{ max_lines }}" min="10" max="5000">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="refresh-interval" class="form-label">Auto-Refresh Interval (seconds)</label>
+                        <input type="number" class="form-control" id="refresh-interval" value="{{ refresh_interval }}" min="1" max="60">
+                    </div>
+                    <div class="col-12 mt-3">
+                        <button type="submit" class="btn btn-primary">
+                            <i class="bi bi-save me-1"></i>
+                            Save Settings
+                        </button>
+                        <a href="{{ url_for('index') }}" class="btn btn-secondary">
+                            <i class="bi bi-arrow-left me-1"></i>
+                            Back to Dashboard
+                        </a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const logContainer = document.getElementById('log-container');
+    const logContent = document.getElementById('log-content');
+    const filterDebug = document.getElementById('filter-debug');
+    const filterInfo = document.getElementById('filter-info');
+    const filterWarning = document.getElementById('filter-warning');
+    const filterError = document.getElementById('filter-error');
+    const filterCritical = document.getElementById('filter-critical');
+    const logSearch = document.getElementById('log-search');
+    const logSearchClear = document.getElementById('log-search-clear');
+    const refreshLogsBtn = document.getElementById('refresh-logs');
+    const toggleAutoRefreshBtn = document.getElementById('toggle-auto-refresh');
+    const clearLogsBtn = document.getElementById('clear-logs-btn');
+    const downloadLogsBtn = document.getElementById('download-logs');
+    const logFileSelector = document.getElementById('log-file-selector');
+    const logSettingsForm = document.getElementById('log-settings-form');
+    const lastUpdatedSpan = document.getElementById('last-updated');
+    
+    let autoRefreshEnabled = true;
+    let refreshTimer;
+    let lastScrollTop = 0;
+    let userScrolled = false;
+    
+    // Function to apply filters and search
+    function applyFiltersAndSearch() {
+        const searchTerm = logSearch.value.toLowerCase();
+        const logLines = logContent.querySelectorAll('.log-line');
+        
+        logLines.forEach(line => {
+            // Check log level filter
+            let showByLevel = false;
+            if (line.classList.contains('log-debug') && filterDebug.checked) showByLevel = true;
+            if (line.classList.contains('log-info') && filterInfo.checked) showByLevel = true;
+            if (line.classList.contains('log-warning') && filterWarning.checked) showByLevel = true;
+            if (line.classList.contains('log-error') && filterError.checked) showByLevel = true;
+            if (line.classList.contains('log-critical') && filterCritical.checked) showByLevel = true;
+            
+            // Check search term
+            const logText = line.textContent.toLowerCase();
+            const showBySearch = searchTerm === '' || logText.includes(searchTerm);
+            
+            // Show or hide based on combined filters
+            line.style.display = (showByLevel && showBySearch) ? '' : 'none';
+        });
+    }
+    
+    // Function to fetch logs
+    function fetchLogs() {
+        const selectedLog = logFileSelector.value;
+        const maxLines = document.getElementById('log-lines').value;
+        
+        fetch(`/api/logs?file=${selectedLog}&lines=${maxLines}`)
+            .then(response => response.json())
+            .then(data => {
+                // Save scroll position
+                lastScrollTop = logContainer.scrollTop;
+                const wasScrolledToBottom = (logContainer.scrollHeight - logContainer.clientHeight - logContainer.scrollTop) < 50;
+                
+                // Update logs
+                logContent.innerHTML = '';
+                data.logs.forEach(log => {
+                    const logLine = document.createElement('div');
+                    logLine.className = `log-line log-${log.level.toLowerCase()}`;
+                    
+                    const timestamp = document.createElement('span');
+                    timestamp.className = 'log-timestamp';
+                    timestamp.textContent = log.timestamp;
+                    
+                    const message = document.createElement('span');
+                    message.className = 'log-message';
+                    message.textContent = log.message;
+                    
+                    logLine.appendChild(timestamp);
+                    logLine.appendChild(message);
+                    logContent.appendChild(logLine);
+                });
+                
+                // Update last updated time
+                lastUpdatedSpan.textContent = new Date().toLocaleTimeString();
+                
+                // Apply filters and search
+                applyFiltersAndSearch();
+                
+                // Restore scroll position or scroll to bottom if already at bottom
+                if (!userScrolled || wasScrolledToBottom) {
+                    logContainer.scrollTop = logContainer.scrollHeight;
+                } else {
+                    logContainer.scrollTop = lastScrollTop;
+                }
+            })
+            .catch(error => {
+                console.error('Error fetching logs:', error);
+            });
+    }
+    
+    // Set up auto-refresh
+    function startAutoRefresh() {
+        const interval = document.getElementById('refresh-interval').value * 1000;
+        stopAutoRefresh(); // Clear any existing timer
+        refreshTimer = setInterval(fetchLogs, interval);
+    }
+    
+    function stopAutoRefresh() {
+        if (refreshTimer) {
+            clearInterval(refreshTimer);
+            refreshTimer = null;
+        }
+    }
+    
+    // Toggle auto-refresh
+    toggleAutoRefreshBtn.addEventListener('click', function() {
+        autoRefreshEnabled = !autoRefreshEnabled;
+        this.classList.toggle('active', autoRefreshEnabled);
+        
+        if (autoRefreshEnabled) {
+            startAutoRefresh();
+            this.innerHTML = '<i class="bi bi-arrow-repeat me-1"></i> Auto-Refresh';
+        } else {
+            stopAutoRefresh();
+            this.innerHTML = '<i class="bi bi-x-circle me-1"></i> Auto-Refresh Off';
+        }
+    });
+    
+    // Manual refresh
+    refreshLogsBtn.addEventListener('click', fetchLogs);
+    
+    // Clear logs view
+    clearLogsBtn.addEventListener('click', function() {
+        logContent.innerHTML = '';
+    });
+    
+    // Download logs
+    downloadLogsBtn.addEventListener('click', function() {
+        const selectedLog = logFileSelector.value;
+        window.location.href = `/api/logs/download?file=${selectedLog}`;
+    });
+    
+    // Log file selection
+    logFileSelector.addEventListener('change', fetchLogs);
+    
+    // Log level filters
+    filterDebug.addEventListener('change', applyFiltersAndSearch);
+    filterInfo.addEventListener('change', applyFiltersAndSearch);
+    filterWarning.addEventListener('change', applyFiltersAndSearch);
+    filterError.addEventListener('change', applyFiltersAndSearch);
+    filterCritical.addEventListener('change', applyFiltersAndSearch);
+    
+    // Search functionality
+    logSearch.addEventListener('input', applyFiltersAndSearch);
+    logSearchClear.addEventListener('click', function() {
+        logSearch.value = '';
+        applyFiltersAndSearch();
+    });
+    
+    // Detect user scroll
+    logContainer.addEventListener('scroll', function() {
+        userScrolled = true;
+        // Reset after 5 seconds of no scrolling
+        clearTimeout(window.scrollTimer);
+        window.scrollTimer = setTimeout(function() {
+            userScrolled = false;
+        }, 5000);
+    });
+    
+    // Save log settings
+    logSettingsForm.addEventListener('submit', function(e) {
+        e.preventDefault();
+        const maxLines = document.getElementById('log-lines').value;
+        const refreshInterval = document.getElementById('refresh-interval').value;
+        
+        fetch('/api/logs/settings', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({
+                max_lines: maxLines,
+                refresh_interval: refreshInterval
+            })
+        })
+        .then(response => response.json())
+        .then(data => {
+            if (data.success) {
+                // Update auto-refresh interval
+                if (autoRefreshEnabled) {
+                    startAutoRefresh();
+                }
+                // Fetch logs with new max lines
+                fetchLogs();
+                // Show success message
+                showAlert('Log settings updated successfully', 'success');
+            } else {
+                showAlert('Failed to update log settings', 'danger');
+            }
+        })
+        .catch(error => {
+            console.error('Error saving log settings:', error);
+            showAlert('An error occurred while saving log settings', 'danger');
+        });
+    });
+    
+    // Function to show alerts
+    function showAlert(message, type) {
+        const alertContainer = document.createElement('div');
+        alertContainer.className = `alert alert-${type} alert-dismissible fade show`;
+        alertContainer.innerHTML = `
+            ${message}
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        `;
+        
+        // Insert at the top of the container
+        const container = document.querySelector('.container');
+        container.insertBefore(alertContainer, container.firstChild);
+        
+        // Auto dismiss after 5 seconds
+        setTimeout(() => {
+            alertContainer.remove();
+        }, 5000);
+    }
+    
+    // Initial fetch and start auto-refresh
+    fetchLogs();
+    if (autoRefreshEnabled) {
+        startAutoRefresh();
+    }
+});
+</script>
+{% endblock %}
