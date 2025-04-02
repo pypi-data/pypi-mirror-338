@@ -1,0 +1,12 @@
+README.md
+setup.cfg
+setup.py
+mapyr/__init__.py
+mapyr/c.py
+mapyr/core.py
+mapyr/logger.py
+mapyr/python.py
+mapyr.egg-info/PKG-INFO
+mapyr.egg-info/SOURCES.txt
+mapyr.egg-info/dependency_links.txt
+mapyr.egg-info/top_level.txt
