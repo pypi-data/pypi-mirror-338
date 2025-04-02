@@ -1,0 +1,13 @@
+Metadata-Version: 2.4
+Name: pasargadbot
+Version: 2.0.0
+Summary: یک کتابخانه ضد ربات قوی برای وبسایت‌ها
+Author: ramox
+Author-email: actramox@gmail.com
+Requires-Python: >=3.6
+Requires-Dist: Flask>=2.0.0
+Dynamic: author
+Dynamic: author-email
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
