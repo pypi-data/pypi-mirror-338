@@ -1,0 +1,12 @@
+anki_mcp/__init__.py,sha256=7J114AzokCTlDBeACJnZTmLiMYnJEnjHyAChyZLMmCs,310
+anki_mcp/server.py,sha256=25jCNzba3PGstxIgIGYZfQtsE6uT7YaH_YuN3xYXL6I,977
+anki_mcp/tools/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+anki_mcp/tools/add_or_update_notes.py,sha256=qIe-UBAr-LmsMYD3gezPdjHZ63NYgW3647cFo7uyBTA,3131
+anki_mcp/tools/find_notes.py,sha256=RL0YwX4ybgZOf7tQuwC3usteklRc2PsmNFys0KcHBtE,1989
+anki_mcp/tools/get_cards_reviewed.py,sha256=LwaJX0ExNshG4-mqQsoQYbXYnPGcNv1F1e-HwZQMU_E,775
+anki_mcp/tools/get_collection_overview.py,sha256=f9JhRij6hYLMW5NdopraP0GbIAPe9gLNlbp2aIzBjxI,3067
+anki_mcp/tools/utils.py,sha256=NvJ6zPKaOHSUemrW9BMWngm7UTW48lsXoH86fB1rvwo,1177
+anki_mcp-0.2.0a1.dist-info/METADATA,sha256=C7EWbo5vXq0NvFfcUWaAuPQmPiIn4LRD7qXz9sUoBDE,1649
+anki_mcp-0.2.0a1.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+anki_mcp-0.2.0a1.dist-info/entry_points.txt,sha256=iwp_5h2sAepOxyMntoEj9WzVpCgnDHDLz7q3cOe6Fh8,43
+anki_mcp-0.2.0a1.dist-info/RECORD,,
