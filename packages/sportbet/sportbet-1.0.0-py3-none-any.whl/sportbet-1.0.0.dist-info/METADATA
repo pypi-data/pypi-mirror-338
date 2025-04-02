@@ -1,0 +1,18 @@
+Metadata-Version: 2.4
+Name: sportbet
+Version: 1.0.0
+Summary: A Python bot to automate SportyBet actions using Selenium.
+Author-email: Bapizam Samuel <bapizamsamuel@gmail.com>
+License: MIT
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: selenium>=4.0.0
+
+# SportBet
+
+A Python bot to automate SportyBet using Selenium and play games with Artificial Intelligence.
+
+## Installation
+
+```sh
+pip install sportbet
