@@ -1,0 +1,8 @@
+README.md
+setup.py
+pdfword2md.egg-info/PKG-INFO
+pdfword2md.egg-info/SOURCES.txt
+pdfword2md.egg-info/dependency_links.txt
+pdfword2md.egg-info/entry_points.txt
+pdfword2md.egg-info/requires.txt
+pdfword2md.egg-info/top_level.txt
