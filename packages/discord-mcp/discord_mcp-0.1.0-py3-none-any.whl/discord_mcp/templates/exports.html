@@ -1,0 +1,266 @@
+{% extends "base.html" %}
+
+{% block title %}Discord MCP - Exporter Exports & Database{% endblock %}
+
+{% block content %}
+<div class="row mb-4">
+    <div class="col-md-12">
+        <div class="card shadow-sm">
+            <div class="card-header bg-primary">
+                <h5 class="card-title mb-0">
+                    <i class="bi bi-file-earmark-text me-2"></i>
+                    Discord Exports & Database
+                </h5>
+            </div>
+            <div class="card-body">
+                <div class="mb-4 d-flex justify-content-between align-items-center">
+                    <div>
+                        <h6>Export Status</h6>
+                        <div class="mb-2">
+                            <span class="text-muted">Status:</span>
+                            <span id="exporter-status" class="ms-2 badge {% if status.is_running %}bg-success{% else %}bg-secondary{% endif %}">
+                                {% if status.is_running %}Running{% else %}Idle{% endif %}
+                            </span>
+                        </div>
+                        <div>
+                            <span class="text-muted">Last Export:</span>
+                            <span id="last-export-time" class="ms-2">{{ status.last_export_time or 'Never' }}</span>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <button id="run-export-btn" class="btn btn-primary" {% if status.is_running %}disabled{% endif %}>
+                            <i class="bi bi-cloud-download me-1"></i>
+                            Run Export Now
+                        </button>
+                        <button id="refresh-btn" class="btn btn-outline-secondary">
+                            <i class="bi bi-arrow-clockwise me-1"></i>
+                            Refresh
+                        </button>
+                    </div>
+                </div>
+                
+                <h6 class="mt-4">Export Files</h6>
+                {% if status.exported_files %}
+                    <div class="table-responsive">
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th>File Name</th>
+                                    <th>Size (KB)</th>
+                                    <th>Last Modified</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {% for file in status.exported_files %}
+                                    <tr>
+                                        <td>{{ file.name }}</td>
+                                        <td>{{ file.size }}</td>
+                                        <td>{{ file.modified }}</td>
+                                    </tr>
+                                {% endfor %}
+                            </tbody>
+                        </table>
+                    </div>
+                {% else %}
+                    <div class="alert alert-warning">
+                        No exports found. Click "Run Export Now" to start exporting.
+                    </div>
+                {% endif %}
+                
+                <h6 class="mt-4">Channel Export History</h6>
+                {% if status.last_exports %}
+                    <div class="table-responsive">
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th>Channel ID</th>
+                                    <th>Last Export Time</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {% for channel_id, export_time in status.last_exports.items() %}
+                                    <tr>
+                                        <td>{{ channel_id }}</td>
+                                        <td>{{ export_time }}</td>
+                                    </tr>
+                                {% endfor %}
+                            </tbody>
+                        </table>
+                    </div>
+                {% else %}
+                    <div class="alert alert-warning">
+                        No channel export history found.
+                    </div>
+                {% endif %}
+                
+                <div class="mt-4 d-flex justify-content-between">
+                    <a href="{{ url_for('index') }}" class="btn btn-secondary">
+                        <i class="bi bi-arrow-left me-1"></i>
+                        Back to Dashboard
+                    </a>
+                    <button id="clear-db-btn" class="btn btn-outline-danger">
+                        <i class="bi bi-trash me-1"></i>
+                        Reset Database & Delete Exports
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% if status.errors %}
+<div class="row mb-4">
+    <div class="col-md-12">
+        <div class="card shadow-sm">
+            <div class="card-header bg-danger text-white">
+                <h5 class="card-title mb-0">
+                    <i class="bi bi-exclamation-triangle me-2"></i>
+                    Export Errors
+                </h5>
+            </div>
+            <div class="card-body">
+                <ul class="list-group">
+                    {% for error in status.errors %}
+                        <li class="list-group-item list-group-item-danger">{{ error }}</li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+{% endif %}
+{% endblock %}
+
+{% block scripts %}
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const runExportBtn = document.getElementById('run-export-btn');
+    const refreshBtn = document.getElementById('refresh-btn');
+    const clearDbBtn = document.getElementById('clear-db-btn');
+    
+    // Handle clear database button click
+    clearDbBtn.addEventListener('click', function() {
+        // Show confirmation dialog
+        if (confirm('Are you sure you want to reset the database and export history?\n\nThis will:\n- Delete all cached messages in memory\n- Delete all export timestamps\n- Delete ALL previously exported JSON files\n\nThis action cannot be undone and will cause the next export to re-export ALL messages.')) {
+            clearDbBtn.disabled = true;
+            clearDbBtn.innerHTML = '<span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span> Resetting...';
+            
+            fetch('/api/clear-database', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                }
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.success) {
+                    showAlert('Database reset and exports deleted successfully', 'success');
+                    // Reload the page after a short delay
+                    setTimeout(() => location.reload(), 1500);
+                } else {
+                    showAlert('Failed to clear database: ' + data.message, 'danger');
+                    clearDbBtn.disabled = false;
+                    clearDbBtn.innerHTML = '<i class="bi bi-trash me-1"></i> Reset Database & Delete Exports';
+                }
+            })
+            .catch(error => {
+                console.error('Error:', error);
+                showAlert('An error occurred while resetting the database. Check the logs for details.', 'danger');
+                clearDbBtn.disabled = false;
+                clearDbBtn.innerHTML = '<i class="bi bi-trash me-1"></i> Reset Database & Export History';
+            });
+        }
+    });
+    
+    // Handle export button click
+    runExportBtn.addEventListener('click', function() {
+        runExportBtn.disabled = true;
+        runExportBtn.innerHTML = '<span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span> Running...';
+        
+        fetch('/api/export', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            }
+        })
+        .then(response => response.json())
+        .then(data => {
+            if (data.success) {
+                showAlert('Export completed successfully', 'success');
+                // Update page after export
+                location.reload();
+            } else {
+                showAlert('Export failed: ' + data.message, 'danger');
+                runExportBtn.disabled = false;
+                runExportBtn.innerHTML = '<i class="bi bi-cloud-download me-1"></i> Run Export Now';
+            }
+        })
+        .catch(error => {
+            console.error('Error:', error);
+            showAlert('An error occurred while running export', 'danger');
+            runExportBtn.disabled = false;
+            runExportBtn.innerHTML = '<i class="bi bi-cloud-download me-1"></i> Run Export Now';
+        });
+    });
+    
+    // Handle refresh button click
+    refreshBtn.addEventListener('click', function() {
+        location.reload();
+    });
+    
+    // Function to show alerts
+    function showAlert(message, type) {
+        const alertContainer = document.createElement('div');
+        alertContainer.className = `alert alert-${type} alert-dismissible fade show`;
+        alertContainer.innerHTML = `
+            ${message}
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        `;
+        
+        // Insert at the top of the container
+        const container = document.querySelector('.container');
+        container.insertBefore(alertContainer, container.firstChild);
+        
+        // Auto dismiss after 5 seconds
+        setTimeout(() => {
+            alertContainer.remove();
+        }, 5000);
+    }
+    
+    // Update status periodically if export is running
+    if (document.getElementById('exporter-status').textContent.trim() === 'Running') {
+        function updateStatus() {
+            fetch('/api/status')
+            .then(response => response.json())
+            .then(data => {
+                document.getElementById('exporter-status').textContent = data.is_running ? 'Running' : 'Idle';
+                document.getElementById('exporter-status').className = 'ms-2 badge ' + (data.is_running ? 'bg-success' : 'bg-secondary');
+                
+                document.getElementById('last-export-time').textContent = data.last_export_time || 'Never';
+                
+                // Enable export button if not running
+                runExportBtn.disabled = data.is_running;
+                runExportBtn.innerHTML = data.is_running ? 
+                    '<span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span> Running...' : 
+                    '<i class="bi bi-cloud-download me-1"></i> Run Export Now';
+                
+                // If still running, check again in 2 seconds
+                if (data.is_running) {
+                    setTimeout(updateStatus, 2000);
+                } else {
+                    // If completed, reload the page to see new exports
+                    location.reload();
+                }
+            })
+            .catch(error => {
+                console.error('Error updating status:', error);
+            });
+        }
+        
+        // Start checking
+        setTimeout(updateStatus, 2000);
+    }
+});
+</script>
+{% endblock %}

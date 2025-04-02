@@ -1,0 +1,496 @@
+{% extends "base.html" %}
+
+{% block title %}Discord MCP - Exporter Manage Channels{% endblock %}
+
+{% block content %}
+<div class="row mb-4">
+    <div class="col-md-12">
+        <div class="card shadow-sm">
+            <div class="card-header bg-primary">
+                <h5 class="card-title mb-0">
+                    <i class="bi bi-discord me-2"></i>
+                    Manage Discord Channels
+                </h5>
+            </div>
+            <div class="card-body">
+                <div class="mb-4">
+                    <p class="text-muted">
+                        Select Discord channels to export and monitor. Check the boxes next to channels you want to include.
+                    </p>
+                </div>
+                
+                <div class="mb-3">
+                    <button id="refresh-channels-btn" class="btn btn-outline-secondary mb-3">
+                        <i class="bi bi-arrow-clockwise me-1"></i>
+                        Refresh Server List
+                    </button>
+                    
+                    <div id="loading-indicator" class="d-none">
+                        <div class="spinner-border spinner-border-sm text-primary me-2" role="status">
+                            <span class="visually-hidden">Loading...</span>
+                        </div>
+                        Loading servers and channels...
+                    </div>
+                </div>
+                
+                <!-- Server search input -->
+                <div class="mb-3">
+                    <div class="input-group">
+                        <span class="input-group-text">
+                            <i class="bi bi-search"></i>
+                        </span>
+                        <input type="text" id="server-search" class="form-control" placeholder="Search servers...">
+                        <button type="button" id="clear-search" class="btn btn-outline-secondary d-none">
+                            <i class="bi bi-x-circle"></i>
+                        </button>
+                    </div>
+                    <div id="no-results" class="mt-2 d-none">
+                        <span class="text-muted">No servers found matching your search.</span>
+                    </div>
+                </div>
+                
+                <form method="POST" action="{{ url_for('channels_page') }}" id="channels-form">
+                    <div id="server-list">
+                        {% if servers %}
+                            {# Servers are already sorted in the Python code #}
+                            {% for server_name, server_data in servers.items() %}
+                                <div class="server-container mb-3">
+                                    <div class="server-header" data-bs-toggle="collapse" data-bs-target="#server-{{ server_data.id }}" 
+                                         data-server-id="{{ server_data.id }}" data-server-name="{{ server_name }}" data-loaded="{{ server_data.channels_loaded | lower }}">
+                                        <i class="bi bi-chevron-right me-2"></i>
+                                        <strong>{{ server_name }}</strong>
+                                        <div class="server-loading spinner-border spinner-border-sm text-light ms-2 d-none" role="status">
+                                            <span class="visually-hidden">Loading...</span>
+                                        </div>
+                                    </div>
+                                    <div class="collapse" id="server-{{ server_data.id }}">
+                                        <!-- Channel search input -->
+                                        <div class="ps-4 mt-2 mb-2">
+                                            <div class="input-group input-group-sm channel-search-container">
+                                                <span class="input-group-text">
+                                                    <i class="bi bi-search"></i>
+                                                </span>
+                                                <input type="text" class="form-control channel-search" 
+                                                       placeholder="Search channels..." 
+                                                       data-server-id="{{ server_data.id }}">
+                                                <button type="button" class="btn btn-outline-secondary clear-channel-search d-none">
+                                                    <i class="bi bi-x-circle"></i>
+                                                </button>
+                                            </div>
+                                            <div class="no-channel-results mt-1 d-none">
+                                                <span class="text-muted small">No channels found.</span>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="ps-4 server-channels" id="channels-{{ server_data.id }}">
+                                            {% if server_data.channels_loaded %}
+                                                {% for channel in server_data.channels %}
+                                                    <div class="form-check channel-item" data-channel-name="{{ channel.name }}">
+                                                        <input type="checkbox" class="form-check-input" name="selected_channels" 
+                                                               value="{{ channel.id }}" id="channel-{{ channel.id }}"
+                                                               {% if channel.id in selected_channels %}checked{% endif %}>
+                                                        <label class="form-check-label" for="channel-{{ channel.id }}">
+                                                            # {{ channel.name }}
+                                                        </label>
+                                                    </div>
+                                                {% endfor %}
+                                            {% else %}
+                                                <div class="placeholder-text text-muted">Click to load channels...</div>
+                                            {% endif %}
+                                        </div>
+                                    </div>
+                                </div>
+                            {% endfor %}
+                        {% else %}
+                            <div class="alert alert-warning">
+                                No servers or channels found. Please make sure your Discord token is set in the configuration and refresh the list.
+                            </div>
+                        {% endif %}
+                    </div>
+                    
+                    <div class="mt-4">
+                        <h5>Manually Add Channel IDs</h5>
+                        <p class="text-muted">
+                            You can also manually add channel IDs below (one per line).
+                        </p>
+                        
+                        <div id="manual-channel-list">
+                            {% if manual_channels %}
+                                {% for channel in manual_channels %}
+                                <div class="input-group mb-2 channel-entry">
+                                    <input type="text" class="form-control" name="manual_channels" value="{{ channel }}" placeholder="Enter a channel ID">
+                                    <button type="button" class="btn btn-outline-danger remove-channel">
+                                        <i class="bi bi-trash"></i>
+                                    </button>
+                                </div>
+                                {% endfor %}
+                            {% else %}
+                                <div class="input-group mb-2 channel-entry">
+                                    <input type="text" class="form-control" name="manual_channels" placeholder="Enter a channel ID">
+                                    <button type="button" class="btn btn-outline-danger remove-channel">
+                                        <i class="bi bi-trash"></i>
+                                    </button>
+                                </div>
+                            {% endif %}
+                        </div>
+                        
+                        <div class="mb-3">
+                            <button type="button" id="add-channel-btn" class="btn btn-outline-primary">
+                                <i class="bi bi-plus-circle me-1"></i>
+                                Add Manual Channel
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-4 d-flex justify-content-between">
+                        <a href="{{ url_for('index') }}" class="btn btn-secondary">
+                            <i class="bi bi-arrow-left me-1"></i>
+                            Back to Dashboard
+                        </a>
+                        <button type="submit" class="btn btn-primary">
+                            <i class="bi bi-save me-1"></i>
+                            Save Monitored Channels
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const manualChannelList = document.getElementById('manual-channel-list');
+    const addChannelBtn = document.getElementById('add-channel-btn');
+    const refreshBtn = document.getElementById('refresh-channels-btn');
+    const loadingIndicator = document.getElementById('loading-indicator');
+    const serverHeaderList = document.querySelectorAll('.server-header');
+    const serverSearch = document.getElementById('server-search');
+    const clearSearchBtn = document.getElementById('clear-search');
+    const noResultsEl = document.getElementById('no-results');
+    const serverContainers = document.querySelectorAll('.server-container');
+    
+    // Server search functionality
+    function setupServerSearch() {
+        if (!serverSearch) return;
+        
+        // Filter servers based on search input
+        function filterServers() {
+            const searchTerm = serverSearch.value.toLowerCase().trim();
+            let visibleCount = 0;
+            
+            // Show all servers if search is empty
+            if (searchTerm === '') {
+                serverContainers.forEach(container => {
+                    container.classList.remove('d-none');
+                });
+                clearSearchBtn.classList.add('d-none');
+                noResultsEl.classList.add('d-none');
+                return;
+            }
+            
+            // Show clear button when search has text
+            clearSearchBtn.classList.remove('d-none');
+            
+            // Filter servers based on search term
+            serverContainers.forEach(container => {
+                const header = container.querySelector('.server-header');
+                const serverName = header.getAttribute('data-server-name').toLowerCase();
+                
+                if (serverName.includes(searchTerm)) {
+                    container.classList.remove('d-none');
+                    visibleCount++;
+                } else {
+                    container.classList.add('d-none');
+                }
+            });
+            
+            // Show "no results" message if needed
+            if (visibleCount === 0) {
+                noResultsEl.classList.remove('d-none');
+            } else {
+                noResultsEl.classList.add('d-none');
+            }
+        }
+        
+        // Handle input events for real-time filtering
+        serverSearch.addEventListener('input', filterServers);
+        
+        // Clear search button
+        clearSearchBtn.addEventListener('click', function() {
+            serverSearch.value = '';
+            clearSearchBtn.classList.add('d-none');
+            filterServers();
+            serverSearch.focus();
+        });
+        
+        // Set initial state (in case form is repopulated by browser)
+        if (serverSearch.value) {
+            filterServers();
+        }
+    }
+    
+    // Channel search functionality
+    function setupChannelSearch() {
+        const channelSearchInputs = document.querySelectorAll('.channel-search');
+        
+        channelSearchInputs.forEach(input => {
+            const serverId = input.getAttribute('data-server-id');
+            const clearBtn = input.closest('.channel-search-container').querySelector('.clear-channel-search');
+            const noResultsEl = input.closest('.ps-4').querySelector('.no-channel-results');
+            const channelsContainer = document.getElementById(`channels-${serverId}`);
+            
+            if (!channelsContainer) return;
+            
+            // Filter channels based on search input
+            function filterChannels() {
+                const searchTerm = input.value.toLowerCase().trim();
+                const channelItems = channelsContainer.querySelectorAll('.channel-item');
+                let visibleCount = 0;
+                
+                // Skip filtering if channels aren't loaded yet
+                if (channelItems.length === 0 || channelsContainer.querySelector('.placeholder-text')) {
+                    return;
+                }
+                
+                // Show all channels if search is empty
+                if (searchTerm === '') {
+                    channelItems.forEach(item => {
+                        item.classList.remove('d-none');
+                    });
+                    clearBtn.classList.add('d-none');
+                    noResultsEl.classList.add('d-none');
+                    return;
+                }
+                
+                // Show clear button when search has text
+                clearBtn.classList.remove('d-none');
+                
+                // Filter channels based on search term
+                channelItems.forEach(item => {
+                    const channelName = item.getAttribute('data-channel-name').toLowerCase();
+                    
+                    if (channelName.includes(searchTerm)) {
+                        item.classList.remove('d-none');
+                        visibleCount++;
+                    } else {
+                        item.classList.add('d-none');
+                    }
+                });
+                
+                // Show "no results" message if needed
+                if (visibleCount === 0) {
+                    noResultsEl.classList.remove('d-none');
+                } else {
+                    noResultsEl.classList.add('d-none');
+                }
+            }
+            
+            // Handle input events for real-time filtering
+            input.addEventListener('input', filterChannels);
+            
+            // Clear search button
+            clearBtn.addEventListener('click', function() {
+                input.value = '';
+                clearBtn.classList.add('d-none');
+                filterChannels();
+                input.focus();
+            });
+        });
+        
+        // When channels are dynamically loaded, we need to setup channel search again
+        document.addEventListener('channels-loaded', function(e) {
+            setupChannelSearch();
+        });
+    }
+    
+    // Server list collapsible headers with lazy loading
+    serverHeaderList.forEach(header => {
+        header.addEventListener('click', function() {
+            // Toggle the chevron icon
+            const icon = this.querySelector('.bi');
+            if (icon.classList.contains('bi-chevron-down')) {
+                icon.classList.replace('bi-chevron-down', 'bi-chevron-right');
+            } else {
+                icon.classList.replace('bi-chevron-right', 'bi-chevron-down');
+            }
+            
+            // Check if channels need to be loaded for this server
+            const isLoaded = this.getAttribute('data-loaded') === 'true';
+            const serverId = this.getAttribute('data-server-id');
+            const serverName = this.getAttribute('data-server-name');
+            
+            if (!isLoaded) {
+                // Show loading spinner
+                const spinner = this.querySelector('.server-loading');
+                spinner.classList.remove('d-none');
+                
+                // Fetch the channels for this server
+                fetch(`{{ url_for("api_guild_channels") }}?guild_id=${serverId}`)
+                    .then(response => response.json())
+                    .then(data => {
+                        if (data.success) {
+                            // Get the channels container
+                            const serverDiv = document.getElementById(`server-${serverId}`);
+                            const channelsContainer = serverDiv.querySelector('.server-channels');
+                            
+                            // Clear placeholder text
+                            channelsContainer.innerHTML = '';
+                            
+                            // Add each channel with proper checkbox
+                            data.channels.forEach(channel => {
+                                const isSelected = data.selected_channels.includes(channel.id);
+                                const channelHtml = `
+                                    <div class="form-check channel-item" data-channel-name="${channel.name}">
+                                        <input type="checkbox" class="form-check-input" name="selected_channels" 
+                                               value="${channel.id}" id="channel-${channel.id}"
+                                               ${isSelected ? 'checked' : ''}>
+                                        <label class="form-check-label" for="channel-${channel.id}">
+                                            # ${channel.name}
+                                        </label>
+                                    </div>
+                                `;
+                                channelsContainer.insertAdjacentHTML('beforeend', channelHtml);
+                            });
+                            
+                            // Update the loaded state
+                            this.setAttribute('data-loaded', 'true');
+                            
+                            // Dispatch event to notify that channels were loaded
+                            document.dispatchEvent(new CustomEvent('channels-loaded', {
+                                detail: { serverId: serverId }
+                            }));
+                        } else {
+                            // Display error message
+                            const serverDiv = document.getElementById(`server-${serverId}`);
+                            const channelsContainer = serverDiv.querySelector('.server-channels');
+                            channelsContainer.innerHTML = `
+                                <div class="alert alert-danger">
+                                    Failed to load channels: ${data.message}
+                                </div>
+                            `;
+                        }
+                        
+                        // Hide loading spinner
+                        spinner.classList.add('d-none');
+                    })
+                    .catch(error => {
+                        console.error('Error:', error);
+                        // Display error message
+                        const serverDiv = document.getElementById(`server-${serverId}`);
+                        const channelsContainer = serverDiv.querySelector('.server-channels');
+                        channelsContainer.innerHTML = `
+                            <div class="alert alert-danger">
+                                Failed to load channels: Network error
+                            </div>
+                        `;
+                        
+                        // Hide loading spinner
+                        spinner.classList.add('d-none');
+                    });
+            }
+        });
+    });
+    
+    // Add a new manual channel input
+    addChannelBtn.addEventListener('click', function() {
+        const channelEntry = document.createElement('div');
+        channelEntry.className = 'input-group mb-2 channel-entry';
+        channelEntry.innerHTML = `
+            <input type="text" class="form-control" name="manual_channels" placeholder="Enter a channel ID">
+            <button type="button" class="btn btn-outline-danger remove-channel">
+                <i class="bi bi-trash"></i>
+            </button>
+        `;
+        manualChannelList.appendChild(channelEntry);
+        
+        // Focus the new input
+        const newInput = channelEntry.querySelector('input');
+        newInput.focus();
+    });
+    
+    // Remove manual channel when the remove button is clicked
+    manualChannelList.addEventListener('click', function(e) {
+        if (e.target.classList.contains('remove-channel') || e.target.parentElement.classList.contains('remove-channel')) {
+            const button = e.target.classList.contains('remove-channel') ? e.target : e.target.parentElement;
+            const channelEntry = button.closest('.channel-entry');
+            
+            // Don't remove the last one
+            const entries = document.querySelectorAll('.channel-entry');
+            if (entries.length > 1) {
+                channelEntry.remove();
+            } else {
+                // Just clear the input
+                channelEntry.querySelector('input').value = '';
+            }
+        }
+    });
+    
+    // Refresh server and channel list
+    if (refreshBtn) {
+        refreshBtn.addEventListener('click', function() {
+            // Show loading indicator
+            loadingIndicator.classList.remove('d-none');
+            refreshBtn.disabled = true;
+            
+            // Call API endpoint to refresh servers and channels
+            fetch('{{ url_for("api_refresh_channels") }}')
+                .then(response => response.json())
+                .then(data => {
+                    if (data.success) {
+                        // Reload the page to show updated data
+                        window.location.reload();
+                    } else {
+                        alert('Error refreshing channels: ' + data.message);
+                        loadingIndicator.classList.add('d-none');
+                        refreshBtn.disabled = false;
+                    }
+                })
+                .catch(error => {
+                    console.error('Error:', error);
+                    alert('An error occurred while refreshing channels. Please try again.');
+                    loadingIndicator.classList.add('d-none');
+                    refreshBtn.disabled = false;
+                });
+        });
+    }
+    
+    // Form submission handler
+    document.getElementById('channels-form').addEventListener('submit', function(e) {
+        // No validation needed as empty channel lists are ok
+    });
+    
+    // Initialize server search
+    setupServerSearch();
+    
+    // Initialize channel search
+    setupChannelSearch();
+});
+</script>
+
+<style>
+.server-header {
+    padding: 8px 15px;
+    background-color: #2c2f33;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.server-header:hover {
+    background-color: #3c3f43;
+}
+
+.form-check {
+    margin-bottom: 6px;
+}
+
+.placeholder-text {
+    padding: 8px 0;
+    font-style: italic;
+}
+</style>
+{% endblock %}
