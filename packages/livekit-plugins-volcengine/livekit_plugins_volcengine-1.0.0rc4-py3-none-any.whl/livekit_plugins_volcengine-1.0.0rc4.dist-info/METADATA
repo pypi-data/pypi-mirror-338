@@ -1,0 +1,66 @@
+Metadata-Version: 2.4
+Name: livekit-plugins-volcengine
+Version: 1.0.0rc4
+Summary: LiveKit Agent Plugins for Volcengine
+Author-email: wangmengdi <790990241@qq.com>
+License-File: LICENSE
+Keywords: audio,livekit,realtime,video,webrtc
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Multimedia :: Sound/Audio
+Classifier: Topic :: Multimedia :: Video
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Requires-Python: >=3.9
+Requires-Dist: livekit-agents~=1.0.0rc4
+Requires-Dist: pydantic>=2.0
+Requires-Dist: python-dotenv>=1.1.0
+Description-Content-Type: text/markdown
+
+# LiveKit Plugins Volcengine
+
+Agent Framework plugin for services from Volcengine(火山引擎). Currently supports [TTS](https://www.volcengine.com/docs/6561/79817)
+
+## Installation
+```python
+pip install livekit-plugins-volcengine
+```
+
+## Pre-requisites
+
+- Volcengine TTS environment variable: `VOLCENGINE_TTS_ACCESS_TOKEN`
+
+## Usage
+
+```python
+from livekit.agents import Agent, AgentSession, JobContext, cli, WorkerOptions
+from livekit.plugins import openai, volcengine, deepgram, silero
+from dotenv import load_dotenv
+
+
+async def entry_point(ctx: JobContext):
+    
+    await ctx.connect()
+    
+    agent = Agent(instructions="You are a helpful assistant.")
+
+    session = AgentSession(
+        vad=silero.VAD.load(),
+        stt=deepgram.STT(language="zh"),
+        ## app_id and cluster can be found in the Volcengine TTS console
+        tts=volcengine.TTS(app_id="xxx", cluster="xxx", streaming=True),
+        llm=openai.LLM(model="gpt-4o-mini"),
+    )
+    
+    await session.start(agent=agent, room=ctx.room)
+    
+    await session.generate_reply()
+
+if __name__ == "__main__":
+    load_dotenv()
+    cli.run_app(WorkerOptions(entrypoint_fnc=entry_point))
+```
+
