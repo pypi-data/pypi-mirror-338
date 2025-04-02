@@ -1,0 +1,11 @@
+mongo_validations_generator/__init__.py,sha256=STB0f-5Wj41zx7VXbMFyw1NnpCwWk_SijZU5K49E5Lc,191
+mongo_validations_generator/bson_type.py,sha256=WSNDiDI91yQHqq3Rn2gHgo_lTWEA7XiLGdivluksStU,1483
+mongo_validations_generator/conftest.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mongo_validations_generator/core.py,sha256=YTIcLkkcR1CmhyDkmvYKEPGWEK2I2UIiZba3ibTUOB8,4529
+mongo_validations_generator/custom_types.py,sha256=wjkGtZ0ofT6YlV3lQdCpdi2MfUfcXCEW344sbe9JbiI,53
+mongo_validations_generator/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mongo_validations_generator/schema.py,sha256=89APA2PoOJ0c_4Qxw8gVTh5CGt03zE-bhjPnsIfHs_0,8374
+mongo_validations_generator-1.0.0.dist-info/METADATA,sha256=Lkt3ugW8d3iM-erU_VigEczSxdZaLXHFWaFpAxg34UA,5243
+mongo_validations_generator-1.0.0.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+mongo_validations_generator-1.0.0.dist-info/licenses/LICENSE,sha256=PX94QWiLpMaYkr5N9d16LBFNOsiyETlTpuOjXX-Gxlc,1557
+mongo_validations_generator-1.0.0.dist-info/RECORD,,
