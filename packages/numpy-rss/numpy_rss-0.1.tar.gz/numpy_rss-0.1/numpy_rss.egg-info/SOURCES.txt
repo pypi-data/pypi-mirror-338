@@ -1,0 +1,5 @@
+setup.py
+numpy_rss.egg-info/PKG-INFO
+numpy_rss.egg-info/SOURCES.txt
+numpy_rss.egg-info/dependency_links.txt
+numpy_rss.egg-info/top_level.txt
