@@ -1,0 +1,12 @@
+fetchAZA/_version.py,sha256=Td21rC2S0nReLAZk0J23jQ46eVMmdGf5DCU-0KEf2vM,24
+fetchAZA/plotters.py,sha256=PZmjekccyODz4IOclH9326PGgXZf9QEASIeMnXYFxwQ,42439
+fetchAZA/readers.py,sha256=51Ue6Bn3oyARidbOBfnevkSb3pk_84blCZVftu0yK6A,27606
+fetchAZA/timetools.py,sha256=wCGCZdfxqc_f03BYbWNMLXkLGLTea1ZPZgM7MtjkqEk,11255
+fetchAZA/tools.py,sha256=7z-zRxM1VF6oRWHd3svv1RnboPoaM1Id0lSnY4n3MxA,14140
+fetchAZA/utilities.py,sha256=c1KAVpdXd1exIbslqZRWLjcb5hFQL5dqquzVLfoTw7M,11695
+fetchAZA/writers.py,sha256=8DDKb1h8YI8kiIl2owA2I0EiqfQecBqxONV7CxTS_HA,4043
+fetchaza-0.1.dev6.dist-info/licenses/LICENSE,sha256=Mas8UNj-qZ0qpZpfCtA1_mp434PAB0jDSmo_IFO2p0M,1080
+fetchaza-0.1.dev6.dist-info/METADATA,sha256=xWDAhQS9EYR0KTMH_DjASq5tbGkLn3A4cf8gv6akulk,2232
+fetchaza-0.1.dev6.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+fetchaza-0.1.dev6.dist-info/top_level.txt,sha256=nkVUXTvzGm3RcajJ290sQRc1DA2JOYzjH-wb4ijTD7U,9
+fetchaza-0.1.dev6.dist-info/RECORD,,
