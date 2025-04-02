@@ -1,0 +1,12 @@
+LICENSE
+README.rst
+pyproject.toml
+setup.cfg
+setup.py
+setuptools_ext.py
+geiffg.egg-info/PKG-INFO
+geiffg.egg-info/SOURCES.txt
+geiffg.egg-info/dependency_links.txt
+geiffg.egg-info/requires.txt
+geiffg.egg-info/top_level.txt
+tests/test_setuptools_ext.py
