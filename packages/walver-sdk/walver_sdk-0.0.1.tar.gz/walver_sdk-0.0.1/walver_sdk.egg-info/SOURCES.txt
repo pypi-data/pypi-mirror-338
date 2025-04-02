@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+walver_sdk.egg-info/PKG-INFO
+walver_sdk.egg-info/SOURCES.txt
+walver_sdk.egg-info/dependency_links.txt
+walver_sdk.egg-info/requires.txt
+walver_sdk.egg-info/top_level.txt
