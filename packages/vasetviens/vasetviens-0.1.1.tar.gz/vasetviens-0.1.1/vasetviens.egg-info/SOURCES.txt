@@ -1,0 +1,11 @@
+README.md
+pyproject.toml
+vasetviens/__init__.py
+vasetviens/cli.py
+vasetviens/core.py
+vasetviens.egg-info/PKG-INFO
+vasetviens.egg-info/SOURCES.txt
+vasetviens.egg-info/dependency_links.txt
+vasetviens.egg-info/entry_points.txt
+vasetviens.egg-info/requires.txt
+vasetviens.egg-info/top_level.txt

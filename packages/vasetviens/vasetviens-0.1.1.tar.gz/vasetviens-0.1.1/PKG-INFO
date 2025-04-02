@@ -1,0 +1,100 @@
+Metadata-Version: 2.4
+Name: vasetviens
+Version: 0.1.1
+Summary: Détection automatique de va-et-vient dans des vidéos de football
+License: MIT
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: opencv-python
+Requires-Dist: numpy
+Requires-Dist: ultralytics
+
+# vasetviens
+
+**Détection intelligente des va-et-vient d’un ballon vers des plots dans des vidéos de football.**  
+Une bibliothèque basée sur YOLOv8 et OpenCV pour analyser les mouvements d'entraînement à partir de simples vidéos.
+
+---
+
+## 🚀 Fonctionnalités
+
+- 🎯 Détection du ballon avec un modèle YOLOv8  
+- 🟠 Détection de plots circulaires colorés (bleu, rouge, etc.)  
+- ↔️ Analyse des mouvements de va-et-vient avec logique géométrique stricte  
+- 👁️ Visualisation en temps réel (optionnelle)  
+- 📊 Génération de rapports CSV :
+  - Nombre de va-et-vient par plot
+  - Instants précis des va-et-vient  
+- 🧩 Utilisable en ligne de commande ou comme une fonction Python
+
+---
+
+## 📦 Installation
+
+```bash
+pip install vasetviens
+```
+
+> 🔧 Nécessite Python 3.8 ou plus
+
+---
+
+## ⚙️ Utilisation en ligne de commande
+
+```bash
+vasetviens video.mp4 --display --save --cooldown_frames 40
+```
+
+### Options disponibles
+
+| Option                    | Description |
+|--------------------------|-------------|
+| `--display`              | Affiche le traitement en temps réel |
+| `--save`                 | Enregistre la vidéo annotée en sortie |
+| `--cooldown_frames`     | Cooldown entre deux détections successives d’un plot |
+| `--frame_retention_limit` | Durée de rétention des plots disparus |
+| `--direction_zone_width` | Largeur de la zone de direction |
+| `--min_va_ratio`         | Ratio minimum pour valider un mouvement d’aller |
+| `--min_retour_ratio`     | Ratio minimum pour valider un retour |
+| `--color_plot`           | Couleur du plot à détecter (ex : bleu) |
+| `--confidence_threshold` | Seuil de confiance YOLO (défaut : 0.1) |
+| `--model_path`           | Chemin vers le modèle YOLO (défaut : yolo11x.pt) |
+
+---
+
+## 🧪 Utilisation en tant que bibliothèque Python
+
+```python
+from vasetviens import analyser_va_et_vient
+
+analyser_va_et_vient(
+    video_path="video.mp4",
+    display=True,
+    save=True,
+    cooldown_frames=40
+)
+```
+
+---
+
+## 📁 Fichiers générés
+
+- `output_nomvideo.mp4` : Vidéo annotée (si `--save` activé)  
+- `recap_nomvideo.csv` : Résumé du nombre de va-et-vient par plot  
+- `moments_nomvideo.csv` : Instants précis (n° frame) des va-et-vient
+
+---
+
+## 🤖 Technologies utilisées
+
+- [YOLOv8](https://github.com/ultralytics/ultralytics) (Ultralytics)  
+- [OpenCV](https://opencv.org/) pour le traitement d'image  
+- [NumPy](https://numpy.org/) pour les calculs vectoriels
+
+---
+
+## 📄 Licence
+
+Distribué sous licence MIT — libre à utiliser, modifier, améliorer et redistribuer.
+
+Made with ❤️ for football training and smart video analysis.
