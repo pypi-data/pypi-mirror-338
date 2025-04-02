@@ -1,0 +1,320 @@
+Metadata-Version: 2.1
+Name: mbapy
+Version: 0.11.3
+Summary: MyBA in Python
+Home-page: https://github.com/BHM-Bob/BA_PY
+Author: BHM-Bob G
+Author-email: bhmfly@foxmail.com
+License: MIT Licence
+Keywords: mbapy,Utilities,plot,stats,pdf,paper,crawler
+Platform: any
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Utilities
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Python: >=3.8, <3.13
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: aiohttp
+Requires-Dist: beautifulsoup4
+Requires-Dist: chardet
+Requires-Dist: matplotlib>=3.7.5
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: openpyxl
+Requires-Dist: Pillow
+Requires-Dist: requests
+Requires-Dist: scikit-learn
+Requires-Dist: scipy
+Requires-Dist: seaborn>=0.13.0
+Requires-Dist: selenium
+Requires-Dist: urllib3
+Requires-Dist: statsmodels
+Requires-Dist: scikit_posthocs
+Requires-Dist: pdfminer
+Requires-Dist: PyPDF2
+Requires-Dist: rispy
+Requires-Dist: lxml
+Requires-Dist: crossref_commons
+Requires-Dist: tqdm
+Requires-Dist: deprecated
+Requires-Dist: natsort
+Provides-Extra: none
+Provides-Extra: bio
+Requires-Dist: aiohttp; extra == "bio"
+Requires-Dist: beautifulsoup4; extra == "bio"
+Requires-Dist: chardet; extra == "bio"
+Requires-Dist: matplotlib>=3.7.5; extra == "bio"
+Requires-Dist: numpy; extra == "bio"
+Requires-Dist: pandas; extra == "bio"
+Requires-Dist: openpyxl; extra == "bio"
+Requires-Dist: Pillow; extra == "bio"
+Requires-Dist: requests; extra == "bio"
+Requires-Dist: scikit-learn; extra == "bio"
+Requires-Dist: scipy; extra == "bio"
+Requires-Dist: seaborn>=0.13.0; extra == "bio"
+Requires-Dist: selenium; extra == "bio"
+Requires-Dist: urllib3; extra == "bio"
+Requires-Dist: statsmodels; extra == "bio"
+Requires-Dist: scikit_posthocs; extra == "bio"
+Requires-Dist: pdfminer; extra == "bio"
+Requires-Dist: PyPDF2; extra == "bio"
+Requires-Dist: rispy; extra == "bio"
+Requires-Dist: lxml; extra == "bio"
+Requires-Dist: crossref_commons; extra == "bio"
+Requires-Dist: tqdm; extra == "bio"
+Requires-Dist: deprecated; extra == "bio"
+Requires-Dist: natsort; extra == "bio"
+Requires-Dist: wget; extra == "bio"
+Requires-Dist: pdfplumber; extra == "bio"
+Requires-Dist: pyteomics; extra == "bio"
+Requires-Dist: pygame; extra == "bio"
+Requires-Dist: nicegui[highcharts]; extra == "bio"
+Provides-Extra: game
+Requires-Dist: aiohttp; extra == "game"
+Requires-Dist: beautifulsoup4; extra == "game"
+Requires-Dist: chardet; extra == "game"
+Requires-Dist: matplotlib>=3.7.5; extra == "game"
+Requires-Dist: numpy; extra == "game"
+Requires-Dist: pandas; extra == "game"
+Requires-Dist: openpyxl; extra == "game"
+Requires-Dist: Pillow; extra == "game"
+Requires-Dist: requests; extra == "game"
+Requires-Dist: scikit-learn; extra == "game"
+Requires-Dist: scipy; extra == "game"
+Requires-Dist: seaborn>=0.13.0; extra == "game"
+Requires-Dist: selenium; extra == "game"
+Requires-Dist: urllib3; extra == "game"
+Requires-Dist: statsmodels; extra == "game"
+Requires-Dist: scikit_posthocs; extra == "game"
+Requires-Dist: pdfminer; extra == "game"
+Requires-Dist: PyPDF2; extra == "game"
+Requires-Dist: rispy; extra == "game"
+Requires-Dist: lxml; extra == "game"
+Requires-Dist: crossref_commons; extra == "game"
+Requires-Dist: tqdm; extra == "game"
+Requires-Dist: deprecated; extra == "game"
+Requires-Dist: natsort; extra == "game"
+Requires-Dist: pygame; extra == "game"
+Requires-Dist: opencv-python; extra == "game"
+Provides-Extra: full
+Requires-Dist: aiohttp; extra == "full"
+Requires-Dist: beautifulsoup4; extra == "full"
+Requires-Dist: chardet; extra == "full"
+Requires-Dist: matplotlib>=3.7.5; extra == "full"
+Requires-Dist: numpy; extra == "full"
+Requires-Dist: pandas; extra == "full"
+Requires-Dist: openpyxl; extra == "full"
+Requires-Dist: Pillow; extra == "full"
+Requires-Dist: requests; extra == "full"
+Requires-Dist: scikit-learn; extra == "full"
+Requires-Dist: scipy; extra == "full"
+Requires-Dist: seaborn>=0.13.0; extra == "full"
+Requires-Dist: selenium; extra == "full"
+Requires-Dist: urllib3; extra == "full"
+Requires-Dist: statsmodels; extra == "full"
+Requires-Dist: scikit_posthocs; extra == "full"
+Requires-Dist: pdfminer; extra == "full"
+Requires-Dist: PyPDF2; extra == "full"
+Requires-Dist: rispy; extra == "full"
+Requires-Dist: lxml; extra == "full"
+Requires-Dist: crossref_commons; extra == "full"
+Requires-Dist: tqdm; extra == "full"
+Requires-Dist: deprecated; extra == "full"
+Requires-Dist: natsort; extra == "full"
+Requires-Dist: cn2an; extra == "full"
+Requires-Dist: ujson; extra == "full"
+Requires-Dist: yaml; extra == "full"
+Requires-Dist: pdfplumber; extra == "full"
+Requires-Dist: Markdown; extra == "full"
+Requires-Dist: imageio; extra == "full"
+Requires-Dist: pillow_heif; extra == "full"
+Requires-Dist: wget; extra == "full"
+Requires-Dist: pyteomics; extra == "full"
+Requires-Dist: opencv-python; extra == "full"
+Requires-Dist: moviepy; extra == "full"
+Requires-Dist: pygame; extra == "full"
+Requires-Dist: easyocr; extra == "full"
+Requires-Dist: nicegui[highcharts]; extra == "full"
+
+<!--
+ * @Author: BHM-Bob 2262029386@qq.com
+ * @Date: 2022-10-19 22:16:22
+ * @LastEditors: BHM-Bob 2262029386@qq.com
+ * @LastEditTime: 2025-01-04 20:30:33
+ * @Description: 
+-->
+
+<h1 style="text-align:center;">BA_PY: Optimize Your Workflow with Python!</h1>
+
+<p style="text-align:center;">
+<a href="https://www.pepy.tech/projects/mbapy"><img src="https://static.pepy.tech/badge/mbapy" alt="Downloads" style="display:inline-block; margin-left:auto; margin-right:auto;" /></a>
+<img src="https://img.shields.io/pypi/dm/mbapy" alt="Downloads" style="display:inline-block; margin-left:auto; margin-right:auto;" />
+<img src="https://img.shields.io/github/downloads/BHM-Bob/BA_PY/total?label=GitHub%20all%20releases%20downloads" alt="Downloads" style="display:inline-block; margin-left:auto; margin-right:auto;" />
+</p>
+
+<p style="text-align:center;">
+<a href="https://github.com/BHM-Bob/BA_PY/"><img src="https://img.shields.io/github/repo-size/BHM-Bob/BA_PY" alt="repo size" style="display:inline-block; margin-left:auto; margin-right:auto;" /></a>
+<a href="https://github.com/BHM-Bob/BA_PY/"><img src="https://img.shields.io/github/languages/code-size/BHM-Bob/BA_PY" alt="code size" style="display:inline-block; margin-left:auto; margin-right:auto;" /></a>
+<a href="https://github.com/BHM-Bob/BA_PY/releases"><img src="https://img.shields.io/github/v/release/BHM-Bob/BA_PY?label=GitHub%20Release" alt="GitHub release (latest by date)" style="display:inline-block; margin-left:auto; margin-right:auto;" /></a>
+<a href="https://github.com/BHM-Bob/BA_PY/releases"><img src="https://img.shields.io/github/commit-activity/m/BHM-Bob/BA_PY" alt="GitHub Commit Activity" style="display:inline-block; margin-left:auto; margin-right:auto;" /></a>
+<a><img src="https://img.shields.io/github/last-commit/BHM-Bob/BA_PY?label=GitHub%20Last%20Commit" alt="GitHub last commit" style="display:inline-block; margin-left:auto; margin-right:auto;" /></a>
+</p>
+
+<p style="text-align:center;">
+<a href="https://pypi.org/project/mbapy/"><img src="https://img.shields.io/pypi/status/mbapy?label=PyPI%20Status" alt="PyPI Status" style="display:inline-block; margin-left:auto; margin-right:auto;" /></a>
+<a href="https://pypi.org/project/mbapy/"><img src="https://img.shields.io/pypi/v/mbapy?label=PyPI%20Release" alt="PyPI" style="display:inline-block; margin-left:auto; margin-right:auto;" /></a>
+<a href="https://pypi.org/project/mbapy/"><img src="https://img.shields.io/pypi/pyversions/mbapy" alt="python versions" style="display:inline-block; margin-left:auto; margin-right:auto;" /></a>
+</p>
+
+<p style="text-align:center;">
+<img alt="GitHub language count" src="https://img.shields.io/github/languages/count/BHM-Bob/BA_PY">
+<a href="https://github.com/BHM-Bob/BA_PY/"><img src="https://img.shields.io/readthedocs/ba-py" alt="docs" style="display:inline-block; margin-left:auto; margin-right:auto;" /></a>
+<a href="https://github.com/BHM-Bob/BA_PY/"><img src="https://img.shields.io/github/license/BHM-Bob/BA_PY" alt="license" style="display:inline-block; margin-left:auto; margin-right:auto;" /></a>
+<a href="https://github.com/BHM-Bob/BA_PY/"><img src="https://codeium.com/badges/main" alt="codeium" style="display:inline-block; margin-left:auto; margin-right:auto;" /></a>
+</p>
+
+<p style="text-align:center;">
+<a href="https://github.com/BHM-Bob/BA_PY/"><img src="https://img.shields.io/badge/Windows-support-<COLOR>.svg" alt="windows" style="display:inline-block; margin-left:auto; margin-right:auto;" /></a>
+<a href="https://github.com/BHM-Bob/BA_PY/"><img src="https://img.shields.io/badge/Linux-support-<COLOR>.svg" alt="linux" style="display:inline-block; margin-left:auto; margin-right:auto;" /></a>
+</p>
+
+
+mbapy is a Python package that includes a collection of useful Python scripts as sub-modules, and it's goal is *Basic for All in Python*.  
+mbapy primarily focus on data works, including data-retrieval, data-management, data-visualization, data-analysis and data-computation. It is built for both python-users and command-line-users.
+
+<h2 style="text-align:center;">Get start</h2>
+
+#### install 
+Now, mbapy only support pypi install:  
+```
+pip install mbapy
+```
+
+mbapy is a multi-funtional package, and it does not require every third-party packages to make every sub-module work. However, it provides some requriements option to install more specified requirements to make some sub-modules work:  
+1. bio: some packages for biology(sci).  
+    install as `pip install mbapy[bio]`  
+2. game: some packages for game(pygame).  
+    install as `pip install mbapy[game]`  
+3. full: full requirements to make almost every sub-module in mbapy work(except dl_torch).  
+     install as `pip install mbapy[full]`  
+
+If you find the latest release version has some problems, you can try install the up-to-date version on github or gitee:  
+```
+pip install git+https://github.com/BHM-Bob/BA_PY.git
+```
+```
+pip install git+https://gitee.com/BHM-Bob/BA_PY.git
+```
+
+#### docs
+The documentation for mbapy can be found on [read the docs](https://ba-py.readthedocs.io/en/latest/) or just in the `docs` folder.
+
+#### web sites
+- open source at:  
+    1. [github： https://github.com/BHM-Bob/BA_PY](https://github.com/BHM-Bob/BA_PY)  
+    2. [gitee： https://gitee.com/BHM-Bob/BA_PY](https://gitee.com/BHM-Bob/BA_PY)  
+    3. [SourceForge： https://sourceforge.net/projects/ba-py/](https://sourceforge.net/projects/ba-py/)
+- docs at: [read the docs: https://ba-py.rtfd.io](https://ba-py.readthedocs.io/en/latest/)  
+- PyPI: [https://pypi.org/project/mbapy/](https://pypi.org/project/mbapy/)  
+
+<h2 style="text-align:center;">Contents</h2>
+
+# mbapy python package  
+### \_\_version\_\_  
+*some version info*  
+
+### base  
+*some utils for easier coding*
+
+### file
+##### image
+*imgae utils*, including reading, saving and process a image into a feature tensor via pytorch.  
+##### video
+*video utils*, including extract frames or unique frames from a video.  
+
+### plot
+*pandas.dataFrame utils for plot and some simple plot based on plt*  
+
+### web
+*utils for web-crawler*  
+##### request
+*get a web hyml page or a selenium browser warpper for easier usage*.  
+##### parse
+*utils for parsing html*  
+##### task
+*small task manager*  
+##### spider
+*a light-weight web spider architecture*  
+
+### stats
+##### cluster
+*BAKmeans, KOptim, KBayesian from KMeans, and a func for many cluster*  
+##### df
+*pandas.dataFrame utils for stats*  
+##### reg
+*regression*  
+##### test
+*some test func(using scipy and mostly give a support for mbapy-style data input)*  
+
+### dl-torch
+*pytorch utils for deeplearning*  
+##### bb
+*basic blocks : tiny network structures*  
+##### data
+*utils for dataset loading*  
+##### loss
+*some loss function*  
+##### m
+*model : deeplearning model constructed with basic blocks*  
+##### utils
+*deeplearning training utils*  
+##### optim
+*learning rate scheduler*
+
+### paper
+*sci-paper utils, contains paper searching, downloading and parsing*  
+##### paper_search
+*search papers via pubmed, baidu xueshu, wos*  
+##### paper_download
+*download papers via scihub*  
+##### paper_parse
+*parse paper from a pdf file into a dict of each sections* 
+
+### bio
+##### peptide
+*class and funcs to calcu peptide MW, mutations*
+##### high_level
+*some high-level utils for bio*
+
+### sci_instrument
+##### hplc
+*HPLC instrument data processing and visualization*
+##### mass
+*mass spectrometry instrument data processing and visualization*
+
+#### scripts
+*some useful scripts for command user*  
+launch by `python -m mbapy.scripts.XXX` or `mbapy-cli XXX`.  
+
+## examples
+#### web/crawler
+1. chaoxin ppt multi threads downloader (jpg->pdf)
+2. wujin search http://www.basechem.org
+3. chemSub search http://chemsub.online.fr
+4. cnipa https://pss-system.cponline.cnipa.gov.cn/seniorSearch
+
+## Additional Info
+### Requirements
+1. mbapy requires python 3.8~3.11 because of the use of type hint and require matplotlib>=3.7.5, and the developer do not test it on other python version.  
+2. mbapy only requires a part of third-party packages in a specific version. This is because the developer do not want to make a big change during the installation. Bellow are the specific requirements:  
+- `matplotlib>=3.7.5`: HPLC and Mass data visualization need set legend `draggable`, this is only supported in 3.7+  
+- `seaborn>=0.13.0`: plot_utils.bar_utils.plot_bar need set seaborn stripplot `native_scale`, this is only supported in 0.13+  
+- `nicegui[highcharts]`: scripts/hplc: explore-hplc need a highcharts as interactive plot for manual peaking.  
+- `torch any`: though dl_torch is important for mbapy, but the developer kowns torch is a big package, and do not has a specific function requirement.  
