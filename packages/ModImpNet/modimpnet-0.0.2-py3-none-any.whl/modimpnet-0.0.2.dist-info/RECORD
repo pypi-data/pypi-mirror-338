@@ -1,0 +1,14 @@
+ModImpNet/__init__.py,sha256=88aCphgeqXaoia17C37BUgQRsUpSo2hrCIUCnD6qYGU,89
+ModImpNet/__main__.py,sha256=TTgztTev_rYL7lb5qpiNwtiCQcrtWfNRE15qsev7KQo,160
+ModImpNet/modis_cli.py,sha256=MLJyGBHa8G8MPu94_JmxheIOjmou1AEsTEVK8fbTqQM,571
+ModImpNet/modis_download_all.py,sha256=w8uFzsc5Ty7salNjsB3WLiOyvu6u3gCv3Nr4hIUyY7g,2830
+ModImpNet/modis_download_conversion.py,sha256=r-sS5FYHzxGUCaCgVIQ_bLKZozVg8eJ_BB-MQFcwihE,752
+ModImpNet/modis_full_nc_creation.py,sha256=yYoBemwKPlD7ASaDnM9ZX1VQCA-yGSeWJjWxjrKBvno,2417
+ModImpNet/modis_nc_creation.py,sha256=vUuk5bYbiphtgz5_59o9WzotOFaIEhSKvpQPKXpT--E,16496
+ModImpNet/modis_requests.py,sha256=vs8ltDti-PWG_SYfArW4v16eGb80MvOxYoToMiPg6ro,15152
+modimpnet-0.0.2.dist-info/licenses/LICENSE,sha256=N0P3pKtRMvfb64jmgJdlerg3TnS0a2QC776AzPsbZIg,35128
+modimpnet-0.0.2.dist-info/METADATA,sha256=VY3IofzG6XIOP2A8w97Tx2umRv_DhR3CT0ovdq7QruU,44912
+modimpnet-0.0.2.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+modimpnet-0.0.2.dist-info/entry_points.txt,sha256=nWmbnJhGuGZeF2PTDHcEPCJu2Lo1xSaw9lXRryZbujY,54
+modimpnet-0.0.2.dist-info/top_level.txt,sha256=roPV777MIMDjUh95g2SwZUTqdeE1daAdseczhQNzszU,10
+modimpnet-0.0.2.dist-info/RECORD,,
