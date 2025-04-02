@@ -1,0 +1,8 @@
+Metadata-Version: 2.4
+Name: mlops-agent
+Version: 0.1.0
+Summary: MLOps agent
+Author-email: VESSL AI Dev Team <contact@vessl.ai>
+Requires-Python: >=3.10
+Requires-Dist: hyperpocket>=0.5.5
+Requires-Dist: vessl>=0.1.192
