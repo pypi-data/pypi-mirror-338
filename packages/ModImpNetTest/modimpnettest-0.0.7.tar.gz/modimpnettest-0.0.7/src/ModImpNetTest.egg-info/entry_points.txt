@@ -1,0 +1,2 @@
+[console_scripts]
+ModImpNetTest = ModImpNetTest.__main__:main
