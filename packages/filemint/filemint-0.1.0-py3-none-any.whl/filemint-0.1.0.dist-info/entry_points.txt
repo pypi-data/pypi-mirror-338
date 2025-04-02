@@ -1,0 +1,2 @@
+[console_scripts]
+filemint = filemint.cli:main
