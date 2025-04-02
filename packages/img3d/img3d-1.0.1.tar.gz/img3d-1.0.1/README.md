@@ -1,0 +1,47 @@
+# image_transformer
+## Abstract
+This is a tool for 3D image transformations, including rotations and translations in 3D Cartesian coordinates. The transformations are implemented in 3D space using the sequential logic of the main class.
+
+The primary concept of this library originates from the work of **Hou-Ning Hu**, whose GitHub repository can be found [here](https://github.com/eborboihuc/rotate_3d). In addition to fixing existing bugs, the logic for utilizing this `ImageTransformer` has been modified to a sequential logic to accommodate all use cases.
+
+For more detailed information on the library, please refer to [this repository](https://github.com/OmidAlekasir/image_transformer).
+
+## Introduction
+Image transformation is a critical component of image processing, particularly for data fusion in real-time applications. This class enables users to perform 3D rotations and translations on images in any desired spatial configuration.
+
+The library's primary output is a 3×3 homography matrix, which can be directly integrated with perspective-warping functions in image processing libraries such as **OpenCV**, **VPI**, or other compatible frameworks. By default, the `ImageTransformer` leverages **OpenCV** (if installed) for efficient implementation.
+
+## Example
+In this section, brief examples are explained. For more examples, please refer to [this repository](https://github.com/OmidAlekasir/image_transformer).
+
+Firstly, import the necessary libraries, create an instance of the `ImageTransformer` class, and import an image.
+
+**Note that after calling the `transform` or `get_homography` functions, the class's homography matrix is reset to an identity matrix.**
+
+```
+from img3d import ImageTransformer
+import cv2
+
+# import an image
+src = cv2.imread('image.jpg')
+height, width, _ = src.shape
+
+# define an instance of the ImageTransformer class
+fov_vertical = 70 # vertical field of view of the camera
+T = ImageTransformer(width, height, fov_vertical)
+```
+
+### Example I:
+```
+T.rotate(alpha = 20, beta = 30, gamma = 10)
+dst = T.transform(src)
+```
+
+### Example II:
+```
+T.translate(dx = 640//2, dy = 480//2)
+T.rotate(gamma = 149)
+
+H = T.get_homography()
+dst = cv2.warpPerspective(frame, H, (width, height))
+```
