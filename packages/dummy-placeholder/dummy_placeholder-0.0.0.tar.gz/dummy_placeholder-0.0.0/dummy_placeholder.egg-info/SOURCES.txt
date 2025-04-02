@@ -1,0 +1,8 @@
+LICENSE.txt
+README.md
+pyproject.toml
+dummy_placeholder.egg-info/PKG-INFO
+dummy_placeholder.egg-info/SOURCES.txt
+dummy_placeholder.egg-info/dependency_links.txt
+dummy_placeholder.egg-info/top_level.txt
+placeholder/__init__.py
