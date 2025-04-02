@@ -1,0 +1,31 @@
+{
+    "config": {
+        "abort": {
+            "no_devices_found": "No devices found on the network"
+        }
+    },
+    "entity": {
+        "switch": {
+            "push": {
+                "name": "Push"
+            }
+        }
+    },
+    "services": {
+        "calibrate": {
+            "fields": {
+                "depth": {
+                    "name": "Depth"
+                },
+                "duration": {
+                    "name": "Duration"
+                },
+                "entity_id": {
+                    "description": "Name of entity to calibrate.",
+                    "name": "Entity"
+                }
+            },
+            "name": "Calibrate"
+        }
+    }
+}

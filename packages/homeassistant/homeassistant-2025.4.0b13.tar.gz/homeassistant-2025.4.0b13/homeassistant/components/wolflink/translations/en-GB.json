@@ -1,0 +1,61 @@
+{
+    "entity": {
+        "sensor": {
+            "state": {
+                "state": {
+                    "1_x_warmwasser": "1 x DHW",
+                    "abgasklappe": "Flue gas damper",
+                    "absenkbetrieb": "Setback mode",
+                    "absenkstop": "Setback stop",
+                    "aktiviert": "Activated",
+                    "antilegionellenfunktion": "Anti-legionella Function",
+                    "at_abschaltung": "OT shutdown",
+                    "at_frostschutz": "OT frost protection",
+                    "aus": "Off",
+                    "auto": "Auto",
+                    "auto_off_cool": "AutoOffCool",
+                    "auto_on_cool": "AutoOnCool",
+                    "automatik_aus": "Automatic OFF",
+                    "automatik_ein": "Automatic ON",
+                    "bereit_keine_ladung": "Ready, not loading",
+                    "betrieb_ohne_brenner": "Working without burner",
+                    "cooling": "Cooling",
+                    "deaktiviert": "Disabled",
+                    "dhw_prior": "DHWPrior",
+                    "eco": "Eco",
+                    "ein": "On",
+                    "reduzierter_betrieb": "Limited mode",
+                    "rt_abschaltung": "RT shutdown",
+                    "rt_frostschutz": "RT frost protection",
+                    "ruhekontakt": "Rest contact",
+                    "schornsteinfeger": "Emissions test",
+                    "smart_grid": "SmartGrid",
+                    "smart_home": "SmartHome",
+                    "softstart": "Soft start",
+                    "solarbetrieb": "Solar mode",
+                    "sparbetrieb": "Economy mode",
+                    "sparen": "Economy",
+                    "spreizung_hoch": "dT too wide",
+                    "spreizung_kf": "Spread KF",
+                    "stabilisierung": "Stabilisation",
+                    "standby": "Standby",
+                    "start": "Start",
+                    "storung": "Fault",
+                    "taktsperre": "Anti-cycle",
+                    "telefonfernschalter": "Telephone remote switch",
+                    "test": "Test",
+                    "tpw": "TPW",
+                    "urlaubsmodus": "Holiday mode",
+                    "ventilprufung": "Valve test",
+                    "vorspulen": "Entry rinsing",
+                    "warmwasser": "DHW",
+                    "warmwasser_schnellstart": "DHW quick start",
+                    "warmwasserbetrieb": "DHW mode",
+                    "warmwassernachlauf": "DHW run-on",
+                    "warmwasservorrang": "DHW priority",
+                    "zunden": "Ignition"
+                }
+            }
+        }
+    }
+}
