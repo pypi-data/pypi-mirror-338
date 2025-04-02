@@ -1,0 +1,9 @@
+mersal_sqlalchemy/__init__.py,sha256=g69YeNcB0Zehf465bfqJt88uCcI2Og1-Sh-XiftmSfA,709
+mersal_sqlalchemy/orm.py,sha256=3qQuHbCVCf7fYft1NPK2yZ1etwuPM31__wEDfxbkQCM,1996
+mersal_sqlalchemy/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mersal_sqlalchemy/sqlalchemy_outbox_storage.py,sha256=chL5ZdsxlM6VkNnBr1hEOzflrXxo47B0Pi-2W32SDzA,4650
+mersal_sqlalchemy/sqlalchemy_saga_storage.py,sha256=fVwQ4rGloZ8aOzm2iZqWj6LDs2SBDwyghIgdgsQfvjA,5759
+mersal_sqlalchemy/sqlalchemy_unit_of_work.py,sha256=vTanjgKl5yrtFifG7V3r-AhLYC-Ps4alHeQZ2DFZxc8,1743
+mersal_sqlalchemy-0.1.0.dist-info/METADATA,sha256=dATQhSknuvdy428V9bDk_hgs9I__A01CndzVb92ZgFQ,2385
+mersal_sqlalchemy-0.1.0.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+mersal_sqlalchemy-0.1.0.dist-info/RECORD,,
