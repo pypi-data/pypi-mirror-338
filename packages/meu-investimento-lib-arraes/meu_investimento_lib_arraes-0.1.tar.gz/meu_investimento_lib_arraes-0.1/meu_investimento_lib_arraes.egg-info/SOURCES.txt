@@ -1,0 +1,8 @@
+setup.py
+investimentos/__init__.py
+investimentos/investimentos.py
+meu_investimento_lib_arraes.egg-info/PKG-INFO
+meu_investimento_lib_arraes.egg-info/SOURCES.txt
+meu_investimento_lib_arraes.egg-info/dependency_links.txt
+meu_investimento_lib_arraes.egg-info/top_level.txt
+tests/test_investimentos.py
