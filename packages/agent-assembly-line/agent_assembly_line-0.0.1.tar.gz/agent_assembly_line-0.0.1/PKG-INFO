@@ -1,0 +1,522 @@
+Metadata-Version: 2.4
+Name: agent-assembly-line
+Version: 0.0.1
+Summary: A package for building AI agents that can be easily embedded into existing software stacks.
+Author: Thomas
+License:                                  Apache License
+                                   Version 2.0, January 2004
+                                http://www.apache.org/licenses/
+        
+           TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DISTRIBUTION
+        
+           1. Definitions.
+        
+              "License" shall mean the terms and conditions for use, reproduction,
+              and distribution as defined by Sections 1 through 9 of this document.
+        
+              "Licensor" shall mean the copyright owner or entity authorized by
+              the copyright owner that is granting the License.
+        
+              "Legal Entity" shall mean the union of the acting entity and all
+              other entities that control, are controlled by, or are under common
+              control with that entity. For the purposes of this definition,
+              "control" means (i) the power, direct or indirect, to cause the
+              direction or management of such entity, whether by contract or
+              otherwise, or (ii) ownership of fifty percent (50%) or more of the
+              outstanding shares, or (iii) beneficial ownership of such entity.
+        
+              "You" (or "Your") shall mean an individual or Legal Entity
+              exercising permissions granted by this License.
+        
+              "Source" form shall mean the preferred form for making modifications,
+              including but not limited to software source code, documentation
+              source, and configuration files.
+        
+              "Object" form shall mean any form resulting from mechanical
+              transformation or translation of a Source form, including but
+              not limited to compiled object code, generated documentation,
+              and conversions to other media types.
+        
+              "Work" shall mean the work of authorship, whether in Source or
+              Object form, made available under the License, as indicated by a
+              copyright notice that is included in or attached to the work
+              (an example is provided in the Appendix below).
+        
+              "Derivative Works" shall mean any work, whether in Source or Object
+              form, that is based on (or derived from) the Work and for which the
+              editorial revisions, annotations, elaborations, or other modifications
+              represent, as a whole, an original work of authorship. For the purposes
+              of this License, Derivative Works shall not include works that remain
+              separable from, or merely link (or bind by name) to the interfaces of,
+              the Work and Derivative Works thereof.
+        
+              "Contribution" shall mean any work of authorship, including
+              the original version of the Work and any modifications or additions
+              to that Work or Derivative Works thereof, that is intentionally
+              submitted to Licensor for inclusion in the Work by the copyright owner
+              or by an individual or Legal Entity authorized to submit on behalf of
+              the copyright owner. For the purposes of this definition, "submitted"
+              means any form of electronic, verbal, or written communication sent
+              to the Licensor or its representatives, including but not limited to
+              communication on electronic mailing lists, source code control systems,
+              and issue tracking systems that are managed by, or on behalf of, the
+              Licensor for the purpose of discussing and improving the Work, but
+              excluding communication that is conspicuously marked or otherwise
+              designated in writing by the copyright owner as "Not a Contribution."
+        
+              "Contributor" shall mean Licensor and any individual or Legal Entity
+              on behalf of whom a Contribution has been received by Licensor and
+              subsequently incorporated within the Work.
+        
+           2. Grant of Copyright License. Subject to the terms and conditions of
+              this License, each Contributor hereby grants to You a perpetual,
+              worldwide, non-exclusive, no-charge, royalty-free, irrevocable
+              copyright license to reproduce, prepare Derivative Works of,
+              publicly display, publicly perform, sublicense, and distribute the
+              Work and such Derivative Works in Source or Object form.
+        
+           3. Grant of Patent License. Subject to the terms and conditions of
+              this License, each Contributor hereby grants to You a perpetual,
+              worldwide, non-exclusive, no-charge, royalty-free, irrevocable
+              (except as stated in this section) patent license to make, have made,
+              use, offer to sell, sell, import, and otherwise transfer the Work,
+              where such license applies only to those patent claims licensable
+              by such Contributor that are necessarily infringed by their
+              Contribution(s) alone or by combination of their Contribution(s)
+              with the Work to which such Contribution(s) was submitted. If You
+              institute patent litigation against any entity (including a
+              cross-claim or counterclaim in a lawsuit) alleging that the Work
+              or a Contribution incorporated within the Work constitutes direct
+              or contributory patent infringement, then any patent licenses
+              granted to You under this License for that Work shall terminate
+              as of the date such litigation is filed.
+        
+           4. Redistribution. You may reproduce and distribute copies of the
+              Work or Derivative Works thereof in any medium, with or without
+              modifications, and in Source or Object form, provided that You
+              meet the following conditions:
+        
+              (a) You must give any other recipients of the Work or
+                  Derivative Works a copy of this License; and
+        
+              (b) You must cause any modified files to carry prominent notices
+                  stating that You changed the files; and
+        
+              (c) You must retain, in the Source form of any Derivative Works
+                  that You distribute, all copyright, patent, trademark, and
+                  attribution notices from the Source form of the Work,
+                  excluding those notices that do not pertain to any part of
+                  the Derivative Works; and
+        
+              (d) If the Work includes a "NOTICE" text file as part of its
+                  distribution, then any Derivative Works that You distribute must
+                  include a readable copy of the attribution notices contained
+                  within such NOTICE file, excluding those notices that do not
+                  pertain to any part of the Derivative Works, in at least one
+                  of the following places: within a NOTICE text file distributed
+                  as part of the Derivative Works; within the Source form or
+                  documentation, if provided along with the Derivative Works; or,
+                  within a display generated by the Derivative Works, if and
+                  wherever such third-party notices normally appear. The contents
+                  of the NOTICE file are for informational purposes only and
+                  do not modify the License. You may add Your own attribution
+                  notices within Derivative Works that You distribute, alongside
+                  or as an addendum to the NOTICE text from the Work, provided
+                  that such additional attribution notices cannot be construed
+                  as modifying the License.
+        
+              You may add Your own copyright statement to Your modifications and
+              may provide additional or different license terms and conditions
+              for use, reproduction, or distribution of Your modifications, or
+              for any such Derivative Works as a whole, provided Your use,
+              reproduction, and distribution of the Work otherwise complies with
+              the conditions stated in this License.
+        
+           5. Submission of Contributions. Unless You explicitly state otherwise,
+              any Contribution intentionally submitted for inclusion in the Work
+              by You to the Licensor shall be under the terms and conditions of
+              this License, without any additional terms or conditions.
+              Notwithstanding the above, nothing herein shall supersede or modify
+              the terms of any separate license agreement you may have executed
+              with Licensor regarding such Contributions.
+        
+           6. Trademarks. This License does not grant permission to use the trade
+              names, trademarks, service marks, or product names of the Licensor,
+              except as required for reasonable and customary use in describing the
+              origin of the Work and reproducing the content of the NOTICE file.
+        
+           7. Disclaimer of Warranty. Unless required by applicable law or
+              agreed to in writing, Licensor provides the Work (and each
+              Contributor provides its Contributions) on an "AS IS" BASIS,
+              WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or
+              implied, including, without limitation, any warranties or conditions
+              of TITLE, NON-INFRINGEMENT, MERCHANTABILITY, or FITNESS FOR A
+              PARTICULAR PURPOSE. You are solely responsible for determining the
+              appropriateness of using or redistributing the Work and assume any
+              risks associated with Your exercise of permissions under this License.
+        
+           8. Limitation of Liability. In no event and under no legal theory,
+              whether in tort (including negligence), contract, or otherwise,
+              unless required by applicable law (such as deliberate and grossly
+              negligent acts) or agreed to in writing, shall any Contributor be
+              liable to You for damages, including any direct, indirect, special,
+              incidental, or consequential damages of any character arising as a
+              result of this License or out of the use or inability to use the
+              Work (including but not limited to damages for loss of goodwill,
+              work stoppage, computer failure or malfunction, or any and all
+              other commercial damages or losses), even if such Contributor
+              has been advised of the possibility of such damages.
+        
+           9. Accepting Warranty or Additional Liability. While redistributing
+              the Work or Derivative Works thereof, You may choose to offer,
+              and charge a fee for, acceptance of support, warranty, indemnity,
+              or other liability obligations and/or rights consistent with this
+              License. However, in accepting such obligations, You may act only
+              on Your own behalf and on Your sole responsibility, not on behalf
+              of any other Contributor, and only if You agree to indemnify,
+              defend, and hold each Contributor harmless for any liability
+              incurred by, or claims asserted against, such Contributor by reason
+              of your accepting any such warranty or additional liability.
+        
+           END OF TERMS AND CONDITIONS
+        
+           APPENDIX: How to apply the Apache License to your work.
+        
+              To apply the Apache License to your work, attach the following
+              boilerplate notice, with the fields enclosed by brackets "[]"
+              replaced with your own identifying information. (Don't include
+              the brackets!)  The text should be enclosed in the appropriate
+              comment syntax for the file format. We also recommend that a
+              file or class name and description of purpose be included on the
+              same "printed page" as the copyright notice for easier
+              identification within third-party archives.
+        
+           Copyright [yyyy] [name of copyright owner]
+        
+           Licensed under the Apache License, Version 2.0 (the "License");
+           you may not use this file except in compliance with the License.
+           You may obtain a copy of the License at
+        
+               http://www.apache.org/licenses/LICENSE-2.0
+        
+           Unless required by applicable law or agreed to in writing, software
+           distributed under the License is distributed on an "AS IS" BASIS,
+           WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+           See the License for the specific language governing permissions and
+           limitations under the License.
+        
+Project-URL: Homepage, https://github.com/tm243/agent-assembly-line
+Requires-Python: <3.14,>=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: openai
+Requires-Dist: PyYAML
+Requires-Dist: requests
+Requires-Dist: langchain
+Requires-Dist: langchain_community
+Requires-Dist: langchain_chroma
+Requires-Dist: langchain_ollama
+Requires-Dist: langchain_openai
+Requires-Dist: pandas
+Requires-Dist: numpy<1.27.0,>=1.21.0; python_version < "3.13"
+Requires-Dist: numpy>=1.26.0; python_version >= "3.13"
+Requires-Dist: pytest
+Requires-Dist: sqlalchemy
+Requires-Dist: pip
+Requires-Dist: tomli; python_version < "3.11"
+Requires-Dist: unidiff
+Requires-Dist: bs4
+Requires-Dist: selenium
+Requires-Dist: webdriver_manager
+Requires-Dist: xmltodict
+Requires-Dist: jq
+Requires-Dist: aiounittest
+Requires-Dist: newspaper3k
+Requires-Dist: typing-inspect==0.9.0
+Requires-Dist: lxml_html_clean
+Requires-Dist: urllib3==1.26.20
+Requires-Dist: python-multipart
+Requires-Dist: pydantic==2.10.6
+Requires-Dist: fastapi==0.115.8
+Dynamic: license-file
+
+# Agent-Assembly-Line
+
+[Build AI agents in Python. A library for developers.](#simple-api)
+
+[![CircleCI](https://dl.circleci.com/status-badge/img/circleci/X9bys8RB5EMsjhQjp1eEDL/JkxNCG7MxwpLaBBRHyfEXt/tree/main.svg?style=shield)](https://dl.circleci.com/status-badge/redirect/circleci/X9bys8RB5EMsjhQjp1eEDL/JkxNCG7MxwpLaBBRHyfEXt/tree/main)
+
+Agent-Assembly-Line is a framework for building AI agents that can be easily embedded into existing software stacks. Includes ready-to-use components for task-based and conversational agents.
+
+Agent-Assembly-Line offers components that simplify the setup of agents and multi-agent chains and works with local and cloud based LLMs.
+
+Agent-Assembly-Line supports:
+- Task based Agents (Functional Agents)
+- Conversational Agents
+- Local memory
+- RAG for Local documents or remote endpoints
+- Websites, RSS, JSON, PDF, ..
+- Local LLMs as well as cloud-based LLMs: Ollama and ChatGPT
+- Streaming mode and regular runs
+- Context
+- Micros: small, single task agents that handle distinct functionalities and can be chained
+- cli-agents: agents that can be chained on the command line
+
+Agent-Assembly-Line comes with examples such as [Semantic Unittests](tests/llm/test_text_validator.py), [Diff Analysis](examples/diff_analysis.py), and more; a demo chat app and tests.
+
+## Table of Content
+
+- [Example](#example)
+- [Getting Started](#getting-started)
+    - [Install Python Env](#install-python-environment)
+    - [Setup an LLM](#setup-an-llm)
+    - [Install Service](#install-service)
+    - [Tests](#tests)
+    - [Build and Run the Demo App](#build-and-run-the-demo-app)
+- [Usage](#usage)
+    - [Simple API](#simple-api)
+    - [Micros](#micros)
+        - [Website Summary](#website-summary)
+        - [Semantic Unittests](#semantic-unittests)
+        - [Diff Analysis](#diff-analysis)
+        - [Text Summary](#text-summary)
+- [Contributing](#contributing)
+- [Reporting Issues](#reporting-issues)
+- [License](#license)
+
+# Example
+
+Create an agent for fetching the weather in Helsinki
+
+```Python
+from agent_assembly_line import FmiWeatherAgent
+
+agent = FmiWeatherAgent("Helsinki", forecast_hours=24, mode="local")
+result = agent.run()
+```
+
+Output: "The rest of today in Helsinki will be sunny and mild with temperatures around 4 degrees Celsius. Expect clear skies throughout the evening and overnight.
+
+# Getting Started
+
+## Install Python Environment
+
+```console
+/usr/bin/python3 -m venv .venv
+source .venv/bin/activate
+pip install -r requirements.txt
+```
+
+It works with Python 3.9.6
+
+## Install Service
+
+```console
+cp agent-assembly-line-service.service /etc/systemd/system/agent-assembly-line.service
+sudo systemctl enable agent-assembly-line.service
+systemctl is-enabled agent-assembly-line.service
+
+
+journalctl -u agent-assembly-line.service
+```
+
+## Tests
+
+Run all tests:
+
+```console
+make test
+```
+
+or
+
+```console
+python -m unittest tests/test.py
+```
+
+just one test:
+```console
+python -m unittest tests.async.test_memory.TestMemory.test_save_messages
+```
+
+## Build and Run the Demo App
+
+The demo app provides a UI that talks to the REST API and can handle chat-based conversations, functional agents, memory and summaries, file upload and urls.
+
+```
+cd app/
+npm run electron
+```
+
+## Setup an LLM
+
+You can use a local LLM as well as cloud-based LLMs. Currently supported are Ollama and OpenAI, more to come.
+
+> **Note:**
+> 
+> Choosing between a local or cloud LLM depends on your specific needs: local LLMs offer greater control, privacy, and potentially lower costs for frequent use, while cloud LLMs provide easy scalability, access to powerful models, and reduced maintenance overhead. Consider your requirements for data security, performance, and budget when making your decision.
+
+
+### Ollama
+
+To use an Ollama LLM, use the `ollama` identifier:
+
+```
+ollama:gemma2:latest
+ollama:codegemma:latest
+```
+
+Make sure you have Ollama installed on your machine:
+
+[Download Ollama](https://ollama.com/download)
+
+Then run it once on your console, it will download your model:
+
+```console
+ollama run gemma2
+```
+
+**Important**: you need to pull the embeddings:
+
+```console
+ollama pull nomic-embed-text
+```
+
+You might also want to set the OLLAMA_HOST env variable in case your Ollama isn't listening on default 127.0.0.1:11434
+
+### ChatGPT/OpenAI
+
+You can use ChatGPT as an LLM by using the openai identifier:
+
+```
+openai:gpt-3.5-turbo-instruct
+openai:gpt-4o
+```
+
+You need to set your OpenAI **API Key** before running:
+
+```console
+export OPENAI_API_KEY=<your key here>
+```
+
+> **Note:**
+>
+> Using the OpenAI API may incur costs. Please refer to the OpenAI pricing page for more details.
+
+# Usage
+
+## Simple API
+
+Create an agent:
+
+```python
+agent = Agent("aethelland-demo")
+question = "How many people live in the country?"
+text = agent.run(question)
+```
+
+Agent objects can either read its configuration from a YAML config file like the example, or use a dictionary:
+
+```Python
+    config = Config()
+    config.load_conf_dict({
+        "name": "my-demo",
+        "llm": {
+            "model-identifier": "ollama:gemma:latest",
+            "embeddings": "nomic-embed-text"
+        },
+    })
+    agent = Agent(config=config)
+```
+
+The agent supports both streaming and synchronous runs and can store a history, which is useful for chat-based applications. Texts from documents, URLs, or strings can be stored in vectorstores or used as inline context. Inline context directly provides the text to the LLM prompt but is limited by the LLM's context window.
+
+## Micros
+
+Micros are functional agents that serve 1 particular job, and can be used in pipes or chains.
+There are currently agents for analyzing diffs, semantic unittest validation, summarizing text and handling websites. 
+
+### Website Summary
+
+```Python
+agent = WebsiteSummaryAgent(url)
+summary = agent.run()
+```
+
+### Semantic Unittests
+
+```Python
+class TestTextValidator(SemanticTestCase):
+    def test_semantic(self):
+        self.assertSemanticallyEqual("Blue is the sky.", "The sky is blue.")
+```
+
+### Diff Analysis
+
+This example first creates a detailed textual summary, and in the second step it creates a shorter summary, which can be used e.g. in commit messages.
+
+```Python
+agent = DiffDetailsAgent(diff_text)
+detailed_answer = agent.run()
+
+sum_agent = DiffSumAgent(detailed_answer)
+sum_answer = sum_agent.run()
+```
+
+```Console
+git diff HEAD | cli_agents/diff_details
+```
+
+### Text Summary
+
+Generic text summarization. You can choose local LLMs or cloud (CHatGPT).
+
+```Python
+agent = SumAgent(text, mode='local')
+result = agent.run()
+```
+
+For further understanding of how to use Agent-Assembly-Line, the [tests](tests/async/test.py) can be read, as well as the [demo app](app/) and [examples](examples/).
+
+The demo app also shows how the library can be used in a chat application.
+See also [Build and run the demo app](#build-and-run-the-demo-app).
+
+## Multi-Agent Chains
+
+Micros can be used in combination, to build a [complex..]
+
+Example:
+
+```console
+git diff --cached | examples/diff_analysis.py | examples/summarize_text.py
+```
+
+Or in Python:
+
+```Python
+agent = DiffDetailsAgent(diff_text)
+detailed_answer = agent.run()
+
+sum_agent = DiffSumAgent(detailed_answer)
+sum_answer = sum_agent.run("Please summarize these code changes in 2-3 sentences.  The context is only for the bigger picture.")
+
+sum_agent = DiffSumAgent(sum_answer)
+sum_answer = sum_agent.run()
+```
+
+# Contributing
+
+We welcome contributions to the Agent-Assembly-Line project! To contribute, please follow these steps:
+
+- Create a new branch for your feature or bugfix.
+- Make your changes and commit them to the branch.
+- Push your changes and create a PR.
+- Discuss if needed.
+
+# Reporting Issues
+
+If you encounter any issues or have feature requests, please open an issue on GitHub. Provide as much detail as possible to help us understand and resolve the issue quickly.
+
+# License
+
+This project is licensed under the Apache 2 License. See the [LICENSE](LICENSE) file for details.

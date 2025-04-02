@@ -1,0 +1,10 @@
+name: "Aethelland Demo"
+description: "This is a demo of the Aethelland agent. Ask questions about the country, like 'What is the capital of Aethelland?'"
+data:
+  file: "aethelland-information.txt"
+prompt:
+  template: "rag_template.txt"
+llm:
+  model-identifier: "ollama:gemma2:latest"
+  embeddings: "nomic-embed-text"
+use-memory: false
