@@ -1,0 +1,22 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+1. 依存関係管理
+- pip や uv pip ではなく uv add/uv remove/uv sync を使用すること
+- 再現性の問題があるため、uv pip コマンドは避ける
+- 直接 pyproject.toml の dependencies を書き換えるのは絶対にやめて、add, remove で更新する
+
+2. 環境構築
+- 問題が起きた場合は venv を作り直すなど考える
+
+3. プロジェクト構造
+- テストは適切なディレクトリ構造（tests/ 以下）に配置する
+- fixture などを使った一般的できれいなディレクトリ構造にする
+
+4. コーディング
+- テストを書いて機能の正常動作を確認する
+
+5. コミット
+- github のコミットメッセージは semantic commit message を使用するようにして。
