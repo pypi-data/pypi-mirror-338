@@ -1,0 +1,16 @@
+appdirs>=1.4.4
+gitpython>=3.1.44
+pyyaml>=6.0.2
+
+[docs]
+furo>=2023.9.10
+setuptools-scm>=8.1
+sphinxcontrib-bibtex>=2.4.2
+sphinx-copybutton>=0.5
+ipykernel
+nbsphinx
+sphinxext-opengraph>=0.9
+sphinx-autodoc-typehints
+
+[test]
+pytest>=7.2
