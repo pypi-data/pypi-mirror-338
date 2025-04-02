@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+src/AFUNIXSnoopers/__init__.py
+src/AFUNIXSnoopers.egg-info/PKG-INFO
+src/AFUNIXSnoopers.egg-info/SOURCES.txt
+src/AFUNIXSnoopers.egg-info/dependency_links.txt
+src/AFUNIXSnoopers.egg-info/entry_points.txt
+src/AFUNIXSnoopers.egg-info/requires.txt
+src/AFUNIXSnoopers.egg-info/top_level.txt

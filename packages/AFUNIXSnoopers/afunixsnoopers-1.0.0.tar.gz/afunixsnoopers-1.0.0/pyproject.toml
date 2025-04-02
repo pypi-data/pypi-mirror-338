@@ -1,0 +1,20 @@
+[project]
+name = "AFUNIXSnoopers"
+dynamic = ["version"]
+description = "Listen on a public UNIX socket and log connections to it"
+readme = "README.md"
+license = {file = "LICENSE"}
+dependencies = ["ShellContexts"]
+
+[project.urls]
+Homepage = "https://github.com/jb2170/AFUNIXSnoopers/"
+
+[project.scripts]
+af-unix-snoopers = "AFUNIXSnoopers:main"
+
+[tool.setuptools.dynamic]
+version = {attr = "AFUNIXSnoopers.__version__"}
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"

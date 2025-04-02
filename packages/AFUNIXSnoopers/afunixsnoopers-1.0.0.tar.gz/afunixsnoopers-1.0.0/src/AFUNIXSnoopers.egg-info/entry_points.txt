@@ -1,0 +1,2 @@
+[console_scripts]
+af-unix-snoopers = AFUNIXSnoopers:main
