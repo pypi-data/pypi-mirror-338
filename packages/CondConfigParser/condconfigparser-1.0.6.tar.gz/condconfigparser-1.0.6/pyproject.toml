@@ -1,0 +1,36 @@
+[build-system]
+requires = ["setuptools >= 61.0.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "CondConfigParser"
+dynamic = ["version"]
+authors = [
+  { name="Florent Rougon", email="f.rougon@frougon.net" },
+]
+description = "Python library for parsing configuration files with conditionals"
+readme = "README.rst"
+license = "BSD-2-Clause"
+requires-python = ">=3.4"
+keywords = [
+  "configuration", "file", "parsing", "parser", "conditionals", "variables",
+  "lists",
+]
+classifiers = [
+  "Development Status :: 5 - Production/Stable",
+  "Intended Audience :: Developers",
+  "Operating System :: OS Independent",
+  "Programming Language :: Python :: 3",
+  "Topic :: Software Development :: Libraries :: Python Modules",
+]
+
+[project.urls]
+Homepage = "https://frougon.net/projects/CondConfigParser/"
+Repository = "https://github.com/frougon/CondConfigParser"
+Issues = "https://github.com/frougon/CondConfigParser/issues"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.dynamic]
+version = {attr = "condconfigparser.__version__"}

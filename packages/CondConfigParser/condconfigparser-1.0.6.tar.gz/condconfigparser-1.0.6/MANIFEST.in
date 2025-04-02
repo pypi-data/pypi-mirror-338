@@ -1,0 +1,13 @@
+include README.rst INSTALL.txt COPYING COPYING.Sphinx AUTHORS TODO ChangeLog
+include MANIFEST.in
+
+graft dev-tools
+graft examples
+graft src
+graft tests
+
+graft doc
+prune doc/_build
+exclude doc/basic-pkg-info.rst
+
+global-exclude *.pyc .gitignore  .gitattributes
