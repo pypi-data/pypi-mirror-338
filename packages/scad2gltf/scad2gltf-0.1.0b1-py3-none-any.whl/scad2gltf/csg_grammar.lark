@@ -1,0 +1,29 @@
+
+start: object
+
+object: CNAME arguments (";" | block)
+
+arguments: "(" [argument ("," argument)*] ")"
+
+block: "{" object* "}"
+     | object
+
+argument: ARGNAME "=" value
+        | value
+
+ARGNAME: ["$"] CNAME
+
+?value: list 
+      | ESCAPED_STRING   -> string
+      | SIGNED_NUMBER    -> number
+      | "true"           -> true
+      | "false"          -> false
+      | "undef"          -> undef
+
+list : "[" [value ("," value)*] "]"
+
+%import common.ESCAPED_STRING
+%import common.SIGNED_NUMBER
+%import common.CNAME
+%import common.WS
+%ignore WS

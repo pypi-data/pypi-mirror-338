@@ -1,0 +1,12 @@
+scad2gltf/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+scad2gltf/__main__.py,sha256=KS8Qnync7MoA81fGs4b3K3CIrUaRclAC_yJr6UWhZvM,2092
+scad2gltf/csg_grammar.lark,sha256=ALkwEQa0TQnurtZdegEDQJ7y73btUg44K4dv0nkc3Ik,538
+scad2gltf/gltf.py,sha256=XAou9WwA6FugMdUSZ0yEnfIapWWYsOrAKVpPDuReeTA,8325
+scad2gltf/openscad.py,sha256=WGHQlQzeAWZnDOyMSPP-WHqI7-GuirxMIQAa_uKcFGY,1577
+scad2gltf/parse_csg.py,sha256=NJmDGkInuoJBY0Q0nx7o_mPjtqS-j-5wiTfKWC05ySQ,15771
+scad2gltf/types.py,sha256=Et3kX13AfdX7GW1M67tuHRAxbiDBQFj_UDpR2DjZnv0,1104
+scad2gltf-0.1.0b1.dist-info/METADATA,sha256=ldMYZsjkpqAETDQiebLT3Z2_qTP0aD9GhlJp5fWp2bw,1292
+scad2gltf-0.1.0b1.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+scad2gltf-0.1.0b1.dist-info/entry_points.txt,sha256=m-ba235QACJ-JE88BNKNtfv7kGQ4vH8dex66h_rB7lw,54
+scad2gltf-0.1.0b1.dist-info/licenses/LICENSE,sha256=jOtLnuWt7d5Hsx6XXB2QxzrSe2sWWh3NgMfFRetluQM,35147
+scad2gltf-0.1.0b1.dist-info/RECORD,,
