@@ -1,0 +1,13 @@
+abstract_webserver/__init__.py,sha256=IWdiQLLikkXb8Vb8wiibu5raMrgeYimMXhbg_b9uov8,212
+abstract_webserver/abstract_types.py,sha256=I2P-A64rdlpIkx4WB_HimG84BlRkbOK5QWj5-bEEbak,2755
+abstract_webserver/abstract_webserver.py,sha256=RTP6QdlO2pdiu72KJzF_QBzlMUBjR0egC4HTNQNQJOw,3513
+abstract_webserver/directory_processor.py,sha256=0AUl00WwxsjTPdYT4ChwM8X-eRgeVvFqlmMiQNa_cdc,5652
+abstract_webserver/get_image_json.py,sha256=inRv0d4oyYtXVvXDa0M47ZwhfwHtV-0ij9ROsWH7MwQ,7784
+abstract_webserver/get_source.py,sha256=-v-WtqxIdcy2gJF0Pv4GCo8wsM7ZKO5urzQwwCj0wsk,4830
+abstract_webserver/json_convention.py,sha256=txQ9BN1RBtKicVaw8WJF0vlKMPCZ8q_TsnN_7EZcsC8,3765
+abstract_webserver/path_utils.py,sha256=YwJ3go6vPoXtqHgQWecUFH8UlL3lK_XMHT-NaNHnuiM,3285
+abstract_webserver/serverManager.py,sha256=fbBh9OVXr2HnemQXQOceTdXssou55ru531qNEc4PDpY,10860
+abstract_webserver-0.0.0.11.dist-info/METADATA,sha256=u5u-NQAig8hXenP9bIU5tLfEFDDyeSxMfiPkFwRvPKw,27830
+abstract_webserver-0.0.0.11.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+abstract_webserver-0.0.0.11.dist-info/top_level.txt,sha256=WTpbzbDmuwqy6AfZ4lY8J9vaqlDqjyT2oQFATDUin4Y,19
+abstract_webserver-0.0.0.11.dist-info/RECORD,,
