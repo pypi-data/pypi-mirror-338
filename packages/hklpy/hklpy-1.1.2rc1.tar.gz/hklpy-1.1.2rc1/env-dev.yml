@@ -1,0 +1,49 @@
+# env-dev.yml
+
+# Developer's environment for hklpy
+
+# conda env create -f env-dev.yml
+
+name: dev-hklpy
+
+channels:
+  - conda-forge  # must come before defaults (for gsl version)
+  - nodefaults
+
+dependencies:
+  # additional pins for testing
+  - dask <2025
+  - xarray <2025
+
+  - python >=3.9,<=3.12
+  - apischema
+  - black
+  - bluesky
+  - chardet
+  - databroker <=1.999
+  - flake8
+  - hkl
+  - ipython
+  - jupyter
+  - nbsphinx
+  - numpy <1.999
+  - ophyd
+  - orjson
+  - packaging
+  - pandoc
+  - pint
+  - pip
+  - pydata-sphinx-theme
+  - pyepics
+  - pygobject
+  - pyRestTable
+  - spec2nexus
+  - sphinx
+  - sphinx-design
+  - sphinx-tabs
+  - tqdm
+  - trio >=0.22
+  - pip:
+    - coveralls
+    - pytest
+    - pytest-cov
