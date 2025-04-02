@@ -1,0 +1,2 @@
+[console_scripts]
+llm-processor = llm_processor.cli:main
