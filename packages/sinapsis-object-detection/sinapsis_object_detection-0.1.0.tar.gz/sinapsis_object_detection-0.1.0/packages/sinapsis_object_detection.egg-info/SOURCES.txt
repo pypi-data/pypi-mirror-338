@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+packages/sinapsis-dfine/src/sinapsis_dfine/__init__.py
+packages/sinapsis-dfine/src/sinapsis_dfine/helpers/__init__.py
+packages/sinapsis-dfine/src/sinapsis_dfine/helpers/load_labels.py
+packages/sinapsis-dfine/src/sinapsis_dfine/templates/__init__.py
+packages/sinapsis-dfine/src/sinapsis_dfine/templates/dfine_base.py
+packages/sinapsis-dfine/src/sinapsis_dfine/templates/dfine_inference.py
+packages/sinapsis-dfine/src/sinapsis_dfine/templates/dfine_train.py
+packages/sinapsis_object_detection.egg-info/PKG-INFO
+packages/sinapsis_object_detection.egg-info/SOURCES.txt
+packages/sinapsis_object_detection.egg-info/dependency_links.txt
+packages/sinapsis_object_detection.egg-info/requires.txt
+packages/sinapsis_object_detection.egg-info/top_level.txt

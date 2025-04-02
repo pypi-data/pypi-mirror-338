@@ -1,0 +1,15 @@
+sinapsis>=0.1.1
+
+[all]
+sinapsis-dfine[all]
+sinapsis-object-detection[dfine,dfine-training,gradio-app]
+
+[dfine]
+dfine
+
+[dfine-training]
+dfine[training]
+
+[gradio-app]
+gradio>=5.23.1
+sinapsis-data-visualization[all]>=0.1.0
