@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: bufferedthreadediterator
+Version: 2025.4.1
+Summary: Give a Python iterator a buffer that is filled in a separate thread
+Home-page: https://github.com/bartbroere/bufferedthreadediterator
+Author: Bart Broere
+Author-email: mail@bartbroere.eu
+License: Apache-2.0
+Project-URL: Bug Tracker, https://github.com/bartbroere/bufferedthreadediterator/issues
+Project-URL: Source Code, https://github.com/bartbroere/bufferedthreadediterator
+Keywords: iterator threading buffering performance generator iterable buffer
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE.md
+
+# bufferedthreadediterator
