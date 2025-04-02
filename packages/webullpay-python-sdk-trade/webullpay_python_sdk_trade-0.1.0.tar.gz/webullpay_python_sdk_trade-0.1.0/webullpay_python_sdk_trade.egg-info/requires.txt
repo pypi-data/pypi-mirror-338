@@ -1,0 +1,2 @@
+webullpay-python-sdk-trade-events-core==0.1.0
+webullpay-python-sdk-core==0.1.0
