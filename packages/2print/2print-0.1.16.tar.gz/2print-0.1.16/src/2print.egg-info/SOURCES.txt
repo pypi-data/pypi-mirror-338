@@ -1,0 +1,12 @@
+AUTHORS.txt
+LICENSE
+README.md
+setup.cfg
+setup.py
+src/2print/2print.py
+src/2print/__init__.py
+src/2print/_version.py
+src/2print.egg-info/PKG-INFO
+src/2print.egg-info/SOURCES.txt
+src/2print.egg-info/dependency_links.txt
+src/2print.egg-info/top_level.txt
