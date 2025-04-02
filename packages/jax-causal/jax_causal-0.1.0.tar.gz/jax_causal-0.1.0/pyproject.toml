@@ -1,0 +1,21 @@
+[project]
+name = "jax-causal"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Thomas Pinder", email = "tompinder@live.co.uk" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "jax>=0.5.3",
+    "jaxlib>=0.5.3",
+    "optax>=0.2.4",
+]
+
+[project.scripts]
+jax-causal = "jax_causal:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
