@@ -1,0 +1,8 @@
+README.md
+pyproject.toml
+sportybet.py
+sportbet.egg-info/PKG-INFO
+sportbet.egg-info/SOURCES.txt
+sportbet.egg-info/dependency_links.txt
+sportbet.egg-info/requires.txt
+sportbet.egg-info/top_level.txt

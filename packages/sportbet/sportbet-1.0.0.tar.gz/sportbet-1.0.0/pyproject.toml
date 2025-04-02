@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sportbet"
+version = "1.0.0"
+authors = [
+    {name = "Bapizam Samuel", email = "bapizamsamuel@gmail.com"},
+]
+description = "A Python bot to automate SportyBet actions using Selenium."
+readme = "README.md"
+requires-python = ">=3.7"
+dependencies = [
+    "selenium>=4.0.0"
+]
+license = {text = "MIT"}
