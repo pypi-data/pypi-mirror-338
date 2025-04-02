@@ -1,0 +1,14 @@
+invert4geom/__init__.py,sha256=4PS1G1SAycppX7ydkJp1IDyS1yRcYdixaaRFBfQ9pfs,306
+invert4geom/cross_validation.py,sha256=7NxK3Vuq6Q1YaWz505EMMyGVFNveBVatYuoDqNpJKyU,44684
+invert4geom/inversion.py,sha256=rAKe3fDD6c3kpD2gG7QwaXYYlM0nIwwdeSoK7QyzWOg,58668
+invert4geom/optimization.py,sha256=zSIj3ZH9llkDL-9HJy0fkYgJaMeaoegxJrF6nzJlanY,144694
+invert4geom/plotting.py,sha256=Zi0WHQHNUAxWskG3ua1H8MziOJkRZKjmewS_hzZm54I,53104
+invert4geom/regional.py,sha256=oixl4c5G7gbocLfu-RJueosHLKggcV_gON5xjtVkYw0,26681
+invert4geom/synthetic.py,sha256=TTtvjlEp5NtcrEERgFqiWw8vnFeBBR9E8LcWoM-83mA,26553
+invert4geom/uncertainty.py,sha256=fFudtyeUHCg27SnICrfBB-6jLBYCBDjG7KfrhLwLggA,49238
+invert4geom/utils.py,sha256=aGmiuRHXzg1L2wJgBxAbcDRVLh4gJliLhzDC4AouM2c,54357
+invert4geom-0.12.0.dist-info/licenses/LICENSE,sha256=0blJsm-t4gySCfNC3joX4s1RiwVdIxsIAkTKx4vYn0Q,1055
+invert4geom-0.12.0.dist-info/METADATA,sha256=w5ixFNfY7IHsQ8ue2tEXnc0G3GH584Dh-omSy9BdbIQ,9651
+invert4geom-0.12.0.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+invert4geom-0.12.0.dist-info/top_level.txt,sha256=9WH25SVHNsCaNGsTsOpILJtbVJuK0mcHE528Acw7ycQ,12
+invert4geom-0.12.0.dist-info/RECORD,,
