@@ -1,0 +1,2 @@
+[lms.djangoapp]
+learning_paths = learning_paths.apps:LearningPathsConfig
