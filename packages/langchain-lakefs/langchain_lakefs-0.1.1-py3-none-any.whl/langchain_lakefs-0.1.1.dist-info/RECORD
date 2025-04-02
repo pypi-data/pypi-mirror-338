@@ -1,0 +1,13 @@
+langchain_lakefs/__init__.py,sha256=eFJy5mykcjeSyTKqhU71SsjEXGUndsWAh7venddWePE,837
+langchain_lakefs/chat_models.py,sha256=i9kOObEcoJUsLDvU5kOJYdU-Oqf02k5k-hsIOleIDsI,14248
+langchain_lakefs/document_loaders.py,sha256=UB18T-WUL1yINLZf35xS4sFHcsxLWnt1sy71_fN4nLM,5499
+langchain_lakefs/embeddings.py,sha256=o-7AlxrqqWqHO1XAkHBc2RF5-bxrrvjPQ6B3llLnUcs,2619
+langchain_lakefs/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+langchain_lakefs/retrievers.py,sha256=asDaQvu5T6gmiL_wLkcv0uWO2rLponmYkZLRUmkMBVM,2991
+langchain_lakefs/toolkits.py,sha256=ZNv6U-rLR2ghSY9k6FzwVnjMLCdvE_ReGV7L3hV2WMw,1880
+langchain_lakefs/tools.py,sha256=I2sz1tWj7Ds9CGaqt2FLe7hYoESRGhI4p0iC_Ly_4wk,2650
+langchain_lakefs/vectorstores.py,sha256=F8VWpv0uQc2xTFDlVylQNYxaH5WbRxk1I5Wz40455ew,14170
+langchain_lakefs-0.1.1.dist-info/LICENSE,sha256=2btS8uNUDWD_UNjw9ba6ZJt_00aUjEw9CGyK-xIHY8c,1072
+langchain_lakefs-0.1.1.dist-info/METADATA,sha256=4jgAReCwfFiqERZYxemYS0wCqI-bZ1OsrS_8h_q7rbo,3985
+langchain_lakefs-0.1.1.dist-info/WHEEL,sha256=fGIA9gx4Qxk2KDKeNJCbOEwSrmLtjWCwzBz351GyrPQ,88
+langchain_lakefs-0.1.1.dist-info/RECORD,,
