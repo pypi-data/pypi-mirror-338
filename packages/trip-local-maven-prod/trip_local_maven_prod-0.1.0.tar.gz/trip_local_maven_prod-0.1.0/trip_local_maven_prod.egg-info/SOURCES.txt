@@ -1,0 +1,5 @@
+setup.py
+trip_local_maven_prod.egg-info/PKG-INFO
+trip_local_maven_prod.egg-info/SOURCES.txt
+trip_local_maven_prod.egg-info/dependency_links.txt
+trip_local_maven_prod.egg-info/top_level.txt
