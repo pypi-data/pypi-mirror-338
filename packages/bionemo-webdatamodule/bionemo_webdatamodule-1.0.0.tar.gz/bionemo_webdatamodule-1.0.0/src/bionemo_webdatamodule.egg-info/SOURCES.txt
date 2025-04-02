@@ -1,0 +1,12 @@
+LICENSE
+README.md
+VERSION
+pyproject.toml
+src/bionemo/webdatamodule/__init__.py
+src/bionemo/webdatamodule/datamodule.py
+src/bionemo/webdatamodule/utils.py
+src/bionemo_webdatamodule.egg-info/PKG-INFO
+src/bionemo_webdatamodule.egg-info/SOURCES.txt
+src/bionemo_webdatamodule.egg-info/dependency_links.txt
+src/bionemo_webdatamodule.egg-info/requires.txt
+src/bionemo_webdatamodule.egg-info/top_level.txt

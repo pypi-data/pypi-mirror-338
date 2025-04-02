@@ -1,0 +1,2 @@
+bionemo-core
+webdataset==0.2.96
