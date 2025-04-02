@@ -1,0 +1,11 @@
+langchain_hyperbrowser/__init__.py,sha256=1DmsWwGDK5YRZvjT9NuKLeUshFLaPQkQ8vbWda2LCSA,904
+langchain_hyperbrowser/_utilities.py,sha256=h-RxMyH3K_VrEGk7-Xw9Y6Z69UfwDzBfAZSbwM4pzvo,618
+langchain_hyperbrowser/browser_use_tool.py,sha256=zk-hrpHwsNH7Ai63QO9q04aG_8KJu_4TplUVa57M7hk,6249
+langchain_hyperbrowser/claude_computer_use_tool.py,sha256=M-M7ejf0ktL4mtqy3CFWbKelte15vbcfRk8fmyfFskI,4404
+langchain_hyperbrowser/extract_tool.py,sha256=GtVktCvLWc5ogyrOqMPlewptBZFi7-7gEG2Rd8fXyvM,4062
+langchain_hyperbrowser/hyperbrowser_loader.py,sha256=8NSRAWnu6rY_-k0-at6gand7BH-5em0vlh0-9w9sRus,7523
+langchain_hyperbrowser/openai_cua_tool.py,sha256=HkjsbHTJRAF20jKWaqwaJ3b_RscBIkbfaviYjE8TjAw,4274
+langchain_hyperbrowser-0.4.0.dist-info/LICENSE,sha256=2btS8uNUDWD_UNjw9ba6ZJt_00aUjEw9CGyK-xIHY8c,1072
+langchain_hyperbrowser-0.4.0.dist-info/METADATA,sha256=qPbsMstshNKbtb9KtGcjwDiNoe0zfMDtkP_8Oys97vE,8505
+langchain_hyperbrowser-0.4.0.dist-info/WHEEL,sha256=fGIA9gx4Qxk2KDKeNJCbOEwSrmLtjWCwzBz351GyrPQ,88
+langchain_hyperbrowser-0.4.0.dist-info/RECORD,,
