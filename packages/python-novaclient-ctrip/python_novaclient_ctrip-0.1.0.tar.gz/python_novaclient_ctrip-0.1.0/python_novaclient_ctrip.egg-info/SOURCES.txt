@@ -1,0 +1,5 @@
+setup.py
+python_novaclient_ctrip.egg-info/PKG-INFO
+python_novaclient_ctrip.egg-info/SOURCES.txt
+python_novaclient_ctrip.egg-info/dependency_links.txt
+python_novaclient_ctrip.egg-info/top_level.txt
