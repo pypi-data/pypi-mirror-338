@@ -1,0 +1,17 @@
+mcp_server_architect/__init__.py,sha256=LFlMUFF6htd2M_q45J4zci9mJiROS7t8SL0Btoo6yD8,338
+mcp_server_architect/__main__.py,sha256=n5R3mxQhIQR3s6Naoa1b_2VTSpXam1tJPL4CdKIbOGI,6066
+mcp_server_architect/core.py,sha256=CAdZKcVLKeCMvsfootDLIZCiAuV8R8wiC3GTsA7cHiI,2989
+mcp_server_architect/models.py,sha256=U0Xm0utxUM8E9py9NDhwN_Y5kW1DrP8PbWD9LgN8_5g,1229
+mcp_server_architect/types.py,sha256=-qJGs5sylAEXea0j1RBT5i_UTNj3DR0O0BtZSO-042M,247
+mcp_server_architect/version.py,sha256=uD-wYh0_2ieRTjxuiGFFD7c_1lACTDyoBSuw2CoFBxM,50
+mcp_server_architect/agents/__init__.py,sha256=KaIAtARlSpUs4oF7OuQNsW9oIhLhBFy2EoU2UOw-xTA,140
+mcp_server_architect/agents/executor.py,sha256=QV83BDBdxpWyG_uJL3nmpiPYfE5i--2Zi79NopnJsok,7814
+mcp_server_architect/tools/__init__.py,sha256=Dj7NUBp2LT6SRX2TTCwXJQv1W5yMjt0gv2Dbv5Gc1xA,266
+mcp_server_architect/tools/code_reader.py,sha256=6XbPvqNPb8XwqWbI7q6FI2fo3A8nedE9i-K0veWuVJQ,9885
+mcp_server_architect/tools/llm.py,sha256=c0m8lNGa3Oa68qeRvCoGT9YR65mAVdsZkXCqrDS29KQ,7589
+mcp_server_architect/tools/web_search.py,sha256=gtDAOzdezESkdXg9JnAne88TXZU8GszBAqcjJBNRwrU,3883
+mcp_server_architect-0.2.2.dist-info/METADATA,sha256=Uvho3fqSSF37mR74graSNedeNpPh_4ffIHgXVnVPxPg,18021
+mcp_server_architect-0.2.2.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+mcp_server_architect-0.2.2.dist-info/entry_points.txt,sha256=bB6mnv42AAGQX7YvQwTJm2zNxHc6GXKba76yFhvGvQk,76
+mcp_server_architect-0.2.2.dist-info/licenses/LICENSE,sha256=y7vEcUeltOJT5Wby6DJKhI07cKO6wSf-ArNEUQSC6g4,1069
+mcp_server_architect-0.2.2.dist-info/RECORD,,
