@@ -1,0 +1,55 @@
+Total run time not displayed? Maybe you haven't pushed it yet, but I can' see it at the end (see screenshot)
+single file histogram & weights & grids?
+critically revisit resource management & allocation (# workers, # cores, ...)
+dbdispatch does not really use the id < 0 case yet (some subtleties we need to be aware of?)
+switching execution policy, copy over submission template file?
+when submission template already exists, check if they are the same; if not prompt user file was modified and if they want to overwirte?
+prompt user to increase max jobs to at least accommodate one job beyond pre-production
+doctor subcommand to get list of failed jobs with reason, etc
+rebuild sub-command to parse raw folder to re-populate the database
+init/config:  total # jobs ~ 10x # parts?
+even removing jobs, still failed jobs appear after recovery?
+HTOTAU(J)
+when boost part that is pre-prod only, make sure we don't exhaust batch-size?
+check HTCondor submission once
+try to store the logger prefix in the init routines once? (self.logger_prefix = "Class[{},{},...]")
+rhich console: in logger try to flag all "pt.name" with a common colour?
+defaut job size proposed ~ 2x # active parts?
+logging.warn(f"Executor: log file not found for job {job_id}")
+
+
+
+# DONE
+cumulant histo fix 
+cmake build possibility to skip workflow installation? (can do it manually using pipx etc?)
+finalize implementation
+jobs_batch_unit_size -> jobs_batch_unit_size
+jobs_batch_size -> jobs_batch_size
+single histogram support in workflow
+add NNLOJET release publication in the reference list
+impose minimum ncall in production runs
+catch NaN results and mark as a failed job
+after resurrect: check if logging prints properly
+make resurrected jobs show up in the monitor (runid)
+if failed jobs found: ask if we want to prune them
+ensure at least one proper production for every part beyond the pre-production
+finalize sub-command options? (trim options - or leave it as a config setting path)
+issue with mergeparts?
+too quick ctrl-c will get workflow stuck?
+dbdispatch has an interrupt on the target precision: fix it with the quantity we optimize for?
+<> _distribute_time should provide estimate for the optimisation target (cross_hist)?
+better display of cross section value, optimization target, current & requested
+get finalize to work correctly with the reset flag
+get_lumi raises error now: check_proces with NNLOJET to inquire existence of a process
+run a test with the input runcard and parse for warnings?
+error if LHAPDF set not there (do a NNLOJET dry run?)
+prompt check input with ENUM TYPES
+penalty messes with termination condition?! (matteo send Hto2p smaple runcard)
+RRa RRb in table of the monitor.
+if histogram has "fac", need to be careful with the cross_hist estimates (generally a more fine-grained control over the optimization targets?)
+final summary shows cross error: should also have the target error
+defaults for exhaust runtime? (local: no, cluster: yes)
+ui -> refresh interval
+config --advanced:  ui monitor, debug level
+Entry, PreProduction, DBDispatch, DBRunner loggin goutput inprovements.
+DBMerge looging output inprovement

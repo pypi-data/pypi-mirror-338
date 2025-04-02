@@ -1,0 +1,157 @@
+ Input seed: 64                  
+ set_smin_run: resetting smin
+ set_smin_run: smin =    0.0000000000000000     
+ registerSweep_run:           2      722189           2
+ set_mass_param: H   1000.0000000000000     
+ set_smin_run: smin =    6.3799724925729003E-003
+ set_smin_run: smin =    1000000.0000000000     
+ registered a jet selector: jets_pt
+ registered an `njets` selector
+ we will therefore switch to the inclusive case and
+ this will potentially override the global settings for
+  > qinvert  F
+  > lower      2.0000000000000000      T
+  > upper      0.0000000000000000      F
+ > minnjets:            2
+ <sel>
+ name: pth                                        2
+ <sel>
+ name: ptj1                                       2
+ set_smin_run: smin =    1000000.0000000000     
+ set_smin_run: smin =    1000000.0000000000     
+ nSubF_scl =            1
+ nSubF_scl =            1
+ nSubF_scl =            1
+ nSubF_scl =            1
+ nSubF_scl =            1
+ nSubF_scl =            1
+ nSubF_scl =            1
+ logfile: >HJJ.HJJ_LO2.s64.log                                                                                                             <
+    _  ___  ____   ____     ____________
+   / |/ / |/ / /  / __ \__ / / __/_  __/
+  /    /    / /__/ /_/ / // / _/  / /   
+ /_/|_/_/|_/____/\____/\___/___/ /_/    
+                                        
+ ******************************************************************************************************
+ *                                                                                                    *
+ *  NNLOJET: A multiprocess parton level event generator                                              *
+ *                                                                                                    *
+ ******************************************************************************************************
+ * Active bosons:                                                                                     *
+ *   Z0/gamma boson                                                                                   *
+ *                                                                                                    *
+ *   > List of active processes <                                                                     *
+ *                                                                                                    *
+ *   id  partons                  Matrix Element                Subtraction                           *
+ *                                                                                                    *
+ *    1  g g to g g ph1 ph2       A4g0H(1,2,3,4,5,6)                                                  *
+ *    6  g g to qb q ph1 ph2      B2g0H(3,1,2,4,5,6)                                                  *
+ *   13  gt gt to qb q ph1 ph2    Bt2g0H(3,1,2,4,5,6)                                                 *
+ *                                                                                                    *
+ ******************************************************************************************************
+ *                                                                                                    *
+ *   > Input technical parameters <                                                                   *
+ *                                                                                                    *
+ * y0                                                          1.00000000000000003643E-10             *
+ * including angular rotations                                                                        *
+ * no phase space caching                                                                             *
+ *                                                                                                    *
+ *                                                                                                    *
+ *   > Input physics parameters <                                                                     *
+ *                                                                                                    *
+ * Z boson mass                                                9.11876000000000033197E+01             *
+ * Z boson width                                               2.49520000000000008455E+00             *
+ * W boson mass                                                8.03790000000000048885E+01             *
+ * W boson width                                               2.08499999999999996447E+00             *
+ * H boson mass                                                1.00000000000000000000E+03             *
+ * H boson width                                               4.02964385200000035220E-03             *
+ * sin^2(thw)                                                  2.23013225326783359748E-01             *
+ * 1/alpha                                                     1.32184179137044878871E+02             *
+ *                                                                                                    *
+ *   > Input kinematical parameters <                                                                 *
+ *                                                                                                    *
+ * Process: HJJ                                                                                       *
+ *     sqrt(s) = ******                                                                               *
+ *       > beam1 =         2212 [6500.0 GeV]                                                          *
+ *       > beam2 =         2212 [6500.0 GeV]                                                          *
+ *                                                                                                    *
+ *     Run: = HJJ_LO2                                                                                 *
+ *     PDF1 = PDF4LHC15_nnlo_30 [mem = 0]                                                             *
+ *     MatchObs = OFF                                                                                 *
+ *                                                                                                    *
+ *   > Sweeps <                                                                                       *
+ *                                                                                                    *
+ resetCurrentSweep_run
+ loadNextSweep_run:            2
+ *       production = 722189[2]                                                                       *
+ *                                                                                                    *
+ *   > Scales <                                                                                       *
+ *                                                                                                    *
+ *   ID                           muR                                     muF                         *
+ *   1                  1.000E+03 GeV                           1.000E+03 GeV                         *
+ *   2                  2.000E+03 GeV                           2.000E+03 GeV                         *
+ *   3                  5.000E+02 GeV                           5.000E+02 GeV                         *
+ *   4                  2.000E+03 GeV                           1.000E+03 GeV                         *
+ *   5                  1.000E+03 GeV                           2.000E+03 GeV                         *
+ *   6                  5.000E+02 GeV                           1.000E+03 GeV                         *
+ *   7                  1.000E+03 GeV                           5.000E+02 GeV                         *
+ *                                                                                                    *
+ *   > Selectors <                                                                                    *
+ *                                                                                                    *
+ * T1 accept:        0.01 <= pth                                                                      *
+ * T1 accept:        0.01 <= ptj1                                                                     *
+ * T0 accept:        2.00 <= njets                                                                    *
+ *                                                                                                    *
+ *   > Jet settings <                                                                                 *
+ *                                                                                                    *
+ *   njets:            2 (inclusive)                                                                  *
+ *   jet algorithm:   anti-kt    R = 0.10                                                             *
+ *   accept:        0.01 <= jets_pt                                                                   *
+ *                                                                                                    *
+ *   > Histograms <                                                                                   *
+ *                                                                                                    *
+ * 0 pth                     (pth             in   40 bins)     [       0.010,      100.000]          *                              
+ *                                                                                                    *
+ * 0 ptj1                    (ptj1            in   40 bins)     [       0.010,      100.000]          *                              
+ *                                                                                                    *
+ * 0 pt_diff                 (      COMPOSITE in   40 bins)     [       0.010,      100.000]          *                              
+ *             + pth               x      -1.00                                                       *                                  
+ *             + ptj1              x       1.00                                                       *                                  
+ *                                                                                                    *
+ * 1 cross                   (cross)                                                                  *                              
+ *                                                                                                    *
+ *                                                                                                    *
+ ******************************************************************************************************
+ resetCurrentSweep_run
+ loadNextSweep_run:            2
+ Repository id: 1.0.0
+ resetCurrentSweep_run
+ loadNextSweep_run:            2
+ 
+ ------------------------------------------------
+ loadNextContrib_chan: loaded LO ...
+ init_multi_chan -- hasGroups_multi_chan
+ WARNING: more groups than channels?
+ init_multi_chan:
+ # of channels:            3
+ # of groups:              3
+ sorted_ichan          13           6           1
+ average channels per group           1
+           1           1 >          13  0.33333333333333331     
+           2           2 >           6  0.33333333333333331     
+           3           3 >           1  0.33333333333333331     
+ group_multi_chan           3           0           0           0           0           2           0           0           0           0           0           0           1
+ production...
+  > > Entering legacy wrapper for NNLOJET with Vegas! < < 
+ Entering New Vegas
+ Reading grid from HJJ.HJJ_LO2.y1.00E-10.LO
+ readFromFile_multi_chan: reading in: HJJ.HJJ_LO2.y1.00E-10.LO_channels
+ sorted_ichan           1           6          13
+ average channels per group           1
+           1           1 >           1  0.99098586920605680     
+           2           2 >           6   5.6707873035676095E-003
+           3           3 >          13   3.3433434903756211E-003
+ group_multi_chan           1           0           0           0           0           2           0           0           0           0           0           0           3
+Commencing iteration n 1
+Number of events: 722189
+ > > Current progress: 5% > > Current progress: 10% > > Current progress: 15%

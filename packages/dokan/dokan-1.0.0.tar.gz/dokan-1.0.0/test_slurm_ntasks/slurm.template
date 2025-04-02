@@ -1,0 +1,21 @@
+#!/bin/bash
+############
+# Slurm template
+############
+
+#SBATCH --array=1-12
+
+jobseed="$$(($$SLURM_ARRAY_TASK_ID))"
+
+#SBATCH --cpu-per-task=1
+#SBATCH --time=1
+#SBATCH --output=job.s$$jobseed.out  
+#SBATCH --error=job.s$$jobseed.err
+#SBATCH --ntasks-per-node=5
+#SBATCH --ntasks=12
+
+NNLOJET.sh $$jobseed
+
+
+
+

@@ -1,0 +1,102 @@
+ Input seed: 302                 
+ set_smin_run: resetting smin
+ set_smin_run: smin =    0.0000000000000000     
+ registerSweep_run:           2      719451           2
+ set_mass_param: H   1000.0000000000000     
+ set_smin_run: smin =    6.3799724925729003E-003
+ set_smin_run: smin =    1000000.0000000000     
+ registered a jet selector: jets_pt
+ registered an `njets` selector
+ we will therefore switch to the inclusive case and
+ this will potentially override the global settings for
+  > qinvert  F
+  > lower      2.0000000000000000      T
+  > upper      0.0000000000000000      F
+ > minnjets:            2
+ <sel>
+ name: pth                                        2
+ <sel>
+ name: ptj1                                       2
+ set_smin_run: smin =    1000000.0000000000     
+ set_smin_run: smin =    1000000.0000000000     
+ nSubF_scl =            1
+ nSubF_scl =            1
+ nSubF_scl =            1
+ nSubF_scl =            1
+ nSubF_scl =            1
+ nSubF_scl =            1
+ nSubF_scl =            1
+ logfile: >HJJ.HJJ_LO2.s302.log                                                                                                            <
+    _  ___  ____   ____     ____________
+   / |/ / |/ / /  / __ \__ / / __/_  __/
+  /    /    / /__/ /_/ / // / _/  / /   
+ /_/|_/_/|_/____/\____/\___/___/ /_/    
+                                        
+ ******************************************************************************************************
+ *                                                                                                    *
+ *  NNLOJET: A multiprocess parton level event generator                                              *
+ *                                                                                                    *
+ ******************************************************************************************************
+ * Active bosons:                                                                                     *
+ *   Z0/gamma boson                                                                                   *
+ *                                                                                                    *
+ *   > List of active processes <                                                                     *
+ *                                                                                                    *
+ *   id  partons                  Matrix Element                Subtraction                           *
+ *                                                                                                    *
+ *    1  g g to g g ph1 ph2       A4g0H(1,2,3,4,5,6)                                                  *
+ *    6  g g to qb q ph1 ph2      B2g0H(3,1,2,4,5,6)                                                  *
+ *   13  gt gt to qb q ph1 ph2    Bt2g0H(3,1,2,4,5,6)                                                 *
+ *                                                                                                    *
+ ******************************************************************************************************
+ *                                                                                                    *
+ *   > Input technical parameters <                                                                   *
+ *                                                                                                    *
+ * y0                                                          1.00000000000000003643E-10             *
+ * including angular rotations                                                                        *
+ * no phase space caching                                                                             *
+ *                                                                                                    *
+ *                                                                                                    *
+ *   > Input physics parameters <                                                                     *
+ *                                                                                                    *
+ * Z boson mass                                                9.11876000000000033197E+01             *
+ * Z boson width                                               2.49520000000000008455E+00             *
+ * W boson mass                                                8.03790000000000048885E+01             *
+ * W boson width                                               2.08499999999999996447E+00             *
+ * H boson mass                                                1.00000000000000000000E+03             *
+ * H boson width                                               4.02964385200000035220E-03             *
+ * sin^2(thw)                                                  2.23013225326783359748E-01             *
+ * 1/alpha                                                     1.32184179137044878871E+02             *
+ *                                                                                                    *
+ *   > Input kinematical parameters <                                                                 *
+ *                                                                                                    *
+ * Process: HJJ                                                                                       *
+ *     sqrt(s) = ******                                                                               *
+ *       > beam1 =         2212 [6500.0 GeV]                                                          *
+ *       > beam2 =         2212 [6500.0 GeV]                                                          *
+ *                                                                                                    *
+ *     Run: = HJJ_LO2                                                                                 *
+ *     PDF1 = PDF4LHC15_nnlo_30 [mem = 0]                                                             *
+ *     MatchObs = OFF                                                                                 *
+ *                                                                                                    *
+ *   > Sweeps <                                                                                       *
+ *                                                                                                    *
+ resetCurrentSweep_run
+ loadNextSweep_run:            2
+ *       production = 719451[2]                                                                       *
+ *                                                                                                    *
+ *   > Scales <                                                                                       *
+ *                                                                                                    *
+ *   ID                           muR                                     muF                         *
+ *   1                  1.000E+03 GeV                           1.000E+03 GeV                         *
+ *   2                  2.000E+03 GeV                           2.000E+03 GeV                         *
+ *   3                  5.000E+02 GeV                           5.000E+02 GeV                         *
+ *   4                  2.000E+03 GeV                           1.000E+03 GeV                         *
+ *   5                  1.000E+03 GeV                           2.000E+03 GeV                         *
+ *   6                  5.000E+02 GeV                           1.000E+03 GeV                         *
+ *   7                  1.000E+03 GeV                           5.000E+02 GeV                         *
+ *                                                                                                    *
+ *   > Selectors <                                                                                    *
+ *                                                                                                    *
+ * T1 accept:        0.01 <= pth                                                                      *
+ * T1 accept:        0.01 <= ptj1                                                                     *

@@ -1,0 +1,58 @@
+# SPDX-FileCopyrightText: © 2024-present NNLOJET
+#
+# SPDX-License-Identifier: MIT
+
+* python
+- switch from ~os~ to ~pathlib~ [[https://medium.com/@barila/choose-your-path-pythons-pathlib-vs-os-path-4de0b1e752dd][comparison]]
+- use f-strings instead of format
+
+* license
+  - we use ~reuse~
+  - install with ~pipx install reuse~
+  - update all ~reuse annotate --copyright "NNLOJET" --license MIT --year 2024 --style python --copyright-style spdx-symbol --recursive .~
+  - check status with ~reuse lint~
+
+
+* configuration
+  - make ~min_runtime~ optional, default to e.g. 75% of ~max_runtime~
+  -
+
+* workflow
+  - better recovery from interrupted jobs (trigger on changed config?)
+  - ~production~ computation of target time should include a safety buffer
+    1. take (time / nevents) weighted by time
+    2. avgT = sum_i (T_i / N_i) * T_i / (sum_j T_j)
+    3. sample variance: var[avgT] =
+    4. errT = sqrt( 1 / (sum_j T_j) )  <FIX ME!>
+    5. target_max = T_max / (avgT + 5 * errT)
+    6. target_min = T_min / avgT
+    7. target = target_max
+  - ~warmup~ needs the grid test
+    termination based on how similar the grids are.
+
+
+* interface
+  - order: NLO
+  - config etc... (max_runtime, ...)
+  - target_accuracy = ? (relative, e.g. 1%)
+  - max_jobs = 100 (@ termination: "could not reach target, here's estimate of njobs you'll need: 1000")
+  - max_concurrent_jobs
+  - there's a minimum # of jobs I need initially:
+    + at least two (scaling) warmup (? not clear: should not )
+    + one production for time estimate
+    --> #channels x (2)
+  new job starts at step 1; exiting job starts at step 5
+  1. submit Production for all channels with start statistics
+  2. wait for *all* to complete
+  3. for all channels want to have one additional production to aim for min_runtime
+  4. wait for *all* to complete
+  5. determine best way to distribute ~max_concurrent_jobs~ jobs to channels and submit productions
+  6. every time *one* production is done and I have not yet reached ~max_jobs~ re-compute optimal distribution and submit *one* job (only if we have not yet reached target accuracy [nnlojet-combine?])
+  7. all productions done: run nnlojet-combine
+
+
+* todo/ideas
+  - use ~atomic_target~ to have automatic copy from temp at the end?
+  - make ~Executor~ results MockTarget to save IO and do communication in memory?
+  - MockTarget only works properly on multiple workers for linux (broken on macOS)
+  -

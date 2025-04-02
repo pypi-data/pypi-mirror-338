@@ -1,0 +1,44 @@
+[project]
+name = "dokan"
+description = "Automating the NNLOJET workflow"
+readme = "README.md"
+requires-python = ">=3.10"
+license = "GPL-3.0-or-later"
+license-files = ["LICENSE"]
+dynamic = ["version"]
+keywords = []
+authors = [
+  { name = "NNLOJET" },
+]
+dependencies = [
+    "luigi>=3.5.2",
+    "numpy>=2.1.3",
+    "rich>=13.9.4",
+    "sqlalchemy>=2.0.36",
+]
+
+[project.urls]
+Homepage = "https://nnlojet.hepforge.org"
+Documentation = "https://github.com/aykhuss/dokan#readme"
+Issues = "https://github.com/aykhuss/dokan/issues"
+Source = "https://github.com/aykhuss/dokan"
+
+[project.scripts]
+nnlojet-run = "dokan:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.version]
+path = "src/dokan/__about__.py"
+
+[tool.ruff]
+line-length = 100
+
+[dependency-groups]
+dev = [
+    "pyright>=1.1.389",
+    "pytest-cov>=6.0.0",
+    "pytest>=8.3.3",
+]

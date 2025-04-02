@@ -1,0 +1,100 @@
+ Input seed: 42                  
+ set_smin_run: resetting smin
+ set_smin_run: smin =    0.0000000000000000     
+ registerSweep_run:           2     1078647           2
+ set_mass_param: H   125.00000000000000     
+ set_width_param: H   4.1650000000000003E-003
+ set_mass_param: Z   91.187600000000003     
+ set_width_param: Z   2.4952000000000001     
+ set_mass_param: W   80.397999999999996     
+ set_width_param: W   2.1053999999999999     
+ set_mass_param: t   173.19999999999999     
+ set_width_param: t   1.4099999999999999     
+ set_mass_param: b   4.1799999999999997     
+ set_mass_param: c   1.2749999999999999     
+ set_mass_param: tau   1.7769999999999999     
+ set_smin_run: smin =    6.3999999999999999E-011
+ set_smin_run: smin =    15625.000000000000     
+ set_smin_run: smin =    15625.000000000000     
+ set_smin_run: smin =    15625.000000000000     
+ nSubF_scl =            1
+ nSubF_scl =            1
+ nSubF_scl =            1
+ nSubF_scl =            1
+ nSubF_scl =            1
+ nSubF_scl =            1
+ nSubF_scl =            1
+ logfile: >HTO2P.HTO2P.s42.log                                                                                                             <
+    _  ___  ____   ____     ____________
+   / |/ / |/ / /  / __ \__ / / __/_  __/
+  /    /    / /__/ /_/ / // / _/  / /   
+ /_/|_/_/|_/____/\____/\___/___/ /_/    
+                                        
+ ******************************************************************************************************
+ *                                                                                                    *
+ *  NNLOJET: A multiprocess parton level event generator                                              *
+ *                                                                                                    *
+ ******************************************************************************************************
+ * Active bosons:                                                                                     *
+ *   Z0/gamma boson                                                                                   *
+ *                                                                                                    *
+ *   > List of active processes <                                                                     *
+ *                                                                                                    *
+ *   id  partons                  Matrix Element                Subtraction                           *
+ *                                                                                                    *
+ *    9  g g to ph1 ph2           A2g1H2(1,2,3,4)               ggA2g1H2TNLO(1,2,3,4)                 *
+ *   14  g g to ph1 ph2           Ah2g1H2(1,2,3,4)              ggAh2g1H2TNLO(1,2,3,4)                *
+ *   19  g g to ph1 ph2           A2g0H2(1,2,3,4)               wilsonggA2g0H2TNLO(1,2,3,4)           *
+ *                                                                                                    *
+ ******************************************************************************************************
+ *                                                                                                    *
+ *   > Input technical parameters <                                                                   *
+ *                                                                                                    *
+ * y0                                                          1.00000000000000002092E-08             *
+ * no angular rotations                                                                               *
+ * no phase space caching                                                                             *
+ *                                                                                                    *
+ *                                                                                                    *
+ *   > Input physics parameters <                                                                     *
+ *                                                                                                    *
+ * Z boson mass                                                9.11876000000000033197E+01             *
+ * Z boson width                                               2.49520000000000008455E+00             *
+ * W boson mass                                                8.03979999999999961346E+01             *
+ * W boson width                                               2.10539999999999993818E+00             *
+ * H boson mass                                                1.25000000000000000000E+02             *
+ * H boson width                                               4.16500000000000029921E-03             *
+ * sin^2(thw)                                                  2.22645853412996058696E-01             *
+ * 1/alpha                                                     1.32339714389204175404E+02             *
+ *                                                                                                    *
+ *   > Input kinematical parameters <                                                                 *
+ *                                                                                                    *
+ * Process: HTO2P                                                                                     *
+ *     sqrt(s) = 8000.0                                                                               *
+ *       > beam1 =         2212 [4000.0 GeV]                                                          *
+ *       > beam2 =         2212 [4000.0 GeV]                                                          *
+ *                                                                                                    *
+ *     Run: = HTO2P                                                                                   *
+ *     PDF1 = NNPDF31_nnlo_as_0118 [mem = 0]                                                          *
+ *     MatchObs = OFF                                                                                 *
+ *                                                                                                    *
+ *   > Sweeps <                                                                                       *
+ *                                                                                                    *
+ resetCurrentSweep_run
+ loadNextSweep_run:            2
+ *       production = 1078647[2]                                                                      *
+ *                                                                                                    *
+ *   > Scales <                                                                                       *
+ *                                                                                                    *
+ *   ID                           muR                                     muF                         *
+ *   1                  1.250E+02 GeV                           1.250E+02 GeV                         *
+ *   2                  6.250E+01 GeV                           6.250E+01 GeV                         *
+ *   3                  3.125E+01 GeV                           3.125E+01 GeV                         *
+ *   4                  1.250E+02 GeV                           6.250E+01 GeV                         *
+ *   5                  6.250E+01 GeV                           1.250E+02 GeV                         *
+ *   6                  3.125E+01 GeV                           6.250E+01 GeV                         *
+ *   7                  6.250E+01 GeV                           3.125E+01 GeV                         *
+ *                                                                                                    *
+ *   > Selectors <                                                                                    *
+ *                                                                                                    *
+ * no selectors registered
+ *                                                                                                    *

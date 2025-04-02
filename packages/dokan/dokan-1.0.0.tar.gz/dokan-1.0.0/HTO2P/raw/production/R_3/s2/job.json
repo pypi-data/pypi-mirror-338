@@ -1,0 +1,49 @@
+{
+  "exe": "/Users/alex/Work/Programs/nnlojet_release/install/bin/NNLOJET",
+  "mode": 2,
+  "policy": 1,
+  "policy_settings": {
+    "max_runtime": 180.0
+  },
+  "ncall": 118422,
+  "niter": 2,
+  "input_files": [
+    "job.run",
+    "HTO2P.HTO2P.y1.00E-08.R"
+  ],
+  "output_files": [
+    "HTO2P.HTO2P.R.pth.s2.dat",
+    "HTO2P.HTO2P.s2.log",
+    "job.s2.out",
+    "HTO2P.HTO2P.R.cross.s2.dat",
+    "HTO2P.HTO2P.R.yh.s2.dat",
+    "job.s2.err"
+  ],
+  "jobs": {
+    "82": {
+      "seed": 2,
+      "iterations": [
+        {
+          "iteration": 1,
+          "result": 0.009400283,
+          "result_acc": 0.009400283,
+          "error": 9.6351973e-06,
+          "error_acc": 9.6351973e-06,
+          "chi2dof": 0.0
+        },
+        {
+          "iteration": 2,
+          "result": 0.0094045313,
+          "result_acc": 0.0094024077,
+          "error": 9.6326003e-06,
+          "error_acc": 6.812195e-06,
+          "chi2dof": 0.09627
+        }
+      ],
+      "elapsed_time": 9.136,
+      "result": 0.0094024077,
+      "error": 6.812195e-06,
+      "chi2dof": 0.09627
+    }
+  }
+}

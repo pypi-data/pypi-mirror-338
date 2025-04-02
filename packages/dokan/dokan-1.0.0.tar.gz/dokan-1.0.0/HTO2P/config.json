@@ -1,0 +1,343 @@
+{
+  "exe": {
+    "policy": 1,
+    "policy_settings": {},
+    "path": "/Users/alex/Work/Programs/nnlojet_release/install/bin/NNLOJET"
+  },
+  "run": {
+    "order": 1,
+    "histograms": {
+      "cross": {
+        "nx": 0
+      },
+      "pth": {
+        "nx": 3
+      },
+      "yh": {
+        "nx": 3
+      }
+    },
+    "opt_target": "cross_hist",
+    "target_rel_acc": 0.01,
+    "job_max_runtime": 180.0,
+    "job_fill_max_runtime": true,
+    "jobs_max_total": 100,
+    "jobs_max_concurrent": 7,
+    "jobs_batch_size": 1,
+    "jobs_batch_unit_size": 1,
+    "seed_offset": 0,
+    "path": "/Users/alex/Work/Programs/dokan/HTO2P",
+    "dokan_version": "0.2.0",
+    "name": "HTO2P",
+    "template": "template.run"
+  },
+  "ui": {
+    "monitor": true,
+    "log_level": 20
+  },
+  "process": {
+    "channels": {
+      "LO_1": {
+        "string": "1  ! channel: [0,0]",
+        "part": "LO",
+        "part_num": 1,
+        "order": 0
+      },
+      "R_1": {
+        "string": "2  ! channel: [0,0]",
+        "part": "R",
+        "part_num": 1,
+        "order": -1
+      },
+      "R_2": {
+        "string": "3  ! channel: [30,0]",
+        "part": "R",
+        "part_num": 2,
+        "order": -1
+      },
+      "R_3": {
+        "string": "4  ! channel: [30,-30]",
+        "part": "R",
+        "part_num": 3,
+        "order": -1
+      },
+      "R_4": {
+        "string": "5  ! channel: [0,30]",
+        "part": "R",
+        "part_num": 4,
+        "order": -1
+      },
+      "R_5": {
+        "string": "6  ! channel: [-30,30]",
+        "part": "R",
+        "part_num": 5,
+        "order": -1
+      },
+      "R_6": {
+        "string": "7  ! channel: [0,-30]",
+        "part": "R",
+        "part_num": 6,
+        "order": -1
+      },
+      "R_7": {
+        "string": "8  ! channel: [-30,0]",
+        "part": "R",
+        "part_num": 7,
+        "order": -1
+      },
+      "V_1": {
+        "string": "9 14 19  ! channel: [0,0]",
+        "part": "V",
+        "part_num": 1,
+        "order": -1
+      },
+      "V_2": {
+        "string": "12 17  ! channel: [30,0]",
+        "part": "V",
+        "part_num": 2,
+        "order": -1
+      },
+      "V_4": {
+        "string": "10 15  ! channel: [0,30]",
+        "part": "V",
+        "part_num": 4,
+        "order": -1
+      },
+      "V_6": {
+        "string": "11 16  ! channel: [0,-30]",
+        "part": "V",
+        "part_num": 6,
+        "order": -1
+      },
+      "V_7": {
+        "string": "13 18  ! channel: [-30,0]",
+        "part": "V",
+        "part_num": 7,
+        "order": -1
+      },
+      "RR_1": {
+        "string": "20 25 32  ! channel: [0,0]",
+        "part": "RR",
+        "part_num": 1,
+        "order": -2
+      },
+      "RR_2": {
+        "string": "21 28  ! channel: [30,0]",
+        "part": "RR",
+        "part_num": 2,
+        "order": -2
+      },
+      "RR_3": {
+        "string": "22 29 37 41  ! channel: [30,-30]",
+        "part": "RR",
+        "part_num": 3,
+        "order": -2
+      },
+      "RR_4": {
+        "string": "23 30  ! channel: [0,30]",
+        "part": "RR",
+        "part_num": 4,
+        "order": -2
+      },
+      "RR_5": {
+        "string": "24 31 38 43  ! channel: [-30,30]",
+        "part": "RR",
+        "part_num": 5,
+        "order": -2
+      },
+      "RR_6": {
+        "string": "26 33  ! channel: [0,-30]",
+        "part": "RR",
+        "part_num": 6,
+        "order": -2
+      },
+      "RR_7": {
+        "string": "27 34  ! channel: [-30,0]",
+        "part": "RR",
+        "part_num": 7,
+        "order": -2
+      },
+      "RR_8": {
+        "string": "35  ! channel: [31,-31]",
+        "part": "RR",
+        "part_num": 8,
+        "order": -2
+      },
+      "RR_9": {
+        "string": "36  ! channel: [31,31]",
+        "part": "RR",
+        "part_num": 9,
+        "order": -2
+      },
+      "RR_10": {
+        "string": "39  ! channel: [-31,-31]",
+        "part": "RR",
+        "part_num": 10,
+        "order": -2
+      },
+      "RR_11": {
+        "string": "40  ! channel: [-31,31]",
+        "part": "RR",
+        "part_num": 11,
+        "order": -2
+      },
+      "RR_12": {
+        "string": "42  ! channel: [30,30]",
+        "part": "RR",
+        "part_num": 12,
+        "order": -2
+      },
+      "RR_13": {
+        "string": "44  ! channel: [-30,-30]",
+        "part": "RR",
+        "part_num": 13,
+        "order": -2
+      },
+      "RV_1": {
+        "string": "45 50 61 72 83 88  ! channel: [0,0]",
+        "part": "RV",
+        "part_num": 1,
+        "order": -2
+      },
+      "RV_2": {
+        "string": "48 53 55 66 77 89  ! channel: [30,0]",
+        "part": "RV",
+        "part_num": 2,
+        "order": -2
+      },
+      "RV_3": {
+        "string": "56 67 78 90  ! channel: [30,-30]",
+        "part": "RV",
+        "part_num": 3,
+        "order": -2
+      },
+      "RV_4": {
+        "string": "46 51 57 68 79 91  ! channel: [0,30]",
+        "part": "RV",
+        "part_num": 4,
+        "order": -2
+      },
+      "RV_5": {
+        "string": "58 69 80 92  ! channel: [-30,30]",
+        "part": "RV",
+        "part_num": 5,
+        "order": -2
+      },
+      "RV_6": {
+        "string": "47 52 59 70 81 93  ! channel: [0,-30]",
+        "part": "RV",
+        "part_num": 6,
+        "order": -2
+      },
+      "RV_7": {
+        "string": "49 54 60 71 82 94  ! channel: [-30,0]",
+        "part": "RV",
+        "part_num": 7,
+        "order": -2
+      },
+      "RV_8": {
+        "string": "63 74 85  ! channel: [31,-31]",
+        "part": "RV",
+        "part_num": 8,
+        "order": -2
+      },
+      "RV_9": {
+        "string": "62 73 84  ! channel: [31,31]",
+        "part": "RV",
+        "part_num": 9,
+        "order": -2
+      },
+      "RV_10": {
+        "string": "65 76 87  ! channel: [-31,-31]",
+        "part": "RV",
+        "part_num": 10,
+        "order": -2
+      },
+      "RV_11": {
+        "string": "64 75 86  ! channel: [-31,31]",
+        "part": "RV",
+        "part_num": 11,
+        "order": -2
+      },
+      "VV_1": {
+        "string": "95 104 113 122 131 140 145 150 151  ! channel: [0,0]",
+        "part": "VV",
+        "part_num": 1,
+        "order": -2
+      },
+      "VV_2": {
+        "string": "100 109 118 127 136 143 148  ! channel: [30,0]",
+        "part": "VV",
+        "part_num": 2,
+        "order": -2
+      },
+      "VV_4": {
+        "string": "96 105 114 123 132 141 146  ! channel: [0,30]",
+        "part": "VV",
+        "part_num": 4,
+        "order": -2
+      },
+      "VV_6": {
+        "string": "97 106 115 124 133 142 147  ! channel: [0,-30]",
+        "part": "VV",
+        "part_num": 6,
+        "order": -2
+      },
+      "VV_7": {
+        "string": "103 112 121 130 139 144 149  ! channel: [-30,0]",
+        "part": "VV",
+        "part_num": 7,
+        "order": -2
+      },
+      "VV_8": {
+        "string": "99 108 117 126 135  ! channel: [31,-31]",
+        "part": "VV",
+        "part_num": 8,
+        "order": -2
+      },
+      "VV_9": {
+        "string": "98 107 116 125 134  ! channel: [31,31]",
+        "part": "VV",
+        "part_num": 9,
+        "order": -2
+      },
+      "VV_10": {
+        "string": "102 111 120 129 138  ! channel: [-31,-31]",
+        "part": "VV",
+        "part_num": 10,
+        "order": -2
+      },
+      "VV_11": {
+        "string": "101 110 119 128 137  ! channel: [-31,31]",
+        "part": "VV",
+        "part_num": 11,
+        "order": -2
+      }
+    },
+    "name": "HTO2P"
+  },
+  "warmup": {
+    "ncores": 1,
+    "ncall_start": 500,
+    "niter": 2,
+    "min_increment_steps": 2,
+    "max_increment_steps": 7,
+    "fac_increment": 4.0,
+    "max_chi2dof": 1.5,
+    "max_err_rel_var": 0.4,
+    "scaling_window": 0.4
+  },
+  "production": {
+    "ncores": 1,
+    "ncall_start": 100,
+    "niter": 2,
+    "penalty_wrt_warmup": 0.1,
+    "fac_merge_trigger": 1.5
+  },
+  "merge": {
+    "trim_threshold": 3.5,
+    "trim_max_fraction": 0.01,
+    "k_scan_nsteps": 2,
+    "k_scan_maxdev_steps": 0.5
+  }
+}

@@ -1,0 +1,54 @@
+!###############################################!
+!##                                           ##!
+!##     _  ___  ____   ____     ____________  ##!
+!##    / |/ / |/ / /  / __ \__ / / __/_  __/  ##!
+!##   /    /    / /__/ /_/ / // / _/  / /     ##!
+!##  /_/|_/_/|_/____/\____/\___/___/ /_/      ##!
+!##                                           ##!
+!##                                RUNCARD    ##!
+!###############################################!
+
+
+PROCESS  wpj
+  collider = pp
+  sqrts = 8000
+END_PROCESS
+
+
+RUN  example_run_Wp_8TeV
+  PDF = NNPDF31_nnlo_as_0118[0]
+  scale_coefficients = .true.
+  multi_channel = 2
+  iseed   = 1
+  production = 123[auto]
+END_RUN
+
+
+PARAMETERS
+END_PARAMETERS
+
+
+SELECTORS
+  select  ptw  min=10
+END_SELECTORS
+
+
+HISTOGRAMS
+
+  yw  min=-2.5  max=+2.5  nbins=10
+
+  ptw  min=0  max=100  nbins=100
+
+END_HISTOGRAMS
+
+
+SCALES
+
+  mur =  100  muf = 100
+
+END_SCALES
+
+
+CHANNELS
+  ${chan}
+END_CHANNELS

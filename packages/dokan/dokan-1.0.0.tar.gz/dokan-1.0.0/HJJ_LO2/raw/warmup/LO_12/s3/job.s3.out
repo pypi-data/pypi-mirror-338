@@ -1,0 +1,189 @@
+ Input seed: 3                   
+ set_smin_run: resetting smin
+ set_smin_run: smin =    0.0000000000000000     
+ registerSweep_run:           1        8000           2
+ set_mass_param: H   1000.0000000000000     
+ set_smin_run: smin =    6.3799724925729003E-003
+ set_smin_run: smin =    1000000.0000000000     
+ registered a jet selector: jets_pt
+ registered an `njets` selector
+ we will therefore switch to the inclusive case and
+ this will potentially override the global settings for
+  > qinvert  F
+  > lower      2.0000000000000000      T
+  > upper      0.0000000000000000      F
+ > minnjets:            2
+ <sel>
+ name: pth                                        2
+ <sel>
+ name: ptj1                                       2
+ set_smin_run: smin =    1000000.0000000000     
+ set_smin_run: smin =    1000000.0000000000     
+ nSubF_scl =            1
+ nSubF_scl =            1
+ nSubF_scl =            1
+ nSubF_scl =            1
+ nSubF_scl =            1
+ nSubF_scl =            1
+ nSubF_scl =            1
+ init_scl: only warmup run -> switch off all but the central scale
+ parse_hist_io: only warmup run => skipping HISTOGRAMS parsing...
+ logfile: >HJJ.HJJ_LO2.s3.log                                                                                                              <
+    _  ___  ____   ____     ____________
+   / |/ / |/ / /  / __ \__ / / __/_  __/
+  /    /    / /__/ /_/ / // / _/  / /   
+ /_/|_/_/|_/____/\____/\___/___/ /_/    
+                                        
+ ******************************************************************************************************
+ *                                                                                                    *
+ *  NNLOJET: A multiprocess parton level event generator                                              *
+ *                                                                                                    *
+ ******************************************************************************************************
+ * Active bosons:                                                                                     *
+ *   Z0/gamma boson                                                                                   *
+ *                                                                                                    *
+ *   > List of active processes <                                                                     *
+ *                                                                                                    *
+ *   id  partons                  Matrix Element                Subtraction                           *
+ *                                                                                                    *
+ *   23  q q to q q ph1 ph2       D0g0H(1,3,2,4,5,6)                                                  *
+ *                                                                                                    *
+ ******************************************************************************************************
+ *                                                                                                    *
+ *   > Input technical parameters <                                                                   *
+ *                                                                                                    *
+ * y0                                                          1.00000000000000003643E-10             *
+ * including angular rotations                                                                        *
+ * no phase space caching                                                                             *
+ *                                                                                                    *
+ *                                                                                                    *
+ *   > Input physics parameters <                                                                     *
+ *                                                                                                    *
+ * Z boson mass                                                9.11876000000000033197E+01             *
+ * Z boson width                                               2.49520000000000008455E+00             *
+ * W boson mass                                                8.03790000000000048885E+01             *
+ * W boson width                                               2.08499999999999996447E+00             *
+ * H boson mass                                                1.00000000000000000000E+03             *
+ * H boson width                                               4.02964385200000035220E-03             *
+ * sin^2(thw)                                                  2.23013225326783359748E-01             *
+ * 1/alpha                                                     1.32184179137044878871E+02             *
+ *                                                                                                    *
+ *   > Input kinematical parameters <                                                                 *
+ *                                                                                                    *
+ * Process: HJJ                                                                                       *
+ *     sqrt(s) = ******                                                                               *
+ *       > beam1 =         2212 [6500.0 GeV]                                                          *
+ *       > beam2 =         2212 [6500.0 GeV]                                                          *
+ *                                                                                                    *
+ *     Run: = HJJ_LO2                                                                                 *
+ *     PDF1 = PDF4LHC15_nnlo_30 [mem = 0]                                                             *
+ *     MatchObs = OFF                                                                                 *
+ *                                                                                                    *
+ *   > Sweeps <                                                                                       *
+ *                                                                                                    *
+ resetCurrentSweep_run
+ loadNextSweep_run:            1
+ *       warmup = 8000[2]                                                                             *
+ *                                                                                                    *
+ *   > Scales <                                                                                       *
+ *                                                                                                    *
+ *   ID                           muR                                     muF                         *
+ *   1                  1.000E+03 GeV                           1.000E+03 GeV                         *
+ *                                                                                                    *
+ *   > Selectors <                                                                                    *
+ *                                                                                                    *
+ * T1 accept:        0.01 <= pth                                                                      *
+ * T1 accept:        0.01 <= ptj1                                                                     *
+ * T0 accept:        2.00 <= njets                                                                    *
+ *                                                                                                    *
+ *   > Jet settings <                                                                                 *
+ *                                                                                                    *
+ *   njets:            2 (inclusive)                                                                  *
+ *   jet algorithm:   anti-kt    R = 0.10                                                             *
+ *   accept:        0.01 <= jets_pt                                                                   *
+ *                                                                                                    *
+ *   > Histograms <                                                                                   *
+ *                                                                                                    *
+ *   no histogram registered so far                                                                   *
+ *                                                                                                    *
+ ******************************************************************************************************
+ resetCurrentSweep_run
+ loadNextSweep_run:            1
+ Repository id: 1.0.0
+ resetCurrentSweep_run
+ loadNextSweep_run:            1
+ 
+ ------------------------------------------------
+ loadNextContrib_chan: loaded LO ...
+ init_multi_chan -- hasGroups_multi_chan
+ WARNING: more groups than channels?
+ init_multi_chan:
+ # of channels:            1
+ # of groups:              1
+ sorted_ichan          23
+ average channels per group           1
+           1           1 >          23   1.0000000000000000     
+ group_multi_chan           1
+ warmup...
+   !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+   !!!  ATTENTION - warmup numbers using multi-channel  !!!
+   !!!              *not* suitable for validation       !!!
+   !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+  > > Entering legacy wrapper for NNLOJET with Vegas! < < 
+ Entering New Vegas
+ Reading grid from HJJ.HJJ_LO2.y1.00E-10.LO
+ readFromFile_multi_chan: reading in: HJJ.HJJ_LO2.y1.00E-10.LO_channels
+ sorted_ichan          23
+ average channels per group           1
+           1           1 >          23   1.0000000000000000     
+ group_multi_chan           1
+Commencing iteration n 1
+Number of events: 8000
+ > > Current progress: 5% > > Current progress: 10% > > Current progress: 15% > > Current progress: 20% > > Current progress: 25% > > Current progress: 30% > > Current progress: 35% > > Current progress: 40% > > Current progress: 45% > > Current progress: 50% > > Current progress: 55% > > Current progress: 60% > > Current progress: 65% > > Current progress: 70% > > Current progress: 75% > > Current progress: 80% > > Current progress: 85% > > Current progress: 90% > > Current progress: 95% > > Current progress: 100%
+************* Integration by Vegas (iteration   1) **************
+*                                                               *
+*  integral  = -.35205054E-02   accum. integral = -.35205054E-02*
+*  std. dev. = 0.36871496E-03   accum. std. dev = 0.36871496E-03*
+*                                                               *
+**************   chi**2/iteration =  0.000       ****************
+
+ sorted_ichan          23
+ average channels per group           1
+           1           1 >          23   1.0000000000000000     
+ group_multi_chan           1
+ *   id  partons                  Matrix Element                Subtraction                           *
+ *                                                                                                    *
+ digest_multi_chan          23          23 >        8000
+ * 23    q q to q q ph1 ph2            -3.52050539E-03 +/-       3.68714962E-04 (  100.000%)8000      *
+ full  channel:  -3.5205053912695829E-003 +/-   3.6871496163368053E-004
+ naive channel:  -3.5205053912695829E-003 +/-   3.6871496163368053E-004
+ Writing grid to HJJ.HJJ_LO2.y1.00E-10.LO
+ writeToFile_multi_chan: HJJ.HJJ_LO2.y1.00E-10.LO_channels
+Commencing iteration n 2
+Number of events: 8000
+ > > Current progress: 5% > > Current progress: 10% > > Current progress: 15% > > Current progress: 20% > > Current progress: 25% > > Current progress: 30% > > Current progress: 35% > > Current progress: 40% > > Current progress: 45% > > Current progress: 50% > > Current progress: 55% > > Current progress: 60% > > Current progress: 65% > > Current progress: 70% > > Current progress: 75% > > Current progress: 80% > > Current progress: 85% > > Current progress: 90% > > Current progress: 95% > > Current progress: 100%
+************* Integration by Vegas (iteration   2) **************
+*                                                               *
+*  integral  = -.43222240E-02   accum. integral = -.39616390E-02*
+*  std. dev. = 0.33335700E-03   accum. std. dev = 0.24727695E-03*
+*                                                               *
+**************   chi**2/iteration =  2.576       ****************
+
+ sorted_ichan          23
+ average channels per group           1
+           1           1 >          23   1.0000000000000000     
+ group_multi_chan           1
+ *   id  partons                  Matrix Element                Subtraction                           *
+ *                                                                                                    *
+ digest_multi_chan          23          23 >        8000
+ * 23    q q to q q ph1 ph2            -4.32222405E-03 +/-       3.33356996E-04 (  100.000%)8000      *
+ full  channel:  -4.3222240463043401E-003 +/-   3.3335699646044414E-004
+ naive channel:  -4.3222240463043401E-003 +/-   3.3335699646044414E-004
+ Writing grid to HJJ.HJJ_LO2.y1.00E-10.LO
+ writeToFile_multi_chan: HJJ.HJJ_LO2.y1.00E-10.LO_channels
+   !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+   !!!  ATTENTION - warmup numbers using multi-channel  !!!
+   !!!              *not* suitable for validation       !!!
+   !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+ Elapsed time =   0.327000     seconds 

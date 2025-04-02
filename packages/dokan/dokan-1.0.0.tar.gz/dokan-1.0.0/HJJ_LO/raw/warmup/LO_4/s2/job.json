@@ -1,0 +1,53 @@
+{
+  "exe": "/Users/alex/Work/Programs/nnlojet_release/install/bin/NNLOJET",
+  "mode": 1,
+  "policy": 1,
+  "policy_settings": {
+    "max_runtime": 300.0
+  },
+  "ncall": 2000,
+  "niter": 2,
+  "input_files": [
+    "job.run",
+    "HJJ.HJJ_LO.y1.00E-10.LO_channels",
+    "HJJ.HJJ_LO.y1.00E-10.LO_channels.txt",
+    "HJJ.HJJ_LO.y1.00E-10.LO",
+    "HJJ.HJJ_LO.y1.00E-10.LO_iterations.txt"
+  ],
+  "output_files": [
+    "HJJ.HJJ_LO.y1.00E-10.LO_channels",
+    "HJJ.HJJ_LO.y1.00E-10.LO_channels.txt",
+    "HJJ.HJJ_LO.s2.log",
+    "job.s2.out",
+    "HJJ.HJJ_LO.y1.00E-10.LO",
+    "HJJ.HJJ_LO.y1.00E-10.LO_iterations.txt",
+    "job.s2.err"
+  ],
+  "jobs": {
+    "15": {
+      "seed": 2,
+      "iterations": [
+        {
+          "iteration": 1,
+          "result": 775.06611,
+          "result_acc": 775.06611,
+          "error": 339.62846,
+          "error_acc": 339.62846,
+          "chi2dof": 0.0
+        },
+        {
+          "iteration": 2,
+          "result": 796.97944,
+          "result_acc": 780.2478,
+          "error": 610.29186,
+          "error_acc": 296.76941,
+          "chi2dof": 0.0009747
+        }
+      ],
+      "elapsed_time": 0.46,
+      "result": 780.2478,
+      "error": 296.76941,
+      "chi2dof": 0.0009747
+    }
+  }
+}

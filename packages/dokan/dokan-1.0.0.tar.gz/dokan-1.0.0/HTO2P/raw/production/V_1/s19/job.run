@@ -1,0 +1,71 @@
+!###############################################!
+!##                                           ##!
+!##     _  ___  ____   ____     ____________  ##!
+!##    / |/ / |/ / /  / __ \__ / / __/_  __/  ##!
+!##   /    /    / /__/ /_/ / // / _/  / /     ##!
+!##  /_/|_/_/|_/____/\____/\___/___/ /_/      ##!
+!##                                           ##!
+!##                                RUNCARD    ##!
+!###############################################!
+
+
+PROCESS  HTO2P
+  collider = pp  sqrts = 8000
+  jet = antikt[0.5]  jet_exclusive = .false.  jet_recomb = V4
+  decay_type = 3
+END_PROCESS
+
+
+RUN  HTO2P
+  PDF = NNPDF31_nnlo_as_0118[0]
+  tcut = 1d-8
+  angular_average  = .false.
+  production = 1034576[2]
+  
+END_RUN
+
+
+PARAMETERS
+  MASS[H]  = 125
+  WIDTH[H] = 0.004165
+  MASS[Z]  = 91.1876
+  WIDTH[Z] = 2.4952
+  MASS[W]  = 80.398
+  WIDTH[W] = 2.1054
+  MASS[t]  = 173.2
+  WIDTH[t] = 1.41
+  MASS[b]  = 4.18
+  MASS[c]  = 1.275
+  MASS[tau]  = 1.777
+END_PARAMETERS
+
+
+SELECTORS
+END_SELECTORS
+
+
+
+HISTOGRAMS
+	pth         nbins = 60    min = 0    max = 600d0
+        yh          nbins = 44    min = -4.4   max = 4.4
+END_HISTOGRAMS
+
+
+SCALES
+
+        muf =        125     mur =        125
+	muf =  0.5 * 125     mur =  0.5 * 125
+	muf = 0.25 * 125     mur = 0.25 * 125
+	muf =  0.5 * 125     mur =        125
+	muf =        125     mur =  0.5 * 125
+	muf =  0.5 * 125     mur = 0.25 * 125
+	muf = 0.25 * 125     mur =  0.5 * 125
+
+END_SCALES
+
+
+CHANNELS   
+  9 14 19  ! channel: [0,0]
+END_CHANNELS
+
+

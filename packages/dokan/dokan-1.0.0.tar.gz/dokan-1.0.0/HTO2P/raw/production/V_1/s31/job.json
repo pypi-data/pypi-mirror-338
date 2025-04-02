@@ -1,0 +1,25 @@
+{
+  "exe": "/Users/alex/Work/Programs/nnlojet_release/install/bin/NNLOJET",
+  "mode": 2,
+  "policy": 1,
+  "policy_settings": {
+    "max_runtime": 180.0
+  },
+  "ncall": 1078647,
+  "niter": 2,
+  "input_files": [
+    "job.run",
+    "HTO2P.HTO2P.y1.00E-08.V"
+  ],
+  "output_files": [
+    "HTO2P.HTO2P.s31.log",
+    "job.s31.err",
+    "job.s31.out"
+  ],
+  "jobs": {
+    "129": {
+      "seed": 31,
+      "iterations": []
+    }
+  }
+}

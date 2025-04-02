@@ -1,0 +1,56 @@
+!###############################################!
+!##                                           ##!
+!##     _  ___  ____   ____     ____________  ##!
+!##    / |/ / |/ / /  / __ \__ / / __/_  __/  ##!
+!##   /    /    / /__/ /_/ / // / _/  / /     ##!
+!##  /_/|_/_/|_/____/\____/\___/___/ /_/      ##!
+!##                                           ##!
+!##                                RUNCARD    ##!
+!###############################################!
+
+
+PROCESS  wp
+  collider = pp
+  sqrts = 8000
+END_PROCESS
+
+
+RUN  example_template
+  PDF = NNPDF31_nnlo_as_0118[0]
+  scale_coefficients = .true.
+  multi_channel = 2
+  ${sweep}
+  ${run}
+END_RUN
+
+
+PARAMETERS
+END_PARAMETERS
+
+
+SELECTORS
+END_SELECTORS
+
+
+HISTOGRAMS > sing
+
+  yw  min=-2.5  max=+2.5  nbins=10
+  ptlp  min=0   max=60  nbins=30
+  ptlp > ptlp_m  min=0   max=60  nbins=30  cumulant = -1
+  ptlp > ptlp_p  min=0   max=60  nbins=30  cumulant = +1
+
+END_HISTOGRAMS
+
+
+SCALES
+
+  mur =  100  muf = 100
+
+END_SCALES
+
+
+CHANNELS  ${channels_region}
+  ${channels}
+END_CHANNELS
+
+${toplevel}

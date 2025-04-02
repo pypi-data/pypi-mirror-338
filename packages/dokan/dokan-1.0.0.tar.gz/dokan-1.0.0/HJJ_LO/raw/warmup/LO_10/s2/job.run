@@ -1,0 +1,69 @@
+!###############################################!
+!##                                           ##!
+!##     _  ___  ____   ____     ____________  ##!
+!##    / |/ / |/ / /  / __ \__ / / __/_  __/  ##!
+!##   /    /    / /__/ /_/ / // / _/  / /     ##!
+!##  /_/|_/_/|_/____/\____/\___/___/ /_/      ##!
+!##                                           ##!
+!##                                RUNCARD    ##!
+!###############################################!
+
+
+PROCESS  HJJ
+  collider = pp
+  sqrts = 13000
+  jet = antikt[0.1]  jet_exclusive = .false.  jet_recomb = V4
+END_PROCESS
+
+
+RUN HJJ_LO
+  PDF = PDF4LHC15_nnlo_30[0]
+  tcut = 1d-10  ! <-- to be adjusted in case too large
+  multi_channel = -3
+  warmup = 2000[2]
+  
+END_RUN
+
+
+PARAMETERS
+  MASS[H] = 1000
+END_PARAMETERS
+
+
+SELECTORS
+  select  jets_pt  min = 0.01
+  select  njets  min = 2
+END_SELECTORS
+
+
+HISTOGRAMS
+
+  COMPOSITE > pt_diff  min=1d-2  max=100  nbins=40  binning=log
+    ptj1  fac = +1
+    pth   fac = -1
+  END_COMPOSITE
+
+  !> individual distributions for checks
+  ptj1  min=1d-2  max=100  nbins=40  binning=log
+  pth   min=1d-2  max=100  nbins=40  binning=log
+
+END_HISTOGRAMS
+
+
+SCALES
+  mur = 1   * 1000  muf = 1   * 1000
+  mur = 2   * 1000  muf = 2   * 1000
+  mur = 0.5 * 1000  muf = 0.5 * 1000
+  mur = 2   * 1000  muf = 1   * 1000
+  mur = 1   * 1000  muf = 2   * 1000
+  mur = 0.5 * 1000  muf = 1   * 1000
+  mur = 1   * 1000  muf = 0.5 * 1000
+END_SCALES
+
+
+CHANNELS  
+  20  ! channel: [-31,-31]
+END_CHANNELS
+
+
+
