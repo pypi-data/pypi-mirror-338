@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+SpatialZoomer/SpatialZoomer.py
+SpatialZoomer/__init__.py
+SpatialZoomer.egg-info/PKG-INFO
+SpatialZoomer.egg-info/SOURCES.txt
+SpatialZoomer.egg-info/dependency_links.txt
+SpatialZoomer.egg-info/top_level.txt

@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: SpatialZoomer
+Version: 0.0.0
+Summary: SpatialZoomer
+Home-page: https://github.com/Li-Xinqi/SpatialZoomer.git
+Author: Xinqi Li
+Author-email: lxq19@mails.tsinghua.edu.cn
+License: MIT License
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# SpatialZoomer
+## System requirements
+
+Tested System Configuration:
+``` yaml
+OS: Linux 3.10.0-1160.el7.x86_64
+Python Version: 3.9.19
+Processor: x86_64
+CPU Cores: 36
+Logical CPUs: 36
+Total RAM (GB): 251.38
+```
