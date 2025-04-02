@@ -1,0 +1,61 @@
+Metadata-Version: 2.4
+Name: gpsr
+Version: 0.1.0
+Summary: Phase space reconstruction using differentiable beam dynamics and generative beam representations
+Author: Ryan Roussel, Juan Pablo Gonzalez Aguilera
+Project-URL: Homepage, https://github.com/roussel-ryan/gpsr
+Classifier: Development Status :: 4 - Beta
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Scientific/Engineering
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Requires-Dist: lightning
+Requires-Dist: matplotlib
+Requires-Dist: cheetah-accelerator>=0.7.1
+Requires-Dist: tensorboard
+Requires-Dist: scipy
+Requires-Dist: scikit-image
+Provides-Extra: dev
+Requires-Dist: pytest; extra == "dev"
+Requires-Dist: pytest-cov; extra == "dev"
+Requires-Dist: jupyter; extra == "dev"
+Requires-Dist: pre-commit; extra == "dev"
+Provides-Extra: doc
+Requires-Dist: mkdocs; extra == "doc"
+Requires-Dist: mkdocs-jupyter; extra == "doc"
+Requires-Dist: mkdocs-macros-plugin; extra == "doc"
+Requires-Dist: mkdocs-material; extra == "doc"
+Requires-Dist: mkdocstrings; extra == "doc"
+Requires-Dist: mkdocstrings-python; extra == "doc"
+
+Generative Phase Space Reconstruction (GPSR)
+====
+
+Flexible reconstruction of beam distributions from experimental measurements.
+
+The goal of this package is to provide software necessary to reconstruct
+phase space distributions from experimental data. This work is based on
+the following publications:
+
+[Phase Space Reconstruction from Accelerator Beam Measurements Using Neural Networks and Differentiable Simulations](https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.130.145001)
+
+[Efficient six-dimensional phase space reconstructions from experimental measurements using generative machine learning](https://journals.aps.org/prab/abstract/10.1103/PhysRevAccelBeams.27.094601)
+
+<div align="center">
+  <img src="docs/assets/6d_cartoon.png", width="1000">
+</div>
+
+## Installation
+Using `pip`
+
+```shell
+git clone https://github.com/roussel-ryan/gpsr.git
+cd gpsr
+pip install -e .
+```
+or for development,
+
+```shell
+pip install -e ".[dev]"
+```
