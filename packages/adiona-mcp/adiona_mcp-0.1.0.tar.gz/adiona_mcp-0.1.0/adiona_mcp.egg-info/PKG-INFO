@@ -1,0 +1,8 @@
+Metadata-Version: 2.4
+Name: adiona-mcp
+Version: 0.1.0
+Summary: Adiona API wrapper service for MCP
+Author-email: Your Name <biki.das@bookingjini.com>
+Requires-Python: >=3.7
+Requires-Dist: flask>=2.0.0
+Requires-Dist: requests>=2.26.0

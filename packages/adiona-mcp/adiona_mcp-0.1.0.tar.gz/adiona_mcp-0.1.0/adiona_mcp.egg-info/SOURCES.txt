@@ -1,0 +1,7 @@
+pyproject.toml
+adiona_mcp.egg-info/PKG-INFO
+adiona_mcp.egg-info/SOURCES.txt
+adiona_mcp.egg-info/dependency_links.txt
+adiona_mcp.egg-info/requires.txt
+adiona_mcp.egg-info/top_level.txt
+app/__init__.py
