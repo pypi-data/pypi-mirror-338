@@ -1,0 +1,12 @@
+LICENSE.txt
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/rubu.egg-info/PKG-INFO
+src/rubu.egg-info/SOURCES.txt
+src/rubu.egg-info/dependency_links.txt
+src/rubu.egg-info/top_level.txt
+src/temas/__init__.py
+src/temas/temas.py
+tests/test_temas.py
