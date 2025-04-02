@@ -1,0 +1,14 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+xpw_locker/__init__.py
+xpw_locker/attribute.py
+xpw_locker/command.py
+xpw_locker.egg-info/PKG-INFO
+xpw_locker.egg-info/SOURCES.txt
+xpw_locker.egg-info/dependency_links.txt
+xpw_locker.egg-info/entry_points.txt
+xpw_locker.egg-info/requires.txt
+xpw_locker.egg-info/top_level.txt
+xpw_locker.egg-info/zip-safe
