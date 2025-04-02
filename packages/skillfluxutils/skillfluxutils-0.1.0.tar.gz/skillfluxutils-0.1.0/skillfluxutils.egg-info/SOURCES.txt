@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+skillfluxutils/__init__.py
+skillfluxutils/parser.py
+skillfluxutils.egg-info/PKG-INFO
+skillfluxutils.egg-info/SOURCES.txt
+skillfluxutils.egg-info/dependency_links.txt
+skillfluxutils.egg-info/top_level.txt
