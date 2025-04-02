@@ -1,0 +1,67 @@
+[build-system]
+requires = ["hatchling", "hatch-vcs"]
+build-backend = "hatchling.build"
+
+[project]
+name = "plothist_utils"
+description = "Utilities for the plothist package"
+authors = [
+    {name = "Cyrille Praz", email = "cyrraz.code@protonmail.com"},
+    {name = "Tristan Fillinger", email = "tristan.github@gmail.com"},
+    ]
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+    "numpy>=1.14.5",
+]
+dynamic = ["version"]
+
+[project.urls]
+Homepage = "https://github.com/0ctagon/plothist_utils"
+Documentation = "https://plothist.readthedocs.io/"
+"Bug Tracker" = "https://github.com/0ctagon/plothist_utils/issues"
+
+[tool.codespell]
+skip = '*.pdf,./test/*,*.svg,./docs/html/*'
+quiet-level = 3
+write-changes = true
+
+[dependency-groups]
+dev = [
+    "pre-commit>=4.1.0",
+]
+test = [
+    "pytest>=8.3.5",
+    "pytest-cov>=4.1.0",
+    "matplotlib>=3.0.0",
+]
+
+
+[tool.hatch]
+version.source = "vcs"
+build.hooks.vcs.version-file = "src/plothist_utils/_version.py"
+
+[tool.ruff.lint]
+extend-select = [
+    "B",           # flake8-bugbear
+    "I",           # isort
+    "C4",          # flake8-comprehensions
+    "ISC",         # flake8-implicit-str-concat
+    "G",           # flake8-logging-format
+    "PGH",         # pygrep-hooks
+    "PIE",         # flake8-pie
+    "RUF",         # Ruff-specific
+    "UP",          # pyupgrade
+    "YTT",         # flake8-2020
+    "EXE",         # flake8-executable
+    "NPY",         # NumPy specific rules
+    "TID251",      # flake8-tidy-imports
+    "SIM",         # flake8-simplify
+    "RET",         # flake8-return
+    "PD",          # pandas-vet
+]
+ignore = [
+    "E402",  # module level import not at top of file
+    "NPY002",  # Replace legacy `np.random` call with `np.random.Generator`
+    "PD901",  # Avoid using the generic variable name `df` for DataFrames
+]
