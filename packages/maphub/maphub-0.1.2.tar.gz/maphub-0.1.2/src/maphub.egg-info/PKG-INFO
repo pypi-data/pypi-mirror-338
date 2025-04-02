@@ -1,0 +1,28 @@
+Metadata-Version: 2.4
+Name: maphub
+Version: 0.1.2
+Summary: A client wrapper for the MapHub API
+Author-email: MapHub <maphub@meteory.eu>
+Requires-Python: >=3.12
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests>=2.25.1
+Provides-Extra: dev
+Requires-Dist: pytest>=7.0; extra == "dev"
+Requires-Dist: black>=22.0; extra == "dev"
+Dynamic: license-file
+
+# maphub-client
+
+## Usage
+
+### CLI
+Coming soon...
+
+### Python package
+```python 
+from maphub import MapHubClient
+
+client = MapHubClient(api_key="your-api-key")
+response = client.get_map(map_id="...")
+```
