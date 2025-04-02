@@ -1,0 +1,2 @@
+[opsbox.plugins]
+opsbox_ec2_provider = efs_provider.efs_provider:efsProvider

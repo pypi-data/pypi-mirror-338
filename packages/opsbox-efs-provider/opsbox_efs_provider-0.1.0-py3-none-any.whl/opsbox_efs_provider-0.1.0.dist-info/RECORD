@@ -1,0 +1,9 @@
+efs_provider/efs_provider.py,sha256=IG_o4KpuGuG0OMHHJoVwGWsbBAqFyUfVrHEN4saj7dU,9006
+efs_provider/manifest.toml,sha256=EpQe30H5zTQ9PYh1SZkL54MuOfdGlIebZQOMC8GwW1c,110
+efs_provider/test_efs_provider.py,sha256=az7K7CmqnLUsyEItksNP_HCzJoR5EiOrrF7sXYUuK4s,3398
+opsbox_efs_provider-0.1.0.dist-info/licenses/LICENCE.txt,sha256=hs-WVkefHtuCJFuYX0oswNUDuUV2br7aQmnGCzB2ma4,16725
+opsbox_efs_provider-0.1.0.dist-info/METADATA,sha256=MJ5qZuIjQkQnxLLac9BLhMz1l5G4NN3zgdpBcKSz2l4,350
+opsbox_efs_provider-0.1.0.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+opsbox_efs_provider-0.1.0.dist-info/entry_points.txt,sha256=GwhwjbycXYrctjfp-vZuzBfI4DHoi2hHwb-4XBORTwQ,77
+opsbox_efs_provider-0.1.0.dist-info/top_level.txt,sha256=tbPQtu6iIcwZr-iv2SW2SEoKcHBJNHknbhFoQbjSEbA,13
+opsbox_efs_provider-0.1.0.dist-info/RECORD,,
