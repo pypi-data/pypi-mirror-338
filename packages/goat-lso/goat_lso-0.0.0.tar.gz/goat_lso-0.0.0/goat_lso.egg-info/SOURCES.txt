@@ -1,0 +1,8 @@
+LICENSE.txt
+README.md
+pyproject.toml
+goat_lso.egg-info/PKG-INFO
+goat_lso.egg-info/SOURCES.txt
+goat_lso.egg-info/dependency_links.txt
+goat_lso.egg-info/top_level.txt
+placeholder/__init__.py
