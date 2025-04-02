@@ -1,0 +1,5 @@
+gitpython
+
+[test]
+pytest
+pytest-cov
