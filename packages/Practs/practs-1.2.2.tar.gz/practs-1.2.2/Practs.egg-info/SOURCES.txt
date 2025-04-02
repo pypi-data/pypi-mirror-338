@@ -1,0 +1,10 @@
+LICENSE
+pyproject.toml
+setup.py
+Practs.egg-info/PKG-INFO
+Practs.egg-info/SOURCES.txt
+Practs.egg-info/dependency_links.txt
+Practs.egg-info/top_level.txt
+my_pack/__init__.py
+my_pack/my_mod.py
+my_pack/pract1.py
