@@ -1,0 +1,5 @@
+setup.py
+trip_pypi_prod.egg-info/PKG-INFO
+trip_pypi_prod.egg-info/SOURCES.txt
+trip_pypi_prod.egg-info/dependency_links.txt
+trip_pypi_prod.egg-info/top_level.txt
