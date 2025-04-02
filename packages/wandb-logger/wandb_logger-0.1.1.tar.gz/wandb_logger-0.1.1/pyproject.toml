@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=61.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "wandb-logger"
+version = "0.1.1"
+description = "A command-line tool for managing Weights & Biases (W&B) training logs"
+authors = [
+    {name = "SabaPivot", email = "careforme.dropout@gmail.com"},
+]
+dependencies = [
+    "click>=8.0.0",
+    "wandb>=0.12.0",
+    "rich>=10.0.0",
+    "pandas>=1.0.0",
+    "matplotlib>=3.0.0",
+    "seaborn>=0.11.0",
+]
+requires-python = ">=3.8"
+readme = "README.md"
+license = {text = "MIT"}
+
+[project.urls]
+Homepage = "https://github.com/SabaPivot/wandb-logger"
+Repository = "https://github.com/SabaPivot/wandb-logger.git"
+
+[project.scripts]
+wandb-logger = "wandb_logger_app.main:cli" 
