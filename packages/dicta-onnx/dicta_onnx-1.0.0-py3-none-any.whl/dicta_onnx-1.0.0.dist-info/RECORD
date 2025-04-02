@@ -1,0 +1,5 @@
+dicta_onnx/__init__.py,sha256=_3COLm0s0u8nfAO7dO_W_q-jU7NG5ai3QH36p0FFq1U,1547
+dicta_onnx/model.py,sha256=Q69rEQXXxZ1BYTklTurMpsznceVF1cw_pZTK3DvAWpM,4450
+dicta_onnx-1.0.0.dist-info/METADATA,sha256=NGE99ca4i_PKTbXDBhN7Pqo9oAZt2A-Z8OjFTsUpt5E,1402
+dicta_onnx-1.0.0.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+dicta_onnx-1.0.0.dist-info/RECORD,,
