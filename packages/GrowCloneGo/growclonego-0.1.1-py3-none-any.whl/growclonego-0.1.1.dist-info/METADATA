@@ -1,0 +1,17 @@
+Metadata-Version: 2.4
+Name: GrowCloneGo
+Version: 0.1.1
+Summary: Simple code to estimate the exponential growth rate of each clone in a barcoded cell population.
+Author-email: "Andrea (Didi) Gardner" <andrealgardner@utexas.edu>
+Maintainer-email: "Andrea (Didi) Gardner" <andrealgardner@utexas.edu>
+License: GNU General Public License v3
+Project-URL: bugs, https://github.com/andrealgardner/GrowCloneGo/issues
+Project-URL: changelog, https://github.com/andrealgardner/GrowCloneGo/blob/master/changelog.md
+Project-URL: homepage, https://github.com/andrealgardner/GrowCloneGo
+Description-Content-Type: text/x-rst
+License-File: LICENSE
+Requires-Dist: polars>=1.26.0
+Requires-Dist: typer>=0.15.2
+Provides-Extra: dev
+Requires-Dist: ruff; extra == "dev"
+Dynamic: license-file
