@@ -1,0 +1,8 @@
+maplpy/__init__.py,sha256=cu25aD31CqVSDsVt1kHp8I-Ts6jqFueSdw3ECGT7Xp8,195
+maplpy/libmapl.so.2.6.0,sha256=4Kh3tEO5VHtYmQbEEkDD5j-HUoMtPuafdd_ZKWm3mpQ,4983528
+maplpy/maplpy.cpython-311-x86_64-linux-gnu.so,sha256=pA4eLvxFWHJFhQtf37EOTnzlHt9puDWKoraDee_e_4U,668304
+maplpy-2.6.0.dist-info/METADATA,sha256=7nStMJHR2SL6rmAePa92toGJ6i7MlSywLJ6P_xS0NLA,1610
+maplpy-2.6.0.dist-info/WHEEL,sha256=DK49LOLCYiurdXXOXwGJm6U4DkHkg4lcxjhqwRa0CP4,91
+maplpy-2.6.0.dist-info/entry_points.txt,sha256=FKNqOE3rf5Di5UDMbgisa-BrsU-Ao-Zoyi5PWG1Pdg0,71
+maplpy-2.6.0.dist-info/top_level.txt,sha256=u8mpUVwaN4S1AKnC3lCqB8ZLRolEVsbNpq8E0cNmQTA,7
+maplpy-2.6.0.dist-info/RECORD,,
