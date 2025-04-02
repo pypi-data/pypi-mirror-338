@@ -1,0 +1,6 @@
+aiohttp
+aiofiles
+pyephem
+openmeteo-requests
+typeguard
+pandas
