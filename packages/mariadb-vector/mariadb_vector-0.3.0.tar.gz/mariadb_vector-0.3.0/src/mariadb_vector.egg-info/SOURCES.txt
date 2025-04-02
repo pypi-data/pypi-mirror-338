@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+src/mariadb_vector/__init__.py
+src/mariadb_vector/functions.py
+src/mariadb_vector/vector.py
+src/mariadb_vector.egg-info/PKG-INFO
+src/mariadb_vector.egg-info/SOURCES.txt
+src/mariadb_vector.egg-info/dependency_links.txt
+src/mariadb_vector.egg-info/requires.txt
+src/mariadb_vector.egg-info/top_level.txt
