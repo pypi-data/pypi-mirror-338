@@ -1,0 +1,73 @@
+[project]
+name = "jupyter-notebook-mcp-server"
+version = "0.1.0"
+description = "Jupyter Notebook MCP Server"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [
+    {name = "Your Name", email = "your.email@example.com"}
+]
+keywords = ["jupyter", "notebook", "mcp", "model-context-protocol", "claude", "ai"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "nbformat==5.9.2",
+    "pandas==1.5.0",
+    "matplotlib==3.5.0",
+    "numpy==1.24.0",
+    "mcp==1.6.0",
+    "jupyter-client==8.6.3",
+    "nbclient==0.6.0",
+    "ipykernel>=6.9.0",
+    "pydantic==2.7.2",
+    "pyzmq==25.1.0",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/yourusername/jupyter-notebook-mcp-server"
+"Bug Tracker" = "https://github.com/yourusername/jupyter-notebook-mcp-server/issues"
+"Documentation" = "https://github.com/yourusername/jupyter-notebook-mcp-server#readme"
+
+[project.scripts]
+jupyter-notebook-mcp-server-server = "jupyter_notebook_mcp_server:main"
+
+[tool.uv]
+dev-dependencies = [
+    "ipywidgets==7.7.0",
+    "mypy==0.971",
+    "pytest==7.0.0",
+    "pytest-mock==3.7.0",
+    "pytest-asyncio==0.18.0",
+    "pytest-cov==3.0.0",
+    "ruff==0.0.269",
+    "build==1.0.3",
+    "twine==4.0.2",
+]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src"]
+
+[build-system]
+requires = ["hatchling>=1.0.0"]
+build-backend = "hatchling.build"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = "test_*.py"
+python_functions = "test_*"
+asyncio_mode = "auto"
+filterwarnings = [
+    "ignore:.*Jupyter is migrating its paths to use standard platformdirs.*:DeprecationWarning",
+]
+
+[tool.ruff]
+select = ["E", "F", "I"]
+ignore = []
+line-length = 100

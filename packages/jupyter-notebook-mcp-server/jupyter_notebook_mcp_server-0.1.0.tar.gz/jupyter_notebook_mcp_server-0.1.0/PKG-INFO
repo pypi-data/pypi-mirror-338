@@ -1,0 +1,31 @@
+Metadata-Version: 2.4
+Name: jupyter-notebook-mcp-server
+Version: 0.1.0
+Summary: Jupyter Notebook MCP Server
+Project-URL: Homepage, https://github.com/yourusername/jupyter-notebook-mcp-server
+Project-URL: Bug Tracker, https://github.com/yourusername/jupyter-notebook-mcp-server/issues
+Project-URL: Documentation, https://github.com/yourusername/jupyter-notebook-mcp-server#readme
+Author-email: Your Name <your.email@example.com>
+License: MIT
+Keywords: ai,claude,jupyter,mcp,model-context-protocol,notebook
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Python: >=3.10
+Requires-Dist: ipykernel>=6.9.0
+Requires-Dist: jupyter-client==8.6.3
+Requires-Dist: matplotlib==3.5.0
+Requires-Dist: mcp==1.6.0
+Requires-Dist: nbclient==0.6.0
+Requires-Dist: nbformat==5.9.2
+Requires-Dist: numpy==1.24.0
+Requires-Dist: pandas==1.5.0
+Requires-Dist: pydantic==2.7.2
+Requires-Dist: pyzmq==25.1.0
+Description-Content-Type: text/markdown
+
+# Jupyter Notebook MCP Server
+MCP経由でJupyter Notebookを操作するためのサーバー。
