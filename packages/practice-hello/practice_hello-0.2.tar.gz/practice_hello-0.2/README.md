@@ -1,0 +1,5 @@
+# README
+
+This is a sample README file. This file describes the usage of practice_hello.
+
+Use pip to install practice_hello. Then you can import hello from practice_hello, and run hello()

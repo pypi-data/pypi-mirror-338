@@ -1,0 +1,8 @@
+README.md
+setup.py
+practice_hello/__init__.py
+practice_hello/main.py
+practice_hello.egg-info/PKG-INFO
+practice_hello.egg-info/SOURCES.txt
+practice_hello.egg-info/dependency_links.txt
+practice_hello.egg-info/top_level.txt
