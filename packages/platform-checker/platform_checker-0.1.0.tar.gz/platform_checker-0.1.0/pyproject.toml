@@ -1,0 +1,15 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "platform-checker"
+version = "0.1.0"
+authors = [
+    { name = "Aditya Sriram", email = "adisriram7777@gmail.com" }
+]
+description = "A simple package for checking the platform type."
+readme = "README.md"
+requires-python = ">=3.6"
+license = { text = "MIT" }
+dependencies = []
