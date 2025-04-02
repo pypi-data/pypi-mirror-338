@@ -1,0 +1,12 @@
+lz4/__init__.py,sha256=e_8j-K4TJx38qcPNjoZP_pNDo8IpE4D2ZWl4p50iV_8,646
+lz4/_version.cp313-win32.pyd,sha256=J8mdvHe-PZG5rpInh1G5kVUE3w9arrKOOHYIRbJ2Dgw,9728
+lz4/version.py,sha256=El0fcE8iVoo2_YzFVxhUCsObPHgeEQy8WkfBkVzKSSo,532
+lz4/block/__init__.py,sha256=DSUbS7zMlKKeLs8JO9riOBO5Q_lVoSB-nwgjfhBeXt0,71
+lz4/block/_block.cp313-win32.pyd,sha256=pKfzk-aLVabDlOrbKYVXTfv-sz4ronqZ3euQfodgOEo,61440
+lz4/frame/__init__.py,sha256=ZnJ4sJ1HStPpmJpo0q_CGm9fDEui3Tt3V8DmMi68SZM,32025
+lz4/frame/_frame.cp313-win32.pyd,sha256=4lmbOZEU_6-9LQ6QcV_4tO5Eg2iaZa06EE284VDjxM4,97280
+lz4-4.4.4.dist-info/licenses/LICENSE,sha256=p9ZdHdTcyG3KXRfUaqShx3ZpybcvVfKY6eIhLykFwM8,1523
+lz4-4.4.4.dist-info/METADATA,sha256=84PrSQpNQ1ukoWxInEVNQdtRGLUylo-0Mky1LJxUvm4,3946
+lz4-4.4.4.dist-info/WHEEL,sha256=iuBtox58ZfmdZzG-BEHKFn_UiBPbBDtT4b67THCTeoc,97
+lz4-4.4.4.dist-info/top_level.txt,sha256=cX6_gxFUdNSo40TfxrGpTCgu7epGm3yW3m2k7irTDzI,4
+lz4-4.4.4.dist-info/RECORD,,
