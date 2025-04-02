@@ -1,0 +1,50 @@
+[build-system]
+build-backend = "hatchling.build"
+requires = ["hatchling>=1.21.1"]
+
+[project]
+name = "unix-quick-key"
+description = "Easy keypress reads"
+requires-python = ">=3.10"
+version = "0.0.1"
+readme = "README.md"
+license = { file = "LICENSE" }
+maintainers = [
+  { name = "GeorgeBannister", email = "gbannister206@gmail.com" },
+]
+classifiers = ["Operating System :: Unix"]
+
+[project.urls]
+"Homepage" = "https://github.com/GeorgeBannister/python_quick_key"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/quick_key"]
+
+[tool.ruff]
+line-length = 120
+target-version = "py311"
+
+[tool.ruff.format]
+quote-style = "single"
+
+[tool.ruff.lint]
+ignore = [
+  "D",
+  "S", 
+  "TD",
+  "FIX",  
+  "E501",
+  "INP",
+  "T201",
+  "E741",
+  "C",
+  "PLR",
+]
+select = ["ALL"]
+
+[tool.ruff.lint.flake8-quotes]
+docstring-quotes = "double"
+inline-quotes = "single"
+
+[tool.ruff.lint.isort]
+required-imports = ["from __future__ import annotations"]
