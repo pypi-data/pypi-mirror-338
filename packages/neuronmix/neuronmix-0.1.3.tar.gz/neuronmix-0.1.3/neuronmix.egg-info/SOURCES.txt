@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+neuronmix/__init__.py
+neuronmix.egg-info/PKG-INFO
+neuronmix.egg-info/SOURCES.txt
+neuronmix.egg-info/dependency_links.txt
+neuronmix.egg-info/requires.txt
+neuronmix.egg-info/top_level.txt
