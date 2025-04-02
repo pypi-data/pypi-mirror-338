@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "cv_model"
+version = "1.3.3"
+description = ""
+authors = ["Dariusz Homa <dariuszhoma7@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.scripts]
+train = "train.train:main"
+lint = "scripts.scripts:run_linter"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+argparse = "^1.4.0"
+scikit-learn = "^1.6.1"
+pandas = "^2.2.3"
+
+
+[tool.poetry.group.dev.dependencies]
+pylint = "^3.3.4"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
