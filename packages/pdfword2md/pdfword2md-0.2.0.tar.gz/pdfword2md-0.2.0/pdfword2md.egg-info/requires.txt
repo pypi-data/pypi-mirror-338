@@ -1,0 +1,6 @@
+pypdf2
+python-docx
+markdown
+pdf2docx
+pandoc
+weasyprint
