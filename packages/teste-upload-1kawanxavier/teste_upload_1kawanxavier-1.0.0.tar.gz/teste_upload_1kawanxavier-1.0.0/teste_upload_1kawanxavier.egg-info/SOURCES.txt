@@ -1,0 +1,9 @@
+README.md
+setup.py
+cursofiap/__init__.py
+cursofiap/core.py
+teste_upload_1kawanxavier.egg-info/PKG-INFO
+teste_upload_1kawanxavier.egg-info/SOURCES.txt
+teste_upload_1kawanxavier.egg-info/dependency_links.txt
+teste_upload_1kawanxavier.egg-info/top_level.txt
+tests/test_core.py
