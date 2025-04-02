@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: ucfgr
+Version: 0.0.3
+Summary: The universal config file manager for python
+Home-page: https://github.com/HarcicYang/UConfigManager
+Author: Harcic
+Author-email: harcic@outlook.com
+Provides: cfgr
+Requires-Dist: PyYAML
+
