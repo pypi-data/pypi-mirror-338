@@ -1,0 +1,7 @@
+textparse/__init__.py,sha256=_uKVOBPvVTaRW8fqUGfDOcO9BkBbrJ4Krd5OjjoRYek,130
+textparse/diff.py,sha256=_N7U0e7vslyo8m3CI01vLRG7O0OC1Zvd_5dwMtQXJ8M,5283
+textparse/textparse.py,sha256=u7lkHDWQSuXbRSlbQVZZGHTh4vOGSMYxp9BsXYgRsEQ,24075
+textparse/types.py,sha256=e31Kx4EGNwKU8Sxsv9wd1JiYwUS6idC787FzsRGyyjw,973
+textparse-0.1.0.dist-info/METADATA,sha256=M5HBYanss-rr3ZvRmYNGfhKE3v6O5mHip_NvBMSNZjk,966
+textparse-0.1.0.dist-info/WHEEL,sha256=fGIA9gx4Qxk2KDKeNJCbOEwSrmLtjWCwzBz351GyrPQ,88
+textparse-0.1.0.dist-info/RECORD,,
