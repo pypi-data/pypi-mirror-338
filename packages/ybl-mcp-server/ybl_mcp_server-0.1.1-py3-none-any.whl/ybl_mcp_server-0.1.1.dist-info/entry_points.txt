@@ -1,0 +1,2 @@
+[console_scripts]
+ybl-mcp-server = ybl_mcp_server:main
