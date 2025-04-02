@@ -1,0 +1,12 @@
+pyflakes-stubs/METADATA.toml,sha256=8xQMQ3YTp7CCz0R7a67D1JsWsEH-wdjjXm327meB7Jc,142
+pyflakes-stubs/__init__.pyi,sha256=Y25n44pyE3vp92MiABKrcK3IWRyQ1JG1rZ4Ufqy2nC0,17
+pyflakes-stubs/api.pyi,sha256=9dF1bDurfr8tymoo4dBS46AGDCC-t_GY1mdhCF0lp6o,714
+pyflakes-stubs/checker.pyi,sha256=xG1skHheDXnKZKOqNLVWt_WcZfozdJVETLy6G1YF_gs,14672
+pyflakes-stubs/messages.pyi,sha256=y2ZVd1Ssy5DHKHhhfEwZORtmVaVhEGATx0MaP5xmHIQ,5497
+pyflakes-stubs/py.typed,sha256=la67KBlbjXN-_-DfGNcdOcjYumVpKG_Tkw-8n5dnGB4,8
+pyflakes-stubs/reporter.pyi,sha256=wc9KLuGGNdrkwqhsI2XIyb2ck_4poJ-T9nQan7YNB6k,256
+types_pyflakes-3.3.2.20250402.dist-info/licenses/LICENSE,sha256=KV-FOMlK5cMEMwHPfP8chS2ranhqjd7kceBhtA1eyr4,12657
+types_pyflakes-3.3.2.20250402.dist-info/METADATA,sha256=uAma8zyvGWc0OliXI9L1XIyYlSflhirnc6Nzkn_vxtM,2009
+types_pyflakes-3.3.2.20250402.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+types_pyflakes-3.3.2.20250402.dist-info/top_level.txt,sha256=W7Om4f6q7-j01suUMkzZKNdB3ZkgAdBRfhjESfq-M9Q,15
+types_pyflakes-3.3.2.20250402.dist-info/RECORD,,
