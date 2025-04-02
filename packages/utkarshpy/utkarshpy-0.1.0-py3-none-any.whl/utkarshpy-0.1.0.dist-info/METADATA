@@ -1,0 +1,31 @@
+Metadata-Version: 2.4
+Name: utkarshpy
+Version: 0.1.0
+Summary: CLI tool to automate Python project setup with GitHub integration and VS Code configuration
+Home-page: https://github.com/yourusername/utkarshpy
+Author: Utkarsh Gaikwad
+Author-email: your.email@example.com
+License: Apache License 2.0
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Dynamic: license-file
+
+# UtkarshPy
+
+CLI tool to automate Python project setup with GitHub integration and VS Code configuration
+
+## Installation
+
+```bash
+pip install UtkarshPy
+```
+
+## Usage
+
+```bash
+python -m utkarshpy
+```
