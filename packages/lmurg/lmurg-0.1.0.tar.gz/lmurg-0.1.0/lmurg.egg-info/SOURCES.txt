@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+version
+lmurg.egg-info/PKG-INFO
+lmurg.egg-info/SOURCES.txt
+lmurg.egg-info/dependency_links.txt
+lmurg.egg-info/requires.txt
+lmurg.egg-info/top_level.txt

@@ -1,0 +1,4 @@
+nn-gpt==0.1.0
+
+[stat]
+nn-stat
