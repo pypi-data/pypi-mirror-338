@@ -1,0 +1,13 @@
+README.md
+setup.py
+src/python_to_cpp/__init__.py
+src/python_to_cpp/__main__ .py
+src/python_to_cpp/ast_parser.py
+src/python_to_cpp/ast_to_cpp_converter.py
+src/python_to_cpp/codegen.py
+src/python_to_cpp/transpiler.py
+src/python_to_cpp.egg-info/PKG-INFO
+src/python_to_cpp.egg-info/SOURCES.txt
+src/python_to_cpp.egg-info/dependency_links.txt
+src/python_to_cpp.egg-info/entry_points.txt
+src/python_to_cpp.egg-info/top_level.txt
