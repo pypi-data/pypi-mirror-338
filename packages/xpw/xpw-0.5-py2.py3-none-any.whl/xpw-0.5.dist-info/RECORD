@@ -1,0 +1,16 @@
+xpw/__init__.py,sha256=3O88x2YRk4H6e9ErxGFDXiGRgwLfe6PNal-rQsjqAlQ,551
+xpw/attribute.py,sha256=wp2grPaDTg3ewPoi-VOJjRhPussVeRgc4LsXBkaKrl8,244
+xpw/authorize.py,sha256=b5HYYJ9gWRVJIUgjhhpfww4FTstX3aaIZT6nRS1CBq8,2537
+xpw/configure.py,sha256=wZ5VaRZpnnwhN6Vxp3FMvu_NNWvBrT9Ztcp_NN4n-MQ,3291
+xpw/ldapauth.py,sha256=hFgCvhDYUATx25XBxaxQkLELDlASxv_DEoy7E-T3bmk,2517
+xpw/password.py,sha256=cXiD5PDP1GXg-utR36M4PrWcf3A4nz4m3BaWI2RlUKc,7907
+xpw/pwhasher.py,sha256=US-IzZTPrSo0mKWJtxv0iRt7jKcYp9Vi7ExTZzMv4nA,3363
+xpw/randkey.py,sha256=ZDLVKJN2qifh-Ig1buW-t37ky6ALNQ7V3xgdhDzSm3s,2514
+xpw/session.py,sha256=C4p9xkYLx38RXMHwT6F1ZqZb7jAd_oYNyCiSC_7ZyD8,1526
+xpw-0.5.dist-info/LICENSE,sha256=gXf5dRMhNSbfLPYYTY_5hsZ1r7UU1OaKQEAQUhuIBkM,18092
+xpw-0.5.dist-info/METADATA,sha256=LrQL5YiWR9t67nF9BIGf7ucanh5DYgq8mgUpr3tIeUk,4215
+xpw-0.5.dist-info/WHEEL,sha256=pWvVuNuBTVmNV7Lp2jMAgt1NplTICeFdl1SW8U3MWN4,109
+xpw-0.5.dist-info/entry_points.txt,sha256=PuIyyaJWY3iS2h1Ep9XCNPxiBUpeMK0KlFNWLXp8QCo,74
+xpw-0.5.dist-info/top_level.txt,sha256=PBhqUzaLH60ZSypzIVK4GpP7xWCdp8rTENcHaSOFzc4,4
+xpw-0.5.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+xpw-0.5.dist-info/RECORD,,
