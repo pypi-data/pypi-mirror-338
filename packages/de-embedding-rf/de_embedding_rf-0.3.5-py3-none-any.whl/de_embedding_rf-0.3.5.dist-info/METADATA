@@ -1,0 +1,131 @@
+Metadata-Version: 2.2
+Name: de_embedding_rf
+Version: 0.3.5
+Summary: methods for de-embedding process: T-R-L, L-L and T-VR-L
+Home-page: https://github.com/aplatag/project_de_embedding_rf.git
+Author: Aplatag
+License: MIT
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: scikit-rf
+Requires-Dist: matplotlib
+Requires-Dist: scipy
+Dynamic: author
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: license
+Dynamic: requires-dist
+Dynamic: summary
+
+# De-embedding in Free Space Using the T-VR-L Method:
+<div align="justify">
+Free-space measurements require the use of identical antennas and a material under test (MUT). During this process, the obtained results include the effects of the error box, which comprises the effects of the antennas and the separation distance between them (see Figure 1). Therefore, a post-measurement de-embedding process is essential to isolate and extract only the S-parameters of the MUT.
+</div>
+
+<p align="center">
+    <img src="https://raw.githubusercontent.com/aplatag/project_SL_regression_quality/main/images/calibration.png" alt="setup" width="500" >
+</p>
+<div align="center">
+Figure 1. Measurement Scenario.
+</div>
+
+
+## Table of Contents
+- [Required Measurements](#Required-Measurements)
+- [Glossary](#glossary)
+- [Installation](#installation)
+- [Code Example](#code-Example)
+
+
+## Required Measurements
+
+1.	**Embedded DUT**: It is necessary to save the data in a .s2p file.
+2.	**Thru**: It is constructed by uniformly separating both antennas at a distance d1. It is necessary to save the data in a .s2p file.
+3.	**Line**: It is constructed by moving the antennas backward by a distance of λ/4.It is necessary to save the data in a .s2p file. 
+4. **Reflect**: It is constructed by placing a reflective plate at the Calibration plane. This measurement is required if the user intends to apply the T-R-L method. It is necessary to save the data in a .s1p file for each port.
+
+<div align="justify">
+
+The 'de-embedding-rf' program includes three example datasets ('Mut.s2p', 'Thru.s2p', and 'Line.s2p') designed for implementing the T-VR-L method. Additionally, it includes data for the reflection standard, 'Reflect_11.s1p' and 'Reflect_22.s1p', which enables the application of the conventional T-R-L method.
+
+</div>
+
+## Glossary
+
+1.	**path_embedded_dut**: embedded DUT measurement location
+2.  **path_thru**: thru measurement location
+3.  **path_line**: line measurement location
+4.  **path_reflect_11**: Reflect measurement location for port 1
+5.  **path_reflect_22**: Reflect measurement location for port 2
+6.  **CreateDict_TRL**: Create a dictionary with all the measurement paths for the TRL method
+7.  **CreateDict_TVRL**: Create a dictionary with all the measurement paths for the TVRL method
+8.  **CalibrationTRL**: Implementation of the TRL method.
+9.  **CalibrationTVRL**: Implementation of the TVRL method.
+10. **Postprocessing**: Application of Time-Domain Gating.
+10. **plot_mut**: Visualization of the S-parameters of the MUT.
+
+<div align="justify">
+<b>
+
+Addicionally, in the functions "CreateDict_TRL" and "CreateDict_TVRL", the parameter "example = False" must be set to allow the program to read the user’s data. If the user wishes to use the example data provided in the package, the paths should remain unchanged and "example=True".
+</b>
+</div>
+
+
+## Installation
+
+Instructions on how to install the project. For example:
+```bash
+
+pip install de-embedding-rf
+```
+## Code Example
+For instance, the following code can be executed in Google Colab. Simply copy and paste it into a new Colab notebook.
+
+
+```bash
+
+#--------------------------------------------------------------------------------
+# 1) Load libraries:
+
+from de_embedding import CalibrationTRL
+from de_embedding import CalibrationTVRL
+from de_embedding import CreateDict_TRL, CreateDict_TVRL
+from de_embedding import plot_mut
+from de_embedding import Postprocessing
+
+#--------------------------------------------------------------------------------
+#2) data: 
+path_embedded_dut = 'Mut.s2p' 
+path_thru = 'Thru.s2p'
+path_line = 'Line.s2p' 
+path_reflect_11 = 'Reflect_11.s1p'
+path_reflect_22 = 'Reflect_22.s1p'
+
+#--------------------------------------------------------------------------------
+
+# 3) Create Dictionary:
+dicc_TRL = CreateDict_TRL(path_embedded_dut,path_thru,path_line,path_reflect_11,path_reflect_22,example=True)
+dicc_TVRL = CreateDict_TVRL(path_embedded_dut,path_thru,path_line,example=True)
+
+#--------------------------------------------------------------------------------
+
+#4) Execute Calibration Methods:
+ntwk_dut_TRL = CalibrationTRL(dicc_TRL).run()
+ntwk_dut_TVRL = CalibrationTVRL(dicc_TVRL).run()
+
+#--------------------------------------------------------------------------------
+#5) Apply post-processing 
+
+freq_trl, mag_trl, deg_trl = Postprocessing(ntwk_dut_TRL).run(400,120)
+freq_tvrl, mag_tvrl, deg_tvrl = Postprocessing(ntwk_dut_TVRL).run(400,120)
+
+#--------------------------------------------------------------------------------
+#6) show figure of S parameters
+plot_mut(freq_trl, mag_trl, deg_trl)
+plot_mut(freq_tvrl, mag_tvrl, deg_tvrl)
+
+
+```
