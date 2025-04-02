@@ -1,0 +1,5 @@
+setup.py
+aliyun_python_sdk_ecs_ctrip.egg-info/PKG-INFO
+aliyun_python_sdk_ecs_ctrip.egg-info/SOURCES.txt
+aliyun_python_sdk_ecs_ctrip.egg-info/dependency_links.txt
+aliyun_python_sdk_ecs_ctrip.egg-info/top_level.txt
