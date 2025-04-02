@@ -1,0 +1,5 @@
+setup.py
+python_ucloudclient_ctrip.egg-info/PKG-INFO
+python_ucloudclient_ctrip.egg-info/SOURCES.txt
+python_ucloudclient_ctrip.egg-info/dependency_links.txt
+python_ucloudclient_ctrip.egg-info/top_level.txt
