@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+tests/test_core.py
+traksentinel.egg-info/PKG-INFO
+traksentinel.egg-info/SOURCES.txt
+traksentinel.egg-info/dependency_links.txt
+traksentinel.egg-info/entry_points.txt
+traksentinel.egg-info/requires.txt
+traksentinel.egg-info/top_level.txt
+traksentinel_simplecli/__init__.py
+traksentinel_simplecli/cli.py
