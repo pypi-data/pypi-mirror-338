@@ -1,0 +1,12 @@
+Metadata-Version: 2.4
+Name: opsbox-efs-provider
+Version: 0.1.0
+Summary: Opsbox provider for EFS checks
+Requires-Python: ==3.11.*
+Description-Content-Type: text/markdown
+License-File: LICENCE.txt
+Requires-Dist: boto3>=1.35.87
+Requires-Dist: loguru>=0.7.2
+Requires-Dist: pluggy>=1.5.0
+Requires-Dist: opsbox-general-handler>=0.1.2
+Dynamic: license-file
