@@ -1,0 +1,18 @@
+Metadata-Version: 2.2
+Name: GateMap
+Version: 0.0.1
+Summary: Temporary placeholder package for reserving the name GateMap
+Author: Isil Erbasol Serbes
+Author-email: isilerbasol@gmail.com
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Dynamic: author
+Dynamic: author-email
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: requires-python
+Dynamic: summary
+
+# GateMap
+
+Temporary placeholder for the GateMap Python library.
