@@ -1,0 +1,10 @@
+beamgis/__init__.py,sha256=TwNkdigh5TjmAtK2Zfr1N4qaEIboAAz1K1JuKCARIHo,155
+beamgis/beamgis.py,sha256=gE3_GZJO4FyIZjSeN9CcxF3N23zgPgZMkueFHgjGKv0,4339
+beamgis/common.py,sha256=Rw6d9qmZDu3dUGTyJto1Y97S7-QA-m2p-pbCNvMDrm4,184
+beamgis/foliumap.py,sha256=DAAwWQL5qzeFekeGLBzm9Z3dyoEqV73mfznTfZAZ4h4,4163
+beamgis-0.0.3.dist-info/licenses/LICENSE,sha256=MAYg3P5jei4X6_EO8g-sDWyYK9k1qsToMJ2jbTZpGkE,1075
+beamgis-0.0.3.dist-info/METADATA,sha256=rsugdmSAsANHVOlvTHraHR68LJxdGLjwAK8-quvG_pE,1371
+beamgis-0.0.3.dist-info/WHEEL,sha256=MAQBAzGbXNI3bUmkDsiV_duv8i-gcdnLzw7cfUFwqhU,109
+beamgis-0.0.3.dist-info/entry_points.txt,sha256=j4UHVtExTJjOxBmWUMutmi0kd0m_7bcJ5xu-ixMzvUg,45
+beamgis-0.0.3.dist-info/top_level.txt,sha256=auSekahYbMw0q7UbAfq20at3s3OgV6zcZvxuaXrW_Mw,8
+beamgis-0.0.3.dist-info/RECORD,,
