@@ -1,0 +1,8 @@
+LICENSE.txt
+README.md
+pyproject.toml
+dashboard_v3_python.egg-info/PKG-INFO
+dashboard_v3_python.egg-info/SOURCES.txt
+dashboard_v3_python.egg-info/dependency_links.txt
+dashboard_v3_python.egg-info/top_level.txt
+placeholder/__init__.py
