@@ -1,0 +1,57 @@
+Metadata-Version: 2.3
+Name: accusleepy
+Version: 0.1.0
+Summary: Python implementation of AccuSleep
+License: GPL-3.0-only
+Author: Zeke Barger
+Author-email: zekebarger@gmail.com
+Requires-Python: >=3.10,<3.14
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Dist: fastparquet (>=2024.11.0,<2025.0.0)
+Requires-Dist: joblib (>=1.4.2,<2.0.0)
+Requires-Dist: matplotlib (>=3.10.1,<4.0.0)
+Requires-Dist: numpy (>=2.2.4,<3.0.0)
+Requires-Dist: pandas (>=2.2.3,<3.0.0)
+Requires-Dist: pillow (>=11.1.0,<12.0.0)
+Requires-Dist: pre-commit (>=4.2.0,<5.0.0)
+Requires-Dist: pyside6 (>=6.8.3,<7.0.0)
+Requires-Dist: scipy (>=1.15.2,<2.0.0)
+Requires-Dist: torch (>=2.6.0,<3.0.0)
+Requires-Dist: torchvision (>=0.21.0,<0.22.0)
+Requires-Dist: tqdm (>=4.67.1,<5.0.0)
+Description-Content-Type: text/markdown
+
+# AccuSleePy
+
+## Description
+
+AccuSleePy is a python implementation of AccuSleep--a set of graphical user interfaces for scoring rodent
+sleep using EEG and EMG recordings. If you use AccuSleep in your research, please cite our
+[publication](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0224642):
+
+Barger, Z., Frye, C. G., Liu, D., Dan, Y., & Bouchard, K. E. (2019). Robust, automated sleep scoring by a compact neural network with distributional shift correction. *PLOS ONE, 14*(12), 1–18.
+
+The data used for training and testing AccuSleep are available at https://osf.io/py5eb/
+
+Please contact zekebarger (at) gmail (dot) com with any questions or comments about the software.
+
+## Installation instructions
+
+WIP
+
+## Tips & Troubleshooting
+
+WIP
+
+## Acknowledgements
+
+We would like to thank [Franz Weber](https://www.med.upenn.edu/weberlab/) for creating an
+early version of the manual labeling interface.
+Jim Bohnslav's [deepethogram](https://github.com/jbohnslav/deepethogram) served as an
+incredibly useful reference when reimplementing this project in python.
+
