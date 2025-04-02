@@ -1,0 +1,11 @@
+Metadata-Version: 2.4
+Name: python_to_cpp
+Version: 0.1.2
+Summary: Convert Python To C++
+Home-page: https://github.com/Singhom931/python_cpp
+Author: Singhom931
+Description-Content-Type: text/markdown
+Dynamic: author
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: summary
