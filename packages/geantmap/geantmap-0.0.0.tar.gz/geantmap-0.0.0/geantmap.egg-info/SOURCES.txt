@@ -1,0 +1,8 @@
+LICENSE.txt
+README.md
+pyproject.toml
+geantmap.egg-info/PKG-INFO
+geantmap.egg-info/SOURCES.txt
+geantmap.egg-info/dependency_links.txt
+geantmap.egg-info/top_level.txt
+placeholder/__init__.py
