@@ -1,0 +1,9 @@
+lilcom_extension.cp37-win_amd64.pyd,sha256=KSCkk3OFYsZtqCnCy2ScVxhrQKS-QxnSNEuDs7zl8b8,134656
+lilcom_extension.lib,sha256=zueQoLTRHAe8_pvonZgIoNuNZZ2HTqeyT7yjfr9FarE,2160
+lilcom/__init__.py,sha256=rqIUx84PfBt3j9fyArTnmvCcaBtSm2ujxgvoFx3P1TM,123
+lilcom/lilcom_interface.py,sha256=Jcz4aPqY7dgY01uVpMfp7zBIJER7oZE04-WgLmKQen8,4311
+lilcom-1.8.1.dist-info/LICENSE,sha256=ZhR7-60VvUx8ckOmVEhPKXi2wqqpvvQaVpfXGJgbDmk,1201
+lilcom-1.8.1.dist-info/METADATA,sha256=ABYXLnbKP7XKjnF4TnMO1UnNv8SyGUv36wl-bsjbrfk,3069
+lilcom-1.8.1.dist-info/WHEEL,sha256=slqBGdqRnxanDn00BSYHhryEsWH_8CUurgRUvoMtK_Y,101
+lilcom-1.8.1.dist-info/top_level.txt,sha256=_c6DTrG_0CXrczL0IVn5N36_-80_JWUPFhqRSfgoaG4,24
+lilcom-1.8.1.dist-info/RECORD,,
