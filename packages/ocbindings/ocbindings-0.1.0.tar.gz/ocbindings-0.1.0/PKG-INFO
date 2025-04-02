@@ -1,0 +1,23 @@
+Metadata-Version: 2.4
+Name: ocbindings
+Version: 0.1.0
+Summary: Prebuilt pyang bindings for OpenConfig models.
+Author-email: João Taveira Araújo <joao@taveira.pt>
+License-Expression: MIT
+Project-URL: Homepage, https://github.com/jta/ocbindings
+Project-URL: Repository, https://github.com/jta/ocbindings.git
+Project-URL: Issues, https://github.com/jta/ocbindings/issues
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pyangbind>=0.8.1
+Dynamic: license-file
+
+# OpenConfig bindings
+
+This repo is set up to pull from https://github.com/openconfig/public and
+generate python bindings for all available models using pyangbind.
+
+The primary value of this repository is to provide a packaged, pip installable
+asset, since pyangbind generates a lot of bloat that is unwieldy to generate
+for one off scripts or check in to repos.

@@ -1,0 +1,47 @@
+name: Generate and Update Bindings
+
+on:
+  schedule:
+    - cron: '0 0 * * 1'  # Runs every Monday at midnight UTC
+  workflow_dispatch:  # Allows manual triggering
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  generate-bindings:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+
+      - name: Set Up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+
+      - name: Install Dependencies
+        run: |
+          python -m pip install --upgrade pip setuptools
+          pip install .
+
+      - name: Generate Bindings
+        run: |
+          ./scripts/generate_bindings.sh
+
+      - name: Create Pull Request
+        uses: peter-evans/create-pull-request@v7
+        with:
+          token: ${{ secrets.GHA_TOKEN }}
+          commit-message: Update generated bindings
+          author: github-actions[bot] <github-actions[bot]@users.noreply.github.com>
+          committer: github-actions[bot] <github-actions[bot]@users.noreply.github.com>
+          title: 'Update Generated Bindings'
+          body: 'Automated update of generated bindings from OpenConfig YANG models.'
+          branch: update-bindings
+          base: main
+          add-paths: |
+            openconfig_bindings/**

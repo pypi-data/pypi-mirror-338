@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=64", "setuptools-scm>=8"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ocbindings"
+dynamic = ["version"]
+description = "Prebuilt pyang bindings for OpenConfig models."
+readme = "README.md"
+requires-python = ">=3.6"
+authors = [
+  { name = "João Taveira Araújo", email = "joao@taveira.pt" }
+]
+license = "MIT"
+dependencies = [
+  "pyangbind>=0.8.1",
+]
+
+[project.urls]
+Homepage = "https://github.com/jta/ocbindings"
+Repository = "https://github.com/jta/ocbindings.git"
+Issues = "https://github.com/jta/ocbindings/issues"
+
+[tool.setuptools.packages]
+find = {}
+
+[tool.setuptools_scm]

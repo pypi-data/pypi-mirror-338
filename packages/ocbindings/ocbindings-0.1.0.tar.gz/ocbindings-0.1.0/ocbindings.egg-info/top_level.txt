@@ -1,0 +1,3 @@
+dist
+ocbindings
+scripts
