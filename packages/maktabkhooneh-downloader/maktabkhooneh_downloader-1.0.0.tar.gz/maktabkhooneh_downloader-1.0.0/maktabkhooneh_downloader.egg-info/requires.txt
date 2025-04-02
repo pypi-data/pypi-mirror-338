@@ -1,0 +1,5 @@
+httpx>=0.23.0
+pydantic>=1.10.2
+tqdm>=4.64.1
+lxml>=4.9.1
+python-dotenv>=0.21.0

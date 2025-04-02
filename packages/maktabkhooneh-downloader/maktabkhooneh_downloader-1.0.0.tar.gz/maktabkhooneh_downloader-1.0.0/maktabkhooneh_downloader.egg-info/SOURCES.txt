@@ -1,0 +1,16 @@
+LICENCE
+README.md
+pyproject.toml
+setup.py
+maktabkhooneh-downloader/__init__.py
+maktabkhooneh-downloader/cli.py
+maktabkhooneh-downloader/handler.py
+maktabkhooneh-downloader/logging.py
+maktabkhooneh-downloader/schemas.py
+maktabkhooneh-downloader/utils.py
+maktabkhooneh_downloader.egg-info/PKG-INFO
+maktabkhooneh_downloader.egg-info/SOURCES.txt
+maktabkhooneh_downloader.egg-info/dependency_links.txt
+maktabkhooneh_downloader.egg-info/entry_points.txt
+maktabkhooneh_downloader.egg-info/requires.txt
+maktabkhooneh_downloader.egg-info/top_level.txt
