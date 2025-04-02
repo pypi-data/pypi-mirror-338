@@ -1,0 +1,10 @@
+AccessControl
+plone.base
+Products.GenericSetup
+Products.PluggableAuthService
+zExceptions
+Zope
+
+[test]
+plone.app.testing
+plone.testing
