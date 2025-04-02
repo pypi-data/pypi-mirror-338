@@ -1,0 +1,2 @@
+[console_scripts]
+vasetviens = vasetviens.cli:main
