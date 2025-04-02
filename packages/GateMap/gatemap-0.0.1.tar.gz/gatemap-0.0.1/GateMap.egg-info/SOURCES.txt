@@ -1,0 +1,7 @@
+README.md
+setup.py
+GateMap.egg-info/PKG-INFO
+GateMap.egg-info/SOURCES.txt
+GateMap.egg-info/dependency_links.txt
+GateMap.egg-info/top_level.txt
+gatemap/__init__.py
