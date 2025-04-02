@@ -1,0 +1,6 @@
+README.md
+setup.py
+sssdk.egg-info/PKG-INFO
+sssdk.egg-info/SOURCES.txt
+sssdk.egg-info/dependency_links.txt
+sssdk.egg-info/top_level.txt
