@@ -1,0 +1,15 @@
+django_entra_auth/__init__.py,sha256=3qm1mTA8hB3zM4UTubFO2Y5gu1rgn98xmZU1KaWEsFM,137
+django_entra_auth/backend.py,sha256=tDLS10HSQ2NLP4L0s3HF1CsduF6RA7ms-3AeKntU3vI,36192
+django_entra_auth/config.py,sha256=ZJ8jQa_ocRol1l8IcBAlVLc-b-oKE88Njfh0YNBGDdg,14420
+django_entra_auth/drf_urls.py,sha256=zabPL7zvX7GSPAxdAtQG6_FjtQd_UmRO6pb97wlzCfw,432
+django_entra_auth/exceptions.py,sha256=sI2yym-BMBQIg-xUIY_CkFf4Nb7QPfmwtkpNoAwpCCA,111
+django_entra_auth/middleware.py,sha256=M6Pu0wBknzgXc-mdj_Xd-vqR8dc1ag9GQcN0mY6zWtI,4164
+django_entra_auth/rest_framework.py,sha256=9bxrr7QmKSLatO2Bm2AFCVZjhFZo8amKTi-FjLhKEuo,1867
+django_entra_auth/signals.py,sha256=HGD79-dZNEwqVuINoqe6jB_8K1RfuK5Q288RGamTtEU,137
+django_entra_auth/urls.py,sha256=AY7CAeW4Sla5mSmwPAPGBD1dy9ZlCblyVRhI5gD9PKM,580
+django_entra_auth/views.py,sha256=HvG4QjZqLm8nf2xp7TELNZtGdXBdI44ymR_gZJ3PPBc,5383
+django_entra_auth/templates/django_entra_auth/login_failed.html,sha256=QllnzgdTQOnA0sUiTkjgdzR70PNSo0SeLRmf2ef0A-w,1464
+django_entra_auth-1.16.0.dist-info/METADATA,sha256=3eIWHUl356rxejMdQp6cXrQrb7eT7XZa3OGdVhscp3g,7343
+django_entra_auth-1.16.0.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+django_entra_auth-1.16.0.dist-info/licenses/LICENSE,sha256=WGMaA474V3mIMiWEkbMc-rCVt-uZvIjF4NqP1AIvNZo,1277
+django_entra_auth-1.16.0.dist-info/RECORD,,
