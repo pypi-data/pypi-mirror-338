@@ -1,0 +1,11 @@
+dayplot/__init__.py,sha256=RTOHqdgeQLL_kPImQtMJ5fWn6Y54xUWNmU1gqgetnlU,170
+dayplot/_parse_date.py,sha256=Yw01_6f-7byU71tmhpVx-5JKSmWb5FsxQZ9hlqHPyn8,370
+dayplot/fetch_github.py,sha256=46zoHNTBfoE4n8fYe3pZhyL4rDLGouipLi3Sso46g8Y,2637
+dayplot/main.py,sha256=neR2QK-6qjv2Nl4-c2wb3cGKmQamGp0EmGCWZjuRJzI,12844
+dayplot/utils.py,sha256=UAP3Dfh91aSGC0AH-5cymZU64SStkm4BW9ze87Aqm20,409
+dayplot/data/sample.csv,sha256=xvKnUahmfGPVtXCYae2cIUEH_E-MMfyCcX2hgFUCXRU,6537
+dayplot-0.2.1.dist-info/licenses/LICENSE,sha256=eRR87qRzOrcxWqks7w8lbQRATCtgCJwU_eXooRGUTBw,1062
+dayplot-0.2.1.dist-info/METADATA,sha256=vtEBeswGgqBR6cijLwpBS2uhlKRPYC1SaWA4F1PK464,2159
+dayplot-0.2.1.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+dayplot-0.2.1.dist-info/top_level.txt,sha256=R0HDS0oTgFLkVlue0lu-hFKqqhoflM2iu_KtdIPvouE,8
+dayplot-0.2.1.dist-info/RECORD,,
