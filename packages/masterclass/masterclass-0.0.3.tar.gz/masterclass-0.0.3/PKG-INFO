@@ -1,0 +1,16 @@
+Metadata-Version: 2.3
+Name: masterclass
+Version: 0.0.3
+Summary: Definitive Python singleton implementation
+Author: Danny Stewart
+Author-email: danny@stewart.cc
+Requires-Python: >=3.12
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Description-Content-Type: text/markdown
+
+# Masterclass
+
+One class to rule them all: the definitive singleton implementation for Python. Thread-safe, type-friendly, elegantly simple.
+
