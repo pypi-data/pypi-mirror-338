@@ -1,0 +1,8 @@
+LICENSE.txt
+README.md
+pyproject.toml
+brian_monitoring_checks.egg-info/PKG-INFO
+brian_monitoring_checks.egg-info/SOURCES.txt
+brian_monitoring_checks.egg-info/dependency_links.txt
+brian_monitoring_checks.egg-info/top_level.txt
+placeholder/__init__.py
