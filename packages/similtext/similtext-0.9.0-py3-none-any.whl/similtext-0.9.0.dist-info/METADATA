@@ -1,0 +1,35 @@
+Metadata-Version: 2.4
+Name: similtext
+Version: 0.9.0
+Summary: Similitud de textos, comparaciones case insensitive, extración de palabras, normalización.
+Author: miloter
+License-Expression: MIT
+Project-URL: Repository, https://github.com/miloter/similtext
+Keywords: Palabras padre,comparación insensible a letras y acentos,extracción de palabras,normalizar texto,similitud de textos
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.13
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Dynamic: license-file
+
+# Instalación y uso de **similtext**
+
+## Instalación:
+```bash/powershell
+pip install similtext
+```
+
+## Ejemplo de uso:
+```python
+from similtext import SimilText
+
+sw = SimilText()
+
+# Comparación
+assert sw.icmp('one twó ThreE foúr',
+    'ONE two three FOUR') == 0
+assert sw.icmp('melón grande', 'melon pequeño') == -1
+```
+
+### Para más información vea la clase **SimilText**.
