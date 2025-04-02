@@ -1,0 +1,13 @@
+README.md
+setup.py
+captcha/__init__.py
+captcha/exceptions.py
+captcha/solver.py
+captcha/utils.py
+master_scramazon/AmazonScraper.py
+master_scramazon/__init__.py
+master_scramazon.egg-info/PKG-INFO
+master_scramazon.egg-info/SOURCES.txt
+master_scramazon.egg-info/dependency_links.txt
+master_scramazon.egg-info/requires.txt
+master_scramazon.egg-info/top_level.txt
