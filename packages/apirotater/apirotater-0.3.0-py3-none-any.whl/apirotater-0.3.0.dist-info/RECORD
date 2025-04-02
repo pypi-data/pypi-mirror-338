@@ -1,0 +1,12 @@
+apirotater/__init__.py,sha256=Kp0xTGP09t9fhjG_rcBB5Dwa9REYW-q1zhKNWyaQeTI,1975
+apirotater/manager.py,sha256=Ov82msnVDe7ZyAPuZqSaaD6fYT2Xnw_XEjNVYdwAiEE,15365
+apirotater/setup_keys.py,sha256=K40-mIE2KFkq8h2zWzSZqfcNnPVgNxz4_As2GZMMCVw,3097
+apirotater/utils.py,sha256=u9y_2-hoU1H6YdNpKaD0rSK1Faz-9SmVlmaBu_lofjw,2750
+tests/__init__.py,sha256=Nqnn8clbgv-5l0PgxcTOldg8mkMKrFn4TvPL-rYUUGg,1
+tests/test_manager.py,sha256=9sBpbQlh9AMbs8S6xynaDwAzw38V_emDRWwb9ey_Usc,3726
+apirotater-0.3.0.dist-info/LICENSE,sha256=iR9sBC2IYggMDqatkAIdiX414rXpf3XdosaAg-3oeJE,1087
+apirotater-0.3.0.dist-info/METADATA,sha256=W1AHaP6v94N53dJB51wpb173UHHljPD89EzwUiQGLNk,2743
+apirotater-0.3.0.dist-info/WHEEL,sha256=PZUExdf71Ui_so67QXpySuHtCi3-J3wvF4ORK6k_S8U,91
+apirotater-0.3.0.dist-info/entry_points.txt,sha256=8Qd2XxKX-_lM4LA5PcwCS18YBt6UpRlxTrB_sbKNmHU,64
+apirotater-0.3.0.dist-info/top_level.txt,sha256=XPNpU-WGb6004LryxtN7EP9DqMubjZk5Bx4jq8wywBc,17
+apirotater-0.3.0.dist-info/RECORD,,
