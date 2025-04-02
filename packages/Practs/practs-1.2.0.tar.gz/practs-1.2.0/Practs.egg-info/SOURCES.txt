@@ -1,0 +1,7 @@
+LICENSE
+pyproject.toml
+setup.py
+Practs.egg-info/PKG-INFO
+Practs.egg-info/SOURCES.txt
+Practs.egg-info/dependency_links.txt
+Practs.egg-info/top_level.txt
