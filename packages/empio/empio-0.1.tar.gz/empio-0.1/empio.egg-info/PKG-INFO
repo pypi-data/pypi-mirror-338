@@ -1,0 +1,29 @@
+Metadata-Version: 2.4
+Name: empio
+Version: 0.1
+Summary: Empirical Industrial Organization
+Author: Gustavo Amarante
+Maintainer: Gustavo Amarante
+Maintainer-email: developer@dsgepy.com
+Keywords: empirical industrial organization,industrial organization
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: matplotlib
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: scikit-learn
+Requires-Dist: statsmodels
+Dynamic: author
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: keywords
+Dynamic: license-file
+Dynamic: maintainer
+Dynamic: maintainer-email
+Dynamic: requires-dist
+Dynamic: summary
+
+
+# empio
+
+soon...

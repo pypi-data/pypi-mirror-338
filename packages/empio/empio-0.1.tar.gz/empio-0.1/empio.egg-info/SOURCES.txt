@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+empio.egg-info/PKG-INFO
+empio.egg-info/SOURCES.txt
+empio.egg-info/dependency_links.txt
+empio.egg-info/requires.txt
+empio.egg-info/top_level.txt
