@@ -1,0 +1,16 @@
+\documentclass{standalone}
+\usepackage{tikz}
+
+\tikzstyle{n}=[circle, draw=black, fill=black, inner sep = 0.25mm, outer sep= 0.5mm]
+\begin{document}
+\begin{tikzpicture}
+    \draw (0,0) rectangle (4,3);
+    \draw (-0.8,3.8) edge[->] node[above] {$x$} (2.2,3.8);
+    \draw (-0.8,3.8) edge[->] node[left] {$y$} (-0.8,1.8);
+    \node [n,label={[label distance=-2mm]135:{\footnotesize $(0,0)$}}] at (0,3) {};
+    \node [n,label={[label distance=-2mm]225:{\footnotesize $(0,299)$}}] at (0,0) {};
+    \node [n,label={[label distance=-2mm]45:{\footnotesize $(399,0)$}}] at (4,3) {};
+    \node [n,label={[label distance=-2mm]315:{\footnotesize $(399,299)$}}] at (4,0) {};
+    \node [n,label={[label distance=-1mm]90:{\footnotesize $(200,150)$}}] at (2,1.5) {};
+\end{tikzpicture}
+\end{document}

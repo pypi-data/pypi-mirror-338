@@ -1,0 +1,7 @@
+#!/bin/sh
+
+pdflatex $1.tex
+ps2pdf $1.pdf $1.ps
+convert -density 300 -background white -flatten $1.ps $1.png
+rm $1.pdf
+rm $1.ps

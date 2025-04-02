@@ -1,0 +1,4 @@
+#!/bin/sh
+
+ps2pdf $1.pdf
+convert -density 300 -background white -flatten $1.ps $1.png

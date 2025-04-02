@@ -1,0 +1,31 @@
+Metadata-Version: 2.4
+Name: eiffeltk
+Version: 2025.1
+Summary: EiffelTk (le module `fltk`) est une surcouche simplifiée à tkinter pour l'enseignement. Ce module fournit une API simple permettant de dessiner sur un canevas unique, et de récupérer divers événements (souris et clavier) par attente active, sans introduire la notion de callbacks.
+Project-URL: Homepage, https://framagit.org/AntoineMeyer/fltk
+Project-URL: Issues, https://framagit.org/AntoineMeyer/fltk/-/issues
+Project-URL: Documentation, https://antoinemeyer.frama.io/fltk/
+Author-email: Licence d'informatique de l'Université Gustave Eiffel <antoine.meyer@univ-eiffel.fr>
+License-Expression: MIT
+License-File: LICENSE.txt
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+
+# EiffelTk
+
+EiffelTk (le module `fltk`) est une surcouche simplifiée à tkinter pour
+l'enseignement. Ce module fournit une API simple permettant de dessiner sur un
+canevas unique, et de récupérer divers événements (souris et clavier) par
+attente active, sans introduire la notion de callbacks.
+
+## Fonctionnalités futures
+
+Voici quelques exemples de fonctionnalités envisagées pour les prochaines
+versions de EiffelTk :
+
+- choix des événements suivis (move, double clic, etc...)
+- déterminer l'élément graphique cliqué
+- redimensionnement et autres transformations d'images (rotation...)
+- son
