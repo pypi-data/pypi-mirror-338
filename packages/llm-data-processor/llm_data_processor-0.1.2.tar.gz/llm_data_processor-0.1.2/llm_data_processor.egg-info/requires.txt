@@ -1,0 +1,6 @@
+pyyaml
+requests
+asyncio
+aiohttp
+asyncpg
+openai
