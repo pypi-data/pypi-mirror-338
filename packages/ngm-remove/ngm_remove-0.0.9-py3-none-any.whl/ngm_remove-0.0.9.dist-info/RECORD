@@ -1,0 +1,9 @@
+ngm_remove/__init__.py,sha256=DdMPY880pDIcAb7IhHaaYo0Tn7gMPJgHFU7ZqQTNa8w,3094
+ngm_remove/db.py,sha256=ZjY8Hvbwsu5QG9dx1nHxxszS0WijjTeMB1OmnVloe6A,2068
+ngm_remove/lib.py,sha256=SGlk3GxOn3U-7950MBGBMnYGbomYlqVA-6afE6Tflh8,976
+ngm_remove/log.py,sha256=tZasGb5pECGUc9s99CpiwhD_nbhBIEy1cBXbxKyyz98,426
+ngm_remove/utils.py,sha256=0SCPovBLp8m34fkajPoQprHbPbPBfBD6smZRVeJ4DsM,480
+ngm_remove-0.0.9.dist-info/METADATA,sha256=H0lv8kM1UvOtf3_usU-9T5hIIpwng9x-blpcoW3eFTI,2125
+ngm_remove-0.0.9.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+ngm_remove-0.0.9.dist-info/entry_points.txt,sha256=C2mPtPQ3AlQYPEOY6BdeRQ673EjtMRrncBPSfN3Adgs,43
+ngm_remove-0.0.9.dist-info/RECORD,,
