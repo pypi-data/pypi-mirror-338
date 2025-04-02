@@ -1,0 +1,32 @@
+Metadata-Version: 2.4
+Name: pasargad
+Version: 4.0.0
+Summary: An ultra-strong DDoS and attack protection library
+Home-page: https://github.com/pasargadcdn
+Author: ramox
+Author-email: actramox@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: scapy>=2.4.5
+Requires-Dist: psutil>=5.9.0
+Requires-Dist: numpy>=1.23.0
+Requires-Dist: pandas>=1.5.0
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+# Pasargad v4.0.0
+An ultra-strong Python library for DDoS and attack protection.
+
+## Installation
+```bash
+pip install .
