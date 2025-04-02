@@ -1,0 +1,16 @@
+target_approximation/__init__.py,sha256=21mSDzRHaN6OCUBWCKICbVzJxWjwzGVCU_G17_B-xEY,176
+target_approximation/core.py,sha256=8cHiMEaSwLyHWbB9Pk1u11oKl6E45hRBdj6FSia7-Bk,32366
+target_approximation/filter.py,sha256=-0ATSEDhEJ2YYkHBLN_zuOToaQmnUHz2UML29ZT1Xmg,3728
+target_approximation/target.py,sha256=hoFh0QI43N32VF03tdNOtJKTU8VeyGjh_v2OA8mSpTo,1977
+target_approximation/utils.py,sha256=iiVx_HD1Ug8c4eccyW9XdH6NDEJc8Hg4CCZgF3HVa6U,4612
+target_approximation/tensortract/__init__.py,sha256=ZIsM_eH4eHTZO6CS7Pd4di3U7r_LlLpSlH5et6eZdMg,316
+target_approximation/tensortract/core.py,sha256=uX3V2oQKMk4_Ed444zL6IK6jwrYL2j6nlDMw2udVQtQ,4718
+target_approximation/tensortract/utils.py,sha256=o5rHimX_BcSPCQORXwbK48SbN1mS0xDQUqUI4eUtgfI,1196
+target_approximation/vocaltractlab/__init__.py,sha256=ZIsM_eH4eHTZO6CS7Pd4di3U7r_LlLpSlH5et6eZdMg,316
+target_approximation/vocaltractlab/core.py,sha256=8rvbTvuN3dErLDcUPEQgy5-4nA0fblSUeaKSzyjwGoQ,6700
+target_approximation/vocaltractlab/utils.py,sha256=gUCC_cWIFAONk6oHmNrXiMbRSQX-BmaviHVxJd2T3s8,1175
+target_approximation-0.0.5.dist-info/licenses/LICENSE,sha256=nIz5wmSghiky4uveG-QwgBEi3WFZxpZJfUY1QpGKF_E,1066
+target_approximation-0.0.5.dist-info/METADATA,sha256=6_HdYuiZiLjIEFaT4wgSvAoNX88o8cYXQO_vGThLSPc,620
+target_approximation-0.0.5.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+target_approximation-0.0.5.dist-info/top_level.txt,sha256=PQOkTZwKQEW4DeMdvEdLUkCEUKD7a8bTR5FZQjUUTdk,21
+target_approximation-0.0.5.dist-info/RECORD,,
