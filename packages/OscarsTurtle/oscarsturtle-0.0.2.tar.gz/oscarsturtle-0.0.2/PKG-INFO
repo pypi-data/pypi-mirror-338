@@ -1,0 +1,20 @@
+Metadata-Version: 2.4
+Name: OscarsTurtle
+Version: 0.0.2
+Summary: Oscar's Turtle is a set of turtle.py programs that draw the impossible shapes of artist Oscar Reutersvärd.
+Project-URL: Homepage, https://github.com/asweigart/oscarsturtle
+Project-URL: Issues, https://github.com/asweigart/oscarsturtle/issues
+Author-email: Al Sweigart <al@inventwithpython.com>
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=2.7
+Description-Content-Type: text/markdown
+
+# oscarsturtle
+
+Oscar's Turtle is a set of turtle.py programs that draw the impossible shapes of artist Oscar Reutersvärd.
+
+All of the drawing is done with relative turtle functions rather than absolute ones. This way, the impossible figures are drawn relative to the current position and heading of the turtle cursor.
+
+This is under construction. Currently, you just `import oscarsturtle` and it'll draw the one impossible shape I have added so far.
