@@ -1,0 +1,16 @@
+pyawx/__init__.py,sha256=VYdspq_UDdYnUFsg6XvL6HJeRz-Au-yMPmd9IMDakSE,168
+pyawx/auth.py,sha256=jj1O4WySaNmiB1fSDMnFfL_ogbo6YHwETnh_KrqaS20,3635
+pyawx/client.py,sha256=XsMkFojgdpmNdeJdsk0__rlajvUYwql_8z7ZvHS3MBU,3775
+pyawx/http.py,sha256=vBbJkQyk_jSjau4-OIsSVt8je_BeWB-xGvW7lhYuMLM,7194
+pyawx/models/__init__.py,sha256=Oi6yg2tdyEDg-fwc6vy96g88bHm4_RHtD4cJcv-rB5w,255
+pyawx/models/enums.py,sha256=vRc21LM7MspSxrlX2IEB0D9mLpqiA81bcDFVFInxGhM,656
+pyawx/models/job_template.py,sha256=ZYaykdg7AOmwk6DkLOWizpUXK73hX5UUYsym1bChYAk,8158
+pyawx/models/workflow_job_template.py,sha256=1Fu1DJBpbzILRx4z2NYS45-g3IWloDKw7lY1mc1MFNs,4676
+pyawx/resources/__init__.py,sha256=6PFqt9aoUAFCurR63fRp_sVaHdF-5P6SHdnhvOcVa08,231
+pyawx/resources/adapter.py,sha256=h7H_UrGYOMgzSOV-XtlX7Q2AH1afVVIIlmReg6wqiZc,6393
+pyawx/resources/job_template.py,sha256=IfBWGO2lVVcySaRnFqtq6hC0EZ3xHnujKrYK8aAriWo,673
+pyawx/resources/workflow_job_template.py,sha256=p5XCt1uoAUyp4jhchLDjett3fRIkBsffYLWWfGWki5Y,772
+pyawx-0.1.3.dist-info/METADATA,sha256=f3FO2KKhNGS7hwE3oPm4j17Li-V0PB2w5cO-fXZjuYo,5034
+pyawx-0.1.3.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+pyawx-0.1.3.dist-info/licenses/LICENSE,sha256=-BeIbua7Ze0wmKeYex6XgWU9FccfhVic4NKvZjxm03M,34888
+pyawx-0.1.3.dist-info/RECORD,,
