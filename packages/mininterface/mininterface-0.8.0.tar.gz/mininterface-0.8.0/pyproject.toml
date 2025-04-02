@@ -1,0 +1,65 @@
+[build-system]
+requires = ["poetry-core>=2.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+name = "mininterface"
+version = "0.8.0"
+description = "A minimal access to GUI, TUI, CLI and config"
+authors = ["Edvard Rejthar <edvard.rejthar@nic.cz>"]
+license = "LGPL-3.0-or-later"
+homepage = "https://github.com/CZ-NIC/mininterface"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+# Minimal requirements
+python = "^3.10"
+tyro = "^0.9"
+typing_extensions = "*"
+pyyaml = "*"
+simple_term_menu = "*"
+# Standard requirements
+humanize = "*"          # NOTE check the size and optinally make it optional
+textual = "<2.0.0"
+tkinter-tooltip = "*"
+tkinter_form = "0.2.1"
+tkscrollableframe = "*"
+# Extras requirements
+textual-serve = { version = "*", optional = true }
+pillow = { version = "*", optional = true }
+tkcalendar = { version = "*", optional = true }
+textual_imageview = { version = "*", optional = true }
+autocombobox = { version = "1.4.2", optional = true }
+
+[tool.poetry.extras]
+# These projects have GPLv3
+# autocombobox, tkcalendar
+web = ["textual-serve"]
+img = ["pillow", "textual_imageview"]
+tui = ["textual_imageview"]
+gui = ["pillow", "tkcalendar", "autocombobox"]
+ui = [
+    "textual-serve",
+    "pillow",
+    "tkcalendar",
+    "textual_imageview",
+    "autocombobox",
+]
+# Reserved for future use.
+# Might contain some big dependencies, other interfaces.
+# Now is the same as ui.
+all = [
+    "textual-serve",
+    "pillow",
+    "tkcalendar",
+    "textual_imageview",
+    "autocombobox",
+]
+
+[tool.poetry.scripts]
+mininterface = "mininterface.__main__:main"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "*"
+attrs = "*"
+pydantic = "*"
