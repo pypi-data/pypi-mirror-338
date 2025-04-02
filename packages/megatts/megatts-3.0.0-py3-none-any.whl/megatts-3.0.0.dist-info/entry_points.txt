@@ -1,0 +1,3 @@
+[console_scripts]
+megatts-cli = megatts.infer_cli:main
+megatts-web = megatts.gradio_api:main
