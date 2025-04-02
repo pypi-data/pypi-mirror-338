@@ -1,0 +1,2 @@
+[opsbox.plugins]
+opsbox_efs_high_percent_io = high_percentiolimit.high_percentiolimit:HighPercentIOLimit
