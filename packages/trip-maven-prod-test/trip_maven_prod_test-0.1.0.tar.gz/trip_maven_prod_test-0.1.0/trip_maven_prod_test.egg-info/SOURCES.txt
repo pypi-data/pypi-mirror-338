@@ -1,0 +1,5 @@
+setup.py
+trip_maven_prod_test.egg-info/PKG-INFO
+trip_maven_prod_test.egg-info/SOURCES.txt
+trip_maven_prod_test.egg-info/dependency_links.txt
+trip_maven_prod_test.egg-info/top_level.txt
