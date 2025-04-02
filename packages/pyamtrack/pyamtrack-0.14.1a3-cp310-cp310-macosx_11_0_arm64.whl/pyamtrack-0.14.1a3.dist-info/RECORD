@@ -1,0 +1,10 @@
+pyamtrack-0.14.1a3.dist-info/RECORD,,
+pyamtrack-0.14.1a3.dist-info/WHEEL,sha256=1TQCiCR2XNhFvEfXo0DMtReVVGHehsPiZ3yCt0CPjI0,141
+pyamtrack-0.14.1a3.dist-info/METADATA,sha256=PE2SBy2OZfEVc_CfpWytEW92v_8gIosBM_8MzH7wlkQ,43107
+pyamtrack-0.14.1a3.dist-info/licenses/LICENSE,sha256=ixuiBLtpoK3iv89l7ylKkg9rs2GzF9ukPH7ynZYzK5s,35148
+pyamtrack/_version.py,sha256=uFQohg66RuM4a6yL0739d-UNDqmYXEeTMaLFva5llb8,515
+pyamtrack/__init__.py,sha256=OUPDTBvmBD5oN_anzyJi_p_zp0RjScYUvZgE2IGnir8,1397
+pyamtrack/libamtrack.dylib,sha256=UsIdSr5i6THL5atudSjU5STS6TpiEYy4HRNix4lX7D8,1528656
+pyamtrack/_core.cpython-310-darwin.so,sha256=T08s1XFBta4xa7opUUcxTic2ZowMf0stgAvWTZYgOO8,167072
+pyamtrack/.dylibs/libgsl.28.dylib,sha256=h8qyztWgEmnGeuly4tKS8G6g5ETU8I2YO2D_iplYZbo,3227344
+pyamtrack/.dylibs/libgslcblas.0.dylib,sha256=RG_LkieHhFcHGsB1IefuwhcSo27-y-6ITqqGigDDNmc,309872
