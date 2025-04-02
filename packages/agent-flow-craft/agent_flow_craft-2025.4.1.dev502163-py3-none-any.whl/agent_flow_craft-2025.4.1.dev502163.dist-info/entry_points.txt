@@ -1,0 +1,2 @@
+[console_scripts]
+agent-flow-craft = src.cli.cli:app
