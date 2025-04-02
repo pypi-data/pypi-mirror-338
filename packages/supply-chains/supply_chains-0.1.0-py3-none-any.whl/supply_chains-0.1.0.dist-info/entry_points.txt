@@ -1,0 +1,2 @@
+[console_scripts]
+supply-chains = supply_chains:main
