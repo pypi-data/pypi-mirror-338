@@ -1,0 +1,18 @@
+global-include COPYING COPYING.*
+include README.rst ChangeLog ChangeLog.*
+include ffgo-launcher.py Makefile shared.mk MANIFEST.in
+
+graft other-licenses
+graft docs
+# Make sure the built doc has been copied to this place
+# (yes, this is normally redundant with 'graft docs')
+graft docs/README.conditional-config
+# Carried over from docs/README.conditional-config.source, undesirable here.
+exclude docs/README.conditional-config/_static/README.txt
+exclude docs/README.conditional-config/.buildinfo.bak
+prune docs/README.conditional-config.source/_build
+
+graft src
+recursive-include share *.svg *.png *.desktop Makefile
+
+global-exclude *.pyc .gitignore .gitattributes
