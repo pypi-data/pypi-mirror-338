@@ -1,0 +1,43 @@
+[project]
+name = "dsmetapackage"
+version = "0.1.0"
+description = "All my packages in one place"
+authors = [{ name = "Danny Stewart", email = "danny@stewart.cc" }]
+readme = "README.md"
+requires-python = ">=3.12,<3.14"
+dependencies = [
+    "arguer (>=0.1.0)",
+    "dsbase (>=0.5.0b1)",
+    "dsbin (>=0.5.0b1)",
+    "enviromancer (>=0.1.3)",
+    "evremixes (>=1.0.3)",
+    "iplooker (>=0.1.7)",
+    "logician (>=0.2.4)",
+    "masterclass (>=0.1.0)",
+    "pathkeeper (>=0.1.0)",
+    "pkgversioner (>=0.1.3)",
+    "shelper (>=0.1.2)",
+    "textparse (>=0.1.0)",
+    "timecapsule (>=0.1.0)",
+    "walking-man (>=0.2.1)",
+]
+
+[tool.poetry.dependencies]
+arguer = { allow-prereleases = true }
+dsbase = { allow-prereleases = true }
+dsbin = { allow-prereleases = true }
+enviromancer = { allow-prereleases = true }
+evremixes = {allow-prereleases = true}
+iplooker = { allow-prereleases = true }
+logician = { allow-prereleases = true }
+masterclass = { allow-prereleases = true }
+pathkeeper = { allow-prereleases = true }
+pkgversioner = { allow-prereleases = true }
+shelper = { allow-prereleases = true }
+textparse = { allow-prereleases = true }
+timecapsule = { allow-prereleases = true }
+walking-man = { allow-prereleases = true }
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
