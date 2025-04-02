@@ -1,0 +1,2 @@
+prefect>=3.3.1
+ray[default]>=2.0.0
