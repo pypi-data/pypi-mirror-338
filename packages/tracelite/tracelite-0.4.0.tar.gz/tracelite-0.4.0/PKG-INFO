@@ -1,0 +1,99 @@
+Metadata-Version: 2.4
+Name: tracelite
+Version: 0.4.0
+Summary: Lightweight request & response tracing for your Flask, Django, or FastAPI dev server
+Author-email: Yeongseon Choe <yeongseon.choe@gmail.com>
+License-Expression: MIT
+License-File: LICENSE
+Requires-Python: <4.0,>=3.9
+Requires-Dist: django>=4.2
+Requires-Dist: fastapi>=0.115.12
+Requires-Dist: flask>=3.0
+Requires-Dist: httpx>=0.28.1
+Requires-Dist: pydantic>=2.6
+Requires-Dist: rich>=13.7
+Requires-Dist: sqlalchemy>=2.0
+Requires-Dist: starlette>=0.46.1
+Requires-Dist: tomli>=2.0
+Requires-Dist: typer>=0.15
+Provides-Extra: dev
+Requires-Dist: black>=25.1.0; extra == 'dev'
+Requires-Dist: isort>=6.0.1; extra == 'dev'
+Requires-Dist: pre-commit>=4.2.0; extra == 'dev'
+Requires-Dist: pytest-cov>=5.0.0; extra == 'dev'
+Requires-Dist: pytest>=8.3.5; extra == 'dev'
+Requires-Dist: streamlit>=1.44.0; extra == 'dev'
+Requires-Dist: tomli-w>=1.2.0; extra == 'dev'
+Description-Content-Type: text/markdown
+
+# Tracelite
+
+[![PyPI version](https://img.shields.io/pypi/v/tracelite)](https://pypi.org/project/tracelite/)
+[![Test](https://github.com/yeongseon/tracelite/actions/workflows/test.yml/badge.svg)](https://github.com/yeongseon/tracelite/actions/workflows/test.yml)
+
+**Lightweight HTTP request & response tracing for Flask, Django, and FastAPI.**  
+Tracelite logs incoming HTTP requests and outgoing responses in a structured format.  
+Ideal for local development and debugging.
+
+---
+
+## ✨ Features
+
+- 🔍 Request & Response logging
+- ⚙️ Configurable filtering & masking
+- 📦 SQLite-based local storage
+- 📊 CLI & Streamlit UI Viewer
+- 🧩 Optional dependency support
+
+---
+
+## 🚀 Quick Start
+
+### Installation
+
+```bash
+pip install tracelite
+```
+
+### Usage Example (FastAPI)
+
+```python
+from fastapi import FastAPI
+from tracelite.middleware.fastapi import TraceliteMiddleware
+
+app = FastAPI()
+app.add_middleware(TraceliteMiddleware)
+```
+
+### CLI Viewer
+
+```bash
+tracelite view
+```
+
+---
+
+## 🧩 Examples
+
+Example projects are available in the examples/ folder:
+
+- Flask Demo
+- FastAPI Demo
+- Django Demo
+
+
+## 📄 Documentation
+
+For full documentation, refer to the [`docs/`](./docs) folder:
+
+- [Installation Guide](./docs/installation.md)
+- [Usage Guide](./docs/usage.md)
+- [Configuration Guide](./docs/configuration.md)
+- [Development Guide](./docs/development.md)
+- [Contributing](./docs/contributing.md)
+
+---
+
+## 📄 License
+
+MIT © Yeongseon Choe
