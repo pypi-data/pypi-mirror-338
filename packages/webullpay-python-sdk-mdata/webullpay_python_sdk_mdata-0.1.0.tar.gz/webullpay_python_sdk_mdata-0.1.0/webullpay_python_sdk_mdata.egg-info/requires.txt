@@ -1,0 +1,2 @@
+webullpay-python-sdk-core==0.1.0
+webullpay-python-sdk-quotes-core==0.1.0
