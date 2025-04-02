@@ -1,0 +1,7 @@
+README.md
+setup.py
+inspect_proxmox_sandbox.egg-info/PKG-INFO
+inspect_proxmox_sandbox.egg-info/SOURCES.txt
+inspect_proxmox_sandbox.egg-info/dependency_links.txt
+inspect_proxmox_sandbox.egg-info/top_level.txt
+proxmoxsandbox/__init__.py
