@@ -1,0 +1,9 @@
+pkgconf-2.4.3.post1.dist-info/LICENSE,sha256=lZfMbfD2zk6Kt7u4eEuHVHhp2daEC3IJKqPCFmIq7is,1083
+pkgconf-2.4.3.post1.dist-info/WHEEL,sha256=IuLxjRS9CuWfPsc_udL531Nyq58ozzL-6960_oFOmJg,156
+pkgconf-2.4.3.post1.dist-info/RECORD,,
+pkgconf-2.4.3.post1.dist-info/entry_points.txt,sha256=rqbdxRekoww-gAluYeeJvZ_y1v2Lz4Vn5txhiwhXsUM,100
+pkgconf-2.4.3.post1.dist-info/METADATA,sha256=-l7mh6B21jQdN7D3xghW_RmErrglc4U8d-xmqFH7qKw,4546
+pkgconf/__main__.py,sha256=z8ydfYdhIsTaY9PjQwjdOTnEr8Q1Ct7GOZDMlDcL44I,4040
+pkgconf/diagnose.py,sha256=C08iPynDbFsVED0R3R-aqwqFH6tKln_tqhG_LPdGMFM,570
+pkgconf/__init__.py,sha256=Ibekg4i-sZbARQpxE7NVDYm6VGGYPRvqqL7kryQPQBw,4921
+pkgconf/.bin/pkgconf,sha256=UO7FF0FByemcTAQ4iUXg260P5M2xxQrHJgOSalKTulo,126472
