@@ -1,0 +1,21 @@
+Metadata-Version: 2.3
+Name: arguer
+Version: 0.1.0
+Summary: Customizable drop-in replacement for argparse
+Author: Danny Stewart
+Author-email: danny@stewart.cc
+Requires-Python: >=3.12
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Dist: pkgversioner (>=0.0.2,<0.2.0)
+Description-Content-Type: text/markdown
+
+# Arguer
+
+[![PyPI version](https://img.shields.io/pypi/v/arguer.svg)](https://pypi.org/project/arguer/)
+[![Python versions](https://img.shields.io/pypi/pyversions/arguer.svg)](https://pypi.org/project/arguer/)
+[![PyPI downloads](https://img.shields.io/pypi/dm/arguer.svg)](https://pypi.org/project/arguer/)
+
+Drop-in replacement for argparse's ArgumentParser with better customization and formatting.
+
