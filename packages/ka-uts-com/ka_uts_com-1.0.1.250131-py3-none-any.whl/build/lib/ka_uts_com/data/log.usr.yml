@@ -1,0 +1,85 @@
+version: 1
+disable_existing_loggers: False
+
+# root:
+#     level: DEBUG
+#     handlers:
+#         - debug_console
+#         - debug_file
+
+loggers:
+
+    # person logger
+    person:
+        # level: NOTSET
+        level: DEBUG
+        handlers:
+            - person_debug_console
+            - person_debug_file
+            - person_info_file
+            - person_error_file
+
+handlers:
+
+    person_debug_console:
+        class: 'logging.StreamHandler'
+        level: DEBUG
+        formatter: person_debug
+        stream: 'ext://sys.stderr'
+
+#   person_info_rotating_file_handler:
+#       class: 'logging.handlers.RotatingFileHandler'
+#       level: INFO
+#       formatter: info
+#       filename: 'info.rotating.log'
+#       mode: 'a'
+#       maxBytes: 1048576  # 1MB
+#       backupCount: 10
+#       encoding: utf8
+
+    person_debug_file:
+        class: 'logging.FileHandler'
+        level: DEBUG
+        formatter: person_error
+        filename: '{{debug_dir}}/debs_{{pid}}_{{ts}}.log'
+        mode: 'a'
+
+    person_info_file:
+        class: 'logging.FileHandler'
+        level: INFO
+        formatter: person_info
+        filename: '{{info_dir}}/logs_{{pid}}_{{ts}}.log'
+        mode: 'a'
+
+    person_error_file:
+        class: 'logging.FileHandler'
+        level: ERROR
+        formatter: person_error
+        filename: '{{error_dir}}/errs_{{pid}}_{{ts}}.log'
+        mode: 'a'
+
+    person_critical_mail:
+        class: 'logging.handlers.SMTPHandler'
+        level: CRITICAL
+        formatter: person_critical
+        mailhost : localhost
+        fromaddr: 'monitoring@domain.com'
+        toaddrs:
+            - 'dev@domain.com'
+            - 'qa@domain.com'
+        subject: 'Critical error with application name'
+
+
+formatters:
+
+    person_info:
+        format: '%(asctime)s-%(levelname)s-%(name)s::%(module)s|%(lineno)s:: %(message)s'
+    person_debug:
+        format: '%(asctime)-15s %(levelname)s-%(name)s-%(process)d::%(module)s.%(funcName)s|%(lineno)s:: %(message)s'
+        datefmt: '%Y-%m-%d %H:%M:%S'
+    person_error:
+        format: '%(asctime)-15s %(levelname)s-%(name)s-%(process)d::%(module)s.%(funcName)s|%(lineno)s:: %(message)s'
+        datefmt: '%Y-%m-%d %H:%M:%S'
+    person_critical:
+        format: '%(asctime)-15s %(levelname)s-%(name)s-%(process)d::%(module)s.%(funcName)s|%(lineno)s:: %(message)s'
+        datefmt: '%Y-%m-%d %H:%M:%S'
