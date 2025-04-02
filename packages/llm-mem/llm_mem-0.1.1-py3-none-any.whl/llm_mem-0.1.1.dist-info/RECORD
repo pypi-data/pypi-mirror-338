@@ -1,0 +1,8 @@
+llm_mem/__init__.py,sha256=FlaS9RymakE7OJE8YjPbh-xcdYSdE3EpHMNPlUOKGQ4,438
+llm_mem/cli.py,sha256=I7qXYBAGb54oNGDBOOa5rEHGJk3xIQrpMFEEFvE8l-k,1522
+llm_mem/llm_memory_calculator.py,sha256=2DnvMm_RuTDKq4s35tklfq2zlYPFcsO3cJRsiu3gR44,3818
+llm_mem-0.1.1.dist-info/METADATA,sha256=iNMF3ibMGkUtXkj40rNIte1kgsKpH-Ct0FSKsbt_zP0,5014
+llm_mem-0.1.1.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+llm_mem-0.1.1.dist-info/entry_points.txt,sha256=aMECR8otaBmYkcoiK1xf78y0nLTjzt8PXeRpQegR2q0,45
+llm_mem-0.1.1.dist-info/licenses/LICENSE,sha256=8QgD1ZsUxw6ltlPlHm-21c4vjwoQUAbPMSCjNLw-Dfo,1072
+llm_mem-0.1.1.dist-info/RECORD,,
