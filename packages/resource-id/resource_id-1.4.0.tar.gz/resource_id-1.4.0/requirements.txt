@@ -1,0 +1,13 @@
+# requirements for development, testing.
+
+wheel
+ruff
+build
+pytest
+pytest-cov
+setuptools_scm
+tox
+twine
+jsonschema
+
+-e .

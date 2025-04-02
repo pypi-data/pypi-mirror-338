@@ -1,0 +1,56 @@
+[build-system]
+requires = ["setuptools >= 77.0.3", "setuptools_scm[toml]>=6.2"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "resource-id"
+dynamic = ["version"]
+authors = [
+  {name = "Charles Yeomans", email = "charles@declaresub.com"},
+]
+description = "A base62-encoded identifier for use in URLs.  Supports Pydantic validation."
+readme = "README.md"
+license = "MIT"
+keywords = ["identifier", "url", "base62", "uuid", "fastapi"]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Developers",
+    "Topic :: Internet :: WWW/HTTP :: HTTP Servers",
+    "Framework :: FastAPI",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Typing :: Typed",
+]
+dependencies = [
+  "pydantic>=2",
+  "typing_extensions>=4.6.0; python_version<'3.10'",
+]
+
+[project.urls]
+Homepage = "https://github.com/declaresub/resource-id"
+
+[tool.setuptools]
+# ...
+# By default, include-package-data is true in pyproject.toml,
+# so you do NOT have to specify this line.
+include-package-data = true
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+
+
+[tool.setuptools_scm]
+
+
+[tool.ruff.lint]
+
+
+[tool.ruff.lint.flake8-pytest-style]
+fixture-parentheses = false
+mark-parentheses = false
