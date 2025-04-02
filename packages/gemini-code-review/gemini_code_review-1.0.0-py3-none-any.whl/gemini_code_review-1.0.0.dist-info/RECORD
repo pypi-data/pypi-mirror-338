@@ -1,0 +1,8 @@
+gemini/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+gemini/review_code.py,sha256=Exv0N8xIyXzg4UovW_YNUUddf3m-5z2L7g2mEny1Z8Y,8934
+gemini/review_code2.py,sha256=y-WU6z28ihmYL0U5_afN6XPd-4_OMMeKStHgwiFWnys,9215
+gemini_code_review-1.0.0.dist-info/METADATA,sha256=nnPHdsm-LOaXYa0p7AB3teRw0YJHJsdxk-jx4b7bVRM,455
+gemini_code_review-1.0.0.dist-info/WHEEL,sha256=tZoeGjtWxWRfdplE7E3d45VPlLNQnvbKiYnx7gwAy8A,92
+gemini_code_review-1.0.0.dist-info/entry_points.txt,sha256=9NE3MkfNnP51H0jwG0xnhoqW19OYBKMi3Cg8TdSFFP8,61
+gemini_code_review-1.0.0.dist-info/top_level.txt,sha256=HC3nun2yFuNkNiRuKIq3MP_Izk5CqGNHxn2nl0-ozn0,7
+gemini_code_review-1.0.0.dist-info/RECORD,,
