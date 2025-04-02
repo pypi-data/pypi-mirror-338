@@ -1,0 +1,10 @@
+ipyquizjb/__init__.py,sha256=vAd43VomydNKmblRDNjmg05_Edj1rXJf-QcsWHnrDps,169
+ipyquizjb/faceit.py,sha256=YBB34zQITS7BAuoeq8ZXgKZ9yC3UFKUb5XY8MBWmPRg,1345
+ipyquizjb/question_widgets.py,sha256=YQvNaCtylFtu4WxlS9p5Mb0eeY9uTjp2MteLxbLWP0U,8416
+ipyquizjb/questions.py,sha256=EuBKWdwJRonwMDu6WRLn9-iQcNtnMZmPiYids5g2Pv8,12100
+ipyquizjb/types.py,sha256=hHDx09Frie05B-uUXcNK_LfQVreDwC0zKftqCjCrnW8,1470
+ipyquizjb/utils.py,sha256=gv_sb03p_HTFJsjb3Rw_vKNeg1xX7ewmln31c3jQOsU,2584
+ipyquizjb-0.3.5.dev0.dist-info/METADATA,sha256=LtE35D2IknMLh6ABwzPhaSyLWVjoTnBTmODx3u-owOs,995
+ipyquizjb-0.3.5.dev0.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+ipyquizjb-0.3.5.dev0.dist-info/licenses/LICENSE,sha256=UF2Wo62zP6O3R9Mfz-tl2u_w9sGpN_TNppLYRYKbwAg,1113
+ipyquizjb-0.3.5.dev0.dist-info/RECORD,,
