@@ -1,0 +1,2 @@
+[console_scripts]
+kamusrejang_cli = kamusrejang_cli.main:main

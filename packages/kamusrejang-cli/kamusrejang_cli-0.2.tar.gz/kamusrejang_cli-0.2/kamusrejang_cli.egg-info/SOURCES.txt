@@ -1,0 +1,10 @@
+README.md
+setup.py
+kamusrejang_cli/__init__.py
+kamusrejang_cli/main.py
+kamusrejang_cli.egg-info/PKG-INFO
+kamusrejang_cli.egg-info/SOURCES.txt
+kamusrejang_cli.egg-info/dependency_links.txt
+kamusrejang_cli.egg-info/entry_points.txt
+kamusrejang_cli.egg-info/requires.txt
+kamusrejang_cli.egg-info/top_level.txt
