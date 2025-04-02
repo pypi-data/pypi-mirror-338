@@ -1,0 +1,61 @@
+import os, logging, requests, json, pathlib, time, jwt, re
+import azure.functions as func
+from requests.auth import HTTPBasicAuth
+from utils import sub_function_handler
+from config import PROJECT_NAME
+from plugins.${plugin}.config import CLIENT_ID, CLIENT_SECRET, ${plugin_upper}_AUTH_URL
+from plugins.${plugin}.auth.decorators import http_request_handler
+from plugins.${plugin}.config import ERROR_CODES, ERROR_CODES_DESCRIPTION
+
+
+logger = logging.getLogger(PROJECT_NAME)
+file_absolute_path = str(pathlib.Path(__file__).parent.resolve())
+
+
+# @http_request_handler
+@sub_function_handler
+def get_access_token_from_refresh_token(refresh_token):
+    user_name = CLIENT_ID
+    password = CLIENT_SECRET
+    auth_token_url = ${plugin_upper}_AUTH_URL + "<plugin_token_url_end_point>"
+    headers = {
+        "content-type": "application/x-www-form-urlencoded"
+    }
+    body = {
+        "grant_type": "refresh_token",
+        "refresh_token": refresh_token,
+    }
+    response = requests.post(
+        auth_token_url, auth=HTTPBasicAuth(user_name, password), headers=headers, data=body
+    )
+    response_content = json.loads(response.text)
+    status_code = response_content.get("code", response.status_code)
+    # Error Handling
+    if response_content.get("code", status_code) in ERROR_CODES:
+        error_message = response_content.get("message", ERROR_CODES_DESCRIPTION.get(str(status_code)), "Error in requesting ${plugin_caps}.")
+        raise requests.exceptions.HTTPError(error_message)
+    elif re.match("5[0-9][0-9]", str(status_code), re.IGNORECASE):
+        error_message = "${plugin_caps} Internal Server Error."
+        raise requests.exceptions.HTTPError(error_message)
+    else:
+        pass    
+    return response_content
+
+# @http_request_handler
+@sub_function_handler
+def verify_auth_token(request: func.HttpRequest):
+    is_new_token = False
+    request_body = {} if request.get_body() in [b'', "", None, -1] else dict(request.get_json())
+    token = request_body.get("token", None)
+    access_token = token.get("access_token", None)
+    refresh_token = token.get("refresh_token", None)
+    if not access_token:
+        raise requests.exceptions.HTTPError("Missing access token.")
+    token_decoded = jwt.decode(access_token, options={"verify_signature": False})
+    access_token_exp = token_decoded.get("exp", 0)
+    if int(round(time.time())) > access_token_exp:
+        token = get_access_token_from_refresh_token(refresh_token)
+        is_new_token = True
+    return token, is_new_token
+
+         

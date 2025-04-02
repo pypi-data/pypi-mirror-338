@@ -1,0 +1,56 @@
+import os
+import requests, json, logging, re
+import azure.functions as func
+from utils import sub_function_handler
+from config import PROJECT_NAME
+from plugins.${plugin}.config import ERROR_CODES, ERROR_CODES_DESCRIPTION
+from plugins.${plugin}.auth.decorators import http_request_handler
+
+
+logger = logging.getLogger(PROJECT_NAME)
+
+
+@sub_function_handler
+def request_handler(request_info):
+    request_url = request_info.get("url", None)
+    if not request_url:
+        raise requests.exceptions.RequestException("URL information missing for request call.")
+    request_method = request_info.get("method", None)
+    if not request_method:
+        raise requests.exceptions.RequestException("HTTP method is missing for request call.")
+    request_header = request_info.get("header", {})
+    request_body = request_info.get("body", {})
+    request_params = request_info.get("params", {})
+    if request_method.upper() == "GET":
+        response = requests.get(request_url, headers=request_header, data=json.dumps(request_body))
+    elif request_method.upper() == "POST":
+        response = requests.post(request_url, headers=request_header, data=json.dumps(request_body))
+    elif request_method.upper() == "PUT":
+        response = requests.put(request_url, headers=request_header, data=json.dumps(request_body))
+    elif request_method.upper() == "DELETE":
+        response = requests.delete(request_url, headers=request_header, data=json.dumps(request_body))
+    elif request_method.upper() == "PATCH":
+        response = requests.patch(request_url, headers=request_header, data=json.dumps(request_body))
+    elif request_method.upper() == "HEAD":
+        response = requests.head(request_url, headers=request_header, params=request_params)
+    elif request_method.upper() == "OPTIONS":
+        response = requests.options(request_url, headers=request_header, params=request_params)
+    elif request_method.upper() == "TRACE":
+        raise requests.exceptions.RequestException("TRACE method is not supported.")
+    elif request_method.upper() == "CONNECT":
+        raise requests.exceptions.RequestException("CONNECT method is not supported.")
+    else:
+        raise requests.exceptions.RequestException(f"{request_method} is not valid HTTP method.")
+    response_content = json.loads(response.text)
+    status_code = response.status_code
+    # Error Handling
+    if response_content.get("code", status_code) in ERROR_CODES:
+        error_message = response_content.get("message", ERROR_CODES_DESCRIPTION.get(str(status_code)), "Error in requesting ${plugin_caps}.")
+        raise requests.exceptions.HTTPError(error_message)
+    elif re.match("5[0-9][0-9]", str(status_code), re.IGNORECASE):
+        error_message = "${plugin_caps} Internal Server Error."
+        raise requests.exceptions.HTTPError(error_message)
+    else:
+        pass
+
+    return response_content, status_code

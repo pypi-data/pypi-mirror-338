@@ -1,0 +1,26 @@
+import logging, json
+import azure.functions as func
+from auth.jwt import generate_projetly_token
+from config import PROJECT_NAME
+from plugins.${plugin}.config import projetly_route
+from plugins.${plugin}.auth.decorators import http_request_handler
+
+
+logger = logging.getLogger(PROJECT_NAME)
+
+
+class ${plugin_caps}EventHandler(object):
+
+    def __init__(self):
+        pass
+    
+
+    @projetly_route.function_name(name="${plugin_caps}SampleEventHandler")
+    @projetly_route.route(route="${plugin}/event/sample", methods=("POST",))
+    @http_request_handler
+    def ${plugin}_sample_event_handler(req: func.HttpRequest) -> func.HttpResponse:
+        body = dict(req.get_json())
+        # Write your event logic here.
+
+        return func.HttpResponse("Success.", status_code=200)
+
