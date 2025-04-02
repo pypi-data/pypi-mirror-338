@@ -1,0 +1,39 @@
+Metadata-Version: 2.4
+Name: pyspark_data_engineering_framework
+Version: 0.0.1
+Summary: A PySpark framework for data engineering tasks
+Home-page: https://github.com/yourusername/pyspark_data_engineering_framework
+Author: Aakash Jain
+Author-email: aakashjainiitg@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pyspark>=3.0.0
+Provides-Extra: dev
+Requires-Dist: pytest>=6.0.0; extra == "dev"
+Requires-Dist: pytest-cov>=2.0.0; extra == "dev"
+Provides-Extra: xml
+Requires-Dist: spark-xml; extra == "xml"
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: license-file
+Dynamic: provides-extra
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+# PySpark Data Engineering Framework
+
+A framework for data processing with PySpark, providing utilities for reading and processing various file formats.
+
+## Installation
+
+```bash
+pip install pyspark_data_engineering_framework
