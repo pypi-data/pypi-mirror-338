@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+sandwich_tag/__init__.py
+sandwich_tag.egg-info/PKG-INFO
+sandwich_tag.egg-info/SOURCES.txt
+sandwich_tag.egg-info/dependency_links.txt
+sandwich_tag.egg-info/requires.txt
+sandwich_tag.egg-info/top_level.txt
+tests/__init__.py
+tests/settings.py
+tests/test_sandwich.py
+tests/templates/bread.html
