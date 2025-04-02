@@ -1,0 +1,12 @@
+plotly>=6.0
+kaleido
+notebook>=7.0
+anywidget>=0.9.13
+numpy
+matplotlib
+matplotlib-venn
+ipython
+pandas
+scikit-image
+logzero
+ipynb-path
