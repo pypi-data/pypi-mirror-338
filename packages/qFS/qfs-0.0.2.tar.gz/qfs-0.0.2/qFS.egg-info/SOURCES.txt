@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+qFS/__init__.py
+qFS/qFS.py
+qFS.egg-info/PKG-INFO
+qFS.egg-info/SOURCES.txt
+qFS.egg-info/dependency_links.txt
+qFS.egg-info/requires.txt
+qFS.egg-info/top_level.txt
+test/test_qFS.py
