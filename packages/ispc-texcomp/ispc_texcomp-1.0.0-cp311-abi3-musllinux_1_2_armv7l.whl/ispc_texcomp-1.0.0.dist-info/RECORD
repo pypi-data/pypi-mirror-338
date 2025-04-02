@@ -1,0 +1,11 @@
+ispc_texcomp/__init__.py,sha256=ls9buE1ITTQwqszlaAPOpj-7vrHXceOMe5dIiJ9aBPE,406
+ispc_texcomp/_ispc_texcomp.abi3.so,sha256=ZFQlWbdZ_vCwgF1A_sMiUz1XWdzPCvDnNIIaSdRRu94,1206149
+ispc_texcomp/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ispc_texcomp/__init__.pyi,sha256=RF4cFt97xxNLt4KiiEPZS2SXqkf1d75cRmQDts-tJts,2951
+ispc_texcomp.libs/libgcc_s-e9419831.so.1,sha256=NpnXTGap7-Kz8iC3MjYp6w20RCuWm33mrsKpHybsS3E,42301
+ispc_texcomp.libs/libstdc++-c577ad05.so.6.0.32,sha256=mpkb3YtRbcCSyTGN_LI-fkcGtVq4SvLorBsuP0uHR1Y,2751001
+ispc_texcomp-1.0.0.dist-info/RECORD,,
+ispc_texcomp-1.0.0.dist-info/WHEEL,sha256=I95wTW2IAm1oGGixtF4tYHQwkvvX_9nwEpj-3ywRW28,111
+ispc_texcomp-1.0.0.dist-info/METADATA,sha256=KLnuT8eWyc1nc8c-tDJEsNKjmmAK4cPFmK05vZr_bd8,4091
+ispc_texcomp-1.0.0.dist-info/top_level.txt,sha256=509JkzsE-s6C6h4wrHoANOskVcA05jnbz760m7NS6H8,13
+ispc_texcomp-1.0.0.dist-info/licenses/LICENSE,sha256=wZ41Ua2FTWLvdf5Xqj9fetNAH3pQ_3xatJ4OwPNPGUk,1069
