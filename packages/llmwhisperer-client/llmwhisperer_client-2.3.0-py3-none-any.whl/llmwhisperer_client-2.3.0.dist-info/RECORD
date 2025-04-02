@@ -1,0 +1,9 @@
+llmwhisperer_client-2.3.0.dist-info/METADATA,sha256=nVfuBr3W9uM9QQhr2Tw5qcx40Pl-86qNNY9M_-zHHSE,3528
+llmwhisperer_client-2.3.0.dist-info/WHEEL,sha256=thaaA2w1JzcGC48WYufAs8nrYZjJm8LqNfnXFOFyCC4,90
+llmwhisperer_client-2.3.0.dist-info/entry_points.txt,sha256=6OYgBcLyFCUgeqLgnvMyOJxPCWzgy7se4rLPKtNonMs,34
+llmwhisperer_client-2.3.0.dist-info/licenses/LICENSE,sha256=LTN4m_kcdd8Qvn3sVQneW09M6J-WC262zlh9hpc_Xz8,1069
+unstract/llmwhisperer/__init__.py,sha256=pQqzi5vSM4i-O5H05UvmiSalx_0Vx7zmietz7pfXZFs,228
+unstract/llmwhisperer/client.py,sha256=0-vkmWFg4qReH8ORzoZQhGHLcHEDgGrKyBLnw86TzME,16930
+unstract/llmwhisperer/client_v2.py,sha256=pfMjL65yQsnkftzbW8Iba2acLJoMmlMsorscG7Bywsc,28230
+unstract/llmwhisperer/utils.py,sha256=MxiKSIzGYGXY8Zgq-fEgcfMdsCFEaH0SMelf6xetoXY,709
+llmwhisperer_client-2.3.0.dist-info/RECORD,,
