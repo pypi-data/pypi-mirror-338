@@ -1,0 +1,2 @@
+[console_scripts]
+wandb-logger = wandb_logger_app.main:cli
