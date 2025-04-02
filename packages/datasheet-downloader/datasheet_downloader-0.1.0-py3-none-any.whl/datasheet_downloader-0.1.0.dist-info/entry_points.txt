@@ -1,0 +1,3 @@
+[console_scripts]
+datasheet-downloader=datasheet_downloader:cli_main
+
