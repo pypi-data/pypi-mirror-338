@@ -1,0 +1,5 @@
+setup.py
+trip_npm_prod_search.egg-info/PKG-INFO
+trip_npm_prod_search.egg-info/SOURCES.txt
+trip_npm_prod_search.egg-info/dependency_links.txt
+trip_npm_prod_search.egg-info/top_level.txt
