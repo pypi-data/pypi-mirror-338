@@ -1,0 +1,10 @@
+unitflex/__init__.py,sha256=e4GZMJJQSOKUEuL584GUrAdfxt_I7kn-nLvr9jBR5TE,188
+unitflex/data.py,sha256=lsgV6BAECEU6e1K6hx77W9I1lMdrr_KLtHVjl7c-47U,2962
+unitflex/length.py,sha256=NKL5pvx_upJosQSnvQQkIlol_KZs9BSfKsm21CzapLg,2705
+unitflex/mass.py,sha256=4kKoB8ICrvZdNXhEsm1LKpS398xWQu7QSOlw_YWtyfs,2607
+unitflex/temperature.py,sha256=RrBSx-yiRtlMGCmFOfk8M5xt1xrDevkCC0UelAp2jz8,3250
+unitflex-0.1.0.dist-info/licenses/LICENSE,sha256=4tw9CAuITdC3FkRpHJ5ffNMvrdiQxWsFbFs2l1JyfV4,1088
+unitflex-0.1.0.dist-info/METADATA,sha256=BtHZ5Ic6LmBH-6w9O6p_SzTW2KQXRLXAEwph9f2L-T0,4650
+unitflex-0.1.0.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+unitflex-0.1.0.dist-info/top_level.txt,sha256=Mscl-2MNAKZxTY_VvnrKLOnVd38QV_TtN5UMxC3vB0w,9
+unitflex-0.1.0.dist-info/RECORD,,
