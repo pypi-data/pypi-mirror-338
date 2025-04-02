@@ -1,0 +1,7 @@
+README.md
+setup.py
+ice_python.egg-info/PKG-INFO
+ice_python.egg-info/SOURCES.txt
+ice_python.egg-info/dependency_links.txt
+ice_python.egg-info/requires.txt
+ice_python.egg-info/top_level.txt
