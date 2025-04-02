@@ -1,0 +1,11 @@
+imuthes/alchemy/columns/.git,sha256=MJ5aycRVJa6EnCJDBSQV2CPKnqKc0jUgMlUAuhBCSXY,54
+imuthes/alchemy/columns/README.md,sha256=2MufuCZQJNLsAgUWc-GLYS4fC14ZPVpNcgli-eIb87Y,6169
+imuthes/alchemy/columns/__init__.py,sha256=P1THCB4qQcjFEz83yJxkzegTz-VQvr40aeVdxerz_dM,1255
+imuthes/alchemy/columns/default_flag.py,sha256=yOBY1Ek7CKvKTnKsQy1-PGiEQ5E_hAwRhfuvI14TTcA,1158
+imuthes/alchemy/columns/description.py,sha256=qDataLsUfsGq318V6tzgSBcr0011izMNGOujGDYc2wg,870
+imuthes/alchemy/columns/named.py,sha256=g7NFUmnjTF9m0EtalqLbF9YfbxgLraBa7F0TAVrTF3A,2498
+imuthes/alchemy/columns/notes.py,sha256=Y3fjFvaLQNz7PmU-t8A0wTsoP1hLid66t_qwwzUjFao,496
+imuthes/alchemy/columns/system_flag.py,sha256=oB8JF-lAR63PN51TC10k-0KWvMP2Z6IfJzJk4ovGj9o,506
+imuthes_alchemy_columns-0.0.0a6.dist-info/METADATA,sha256=TZDTmiHSMZ0Ds3ko1XBt_hwXP89u3AkZX41FW7LCQmA,999
+imuthes_alchemy_columns-0.0.0a6.dist-info/WHEEL,sha256=IYZQI976HJqqOpQU6PHkJ8fb3tMNBFjg-Cn-pwAbaFM,88
+imuthes_alchemy_columns-0.0.0a6.dist-info/RECORD,,
