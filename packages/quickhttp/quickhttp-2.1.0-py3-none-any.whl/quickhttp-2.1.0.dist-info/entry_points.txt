@@ -1,0 +1,2 @@
+[console_scripts]
+quickhttp = quickhttp.cli:app
