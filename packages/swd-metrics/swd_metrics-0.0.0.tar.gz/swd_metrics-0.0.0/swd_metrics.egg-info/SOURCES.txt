@@ -1,0 +1,8 @@
+LICENSE.txt
+README.md
+pyproject.toml
+placeholder/__init__.py
+swd_metrics.egg-info/PKG-INFO
+swd_metrics.egg-info/SOURCES.txt
+swd_metrics.egg-info/dependency_links.txt
+swd_metrics.egg-info/top_level.txt
