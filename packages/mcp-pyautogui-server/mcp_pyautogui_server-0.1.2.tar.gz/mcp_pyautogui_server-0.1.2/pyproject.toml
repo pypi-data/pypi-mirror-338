@@ -1,0 +1,39 @@
+[project]
+name = "mcp-pyautogui-server"
+version = "0.1.2"
+description = "MCP server for pyautogui"
+readme = "README.md"
+requires-python = ">=3.10"
+authors = [
+    { name = "He Tao", email = "hetao7@pku.edu.cn" },
+]
+keywords = ["pyautogui", "mcp", "automation", "gui"]
+license = { text = "MIT" }
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.12",
+]
+dependencies = [
+    "fastmcp>=0.4.1",
+    "pillow>=11.1.0",
+    "pyautogui>=0.9.54",
+]
+
+[project.scripts]
+mcp-pyautogui-server = "mcp_pyautogui_server:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.uv]
+dev-dependencies = [
+    "pytest>=8.3.3",
+    "ruff>=0.8.1",
+]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/mcp_pyautogui_server"]
