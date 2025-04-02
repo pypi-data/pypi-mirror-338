@@ -1,0 +1,15 @@
+from {{ project_name }}.loaders.my_custom_loaders import MyCustomLoader
+from talos_loader import TalosLoader, Block, ContentType
+
+if __name__ == '__main__':
+    # 创建一个加载器实例
+    loader = MyCustomLoader()
+    
+    # 测试数据
+    bytes_text = b'this is text'
+    
+    # 加载数据
+    result = loader.load(bytes_text)
+    
+    # 打印结果
+    print(result)
