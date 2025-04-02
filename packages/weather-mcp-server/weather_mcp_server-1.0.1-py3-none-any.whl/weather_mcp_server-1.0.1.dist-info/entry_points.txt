@@ -1,0 +1,2 @@
+[console_scripts]
+weather-mcp-server = weather_mcp_server.server:main
