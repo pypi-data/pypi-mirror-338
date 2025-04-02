@@ -1,0 +1,9 @@
+iam_provider/iam_provider.py,sha256=492swsARVAoL_LZxKHVGD-z7fDJpHJccMQwi_AQgNf4,6903
+iam_provider/manifest.toml,sha256=4sKwx4dBv0-xNrsi-V_HoRYxISuirxNViG5y6vgokCY,106
+iam_provider/test_iam_provider.py,sha256=jB6GR-FGTEQhmbVncdV50dE4Y_daxnwyky_81mIrAII,2969
+opsbox_iam_provider-0.1.6.dist-info/licenses/LICENCE.txt,sha256=hs-WVkefHtuCJFuYX0oswNUDuUV2br7aQmnGCzB2ma4,16725
+opsbox_iam_provider-0.1.6.dist-info/METADATA,sha256=ituh8aeeeQVLZ1NxGaAATnfrN9HkKnEjnudObAyq-Ug,350
+opsbox_iam_provider-0.1.6.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+opsbox_iam_provider-0.1.6.dist-info/entry_points.txt,sha256=W0ODFo7OgbxmffHsFGe2v953rw8PEGUhkTS5O3agzKY,77
+opsbox_iam_provider-0.1.6.dist-info/top_level.txt,sha256=0jpnFLkZ33KKBnlk7hZDzxBPVSbNuSRI9bi1Nw-_x4g,13
+opsbox_iam_provider-0.1.6.dist-info/RECORD,,
