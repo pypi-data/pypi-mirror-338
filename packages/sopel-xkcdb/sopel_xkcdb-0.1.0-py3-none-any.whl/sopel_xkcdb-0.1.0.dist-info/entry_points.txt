@@ -1,0 +1,2 @@
+[sopel.plugins]
+xkcdb = sopel_xkcdb.plugin
