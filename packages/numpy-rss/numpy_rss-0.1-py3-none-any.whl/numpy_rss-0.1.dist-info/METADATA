@@ -1,0 +1,9 @@
+Metadata-Version: 2.4
+Name: numpy_rss
+Version: 0.1
+Summary: A custom library with E1 to E9 functions
+Author: Jordan Blake
+Author-email: jordanblake.tech@gmail.com
+Dynamic: author
+Dynamic: author-email
+Dynamic: summary
