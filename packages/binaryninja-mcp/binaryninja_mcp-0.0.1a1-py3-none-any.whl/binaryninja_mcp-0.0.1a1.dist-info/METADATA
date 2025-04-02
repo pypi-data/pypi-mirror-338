@@ -1,0 +1,12 @@
+Metadata-Version: 2.4
+Name: binaryninja-mcp
+Version: 0.0.1a1
+Summary: MCP Server for Binary Ninja
+Author-email: ttimasdf <opensource@rabit.pw>
+License-File: LICENSE
+Requires-Python: >=3.10
+Requires-Dist: mcp>=1.6.0
+Description-Content-Type: text/markdown
+
+# binaryninja-mcp
+MCP Server for Binary Ninja
