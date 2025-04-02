@@ -1,0 +1,2 @@
+[console_scripts]
+simnexus = simnexus.cli.main:app
