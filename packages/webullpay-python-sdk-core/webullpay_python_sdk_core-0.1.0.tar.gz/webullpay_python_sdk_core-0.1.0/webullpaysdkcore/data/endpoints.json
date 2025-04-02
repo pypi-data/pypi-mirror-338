@@ -1,0 +1,11 @@
+{
+    "default_region": "us",
+    "regions": ["us"],
+    "region_mapping": {
+        "us": {
+            "api": "u1spay-openapi.webullpayapi.com",
+            "quotes-api": "u1spay-openapi-quotes.webullpaytechapi.com",
+            "events-api": "u1spay-openapi-event.webullpayapi.com"
+        }
+    }
+}
