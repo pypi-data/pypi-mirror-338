@@ -1,0 +1,7 @@
+abstract_webserver/__init__.py,sha256=HQqtZL7bNxGv2sjq36tHVQxDgjeS5x1yMsx9A1DKH_Y,65
+abstract_webserver/abstract_webserver.py,sha256=NYaWTPsoJXxfe5tvPRLq9c9PWs1gRdskZvV7IYuPux8,26027
+abstract_webserver/json_convention.py,sha256=18JF9CA2gKvfTpu_TduCC1XjM3oDBIK6xjWZd7s6IHo,4801
+abstract_webserver-0.0.0.4.dist-info/METADATA,sha256=TK43OsNyqKJiJta-5wCaK0ZbgRWr1x5DEmnexLQPfzM,27829
+abstract_webserver-0.0.0.4.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+abstract_webserver-0.0.0.4.dist-info/top_level.txt,sha256=WTpbzbDmuwqy6AfZ4lY8J9vaqlDqjyT2oQFATDUin4Y,19
+abstract_webserver-0.0.0.4.dist-info/RECORD,,
