@@ -1,0 +1,15 @@
+mcp4cm/__init__.py,sha256=oJEUmjypirtXH29AQYrkm_UlmxSfmRZFXf7Ze5LteWM,2335
+mcp4cm/base.py,sha256=Y70B8xVFtXcFuxwm1WoIb6akCkLTy7UnB94kUUwUOjY,1791
+mcp4cm/dataloading.py,sha256=CnRhAZgiPc9UnkXxnncRnAWlVvtTqYnLCQ7vlH7M4CQ,1509
+mcp4cm/uml/__init__.py,sha256=goHx5EEcwU5__-P7c3N69NCX1ghnNW0-rLM5j0_6hyE,1025
+mcp4cm/uml/data_extraction.py,sha256=lKO49yrBGzGiuv_JdtT3X04kKZbErxfirnIY1TWlbKM,33414
+mcp4cm/uml/dataloading.py,sha256=BIV7FQDYEsmY8d7leayq-XK1ede8mYpzCwLGH9F5I4Y,8446
+mcp4cm/uml/duplicate_detection.py,sha256=Sj7wfbu4gfqYWClCfcNCaaKWp_vfC-qqQ5xmBtWv2fU,7060
+mcp4cm/uml/filtering_patterns.py,sha256=X5pwqhSoEVVbMepk1Ed5g4jZSn5rUp8eNof1qlt_WUw,3133
+mcp4cm/uml/language_detection.py,sha256=hkFobNO0WL_gJsbPpgJrNhl1Q8LZ99UJ0ESRumFZmWU,2916
+mcp4cm/uml/utils.py,sha256=CclgXQ43-hHh-eprqQecd3VM1jozTZf0VeLeXxthEzo,433
+mcp4cm-1.0.2.dist-info/licenses/LICENSE,sha256=FipQkhs2LzVM43e78how_1w0B3GT6TQ_ozKC3G3WQxg,1068
+mcp4cm-1.0.2.dist-info/METADATA,sha256=qqueNCJHwk98L8HYF0C7LQWWbynfWxalI37aCpK9klU,7191
+mcp4cm-1.0.2.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+mcp4cm-1.0.2.dist-info/top_level.txt,sha256=3x1kzt2aYOdp3hE3ByZkOXxyPAm1RNPZsBYA-2GpjbE,7
+mcp4cm-1.0.2.dist-info/RECORD,,
