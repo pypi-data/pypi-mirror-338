@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+almaqso/_QSOquery.py
+almaqso/__init__.py
+almaqso/_qsoanalysis.py
+almaqso/analysis.py
+almaqso/download_archive.py
+almaqso.egg-info/PKG-INFO
+almaqso.egg-info/SOURCES.txt
+almaqso.egg-info/dependency_links.txt
+almaqso.egg-info/requires.txt
+almaqso.egg-info/top_level.txt
+test/test_download_analysis.py
