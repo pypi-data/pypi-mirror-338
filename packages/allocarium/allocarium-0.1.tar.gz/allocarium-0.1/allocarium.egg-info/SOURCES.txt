@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+allocarium.egg-info/PKG-INFO
+allocarium.egg-info/SOURCES.txt
+allocarium.egg-info/dependency_links.txt
+allocarium.egg-info/requires.txt
+allocarium.egg-info/top_level.txt

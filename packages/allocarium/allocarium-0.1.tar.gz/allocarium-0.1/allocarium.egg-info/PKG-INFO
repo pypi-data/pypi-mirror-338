@@ -1,0 +1,28 @@
+Metadata-Version: 2.4
+Name: allocarium
+Version: 0.1
+Summary: Asset Allocation Models
+Author: Gustavo Amarante
+Maintainer: Gustavo Amarante
+Maintainer-email: developer@dsgepy.com
+Keywords: asset allocation
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: matplotlib
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: scikit-learn
+Requires-Dist: statsmodels
+Dynamic: author
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: keywords
+Dynamic: license-file
+Dynamic: maintainer
+Dynamic: maintainer-email
+Dynamic: requires-dist
+Dynamic: summary
+
+
+# allocarium
+Asset Allocation Models
