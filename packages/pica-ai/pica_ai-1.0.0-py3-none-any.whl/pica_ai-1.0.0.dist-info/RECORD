@@ -1,0 +1,12 @@
+pica_ai/__init__.py,sha256=CuuikQGRP55lrsFze85jiz8J1YJxI40BVuShvpEbO7c,290
+pica_ai/client.py,sha256=OlYO9zAC-7xj-kb595uWNvGpl2JQsjPztpJuMdoFOQ8,12859
+pica_ai/logger.py,sha256=3FShJnsca4zF3p7hfPqaIRlj9GGQ-VlunR6TE8-7YFg,2721
+pica_ai/models.py,sha256=kSMhBqsOSpyxLeokXEDu1W-NdVfe6jgOPDTjKVZOrZc,2453
+pica_ai/prompts.py,sha256=eOexSOyxRYlESCQPOWs8XbSlaWhukrUjd5IIKodWCNU,16419
+pica_ai-1.0.0.dist-info/licenses/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+tests/__init__.py,sha256=4ULSQCRAgDcxIP0CkYfPyBs8JBY-lvlxQRNZeW-IZOo,37
+tests/test_client.py,sha256=QlJZOTU6xeIZyPx3sGRikZJ38SpFHlXnh3onVV01PNE,2340
+pica_ai-1.0.0.dist-info/METADATA,sha256=faiWDdMlUapz-YBLUWD15hzw8xKvYA3dLH-N7kncsQY,2720
+pica_ai-1.0.0.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+pica_ai-1.0.0.dist-info/top_level.txt,sha256=KU0BGdRimHSqftK7bdzOOrgWnf25bYcoma9vut6T5IU,14
+pica_ai-1.0.0.dist-info/RECORD,,
