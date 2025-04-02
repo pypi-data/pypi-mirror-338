@@ -1,0 +1,10 @@
+mockgcp/__init__.py,sha256=jszBbN_FpK24-3gf-Fn_rDMPRTjQ2NIB9P0VL64dn60,343
+mockgcp/storage/__init__.py,sha256=q6kbHDXRo_9bL1v3KsW0DtxdpUyg-nhUJmEcnlKLHRU,303
+mockgcp/storage/backend.py,sha256=IrAGOsKEiJnflE7CWV3zxBME8ojOxtZIb4kZ_5CwPiA,894
+mockgcp/storage/blob.py,sha256=zGhPZVuXGbNN_QEkw50E9IP8NEnWnYxvGZ_YrpMe1SM,6776
+mockgcp/storage/bucket.py,sha256=Cf4dzFR6sR0RErLVrgdRhrdbACD46ijbgVZy9ZylDx0,5930
+mockgcp/storage/client.py,sha256=Kh0PVtd3hw_WqV-x472i9qhWexYkzXcYcUh3yWqSx1E,5681
+mock_gcp-0.2.0.dist-info/METADATA,sha256=cEmKqQdwnjwQR-VOD4w8vCBEqU1I9-3MrttgTOY87Oc,2185
+mock_gcp-0.2.0.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+mock_gcp-0.2.0.dist-info/licenses/LICENSE,sha256=Xv5bDmoKU1JFjN0ci21rUAbKSXK8IdPU2I5ktdAbVC8,1072
+mock_gcp-0.2.0.dist-info/RECORD,,
