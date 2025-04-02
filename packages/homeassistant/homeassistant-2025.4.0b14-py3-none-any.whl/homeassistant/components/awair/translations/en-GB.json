@@ -1,0 +1,17 @@
+{
+    "config": {
+        "abort": {
+            "unknown": "Unexpected error"
+        }
+    },
+    "entity": {
+        "sensor": {
+            "score": {
+                "name": "Score"
+            },
+            "sound_level": {
+                "name": "Sound level"
+            }
+        }
+    }
+}

@@ -1,0 +1,35 @@
+{
+    "config": {
+        "abort": {
+            "reauth_successful": "Re-authentication was successful"
+        },
+        "error": {
+            "no_longer_in_range": "The lock is no longer in Bluetooth range. Move the lock or adapter and try again.",
+            "wrong_code": "Wrong activation code. Note that an activation code can only be used once."
+        },
+        "flow_title": "{name}",
+        "step": {
+            "associate": {
+                "data": {
+                    "activation_code": "Activation code"
+                },
+                "description": "Provide an unused activation code.\n\nTo create an activation code, create a new key in the dKey admin app, then choose to share the key and share an activation code.\n\nMake sure to close the dKey admin app before proceeding."
+            },
+            "reauth_confirm": {
+                "description": "The activation code is no longer valid, a new unused activation code is needed."
+            },
+            "user": {
+                "data": {
+                    "address": "Device"
+                }
+            }
+        }
+    },
+    "entity": {
+        "binary_sensor": {
+            "deadbolt": {
+                "name": "Deadbolt"
+            }
+        }
+    }
+}

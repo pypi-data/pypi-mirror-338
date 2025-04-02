@@ -1,0 +1,12 @@
+{
+    "entity": {
+        "sensor": {
+            "charging_speed": {
+                "name": "Hle\u00f0sluhra\u00f0i\n"
+            },
+            "cost": {
+                "name": "Ver\u00f0"
+            }
+        }
+    }
+}
