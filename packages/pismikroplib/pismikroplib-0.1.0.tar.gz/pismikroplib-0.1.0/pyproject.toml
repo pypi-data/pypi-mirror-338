@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pismikroplib"
+version = "0.1.0"
+description = "Pismikroplar."
+readme = "README.md"
+authors = [{ name = "H4t1c3", email = "h4t1c3@pismikrops.com" }]
+license = { file = "LICENSE" }
+dependencies = [
+    "requests",
+    "numpy"
+]
+requires-python = ">=3.6"
