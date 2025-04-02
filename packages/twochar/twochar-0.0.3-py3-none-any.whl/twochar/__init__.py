@@ -1,0 +1,4 @@
+# from .twoChar.module import fein
+
+
+# pypi-AgEIcHlwaS5vcmcCJGQ0ODhjODNjLWQxNjUtNGVlNC1iYzExLTg2N2E2MDZmZDg0OAACKlszLCJkOTAyODk2YS00MDJlLTQ2MjYtYTJjZC00ZWMxYzhmZmNiNTkiXQAABiCO6GkuhLCJXoPVkoaV1KXChgSfClk2t4m_ufQCaAGnWg
