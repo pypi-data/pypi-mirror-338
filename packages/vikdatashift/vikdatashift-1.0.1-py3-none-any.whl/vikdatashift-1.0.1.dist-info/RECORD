@@ -1,0 +1,10 @@
+vikdatashift/__init__.py,sha256=Mg5wpYK0wVgvOl6-j_7A211CtjIP8JhSWU-YoMSoSsQ,100
+vikdatashift/csv_to_db.py,sha256=FxlALtRvp-xysUh5Z4bV4iAZOWzjQqBT04bC-Xf3lI0,8705
+vikdatashift/db_to_csv.py,sha256=4vFtJeO7upuB8smv9U_YT_-zVbijFXcWeMsEv2DGlu4,4261
+vikdatashift/db_to_db.py,sha256=D7f5mrpDkhWQMqcHFt4RIot2va_AwRp3Ou-NLHazA3c,7271
+vikdatashift/main.py,sha256=7AeiJauyvLyLOnepEGPCjy1JMIqC-22GzHO_wuC6QLY,5235
+vikdatashift/oracle_to_postgres.py,sha256=7JjaFD3YmYL49RhAoLYSI75uT20hDGINUQEj-EfqGmQ,4961
+vikdatashift-1.0.1.dist-info/METADATA,sha256=mgJmM_Ej85F2-jFvczSK1J0wgdeL2dWvKHPfSBgpzWI,2762
+vikdatashift-1.0.1.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+vikdatashift-1.0.1.dist-info/top_level.txt,sha256=rezLyUzqS8Sk1mpIP1E7xxq1ugaY5Y7yrNAzCUNQx8o,13
+vikdatashift-1.0.1.dist-info/RECORD,,
