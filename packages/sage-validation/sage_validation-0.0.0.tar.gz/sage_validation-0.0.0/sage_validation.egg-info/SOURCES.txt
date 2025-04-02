@@ -1,0 +1,8 @@
+LICENSE.txt
+README.md
+pyproject.toml
+placeholder/__init__.py
+sage_validation.egg-info/PKG-INFO
+sage_validation.egg-info/SOURCES.txt
+sage_validation.egg-info/dependency_links.txt
+sage_validation.egg-info/top_level.txt
