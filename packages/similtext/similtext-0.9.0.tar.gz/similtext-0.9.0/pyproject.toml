@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "similtext"
+version="0.9.0"
+dependencies = []
+requires-python = ">= 3.6"
+authors = [
+    {name = "miloter"}
+]
+description= "Similitud de textos, comparaciones case insensitive, extración de palabras, normalización."
+readme = "README.md"
+license="MIT"
+keywords = [
+    "Palabras padre",
+    "comparación insensible a letras y acentos",
+    "extracción de palabras",
+    "normalizar texto",
+    "similitud de textos"
+]
+classifiers=[
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3.13"    
+]
+
+[project.urls]
+Repository = "https://github.com/miloter/similtext"
+
+[tool.setuptools]
+py-modules = ["similtext"]
