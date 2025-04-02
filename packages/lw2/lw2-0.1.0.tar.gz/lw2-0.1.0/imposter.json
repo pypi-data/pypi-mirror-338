@@ -1,0 +1,74 @@
+{
+	"port": 60666,
+	"protocol": "tcp",
+	"stubs": [
+		{
+			"predicates": [
+				{
+					"equals": {
+						"data": "{VC}{:ISD}{:OSD}\r\n"
+					}
+				}
+			],
+			"responses": [
+				{
+					"is": {
+						"data": "(ALL 02 02 02 05 05 05 08 08 08 08 08 08 08 08 08 08)\r\n(ISD 10000000100100010000000000000000)\r\n(OSD 10000000100100010000000000000000)\r\n"
+					},
+					"endConnection": true
+				}
+			]
+		},
+		{
+			"predicates": [
+				{
+					"equals": {
+						"data": "{VC}\r\n"
+					}
+				}
+			],
+			"responses": [
+				{
+					"is": {
+						"data": "(ALL 02 02 02 05 05 05 08 08 08 08 08 08 08 08 08 08)\r\n"
+					},
+					"endConnection": true
+				}
+			]
+		},
+		{
+			"predicates": [
+				{
+					"equals": {
+						"data": "{:ISD}\r\n"
+					}
+				}
+			],
+			"responses": [
+				{
+					"is": {
+						"data": "(ISD 10000000100100010000000000000000)\r\n"
+					},
+					"endConnection": true
+				}
+			]
+		},
+		{
+			"predicates": [
+				{
+					"equals": {
+						"data": "{:OSD}\r\n"
+					}
+				}
+			],
+			"responses": [
+				{
+					"is": {
+						"data": "(OSD 10000000100100010000000000000000)\r\n"
+					},
+					"endConnection": true
+				}
+			]
+		}
+	]
+}

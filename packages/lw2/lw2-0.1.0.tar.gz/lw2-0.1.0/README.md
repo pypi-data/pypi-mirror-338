@@ -1,0 +1,90 @@
+# LW2
+
+Lightware LW2 API
+
+## Overview
+
+This project provides the `lw2` Python package, a lightweight wrapper for the Lightware LW2 API.
+
+---
+
+## Prerequisites
+
+Before you begin, ensure you have the following installed on your system:
+
+- **Python**: Version 3.10 or higher
+- **pip**: The Python package manager (comes with Python)
+- **uv**: A CLI tool for running project-specific commands (see below)
+
+---
+
+## macOS
+
+```bash
+brew install uv
+```
+
+## Setting Up a Development Environment
+
+Follow these steps to set up the project for development:
+
+1. **Install environment**
+
+   ```bash
+   uv sync
+   ```
+
+
+## Running tests
+
+The project uses `tox` to run `pytest` for testing and `ruff` for linting. To run the tasks:
+
+```bash
+uv run pytest
+```
+
+If you want to run manual integration tests you have to install and run:
+
+```bash
+npm -i -g mountebank
+mb --configfile imposter.json
+```
+
+and in another terminal window:
+
+```bash
+uv run test.py
+```
+
+To fix linting errors you can run:
+
+```bash
+uv run ruff check . --fix
+```
+
+## Update dependencies
+
+To update the lockfile run
+
+```bash
+uv sync
+```
+
+## Building the Package
+
+To build the package (wheel and source distribution), run:
+
+```bash
+uv build
+```
+
+This will generate the following files in the dist/ directory:
+
+Source distribution: `lw2-<version>.tar.gz`
+Wheel file: `lw2-<version>-py3-none-any.whl`
+
+## Publishing the Package
+
+```bash
+uv publish
+```
