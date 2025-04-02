@@ -1,0 +1,12 @@
+Metadata-Version: 2.4
+Name: dbv
+Version: 0.0.0
+Summary: A Tool for Database Versioning
+Author-email: Markus Feiks <github@feyx.de>
+License-File: LICENSE
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+
+# dbv
+
+Work in progress...
