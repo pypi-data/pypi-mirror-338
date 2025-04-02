@@ -1,0 +1,23 @@
+channels:
+    - conda-forge
+    - bioconda
+dependencies:
+    - python=3.11.5
+    - snakemake=7.32.4
+    - ipython
+    - jupyter
+    - numpy
+    - pandas
+    - scipy
+    - matplotlib
+    - seaborn
+    - rpy2
+    - scanpy
+    - biopython
+    - r:r
+    - r-msm
+    - rdata
+    - bioconductor-biomart
+    - pip
+    - pip:
+        - cigma
