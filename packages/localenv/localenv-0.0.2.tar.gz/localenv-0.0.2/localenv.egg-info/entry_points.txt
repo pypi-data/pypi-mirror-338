@@ -1,0 +1,2 @@
+[nbdev]
+localenv = localenv._modidx:d

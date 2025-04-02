@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+settings.ini
+setup.py
+localenv/__init__.py
+localenv/_modidx.py
+localenv/envs.py
+localenv.egg-info/PKG-INFO
+localenv.egg-info/SOURCES.txt
+localenv.egg-info/dependency_links.txt
+localenv.egg-info/entry_points.txt
+localenv.egg-info/not-zip-safe
+localenv.egg-info/requires.txt
+localenv.egg-info/top_level.txt
