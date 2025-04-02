@@ -1,0 +1,8 @@
+README.md
+setup.py
+SketchyCV/__init__.py
+SketchyCV/main.py
+SketchyCV.egg-info/PKG-INFO
+SketchyCV.egg-info/SOURCES.txt
+SketchyCV.egg-info/dependency_links.txt
+SketchyCV.egg-info/top_level.txt
