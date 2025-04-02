@@ -1,0 +1,16 @@
+__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+artfetch/ArtFetch.py,sha256=LhcMOmVm36olNUKK1S2SlNpTs09WHhSYxWJdNSFMn9M,10347
+artfetch/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+artfetch/config_default.yaml,sha256=H1vyVDirCxqXlTW_wqQcYAAD46_u9bQxACmQxhVO8mU,808
+artfetch/configuration.py,sha256=NMEvuENxWOiwvGeEAyzgRLUZ39IE5CZc6_KGyHi3Z7Q,383
+artfetch/view.py,sha256=r8oOziMMyra9OkQnsLtg68O1wAJj9mE6zepgKwNeFi4,6301
+artfetch/sources/__init__.py,sha256=akGjQj1lO1nHt0cJLCymMHHyRBTTMDxnxvAW0w0xLsU,3073
+artfetch/sources/bandcamp.py,sha256=gIVhEJS203aku7ZDnEKK89trONBCGabQiHqcca5qS7Q,2133
+artfetch/sources/discogs.py,sha256=7ZlvSJosM9LAVDu5okg7_VPWS04JwQj-lMf3EVYqM3o,4584
+artfetch/sources/musicbrainz.py,sha256=p6m4-G2PgWBDQzlEV89vgJerx8gbJ6ZIh-qUsQDgbGs,2317
+artfetch-0.1.0.dist-info/licenses/LICENSE,sha256=6MWr8VVGfVCGjKnYRCVcP2W0Euwsu9csfGyxoQ2Wl6U,1094
+artfetch-0.1.0.dist-info/METADATA,sha256=EKp6MvyOJd5gxHHqL1DhoevDrCwpWa2-gIT9t4dFLNU,3526
+artfetch-0.1.0.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+artfetch-0.1.0.dist-info/entry_points.txt,sha256=2V0sybgkSrCW9Sb0RTDFBVfFXTW5zK3QzIYVUPoXZds,52
+artfetch-0.1.0.dist-info/top_level.txt,sha256=ELwO4yB2v23O4rx8iHEJls3b-yMgN1Oa5RETQEQ4kJY,18
+artfetch-0.1.0.dist-info/RECORD,,
