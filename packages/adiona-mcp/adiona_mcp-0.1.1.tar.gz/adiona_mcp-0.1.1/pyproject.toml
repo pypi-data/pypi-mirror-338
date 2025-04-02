@@ -1,0 +1,22 @@
+[project]
+name = "adiona-mcp"
+version = "0.1.1"
+description = "Let LLM use adiona mcp tools to search locations hotels etc"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "mcp",
+    "httpx",
+    "python-dotenv",
+    "fastmcp",
+]
+[[project.authors]]
+name = "Biki Das"
+email = "36537203+bikidsx@users.noreply.github.com"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project.scripts]
+adiona-mcp = "adiona_mcp:main"
