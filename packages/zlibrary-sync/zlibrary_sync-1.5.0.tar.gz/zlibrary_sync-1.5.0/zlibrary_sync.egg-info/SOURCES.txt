@@ -1,0 +1,17 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+zlibrary/__init__.py
+zlibrary/api.py
+zlibrary/enums.py
+zlibrary/exceptions.py
+zlibrary/models.py
+zlibrary/py.typed
+zlibrary/utils.py
+zlibrary_sync.egg-info/PKG-INFO
+zlibrary_sync.egg-info/SOURCES.txt
+zlibrary_sync.egg-info/dependency_links.txt
+zlibrary_sync.egg-info/requires.txt
+zlibrary_sync.egg-info/top_level.txt
