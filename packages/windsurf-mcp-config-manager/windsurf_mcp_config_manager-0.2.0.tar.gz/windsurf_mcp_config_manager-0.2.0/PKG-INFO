@@ -1,0 +1,172 @@
+Metadata-Version: 2.4
+Name: windsurf-mcp-config-manager
+Version: 0.2.0
+Summary: A utility to manage Windsurf MCP server configurations
+Home-page: https://github.com/trilogy-group/trilogy-group-windsurf-mcp-config-manager
+Author: Windsurf Team
+Author-email: your.email@example.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: click
+Requires-Dist: requests
+Requires-Dist: tabulate
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: license-file
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+# Windsurf MCP Config Manager
+
+A command-line utility to manage Windsurf/Codeium MCP server configurations. This tool helps you easily add, update, delete, and list MCP server configurations used by Windsurf/Codeium.
+
+## Installation
+
+```bash
+pip install windsurf-mcp-config-manager
+```
+
+## Quick Start
+
+The utility provides a command-line interface with the shortcut `wmcp` and several subcommands:
+
+```bash
+# Add a new MCP server
+wmcp add my-server --command python --args "server.py,--port=8080" --env DEBUG=true
+
+# List all configured servers
+wmcp list
+
+# Update an existing server
+wmcp update my-server --command node --args "app.js,--env=production"
+
+# Delete a server
+wmcp delete my-server
+```
+
+## Configuration File
+
+By default, the configuration is stored in `~/.codeium/windsurf/mcp_config.json`. The file is automatically created if it doesn't exist. A backup is always created before making any changes to the configuration file.
+
+## Detailed Usage
+
+### Global Options
+
+```
+--config TEXT  Path to the config file (default: ~/.codeium/windsurf/mcp_config.json)
+--help         Show this message and exit
+```
+
+### Add Command
+
+Add a new MCP server configuration.
+
+```bash
+wmcp add NAME --command COMMAND [--args ARGS] [--env KEY=VALUE]
+```
+
+Options:
+- `NAME`: Name of the MCP server (required)
+- `--command TEXT`: Command to run the MCP server (required)
+- `--args TEXT`: Arguments for the command (comma-separated)
+- `--env TEXT`: Environment variables in KEY=VALUE format (can be specified multiple times)
+
+Example:
+```bash
+wmcp add my-server --command python --args "server.py,--port=8080,--debug" --env DEBUG=true --env LOG_LEVEL=info
+```
+
+### Delete Command
+
+Delete an MCP server configuration.
+
+```bash
+wmcp delete NAME
+```
+
+Options:
+- `NAME`: Name of the MCP server to delete (required)
+
+Example:
+```bash
+wmcp delete my-server
+```
+
+### Update Command
+
+Update an existing MCP server configuration.
+
+```bash
+wmcp update NAME [--command COMMAND] [--args ARGS] [--env KEY=VALUE]
+```
+
+Options:
+- `NAME`: Name of the MCP server to update (required)
+- `--command TEXT`: New command to run the MCP server
+- `--args TEXT`: New arguments for the command (comma-separated)
+- `--env TEXT`: Environment variables to add/update (can be specified multiple times)
+
+Example:
+```bash
+wmcp update my-server --command node --args "app.js,--production" --env NODE_ENV=production
+```
+
+### List Command
+
+List all configured MCP servers.
+
+```bash
+wmcp list
+```
+
+Example output:
+```
+Configured MCP servers:
+
+my-server:
+  Command: python
+  Args: server.py, --port=8080
+  Environment variables:
+    DEBUG=true
+```
+
+## Safety Features
+
+- Automatic backups: The tool automatically creates a backup of your configuration file before making any changes
+- Directory handling: Properly handles configuration files in any directory
+- Error handling: Provides clear error messages when something goes wrong
+
+## Development
+
+### Setup
+
+```bash
+git clone https://github.com/trilogy-group/trilogy-group-windsurf-mcp-config-manager.git
+cd trilogy-group-windsurf-mcp-config-manager
+pip install -e .
+```
+
+### Publishing to PyPI
+
+The package is automatically published to PyPI when a new release is created on GitHub. To create a new release:
+
+1. Update the version number in:
+   - `windsurf_mcp_config_manager/__init__.py`
+   - `setup.py`
+
+2. Commit and push these changes to GitHub
+
+3. Create a new release on GitHub with a tag matching the version number (e.g., "v0.1.0")
+
+## License
+
+MIT
