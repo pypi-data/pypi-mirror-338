@@ -1,0 +1,5 @@
+setup.py
+BICommonKits.egg-info/PKG-INFO
+BICommonKits.egg-info/SOURCES.txt
+BICommonKits.egg-info/dependency_links.txt
+BICommonKits.egg-info/top_level.txt
