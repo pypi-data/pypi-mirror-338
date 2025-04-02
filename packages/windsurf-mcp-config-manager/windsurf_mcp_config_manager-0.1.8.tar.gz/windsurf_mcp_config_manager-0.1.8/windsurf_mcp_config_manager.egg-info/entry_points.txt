@@ -1,0 +1,2 @@
+[console_scripts]
+wmcp = windsurf_mcp_config_manager.cli:main
