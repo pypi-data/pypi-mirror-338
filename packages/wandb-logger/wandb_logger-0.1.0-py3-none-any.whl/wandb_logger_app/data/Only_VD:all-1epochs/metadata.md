@@ -1,0 +1,236 @@
+# Run Metadata: Only_VD:all-1epochs
+
+## Run Information
+
+- **ID**: h41royyx
+- **Project**: huggingface
+- **Entity**: careforme-dropout-
+- **Created**: 2025-03-31T05:40:04Z
+
+## Configuration
+
+- **bf16**: True
+- **fp16**: False
+- **fsdp**: []
+- **seed**: 42
+- **tf32**: None
+- **debug**: []
+- **optim**: adamw_torch
+- **top_k**: 50
+- **top_p**: 1
+- **prefix**: None
+- **do_eval**: False
+- **no_cuda**: False
+- **tp_size**: 0
+- **use_cpu**: False
+- **do_train**: False
+- **id2label**: {'0': 'LABEL_0', '1': 'LABEL_1'}
+- **label2id**: {'LABEL_0': 0, 'LABEL_1': 1}
+- **run_name**: Only_VD:all-1epochs
+- **use_ipex**: False
+- **adafactor**: False
+- **data_seed**: None
+- **deepspeed**: ./zero2.json
+- **do_sample**: False
+- **hub_token**: <HUB_TOKEN>
+- **log_level**: passive
+- **max_steps**: -1
+- **num_beams**: 1
+- **ray_scope**: last
+- **report_to**: ['wandb']
+- **typical_p**: 1
+- **use_cache**: False
+- **adam_beta1**: 0.9
+- **adam_beta2**: 0.999
+- **do_predict**: False
+- **eval_delay**: 0
+- **eval_steps**: None
+- **hidden_act**: silu
+- **is_decoder**: False
+- **local_rank**: 0
+- **max_length**: 20
+- **min_length**: 0
+- **model_type**: qwen2_5_vl
+- **optim_args**: None
+- **output_dir**: output/Only_VD:all-1epochs
+- **past_index**: -1
+- **rope_theta**: 1000000.0
+- **save_steps**: 1000
+- **vocab_size**: 151936
+- **ddp_backend**: None
+- **ddp_timeout**: 1800
+- **fsdp_config**: {'xla': False, 'xla_fsdp_v2': False, 'min_num_params': 0, 'xla_fsdp_grad_ckpt': False}
+- **hidden_size**: 2048
+- **label_names**: None
+- **logging_dir**: output/Only_VD:all-1epochs/runs/Mar31_05-39-55_c7b0df16cbdb
+- **peft_config**: {'default': {'r': 32, 'bias': 'none', 'revision': None, 'use_dora': False, 'lora_bias': False, 'peft_type': 'LORA', 'task_type': 'CAUSAL_LM', 'eva_config': None, 'lora_alpha': 64, 'use_rslora': False, 'auto_mapping': None, 'corda_config': None, 'lora_dropout': 0.05, 'megatron_core': 'megatron.core', 'fan_in_fan_out': False, 'inference_mode': False, 'layers_pattern': None, 'runtime_config': {'ephemeral_gpu_offload': False}, 'target_modules': ['layers.20.mlp.down_proj', 'layers.4.mlp.up_proj', 'layers.17.mlp.up_proj', 'layers.2.mlp.gate_proj', 'layers.14.mlp.down_proj', 'layers.23.mlp.up_proj', 'layers.20.mlp.up_proj', 'layers.26.mlp.up_proj', 'layers.11.mlp.gate_proj', 'layers.14.mlp.gate_proj', '35.mlp.up_proj', 'layers.1.mlp.up_proj', 'layers.10.mlp.gate_proj', 'layers.16.mlp.gate_proj', '35.mlp.down_proj', 'layers.30.mlp.down_proj', 'layers.24.mlp.up_proj', 'layers.2.mlp.down_proj', 'k_proj', 'layers.6.mlp.gate_proj', 'layers.20.mlp.gate_proj', 'layers.0.mlp.gate_proj', 'layers.21.mlp.up_proj', 'layers.25.mlp.down_proj', 'layers.31.mlp.down_proj', 'layers.1.mlp.down_proj', 'layers.1.mlp.gate_proj', 'layers.23.mlp.gate_proj', 'layers.29.mlp.gate_proj', 'layers.15.mlp.gate_proj', 'layers.27.mlp.down_proj', 'layers.0.mlp.down_proj', 'layers.11.mlp.down_proj', 'layers.29.mlp.down_proj', '34.mlp.up_proj', 'layers.21.mlp.gate_proj', 'layers.30.mlp.gate_proj', 'layers.8.mlp.gate_proj', 'layers.4.mlp.down_proj', 'layers.24.mlp.down_proj', 'layers.16.mlp.down_proj', 'layers.3.mlp.down_proj', 'layers.13.mlp.down_proj', 'layers.6.mlp.down_proj', 'lm_head', 'layers.17.mlp.gate_proj', '32.mlp.down_proj', 'layers.7.mlp.down_proj', 'layers.5.mlp.up_proj', 'layers.18.mlp.gate_proj', 'layers.10.mlp.down_proj', 'layers.13.mlp.up_proj', 'layers.12.mlp.gate_proj', 'layers.22.mlp.gate_proj', '32.mlp.gate_proj', 'layers.7.mlp.up_proj', 'layers.10.mlp.up_proj', 'layers.21.mlp.down_proj', 'layers.9.mlp.up_proj', 'layers.8.mlp.up_proj', 'layers.26.mlp.gate_proj', 'layers.31.mlp.gate_proj', 'layers.19.mlp.down_proj', 'layers.12.mlp.up_proj', 'v_proj', 'layers.26.mlp.down_proj', 'layers.22.mlp.up_proj', 'layers.23.mlp.down_proj', 'layers.25.mlp.gate_proj', '32.mlp.up_proj', 'layers.11.mlp.up_proj', 'layers.4.mlp.gate_proj', 'layers.3.mlp.gate_proj', 'layers.19.mlp.up_proj', '33.mlp.up_proj', '33.mlp.gate_proj', 'layers.9.mlp.down_proj', 'layers.27.mlp.up_proj', 'layers.12.mlp.down_proj', 'layers.3.mlp.up_proj', 'layers.17.mlp.down_proj', 'layers.18.mlp.down_proj', '34.mlp.gate_proj', 'layers.2.mlp.up_proj', 'layers.22.mlp.down_proj', '34.mlp.down_proj', 'layers.18.mlp.up_proj', 'layers.19.mlp.gate_proj', 'layers.5.mlp.gate_proj', 'layers.9.mlp.gate_proj', 'layers.31.mlp.up_proj', 'layers.6.mlp.up_proj', 'layers.13.mlp.gate_proj', 'layers.24.mlp.gate_proj', '35.mlp.gate_proj', 'layers.28.mlp.gate_proj', 'o_proj', 'layers.28.mlp.down_proj', 'layers.27.mlp.gate_proj', 'layers.0.mlp.up_proj', 'layers.5.mlp.down_proj', 'layers.25.mlp.up_proj', 'layers.7.mlp.gate_proj', 'layers.30.mlp.up_proj', 'layers.29.mlp.up_proj', '33.mlp.down_proj', 'layers.16.mlp.up_proj', 'q_proj', 'layers.15.mlp.down_proj', 'layers.28.mlp.up_proj', 'layers.15.mlp.up_proj', 'layers.8.mlp.down_proj', 'layers.14.mlp.up_proj'], 'exclude_modules': None, 'megatron_config': None, 'modules_to_save': None, 'init_lora_weights': True, 'layer_replication': None, 'layers_to_transform': None, 'base_model_name_or_path': 'Qwen/Qwen2.5-VL-3B-Instruct', 'trainable_token_indices': None}}
+- **push_to_hub**: False
+- **return_dict**: True
+- **temperature**: 1
+- **torch_dtype**: bfloat16
+- **torchdynamo**: None
+- **torchscript**: False
+- **adam_epsilon**: 1e-08
+- **bos_token_id**: 151643
+- **disable_tqdm**: False
+- **eos_token_id**: 151645
+- **fp16_backend**: auto
+- **hub_model_id**: None
+- **hub_strategy**: every_save
+- **pad_token_id**: None
+- **problem_type**: None
+- **rms_norm_eps**: 1e-06
+- **rope_scaling**: {'type': 'default', 'rope_type': 'default', 'mrope_section': [16, 24, 24]}
+- **sep_token_id**: None
+- **use_bfloat16**: False
+- **warmup_ratio**: 0.03
+- **warmup_steps**: 0
+- **weight_decay**: 0
+- **_name_or_path**: Qwen/Qwen2.5-VL-3B-Instruct
+- **architectures**: ['Qwen2_5_VLForConditionalGeneration']
+- **bad_words_ids**: None
+- **eval_on_start**: False
+- **eval_strategy**: no
+- **jit_mode_eval**: False
+- **learning_rate**: 5e-06
+- **logging_steps**: 5
+- **max_grad_norm**: 3
+- **mp_parameters**: 
+- **output_scores**: False
+- **save_strategy**: steps
+- **torch_compile**: False
+- **tpu_num_cores**: None
+- **vision_config**: {'depth': 32, 'top_k': 50, 'top_p': 1, 'prefix': None, 'id2label': {'0': 'LABEL_0', '1': 'LABEL_1'}, 'in_chans': 3, 'label2id': {'LABEL_0': 0, 'LABEL_1': 1}, 'do_sample': False, 'num_beams': 1, 'num_heads': 16, 'typical_p': 1, 'hidden_act': 'silu', 'is_decoder': False, 'max_length': 20, 'min_length': 0, 'model_type': 'qwen2_5_vl', 'patch_size': 14, 'hidden_size': 1280, 'in_channels': 3, 'return_dict': True, 'temperature': 1, 'torch_dtype': 'bfloat16', 'torchscript': False, 'window_size': 112, 'bos_token_id': None, 'eos_token_id': None, 'pad_token_id': None, 'problem_type': None, 'sep_token_id': None, 'use_bfloat16': False, '_name_or_path': '', 'architectures': None, 'bad_words_ids': None, 'output_scores': False, 'early_stopping': False, 'length_penalty': 1, 'tf_legacy_loss': False, 'finetuning_task': None, 'num_beam_groups': 1, 'out_hidden_size': 2048, 'suppress_tokens': None, 'tokenizer_class': None, 'diversity_penalty': 0, 'intermediate_size': 3420, 'output_attentions': False, 'tokens_per_second': 2, 'is_encoder_decoder': False, 'repetition_penalty': 1, 'spatial_merge_size': 2, 'spatial_patch_size': 14, 'add_cross_attention': False, 'forced_bos_token_id': None, 'forced_eos_token_id': None, 'temporal_patch_size': 2, 'tie_encoder_decoder': False, 'tie_word_embeddings': True, 'no_repeat_ngram_size': 0, 'num_return_sequences': 1, 'output_hidden_states': False, 'task_specific_params': None, 'begin_suppress_tokens': None, 'fullatt_block_indexes': [7, 15, 23, 31], 'remove_invalid_values': False, 'decoder_start_token_id': None, 'chunk_size_feed_forward': 0, 'return_dict_in_generate': False, 'cross_attention_hidden_size': None, '_attn_implementation_autoset': False, 'encoder_no_repeat_ngram_size': 0, 'exponential_decay_length_penalty': None}
+- **bf16_full_eval**: False
+- **early_stopping**: False
+- **fp16_full_eval**: False
+- **fp16_opt_level**: O1
+- **image_token_id**: 151655
+- **length_penalty**: 1
+- **sliding_window**: 32768
+- **tf_legacy_loss**: False
+- **use_mps_device**: False
+- **video_token_id**: 151656
+- **finetuning_task**: None
+- **group_by_length**: False
+- **hub_always_push**: False
+- **num_beam_groups**: 1
+- **save_only_model**: False
+- **suppress_tokens**: None
+- **tokenizer_class**: None
+- **vision_token_id**: 151654
+- **full_determinism**: False
+- **hub_private_repo**: None
+- **ignore_data_skip**: False
+- **log_on_each_node**: True
+- **logging_strategy**: steps
+- **num_train_epochs**: 2
+- **save_safetensors**: True
+- **save_total_limit**: 3
+- **use_liger_kernel**: False
+- **attention_dropout**: 0
+- **ddp_bucket_cap_mb**: None
+- **diversity_penalty**: 0
+- **greater_is_better**: None
+- **initializer_range**: 0.02
+- **intermediate_size**: 11008
+- **log_level_replica**: warning
+- **lr_scheduler_type**: cosine
+- **max_window_layers**: 70
+- **num_hidden_layers**: 36
+- **output_attentions**: False
+- **push_to_hub_token**: <PUSH_TO_HUB_TOKEN>
+- **save_on_each_node**: False
+- **tpu_metrics_debug**: False
+- **accelerator_config**: {'even_batches': True, 'non_blocking': False, 'split_batches': False, 'dispatch_batches': None, 'use_seedable_sampler': True, 'gradient_accumulation_kwargs': None}
+- **batch_eval_metrics**: False
+- **is_encoder_decoder**: False
+- **length_column_name**: length
+- **logging_first_step**: False
+- **repetition_penalty**: 1
+- **torch_compile_mode**: None
+- **use_sliding_window**: False
+- **add_cross_attention**: False
+- **forced_bos_token_id**: None
+- **forced_eos_token_id**: None
+- **fsdp_min_num_params**: 0
+- **include_for_metrics**: []
+- **neftune_noise_alpha**: None
+- **num_attention_heads**: 16
+- **num_key_value_heads**: 2
+- **skip_memory_metrics**: True
+- **tie_encoder_decoder**: False
+- **tie_word_embeddings**: True
+- **vision_end_token_id**: 151653
+- **auto_find_batch_size**: False
+- **dataloader_drop_last**: False
+- **model/num_parameters**: 3819417600
+- **no_repeat_ngram_size**: 0
+- **num_return_sequences**: 1
+- **optim_target_modules**: None
+- **output_hidden_states**: False
+- **overwrite_output_dir**: False
+- **prediction_loss_only**: False
+- **push_to_hub_model_id**: None
+- **task_specific_params**: None
+- **transformers_version**: 4.51.0.dev0
+- **begin_suppress_tokens**: None
+- **dataloader_pin_memory**: True
+- **ddp_broadcast_buffers**: None
+- **metric_for_best_model**: None
+- **remove_invalid_values**: False
+- **remove_unused_columns**: False
+- **torch_compile_backend**: None
+- **vision_start_token_id**: 151652
+- **dataloader_num_workers**: 0
+- **decoder_start_token_id**: None
+- **eval_do_concat_batches**: True
+- **eval_use_gather_object**: False
+- **gradient_checkpointing**: True
+- **half_precision_backend**: auto
+- **label_smoothing_factor**: 0
+- **load_best_model_at_end**: False
+- **logging_nan_inf_filter**: True
+- **resume_from_checkpoint**: None
+- **chunk_size_feed_forward**: 0
+- **eval_accumulation_steps**: None
+- **max_position_embeddings**: 128000
+- **per_gpu_eval_batch_size**: None
+- **return_dict_in_generate**: False
+- **torch_empty_cache_steps**: None
+- **per_gpu_train_batch_size**: None
+- **push_to_hub_organization**: None
+- **include_tokens_per_second**: False
+- **dataloader_prefetch_factor**: None
+- **ddp_find_unused_parameters**: None
+- **include_inputs_for_metrics**: False
+- **per_device_eval_batch_size**: 8
+- **use_legacy_prediction_loop**: False
+- **cross_attention_hidden_size**: None
+- **gradient_accumulation_steps**: 8
+- **per_device_train_batch_size**: 1
+- **_attn_implementation_autoset**: True
+- **encoder_no_repeat_ngram_size**: 0
+- **average_tokens_across_devices**: False
+- **dataloader_persistent_workers**: False
+- **gradient_checkpointing_kwargs**: None
+- **include_num_input_tokens_seen**: False
+- **exponential_decay_length_penalty**: None
+- **fsdp_transformer_layer_cls_to_wrap**: None
+- **restore_callback_states_from_checkpoint**: False
+
+## Available Metrics
+
+- _step
+- _runtime
+- train/loss
+- train/grad_norm
+- train/learning_rate
+- train/epoch
+- _timestamp
+- train/global_step
+
+## Selected Metrics
+
+- train/loss
+- train/grad_norm
