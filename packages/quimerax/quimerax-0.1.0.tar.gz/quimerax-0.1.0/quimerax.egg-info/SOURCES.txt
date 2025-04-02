@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+quimerax/__init__.py
+quimerax/client.py
+quimerax/enums.py
+quimerax.egg-info/PKG-INFO
+quimerax.egg-info/SOURCES.txt
+quimerax.egg-info/dependency_links.txt
+quimerax.egg-info/requires.txt
+quimerax.egg-info/top_level.txt
