@@ -1,0 +1,17 @@
+dj_tailwind/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dj_tailwind/apps.py,sha256=-K2utvAAEozx4mlFiWBPlIOM3h64ztqeBN0ZqPUiyCY,743
+dj_tailwind/cookiecutter/cookiecutter.json,sha256=GK2DiZxw9iUR6x5cwsHTmP-6PfU382kts0JRLEFG_j4,103
+dj_tailwind/cookiecutter/{{cookiecutter.app_name}}/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dj_tailwind/cookiecutter/{{cookiecutter.app_name}}/apps.py,sha256=gWpEPUJFaRHhs0rEEPVsoNcBfQLpm6XwObu9IHSR9lM,193
+dj_tailwind/cookiecutter/{{cookiecutter.app_name}}/package.json,sha256=_9Ixi0WZN2QF2R53oPuP4r2Rqq04AEz_8odDLOIfxTE,994
+dj_tailwind/cookiecutter/{{cookiecutter.app_name}}/postcss.config.js,sha256=j6SwH2Yz9HjsjqcGMwWMhYWOIphknPCu5xE2LlvOe3o,72
+dj_tailwind/cookiecutter/{{cookiecutter.app_name}}/tailwind.input.css,sha256=k3NEoFwjvpmPKWzCTxf5zQv8hfmnEKzPeT3vgAHLI7s,243
+dj_tailwind/management/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dj_tailwind/management/commands/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dj_tailwind/management/commands/dj_tailwind.py,sha256=29ivQH7tZSeOjgWUPSHgAuGWvKXhS9uqc1WrECRii30,2812
+dj_tailwind/templatetags/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dj_tailwind/templatetags/dj_tailwind_tags.py,sha256=FWSWEFn61QLe8M7JjZT8MWeP0YqYQIDHOpDHOosGVlY,883
+dj_tailwind-0.0.1.dist-info/LICENSE,sha256=vAZGXq3z1L_7cZJvkZ3zrjlDacdt1lxdC8s3v6ismD0,1069
+dj_tailwind-0.0.1.dist-info/METADATA,sha256=0lzeC9iRnr5Z_3168j0Rr5_M4MbCPIpVr4aLeWlIu38,5934
+dj_tailwind-0.0.1.dist-info/WHEEL,sha256=fGIA9gx4Qxk2KDKeNJCbOEwSrmLtjWCwzBz351GyrPQ,88
+dj_tailwind-0.0.1.dist-info/RECORD,,

@@ -1,0 +1,26 @@
+{
+  "name": "dj-tailwind-output",
+  "version": "0.0.0",
+  "description": "",
+  "scripts": {
+    "start": "npm run dev",
+    "build": "npm run build:clean && npm run build:tailwind",
+    "build:clean": "rimraf ../static/css/dist",
+    "build:tailwind": "NODE_ENV=production npx @tailwindcss/cli --postcss -i ./tailwind.input.css -o ./static/{{ cookiecutter.app_name }}/css/dist/tailwind.output.css --minify",
+    "dev": "NODE_ENV=development npx @tailwindcss/cli --postcss --i ./tailwind.input.css -o ./static/{{ cookiecutter.app_name }}/css/dist/tailwind.output.css -w"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@tailwindcss/aspect-ratio": "^0.4.2",
+    "@tailwindcss/cli": "^4.0.17",
+    "@tailwindcss/forms": "^0.5.10",
+    "@tailwindcss/typography": "^0.5.16",
+    "@tailwindcss/postcss": "^4.0.17",
+    "rimraf": "^6.0.1",
+    "tailwindcss": "^4.0.17"{% if cookiecutter.enable_daisyui == "true" %},
+    "daisyui": "^5.0.9"
+    {% endif %}
+  }
+}
