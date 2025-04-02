@@ -1,0 +1,2 @@
+[console_scripts]
+trak-sentinel = traksentinel_simplecli.cli:cli
