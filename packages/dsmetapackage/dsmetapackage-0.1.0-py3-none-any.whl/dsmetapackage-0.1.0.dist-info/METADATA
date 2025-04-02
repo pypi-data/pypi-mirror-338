@@ -1,0 +1,32 @@
+Metadata-Version: 2.3
+Name: dsmetapackage
+Version: 0.1.0
+Summary: All my packages in one place
+Author: Danny Stewart
+Author-email: danny@stewart.cc
+Requires-Python: >=3.12,<3.14
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Dist: arguer (>=0.1.0)
+Requires-Dist: dsbase (>=0.5.0b1)
+Requires-Dist: dsbin (>=0.5.0b1)
+Requires-Dist: enviromancer (>=0.1.3)
+Requires-Dist: evremixes (>=1.0.3)
+Requires-Dist: iplooker (>=0.1.7)
+Requires-Dist: logician (>=0.2.4)
+Requires-Dist: masterclass (>=0.1.0)
+Requires-Dist: pathkeeper (>=0.1.0)
+Requires-Dist: pkgversioner (>=0.1.3)
+Requires-Dist: shelper (>=0.1.2)
+Requires-Dist: textparse (>=0.1.0)
+Requires-Dist: timecapsule (>=0.1.0)
+Requires-Dist: walking-man (>=0.2.1)
+Description-Content-Type: text/markdown
+
+# DS Metapackage
+
+All my packages in one place.
+
+More info: [GitHub](https://github.com/dannystewart/)
+
