@@ -1,0 +1,2 @@
+[console_scripts]
+deploytoday = uv_testing_pycon_italy_2025:main
