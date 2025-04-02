@@ -1,0 +1,10 @@
+folium
+geopandas
+ipyleaflet
+numpy
+
+[all]
+beamgis[extra]
+
+[extra]
+pandas
