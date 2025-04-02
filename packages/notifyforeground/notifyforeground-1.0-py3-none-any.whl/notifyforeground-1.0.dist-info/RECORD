@@ -1,0 +1,10 @@
+notifyforeground/__init__.py,sha256=lcLjyfegXgU7cyGhfSphAOBipXwemrVkdYy3mcF6X5Y,172
+notifyforeground/__main__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+notifyforeground/base.py,sha256=QkNSNFX8KtNnRRm0r1wXsQa6TWMRKySn-3PT-XpY1mM,3377
+notifyforeground/core.py,sha256=KeaO711sew4HNcZQmT7AI8-La5wrmzHHYkhqdGBC9V8,6175
+notifyforeground/styles.py,sha256=QBkCY8ZO26FnS-jPtRLf9CKEEnnYylmH9enCa5CNDes,354
+notifyforeground/sword.py,sha256=rRIm7EvrRcw0yL4ID5pVyKzE65GX506sNEjdjo64gJE,27913
+notifyforeground-1.0.dist-info/METADATA,sha256=OfLhI5x-m5OqtjLqqOTesA7CC4vWCFg3U3TuBV3US4w,1057
+notifyforeground-1.0.dist-info/WHEEL,sha256=tZoeGjtWxWRfdplE7E3d45VPlLNQnvbKiYnx7gwAy8A,92
+notifyforeground-1.0.dist-info/top_level.txt,sha256=M2wZsTXzAM18JUYnLhu9RA5MSpRux808jRwpNGfe35I,17
+notifyforeground-1.0.dist-info/RECORD,,

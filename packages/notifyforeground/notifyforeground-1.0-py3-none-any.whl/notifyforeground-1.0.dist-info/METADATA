@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: notifyforeground
+Version: 1.0
+Summary: A Python package that simpilfies creating Android notifications in Kivy apps.
+Home-page: https://github.com/hiyabo69
+Author: Hiyabo
+Author-email: hiyabo@yahoo.com
+License: MIT
+Project-URL: Documentation, https://github.com/hiyabo69
+Project-URL: Source, https://github.com/hiyabo69
+Project-URL: Tracker, https://github.com/hiyabo69
+Project-URL: Funding, https://github.com/hiyabo69
+Keywords: android,notifications,kivy,mobile,post-notifications,pyjnius,android-notifications,kivy-notifications,python-android,mobile-development,push-notifications,mobile-app,kivy-application
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: Android
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.6
+Requires-Dist: kivy>=2.0.0
+Requires-Dist: pyjnius>=1.4.2
+
