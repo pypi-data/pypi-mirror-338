@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+filemint/__init__.py
+filemint/cli.py
+filemint/generators.py
+filemint.egg-info/PKG-INFO
+filemint.egg-info/SOURCES.txt
+filemint.egg-info/dependency_links.txt
+filemint.egg-info/entry_points.txt
+filemint.egg-info/requires.txt
+filemint.egg-info/top_level.txt
+tests/__init__.py
+tests/test_generators.py
