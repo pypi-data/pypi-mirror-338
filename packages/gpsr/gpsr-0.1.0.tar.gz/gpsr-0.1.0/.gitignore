@@ -1,0 +1,17 @@
+*.pth
+#*.dset
+**/__pycache__/
+.idea/
+*egg-info/
+**/.ipynb_checkpoints/
+*.data
+*.h5
+*.dat
+*.sdds
+*.opal
+*.stat
+*.ckpt
+**/lightning_logs/
+dev
+**/_version.py
+/.vscode

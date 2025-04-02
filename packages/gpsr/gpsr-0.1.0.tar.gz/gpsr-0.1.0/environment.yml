@@ -1,0 +1,16 @@
+name: gpsr
+channels:
+  - conda-forge
+dependencies:
+  - python=3.12
+  - pip
+  - pip:
+    - numpy
+    - matplotlib
+    - scipy
+    - ipykernel
+    - tqdm
+    - torch
+    - lightning
+    - tensorboard
+    - cheetah-accelerator
