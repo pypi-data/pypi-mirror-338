@@ -1,0 +1,7 @@
+setup.py
+numpy_2425/__init__.py
+numpy_2425/operations.py
+numpy_2425.egg-info/PKG-INFO
+numpy_2425.egg-info/SOURCES.txt
+numpy_2425.egg-info/dependency_links.txt
+numpy_2425.egg-info/top_level.txt
