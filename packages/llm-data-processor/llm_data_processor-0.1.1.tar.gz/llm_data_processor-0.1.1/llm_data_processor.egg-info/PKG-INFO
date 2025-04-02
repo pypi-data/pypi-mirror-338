@@ -1,0 +1,138 @@
+Metadata-Version: 2.4
+Name: llm-data-processor
+Version: 0.1.1
+Summary: A processor for LLM tasks
+Author-email: DG chen <94503663@qq.com>
+Project-URL: Homepage, https://github.com/yourusername/llm-processor
+Project-URL: Bug Tracker, https://github.com/yourusername/llm-processor/issues
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: pyyaml
+Requires-Dist: requests
+Requires-Dist: asyncio
+Requires-Dist: aiohttp
+
+# LLM Data Processor
+
+[![PyPI version](https://badge.fury.io/py/llm-data-processor.svg)](https://badge.fury.io/py/llm-data-processor)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+LLM Data Processor 是一个专为大语言模型(LLM)数据清洗和预处理设计的工具包，帮助研究人员和开发者高效地准备高质量训练数据。
+
+## 特性
+
+- 🧹 **高效数据清洗**：去除噪声、重复内容和低质量文本
+- 🔍 **智能内容过滤**：基于规则和启发式方法过滤不相关内容
+- 🧠 **格式标准化**：将不同来源的数据转换为统一的训练格式
+- 📊 **数据质量评估**：提供数据质量指标和可视化工具
+- ⚡ **批量处理**：支持大规模数据集的并行处理
+- 🛠️ **可扩展性**：易于添加自定义处理器和过滤器
+
+## 安装
+
+```bash
+pip install llm-data-processor
+```
+
+## 快速开始
+
+### 基本用法
+
+```python
+from llm_data_processor import DataCleaner
+
+# 初始化数据清洗器
+cleaner = DataCleaner()
+
+# 清洗单个文本
+cleaned_text = cleaner.clean("这是一个包含HTML标签<div>和重复重复内容的文本。")
+print(cleaned_text)  # 输出: "这是一个包含HTML标签和重复内容的文本。"
+
+# 批量处理文件
+cleaner.process_file("input.txt", "output.txt")
+```
+
+### 处理数据集
+
+```python
+from llm_data_processor import DatasetProcessor
+
+# 初始化数据集处理器
+processor = DatasetProcessor()
+
+# 处理整个数据集
+processor.process_dataset(
+    input_path="raw_data/",
+    output_path="processed_data/",
+    filters=["duplicate", "low_quality", "non_chinese"],
+    num_workers=4
+)
+```
+
+### 自定义过滤器
+
+```python
+from llm_data_processor import DataCleaner, Filter
+
+# 创建自定义过滤器
+class MyCustomFilter(Filter):
+    def apply(self, text):
+        # 实现自定义过滤逻辑
+        if "关键词" in text:
+            return None  # 返回None表示过滤掉该文本
+        return text  # 返回处理后的文本
+
+# 使用自定义过滤器
+cleaner = DataCleaner()
+cleaner.add_filter(MyCustomFilter())
+result = cleaner.clean("这是包含关键词的文本")
+print(result)  # 输出: None (被过滤)
+```
+
+## 高级功能
+
+### 配置文件支持
+
+```python
+from llm_data_processor import DataCleaner
+
+# 从配置文件加载设置
+cleaner = DataCleaner.from_config("config.yaml")
+cleaner.process_directory("input_dir/", "output_dir/")
+```
+
+### 质量评估
+
+```python
+from llm_data_processor import QualityEvaluator
+
+# 评估数据质量
+evaluator = QualityEvaluator()
+metrics = evaluator.evaluate("processed_data.jsonl")
+print(f"数据质量分数: {metrics['quality_score']}")
+print(f"重复率: {metrics['duplication_rate']}%")
+```
+
+### 命令行使用
+
+```bash
+# 处理单个文件
+llm-data-processor clean --input input.txt --output output.txt
+
+# 处理目录
+llm-data-processor process --input-dir raw_data/ --output-dir clean_data/ --workers 4
+
+# 评估数据质量
+llm-data-processor evaluate --input dataset.jsonl --report quality_report.json
+```
+
+## 配置示例
+
+`config.yaml` 示例:

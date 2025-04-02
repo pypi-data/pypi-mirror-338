@@ -1,0 +1,39 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "llm-data-processor"
+version = "0.1.1"
+description = "A processor for LLM tasks"
+readme = "README.md"
+authors = [
+    {name = "DG chen", email = "94503663@qq.com"}
+]
+requires-python = ">=3.8"
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+]
+dependencies = [
+    "pyyaml",
+    "requests",
+    "asyncio",
+    "aiohttp",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/yourusername/llm-processor"
+"Bug Tracker" = "https://github.com/yourusername/llm-processor/issues"
+
+[project.scripts]
+llm-data-processor = "llm_data_processor.cli:main"
+
+[tool.setuptools]
+packages = {find = {exclude = ["tasks", "tasks.*"]}}
+include-package-data = true
