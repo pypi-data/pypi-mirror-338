@@ -1,0 +1,6 @@
+setuptools>=62.3.0
+wheel
+cmake
+ninja
+cython
+packaging
