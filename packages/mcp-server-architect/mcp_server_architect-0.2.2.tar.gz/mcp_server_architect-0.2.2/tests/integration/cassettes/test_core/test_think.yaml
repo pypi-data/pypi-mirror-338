@@ -1,0 +1,207 @@
+interactions:
+- request:
+    body: '{"messages":[{"role":"system","content":"\n        You are an expert software
+      architect and technical lead with deep expertise in software design and development.\n        \n        You
+      can provide several types of assistance:\n        1. Create Product Requirements
+      Documents (PRDs) or High-Level Design Documents\n        2. Analyze code and
+      architecture\n        3. Provide deep reasoning assistance and solutions for
+      complex coding problems\n        \n        Use the tools strategically to gather
+      all the information you need:\n        - code_reader: Read source code files
+      from the codebase to understand the architecture\n        - web_search: Find
+      relevant technical information online\n        - llm: Use external LLM assistance
+      when needed\n        \n        Format your responses in markdown. Be concise
+      but thorough.\n        "},{"role":"user","content":"\n            Analyze the
+      following coding problem or question and provide reasoning assistance.\n            \n            If
+      a codebase path is provided, use the code_reader tool to examine relevant files.\n            \n            In
+      your response:\n            1. Break down the problem step by step\n            2.
+      Identify potential solutions or approaches\n            3. Explain your reasoning
+      thoroughly\n            4. Include relevant code examples where helpful\n            \n            Problem/Question:
+      How should I implement error handling in my calculator app?\n            "}],"model":"gpt-4o-2024-11-20","n":1,"stream":false,"tool_choice":"auto","tools":[{"type":"function","function":{"name":"code_reader","description":"<summary>Read
+      and analyze source code files from the specified codebase path, combining them\ninto
+      a unified code context for the agent to analyze.</summary>\n<returns>\n<description>A
+      string containing the code context or error message</description>\n</returns>","parameters":{"description":"Input
+      schema for the code reader tool.","properties":{"paths":{"description":"List
+      of file or directory paths to read, relative to the base codebase path","items":{"type":"string"},"type":"array"},"filter_extensions":{"anyOf":[{"items":{"type":"string"},"type":"array"},{"type":"null"}],"default":null,"description":"Optional
+      list of file extensions to include (e.g., [''.py'', ''.js''])"},"max_files":{"anyOf":[{"type":"integer"},{"type":"null"}],"default":null,"description":"Maximum
+      number of files to include"}},"required":["paths"],"title":"CodeReaderInput","type":"object"}}},{"type":"function","function":{"name":"web_search","description":"<summary>Search
+      the web for information on a given query using Exa API.</summary>\n<returns>\n<description>A
+      string containing the search results or error message</description>\n</returns>","parameters":{"description":"Input
+      schema for the web search tool.","properties":{"query":{"description":"The search
+      query to execute","type":"string"},"num_results":{"anyOf":[{"type":"integer"},{"type":"null"}],"default":10,"description":"Number
+      of results to return (max 25)"}},"required":["query"],"title":"WebSearchInput","type":"object"}}},{"type":"function","function":{"name":"llm","description":"<summary>Execute
+      a prompt against a specialized LLM model to perform targeted reasoning, problem-solving,
+      or creative tasks.\n\nUse this tool when you need to leverage specific model
+      strengths for a particular sub-task. Each model has different\ncapabilities
+      that may be more suitable for certain types of queries. For example:\n\n- Use
+      GPT-4o for complex reasoning, creative writing, or general-purpose tasks\n-
+      Use Gemini for up-to-date technical information, explanations, and code understanding\n-
+      Use Claude for nuanced analysis, careful instructions, or processing lengthy
+      context\n- Use DeepSeek for specialized code generation and technical implementation\n\nWhen
+      to use this tool:\n- When you need specialized expertise beyond your capabilities\n-
+      For complex sub-problems that benefit from targeted reasoning\n- When you want
+      to compare multiple approaches to a problem\n- For generating code with specific
+      requirements</summary>\n<returns>\n<description>The text response from the selected
+      LLM or an error message if the request failed</description>\n</returns>","parameters":{"description":"Input
+      schema for the LLM tool.","properties":{"prompt":{"description":"The prompt
+      to send to the LLM","type":"string"},"model":{"anyOf":[{"type":"string"},{"type":"null"}],"default":null,"description":"\n        Optional
+      model identifier. Specify one of these model keys:\n        \n        - ''gpt4o''
+      (DEFAULT): OpenAI''s GPT-4o - Excellent multimodal model with strong reasoning,
+      coding abilities, and creative tasks. Features fast processing speed and real-time
+      thinking. Best for complex problems requiring deep understanding, coding, and
+      general-purpose tasks.\n        \n        - ''gemini-2.5-pro'': Google''s Gemini
+      2.5 Pro - State-of-the-art reasoning model with structured thinking capabilities
+      and advanced code generation. Excels at mathematics, science, and complex reasoning
+      tasks. Top performer on benchmark leaderboards. Best for technical documentation,
+      coding, and step-by-step problem-solving.\n        \n        - ''claude-3.7-sonnet'':
+      Anthropic''s Claude 3.7 Sonnet - Features hybrid reasoning with transparent
+      \"thinking\" processes. Superior at detailed analysis, long context understanding
+      (up to 128K tokens), and careful instruction following. Best for nuanced tasks
+      requiring critical thinking, comprehensive explanations, and content generation.\n        \n        -
+      ''deepseek-v3'': DeepSeek-v3-0324 - Specialized large-scale MoE (Mixture-of-Experts)
+      model optimized for code generation and technical problem-solving. Exceptional
+      at programming tasks, algorithm implementation, and debugging. Features fast
+      response times and efficiency. Best for software engineering tasks, coding challenges,
+      and technical implementations.\n        "},"temperature":{"anyOf":[{"type":"number"},{"type":"null"}],"default":null,"description":"Temperature
+      for LLM generation (0.0-1.0). Lower values (0.0-0.3) for factual/deterministic
+      responses, higher values (0.7-1.0) for creative/varied responses. Some models
+      like Claude may override this setting when using thinking mode."}},"required":["prompt"],"title":"LLMInput","type":"object"}}}]}'
+    headers:
+      accept:
+      - application/json
+      accept-encoding:
+      - gzip, deflate
+      connection:
+      - keep-alive
+      content-length:
+      - '6287'
+      content-type:
+      - application/json
+      cookie:
+      - __cf_bm=GKV.HzNQj3cNhH7iS8hleMHyveMyWqdxvgt5CeinLyA-1743505923-1.0.1.1-b2_6uQGxYL5oi8CPdzgkfg4N3414ae1Vufub8aFGC4gJyzFcOIMPPpZfx25G0R3sgF_aoQEukOlm8W82ms77cUAVlKUIR6OpUD8XhWHeVGc;
+        _cfuvid=aRhG7N3z5m5pEz9Wjd2qZgDs7b31C1S4ZpZgYXQR32Y-1743505923350-0.0.1.1-604800000
+      host:
+      - api.openai.com
+      user-agent:
+      - AsyncOpenAI/Python 1.70.0
+      x-stainless-arch:
+      - arm64
+      x-stainless-async:
+      - async:asyncio
+      x-stainless-lang:
+      - python
+      x-stainless-os:
+      - MacOS
+      x-stainless-package-version:
+      - 1.70.0
+      x-stainless-read-timeout:
+      - '600'
+      x-stainless-retry-count:
+      - '1'
+      x-stainless-runtime:
+      - CPython
+      x-stainless-runtime-version:
+      - 3.11.11
+    method: POST
+    uri: https://api.openai.com/v1/chat/completions
+  response:
+    body:
+      string: !!binary |
+        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
+    headers:
+      CF-RAY:
+      - 9297a927bbc703cb-MAD
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/json
+      Date:
+      - Tue, 01 Apr 2025 11:14:13 GMT
+      Server:
+      - cloudflare
+      Transfer-Encoding:
+      - chunked
+      X-Content-Type-Options:
+      - nosniff
+      access-control-expose-headers:
+      - X-Request-ID
+      alt-svc:
+      - h3=":443"; ma=86400
+      cf-cache-status:
+      - DYNAMIC
+      openai-organization:
+      - user-c4qiapq5nsn18pakt4nqcpfn
+      openai-processing-ms:
+      - '8961'
+      openai-version:
+      - '2020-10-01'
+      strict-transport-security:
+      - max-age=31536000; includeSubDomains; preload
+      x-ratelimit-limit-requests:
+      - '5000'
+      x-ratelimit-limit-tokens:
+      - '450000'
+      x-ratelimit-remaining-requests:
+      - '4999'
+      x-ratelimit-remaining-tokens:
+      - '449655'
+      x-ratelimit-reset-requests:
+      - 12ms
+      x-ratelimit-reset-tokens:
+      - 45ms
+      x-request-id:
+      - req_4b20d2c01bcee22c88108cb9f179fd00
+    status:
+      code: 200
+      message: OK
+version: 1
