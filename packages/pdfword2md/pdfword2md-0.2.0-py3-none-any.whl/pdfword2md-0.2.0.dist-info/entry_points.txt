@@ -1,0 +1,2 @@
+[console_scripts]
+pdfword2md = converter:main
