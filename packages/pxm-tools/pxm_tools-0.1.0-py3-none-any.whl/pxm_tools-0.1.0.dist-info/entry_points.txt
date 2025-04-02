@@ -1,0 +1,5 @@
+[console_scripts]
+pxm-create = pxm_tools.cli.create:main
+pxm-rm = pxm_tools.cli.remove:main
+pxm-start = pxm_tools.cli.start:main
+pxm-stop = pxm_tools.cli.stop:main
