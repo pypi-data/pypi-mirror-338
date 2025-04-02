@@ -1,0 +1,22 @@
+[project]
+name = "supply-chains"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Thomas Pinder", email = "tompinder@live.co.uk" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "jax>=0.5.3",
+    "jaxlib>=0.5.3",
+    "numpyro>=0.18.0",
+    "optax>=0.2.4",
+]
+
+[project.scripts]
+supply-chains = "supply_chains:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
