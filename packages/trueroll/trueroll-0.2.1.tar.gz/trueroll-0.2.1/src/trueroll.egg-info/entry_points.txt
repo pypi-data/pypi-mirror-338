@@ -1,0 +1,2 @@
+[console_scripts]
+trueroll = trueroll.cli.commands:app
