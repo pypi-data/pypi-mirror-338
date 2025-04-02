@@ -1,0 +1,146 @@
+Metadata-Version: 2.4
+Name: agent-flow-craft
+Version: 2025.4.1.dev502163
+Summary: Framework para automação de fluxo de criação de features usando agentes de IA
+Author: Seu Nome
+Author-email: seu.email@exemplo.com
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: openai>=1.0.0
+Requires-Dist: openrouter>=0.3.0
+Requires-Dist: google-generativeai>=0.3.0
+Requires-Dist: rope>=1.10.0
+Requires-Dist: pygithub>=2.1.0
+Requires-Dist: python-dotenv>=1.0.0
+Requires-Dist: rich>=13.0.0
+Requires-Dist: typer>=0.9.0
+Requires-Dist: pydantic>=2.0.0
+Requires-Dist: requests>=2.31.0
+Requires-Dist: tenacity>=8.2.0
+Requires-Dist: cachetools>=5.3.0
+Requires-Dist: pytest>=7.0.0
+Requires-Dist: pytest-cov>=4.1.0
+Requires-Dist: black>=23.0.0
+Requires-Dist: isort>=5.12.0
+Requires-Dist: flake8>=6.1.0
+Requires-Dist: mypy>=1.5.0
+Requires-Dist: autoflake>=2.2.0
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: license-file
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+# Agent Flow Craft
+
+Framework para automação de fluxo de criação de features usando agentes de IA.
+
+## Instalação
+
+### Instalação Rápida
+
+```bash
+# Clonar o repositório
+git clone https://github.com/seu-usuario/agent-flow-craft.git
+cd agent-flow-craft
+
+# Criar ambiente virtual e instalar dependências
+make install
+
+# Para desenvolvimento, instalar dependências adicionais
+make setup
+```
+
+### Configuração
+
+1. Copie o arquivo `.env.example` para `.env`:
+```bash
+cp .env.example .env
+```
+
+2. Configure as variáveis de ambiente no arquivo `.env`:
+```env
+# Chaves de API
+OPENAI_API_KEY=sua-chave-openai
+OPENROUTER_API_KEY=sua-chave-openrouter
+GOOGLE_API_KEY=sua-chave-google
+GITHUB_TOKEN=seu-token-github
+
+# Configurações de Modelos
+DEFAULT_MODEL=gpt-4-turbo-preview
+ELEVATION_MODEL=gpt-4-turbo-preview
+FALLBACK_MODEL=claude-3-sonnet
+```
+
+## Uso
+
+O pacote oferece vários comandos para automação de tarefas:
+
+```bash
+# Criar uma nova feature
+agent-flow-craft feature --name "nome-da-feature" --description "descrição da feature"
+
+# Gerar conceitos
+agent-flow-craft concept --name "nome-do-conceito"
+
+# Validar plano
+agent-flow-craft validate --plan "plano-a-validar"
+
+# Integração com GitHub
+agent-flow-craft github --repo "usuario/repositorio"
+
+# Gerar critérios TDD
+agent-flow-craft tdd --feature "nome-da-feature"
+
+# Verificar status do sistema
+agent-flow-craft status
+```
+
+## Desenvolvimento
+
+Para contribuir com o projeto:
+
+```bash
+# Instalar dependências de desenvolvimento
+make setup
+
+# Formatar código
+make format
+
+# Verificar código
+make lint
+
+# Executar testes
+make test
+
+# Limpar arquivos gerados
+make clean
+```
+
+## Modelos Suportados
+
+O framework suporta os seguintes provedores de modelos:
+
+- OpenAI (GPT-4, GPT-3.5)
+- OpenRouter (Claude, Mistral, etc)
+- Google (Gemini)
+
+O sistema possui um mecanismo de fallback que alterna automaticamente entre modelos em caso de falhas ou limites de quota.
+
+## Licença
+
+Este projeto está licenciado sob a licença MIT - veja o arquivo [LICENSE](LICENSE) para detalhes.
