@@ -1,0 +1,47 @@
+[build-system]
+requires = [ "setuptools>=41.0.1",]
+
+[tool.mypy]
+ignore_missing_imports = true
+
+[tool.xcookie]
+tags = [ "kitware", "gitlab", "purepy", "cv2", "gdal",]
+mod_name = "ndsampler"
+repo_name = "ndsampler"
+rel_mod_parent_dpath = "."
+os = [ "all", "osx", "win", "linux",]
+min_python = '3.8'
+author = "Jon Crall"
+use_uv = true
+author_email = "jon.crall@kitware.com"
+description = "Fast sampling from large images"
+render_doc_images = 1
+url = "https://gitlab.kitware.com/computer-vision/ndsampler"
+license = "Apache 2"
+dev_status = "beta"
+classifiers = [
+    "Intended Audience :: Developers",
+    "Intended Audience :: Science/Research",
+    "Topic :: Scientific/Engineering",
+    "Topic :: Software Development",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: Utilities",
+]
+
+[tool.pytest.ini_options]
+addopts = "-p no:doctest --xdoctest --xdoctest-style=google --ignore-glob=setup.py --ignore-glob=dev --ignore-glob=docs"
+norecursedirs = ".git ignore build __pycache__ dev _skbuild"
+filterwarnings = [ "default", "ignore:.*No cfgstr given in Cacher constructor or call.*:Warning", "ignore:.*Define the __nice__ method for.*:Warning", "ignore:.*private pytest class or function.*:Warning",]
+
+[tool.coverage.run]
+branch = true
+
+[tool.coverage.report]
+exclude_lines = [ "pragma: no cover", ".*  # pragma: no cover", ".*  # nocover", "def __repr__", "raise AssertionError", "raise NotImplementedError", "if 0:", "if trace is not None", "verbose = .*", "^ *raise", "^ *pass *$", "if _debug:", "if __name__ == .__main__.:", ".*if six.PY2:",]
+omit = [ "ndsampler/__main__.py", "*/setup.py",]
+
+[tool.codespell]
+skip = ['./docs/build', './*.egg-info', './build', './htmlcov']
+count = true
+quiet-level = 3
+ignore-words-list = ['wont', 'cant', 'ANS', 'doesnt', 'arent', 'ans', 'thats', 'datas', 'isnt', 'nd', 'whos', 'didnt']
