@@ -1,0 +1,21 @@
+Metadata-Version: 2.4
+Name: trueroll
+Version: 0.2.1
+Summary: A ten-pin bowling simulation library for modeling games
+Home-page: https://github.com/michael-borck/trueroll
+Author: Michael Borck
+Author-email: michael@borck.me
+Requires-Python: >=3.10
+License-File: LICENSE
+Requires-Dist: numpy>=1.26.4
+Requires-Dist: typer>=0.9.0
+Requires-Dist: rich>=13.7.0
+Requires-Dist: textual>=0.52.1
+Requires-Dist: python-fasthtml>=0.8.2
+Dynamic: author
+Dynamic: author-email
+Dynamic: home-page
+Dynamic: license-file
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
