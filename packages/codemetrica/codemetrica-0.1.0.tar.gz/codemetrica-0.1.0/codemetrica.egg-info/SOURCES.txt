@@ -1,0 +1,7 @@
+LICENSE
+README.md
+setup.py
+codemetrica.egg-info/PKG-INFO
+codemetrica.egg-info/SOURCES.txt
+codemetrica.egg-info/dependency_links.txt
+codemetrica.egg-info/top_level.txt

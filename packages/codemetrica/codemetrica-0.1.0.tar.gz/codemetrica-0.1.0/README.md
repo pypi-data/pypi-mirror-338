@@ -1,0 +1,121 @@
+# Codemetrica
+
+A Python library for calculating code metrics and detecting code smells in Python codebases using tree-sitter.
+
+## Features
+
+- Comprehensive code metrics calculation
+- Code smell detection
+- Support for analyzing Python files, classes, and methods
+- Easy-to-use API
+- Powered by tree-sitter for robust parsing
+
+## Prerequisites
+
+- Python 3.10 or higher
+- GCC compiler (for building tree-sitter grammar)
+- Git (for cloning tree-sitter repository)
+
+## Installation
+
+```bash
+# Clone the repository
+git clone https://github.com/yourusername/codemetrica.git
+cd codemetrica
+
+# Install the package
+pip install -e .
+```
+
+The installation process will:
+1. Clone the tree-sitter-python repository
+2. Build the tree-sitter grammar
+3. Install the package in development mode
+
+## Quick Start
+
+```python
+from codemetrica import File, GodClass
+
+# Analyze a Python file
+f = File("example.py")
+
+# Get all classes in the file
+classes = f.get_classes()
+
+# Check for code smells
+for class_obj in classes:
+    if GodClass.detect(class_obj):
+        print(f"Found God Class: {class_obj.name}")
+```
+
+## Available Metrics
+
+### Size Metrics
+- Lines of Code (LOC)
+- Source Lines of Code (SLOC)
+- Kilo Lines of Code (KLOC)
+- Comment Lines of Code (CLOC)
+- Number of Methods (NOM)
+- Number of Classes (NOC)
+- Number of Fields (NOF)
+- Number of Public Methods (NOPM)
+
+### Complexity Metrics
+- Cyclomatic Complexity (CC)
+- Weighted Methods per Class (WMC)
+- NPath Complexity
+- Essential Complexity
+- Halstead Metrics
+- Nested Block Depth (NBD)
+- Decision Density
+
+### Object-Oriented Metrics
+- Depth of Inheritance Tree (DIT)
+- Number of Children (NOC)
+- Response for a Class (RFC)
+- Coupling Between Objects (CBO)
+- Lack of Cohesion of Methods (LCOM)
+- And more...
+
+## Available Code Smells
+
+### General Smells
+- Broken Modularization
+- Complex Conditional
+- Deficient Encapsulation
+- Dispersed Coupling
+- Empty catch clause
+- And more...
+
+### Class Level Smells
+- Brain Class
+- Class Data Should Be Private
+- Complex Class
+- Data Class
+- God Class
+- Large Class
+- Lazy Class
+
+### Method Level Smells
+- Abstract Function Call From Constructor
+- Brain Method
+- Complex Method
+- Long Method
+- Long Parameter List
+
+## Development
+
+To build the tree-sitter grammar manually:
+
+```bash
+# Clone tree-sitter-python if not already done
+git clone https://github.com/tree-sitter/tree-sitter-python.git
+
+# Build the grammar
+gcc -shared -o build/my-languages.so -I./tree-sitter-python/src tree-sitter-python/src/parser.c -fPIC
+```
+
+## License
+
+MIT License 
