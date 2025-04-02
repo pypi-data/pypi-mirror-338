@@ -1,0 +1,148 @@
+---
+name: Checks
+
+on:
+  pull_request:
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: read
+
+jobs:
+  mypy:
+    runs-on: ubuntu-24.04
+
+    steps:
+      - name: Checkout the code
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+
+      - name: Install uv
+        uses: astral-sh/setup-uv@v5
+        with:
+          enable-cache: true
+
+      - name: Install dependencies
+        run: uv sync --frozen
+
+      - name: Run mypy
+        run: uv run mypy .
+
+
+  nix-flake:
+    runs-on: ubuntu-24.04
+
+    steps:
+      - name: Checkout the code
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+
+      - name: Check Nix flake inputs
+        uses: DeterminateSystems/flake-checker-action@v9
+
+      - name: Install Nix
+        uses: DeterminateSystems/nix-installer-action@v16
+
+      - name: Build package
+        run: nix build
+
+      - name: Run command
+        run: nix run
+
+
+  pre-commit:
+    runs-on: ubuntu-24.04
+
+    steps:
+      - name: Checkout the code
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+
+      - name: Run pre-commit
+        uses: pre-commit/action@v3.0.1
+
+
+  pytest:
+    runs-on: ubuntu-24.04
+
+    strategy:
+      fail-fast: false
+      matrix:
+        package-resolution:
+          - --frozen
+          - --resolution=lowest
+        python-version:
+          - "3.9"
+          - "3.10"
+          - "3.11"
+          - "3.12"
+          - "3.13"
+          - "3.14"
+
+    steps:
+      - name: Checkout the code
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+
+      - name: Install uv
+        uses: astral-sh/setup-uv@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+
+      - name: Install dependencies
+        run: uv sync ${{ matrix.package-resolution }}
+
+      - name: Run pytest
+        run: uv run pytest
+
+
+  usage:
+    runs-on: ubuntu-24.04
+
+    steps:
+      - name: Checkout the code
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+
+      - name: Install uv
+        uses: astral-sh/setup-uv@v5
+        with:
+          enable-cache: true
+
+      - name: Install dependencies
+        run: uv sync --frozen
+
+      - name: Generate usage.md
+        run: uv run ./generate-usage.sh
+
+      - name: Check usage.md is up-to-date
+        run: git diff --exit-code
+
+
+  all-checks-passed:
+    if: always()
+
+    needs:
+      - mypy
+      - nix-flake
+      - pre-commit
+      - pytest
+      - usage
+
+    runs-on: ubuntu-24.04
+
+    steps:
+      - name: Decide whether the needed jobs succeeded or failed
+        uses: re-actors/alls-green@release/v1
+        with:
+          jobs: ${{ toJSON(needs) }}
