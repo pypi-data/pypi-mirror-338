@@ -1,0 +1,10 @@
+aiohttp
+pyparsing>=3.0
+jsonschema
+jinja2
+dpath>=2.1.4
+janus
+ansible-runner
+websockets==10.4
+drools_jpy==0.3.9
+watchdog
