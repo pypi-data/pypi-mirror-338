@@ -1,0 +1,19 @@
+[project]
+name = "uv_testing_pycon_italy_2025"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Vinicius Gubiani Ferreira", email = "vini.g.fer@gmail.com" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "requests>=2.32.3",
+]
+
+[project.scripts]
+myproj = "myproj:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
