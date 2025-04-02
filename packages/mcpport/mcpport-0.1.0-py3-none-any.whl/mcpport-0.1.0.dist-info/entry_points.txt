@@ -1,0 +1,3 @@
+[console_scripts]
+mcpport = mcpport.client:main
+mcpports = mcpport.run:main
