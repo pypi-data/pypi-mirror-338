@@ -1,0 +1,33 @@
+Metadata-Version: 2.4
+Name: resens
+Version: 0.4.3.20
+Summary: Raster Processing package for Remote Sensing and Earth Observation
+Home-page: https://www.nargyrop.com
+Author: Nikos Argyropoulos
+Author-email: n.argiropgeo@gmail.com
+License: MIT
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE.rst
+Requires-Dist: GDAL>=3
+Requires-Dist: geopandas>=0.11.1
+Requires-Dist: numpy>=1.23.4
+Requires-Dist: opencv-python>=4.6.0.66
+Requires-Dist: setuptools
+Requires-Dist: wheel>=0.43.0
+Dynamic: author
+Dynamic: author-email
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: license
+Dynamic: license-file
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+# resens
+Raster Processing package for Remote Sensing and Earth Observation.
+
+## Installation
+Requires python >=3.8
