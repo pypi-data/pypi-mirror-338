@@ -1,0 +1,28 @@
+Metadata-Version: 2.4
+Name: fsion
+Version: 0.1.0a1
+Summary: FSion (fusion: /ˈfjuʒən/) is a library designed to expose filesystem-like API's from various backends (Google Drive, S3, GCS, local filesystem etc.)
+Project-URL: Repository, https://github.com/imscytha/FSion.git
+Project-URL: Issues, https://github.com/imscytha/FSion/issues
+Author-email: Roni Bytyqi <imscytha@protonmail.com>
+License-Expression: MIT
+License-File: LICENSE
+Requires-Python: >=3.12
+Requires-Dist: pydantic>=2.11.1
+Provides-Extra: drive
+Requires-Dist: google-api-python-client>=2.166.0; extra == 'drive'
+Requires-Dist: google-auth-httplib2>=0.2.0; extra == 'drive'
+Requires-Dist: google-auth-oauthlib>=1.2.1; extra == 'drive'
+Description-Content-Type: text/markdown
+
+# FSion
+
+__FSion__ (_fusion_: _`/ˈfjuʒən/`_) is a library designed to expose
+filesystem-like API's from various backends (Google Drive, S3, GCS, local
+filesystem etc.)
+
+> [!WARNING]
+> The library is in it's very early stages of development. It's a pet project
+> of mine, and as of current I don't anticipate dedicating significant time or
+> resources to its ongoing development. It's not recommended for production, so
+> use it at your own risk.
