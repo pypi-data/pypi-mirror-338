@@ -1,0 +1,9 @@
+README.md
+setup.py
+primeiraapi/__init__.py
+primeiraapi/core.py
+primeiraapi_package.egg-info/PKG-INFO
+primeiraapi_package.egg-info/SOURCES.txt
+primeiraapi_package.egg-info/dependency_links.txt
+primeiraapi_package.egg-info/top_level.txt
+tests/test_core.py

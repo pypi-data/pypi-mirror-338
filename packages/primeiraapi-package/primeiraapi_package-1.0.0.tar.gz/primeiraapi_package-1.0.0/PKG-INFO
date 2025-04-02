@@ -1,0 +1,28 @@
+Metadata-Version: 2.4
+Name: primeiraapi-package
+Version: 1.0.0
+Summary: Descricao da sua lib primeiraapi
+Home-page: https://github.com/Yuriferr/Fase-1-PosTech-IA/tree/Fundamentos-de-Inteligência-Artificial/aula03/primeiraapi
+Author: Yuri Fernandes
+Author-email: yurifernandespreto@gmail.com
+License: MIT
+Description-Content-Type: text/markdown
+Dynamic: author
+Dynamic: author-email
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: license
+Dynamic: summary
+
+# Primeiraapi
+A simple example library.
+## Installation
+```sh
+pip install primeiraapi
+```
+## Usage
+```python
+from primeiraapi import hello_world
+print(hello_world())
+```
