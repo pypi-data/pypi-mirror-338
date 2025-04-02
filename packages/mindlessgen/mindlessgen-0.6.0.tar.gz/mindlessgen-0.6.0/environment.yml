@@ -1,0 +1,24 @@
+# conda env create -f environment.yaml
+name: mindlessgen
+channels:
+  - conda-forge
+dependencies:
+  # runtime dependencies
+  - python>=3.12
+  - tqdm
+  - numpy>=2.0.0
+  - toml
+  - networkx
+  # development dependencies
+  - ruff==0.5.7
+  - coverage
+  - pre-commit
+  - pytest
+  - tox
+  - mypy
+  - covdefaults
+  - types-toml
+  - types-tqdm
+  - setuptools_scm>=8.0.0
+  - pip:
+      - build

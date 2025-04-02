@@ -1,0 +1,16 @@
+numpy
+networkx
+toml
+tqdm
+
+[dev]
+ruff==0.5.7
+mypy
+covdefaults
+coverage
+pre-commit
+pytest
+tox
+setuptools_scm>=8
+types-toml
+types-tqdm
