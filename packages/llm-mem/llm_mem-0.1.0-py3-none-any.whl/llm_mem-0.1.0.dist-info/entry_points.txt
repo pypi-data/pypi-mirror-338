@@ -1,0 +1,2 @@
+[console_scripts]
+llm-mem = llm_mem.cli:main
