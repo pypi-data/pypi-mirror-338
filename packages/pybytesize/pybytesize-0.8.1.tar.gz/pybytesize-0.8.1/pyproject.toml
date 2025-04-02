@@ -1,0 +1,100 @@
+#--------------------------------------------------------------------------------------------------#
+######################################### Package Config ###########################################
+#__________________________________________________________________________________________________#
+[project]
+name = "pybytesize"
+version = "0.8.1"
+description = "Smart, Pythonic, and dynamic: automatic unit selection and conversions made intuitive."
+license = "MIT"
+
+readme = "README.md"
+keywords = ["bytesize", "pixi", "python"]
+
+authors = [{ name = "Jermiah Joseph", email = "jermiahjoseph98@gmail.com" }]
+maintainers = [{ name = "Jermiah Joseph", email = "jermiahjoseph98@gmail.com" }]
+
+classifiers = [
+  "Development Status :: 1 - Planning",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: 3.13",
+  "Operating System :: OS Independent",
+  "License :: OSI Approved :: MIT License",
+]
+
+requires-python = ">= 3.10"
+dependencies = [
+]
+
+[project.urls]
+homepage = "https://github.com/jjjermiah/ByteSize"
+repository = "https://github.com/jjjermiah/ByteSize"
+documentation = "https://jjjermiah.github.io/PyByteSize/"
+changelog = "https://github.com/jjjermiah/ByteSize/blob/main/docs/CHANGELOG.md"
+issues = "https://github.com/jjjermiah/ByteSize/issues"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project.scripts]
+
+[tool.ruff]
+# Extend the `pyproject.toml` file in the parent directory...
+extend = "config/ruff.toml"
+
+[tool.hatch.version]
+path = "src/bytesize/__init__.py"
+
+[tool.hatch.build]
+directory = "dist"
+include-package-data = true
+reproducible = false
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/bytesize"]
+include = [
+  "src/bytesize",
+  "src/bytesize/py.typed"
+]
+
+[tool.hatch.build.targets.sdist]
+packages = ["src/bytesize"]
+include = ["src/bytesize", "src/bytesize/py.typed"]
+
+
+[tool.semantic_release]
+version_variables = ["src/bytesize/__init__.py:__version__"]
+version_toml = ["pyproject.toml:project.version"]
+upload_to_release = true
+remove_dist = false
+commit_message = "chore(sem-ver): {version}"
+patch_without_tag = false
+major_on_zero = false
+
+[tool.semantic_release.branches.main]
+match = "(main|master)"
+
+[tool.semantic_release.branches.dev]
+match = "(dev|develop)"
+prerelease = true
+prerelease_token = "rc"
+
+[tool.semantic_release.commit_parser_options]
+allowed_tags = [
+  "build",
+  "chore",
+  "ci",
+  "docs",
+  "feat",
+  "fix",
+  "perf",
+  "style",
+  "refactor",
+  "test",
+]
+minor_tags = ["feat"]
+patch_tags = ["fix", "perf"]
+default_bump_level = 0
