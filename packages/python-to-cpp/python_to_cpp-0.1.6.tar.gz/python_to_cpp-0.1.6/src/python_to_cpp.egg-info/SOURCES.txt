@@ -1,0 +1,7 @@
+README.md
+setup.py
+src/python_to_cpp.egg-info/PKG-INFO
+src/python_to_cpp.egg-info/SOURCES.txt
+src/python_to_cpp.egg-info/dependency_links.txt
+src/python_to_cpp.egg-info/entry_points.txt
+src/python_to_cpp.egg-info/top_level.txt

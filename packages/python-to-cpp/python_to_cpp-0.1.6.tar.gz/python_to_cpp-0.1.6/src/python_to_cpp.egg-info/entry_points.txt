@@ -1,0 +1,2 @@
+[console_scripts]
+python_to_cpp = python_to_cpp.__main__:main
