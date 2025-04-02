@@ -1,0 +1,12 @@
+fastk/Histex.so,sha256=5HrC9KtvvTIgP0MAWG46HwF1q3KWAbovT_YkJzEuaNg,209016
+fastk/Profex.so,sha256=eqGSnIL8W15s9OxTlfkSIKq8uIGJEC_SeqpxqpFNkmc,209112
+fastk/_Histex.py,sha256=zocY8U5JM1mXVJpc7HhdWDzpGZQydPibbDY4BltLalY,1126
+fastk/_Profex.py,sha256=Nm6kg8QskSlun5wXXv0vwplWqzOVx6HII9vuokLGntQ,2380
+fastk/__init__.py,sha256=fXi26MEXZP2U5kevzzcnQ3cOXaMJpoKrfTT1Q-jbjoU,70
+fastk/setup.py,sha256=hDrCbDikGrrleCULwPlBkZSzIKD2cyfZQQN6Qmj2z-c,38
+fastk-1.1.dist-info/licenses/LICENSE,sha256=QYuXCHw-bSeT42jK62hPB_gQdVhWb595q9dIxyKNuEg,1073
+fastk-1.1.dist-info/licenses/LICENSE.FASTK,sha256=iCakhP1jXzY7Z27ep1P0PNP3zBOTF_YvzgEEmdcU6Gc,2760
+fastk-1.1.dist-info/METADATA,sha256=Uj_tA8e1TC4zMBmf2d5U9PbzjUuJARZyRdkcmnOdLHk,1718
+fastk-1.1.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+fastk-1.1.dist-info/top_level.txt,sha256=G5SpjkaFvpWEwXQD_wQH5AnsvqGAAIW0AAxtHHHD5c4,6
+fastk-1.1.dist-info/RECORD,,
