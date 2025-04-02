@@ -1,0 +1,9 @@
+/.eggs
+/.tox
+/*.egg-info/
+*.pyc
+/build/
+/dist/
+
+# generated file
+/emoji_fzf/emoji_fzf_emojilib.py

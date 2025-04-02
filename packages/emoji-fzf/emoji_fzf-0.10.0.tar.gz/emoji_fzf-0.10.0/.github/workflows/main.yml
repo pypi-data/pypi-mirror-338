@@ -1,0 +1,43 @@
+name: main-ci
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+  workflow_dispatch:
+
+jobs:
+  ci:
+    runs-on: ubuntu-22.04
+
+    container:
+      image: ghcr.io/noahp/emoji-fzf:2024-03-22
+      # we need to be root for checkout to work without pain
+      options: "--entrypoint='' --user=root"
+
+    strategy:
+      matrix:
+        python: [py38, py39, py310, py311, py312]
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          submodules: recursive
+
+      - name: 🧪 Run Tox Python Tests
+        run: |
+          tox -e ${{ matrix.python }}
+
+      - name: 🔍 Other Tox Checks
+        run: |
+          tox -e ruff -e check-wheel-contents
+
+      - name: 📦 Upload Wheel Artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: ${{ matrix.python }}-wheel-output
+          path: .tox/${{ matrix.python }}/dist/
