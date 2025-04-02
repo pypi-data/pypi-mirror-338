@@ -1,0 +1,49 @@
+Metadata-Version: 2.4
+Name: pasargad
+Version: 5.0.0
+Summary: An ultra-strong DDoS and attack protection library
+Home-page: https://github.com/pasargadcdn
+Author: ramox
+Author-email: actramox@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: scapy>=2.4.5
+Requires-Dist: psutil>=5.9.0
+Requires-Dist: numpy>=1.23.0
+Requires-Dist: pandas>=1.5.0
+Requires-Dist: redis>=4.0.0
+Requires-Dist: scikit-learn>=1.0.0
+Requires-Dist: requests>=2.28.0
+Requires-Dist: maxminddb>=2.0.0
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+# Pasargad v5.0.0 - Ultra-Strong DDoS and Attack Protection Library
+
+Pasargad is a powerful Python library designed to protect your network from DDoS attacks and other malicious activities. Version 5.0.0 introduces advanced features like machine learning-based detection, multi-layer protection, intelligent filtering, and optimized performance.
+
+## Features
+
+- **Advanced Machine Learning Detection**: Uses Isolation Forest and DBSCAN to detect abnormal traffic patterns.
+- **Multi-Layer Protection**: Defends against Layer 3/4 (SYN Flood, UDP Flood) and Layer 7 (HTTP Flood, Slowloris) attacks.
+- **Intelligent Filtering**: Dynamic Rate Limiting, Throttling, and CAPTCHA challenges to distinguish real users from bots.
+- **GeoIP Filtering**: Restrict traffic based on geographic location using MaxMind GeoIP database.
+- **Signature-Based Detection**: Identify known attack patterns like SYN Flood and UDP Flood.
+- **Optimized Performance**: Uses Redis for temporary storage and limits memory usage for scalability.
+- **Advanced Logging and Reporting**: Real-time reports with Elasticsearch integration for detailed analytics.
+
+## Installation
+
+1. **Install the library from PyPI**:
+   ```bash
+   pip install pasargad==5.0.0
