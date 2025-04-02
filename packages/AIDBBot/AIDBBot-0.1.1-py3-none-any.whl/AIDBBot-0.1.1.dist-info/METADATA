@@ -1,0 +1,160 @@
+Metadata-Version: 2.1
+Name: AIDBBot
+Version: 0.1.1
+Summary: AI-driven natural language queries for databases using AutoGen
+Home-page: https://github.com/shrishailwali/DBQNA
+Author: Shrishail
+Author-email: shrishail.dev@gmail.com
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: aiofiles==24.1.0
+Requires-Dist: annotated-types==0.7.0
+Requires-Dist: anyio==4.9.0
+Requires-Dist: autogen-agentchat==0.4.9.3
+Requires-Dist: autogen-core==0.4.9.3
+Requires-Dist: autogen-ext==0.4.9.3
+Requires-Dist: azure-ai-inference==1.0.0b9
+Requires-Dist: azure-core==1.32.0
+Requires-Dist: azure-identity==1.21.0
+Requires-Dist: certifi==2025.1.31
+Requires-Dist: cffi==1.17.1
+Requires-Dist: charset-normalizer==3.4.1
+Requires-Dist: click==8.1.8
+Requires-Dist: colorama==0.4.6
+Requires-Dist: cryptography==44.0.2
+Requires-Dist: Deprecated==1.2.18
+Requires-Dist: distro==1.9.0
+Requires-Dist: dotenv==0.9.9
+Requires-Dist: exceptiongroup==1.2.2
+Requires-Dist: fastapi==0.115.12
+Requires-Dist: h11==0.14.0
+Requires-Dist: httpcore==1.0.7
+Requires-Dist: httpx==0.28.1
+Requires-Dist: idna==3.10
+Requires-Dist: importlib-metadata==8.6.1
+Requires-Dist: isodate==0.7.2
+Requires-Dist: jiter==0.9.0
+Requires-Dist: jsonref==1.1.0
+Requires-Dist: msal==1.32.0
+Requires-Dist: msal-extensions==1.3.1
+Requires-Dist: openai==1.69.0
+Requires-Dist: opentelemetry-api==1.31.1
+Requires-Dist: pillow==11.1.0
+Requires-Dist: protobuf==5.29.4
+Requires-Dist: psycopg2==2.9.10
+Requires-Dist: pycparser==2.22
+Requires-Dist: pydantic==2.11.1
+Requires-Dist: pydantic-core==2.33.0
+Requires-Dist: PyJWT==2.10.1
+Requires-Dist: python-dotenv==1.1.0
+Requires-Dist: regex==2024.11.6
+Requires-Dist: requests==2.32.3
+Requires-Dist: six==1.17.0
+Requires-Dist: sniffio==1.3.1
+Requires-Dist: starlette==0.46.1
+Requires-Dist: tiktoken==0.9.0
+Requires-Dist: tqdm==4.67.1
+Requires-Dist: typing-inspection==0.4.0
+Requires-Dist: typing-extensions==4.13.0
+Requires-Dist: urllib3==2.3.0
+Requires-Dist: uvicorn==0.34.0
+Requires-Dist: wrapt==1.17.2
+Requires-Dist: zipp==3.21.0
+
+# DBBot
+
+DBBot is an AI-driven Python library that converts natural language queries into SQL queries using OpenAIâ€™s AutoGen, enabling seamless interaction with databases. It empowers developers and data analysts to retrieve and manipulate data effortlessly using plain English queries.
+
+## Features
+- **AI-Driven Query Generation**: Converts natural language questions into valid SQL queries using AutoGen.
+- **Multi-Database Support**: Works with PostgreSQL, MySQL, and MongoDB.
+- **Seamless Integration**: Easily integrates with your existing Python projects.
+- **Flexible Setup**: Users provide their own database and OpenAI credentials.
+- **Extensible**: Allows adding support for more databases or customizing AI behavior.
+- **Logging & Debugging**: Built-in features to help troubleshoot queries.
+
+## Installation
+Install DBBot using pip:
+
+```bash
+pip install dbqna
+```
+
+## Requirements
+- Python 3.6 or higher
+- Required database drivers:
+  - `psycopg2` for PostgreSQL
+  - `pymysql` for MySQL
+  - `pymongo` for MongoDB
+- OpenAI API key (for using the GPT model)
+
+## Setup
+### Database Credentials
+Provide the following details for database connection:
+- **Host**
+- **Port**
+- **Database Name**
+- **User**
+- **Password**
+
+### OpenAI Credentials
+You'll need an OpenAI API key and additional configurations:
+- **API Key**
+- **Base URL**
+- **API Version**
+- **Deployment Name**
+
+You can set these as environment variables in a `.env` file or provide them directly in the code.
+
+## Usage
+### 1. Initialize DBBot with OpenAI Credentials
+
+```python
+from dbqna import DBQnA
+
+db_bot = DBQnA(
+    azure_api_key="your-azure-api-key",
+    azure_api_base="your-azure-api-base",
+    azure_api_version="your-api-version",
+    azure_deployment_name="your-deployment-name"
+)
+```
+
+### 2. Provide Database Credentials
+
+```python
+from dbqna import DBHelper
+
+db_helper = DBHelper(
+    host="localhost",
+    port="5432",
+    database="your-database",
+    user="postgres",
+    password="your-password"
+)
+```
+
+### 3. Query the Database Using Natural Language
+
+```python
+query = "how many work orders are there for tenant 1289?"
+result = await db_bot.query_database(query)
+print(result)
+```
+
+### 4. Example Response
+
+```bash
+Result: 
+[
+    ('work_order_count', 35)
+]
+```
+
+## Contributing
+We welcome contributions! Feel free to fork the repository, open issues, or submit pull requests to enhance DBBot.
