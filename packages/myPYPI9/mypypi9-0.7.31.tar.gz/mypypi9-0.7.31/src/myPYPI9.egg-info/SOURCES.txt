@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+src/myPYPI9/__init__.py
+src/myPYPI9/prime_numbers.py
+src/myPYPI9/prime_numbersNew.py
+src/myPYPI9.egg-info/PKG-INFO
+src/myPYPI9.egg-info/SOURCES.txt
+src/myPYPI9.egg-info/dependency_links.txt
+src/myPYPI9.egg-info/desktop.ini
+src/myPYPI9.egg-info/top_level.txt
+tests/test_prime.py
