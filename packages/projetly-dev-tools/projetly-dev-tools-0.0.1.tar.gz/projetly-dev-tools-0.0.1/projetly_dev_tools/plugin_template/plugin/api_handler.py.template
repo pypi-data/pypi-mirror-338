@@ -1,0 +1,47 @@
+import os
+import requests, json, logging
+import azure.functions as func
+from urllib.parse import urlparse
+from utils import sub_function_handler
+from config import PROJECT_NAME
+from plugins.${plugin}.config import projetly_route, ${plugin_upper}_BASE_URL, ERROR_CODES, ERROR_CODES_DESCRIPTION
+from plugins.${plugin}.auth.jwt import verify_auth_token
+from plugins.${plugin}.auth.decorators import http_request_handler
+from plugins.${plugin}.request_handler import request_handler
+
+logger = logging.getLogger(PROJECT_NAME)
+
+
+class ${plugin_caps}APIHandler(object):
+     
+    def __init__(self):
+        pass
+
+
+    @projetly_route.function_name(name="${plugin_caps}SampleAPI")
+    @projetly_route.route(route="zoom/sample/{sample_id}", methods=("GET",)) 
+    @http_request_handler
+    def get_sample_info(req: func.HttpRequest) -> func.HttpResponse:
+        token, is_new_token = verify_auth_token(req)
+        request_url = urlparse(req.url)
+        request_url_list = request_url.path.split('/')
+        sample_id = str(request_url_list[-1])
+        request_params = req.params
+        request_body = {} if req.get_body() in [b'', "", None, -1] else dict(req.get_json())
+        projetly_org_ref_id = request_params.get("org_ref_id", request_body.get("org_ref_id", ""))
+        access_token = token.get("access_token", None)
+
+        url_info = ${plugin_upper}_BASE_URL + f"/sample/{sample_id}"
+        headers = {
+            'authorization': 'Bearer ' + access_token,
+            'content-type': 'application/json'
+        }
+        request_info = {"url": url_info, "method": "GET", "header": headers}
+        response_content, status_code = request_handler(request_info)
+        if is_new_token:
+            response = {"meeting": response_content, "token": token, "org_ref_id": projetly_org_ref_id}
+        else:
+            response = {"meeting": response_content, "org_ref_id": projetly_org_ref_id}
+        return func.HttpResponse(body=json.dumps(response), status_code=status_code)
+
+

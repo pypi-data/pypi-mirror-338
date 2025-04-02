@@ -1,0 +1,27 @@
+import os
+import azure.functions as func
+from dotenv import load_dotenv
+
+load_dotenv()
+projetly_route = func.Blueprint()
+
+PLUGIN_NAME = "${plugin}"
+${plugin_upper}_AUTH_URL = ""
+${plugin_upper}_AUTH_TOKEN_URL = ""
+${plugin_upper}_BASE_URL = ""
+CLIENT_ID = os.getenv("CLIENT_ID", None)
+CLIENT_SECRET = os.getenv("CLIENT_SECRET", None)
+SECRET_TOKEN = os.getenv("SECRET_TOKEN", None)
+VERIFICATION_TOKEN = os.getenv("VERIFICATION_TOKEN", None)
+PAGE_SIZE = 30
+${plugin_upper}_REQUEST_TRAKING_HEADER_NAME = ""
+${plugin_upper}_REQUEST_TRAKING_HEADER_KEY = ""
+ERROR_CODES = [400, 401, 403, 404, 409, 429, 4700]
+ERROR_CODES_DESCRIPTION = {
+    "400": "Bad Request(Invalid/missing data)",
+    "401": "Unauthorized(Invalid/missing credentials)",
+    "403": "Forbidden(User does not have permission or has not authorized shared access permissions)",
+    "404": "Not Found(The resource doesn't exist; invalid or non-existent user ID, for example)",
+    "409": "Conflict(Trying to overwrite a resource, for example when creating a user with an email that already exists)",
+    "429": "Too Many Requests(Hit an API rate limit)"
+}

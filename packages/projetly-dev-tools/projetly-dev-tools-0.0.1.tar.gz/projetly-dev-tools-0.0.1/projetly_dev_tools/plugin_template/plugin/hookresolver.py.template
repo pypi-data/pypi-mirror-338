@@ -1,0 +1,43 @@
+import azure.functions as func
+import logging, string
+from hookspecs import hookimpl
+from config import PROJECT_NAME
+import plugins.${plugin}.events_handler
+from plugins.${plugin}.config import projetly_route, PLUGIN_NAME
+from plugins.${plugin}.auth_handler import ${plugin_caps}AuthHandler
+from plugins.${plugin}.events_handler import ${plugin_caps}EventHandler
+from plugins.${plugin}.api_handler import ${plugin_caps}APIHandler
+
+
+logger = logging.getLogger(PROJECT_NAME)
+    
+
+class HookResolver:
+    """A hook implementation namespace."""
+
+    def __init__(self):
+        self.plugin_config = dict()
+        
+    @hookimpl
+    def init_plugin(self):
+        self.plugin_config["route"] = projetly_route
+        self.plugin_config["name"] = PLUGIN_NAME
+        self.plugin_config["display_name"] = string.capwords(PLUGIN_NAME)
+        return self.plugin_config
+
+    @hookimpl
+    def check_service_status(self):
+        status = "Service Up"
+        return status
+
+    @hookimpl
+    def auth_handler(self):
+        return ${plugin_caps}AuthHandler.${plugin}_auth_handler
+
+    @hookimpl
+    def event_handler(self):
+        return [${plugin_caps}EventHandler.${plugin}_sample_event_handler]
+
+    @hookimpl
+    def api_handler(self):
+        return [${plugin_caps}APIHandler.get_sample_info]

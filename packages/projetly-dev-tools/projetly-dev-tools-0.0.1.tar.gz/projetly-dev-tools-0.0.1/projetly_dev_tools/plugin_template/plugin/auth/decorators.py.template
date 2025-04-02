@@ -1,0 +1,38 @@
+import os, json, requests, logging, traceback
+import azure.functions as func
+from typing import Callable
+from config import PROJECT_NAME, PROFETLY_API_REQUEST_TRAKING_HEADER_NAME, PROFETLY_API_REQUEST_TRAKING_HEADER_KEY
+from plugins.${plugin}.config import SECRET_TOKEN, ${plugin_upper}_REQUEST_TRAKING_HEADER_NAME, ${plugin_upper}_REQUEST_TRAKING_HEADER_KEY
+
+
+logger = logging.getLogger(PROJECT_NAME)
+
+
+
+def http_request_handler(function: Callable) -> Callable:
+    def wrapper(req: func.HttpRequest) -> func.HttpResponse:
+        try:
+            header = dict(req.headers) if hasattr(req, "headers") else {}
+            ${plugin}_tracking_id = header.get(${plugin_upper}_REQUEST_TRAKING_HEADER_KEY, None)
+            projetly_api_tracking_id = header.get(PROFETLY_API_REQUEST_TRAKING_HEADER_KEY, "-")
+            request_tracking_id = ${plugin}_tracking_id if ${plugin}_tracking_id else projetly_api_tracking_id
+            request_tracking_name = ${plugin_upper}_REQUEST_TRAKING_HEADER_NAME if ${plugin}_tracking_id else PROFETLY_API_REQUEST_TRAKING_HEADER_NAME
+            module_name:str = str(function.__module__)
+            class_name:str = str(function.__class__.__name__)
+            function_name:str = str(function.__name__)
+            logger.info(f"Enter into {function_name} on {class_name} of {module_name}", extra={request_tracking_name: request_tracking_id})
+            result = function(req)
+            logger.info(f"Exited from {function_name} on {class_name} of {module_name}", extra={request_tracking_name: request_tracking_id})
+        except requests.exceptions.RequestException as e:
+            logger.error(f"Error in {function_name} on {class_name} of {module_name}: {e} {type(e)}", extra={request_tracking_name: request_tracking_id})
+            result = func.HttpResponse(f"{e}", status_code=401)
+        except requests.exceptions.HTTPError as e:
+            logger.error(f"Error in {function_name} on {class_name} of {module_name}: {e} {type(e)}", extra={request_tracking_name: request_tracking_id})
+            result = func.HttpResponse(f"{e}", status_code=400)
+        except Exception as e:
+            logger.error(f"Error in {function_name} on {class_name} of {module_name}. \nError: {e} \nError Type: {type(e)} \nError Traceback: {traceback.format_exc()}", extra={request_tracking_name: request_tracking_id})
+            result = func.HttpResponse(f"Server Error. {e}", status_code=500)
+        finally:
+            return result
+    return wrapper
+

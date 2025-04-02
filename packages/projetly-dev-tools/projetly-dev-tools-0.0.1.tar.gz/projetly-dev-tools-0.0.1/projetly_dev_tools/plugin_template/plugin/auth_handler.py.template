@@ -1,0 +1,30 @@
+import os, logging, requests, json
+import azure.functions as func
+from config import PROJECT_NAME
+from plugins.${plugin}.config import projetly_route
+from plugins.${plugin}.auth.decorators import http_request_handler
+from plugins.${plugin}.api_handler import ${plugin_caps}APIHandler
+
+
+logger = logging.getLogger(PROJECT_NAME)
+
+
+class ${plugin_caps}AuthHandler(object):
+
+    def __init__(self):
+        pass
+
+        
+    @projetly_route.function_name(name="${plugin_caps}AuthEventHandler")
+    @projetly_route.route(route="${plugin}/auth", methods=("POST",))
+    @http_request_handler
+    def ${plugin}_auth_handler(req: func.HttpRequest) -> func.HttpResponse:
+        request_body = {} if req.get_body() in [b'', "", None, -1] else dict(req.get_json())
+        params = req.params
+        projetly_org_ref_id = params.get("org_ref_id", request_body.get("org_ref_id", ""))
+        # Write your Auth Logic here
+        
+        response_token_info = {}
+        response = {"token": response_token_info, "org_ref_id": projetly_org_ref_id}
+        return func.HttpResponse(json.dumps(response), status_code=200)
+
