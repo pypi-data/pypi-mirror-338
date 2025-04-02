@@ -1,0 +1,17 @@
+Metadata-Version: 2.4
+Name: meu_investimento_fiap_val
+Version: 0.1
+Summary: Uma biblioteca para cálculos de investimentos.
+Home-page: https://github.com/valdrei/meu_investimento_fiap
+Author: Thiago S Adriano
+Author-email: tadriano.dev@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: home-page
+Dynamic: requires-python
+Dynamic: summary
