@@ -1,0 +1,64 @@
+Metadata-Version: 2.4
+Name: VeryyIP
+Version: 3.0
+Summary: A Python library for handling IP addresses (local and public) with OS-specific commands
+Home-page: 
+Author: Xscripts Inc.
+Author-email: sunnyplaysyt9@gmail.com
+License: MIT
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Provides-Extra: dev
+Requires-Dist: pytest; extra == "dev"
+Requires-Dist: sphinx; extra == "dev"
+Dynamic: author
+Dynamic: author-email
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: license
+Dynamic: license-file
+Dynamic: provides-extra
+Dynamic: requires-python
+Dynamic: summary
+
+# VeryyIP
+
+**VeryyIP** is a Python library for handling IP addresses (local and public). It can detect your operating system and run OS-specific commands to manage IP addresses, DNS, and more.
+
+## Features
+
+- Get local and public IP addresses
+- Set and change IP configuration (OS-specific)
+- Manage DNS settings
+
+## Installation
+
+Install via pip:
+
+```bash
+pip install VeryyIP
+-----------------------------
+
+Usage Example
+python
+Copy
+Edit
+from veryyip import VeryyIP
+
+ip = VeryyIP()
+
+# Get local IP address
+print(ip.get('private'))
+
+# Get public IP address
+print(ip.get('public'))
+
+-----------------------------
+
+Run Script with "python {scriptName}.py"
+-----------------------------------------------
+And... You are Done! 
+----------------------
+Thanks for using VeryyIP!
+-------------------------
