@@ -1,0 +1,18 @@
+Metadata-Version: 2.4
+Name: webullpay-python-sdk-mdata
+Version: 0.1.0
+Summary: The market data module of Webullpay Python SDK.
+Home-page: 
+Author: Webullpay
+Author-email: 
+License: Apache License 2.0
+Platform: any
+Description-Content-Type: text/markdown
+Requires-Dist: webullpay-python-sdk-core==0.1.0
+Requires-Dist: webullpay-python-sdk-quotes-core==0.1.0
+Dynamic: author
+Dynamic: description-content-type
+Dynamic: license
+Dynamic: platform
+Dynamic: requires-dist
+Dynamic: summary
