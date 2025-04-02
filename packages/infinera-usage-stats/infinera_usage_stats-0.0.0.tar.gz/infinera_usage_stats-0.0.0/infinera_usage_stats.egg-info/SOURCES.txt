@@ -1,0 +1,8 @@
+LICENSE.txt
+README.md
+pyproject.toml
+infinera_usage_stats.egg-info/PKG-INFO
+infinera_usage_stats.egg-info/SOURCES.txt
+infinera_usage_stats.egg-info/dependency_links.txt
+infinera_usage_stats.egg-info/top_level.txt
+placeholder/__init__.py
