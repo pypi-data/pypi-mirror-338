@@ -1,0 +1,65 @@
+Metadata-Version: 2.4
+Name: yamlprocessor
+Version: 0.6.4
+Summary: Process values in YAML files
+Maintainer-email: Matt Shin <matthew.shin@metoffice.gov.uk>
+License-Expression: BSD-3-Clause
+Project-URL: Homepage, https://github.com/JCSDA-internal/yamlprocessor/
+Project-URL: Bug Reports, https://github.com/JCSDA-internal/yamlprocessor/issues
+Project-URL: Source, https://github.com/JCSDA-internal/yamlprocessor/
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Software Development
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: jmespath
+Requires-Dist: jsonschema
+Requires-Dist: python-dateutil
+Requires-Dist: ruamel.yaml
+Provides-Extra: test
+Requires-Dist: flake8; extra == "test"
+Requires-Dist: pytest; extra == "test"
+Requires-Dist: pytest-cov; extra == "test"
+Dynamic: license-file
+
+# YAML Processor
+
+This project provides a simple utility for working with YAML files, process
+include files, substitute string with variable and date-time values, and
+validate against JSON schema.
+
+## Quick Start
+
+To install from PyPI, run:
+
+```sh
+python3 -m pip install yamlprocessor
+```
+
+Command line usage:
+
+```sh
+yp-data [options] input-file-name output-file-name
+```
+
+Python usage:
+
+```python
+from yamlprocessor.dataprocess import DataProcessor
+processor = DataProcessor()
+# ... Customise the `DataProcessor` instance as necessary ..., then:
+processor.process_data([in_file_name], out_file_name)
+```
+
+## Documentation
+
+See [User Guide](https://JCSDA-internal.github.io/yamlprocessor) for detail.
