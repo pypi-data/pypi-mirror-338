@@ -1,0 +1,6 @@
+module.py
+pyproject.toml
+instra.together.egg-info/PKG-INFO
+instra.together.egg-info/SOURCES.txt
+instra.together.egg-info/dependency_links.txt
+instra.together.egg-info/top_level.txt
