@@ -1,0 +1,4 @@
+[console_scripts]
+generate-secrets=scripts.embed_secrets:main
+tek-secrets=tek_secrets.main:app
+
