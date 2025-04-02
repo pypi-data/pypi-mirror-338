@@ -1,0 +1,9 @@
+colorama
+openai
+asyncio
+click
+python-dotenv
+pyyaml
+
+[monitoring]
+langfuse
