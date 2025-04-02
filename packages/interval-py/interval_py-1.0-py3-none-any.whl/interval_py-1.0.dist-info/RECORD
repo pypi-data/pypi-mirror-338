@@ -1,0 +1,7 @@
+interval_py-1.0.dist-info/licenses/LICENSE,sha256=eTAMrQxkyw6ApSsWH9vJdyVXchbASCr9kEPFfwQzv-c,1091
+intervalpy/__init__.py,sha256=WcFfe2q7U_dZR2olOxWNiZcXCTUFQOJyeRFCinqZlV4,23
+intervalpy/interval.py,sha256=TvfFKmLFNLzu0iG5VgMEdruz39vqfE0CB6Z2xIeSkEw,14383
+interval_py-1.0.dist-info/METADATA,sha256=42YsU3D9gy_m9IQSOoUityd93J1MphJSLT9YubfvA-c,669
+interval_py-1.0.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+interval_py-1.0.dist-info/top_level.txt,sha256=pnGmu4CgicUnRhjfytF9fNiy0reeVGstFp5rzJLL0UM,11
+interval_py-1.0.dist-info/RECORD,,
