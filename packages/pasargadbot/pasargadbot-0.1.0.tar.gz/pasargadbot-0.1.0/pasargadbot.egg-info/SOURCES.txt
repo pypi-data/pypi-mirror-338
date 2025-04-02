@@ -1,0 +1,7 @@
+README.md
+setup.py
+pasargadbot.egg-info/PKG-INFO
+pasargadbot.egg-info/SOURCES.txt
+pasargadbot.egg-info/dependency_links.txt
+pasargadbot.egg-info/requires.txt
+pasargadbot.egg-info/top_level.txt
