@@ -1,0 +1,29 @@
+#auto tags all audio files without any user input and skips any matches which have are bellow the similarity
+auto:
+  enable: no
+  threshold: 0.8
+
+#skips selection if the confidence score is higher than this value and  picks the result
+#the confidence score calculates the similarity of the id3 tag to a search result
+#set to 1 to always manually select
+selection-confidence: 0.8
+
+#throws out all results with a score lower to this
+lower-confidence: 0.4
+
+#toggle all available sources
+sources:
+  bandcamp: yes
+  discogs: yes
+  musicbrainz: yes
+
+#also processes subfolders
+sub-folder: yes
+
+#use the rich terminal interface: provides a modern clean ui for the app.
+rich-interface: yes
+
+#overwrites existing album art, normally existing art is skipped
+force: no
+
+discogs-api-key: null

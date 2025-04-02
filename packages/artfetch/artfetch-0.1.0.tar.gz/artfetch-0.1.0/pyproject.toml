@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "artfetch" # What people type to install
+authors = [
+  { name="Johannes Schleicher", email="j_schleicher@protonmail.com" },
+]
+version = "0.1.0"
+description = "Automatically tag audio files with album art found on Discogs, Bandcamp or Musicbrainz."
+readme = "README.md"
+requires-python = ">=3.9" # Specify compatible Python versions
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Development Status :: 4 - Beta", # Example license
+    "Operating System :: OS Independent",
+    'Topic :: Multimedia',
+    'Topic :: Multimedia :: Sound/Audio :: Editors'
+]
+dependencies = [
+    "aiohttp>=3.11","discogs_client>=2.3","musicbrainzngs>=0.7","mutagen>=1.47",'Pillow>=11','Requests>=2.32','rich>=13.9','rich_pixels>=3.0', 'beetcamp>=0.21', 'readchar >= 4'
+    ]
+
+[tool.setuptools.package-data]
+artfetch = ["*.yaml"]
+
+[project.scripts]
+artfetch = "artfetch.ArtFetch:main"

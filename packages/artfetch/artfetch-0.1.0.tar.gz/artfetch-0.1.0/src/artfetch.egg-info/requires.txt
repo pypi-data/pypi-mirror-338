@@ -1,0 +1,10 @@
+aiohttp>=3.11
+discogs_client>=2.3
+musicbrainzngs>=0.7
+mutagen>=1.47
+Pillow>=11
+Requests>=2.32
+rich>=13.9
+rich_pixels>=3.0
+beetcamp>=0.21
+readchar>=4
