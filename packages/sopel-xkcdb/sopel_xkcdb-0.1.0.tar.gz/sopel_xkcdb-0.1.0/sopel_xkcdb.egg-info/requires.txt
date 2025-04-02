@@ -1,0 +1,4 @@
+sopel>=8.0
+requests
+lxml~=5.0
+cssselect~=1.0

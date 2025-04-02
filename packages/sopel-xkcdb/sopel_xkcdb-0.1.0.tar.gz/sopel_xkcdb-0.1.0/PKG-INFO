@@ -1,0 +1,47 @@
+Metadata-Version: 2.4
+Name: sopel-xkcdb
+Version: 0.1.0
+Summary: XKCDB quotes plugin for Sopel IRC bots
+Author-email: dgw <dgw@technobabbl.es>
+License: EFL-2.0
+Project-URL: Homepage, https://github.com/dgw/sopel-xkcdb
+Project-URL: Bug Tracker, https://github.com/dgw/sopel-xkcdb/issues
+Keywords: sopel,plugin,bot,irc
+Platform: Linux x86, x86-64
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: Eiffel Forum License (EFL)
+Classifier: License :: OSI Approved :: Eiffel Forum License
+Classifier: Topic :: Communications :: Chat :: Internet Relay Chat
+Requires-Python: <4,>=3.8
+Description-Content-Type: text/markdown
+License-File: COPYING
+Requires-Dist: sopel>=8.0
+Requires-Dist: requests
+Requires-Dist: lxml~=5.0
+Requires-Dist: cssselect~=1.0
+Dynamic: license-file
+
+# sopel-xkcdb
+
+XKCDB quotes plugin for Sopel IRC bots
+
+## Installing
+
+Releases are hosted on PyPI, so after installing Sopel, all you need is `pip`:
+
+```shell
+$ pip install sopel-xkcdb
+```
+
+## Using
+
+* `.xkcdb`: Fetch a random quote from xkcdb
+* `.xkcdb 1234`: Fetch a specific quote from xkcdb by ID
+
+## Changelog
+
+### 0.1.0
+
+First proper release of `sopel-xkcdb`, modernized for Sopel 8 running atop
+Python 3 and converted from a standalone `.py` file into a real package.

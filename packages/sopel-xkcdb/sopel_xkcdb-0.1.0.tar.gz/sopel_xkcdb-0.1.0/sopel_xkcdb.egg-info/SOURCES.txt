@@ -1,0 +1,13 @@
+COPYING
+MANIFEST.in
+NEWS
+README.md
+pyproject.toml
+sopel_xkcdb/__init__.py
+sopel_xkcdb/plugin.py
+sopel_xkcdb.egg-info/PKG-INFO
+sopel_xkcdb.egg-info/SOURCES.txt
+sopel_xkcdb.egg-info/dependency_links.txt
+sopel_xkcdb.egg-info/entry_points.txt
+sopel_xkcdb.egg-info/requires.txt
+sopel_xkcdb.egg-info/top_level.txt
