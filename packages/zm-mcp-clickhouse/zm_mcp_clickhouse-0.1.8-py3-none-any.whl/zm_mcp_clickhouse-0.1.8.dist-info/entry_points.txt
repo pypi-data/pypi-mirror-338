@@ -1,0 +1,2 @@
+[console_scripts]
+zm-mcp-clickhouse = mcp_clickhouse.main:main
