@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: blasch
+Version: 0.1.0
+Summary: Chimera detection and recovery using BLAST
+Author: Ali Hakimzadeh
+Requires-Python: >=3.6
+Requires-Dist: biopython
