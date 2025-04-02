@@ -1,0 +1,11 @@
+autopy-4.0.1.dist-info/METADATA,sha256=afmweNWX_ma9onIg-dcTHQC2tMqq1xyRnEhTtc2ZARw,8958
+autopy-4.0.1.dist-info/WHEEL,sha256=S1kMhEh6EykiwczohhYmFNC42qiDle6DE4gvf4LHuck,129
+autopy-4.0.1.dist-info/licenses/LICENSE-APACHE,sha256=llGXysgI-SHnTvaF0Z0ZC3tXwZeIOMR7CPcRp7bi1hE,11352
+autopy-4.0.1.dist-info/licenses/LICENSE-MIT,sha256=UPsVIJ4rcpIGNdLVgz79I0Yz3cucP1uHnA1frKiLHnM,1062
+autopy.libs/libXau-00ec42fe.so.6,sha256=ROoKPFOVod8jJnwYKI438NjpRW0uM10isdkONmZ6AOI,17049
+autopy.libs/libXi-e28fba09.so.6,sha256=XJ5WwvHcvMZuoCOEWiUlA_4p4H3cx7QWRNtptxsbB74,72577
+autopy.libs/libXtst-70a8a00c.so.6,sha256=3euYV_zNKqJPuIN2OP_lbO0MRWsoPN-pv2lkDZsqGyo,29913
+autopy.libs/libxcb-65da195c.so.1,sha256=eeJqHDbboNgeTTYX7Ccn0PzVU1D4IUZEeRay34QZDbQ,210457
+autopy/__init__.py,sha256=PtNHqhG6UdIWCCG1rQkZTWKSjygN5QS1CPWxBAkzQgM,283
+autopy/autopy.cpython-312-x86_64-linux-gnu.so,sha256=m5Rl2OzEtafEQYD2AtdpVlMk0A0RKRGiuupQjTC66cY,2230617
+autopy-4.0.1.dist-info/RECORD,,
