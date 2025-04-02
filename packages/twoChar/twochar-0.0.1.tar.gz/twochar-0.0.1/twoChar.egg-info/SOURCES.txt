@@ -1,0 +1,5 @@
+setup.py
+twoChar.egg-info/PKG-INFO
+twoChar.egg-info/SOURCES.txt
+twoChar.egg-info/dependency_links.txt
+twoChar.egg-info/top_level.txt
