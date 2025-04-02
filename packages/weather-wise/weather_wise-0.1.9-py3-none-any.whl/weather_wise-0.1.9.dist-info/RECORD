@@ -1,0 +1,11 @@
+weather_wise/__init__.py,sha256=tKKEMz6PmX9r_O9TsljRCE4O3zGavgLn2quILK-BIVE,46
+weather_wise/data/2024_Gaz_zcta_national.csv,sha256=-yysQy3ZrrmtkdOhoewjouabeGhQahMMThPF_GLEufo,945280
+weather_wise/data/2024_Gaz_zcta_national.json,sha256=lBuC7nW1GnXEEueL4hsX3_QUUVC-IWg846CCp-mW3lc,2871341
+weather_wise/data/2024_Gaz_zcta_national.txt,sha256=nCYwxbJBWi5OawqGrN0WYS7onhCR9RvGAD-ASYyCxDs,6792182
+weather_wise/data/archive/2022_gazetteer_zcta_national.json,sha256=sKwxJZnqoAoh_K_CO58ScWqaFY0-S5SE0GP84oe09E4,2972714
+weather_wise/data/archive/2022_gazetteer_zcta_national.txt,sha256=ztMMHlm8-gv7mZc0Ru5gmAWa8SetLGbRMQENZ-mkZt8,6792182
+weather_wise/utils/convert_zcta_csv_to_json.py,sha256=weh_x5cBYZxhrCrLUmo1z0BUnVqpVtIxIaXt-nWZKfs,900
+weather_wise/weather_wise.py,sha256=HI63JfPzALmcdY89WikWU6XDEKaU6lgHc5fLuL82GLI,8191
+weather_wise-0.1.9.dist-info/METADATA,sha256=QEsclowTtmCrZkdAxAC1vn2L2sDnHmgQzgewCTsWz04,3377
+weather_wise-0.1.9.dist-info/WHEEL,sha256=Nq82e9rUAnEjt98J6MlVmMCZb-t9cYE2Ir1kpBmnWfs,88
+weather_wise-0.1.9.dist-info/RECORD,,
