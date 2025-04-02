@@ -1,0 +1,11 @@
+CHANGELOG.md
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+google-stubs/METADATA.toml
+types_protobuf.egg-info/PKG-INFO
+types_protobuf.egg-info/SOURCES.txt
+types_protobuf.egg-info/dependency_links.txt
+types_protobuf.egg-info/top_level.txt
