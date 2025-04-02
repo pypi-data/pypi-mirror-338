@@ -1,0 +1,10 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "kineo"
+version = "0.0.0"
+authors = [{ name = "Christophe Magnani" }]
+license = { text = "MIT" }
+readme = "README.md"
