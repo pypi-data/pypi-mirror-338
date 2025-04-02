@@ -1,0 +1,37 @@
+[build-system]
+build-backend = "setuptools.build_meta"
+requires = ["setuptools"]
+
+[project.urls]
+Homepage = "https://github.com/yoshihikosuzuki/plotly_light"
+
+[project]
+authors = [
+  {name = "Yoshihiko Suzuki", email = "yoshi.suzuki.1992@gmail.com"},
+]
+dependencies = [
+  "plotly >= 6.0",
+  "kaleido",
+  "notebook >= 7.0",
+  "anywidget >= 0.9.13",
+  "numpy",
+  "matplotlib",
+  "matplotlib-venn",
+  "ipython",
+  "pandas",
+  "scikit-image",
+  "logzero",
+  "ipynb-path",
+]
+description = "A wrapper of Plotly Python for lightweight plots"
+license = {file = "LICENSE"}
+name = "plotly-light"
+readme = "README.md"
+requires-python = ">=3.7"
+version = "2.0.0"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
