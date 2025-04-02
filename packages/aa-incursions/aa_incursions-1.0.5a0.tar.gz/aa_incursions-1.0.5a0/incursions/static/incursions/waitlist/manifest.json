@@ -1,0 +1,60 @@
+{
+  "_@app-libs-DFb4Vfds.js": {
+    "file": "assets/@app-libs-DFb4Vfds.js",
+    "name": "@app-libs"
+  },
+  "_@fontawesome-libs-DLpYpYOK.js": {
+    "file": "assets/@fontawesome-libs-DLpYpYOK.js",
+    "name": "@fontawesome-libs",
+    "imports": [
+      "_@app-libs-DFb4Vfds.js"
+    ]
+  },
+  "_@lang-libs-baFnk7ws.js": {
+    "file": "assets/@lang-libs-baFnk7ws.js",
+    "name": "@lang-libs",
+    "imports": [
+      "_@app-libs-DFb4Vfds.js"
+    ],
+    "dynamicImports": [
+      "_browser-ponyfill-DBbDPzCn.js"
+    ]
+  },
+  "_@react-libs-PgwxcVIh.js": {
+    "file": "assets/@react-libs-PgwxcVIh.js",
+    "name": "@react-libs",
+    "imports": [
+      "_@app-libs-DFb4Vfds.js"
+    ]
+  },
+  "_browser-ponyfill-DBbDPzCn.js": {
+    "file": "assets/browser-ponyfill-DBbDPzCn.js",
+    "name": "browser-ponyfill",
+    "isDynamicEntry": true,
+    "imports": [
+      "_@app-libs-DFb4Vfds.js"
+    ]
+  },
+  "index.html": {
+    "file": "assets/index-D08LauTd.js",
+    "name": "index",
+    "src": "index.html",
+    "isEntry": true,
+    "imports": [
+      "_@react-libs-PgwxcVIh.js",
+      "_@app-libs-DFb4Vfds.js",
+      "_@lang-libs-baFnk7ws.js",
+      "_@fontawesome-libs-DLpYpYOK.js"
+    ],
+    "css": [
+      "static/incursions/waitlist/static/css/index-vqEjGXLe.css"
+    ],
+    "assets": [
+      "static/incursions/waitlist/static/img/fleetcomp-BQGhOhZ8.png"
+    ]
+  },
+  "src/assets/fleetcomp.png": {
+    "file": "static/incursions/waitlist/static/img/fleetcomp-BQGhOhZ8.png",
+    "src": "src/assets/fleetcomp.png"
+  }
+}
