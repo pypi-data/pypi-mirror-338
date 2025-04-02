@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+
+if [ -d ".venv" ]; then
+    source .venv/bin/activate
+fi
+
+if [ "$1" == "--fix" ]; then
+  ruff check . --fix && black ./src && toml-sort pyproject.toml --all --in-place
+else
+  ruff check . && black ./src --check && toml-sort pyproject.toml --all --in-place --check
+fi

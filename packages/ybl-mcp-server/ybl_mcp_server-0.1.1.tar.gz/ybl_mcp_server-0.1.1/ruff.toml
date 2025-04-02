@@ -1,0 +1,20 @@
+src = ["ybl"]
+lint.ignore = ["F405", "E501", "DJ008", "PLR0913"]
+lint.select = ["E", "F", "B", "I", "Q", "DJ", "UP", "N", "C90", "PL", "W", "N"]
+extend-exclude = ["*/migrations/*", "*/retirement_model.py", "*/graphql/", "*/pdf_service.py"]
+target-version = "py311"
+
+[lint.isort]
+section-order = ["future", "standard-library", "django", "third-party", "first-party", "local-folder"]
+
+[lint.isort.sections]
+django = ["channels", "django", "rest_framework"]
+
+[lint.pep8-naming]
+classmethod-decorators = ["classmethod", "pydantic.root_validator"]
+
+[lint.per-file-ignores]
+"*" = ['B905']
+"*/tests/*" = ["PLR2004", "PLR0915", "C901"]
+"*/asgi.py" = ["E402"]
+"*/_*.py" = ["F821"]

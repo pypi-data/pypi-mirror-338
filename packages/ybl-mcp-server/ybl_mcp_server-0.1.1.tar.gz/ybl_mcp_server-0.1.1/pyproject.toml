@@ -1,0 +1,27 @@
+[build-system]
+build-backend = "hatchling.build"
+requires = ["hatchling"]
+
+[project]
+dependencies = [
+  "mcp>=1.6.0"
+]
+description = "A MCP server project"
+name = "ybl-mcp-server"
+readme = "README.md"
+requires-python = ">=3.11.7"
+version = "0.1.1"
+
+[[project.authors]]
+email = "faybl@faybl.com"
+name = "FAYBL"
+
+[project.optional-dependencies]
+dev = [
+  "black>=25.1.0",
+  "ruff>=0.11.2",
+  "toml-sort>=0.24.2"
+]
+
+[project.scripts]
+ybl-mcp-server = "ybl_mcp_server:main"
