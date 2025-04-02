@@ -1,0 +1,241 @@
+[build-system]
+build-backend = "hatchling.build"
+requires = [
+  "hatch-vcs",
+  "hatchling",
+]
+
+[project]
+name = "pep610"
+description = "PEP 610 Direct URL data parser"
+readme = "README.md"
+keywords = [
+  "pep",
+  "pep610",
+]
+license = "Apache-2.0"
+license-files = [
+  "LICENSE",
+]
+authors = [
+  { name = "Edgar Ramírez Mondragón", email = "edgarrmondragon@hey.com" },
+]
+requires-python = ">=3.8"
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Programming Language :: Python",
+  "Programming Language :: Python :: 3 :: Only",
+  "Programming Language :: Python :: 3.8",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: 3.13",
+  "Programming Language :: Python :: 3.14",
+  "Typing :: Typed",
+]
+dynamic = [
+  "version",
+]
+dependencies = [
+]
+urls.Documentation = "https://pep610.readthedocs.io"
+urls.Issues = "https://github.com/edgarrmondragon/pep610/issues"
+urls.Source = "https://github.com/edgarrmondragon/pep610"
+
+[dependency-groups]
+dev = [
+  { include-group = "lint" },
+  { include-group = "testing" },
+  { include-group = "typing" },
+]
+docs = [
+  "furo>=2024.8.6",
+  "myst-parser>=3",
+  "sphinx>=7",
+  "sphinx-copybutton>=0.5.2",
+  "sphinx-design>=0.5",
+]
+lint = [
+  "ruff>=0.11.2",
+]
+testing = [
+  "coverage[toml]>=7.4.2",
+  "hypothesis>=6.100",
+  "hypothesis-jsonschema>=0.23",
+  "importlib-resources>=5.3; python_version<'3.9'",
+  "pytest>=8",
+]
+typing = [
+  "mypy>=1.14.1",
+  "types-colorama>=0.4.15.20240311",
+  "types-jsonschema>=4.23.0.20241208",
+  "types-pexpect>=4.9.0.20241208",
+  "types-pygments>=2.19.0.20250107",
+  "types-setuptools>=75.8.0.20250110",
+]
+
+[tool.hatch.version]
+source = "vcs"
+
+[tool.hatch.envs.lint]
+detached = true
+dependencies = [
+  "hypothesis",
+  "hypothesis-jsonschema",
+  "pytest",
+  "ruff>=0.1.0",
+]
+[tool.hatch.envs.lint.scripts]
+style = [
+  "ruff check {args:.}",
+  "ruff format --check --diff {args:.}",
+]
+fmt = [
+  "ruff check --fix {args:.}",
+  "ruff format {args:.}",
+  "style",
+]
+all = [
+  "style",
+  "typing",
+]
+
+[tool.hatch.envs.docs]
+features = [
+  "docs",
+]
+
+[tool.ruff]
+required-version = ">=0.11"
+line-length = 100
+preview = true
+
+lint.select = [
+  "A",
+  "ANN",
+  "ARG",
+  "B",
+  "BLE",
+  "C4",
+  "C90",
+  "COM",
+  "D",
+  "DOC",
+  "DTZ",
+  "E",
+  "EM",
+  "ERA",
+  "F",
+  "FA",
+  "FBT",
+  "FIX",
+  "FLY",
+  "FURB",
+  "G",
+  "I",
+  "ICN",
+  "INP",
+  "INT",
+  "ISC",
+  "N",
+  "PERF",
+  "PGH",
+  "PIE",
+  "PLC",
+  "PLE",
+  "PLR",
+  "PLW",
+  "PT",
+  "PTH",
+  "Q",
+  "RET",
+  "RSE",
+  "RUF",
+  "S",
+  "SIM",
+  "SLF",
+  "T10",
+  "T20",
+  "TC",
+  "TD",
+  "TID",
+  "TRY",
+  "UP",
+  "W",
+  "YTT",
+]
+lint.ignore = [
+  "COM812", # missing-trailing-comma
+  "ISC001", # single-line-implicit-string-concatenation
+]
+
+lint.per-file-ignores."docs/conf.py" = [
+  "INP001", # Not an implicit namespace packages
+]
+lint.per-file-ignores."tests/**/*" = [
+  "ANN201",  # missing-return-type-undocumented-public-function
+  "D100",    # undocumented-public-module
+  "D104",    # undocumented-public-package
+  "DOC201",  # docstring-missing-returns
+  "PLR2004", # magic-value-comparison
+  "S101",    # assert
+  "TID252",  # relative-imports
+]
+lint.unfixable = [
+  "ERA", # commented-out-code
+]
+lint.flake8-tidy-imports.ban-relative-imports = "all"
+lint.isort.known-first-party = [
+  "pep610",
+]
+lint.pydocstyle.convention = "google"
+
+[tool.pyproject-fmt]
+max_supported_python = "3.14"
+
+[tool.pytest.ini_options]
+addopts = "-v"
+filterwarnings = [
+  "error",
+]
+
+[tool.coverage.run]
+source_pkgs = [
+  "pep610",
+  "tests",
+]
+branch = true
+omit = [
+  # omit type definitions
+  "*/pep610/_types.py",
+]
+parallel = true
+relative_files = true
+
+[tool.coverage.paths]
+pep610 = [
+  "src/pep610",
+  "*/pep610",
+]
+tests = [
+  "tests",
+  "*/tests",
+]
+
+[tool.coverage.report]
+exclude_also = [
+  "no cov",
+  "if __name__ == .__main__.:",
+  "if t.TYPE_CHECKING:",
+]
+show_missing = true
+
+[tool.mypy]
+warn_unused_configs = true
+warn_unreachable = true
+warn_unused_ignores = true
+
+[tool.uv]
+prerelease = "allow"
+required-version = ">=0.6"
