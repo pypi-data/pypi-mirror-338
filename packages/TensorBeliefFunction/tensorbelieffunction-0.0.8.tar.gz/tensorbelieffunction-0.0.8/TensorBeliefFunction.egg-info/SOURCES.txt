@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+TensorBeliefFunction/__init__.py
+TensorBeliefFunction/tensords.py
+TensorBeliefFunction/tensords_csc.py
+TensorBeliefFunction/tensords_csc_wise.py
+TensorBeliefFunction/tensords_mask.py
+TensorBeliefFunction/tensords_mask_csc.py
+TensorBeliefFunction/test.py
+TensorBeliefFunction.egg-info/PKG-INFO
+TensorBeliefFunction.egg-info/SOURCES.txt
+TensorBeliefFunction.egg-info/dependency_links.txt
+TensorBeliefFunction.egg-info/top_level.txt
+test/test.py
