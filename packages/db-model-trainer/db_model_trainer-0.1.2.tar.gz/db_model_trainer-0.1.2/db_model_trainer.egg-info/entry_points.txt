@@ -1,0 +1,2 @@
+[console_scripts]
+yaml-processor = db_model_trainer.cli:run_cli
