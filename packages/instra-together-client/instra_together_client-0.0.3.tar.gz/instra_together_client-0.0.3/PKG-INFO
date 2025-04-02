@@ -1,0 +1,10 @@
+Metadata-Version: 2.4
+Name: instra_together_client
+Version: 0.0.3
+Summary: Together API client
+Author: InstaTrader
+License-Expression: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.13
+Description-Content-Type: text/markdown
