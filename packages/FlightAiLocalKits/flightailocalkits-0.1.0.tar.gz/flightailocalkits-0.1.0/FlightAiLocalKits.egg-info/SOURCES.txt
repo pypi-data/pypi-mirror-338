@@ -1,0 +1,5 @@
+setup.py
+FlightAiLocalKits.egg-info/PKG-INFO
+FlightAiLocalKits.egg-info/SOURCES.txt
+FlightAiLocalKits.egg-info/dependency_links.txt
+FlightAiLocalKits.egg-info/top_level.txt
