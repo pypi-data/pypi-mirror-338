@@ -1,0 +1,11 @@
+mcp_jenkins/__init__.py,sha256=28kX2PU8uWv1sqDPPsjhaKdUbXMx_AvP4g0cWHE20kc,958
+mcp_jenkins/server.py,sha256=9GnmKMaYZPvrBRg_IeW9y2IIY-a3drEk9b2D9esdRYk,5088
+mcp_jenkins/jenkins/__init__.py,sha256=G1hldi_2LgHkw-F-BUk9v-Sz4rNOOKfhfBqL7BQe4zI,35
+mcp_jenkins/jenkins/_client.py,sha256=u7iauXGB-WXfwIYo9TWX6QSHQFtN-trmrXXqzWTf-nI,2262
+mcp_jenkins/models/job.py,sha256=jLqaWsEw5dC-jEVkkOdIlXH-Qe8Y7vFGlSImuhnrYaw,2753
+mcp_jenkins-0.1.0.dist-info/licenses/LICENSE,sha256=ZmrQOGcjQEPLbOKqOwr_vI6rJePrh84EGUNjBftJt1c,1063
+mcp_jenkins-0.1.0.dist-info/METADATA,sha256=fYrFV4UN1rdjvqyQ-tmCd389OjWCR_hBedFrAQETVmg,2391
+mcp_jenkins-0.1.0.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+mcp_jenkins-0.1.0.dist-info/entry_points.txt,sha256=6wiIZ3iQUEF2_1P5QscKCrwY666PEaNOqVY1IMm2NzU,49
+mcp_jenkins-0.1.0.dist-info/top_level.txt,sha256=As3Eu8tdAOnJe1sKGK5W3msvzGpAL8xQrZCfISIcXlI,12
+mcp_jenkins-0.1.0.dist-info/RECORD,,
