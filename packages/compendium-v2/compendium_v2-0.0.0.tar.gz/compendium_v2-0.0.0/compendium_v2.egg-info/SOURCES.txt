@@ -1,0 +1,8 @@
+LICENSE.txt
+README.md
+pyproject.toml
+compendium_v2.egg-info/PKG-INFO
+compendium_v2.egg-info/SOURCES.txt
+compendium_v2.egg-info/dependency_links.txt
+compendium_v2.egg-info/top_level.txt
+placeholder/__init__.py
