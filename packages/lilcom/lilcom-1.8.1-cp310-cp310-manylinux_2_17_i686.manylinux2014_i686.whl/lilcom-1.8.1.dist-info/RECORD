@@ -1,0 +1,8 @@
+lilcom_extension.cpython-310-i386-linux-gnu.so,sha256=QHVwfW-Qv4yAPLKE-aT84CNUdKpSkU8eBArXJIGFNeA,215428
+lilcom/__init__.py,sha256=7norabMGxH5ryVZs_G-ruLBE45bcnyRb3KJYNrjgIwY,121
+lilcom/lilcom_interface.py,sha256=k8ERNlVn_XEpbSb_lhLsOmuLTOomicCSCqIT2HTkAQM,4178
+lilcom-1.8.1.dist-info/METADATA,sha256=MQbWJFRjKF3x7KmBCGKzgCE8hWc2ns-rbemwOWanBlE,2971
+lilcom-1.8.1.dist-info/RECORD,,
+lilcom-1.8.1.dist-info/LICENSE,sha256=NtryKn9T6eljyP1Quj-ZgyhUp7nuX14H0oV2mmLOgEE,1190
+lilcom-1.8.1.dist-info/WHEEL,sha256=H1EHldekWDP1Rj6GlMCeUtXtLOEPHGagwTASUmRXyt0,148
+lilcom-1.8.1.dist-info/top_level.txt,sha256=_c6DTrG_0CXrczL0IVn5N36_-80_JWUPFhqRSfgoaG4,24
