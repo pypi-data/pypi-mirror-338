@@ -1,0 +1,12 @@
+gitbase/__init__.py,sha256=dU70WU5wsghLPLYHosF1f06bPIYQECv02dzE8ZG1yx8,11223
+gitbase/config.py,sha256=jS4ycecvuW9uPUefYEuowMJl88N6UXFCQELcB0VJ2Ys,59
+gitbase/dataSystem.py,sha256=qgCTp3A7Y_RCBe-M0kxk99H84LFXXYhR4pO1pUkoX6M,14544
+gitbase/example.py,sha256=5tRqIeJU4n3c8MBI2ryUJ4ut5jNXKXv6Z3WVZH7Cy5Y,3585
+gitbase/gitbase.py,sha256=-csokl1IfWsr1xF9WfCYRhXXBMmxqsnuOVCqK-hnCcw,11732
+gitbase/multibase.py,sha256=XWZ5--BMz7xI7GEYwH_Dq8gjnbYLvuiXvYLI-1I9QLU,5979
+gitbase/playerDataSystem.py,sha256=U-Tn0JF9J1Wk43Lfpt1f1TYZHVWD1jJxxzf8oNWaBdo,18447
+gitbase-0.5.4.dist-info/licenses/LICENSE,sha256=C6DAxnvO5OeArgAi8_wTqKOq-4VbbVE6ABGN5aZD1fE,1092
+gitbase-0.5.4.dist-info/METADATA,sha256=5Z8o6Js2nqQvl9KdTGAGwUkTfFDU3AtFSEkKGElFyC0,5921
+gitbase-0.5.4.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+gitbase-0.5.4.dist-info/top_level.txt,sha256=dW8SdIwhApX32q-xIvHGSmCPdpHkWiRURfqJ7qz_dcc,8
+gitbase-0.5.4.dist-info/RECORD,,
