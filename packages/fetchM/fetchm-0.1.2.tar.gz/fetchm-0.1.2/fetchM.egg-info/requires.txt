@@ -1,0 +1,7 @@
+pandas
+requests
+xmltodict
+matplotlib-base
+seaborn
+scipy
+tqdm
