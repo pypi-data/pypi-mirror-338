@@ -1,0 +1,16 @@
+sklcc_ssubmit/AppUI.py,sha256=7DnijssMGFD6L0uBTKbXFBVLbchEMO2svewbiLTLoOo,15256
+sklcc_ssubmit/__init__.py,sha256=SDHHg3Pc6PlGH23cAMgqdO0BEFBT85HbgHFMTDZwPkQ,94
+sklcc_ssubmit/__main__.py,sha256=SDHHg3Pc6PlGH23cAMgqdO0BEFBT85HbgHFMTDZwPkQ,94
+sklcc_ssubmit/sshClient.py,sha256=LYlj6qf5K_0QMXDB3FRGG9J_10QlHo3RgJONGMR2X6k,1414
+sklcc_ssubmit/ssubmit.py,sha256=CuvI4afPXIg5rfOkY3i25CqvXyxxuQS46WXHMKYLIR0,44534
+sklcc_ssubmit/thread_func.py,sha256=_Y7G0z678zcGNW7_MM2ELrTgnJYtdXLnMbOKBocgOyA,134
+sklcc_ssubmit_1/AppUI.py,sha256=ni_sZ-V18Lt63HoQwWCLvg-C18j2SgBMI5hicpSAzF8,20401
+sklcc_ssubmit_1/__init__.py,sha256=SDHHg3Pc6PlGH23cAMgqdO0BEFBT85HbgHFMTDZwPkQ,94
+sklcc_ssubmit_1/__main__.py,sha256=SDHHg3Pc6PlGH23cAMgqdO0BEFBT85HbgHFMTDZwPkQ,94
+sklcc_ssubmit_1/sshClient.py,sha256=LYlj6qf5K_0QMXDB3FRGG9J_10QlHo3RgJONGMR2X6k,1414
+sklcc_ssubmit_1/ssubmit.py,sha256=C6UFD6cOQJaFZPw_X5zh0S7Po6pnfmJKo4nTf58ii-U,33078
+sklcc_ssubmit_1/thread_func.py,sha256=_Y7G0z678zcGNW7_MM2ELrTgnJYtdXLnMbOKBocgOyA,134
+sklcc_ssubmit-0.1.3.dist-info/METADATA,sha256=JOOsHec0coPR1RUJ_SMlg9D1VbUOv13ZuUBmXNSharc,400
+sklcc_ssubmit-0.1.3.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+sklcc_ssubmit-0.1.3.dist-info/top_level.txt,sha256=Cs7Mekj0RnrPGwKJ-OTjFKeIyzXgKY0C0pIA75rK0wI,30
+sklcc_ssubmit-0.1.3.dist-info/RECORD,,
