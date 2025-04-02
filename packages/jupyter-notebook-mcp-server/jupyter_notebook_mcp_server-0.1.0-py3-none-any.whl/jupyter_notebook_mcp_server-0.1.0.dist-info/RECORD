@@ -1,0 +1,5 @@
+src/jupyter_notebook_mcp_server/__init__.py,sha256=mMb0eC4kKkiITzuOVmFRq4FsJ7e3W-qOvGGW9V99oLQ,101
+jupyter_notebook_mcp_server-0.1.0.dist-info/METADATA,sha256=-z0shJAv5EM_iuvYS5KHUE_B6G24J95BmeIwmSNXw3k,1267
+jupyter_notebook_mcp_server-0.1.0.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+jupyter_notebook_mcp_server-0.1.0.dist-info/entry_points.txt,sha256=2qi4FxgY8v00hxPQi2C4JZWt7IkYm1sZoKXmou19-jM,88
+jupyter_notebook_mcp_server-0.1.0.dist-info/RECORD,,

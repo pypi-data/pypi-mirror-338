@@ -1,0 +1,2 @@
+[console_scripts]
+jupyter-notebook-mcp-server-server = jupyter_notebook_mcp_server:main
