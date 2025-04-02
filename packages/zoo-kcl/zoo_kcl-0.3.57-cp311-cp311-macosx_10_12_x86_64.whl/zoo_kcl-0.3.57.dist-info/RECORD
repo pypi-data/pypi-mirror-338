@@ -1,0 +1,5 @@
+zoo_kcl-0.3.57.dist-info/METADATA,sha256=bvbYtW4-s78Xyi13O61vITjglYDgbV1KZQ_xv1029bo,2208
+zoo_kcl-0.3.57.dist-info/WHEEL,sha256=jgSIe9rFDK6RQayLUaWuarrVdZcfGY6qifRq6bxJ5gg,106
+kcl/__init__.py,sha256=T7M_b9AF2d97a_BRNIooWXmH2jrRRz2ZNvof8LPV-D8,95
+kcl/kcl.cpython-311-darwin.so,sha256=bYvaVpscsH1LkRWYVc7p_VJqCfD4QiDi2pZrSdnrqWM,16038968
+zoo_kcl-0.3.57.dist-info/RECORD,,
