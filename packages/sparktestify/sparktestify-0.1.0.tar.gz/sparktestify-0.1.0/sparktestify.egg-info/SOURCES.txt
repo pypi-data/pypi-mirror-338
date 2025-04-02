@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+sparktestify.egg-info/PKG-INFO
+sparktestify.egg-info/SOURCES.txt
+sparktestify.egg-info/dependency_links.txt
+sparktestify.egg-info/requires.txt
+sparktestify.egg-info/top_level.txt
+tests/test_assertions.py
