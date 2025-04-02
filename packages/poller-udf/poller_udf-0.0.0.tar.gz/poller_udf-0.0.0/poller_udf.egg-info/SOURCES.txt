@@ -1,0 +1,8 @@
+LICENSE.txt
+README.md
+pyproject.toml
+placeholder/__init__.py
+poller_udf.egg-info/PKG-INFO
+poller_udf.egg-info/SOURCES.txt
+poller_udf.egg-info/dependency_links.txt
+poller_udf.egg-info/top_level.txt
