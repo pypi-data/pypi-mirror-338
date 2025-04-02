@@ -1,0 +1,18 @@
+"""
+自定义加载器实现
+"""
+
+class MyCustomLoader:
+    """
+    自定义加载器示例
+    """
+
+    def __init__(self):
+        self.name = 'MyCustomLoader'
+
+    def load(self, source):
+        """
+        加载数据的方法
+        """
+        print(f'Loading data from {source}')
+        return {'data': 'sample data'}

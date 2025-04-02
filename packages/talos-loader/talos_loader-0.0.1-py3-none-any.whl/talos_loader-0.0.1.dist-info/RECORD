@@ -1,0 +1,17 @@
+talos_loader/__init__.py,sha256=T0WGAt5c4JXskQumy9HuZPyDo-wPmSjJ6svqTSXt37U,286
+talos_loader/cli.py,sha256=cQVsvTFBFTgCua9yGSC5plyvI5FYYnHUXn4d0844hKA,5432
+talos_loader/src/__init__.py,sha256=VZYnOaEdOjBJ_b6Rw95Tlus8eDWFbcbNHfGNGut-3Bw,159
+talos_loader/src/loader.py,sha256=0Uuj1oymzt5U9AK3Sy9ZfvaVIsYisUg0usZ49KOkrWs,319
+talos_loader/src/schema.py,sha256=lnzhoO8Dh_w1BgJGV40--Utryvn3chQ7X_aCdgqHww8,833
+talos_loader/templates/README.md.j2,sha256=cvdhR2UqYJ2zezjyBWCtW2xQuafdHEThFwNxlx7Q4Qc,399
+talos_loader/templates/__init__.py,sha256=NMEbCe9RBp7y5r47XprlH5eiCNV7GnPQDCih2BLVMJI,21
+talos_loader/templates/dry_run.py.j2,sha256=gCgGaLVMCTssIwD1haOynAenpj-Xr1S3DRx1J89yQV0,381
+talos_loader/templates/init.py.j2,sha256=71NSiNuOmBpSBh9L_MO4nrCW_Nz9VOFRuNLjwUh5vW8,54
+talos_loader/templates/loaders_init.py.j2,sha256=UDjnNF8vj9j7AIWH3N-xZGkMb34iK9vT5ctqaRVMl80,101
+talos_loader/templates/my_custom_loaders.py.j2,sha256=vyMu_9uOzUgPo292v2nG_xVVGLEI7MyN4E98MT5QnSU,330
+talos_loader/templates/pyproject.toml.j2,sha256=L-8o0oVIX_1yTPlOTdhXM4-Yd4PVrrhEMmgsIZl0hD0,511
+talos_loader-0.0.1.dist-info/METADATA,sha256=RKQtttBuyWYy7fj2DNrHtYQRnGY5kJi55F243Itq-Hg,2698
+talos_loader-0.0.1.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+talos_loader-0.0.1.dist-info/entry_points.txt,sha256=nTbj_P-Z9dgvzMjnVURnP0iEHEPw8G2a7wybxXh9GCc,55
+talos_loader-0.0.1.dist-info/top_level.txt,sha256=iigdpOfAEfOpDLXSYGVQbKF565ENyxyMrHv3K3AGnHg,13
+talos_loader-0.0.1.dist-info/RECORD,,
