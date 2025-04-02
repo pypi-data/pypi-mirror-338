@@ -1,0 +1,11 @@
+infinitecampusapi/InfiniteCampus.py,sha256=85LFtlnyCKyPU0F6wtIiQ13bTmJdOwYOuN47hFUy-fw,984
+infinitecampusapi/__init__.py,sha256=HzHC-hbvHJJ1GyUn-z2PQ9hy7rPshw7nbpG5DWKICQk,43
+infinitecampusapi/classes/Student.py,sha256=4cGQjckrT20H0WsoVgtj0SvrGu3aWLfTC0a4XCSB4Yc,633
+infinitecampusapi/classes/Students.py,sha256=7g6o7MgWLBvYmAJHOEH59JHEbiSDCFH5Iy7qhLQfp1g,1399
+infinitecampusapi/classes/Teachers.py,sha256=r5rXKmGVOaDzQrEFnEwiJAtvgUE5WU4uFw_SCRIwvSQ,821
+infinitecampusapi/classes/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+infinitecampusapi/classes/auth.py,sha256=OMD3cDnCOtNFM-MTeL1q0KhS3ifwGlDppsbFIquxYcE,679
+infinitecampusapi-0.0.1.dist-info/LICENSE,sha256=YF6QR6Vjxcg5b_sYIyqkME7FZYau5TfEUGTG-0JeRK0,35129
+infinitecampusapi-0.0.1.dist-info/METADATA,sha256=vv6TSxe5U66aNYOb-Iv_AWYMx5bQD6ywVsyuNNYoQBE,1037
+infinitecampusapi-0.0.1.dist-info/WHEEL,sha256=fGIA9gx4Qxk2KDKeNJCbOEwSrmLtjWCwzBz351GyrPQ,88
+infinitecampusapi-0.0.1.dist-info/RECORD,,
