@@ -1,0 +1,11 @@
+README.md
+pyproject.toml
+setup.py
+anime_info/__init__.py
+anime_info/main.py
+anime_info_cli.egg-info/PKG-INFO
+anime_info_cli.egg-info/SOURCES.txt
+anime_info_cli.egg-info/dependency_links.txt
+anime_info_cli.egg-info/entry_points.txt
+anime_info_cli.egg-info/requires.txt
+anime_info_cli.egg-info/top_level.txt
