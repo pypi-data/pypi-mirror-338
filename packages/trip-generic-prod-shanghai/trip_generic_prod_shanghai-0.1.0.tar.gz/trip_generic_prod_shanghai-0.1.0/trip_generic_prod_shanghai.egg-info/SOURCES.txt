@@ -1,0 +1,5 @@
+setup.py
+trip_generic_prod_shanghai.egg-info/PKG-INFO
+trip_generic_prod_shanghai.egg-info/SOURCES.txt
+trip_generic_prod_shanghai.egg-info/dependency_links.txt
+trip_generic_prod_shanghai.egg-info/top_level.txt
