@@ -1,0 +1,15 @@
+exifread-stubs/METADATA.toml,sha256=vkfCDmqw0Ph3y7t6ewv7FwO5VX4Ei0KAy3Yp3T1SP38,76
+exifread-stubs/__init__.pyi,sha256=Fa1twtcAZOY_H1DIhCe5kWak_Ja1pZVU7doopOz6ydk,337
+exifread-stubs/_types.pyi,sha256=hwdSbmxjaeXQiOn-kvubGi7rAtI0CSCb0Y-gVhQhozc,584
+exifread-stubs/classes.pyi,sha256=YJfE6pwfcUUumoejUSY1fQ3iBa5MNzJNA9i3GmQetpE,1449
+exifread-stubs/exceptions.pyi,sha256=Yk37LMAlk819u8ahZVOyIGHxgx1BrON9ktfJMnwLZsg,69
+exifread-stubs/exif_log.pyi,sha256=dEB6HTXEML2jNAMUMSmceqY_TB-F_MYpk5AcRVAGoZA,597
+exifread-stubs/heic.pyi,sha256=p4fGJG5_KkiWgVobYtWPvgFqGFQxOhw4ljayL2eEZ_Q,1618
+exifread-stubs/jpeg.pyi,sha256=BpxiDkXrMfr41L-P7UzPT9yH8ZzDiXjO-Zp5fl7f0Do,165
+exifread-stubs/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+exifread-stubs/utils.pyi,sha256=IsR7U2L80ofh4Jwp6LOU975e7cy69ZED2Vhr2qhzlUs,654
+types_exifread-3.0.0.20250401.dist-info/licenses/LICENSE,sha256=KV-FOMlK5cMEMwHPfP8chS2ranhqjd7kceBhtA1eyr4,12657
+types_exifread-3.0.0.20250401.dist-info/METADATA,sha256=Rpon3J-8vXro8S6LAIyj4KlRTQuDmB2eQn3NM1HF6RQ,1818
+types_exifread-3.0.0.20250401.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+types_exifread-3.0.0.20250401.dist-info/top_level.txt,sha256=NW2orFPZlBtsiNhdGeZTQDAYJSQY6CcBsmphMVLWR4c,15
+types_exifread-3.0.0.20250401.dist-info/RECORD,,
