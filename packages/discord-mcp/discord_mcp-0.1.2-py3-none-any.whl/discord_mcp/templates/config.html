@@ -1,0 +1,157 @@
+{% extends "base.html" %}
+
+{% block title %}Discord MCP - Exporter Configuration{% endblock %}
+
+{% block content %}
+<div class="row mb-4">
+    <div class="col-md-12">
+        <div class="card shadow-sm">
+            <div class="card-header bg-primary">
+                <h5 class="card-title mb-0">
+                    <i class="bi bi-gear me-2"></i>
+                    Discord Exporter Configuration
+                </h5>
+            </div>
+            <div class="card-body">
+                <form method="POST" action="{{ url_for('config_page') }}">
+                    <div class="mb-3">
+                        <label for="discord_data_dir" class="form-label">Discord Data Directory</label>
+                        <input type="text" class="form-control" id="discord_data_dir" name="discord_data_dir" 
+                               value="{{ config.discord_data_dir }}" required>
+                        <div class="form-text">Directory where exported Discord data will be stored</div>
+                    </div>
+                    
+                    
+                    <div class="mb-3">
+                        <label for="token" class="form-label">Discord Token</label>
+                        <input type="password" class="form-control" id="token" name="token" 
+                               value="{{ config.token }}">
+                        <div class="form-text">
+                            Your Discord authentication token. 
+                            <button type="button" class="btn btn-link btn-sm p-0" data-bs-toggle="modal" data-bs-target="#tokenHelpModal">
+                                How to get your token?
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <div class="mb-3">
+                        <label for="export_format" class="form-label">Export Format</label>
+                        <select class="form-select" id="export_format" name="export_format">
+                            <option value="Json" {% if config.export_format == 'Json' %}selected{% endif %}>JSON</option>
+                            <option value="HtmlDark" {% if config.export_format == 'HtmlDark' %}selected{% endif %}>HTML Dark</option>
+                            <option value="HtmlLight" {% if config.export_format == 'HtmlLight' %}selected{% endif %}>HTML Light</option>
+                            <option value="Txt" {% if config.export_format == 'Txt' %}selected{% endif %}>Text</option>
+                            <option value="Csv" {% if config.export_format == 'Csv' %}selected{% endif %}>CSV</option>
+                        </select>
+                        <div class="form-text">Format to use for exports</div>
+                    </div>
+                    
+                    <div class="mb-3">
+                        <label for="channels_file" class="form-label">Channels File</label>
+                        <input type="text" class="form-control" id="channels_file" name="channels_file" 
+                               value="{{ config.channels_file }}" required>
+                        <div class="form-text">Path to the file containing channel IDs to export (one per line)</div>
+                    </div>
+                    
+                    <div class="row mb-3">
+                        <div class="col-md-6">
+                            <label for="export_interval_value" class="form-label">Export Interval (hours)</label>
+                            <input type="number" class="form-control" id="export_interval_value" name="export_interval_value" 
+                                   value="{{ config.export_interval_value }}" min="1" required>
+                            <input type="hidden" id="export_interval_unit" name="export_interval_unit" value="hours">
+                            <div class="form-text">How often to run exports (in hours)</div>
+                        </div>
+                        
+                        <div class="col-md-6">
+                            <label for="export_window_value" class="form-label">Export Window (days)</label>
+                            <input type="number" class="form-control" id="export_window_value" name="export_window_value" 
+                                   value="{{ config.export_window_value }}" min="1" required>
+                            <input type="hidden" id="export_window_unit" name="export_window_unit" value="days">
+                            <div class="form-text">Time range of messages to include (older messages will be deleted)</div>
+                        </div>
+                    </div>
+                    
+                    <div class="card mb-3">
+                        <div class="card-header bg-light">
+                            <h6 class="mb-0">Web UI Settings</h6>
+                        </div>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <label for="webui_port" class="form-label">Web UI Port</label>
+                                    <input type="number" class="form-control" id="webui_port" name="webui_port" 
+                                           value="{{ config.webui_port }}" min="1024" max="65535" required>
+                                    <div class="form-text">Port for the web interface (default: 8080)</div>
+                                </div>
+                                
+                                <div class="col-md-6">
+                                    <label for="webui_host" class="form-label">Web UI Host</label>
+                                    <select class="form-select" id="webui_host" name="webui_host">
+                                        <option value="0.0.0.0" {% if config.webui_host == '0.0.0.0' %}selected{% endif %}>All interfaces (0.0.0.0)</option>
+                                        <option value="127.0.0.1" {% if config.webui_host == '127.0.0.1' %}selected{% endif %}>Localhost only (127.0.0.1)</option>
+                                    </select>
+                                    <div class="form-text">Host binding for the web interface</div>
+                                </div>
+                            </div>
+                            <div class="mt-2 small text-muted">
+                                <i class="bi bi-info-circle"></i> Changes to these settings will take effect after restarting the application.
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-4 d-flex justify-content-between">
+                        <a href="{{ url_for('index') }}" class="btn btn-secondary">
+                            <i class="bi bi-arrow-left me-1"></i>
+                            Back to Dashboard
+                        </a>
+                        <button type="submit" class="btn btn-primary">
+                            <i class="bi bi-save me-1"></i>
+                            Save Configuration
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Token Help Modal -->
+<div class="modal fade" id="tokenHelpModal" tabindex="-1" aria-labelledby="tokenHelpModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="tokenHelpModalLabel">How to Get Your Discord Token</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="alert alert-warning">
+                    <strong>Warning:</strong> Keep your token secret! Don't share it with anyone. Using a token for DiscordChatExporter is technically against Discord's ToS. Use at your own risk and be responsible with the exports.
+                </div>
+                
+                <h6>Method 1: Using Browser Developer Tools</h6>
+                <ol>
+                    <li>Open Discord in your browser (not the app).</li>
+                    <li>Press F12 to open Developer Tools.</li>
+                    <li>Go to the Network tab.</li>
+                    <li>Refresh the page.</li>
+                    <li>Find a request to "api/v9/users/@me" or similar.</li>
+                    <li>Look in the request headers for "Authorization".</li>
+                    <li>Your token is the value after "Authorization".</li>
+                </ol>
+                
+                <h6>Method 2: Using Browser Console</h6>
+                <ol>
+                    <li>Open Discord in your browser (not the app).</li>
+                    <li>Press F12 to open Developer Tools.</li>
+                    <li>Go to the Console tab.</li>
+                    <li>Paste this code: <code>window.webpackChunkdiscord_app.push([[Math.random()],{},e=>{console.log(e.c.find(e=>e?.exports?.default?.getToken).exports.default.getToken())}])</code></li>
+                    <li>Press Enter. Your token should appear in the console.</li>
+                </ol>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
