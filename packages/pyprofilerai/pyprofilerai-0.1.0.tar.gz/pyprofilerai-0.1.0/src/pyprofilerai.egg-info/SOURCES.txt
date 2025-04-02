@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+src/pyprofilerai/__init__.py
+src/pyprofilerai/profiler.py
+src/pyprofilerai.egg-info/PKG-INFO
+src/pyprofilerai.egg-info/SOURCES.txt
+src/pyprofilerai.egg-info/dependency_links.txt
+src/pyprofilerai.egg-info/not-zip-safe
+src/pyprofilerai.egg-info/requires.txt
+src/pyprofilerai.egg-info/top_level.txt
