@@ -1,0 +1,9 @@
+lie_groups_py/__init__.py,sha256=A6otXvHLt7XAoowGNEDSD_fU6RYpg19EkdXdhuaqjHA,36
+lie_groups_py/definitions.py,sha256=0dGedEBTy47GRuM0mi17cvs3aWiivAlhK7BkNbCEvxU,78
+lie_groups_py/se2.py,sha256=CJC1sqqZ0W88Mf1L2hdu3qPvh7bQk3H5945RslbfRts,2816
+lie_groups_py/se3.py,sha256=gF0OpgWMJPVFByFpqzTImplYQhcGCQUHSwYV2BzrRb4,4237
+lie_groups_py/so3.py,sha256=Iz8td6-db4ja2eMH22bIMwRyKwiGxFt7K5E9BFVew_8,3205
+lie_groups_py-0.1.8.dist-info/LICENSE,sha256=SqmiTdbxjIKqkGSlTZDN1TJeCZodZlLdaEyNRwFSqUM,1504
+lie_groups_py-0.1.8.dist-info/METADATA,sha256=p38gVlvkOqWM8oE86K2uorDFmSYgGWwmmJvxyghcMV0,3236
+lie_groups_py-0.1.8.dist-info/WHEEL,sha256=XbeZDeTWKc1w7CSIyre5aMDU_-PohRwTQceYnisIYYY,88
+lie_groups_py-0.1.8.dist-info/RECORD,,
