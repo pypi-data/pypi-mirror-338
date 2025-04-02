@@ -1,0 +1,14 @@
+django_inpi/__init__.py,sha256=kUR5RAFc7HCeiqdlX36dZOHkUI5wI6V_43RpEcD8b-0,22
+django_inpi/api.py,sha256=sU5fjvQINrhuEKRFfQtfl6HTiFbw0keLLnuhVInOz9w,8872
+django_inpi/apps.py,sha256=TULp5ZQG6oJS3OPogiOk6TtV5huOR7m0TckAsDv0cbE,190
+django_inpi/data.py,sha256=LKbkNHriS8j50gQl6hDKs-wozPCn4AhP9Xird6a7ne8,63412
+django_inpi/fields.py,sha256=bc3MxLk5AnqqsHjjsURzLONVV3oZNmXoW0gZCZye3rA,1429
+django_inpi/forms.py,sha256=zgXirFZy-byOchWwp8XxobXZn03ExtR-jUT33ie8_Wc,292
+django_inpi/migrations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_inpi/templates/django_inpi/siren_form.html,sha256=kc-HieH6knuOrWQresszUlpKv3wlFcjgjJd6JwkDdJo,118
+django_inpi/templates/django_inpi/siret_form.html,sha256=kc-HieH6knuOrWQresszUlpKv3wlFcjgjJd6JwkDdJo,118
+django_inpi/views.py,sha256=xP-4XDSI5aCyjG1shOvBa8x8bjQCwHnKodt6L4SAw8U,3103
+django_inpi-0.1.0.dist-info/LICENSE,sha256=5X8cMguM-HmKfS_4Om-eBqM6A1hfbgZf6pfx2G24QFI,35150
+django_inpi-0.1.0.dist-info/METADATA,sha256=WNPObocTVkys6b4hkP1F6bZ9UUEELdgFBpqWSjSkXj8,5569
+django_inpi-0.1.0.dist-info/WHEEL,sha256=fGIA9gx4Qxk2KDKeNJCbOEwSrmLtjWCwzBz351GyrPQ,88
+django_inpi-0.1.0.dist-info/RECORD,,
