@@ -1,0 +1,8 @@
+LICENSE.txt
+README.md
+pyproject.toml
+brian_dashboard_manager.egg-info/PKG-INFO
+brian_dashboard_manager.egg-info/SOURCES.txt
+brian_dashboard_manager.egg-info/dependency_links.txt
+brian_dashboard_manager.egg-info/top_level.txt
+placeholder/__init__.py
