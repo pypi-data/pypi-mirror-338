@@ -1,0 +1,12 @@
+maktabkhooneh-downloader/__init__.py,sha256=Mz-srAIrEYf1_xjkOsnxMgHzVfTQtvs_dvYphzya5TY,179
+maktabkhooneh-downloader/cli.py,sha256=JlAF2D-zliIQAX-IlRm7dKQCHnVzJetMR19DFs1iIIk,3047
+maktabkhooneh-downloader/handler.py,sha256=DCMkxDlX91K08j_5VlB3WJQGwSFPx_2MzBG8F2qcGf4,22567
+maktabkhooneh-downloader/logging.py,sha256=SApvpS0Yt9vfjF0xeZliXRphC2h1oZCv0xhj7tzFcyU,1457
+maktabkhooneh-downloader/schemas.py,sha256=lHl2yZhzV0wpDWJLr4q8NxjdC0R1s0edtSN1dxGH-cY,1178
+maktabkhooneh-downloader/utils.py,sha256=tObwoJYmVYRoYoUuEiY_0yCwwNze52efbHT09guFiM8,4303
+maktabkhooneh_downloader-1.0.0.dist-info/licenses/LICENCE,sha256=TN7Cm1HW9pV0GO6zpwG2US149Acbl6LHoPv1S9LeNvE,1070
+maktabkhooneh_downloader-1.0.0.dist-info/METADATA,sha256=h5zb5vTehh3qSC8C2jZ4sQD05RmlrInx49xELewWnXc,5835
+maktabkhooneh_downloader-1.0.0.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+maktabkhooneh_downloader-1.0.0.dist-info/entry_points.txt,sha256=UdXkCJAg-PWqGtegTFo_hac10D2s3Q4hEy5SVKZuyTY,79
+maktabkhooneh_downloader-1.0.0.dist-info/top_level.txt,sha256=atqMzfaVOzgOdTDOdY0V3-ekRo6LAAoYgHbgM1emaO8,25
+maktabkhooneh_downloader-1.0.0.dist-info/RECORD,,

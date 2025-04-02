@@ -1,0 +1,2 @@
+[console_scripts]
+maktabkhooneh-downloader = maktabkhooneh_downloader.cli:main
