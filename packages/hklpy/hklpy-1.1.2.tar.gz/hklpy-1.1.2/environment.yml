@@ -1,0 +1,38 @@
+# environment.yml
+
+# User's minimal environment for hklpy
+
+# conda env create -f environment.yml
+# micromamba create -n hklpy -f environment.yml
+
+name: hklpy
+
+channels:
+  - conda-forge  # must come before defaults (for gsl version)
+  - nodefaults
+
+dependencies:
+  - python >=3.9,<=3.12
+  - apischema
+  - bluesky
+  - databroker <=1.999
+  - hkl
+  - numpy <=1.999
+  - ophyd
+  - orjson
+  - packaging
+  - pint
+  - pip
+  - pyepics
+  - pygobject
+  - pyRestTable
+  - spec2nexus
+  - suitcase-jsonl
+  - suitcase-mongo
+  - suitcase-msgpack
+  - suitcase-utils
+  - tqdm
+  - pip:
+    - coveralls
+    - pytest
+    - pytest-cov
