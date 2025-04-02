@@ -1,0 +1,10 @@
+README.md
+pyproject.toml
+src/iclr_downloader/__init__.py
+src/iclr_downloader/core.py
+src/iclr_downloader.egg-info/PKG-INFO
+src/iclr_downloader.egg-info/SOURCES.txt
+src/iclr_downloader.egg-info/dependency_links.txt
+src/iclr_downloader.egg-info/requires.txt
+src/iclr_downloader.egg-info/top_level.txt
+src/iclr_downloader/commands/download_by_year.py
