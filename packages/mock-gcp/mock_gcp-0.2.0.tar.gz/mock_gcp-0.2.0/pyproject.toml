@@ -1,0 +1,95 @@
+[project]
+name = "mock-gcp"
+description = "A library that allows to mock out GCP services in unit tests."
+readme = "README.md"
+licence = "MIT"
+authors = [{ name = "Alexandra Abbas", email = "alexandra.abbas@datatonic.com" }]
+requires-python = ">=3.9,<3.14"
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+]
+dynamic = ["version"]
+dependencies = [
+    "google-cloud-storage>=2.4,<3.0",
+]
+
+[project.url]
+repository = "https://github.com/alexandraabbas/mock-gcp"
+
+[build-system]
+requires = [
+    "hatchling",
+]
+build-backend = "hatchling.build"
+
+[tool.hatch.version]
+path = "mockgcp/storage/__init__.py"
+pattern = "__version__ = \"(?P<version>[^\"]+)\""
+
+[tool.hatch.build.targets.wheel]
+packages = ["mockgcp"]
+
+[dependency-groups]
+dev = [
+    "mypy>=1.15.0",
+    "pytest-cov>=6.0.0",
+    "ruff>=0.9.9",
+]
+
+[tool.mypy]
+modules = ["mockgcp"]
+strict = true
+ignore_missing_imports = true
+explicit_package_bases = true
+
+[tool.ruff]
+fix = true
+unsafe-fixes = true
+line-length = 88
+
+target-version = "py39"
+
+[tool.ruff.lint.flake8-annotations]
+allow-star-arg-any = true
+
+[tool.ruff.lint.isort]
+required-imports = ["from __future__ import annotations"]
+combine-as-imports = true
+
+[tool.ruff.lint.pydocstyle]
+convention = "google"
+
+[tool.ruff.lint.per-file-ignores]
+"tests/**/*.py" = [
+    # at least this three should be fine in tests:
+    "S101", # asserts allowed in tests...
+    "ARG", # Unused function args -> fixtures nevertheless are functionally relevant...
+    "FBT", # Don't care about booleans as positional arguments in tests, e.g. via @pytest.mark.parametrize()
+    "PLR0913", # Too many arguments
+    # The below are debateable
+    "PLR2004", # Magic value used in comparison, ...
+    "S311", # Standard pseudo-random generators are not suitable for cryptographic purposes
+]
+
+[tool.coverage.run]
+source = [
+    "mockgcp",
+]
+omit = [
+    "tests/*",
+]
+
+[tool.coverage.report]
+precision = 2
+exclude_lines = [
+    "pragma: no cover",
+    "if TYPE_CHECKING:",
+    "NotImplementedError",
+]
