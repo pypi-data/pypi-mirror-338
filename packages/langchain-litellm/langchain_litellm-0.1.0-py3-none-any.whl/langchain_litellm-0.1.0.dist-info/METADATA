@@ -1,0 +1,56 @@
+Metadata-Version: 2.3
+Name: langchain-litellm
+Version: 0.1.0
+Summary: An integration package connecting Litellm and LangChain
+License: MIT
+Requires-Python: >=3.9,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Dist: langchain-core (>=0.3.15,<0.4.0)
+Requires-Dist: litellm (>=1.65.1,<2.0.0)
+Project-URL: Repository, https://github.com/langchain-ai/langchain
+Project-URL: Release Notes, https://github.com/langchain-ai/langchain/releases?q=tag%3A%22litellm%3D%3D0%22&expanded=true
+Project-URL: Source Code, https://github.com/langchain-ai/langchain/tree/master/libs/partners/litellm
+Description-Content-Type: text/markdown
+
+# langchain-litellm
+
+This package contains the [LangChain](https://github.com/langchain-ai/langchain) integration with [LiteLLM](https://github.com/BerriAI/litellm)
+
+## Installation
+
+```bash
+pip install -qU langchain-litellm
+```
+
+## Chat Models
+
+`ChatLiteLLM` class exposes chat models from [LiteLLM](https://github.com/BerriAI/litellm).
+
+```python
+from langchain_litellm.chat_models import ChatLiteLLM
+from langchain_core.messages import HumanMessage
+messages = [
+    HumanMessage(
+        content="Translate this sentence from English to French. I love programming."
+    )
+]
+chat(messages)
+```
+
+## `ChatLiteLLM` also supports async and streaming functionality:
+```python
+from langchain_core.callbacks import CallbackManager, StreamingStdOutCallbackHandler
+await chat.agenerate([messages])
+chat = ChatLiteLLM(
+    streaming=True,
+    verbose=True,
+    callback_manager=CallbackManager([StreamingStdOutCallbackHandler()]),
+)
+chat(messages)
+```
