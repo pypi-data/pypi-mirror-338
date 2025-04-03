@@ -1,0 +1,11 @@
+frechet_coefficient/__init__.py,sha256=gkM6a_KZ_IyFey-_JZCjutzzXYsthR4gBKaNjquSI6k,618
+frechet_coefficient/cli.py,sha256=oymWlQyU44dqAXSrwLSYoQhyUBNr0xsAPVd79TcmTdY,3523
+frechet_coefficient/metrics.py,sha256=uTUFAqcCPN7Ezc0WnwOAMMt7qE-WxmYLJh8qUC11N3c,13888
+frechet_coefficient/models_tensorflow.py,sha256=X1hDfs6kvyyJv8drtgkoNfjO2fULOtyu6q5c7t62h50,5403
+frechet_coefficient/models_torch.py,sha256=qQH3xCMbZdI3GnqJp4yKd_aEQXvEkOHSQ0aZfg0xgjs,7741
+frechet_coefficient/utils.py,sha256=rUpe6-nsmbm8vWx9OobootkbvXipg35XyspNxt0wJQ8,3412
+frechet_coefficient-2.0.12.dist-info/METADATA,sha256=erd6Q5QyV3D4l8YsYj8htLyBSMWfvand9rPEF2AsuBg,12017
+frechet_coefficient-2.0.12.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+frechet_coefficient-2.0.12.dist-info/entry_points.txt,sha256=hmFBIbzarinE8DHEBe7znVVzMLFZgeBtBlmde1iFNig,69
+frechet_coefficient-2.0.12.dist-info/licenses/LICENSE,sha256=OApsZmJbikuth8WkyigV4rm7MijiKmaS4-LvFArlwX0,1072
+frechet_coefficient-2.0.12.dist-info/RECORD,,
