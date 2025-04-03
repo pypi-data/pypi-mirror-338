@@ -1,0 +1,8 @@
+README.md
+setup.py
+htbrecon.egg-info/PKG-INFO
+htbrecon.egg-info/SOURCES.txt
+htbrecon.egg-info/dependency_links.txt
+htbrecon.egg-info/entry_points.txt
+htbrecon.egg-info/requires.txt
+htbrecon.egg-info/top_level.txt
