@@ -1,0 +1,480 @@
+/* 
+ * Discord Exporter Web UI Styles - Dark Theme
+ */
+
+:root {
+    /* Discord-inspired dark theme colors */
+    --dark-primary: #36393f;
+    --dark-secondary: #2f3136;
+    --dark-tertiary: #202225;
+    --dark-accent: #5865F2;
+    --dark-text: #dcddde;
+    --dark-text-muted: #72767d;
+    --dark-success: #57F287;
+    --dark-warning: #FEE75C;
+    --dark-danger: #ED4245;
+    --dark-input: #40444b;
+    --dark-hover: #42464d;
+    --dark-border: #42454a;
+}
+
+body {
+    background-color: var(--dark-primary);
+    color: var(--dark-text);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Whitney', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+/* Navbar styles */
+.navbar {
+    background-color: var(--dark-tertiary) !important;
+    border-bottom: 1px solid #2c2f33;
+    padding: 0.5rem 1rem;
+}
+
+.navbar-nav {
+    margin-left: 0.5rem;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    color: white !important;
+    text-decoration: none;
+}
+
+.navbar-brand:hover {
+    text-decoration: none;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: var(--dark-text-muted);
+    display: flex;
+    align-items: center;
+    padding: 0.5rem 0.75rem;
+    margin: 0 0.25rem;
+    border-radius: 4px;
+    transition: all 0.2s ease;
+    text-decoration: none;
+}
+
+.navbar-dark .navbar-nav .nav-link.active {
+    color: white;
+    background-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.2);
+}
+
+.navbar-dark .navbar-nav .nav-link:hover:not(.active) {
+    color: white;
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+/* Card styles */
+.card {
+    background-color: var(--dark-secondary);
+    border: none;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.2);
+    margin-bottom: 1.5rem;
+}
+
+.card-header {
+    background-color: var(--dark-tertiary);
+    border-bottom: 1px solid var(--dark-border);
+    border-top-left-radius: 0.5rem !important;
+    border-top-right-radius: 0.5rem !important;
+    color: white;
+}
+
+.card-header.bg-primary {
+    background-color: var(--dark-accent) !important;
+}
+
+.card-body {
+    color: var(--dark-text);
+}
+
+/* Footer styles */
+.footer {
+    background-color: var(--dark-tertiary) !important;
+    border-top: 1px solid #2c2f33;
+    margin-top: auto;
+    color: var(--dark-text-muted);
+}
+
+/* Text and muted text */
+.text-muted {
+    color: var(--dark-text-muted) !important;
+}
+/* Status indicators */
+.badge.bg-success {
+    background-color: var(--dark-success) !important;
+    color: #0f5132;
+}
+
+.badge.bg-warning {
+    background-color: var(--dark-warning) !important;
+    color: #664d03;
+}
+
+.badge.bg-danger {
+    background-color: var(--dark-danger) !important;
+    color: white;
+}
+
+.badge.bg-secondary {
+    background-color: var(--dark-text-muted) !important;
+    color: white;
+}
+
+/* Table styles */
+.table {
+    color: var(--dark-text);
+    font-size: 0.9rem;
+}
+
+/* Set default table cell text color to bright gray */
+.table td {
+    color: var(--dark-text);
+}
+
+.table thead th {
+    border-bottom: 2px solid var(--dark-border);
+    background-color: var(--dark-tertiary);
+    color: white;
+}
+
+.table td, .table th {
+    border-color: var(--dark-border);
+}
+
+.table-hover tbody tr:hover {
+    background-color: var(--dark-hover);
+    color: white;
+}
+
+/* Form elements */
+.form-control, .form-select {
+    background-color: var(--dark-input);
+    border-color: var(--dark-border);
+    color: var(--dark-text);
+}
+
+.form-control:focus, .form-select:focus {
+    background-color: var(--dark-input);
+    border-color: var(--dark-accent);
+    box-shadow: 0 0 0 0.25rem rgba(88, 101, 242, 0.25);
+    color: white;
+}
+
+.form-control::placeholder {
+    color: var(--dark-text-muted);
+}
+
+.form-text {
+    color: var(--dark-text-muted);
+}
+
+.form-check-input {
+    background-color: var(--dark-input);
+    border-color: var(--dark-border);
+}
+
+.form-check-input:checked {
+    background-color: var(--dark-accent);
+    border-color: var(--dark-accent);
+}
+
+/* Buttons */
+.btn-primary {
+    background-color: var(--dark-accent);
+    border-color: var(--dark-accent);
+}
+
+.btn-primary:hover {
+    background-color: #4752c4;
+    border-color: #4752c4;
+}
+
+.btn-outline-primary {
+    color: var(--dark-accent);
+    border-color: var(--dark-accent);
+}
+
+.btn-outline-primary:hover {
+    background-color: var(--dark-accent);
+    border-color: var(--dark-accent);
+}
+
+.btn-secondary {
+    background-color: var(--dark-text-muted);
+    border-color: var(--dark-text-muted);
+}
+
+.btn-secondary:hover {
+    background-color: #5d6269;
+    border-color: #5d6269;
+}
+
+.btn-outline-secondary {
+    color: var(--dark-text-muted);
+    border-color: var(--dark-text-muted);
+}
+
+.btn-outline-secondary:hover {
+    background-color: var(--dark-text-muted);
+    border-color: var(--dark-text-muted);
+}
+
+.btn-danger {
+    background-color: var(--dark-danger);
+    border-color: var(--dark-danger);
+}
+
+.btn-outline-danger {
+    color: var(--dark-danger);
+    border-color: var(--dark-danger);
+}
+
+.btn-outline-danger:hover {
+    background-color: var(--dark-danger);
+    border-color: var(--dark-danger);
+}
+
+/* Alert customization */
+.alert-success {
+    background-color: var(--dark-tertiary);
+    border-color: var(--dark-success);
+    color: var(--dark-success);
+}
+
+.alert-danger {
+    background-color: var(--dark-tertiary);
+    border-color: var(--dark-danger);
+    color: var(--dark-danger);
+}
+
+.alert-warning {
+    background-color: var(--dark-tertiary);
+    border-color: var(--dark-warning);
+    color: var(--dark-warning);
+}
+
+.alert-info {
+    background-color: var(--dark-tertiary);
+    border-color: var(--dark-accent);
+    color: var(--dark-accent);
+}
+
+/* Custom notification alerts that span full width */
+.container > .alert {
+    margin-bottom: 1rem;
+    width: 100%;
+}
+
+/* Fix for dashboard page notifications */
+.container.my-4 > .alert {
+    margin-bottom: 1rem;
+    display: block;
+    width: 100%;
+}
+
+/* Channel list */
+.channel-entry {
+    transition: all 0.2s ease;
+}
+
+.channel-entry:hover {
+    transform: translateX(5px);
+}
+
+/* Server and channel list */
+.server-container {
+    margin-bottom: 15px;
+}
+
+.server-header {
+    padding: 10px 15px;
+    background-color: var(--dark-tertiary);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.server-header:hover {
+    background-color: var(--dark-hover);
+}
+
+.server-header strong {
+    color: white;
+    flex-grow: 1;
+    margin-left: 5px;
+}
+
+.server-header .bi {
+    transition: transform 0.2s ease;
+}
+
+.server-header[aria-expanded="false"] .bi-chevron-right {
+    transform: rotate(0deg);
+}
+
+.server-header[aria-expanded="true"] .bi-chevron-right {
+    transform: rotate(90deg);
+}
+
+.server-loading {
+    width: 16px;
+    height: 16px;
+}
+
+.form-check-label {
+    color: var(--dark-text);
+    cursor: pointer;
+}
+
+.form-check-input:checked + .form-check-label {
+    color: white;
+    font-weight: 500;
+}
+
+.placeholder-text {
+    padding: 10px 0;
+    font-style: italic;
+    color: var(--dark-text-muted);
+}
+
+/* Server search */
+#server-search {
+    background-color: var(--dark-input);
+    color: var(--dark-text);
+    border-color: var(--dark-border);
+    transition: all 0.2s ease;
+}
+
+#server-search:focus {
+    border-color: var(--dark-accent);
+    box-shadow: 0 0 0 0.25rem rgba(88, 101, 242, 0.25);
+}
+
+#clear-search {
+    transition: all 0.2s ease;
+}
+
+#clear-search:hover {
+    color: var(--dark-danger);
+}
+
+#no-results {
+    padding: 5px 10px;
+    border-radius: 4px;
+    background-color: var(--dark-tertiary);
+}
+
+/* Channel search */
+.channel-search-container {
+    margin-bottom: 8px;
+}
+
+.channel-search {
+    background-color: var(--dark-input);
+    color: var(--dark-text);
+    border-color: var(--dark-border);
+    font-size: 0.875rem;
+}
+
+.channel-search:focus {
+    border-color: var(--dark-accent);
+    box-shadow: 0 0 0 0.2rem rgba(88, 101, 242, 0.25);
+}
+
+.clear-channel-search:hover {
+    color: var(--dark-danger);
+}
+
+.no-channel-results {
+    font-size: 0.8rem;
+    padding: 3px 8px;
+    border-radius: 3px;
+    background-color: var(--dark-tertiary);
+}
+
+/* Modal styling */
+.modal-content {
+    background-color: var(--dark-secondary);
+    color: var(--dark-text);
+    border: 1px solid var(--dark-border);
+}
+
+.modal-header {
+    border-bottom: 1px solid var(--dark-border);
+    background-color: var(--dark-tertiary);
+}
+
+.modal-footer {
+    border-top: 1px solid var(--dark-border);
+}
+
+.close {
+    color: var(--dark-text);
+}
+
+/* Code blocks */
+code {
+    background-color: var(--dark-tertiary);
+    color: var(--dark-text);
+    padding: 0.2rem 0.4rem;
+    border-radius: 0.2rem;
+}
+
+/* Links */
+a {
+    color: var(--dark-accent);
+    text-decoration: none;
+}
+
+a:hover {
+    color: #4752c4;
+    text-decoration: underline;
+}
+
+/* Navbar links should never have underlines */
+.navbar a:hover {
+    text-decoration: none;
+}
+
+/* Discord-specific styles */
+.text-channel {
+    color: var(--dark-text);
+    font-weight: 500;
+}
+
+code {
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 3px;
+    padding: 1px 4px;
+    font-family: 'Consolas', 'Courier New', monospace;
+    font-size: 0.9em;
+    color: var(--dark-text);
+}
+
+/* Animations */
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(88, 101, 242, 0.7);
+    }
+    70% {
+        box-shadow: 0 0 0 10px rgba(88, 101, 242, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(88, 101, 242, 0);
+    }
+}
+
+.card:hover {
+    animation: pulse 2s infinite;
+}
