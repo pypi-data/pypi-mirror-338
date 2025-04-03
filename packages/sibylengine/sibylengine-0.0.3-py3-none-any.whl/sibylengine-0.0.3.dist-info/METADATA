@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: sibylengine
+Version: 0.0.3
+Summary: Custom Vulkan renderer
+Requires-Python: ==3.8.18
+Requires-Dist: torch ==2.1.1+cu118
+
