@@ -1,0 +1,6 @@
+Metadata-Version: 2.4
+Name: validatamodel
+Version: 0.0.1
+Summary: Add your description here
+Requires-Python: >=3.7
+Requires-Dist: vierror==0.0.2
