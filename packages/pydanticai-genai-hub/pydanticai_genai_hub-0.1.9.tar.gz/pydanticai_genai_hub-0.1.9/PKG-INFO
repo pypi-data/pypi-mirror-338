@@ -1,0 +1,107 @@
+Metadata-Version: 2.4
+Name: pydanticai-genai-hub
+Version: 0.1.9
+Summary: SAP Generative AI Hub: Pydantic AI models for various LLM providers
+Author-email: Gunter <albrechg@yahoo.com>
+License: MIT
+Project-URL: Homepage, https://github.com/skye0402/pydanticai-genaihub
+Project-URL: Repository, https://github.com/skye0402/pydanticai-genaihub.git
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Requires-Python: >=3.12
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pydantic>=2.11.1
+Requires-Dist: pydantic-ai>=0.0.49
+Requires-Dist: typing-extensions>=4.0.0
+Requires-Dist: httpx>=0.24.0
+Requires-Dist: generative-ai-hub-sdk>=3.8.0
+Provides-Extra: anthropic
+Requires-Dist: anthropic>=0.3.0; extra == "anthropic"
+Provides-Extra: openai
+Requires-Dist: openai>=1.0.0; extra == "openai"
+Provides-Extra: all
+Requires-Dist: anthropic>=0.3.0; extra == "all"
+Requires-Dist: openai>=1.0.0; extra == "all"
+Dynamic: license-file
+
+# PydanticAI GenAI Hub
+
+A Python library providing Pydantic-based model implementations for various LLM providers.
+It's intended to be used with SAP's Generative AI Hub SDK.
+
+This project is not affiliated with SAP.
+
+## Installation
+
+You can install the package with pip:
+
+```bash
+pip install pydanticai-genai-hub
+```
+
+To install with specific provider support:
+
+```bash
+# For Anthropic support
+pip install "pydanticai-genai-hub[anthropic]"
+
+# For OpenAI support
+pip install "pydanticai-genai-hub[openai]"
+
+# For all providers
+pip install "pydanticai-genai-hub[all]"
+```
+
+## Usage
+
+### Anthropic Model
+
+```python
+from pydanticai_genai_hub.anthropic import AnthropicModel
+
+model = AnthropicModel(
+    model_name="anthropic--claude-3.5-sonnet",
+)
+```
+
+### OpenAI Model
+
+```python
+from pydanticai_genai_hub.openai import OpenAIModel
+
+model = OpenAIModel(
+    model_name="gpt-4o",
+)
+```
+
+### 'Hello World' Example with AWS Bedrock Anthropic
+
+```python
+from pydantic_ai import Agent
+from pydanticai_genai_hub.anthropic import AnthropicModel
+
+# Initialize the model with SAP GenAI Hub configuration
+llm = AnthropicModel(
+    model_name="anthropic--claude-3.5-sonnet",
+)
+
+agent = Agent(  
+    model=llm,
+    system_prompt='Be concise, reply with one sentence.',  
+)
+
+result = agent.run_sync('Where does "hello world" come from?')  
+print(result.data)
+"""
+The first known use of "hello, world" was in a 1974 textbook about the C programming language.
+"""
+```
+
+## License
+
+MIT License

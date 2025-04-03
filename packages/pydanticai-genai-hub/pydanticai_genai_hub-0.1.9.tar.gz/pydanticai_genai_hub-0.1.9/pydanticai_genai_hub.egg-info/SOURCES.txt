@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+pydanticai_genai_hub/__init__.py
+pydanticai_genai_hub/anthropic.py
+pydanticai_genai_hub/openai.py
+pydanticai_genai_hub/providers.py
+pydanticai_genai_hub.egg-info/PKG-INFO
+pydanticai_genai_hub.egg-info/SOURCES.txt
+pydanticai_genai_hub.egg-info/dependency_links.txt
+pydanticai_genai_hub.egg-info/requires.txt
+pydanticai_genai_hub.egg-info/top_level.txt
