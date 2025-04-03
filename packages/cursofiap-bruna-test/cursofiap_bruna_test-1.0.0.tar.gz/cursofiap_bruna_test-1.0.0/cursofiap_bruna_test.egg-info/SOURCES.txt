@@ -1,0 +1,9 @@
+README.md
+setup.py
+cursofiap/__init__.py
+cursofiap/core.py
+cursofiap_bruna_test.egg-info/PKG-INFO
+cursofiap_bruna_test.egg-info/SOURCES.txt
+cursofiap_bruna_test.egg-info/dependency_links.txt
+cursofiap_bruna_test.egg-info/top_level.txt
+tests/test_core.py
