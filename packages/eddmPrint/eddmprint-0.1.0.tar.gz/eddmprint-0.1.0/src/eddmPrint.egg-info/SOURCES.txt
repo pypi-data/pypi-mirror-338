@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/eddmPrint/__init__.py
+src/eddmPrint/colors.py
+src/eddmPrint/printer.py
+src/eddmPrint/templates.py
+src/eddmPrint.egg-info/PKG-INFO
+src/eddmPrint.egg-info/SOURCES.txt
+src/eddmPrint.egg-info/dependency_links.txt
+src/eddmPrint.egg-info/top_level.txt
