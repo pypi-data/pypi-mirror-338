@@ -1,0 +1,139 @@
+Metadata-Version: 2.4
+Name: mayhap
+Version: 0.1.0
+Summary: Where your functions may happen... or not. Embrace the uncertainty in your code execution!
+Author: Vaadeendra Kumar Burra
+License: GPL-3.0-only
+Project-URL: Homepage, https://github.com/Vaadee/mayhap
+Project-URL: Bug Tracker, https://github.com/Vaadee/mayhap/issues
+Project-URL: Documentation, https://github.com/Vaadee/mayhap/blob/main/README.md
+Project-URL: Source Code, https://github.com/Vaadee/mayhap
+Keywords: randomness,decorator,probability,uncertainty
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pydantic>=2.11.1
+Provides-Extra: dev
+Requires-Dist: pytest>=8.3.5; extra == "dev"
+Dynamic: license-file
+
+# Mayhap
+
+**Mayhap**: Where your functions may happen... or not. Embrace the uncertainty in your code execution!
+
+## Overview
+
+**Mayhap** is a whimsical Python package that allows you to introduce controlled randomness into your function executions. By decorating your functions with `@maybe`, you can specify various probability distributions to determine whether a function should execute or not. It's perfect for simulations, testing, or just adding a bit of unpredictability to your code.
+
+## Features
+
+- **Multiple Distributions**: Choose from uniform, weighted, normal, exponential, Bernoulli distributions, or define your own custom logic.
+- **Easy Integration**: Simply decorate your functions with `@maybe` and specify the desired distribution and parameters.
+- **Flexible Probability Control**: Tailor the execution probability to fit your specific needs.
+
+## Installation
+
+Install Mayhap using pip:
+
+```bash
+pip install mayhap
+```
+
+## Usage
+
+Here's how you can use Mayhap in your projects:
+
+### Uniform Distribution
+
+Execute a function with a fixed probability.
+
+```python
+from mayhap import maybe
+
+@maybe(distribution='uniform', probability=0.7)
+def greet(name):
+    print(f"Hello, {name}!")
+
+greet('Alice')  # Has a 70% chance to print the greeting.
+```
+
+### Weighted Distribution
+
+Assign different weights to execution outcomes.
+
+```python
+@maybe(distribution='weighted', weights=[3, 1])
+def farewell(name):
+    print(f"Goodbye, {name}!")
+
+farewell('Bob')  # 'Goodbye, Bob!' is three times more likely to print than not.
+```
+
+### Normal Distribution
+
+Execution probability follows a normal (Gaussian) distribution.
+
+```python
+@maybe(distribution='normal', mean=0.5, stddev=0.1)
+def announce(event):
+    print(f"Announcing {event}!")
+
+announce('the event')  # Execution probability is centered around 50%.
+```
+
+### Exponential Distribution
+
+Execution probability decreases exponentially over time.
+
+```python
+@maybe(distribution='exponential', lambd=1.0)
+def notify(user):
+    print(f"Notification sent to {user}.")
+
+notify('Charlie')  # Execution probability decreases over time.
+```
+
+### Bernoulli Distribution
+
+Execute based on a Bernoulli trial with probability `p`.
+
+```python
+@maybe(distribution='bernoulli', p=0.3)
+def alert():
+    print("Alert triggered!")
+
+alert()  # Has a 30% chance to trigger the alert.
+```
+
+### Custom Probability Function
+
+Define your own logic for execution probability.
+
+```python
+def custom_logic():
+    # Custom conditions for execution
+    return some_external_condition_check()
+
+@maybe(distribution='custom', custom_func=custom_logic)
+def process():
+    print("Processing data.")
+
+process()  # Executes based on custom logic.
+```
+
+## Contributing
+
+Contributions are welcome! If you'd like to improve Mayhap or add new features, please fork the repository and submit a pull request. For major changes, open an issue first to discuss your ideas.
+
+## License
+
+This project is licensed under the MIT License. See the `LICENSE` file for more details.
+
+---
+
+*Mayhap: Embrace the uncertainty in your code execution!*
