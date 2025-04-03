@@ -1,0 +1,33 @@
+[project]
+name = "orign"
+version = "0.2.2"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.10.14"
+dependencies = [
+    "nebu>=0.1.5",
+    "openai>=1.69.0",
+    "pillow>=11.1.0",
+    "pydantic>=2.11.0",
+    "pyyaml>=6.0.2",
+    "shortuuid>=1.0.13",
+]
+
+[tool.pyright]
+reportUnknownParameterType = false
+reportMissingTypeArgument = false
+reportUnknownMemberType = false
+reportUnknownVariableType = false
+reportUnknownArgumentType = false
+reportConstantRedefinition = false
+
+[dependency-groups]
+dev = [
+    "ipykernel>=6.29.5",
+]
+
+[project.optional-dependencies]
+gcs = [
+    "google-cloud-storage",
+    "google-api-core"
+]

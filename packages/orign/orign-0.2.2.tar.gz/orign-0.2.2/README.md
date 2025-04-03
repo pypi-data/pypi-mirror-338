@@ -1,0 +1,281 @@
+# orign-py
+
+A Python client for [Orign](https://github.com/agentsea/orign)
+
+## Installation
+
+```bash
+pip install orign
+```
+
+Install the Orign CLI
+
+```sh
+curl -fsSL -H "Cache-Control: no-cache" https://storage.googleapis.com/orign/releases/install.sh | bash
+```
+
+To run the server locally
+
+```sh
+orign server --docker
+```
+
+## Quick Start
+
+Let's create an LLM that can be trained and inferred online.
+
+```python
+from orign import Qwen2_5, TRLOpts, VLLMOpts
+
+llm = Qwen2_5(
+    name="greeter",
+    model="Qwen/Qwen2.5-VL-7B-Instruct",
+    platform="runpod",
+    bucket="my-bucket",
+    train_opts=TRLOpts(
+        accelerators=["2:H100_SXM"],
+        train_type="sft",
+        num_train_epochs=1,
+    ),
+    infer_opts=VLLMOpts(
+        accelerators=["1:A100_SXM"],
+    ),
+    train_every=50,
+    sample_n=100,
+)
+
+messages = [
+    {"role": "user", "content": "Dlrow Olleh?"},
+    {"role": "assistant", "content": "Hello World!"},
+]
+resp = llm.chat(messages)
+print(resp)
+
+# Now we can train the model on the response (if it's good)
+messages.append(resp['choices'][0]['message'])
+llm.learn(messages)
+```
+
+Next, let's create a human that can provide feedback to the model.
+
+```python
+from orign import Human, V1FeedbackResponse
+
+# This function will be called when the human provides feedback
+def on_feedback(feedback: V1FeedbackResponse):
+    from orign import OnlineLLM
+
+    llm = OnlineLLM.get("greeter")
+    if feedback.approved:
+        llm.learn(feedback.messages)
+
+# The Orign app must be installed in your slack workspace
+human = Human(
+    name="my-slack-human",
+    medium="slack",
+    channel="#my-channel",
+    response_func=on_feedback,
+)
+
+# This will send a message to the human asking for feedback
+needs_review = [
+    {"role": "user", "content": "Hello, how are you?"}, 
+    {"role": "assistant", "content": "I'm good, thank you!"}
+]
+human.request_feedback(content="Is this a good response?", messages=needs_review)
+
+# We can also post update messages to the human
+human.post_message(content="I'm training the model on your feedback...")
+```
+
+Now putting it all together, let't train a model to learn to accomplish tasks interactively.
+
+```python
+task = "Search for the latest news on Cats"
+mcp_server = # ... MCP server
+max_steps = 20
+
+for i in range(max_steps):
+    prompt = "Please try to accomplish the task: " + task + "with these tools: "  # ... MCP tools
+    messages = [{"role": "user", "content": prompt}]
+
+    mcp_state = # ... get MCP state
+
+    resp = llm.chat(messages)
+    print(resp)
+
+    mcp_action = # ... take MCP action
+
+    messages.append(resp['choices'][0]['message'])
+    human.request_feedback(content="Was this a good action?", messages=messages)
+```
+
+Or optionally use our high level objects.
+
+```python
+from orign import actor, validator, solve
+
+@actor
+def act(task: str, mcp_servers: List[Any], history: List[Step]) -> Step:
+    prompt = "Please try to accomplish the task: " + task + "with these tools: "  # ... MCP tools
+    messages = [{"role": "user", "content": prompt}]
+
+    mcp_state = # ... get MCP state
+
+    resp = llm.chat(messages)
+    print(resp)
+
+    mcp_action = # ... take MCP action
+
+    messages.append(resp['choices'][0]['message'])
+    human.request_feedback(content="Was this a good action?", messages=messages)
+
+    return Step(
+        state=EnvState(
+            text=mcp_state,
+        ),
+        action=mcp_action,
+    )
+
+@validator
+def score(step: Step) -> float:
+
+    prompt = f"""Given the step {step.model_dump()}, return a value between 1-10 on how good 
+    it was with respect to the task {step.task} 
+    """
+    messages = [{"role": "user", "content": prompt}]
+    resp = reward_llm.chat()
+
+    human.request_feedback(content="Was this a good action?", messages=messages)
+
+    return resp['choices'][0]['message']
+
+solve(
+    task="Find the latest news on Cats",
+    actor=act,
+    validator=score,
+    mcp_servers=[],
+)
+```
+
+Now as you solve tasks with the actor, every action will be sent for a human to review. Once they do the `on_feedback` function will be called sending the feedback to the replay buffer which will train the model online.
+
+## Usage
+
+### Replay Buffer
+
+Replay buffers store agent experiences and offer a means of training models in an online fashion.
+
+In this example, we create a replay buffer that will launch a TRL training job every 50 steps by randomly sampling 100 experiences from the buffer.
+
+```python
+from orign import ReplayBuffer, TRLRequest
+
+train_job = TRLRequest(
+    name="my-train-job",
+    namespace="default",
+    model="Qwen/Qwen2.5-VL-7B-Instruct",
+    platform="runpod",
+    bucket="my-bucket",
+    accelerators=["2:H100_SXM"],
+    train_type="sft",
+    num_train_epochs=1,
+    save_steps=1,
+    save_total_limit=3,
+    use_peft=True,
+)
+
+buffer = ReplayBuffer(
+    name="my-buffer",
+    namespace="default",
+    train_every=50,
+    sample_n=100,
+    sample_strategy="Random",
+    train_job=train_job,
+)
+
+
+messages = [
+    {"role": "user", "content": "Dlrow Olleh?"},
+    {"role": "assistant", "content": "Hello World!"},
+]
+buffer.send(messages)
+```
+
+### Online LLM
+
+Online LLMs are models that can be trained and inferred online.
+
+In this example, we create a Qwen 2.5 model that will be trained using TRL on 2 H100 GPUs, and served using VLLM on 1 A100 GPU.
+
+```python
+from orign import Qwen2_5, TRLOpts, VLLMOpts
+
+llm = Qwen2_5(
+    name="my-llm",
+    model="Qwen/Qwen2.5-7B-Instruct",
+    platform="runpod",
+    bucket="my-bucket",
+    train_opts=TRLOpts(
+        accelerators=["2:H100_SXM"],
+        train_type="sft",
+        num_train_epochs=1,
+    ),
+    infer_opts=VLLMOpts(
+        accelerators=["1:A100_SXM"],
+    ),
+    train_every=50,
+    sample_n=100,
+)
+```
+
+Now we can chat with the model.
+
+```python
+messages = [
+    {"role": "user", "content": "What's the capitol of the moon?"},
+]
+resp = llm.chat(messages)
+print(resp)
+```
+
+and we can also train the model online.
+
+```python
+llm.learn(resp)
+```
+
+This model will by default train every 50 steps by randomly sampling 100 experiences from the buffer. However, if you want to manually trigger a training job, you can do so with the `train` method.
+
+```python
+llm.train()
+```
+
+### Human
+
+Conmect to humans on slack that can provide feedback to the model.
+
+```python
+from orign import Human, V1FeedbackResponse
+
+def on_feedback(feedback: V1FeedbackResponse):
+    print(feedback)
+
+human = Human(
+    name="my-human",
+    medium="slack",
+    channel="#my-channel",
+    response_func=on_feedback,
+)
+
+messages = [
+    {"role": "user", "content": "Hello, how are you?"},
+    {"role": "assistant", "content": "I'm good, thank you!"},
+]
+
+human.request_feedback(content=f"Is this a good response? {resp}", messages=messages)
+```
+
+## Examples
+
+See the [examples](examples) directory for more usage examples.
