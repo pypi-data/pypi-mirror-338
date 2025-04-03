@@ -1,0 +1,18 @@
+{
+    "mcpServers": {
+        "mcp-gsuite": {
+            "command": "uv",
+            "args": [
+                "--directory",
+                "<dir_to>/mcp-gsuite",
+                "run",
+                "mcp-gsuite"
+            ],
+            "env": {
+                "GSUITE_OAUTH_CONFIG": "{\"web\":{\"client_id\":\"243350252642-0umtmvops77jsninqoviff9s3ef0d807.apps.googleusercontent.com\",\"project_id\":\"mcp-server-gsuite\",\"auth_uri\":\"https://accounts.google.com/o/oauth2/auth\",\"token_uri\":\"https://oauth2.googleapis.com/token\",\"auth_provider_x509_cert_url\":\"https://www.googleapis.com/oauth2/v1/certs\",\"client_secret\":\"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\",\"redirect_uris\":[\"http://localhost:4100/code\"],\"javascript_origins\":[\"http://localhost:3050\"]}}",
+                "GSUITE_ACCOUNTS_CONFIG": "[{\"email\":\"hillary.kipkemoi@rizzbuzz.com\",\"account_type\":\"work\",\"extra_info\":\"Contains Work email and calendar. Used for communciation with team members and getting updates on meetings and projects progress\"}]",
+                "GSUITE_USE_MEMORY_STORAGE": "true"
+            }
+        }
+    }
+}
