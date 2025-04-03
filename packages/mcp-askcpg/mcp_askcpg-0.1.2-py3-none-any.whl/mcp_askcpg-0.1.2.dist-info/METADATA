@@ -1,0 +1,8 @@
+Metadata-Version: 2.4
+Name: mcp-askcpg
+Version: 0.1.2
+Summary: This is a MCP tools for connecting to Qmed Copilot askCPG feature, where it enable your LLM to get the medical knowledge from Malaysia Clinical Practice Guideline.
+Project-URL: Homepage, https://qmed.asia
+Requires-Python: >=3.11
+Requires-Dist: mcp[cli]>=1.5.0
+Requires-Dist: requests>=2.32.3
