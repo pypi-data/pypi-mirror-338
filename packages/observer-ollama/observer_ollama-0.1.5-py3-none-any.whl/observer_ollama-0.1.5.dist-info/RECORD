@@ -1,0 +1,10 @@
+observer_ollama/__init__.py,sha256=viB3VGPzLjt4eNvqOcIIWB3YIIWYnBMcNgxrswTHAJw,89
+observer_ollama/handle_ollama.py,sha256=TVH22EOxgYxLvaeG2JjoZBa5Hcb5DjQPxRZ4p-t0wdI,15486
+observer_ollama/main.py,sha256=HJrVr9XhXNGXF-KHNYUMssB3tNdEGqGHqXcYdF76L5g,3363
+observer_ollama/ssl_utils.py,sha256=erdAmVt6z20ICEba4-KSWEW0hOg8j6L4IPwC5W-AFi0,2857
+observer_ollama-0.1.5.dist-info/licenses/LICENSE,sha256=24CrlbwlC2tf1EWx2kXEsIQP3MTesCMl9UVpUFlTgzU,1067
+observer_ollama-0.1.5.dist-info/METADATA,sha256=rBh87jWyjoGr7wYZ3XLObVhjJaDT1c2M5MV2y0Iiwy8,1641
+observer_ollama-0.1.5.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+observer_ollama-0.1.5.dist-info/entry_points.txt,sha256=un2kZumMWFzI904BeOb7uZ2_xo9ujEbwqarcPE8oDI8,62
+observer_ollama-0.1.5.dist-info/top_level.txt,sha256=dW5tzijjD0lz5LbfQZ8YAb8vGVZ4uBXxfVoaG3UbNLk,16
+observer_ollama-0.1.5.dist-info/RECORD,,
