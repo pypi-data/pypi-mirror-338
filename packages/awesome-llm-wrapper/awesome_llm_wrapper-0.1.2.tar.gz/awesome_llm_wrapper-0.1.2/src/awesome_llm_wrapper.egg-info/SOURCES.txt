@@ -1,0 +1,17 @@
+README.md
+pyproject.toml
+src/awesome_llm_wrapper.egg-info/PKG-INFO
+src/awesome_llm_wrapper.egg-info/SOURCES.txt
+src/awesome_llm_wrapper.egg-info/dependency_links.txt
+src/awesome_llm_wrapper.egg-info/requires.txt
+src/awesome_llm_wrapper.egg-info/top_level.txt
+src/llm_wrapper/__init__.py
+src/llm_wrapper/client.py
+src/llm_wrapper/models.py
+src/llm_wrapper/providers/__init__.py
+src/llm_wrapper/providers/anthropic.py
+src/llm_wrapper/providers/base.py
+src/llm_wrapper/providers/gemini.py
+src/llm_wrapper/providers/openai.py
+tests/test_client.py
+tests/test_parameters.py
