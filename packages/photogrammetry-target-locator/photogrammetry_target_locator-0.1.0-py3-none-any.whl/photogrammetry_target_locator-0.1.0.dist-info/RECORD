@@ -1,0 +1,11 @@
+photogrammetry_target_locator/__init__.py,sha256=hYBESKB4314gwTDq-R6Ex7UbfeDJE1ywQYqcCIJ6d5Q,148
+photogrammetry_target_locator/cli.py,sha256=3vNOcmB97u7iVBwZhYn6fj3MKo-teQ1kiGxPtYMGKew,753
+photogrammetry_target_locator/config.py,sha256=-mleb-FoAd0rBqXbQt40G4oQ3pmUlyslVykw1ZzLJbk,3686
+photogrammetry_target_locator/main.py,sha256=fvBvBFpGVpfkNGCC17nROZ5SyOrZUgUlGhRREtg4nOU,2115
+photogrammetry_target_locator/photogrammetry.py,sha256=veqZ9Ebt9OrirkseUgOHtNxIgl_x3KItXbEgaqtaITY,18613
+photogrammetry_target_locator-0.1.0.dist-info/licenses/LICENSE,sha256=qyKzHykQZ29Z_FJJ4gZPYjQQGYThyoVYedlJubbpguU,1066
+photogrammetry_target_locator-0.1.0.dist-info/METADATA,sha256=3CCawUazKvMbq1312fSkWrbvREv0CECYo8xeJ1h_J4s,4708
+photogrammetry_target_locator-0.1.0.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+photogrammetry_target_locator-0.1.0.dist-info/entry_points.txt,sha256=DUpUl_voPDehqa_69nLZnmVqzWBH7V_SmeyFBTaXHXg,70
+photogrammetry_target_locator-0.1.0.dist-info/top_level.txt,sha256=iY7r227PdyrldWdb9QOt0nOwrtfM-NukgdSzz66kFGc,30
+photogrammetry_target_locator-0.1.0.dist-info/RECORD,,
