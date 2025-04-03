@@ -1,0 +1,10 @@
+Metadata-Version: 2.4
+Name: asterias
+Version: 0.0.1
+Summary: Add your description here
+Project-URL: Source, https://github.com/ben-cassese/asterias
+Author-email: Ben-Cassese <b.c.cassese@columbia.edu>
+License-File: LICENSE
+Requires-Python: >=3.13
+Requires-Dist: exotic-ld>=3.2.0
+Requires-Dist: jax>=0.5.3
