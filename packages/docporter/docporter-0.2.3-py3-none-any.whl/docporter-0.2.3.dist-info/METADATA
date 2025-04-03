@@ -1,0 +1,18 @@
+Metadata-Version: 2.4
+Name: docporter
+Version: 0.2.3
+Summary: A tool to extract documentation files from GitHub repositories and local folders.
+Home-page: https://github.com/aatitkarki/docporter
+Author: aatitkarki
+Author-email: aatitkarki123@gmail.com
+Requires-Python: >=3.6
+Requires-Dist: gitpython
+Requires-Dist: argparse
+Requires-Dist: urllib3
+Requires-Dist: pyperclip
+Dynamic: author
+Dynamic: author-email
+Dynamic: home-page
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
