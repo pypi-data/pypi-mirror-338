@@ -1,0 +1,15 @@
+[project]
+name = "3-04-2025-ttm"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "colorama>=0.4.6",
+    "granite-tsfm[notebooks]",
+]
+[tool.uv]
+constraint-dependencies = ["kaleido==0.2.1"]
+
+[tool.uv.sources]
+granite-tsfm = { git = "https://github.com/ibm-granite/granite-tsfm.git", rev = "v0.2.22" }

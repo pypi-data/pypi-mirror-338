@@ -1,0 +1,7 @@
+README.md
+pyproject.toml
+3_04_2025_ttm.egg-info/PKG-INFO
+3_04_2025_ttm.egg-info/SOURCES.txt
+3_04_2025_ttm.egg-info/dependency_links.txt
+3_04_2025_ttm.egg-info/requires.txt
+3_04_2025_ttm.egg-info/top_level.txt
