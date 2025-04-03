@@ -1,0 +1,26 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "mcpimageprocessing"
+version = "0.1.1"
+description = "Image processing tools"
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = [
+    "httpx>=0.28.1",
+    "mcp[cli]>=1.6.0",
+    "pillow>=11.1.0",
+    "scikit-image>=0.25.2",
+    "scipy>=1.15.2",
+]
+
+[project.scripts]
+mcpimageprocessing = "mcpimageprocessing.main:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["mcpimageprocessing"]
+
+[tool.hatch.metadata]
+allow-direct-references = true

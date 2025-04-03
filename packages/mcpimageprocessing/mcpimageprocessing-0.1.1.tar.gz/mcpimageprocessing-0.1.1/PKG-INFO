@@ -1,0 +1,13 @@
+Metadata-Version: 2.4
+Name: mcpimageprocessing
+Version: 0.1.1
+Summary: Image processing tools
+Requires-Python: >=3.8
+Requires-Dist: httpx>=0.28.1
+Requires-Dist: mcp[cli]>=1.6.0
+Requires-Dist: pillow>=11.1.0
+Requires-Dist: scikit-image>=0.25.2
+Requires-Dist: scipy>=1.15.2
+Description-Content-Type: text/markdown
+
+mcpimageprocessing
