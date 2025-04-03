@@ -1,0 +1,8 @@
+jupyter_mcp_server/__init__.py,sha256=Jj2Gf-V3ynIAiq8y2ifVvdou6tznV4yvgUHGxqirBBw,108
+jupyter_mcp_server/__version__.py,sha256=e_EDC35CF-C8o2vnHXGVZyjGEdeRPWEE4uOm1gGcPeQ,117
+jupyter_mcp_server/server.py,sha256=WVbt1O-BL1lT3vptdVMmdn3NhqWtyM1bebEAHVQ6snI,1708
+jupyter_mcp_server/tests/__init__.py,sha256=WkssAKDGX-IDwTQy6R9R5cIDtocW4PpEZHk9iT-rZPM,116
+jupyter_mcp_server-0.3.0.dist-info/METADATA,sha256=q0lc8KELXNIPCAEi-vjgjIfrWow9daAbC_45XvDvpVU,8339
+jupyter_mcp_server-0.3.0.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+jupyter_mcp_server-0.3.0.dist-info/licenses/LICENSE,sha256=W_0rWKXq5rcG8a4qp2wkg_MUCpYg4QwjEMWZtVYdmT4,1882
+jupyter_mcp_server-0.3.0.dist-info/RECORD,,
