@@ -1,0 +1,48 @@
+Metadata-Version: 2.4
+Name: synthra
+Version: 0.1.0
+Summary: A simple logging module for Python
+Home-page: https://github.com/x2saddDM/synthra-logger
+Author: x2sadddDM
+Author-email: x2saddddm@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: colorama>=0.4.6
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: license-file
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+# Synthra Logger
+
+A simple and customizable Python logging module that uses color formatting and timestamps. Ideal for creating console logs with different severity levels like info, debug, fail, and more. It also includes a method for capturing user input with a timestamp.
+
+## Features
+
+- **Color-coded log levels**: Includes support for `INFO`, `DEBUG`, `FAIL`, `WARN`, `SUCCESS`, and more.
+- **Timestamped logs**: Each log entry is prefixed with the current time for easy tracking.
+- **Thread-safe**: Uses a `Lock` to ensure logs are printed correctly in multi-threaded applications.
+- **User input capture**: The logger can also capture and display user input with a timestamp.
+
+## Installation
+
+To install the `synthra` logger, you can either install it via pip from a local directory or from PyPI if you decide to upload it.
+
+### Local Installation
+
+1. Clone the repository or download the source code.
+2. Navigate to the root directory of the project (where `setup.py` is located).
+3. Run the following command to install the logger package:
+
+```bash
+pip install -e .
