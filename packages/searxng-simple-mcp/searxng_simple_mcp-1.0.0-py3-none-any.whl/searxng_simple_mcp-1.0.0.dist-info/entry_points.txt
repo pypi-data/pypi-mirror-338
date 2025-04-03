@@ -1,0 +1,2 @@
+[console_scripts]
+searxng-simple-mcp = src.searxng_simple_mcp.server:mcp.run
