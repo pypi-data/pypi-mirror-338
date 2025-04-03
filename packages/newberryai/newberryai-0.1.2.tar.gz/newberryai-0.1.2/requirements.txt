@@ -1,0 +1,6 @@
+boto3
+requests
+pytest
+opencv-python
+setuptools
+gradio
