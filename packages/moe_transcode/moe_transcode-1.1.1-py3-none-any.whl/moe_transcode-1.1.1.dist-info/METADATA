@@ -1,0 +1,28 @@
+Metadata-Version: 2.3
+Name: moe_transcode
+Version: 1.1.1
+Summary: Plugin for Moe to transcode music.
+License: MIT
+Author: Jacob Pavlock
+Author-email: jtpavlock@gmail.com
+Requires-Python: >=3.9,<3.14
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Dist: moe (>=2.0.0,<3.0.0)
+Project-URL: Documentation, https://moe-transcode.readthedocs.io/en/latest/
+Description-Content-Type: text/x-rst
+
+#########
+Transcode
+#########
+This is a plugin for Moe that provides functionality for transcoding music.
+
+Currently only flac -> mp3 [v0, v2, 320] is supported.
+
+Check out the `full documentation <https://moe-transcode.readthedocs.io/en/latest/>`_ for more info.
+
