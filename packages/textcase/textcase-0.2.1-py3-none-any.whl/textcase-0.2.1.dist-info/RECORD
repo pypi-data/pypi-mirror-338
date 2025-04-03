@@ -1,0 +1,10 @@
+textcase/__init__.py,sha256=dgFzMmQ73jjqvRaKK2t5FxrLtgNc9kKLsB6T4_cNUt8,2194
+textcase/boundary.py,sha256=Q4Kz4oRcJJSrna5aW0U1ZcBqBXg8KVLK7g4WXA7LAus,6464
+textcase/case.py,sha256=glTr6HQzN7uGwsroI99JzCoWUIAGCliZHCmIxncyk6k,3313
+textcase/converter.py,sha256=8m6OGSZBLahogMd8n3Tpca40aLDu1EUu539qdd2Owcs,3425
+textcase/pattern.py,sha256=z8oGRyBmnt23j9oLsx7jPq6JdVFUWk5h-lfiTVmIERM,2898
+textcase-0.2.1.dist-info/licenses/LICENSE.md,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+textcase-0.2.1.dist-info/METADATA,sha256=YhgJPcnMDz1ApxUetDfjsdNLGkhuI_XodrKhfbeOoW0,44884
+textcase-0.2.1.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+textcase-0.2.1.dist-info/top_level.txt,sha256=85eoLocwIFq1IRhaNBOmy9dSS4BzEBeHDG2K4oaRvsQ,9
+textcase-0.2.1.dist-info/RECORD,,
