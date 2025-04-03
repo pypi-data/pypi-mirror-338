@@ -1,0 +1,2 @@
+[console_scripts]
+task-processor = task_processor.__main__:main
