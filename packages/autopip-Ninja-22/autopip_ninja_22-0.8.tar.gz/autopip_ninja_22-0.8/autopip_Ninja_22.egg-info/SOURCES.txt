@@ -1,0 +1,8 @@
+README.md
+setup.py
+autopip/__init__.py
+autopip_Ninja_22.egg-info/PKG-INFO
+autopip_Ninja_22.egg-info/SOURCES.txt
+autopip_Ninja_22.egg-info/dependency_links.txt
+autopip_Ninja_22.egg-info/requires.txt
+autopip_Ninja_22.egg-info/top_level.txt
