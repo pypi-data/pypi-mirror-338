@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+git_prune/__init__.py
+git_prune/main.py
+git_prune.egg-info/PKG-INFO
+git_prune.egg-info/SOURCES.txt
+git_prune.egg-info/dependency_links.txt
+git_prune.egg-info/entry_points.txt
+git_prune.egg-info/requires.txt
+git_prune.egg-info/top_level.txt
+tests/test_git_prune.py

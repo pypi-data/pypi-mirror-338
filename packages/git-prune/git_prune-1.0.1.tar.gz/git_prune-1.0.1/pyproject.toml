@@ -1,0 +1,27 @@
+[project]
+name = "git-prune"
+version = "1.0.1"
+description = "Clean up your local git branches to match the remote with one command."
+authors = [
+    {name = "Richard"}
+]
+license = "MIT"
+readme = "README.md"
+dependencies = [
+    "click>=8.1.8",
+]
+
+[project.scripts]
+git-prune = 'git_prune.main:cli'
+
+[dependency-groups]
+dev = [
+    "pytest>=8.3.5",
+    "pytest-cov>=6.1.0",
+]
+
+[[tool.uv.index]]
+name = "homelab"
+url = "https://gitlab.richardsoper.me/api/v4/projects/40/packages/pypi"
+publish-url = "https://gitlab.richardsoper.me/api/v4/projects/40/packages/pypi"
+explicit = true
