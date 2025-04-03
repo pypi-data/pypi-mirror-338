@@ -1,0 +1,11 @@
+Metadata-Version: 2.4
+Name: hivecraft
+Version: 0.4.1
+Summary: Hivecraft is a tool to crate, test and compile a folder with .alghive extension.
+Author: Éric PHILIPPE
+Author-email: ericphlpp@proton.me
+License-File: LICENSE
+Dynamic: author
+Dynamic: author-email
+Dynamic: license-file
+Dynamic: summary
