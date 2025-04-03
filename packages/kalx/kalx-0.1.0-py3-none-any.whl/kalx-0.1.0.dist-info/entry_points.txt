@@ -1,0 +1,2 @@
+[console_scripts]
+kalx = kalx.__main__:main
