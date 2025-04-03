@@ -1,0 +1,13 @@
+clip_streamlit/__init__.py,sha256=wE9t-G8rHK0ATjf8h7rxaZ9conGp4YL0MkcaNqOl3O8,95
+clip_streamlit/app.py,sha256=pYCccdyhQew2ElAzK3ztF6yHy_l06-pGUq8vU5kqRSs,2377
+clip_streamlit/base.py,sha256=6bXV7bynXoMr8AIEsbSeyD5Zh7OBhPzrfzjsKmyKUg0,4701
+clip_streamlit/version.py,sha256=8oAxKUG747GUokmxjkrWejyJa5yPNEsoJDlXxoedxTw,21
+clip_streamlit/__pycache__/__init__.cpython-312.pyc,sha256=FON_F_rH4R0FCRgckEQamBjJBR-Mp9t7pcNIqyYhevY,278
+clip_streamlit/__pycache__/app.cpython-312.pyc,sha256=VczTvygaLiOLjc5Tm9hZER_l7-093tHa7WWsvHYmxus,3463
+clip_streamlit/__pycache__/version.cpython-312.pyc,sha256=uaELEgRcTZFWoQWXAwgg0NiPhM3l0F6vq3s_Dc8X6EA,184
+clip_streamlit-0.1.1.dist-info/licenses/LICENSE,sha256=2wCiT6-QORL0KW7-PaEr1DUpQxqTEmoEA3Xhoy-TAMY,1065
+clip_streamlit-0.1.1.dist-info/METADATA,sha256=Ax0r4SMAMJvEFIy4sKMaVje2tdM9vatOR3Q11LHMkew,1803
+clip_streamlit-0.1.1.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+clip_streamlit-0.1.1.dist-info/entry_points.txt,sha256=Ih_NYrRJs8uMXUk7_Abw-sRe8GPPm8ai-DjNlH_FHV8,62
+clip_streamlit-0.1.1.dist-info/top_level.txt,sha256=a13XtiydVYWAPMDQC5VhvT4JMDRuqgNQPQV-j4I8pEQ,15
+clip_streamlit-0.1.1.dist-info/RECORD,,
