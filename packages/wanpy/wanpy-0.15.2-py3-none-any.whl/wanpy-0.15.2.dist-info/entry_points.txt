@@ -1,0 +1,4 @@
+[console_scripts]
+statistic-cores = wanpy.scripts.statistic_cores:main
+wanpy = wanpy.scripts.wanpy:main
+wanpy-postinstall = wanpy.scripts.postinstall:main
