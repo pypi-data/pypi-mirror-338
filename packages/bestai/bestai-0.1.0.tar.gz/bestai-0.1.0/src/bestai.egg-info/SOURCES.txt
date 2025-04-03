@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+src/bestai/__init__.py
+src/bestai/client.py
+src/bestai/router.py
+src/bestai/utils.py
+src/bestai.egg-info/PKG-INFO
+src/bestai.egg-info/SOURCES.txt
+src/bestai.egg-info/dependency_links.txt
+src/bestai.egg-info/requires.txt
+src/bestai.egg-info/top_level.txt
+src/bestai/examples/simple_router.py

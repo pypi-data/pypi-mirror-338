@@ -1,0 +1,39 @@
+[build-system]
+requires = ["setuptools>=60", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "bestai"
+version = "0.1.0"
+description = "A router for switching between LLM models"
+readme = "README.md"
+authors = [
+    {name = "BestAI Team", email = "info@bestai.example.com"}
+]
+license = {text = "Apache-2.0"}
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+]
+requires-python = ">=3.8"
+dependencies = [
+    "requests",
+    "pydantic",
+    "python-dotenv",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest",
+    "black",
+    "isort",
+    "mypy",
+    "flake8",
+]
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+packages = ["bestai", "bestai.examples"] 
+license-files = []
