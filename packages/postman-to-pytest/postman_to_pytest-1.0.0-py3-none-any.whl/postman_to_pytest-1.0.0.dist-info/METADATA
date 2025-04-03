@@ -1,0 +1,163 @@
+Metadata-Version: 2.4
+Name: postman-to-pytest
+Version: 1.0.0
+Summary: A tool to convert Postman collections to pytest test files
+Home-page: https://github.com/benz1k1/postman-to-pytest
+Author: Barun Yadav
+Author-email: Barun Yadav <benz3k3@gmail.com>
+License: MIT License
+        
+        Copyright (c) 2024 benz3k3
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE. 
+Project-URL: Homepage, https://github.com/benz1k1/postman-to-pytest
+Project-URL: Repository, https://github.com/benz1k1/postman-to-pytest.git
+Project-URL: Bug Tracker, https://github.com/benz1k1/postman-to-pytest/issues
+Keywords: postman,pytest,testing,api,converter
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Testing
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Provides-Extra: dev
+Requires-Dist: pytest>=7.4.0; extra == "dev"
+Requires-Dist: pytest-cov>=4.1.0; extra == "dev"
+Requires-Dist: black>=22.3.0; extra == "dev"
+Requires-Dist: isort>=5.10.1; extra == "dev"
+Requires-Dist: flake8>=4.0.1; extra == "dev"
+Requires-Dist: twine>=4.0.2; extra == "dev"
+Requires-Dist: build>=0.10.0; extra == "dev"
+Dynamic: author
+Dynamic: home-page
+Dynamic: license-file
+Dynamic: requires-python
+
+# Postman to Pytest Converter
+
+A Python tool that converts Postman collections to pytest test files, making it easier to integrate API tests into your Python testing workflow.
+
+## Features
+
+- Converts Postman collections to pytest test files
+- Maintains folder structure from Postman collections
+- Generates test classes and methods
+- Handles various HTTP methods (GET, POST, PUT, PATCH, DELETE)
+- Supports request headers, query parameters, and body data
+- Generates conftest.py with common fixtures
+- Creates requirements.txt with necessary dependencies
+
+## Installation
+
+```bash
+pip install postman-to-pytest
+```
+
+## Usage
+
+### Command Line
+
+```bash
+postman-to-pytest path/to/postman_collection.json --output pytest_tests
+```
+
+### Python Code
+
+```python
+from postman_to_pytest import convert_postman_to_pytest
+
+convert_postman_to_pytest(
+    collection_path="path/to/postman_collection.json",
+    output_dir="pytest_tests"
+)
+```
+
+## Generated Files Structure
+
+The tool generates the following files:
+
+```
+pytest_tests/
+├── conftest.py              # Common fixtures
+├── requirements.txt         # Package dependencies
+└── test_*_api.py           # Test files for each Postman folder
+```
+
+## Configuration
+
+### Environment Variables
+
+Create a `.env` file in your project root:
+
+```env
+API_BASE_URL=http://your-api-url
+JWT_SECRET=your-jwt-secret
+ORG_TOKEN=your-org-token
+```
+
+### Fixtures
+
+The generated `conftest.py` includes the following fixtures:
+
+- `base_url`: Base URL for API requests
+- `jwt_token`: JWT token for authentication
+- `headers`: Common request headers
+- `org_token`: Organization token
+
+## Development
+
+1. Clone the repository:
+```bash
+git clone https://github.com/yourusername/postman-to-pytest.git
+cd postman-to-pytest
+```
+
+2. Create a virtual environment:
+```bash
+python -m venv venv
+source venv/bin/activate  # Linux/Mac
+# or
+venv\Scripts\activate  # Windows
+```
+
+3. Install development dependencies:
+```bash
+pip install -e ".[dev]"
+```
+
+4. Run tests:
+```bash
+pytest
+```
+
+## Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details. 
