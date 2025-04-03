@@ -1,0 +1,11 @@
+README.md
+setup.py
+dynamics_odata_client/__init__.py
+dynamics_odata_client/client.py
+dynamics_odata_client/config.py
+dynamics_odata_client/config_loader.py
+dynamics_odata_client.egg-info/PKG-INFO
+dynamics_odata_client.egg-info/SOURCES.txt
+dynamics_odata_client.egg-info/dependency_links.txt
+dynamics_odata_client.egg-info/requires.txt
+dynamics_odata_client.egg-info/top_level.txt

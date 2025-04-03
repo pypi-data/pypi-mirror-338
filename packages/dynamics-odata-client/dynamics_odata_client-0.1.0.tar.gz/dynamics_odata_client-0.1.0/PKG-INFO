@@ -1,0 +1,129 @@
+Metadata-Version: 2.1
+Name: dynamics_odata_client
+Version: 0.1.0
+Summary: Cliente OData para Dynamics 365 con autenticación y exportación a DataFrame
+Home-page: https://github.com/AlbertoDuranR/dynamics_odata_client
+Author: AlbertoDR
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+# 🔗 dynamics_odata_client
+
+**Cliente OData para Dynamics 365**, diseñado para conectarse fácilmente a la API OData con autenticación OAuth2, manejo automático de token, consultas paginadas y exportación directa a `pandas.DataFrame`.
+
+Ideal para automatizar reportes, análisis o integraciones con Dynamics 365 desde Python.
+
+---
+
+## 🚀 Instalación
+
+Instala el paquete directamente desde PyPI:
+
+```bash
+pip install dynamics-odata-client
+```
+
+O desde tu entorno local (para desarrollo):
+
+```bash
+pip install .
+```
+
+---
+
+## ⚙️ Configuración
+
+Este paquete requiere un archivo `.env` en la raíz del proyecto con las siguientes variables:
+
+### 📁 `.env` (ejemplo)
+```env
+DYNAMICS_BASE_URL=https://empresa.crm.dynamics.com
+DYNAMICS_AUTH_URL=https://login.microsoftonline.com/tu_tenant_id/oauth2/token
+CLIENT_ID=tu_client_id
+CLIENT_SECRET=tu_client_secret
+RETRIES=5
+DELAY=2
+TIMEOUT=10
+BATCH_SIZE=100
+```
+
+También puedes consultar el archivo `.env.example` incluido en el paquete.
+
+---
+
+## 🧪 Ejemplo de uso
+
+```python
+from dynamics_odata_client import DynamicsClient
+import pandas as pd
+
+# Crear cliente Dynamics (usa .env por defecto)
+client = DynamicsClient()
+
+# Definir entidad y filtros
+entidad = "ReleasedProductCreationsV2"
+query = "$select=ProductNumber,ProductDescription"
+
+# Obtener los datos como DataFrame
+df = client.get_data(entidad, query)
+
+# Mostrar resultados
+print(df.head())
+```
+
+---
+
+## 📁 Estructura del paquete
+
+| Archivo / Carpeta            | Descripción |
+|-----------------------------|-------------|
+| `client.py`                 | Cliente principal para consultas OData y manejo de token |
+| `config.py`                 | Clase de configuración con parámetros dinámicos |
+| `config_loader.py`          | Carga de configuración desde archivo `.env` |
+| `__init__.py`               | Expone las clases principales del paquete |
+| `.env.example`              | Plantilla de configuración para usuarios |
+| `setup.py`                  | Archivo de instalación del paquete |
+| `requirements.txt`          | Dependencias necesarias |
+
+---
+
+## 📥 Requisitos
+
+- Python >= 3.7
+- requests
+- pandas
+- python-dotenv
+
+Instala las dependencias con:
+
+```bash
+pip install -r requirements.txt
+```
+
+---
+
+## 📦 Publicación en PyPI (para desarrolladores)
+
+1. Construir el paquete:
+```bash
+python -m build
+```
+
+2. Subir a PyPI:
+```bash
+python -m twine upload dist/*
+```
+
+3. Instalar desde PyPI:
+```bash
+pip install dynamics-odata-client
+```
+
+---
+
+## 🧾 Licencia
+
+MIT License - Libre uso para proyectos personales y comerciales.
