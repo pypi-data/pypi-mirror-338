@@ -1,0 +1,49 @@
+Metadata-Version: 2.3
+Name: anixart
+Version: 0.3.0.1
+Summary: Wrapper for using the Anixart API.
+License: FPA License
+Author: SantaSpeen
+Author-email: santaspeen@gmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Dist: requests (>=2.32.3,<3.0.0)
+Project-URL: Repository, https://github.com/SantaSpeen/anixart
+Description-Content-Type: text/markdown
+
+# Anixart API wrapper
+## Описание
+
+Враппер для использования Anixart API.\
+Библиотека создана только для ознакомления c API.
+
+**Автор не поддерживает и презирает создание авторегов / ботов для накрутки / спам ботов.**
+
+### Установка
+
+```shell
+pip install anixart
+```
+
+### Как работать с библиотекой
+#### Вся документация в папке [docs](https://github.com/SantaSpeen/anixart/tree/master/docs) 
+_(Пока что не дошли руки написать доки, гляньте в [examples](https://github.com/SantaSpeen/anixart/tree/master/examples) как работать с библиотекой)_
+
+
+## Обратная связь
+
+Если у вас возникли вопросы, или вы хотите каким-либо образом помочь автору вы можете написать ему в телеграм: [@SantaSpeen](https://t.me/SantaSpeen)
+
+<br/>
+
+## License
+
+Проект распространяется под лицензией `FPA License`. Подробнее в [LICENSE](LICENSE)
+
