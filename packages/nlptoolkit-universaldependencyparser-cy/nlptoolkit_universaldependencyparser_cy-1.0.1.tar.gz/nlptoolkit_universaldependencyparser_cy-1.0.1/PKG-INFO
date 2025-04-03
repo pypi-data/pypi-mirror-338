@@ -1,0 +1,16 @@
+Metadata-Version: 2.4
+Name: nlptoolkit-universaldependencyparser-cy
+Version: 1.0.1
+Summary: Dependency Parsing library
+Home-page: https://github.com/StarlangSoftware/UniversalDependencyParser-Cy
+Author: olcaytaner
+Author-email: olcay.yildiz@ozyegin.edu.tr
+Description-Content-Type: text/markdown
+Requires-Dist: NlpToolkit-Classification-Cy
+Requires-Dist: NlpToolkit-DependencyParser-Cy
+Dynamic: author
+Dynamic: author-email
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: requires-dist
+Dynamic: summary
