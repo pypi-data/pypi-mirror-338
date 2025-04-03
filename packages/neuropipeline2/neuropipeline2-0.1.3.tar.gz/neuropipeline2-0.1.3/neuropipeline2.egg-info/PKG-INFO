@@ -1,0 +1,13 @@
+Metadata-Version: 2.4
+Name: neuropipeline2
+Version: 0.1.3
+Summary: This is a package for processing, analyzing, and visualizing EEG and fNIRS data.
+Author-email: Adam Emile Aske <adamaske@live.no>
+Project-URL: Homepage, https://github.com/adamaske/neuropipeline2
+Project-URL: Bug Tracker, https://github.com/adamaske/neuropipeline2/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.13
+License-File: LICENSE
+Dynamic: license-file

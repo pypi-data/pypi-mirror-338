@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+neuropipeline2/__init__.py
+neuropipeline2/eeg.py
+neuropipeline2/fnirs.py
+neuropipeline2/module1.py
+neuropipeline2/module2.py
+neuropipeline2.egg-info/PKG-INFO
+neuropipeline2.egg-info/SOURCES.txt
+neuropipeline2.egg-info/dependency_links.txt
+neuropipeline2.egg-info/top_level.txt
+tests/test_module1.py
+tests/test_module2.py
