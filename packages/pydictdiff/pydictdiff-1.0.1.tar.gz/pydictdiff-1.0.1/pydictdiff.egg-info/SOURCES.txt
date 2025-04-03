@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+diffTool/__init__.py
+diffTool/diffTool.py
+pydictdiff.egg-info/PKG-INFO
+pydictdiff.egg-info/SOURCES.txt
+pydictdiff.egg-info/dependency_links.txt
+pydictdiff.egg-info/top_level.txt
