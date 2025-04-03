@@ -1,0 +1,2 @@
+[console_scripts]
+rethit_auto_package = rethit_auto_package.main:main

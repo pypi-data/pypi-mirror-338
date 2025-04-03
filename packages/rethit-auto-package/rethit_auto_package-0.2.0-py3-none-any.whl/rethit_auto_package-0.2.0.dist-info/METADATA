@@ -1,0 +1,20 @@
+Metadata-Version: 2.4
+Name: rethit_auto_package
+Version: 0.2.0
+Summary: A CLI tool generated from source based python
+Author: gigascake
+Author-email: gigascake@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.6
+License-File: LICENSE
+Requires-Dist: packaging==24.2
+Requires-Dist: requests==2.32.3
+Requires-Dist: setuptools==78.1.0
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: license-file
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
