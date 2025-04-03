@@ -1,0 +1,134 @@
+# Easy JSON-RPC
+
+Python과 Go 클라이언트/서버 간의 호환성을 위한 간단한 JSON-RPC 라이브러리입니다.
+
+## 특징
+
+- Python 3.5+ 지원
+- Python과 Go 간의 상호 운용성
+- 간단한 API로 쉬운 사용
+- 양방향 통신 및 알림(단방향) 지원
+- 자동 메서드 등록 및 네임스페이스 관리
+
+## 설치
+
+```bash
+pip install easy-jsonrpc
+```
+
+## 간단한 사용법
+
+### 서버 예제
+
+```python
+from easy_jsonrpc import EasyJSONRPCServer
+
+# 간단한 함수 정의
+def hello(params):
+    name = params.get("name", "World")
+    return "Hello, {}!".format(name)
+
+def add(params):
+    a = params.get("a", 0)
+    b = params.get("b", 0)
+    return a + b
+
+# 서버 초기화 및 실행
+server = EasyJSONRPCServer('localhost', 8080, allow_go_client=True)
+server.register_function(hello)
+server.register_function(add)
+server.start()
+```
+
+### Python 클라이언트 예제
+
+```python
+from easy_jsonrpc import EasyJSONRPCClient
+
+# 클라이언트 초기화
+client = EasyJSONRPCClient('http://localhost:8080')
+
+# 메서드 호출
+result = client.call('hello', {"name": "Alice"})
+print(result)  # 출력: Hello, Alice!
+
+sum_result = client.call('add', {"a": 5, "b": 3})
+print(sum_result)  # 출력: 8
+
+# 알림 전송 (응답 기다리지 않음)
+client.notify('hello', {"name": "Notification"})
+```
+
+### Go 클라이언트 예제
+
+```go
+package main
+
+import (
+    "context"
+    "fmt"
+    "github.com/filecoin-project/go-jsonrpc"
+)
+
+func main() {
+    // 클라이언트 생성
+	var client struct {
+		Hello func(ctx context.Context, params map[string]interface{}) (string, error)
+		Add   func(ctx context.Context, params map[string]interface{}) (int, error)
+	}
+    closer, err := jsonrpc.NewClient(context.Background(), "http://localhost:8080", "", &client, nil)
+    if err != nil {
+        panic(err)
+    }
+    defer closer()
+
+    // 메서드 호출
+    params := map[string]interface{}{
+        "name": "Bob",
+    }
+    result, err := client.Hello(context.Background(), params)
+    if err != nil {
+        panic(err)
+    }
+    fmt.Println(result)  // 출력: Hello, Bob!
+
+    // Add 메서드 호출
+    addParams := map[string]interface{}{
+        "a": 10,
+        "b": 20,
+    }
+    sum, err := client.Add(context.Background(), addParams)
+    if err != nil {
+        panic(err)
+    }
+    fmt.Println("Sum:", sum)  // 출력: Sum: 30
+}
+```
+
+## 클래스 등록 예제
+
+```python
+from easy_jsonrpc import EasyJSONRPCServer
+
+# 클래스 정의
+class Calculator:
+    def add(self, params):
+        a = params.get("a", 0)
+        b = params.get("b", 0)
+        return a + b
+        
+    def subtract(self, params):
+        a = params.get("a", 0)
+        b = params.get("b", 0)
+        return a - b
+        
+    def multiply(self, params):
+        a = params.get("a", 0)
+        b = params.get("b", 0)
+        return a * b
+
+# 서버 초기화 및 클래스 등록
+server = EasyJSONRPCServer('localhost', 8080)
+server.register_class(Calculator)  # Calculator의 모든 메서드 등록
+server.start()
+```
