@@ -1,0 +1,10 @@
+photo_organizer/__init__.py,sha256=1w1fV6jdFBOjWSZKdvTJJsxe-QEHOElZXYfnW_KIujs,20
+photo_organizer/main.py,sha256=SBNqw5Huwz64q20hoTWnCYSuJB_yg3GHRIyiQ3UFUvo,7186
+photo_organizer-1.2.0.dist-info/licenses/LICENSE,sha256=c-7I9azNVP4sflxxewvvLhJuceZToemfx46O_qWId6s,1061
+tests/__init__.py,sha256=1w1fV6jdFBOjWSZKdvTJJsxe-QEHOElZXYfnW_KIujs,20
+tests/test_main.py,sha256=kTeFw3GqwVlJs84NGXvW0IY_SUX48BTT6B7TlGLNr0U,8050
+photo_organizer-1.2.0.dist-info/METADATA,sha256=gW4i6QMhbiBmG5ljRBYk0S3zT3rZeKVS5TspiTard2w,4475
+photo_organizer-1.2.0.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+photo_organizer-1.2.0.dist-info/entry_points.txt,sha256=mVEsLNmnQm5UVsn6I_IBbpgqAiXIi1Qx6XnJfqFy2gs,62
+photo_organizer-1.2.0.dist-info/top_level.txt,sha256=fEkHF4zRXWYwo3Y9wk0pgFsVibUFeI0RIzrgBW3OPqk,22
+photo_organizer-1.2.0.dist-info/RECORD,,
