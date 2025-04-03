@@ -1,0 +1,34 @@
+Metadata-Version: 2.4
+Name: aula3_curso_fiap-package
+Version: 1.0.0
+Summary: Descricao da sua lib aula3_curso_fiap
+Home-page: https://github.com/tadrianonet/aula3_curso_fiap
+Author: seu nome
+Author-email: seu.email@example.com
+License: MIT
+Description-Content-Type: text/markdown
+Dynamic: author
+Dynamic: author-email
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: license
+Dynamic: summary
+
+# Aula3_curso_fiap
+
+A simple example library.
+
+## Installation
+
+```sh
+pip install aula3_curso_fiap
+```
+
+## Usage
+
+```python
+from aula3_curso_fiap import hello_world
+
+print(hello_world())
+```

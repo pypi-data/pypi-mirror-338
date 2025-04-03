@@ -1,0 +1,9 @@
+README.md
+setup.py
+aula3_curso_fiap/__init__.py
+aula3_curso_fiap/core.py
+aula3_curso_fiap_package.egg-info/PKG-INFO
+aula3_curso_fiap_package.egg-info/SOURCES.txt
+aula3_curso_fiap_package.egg-info/dependency_links.txt
+aula3_curso_fiap_package.egg-info/top_level.txt
+tests/test_core.py
