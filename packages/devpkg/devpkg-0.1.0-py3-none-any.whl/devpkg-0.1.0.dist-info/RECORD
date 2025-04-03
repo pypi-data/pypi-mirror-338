@@ -1,0 +1,7 @@
+devpkg/__init__.py,sha256=dGyPt81zzg_HuIuiZ7jfKGz00HCkn-M_3dJl9gt7MAk,101
+devpkg/check_dependencies.py,sha256=_oyQGD0gHZnPF6yp4umEapj2fartuPvLuIFlOvb0tSo,2708
+devpkg/check_imports.py,sha256=Hk4u2TcPq4RnFa9d_zbtJh7WFgKx1f5o1x70C80h1zM,7017
+devpkg/versions.py,sha256=_PNhGD-E0RbFbtMeFJhL-g7_P8Zf7IHexjg6i71mAbs,17666
+devpkg-0.1.0.dist-info/METADATA,sha256=zHIDHZ61qEvscfY_8D2qQrwWg5WiuiCCZDgIFFb9ULw,569
+devpkg-0.1.0.dist-info/WHEEL,sha256=fGIA9gx4Qxk2KDKeNJCbOEwSrmLtjWCwzBz351GyrPQ,88
+devpkg-0.1.0.dist-info/RECORD,,
