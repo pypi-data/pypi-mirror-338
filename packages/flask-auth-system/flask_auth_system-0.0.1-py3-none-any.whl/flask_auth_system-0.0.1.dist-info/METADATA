@@ -1,0 +1,13 @@
+Metadata-Version: 2.4
+Name: flask-auth-system
+Version: 0.0.1
+Requires-Dist: flask
+Requires-Dist: jwt
+Requires-Dist: email_validator
+Requires-Dist: flask_sqlalchemy
+Requires-Dist: flask_migrate
+Requires-Dist: fernet
+Requires-Dist: python-dotenv
+Requires-Dist: requests
+Requires-Dist: cryptography
+Dynamic: requires-dist
