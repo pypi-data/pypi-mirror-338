@@ -1,0 +1,2690 @@
+{
+  "browser_type": "chrome",
+  "start_time": "2025-03-28T19:18:51.692684",
+  "end_time": "2025-03-28T19:19:19.743875",
+  "commands": [],
+  "screenshots": [
+    {
+      "timestamp": "2025-03-28T19:18:52.293867",
+      "path": "screenshots/screenshot_20250328_191852.png"
+    }
+  ],
+  "elements": [],
+  "actions": [
+    {
+      "type": "click",
+      "timestamp": "2025-03-28T13:49:12.414Z",
+      "element": {
+        "tagName": "MACROPONENT-F51912F4C700201072B211D4D8C26010",
+        "id": "",
+        "className": "",
+        "value": "",
+        "role": null,
+        "aria-label": null,
+        "xpath": "/html[1]/body[1]/macroponent-f51912f4c700201072b211d4d8c26010[1]",
+        "shadowPath": [
+          {
+            "host": {
+              "tagName": "HTML",
+              "id": "",
+              "className": ""
+            },
+            "shadowRoot": false
+          },
+          {
+            "host": {
+              "tagName": "BODY",
+              "id": "",
+              "className": ""
+            },
+            "shadowRoot": false
+          },
+          {
+            "host": {
+              "tagName": "MACROPONENT-F51912F4C700201072B211D4D8C26010",
+              "id": "",
+              "className": ""
+            },
+            "shadowRoot": true
+          }
+        ],
+        "rect": {
+          "x": 0,
+          "y": 0,
+          "width": 1280,
+          "height": 720
+        }
+      },
+      "coordinates": {
+        "x": 215,
+        "y": 26
+      }
+    },
+    {
+      "type": "click",
+      "timestamp": "2025-03-28T13:49:12.414Z",
+      "element": {
+        "tagName": "SN-POLARIS-LAYOUT",
+        "id": "",
+        "className": "",
+        "value": "",
+        "role": null,
+        "aria-label": null,
+        "xpath": "/div[1]/sn-canvas-appshell-root[1]/sn-canvas-appshell-layout[1]/sn-polaris-layout[1]",
+        "shadowPath": [
+          {
+            "host": {
+              "tagName": "HTML",
+              "id": "",
+              "className": ""
+            },
+            "shadowRoot": false
+          },
+          {
+            "host": {
+              "tagName": "BODY",
+              "id": "",
+              "className": ""
+            },
+            "shadowRoot": false
+          },
+          {
+            "host": {
+              "tagName": "MACROPONENT-F51912F4C700201072B211D4D8C26010",
+              "id": "",
+              "className": ""
+            },
+            "shadowRoot": true
+          },
+          {
+            "host": {
+              "tagName": "DIV",
+              "id": "",
+              "className": ""
+            },
+            "shadowRoot": false
+          },
+          {
+            "host": {
+              "tagName": "SN-CANVAS-APPSHELL-ROOT",
+              "id": "",
+              "className": ""
+            },
+            "shadowRoot": true
+          },
+          {
+            "host": {
+              "tagName": "SN-CANVAS-APPSHELL-LAYOUT",
+              "id": "",
+              "className": ""
+            },
+            "shadowRoot": true
+          },
+          {
+            "host": {
+              "tagName": "SN-POLARIS-LAYOUT",
+              "id": "",
+              "className": ""
+            },
+            "shadowRoot": true
+          }
+        ],
+        "rect": {
+          "x": 0,
+          "y": 0,
+          "width": 1280,
+          "height": 720
+        }
+      },
+      "coordinates": {
+        "x": 215,
+        "y": 26
+      }
+    },
+    {
+      "type": "click",
+      "timestamp": "2025-03-28T13:49:12.414Z",
+      "element": {
+        "tagName": "SN-POLARIS-LAYOUT",
+        "id": "",
+        "className": "",
+        "value": "",
+        "role": null,
+        "aria-label": null,
+        "xpath": "/div[1]/sn-canvas-appshell-root[1]/sn-canvas-appshell-layout[1]/sn-polaris-layout[1]",
+        "shadowPath": [
+          {
+            "host": {
+              "tagName": "HTML",
+              "id": "",
+              "className": ""
+            },
+            "shadowRoot": false
+          },
+          {
+            "host": {
+              "tagName": "BODY",
+              "id": "",
+              "className": ""
+            },
+            "shadowRoot": false
+          },
+          {
+            "host": {
+              "tagName": "MACROPONENT-F51912F4C700201072B211D4D8C26010",
+              "id": "",
+              "className": ""
+            },
+            "shadowRoot": true
+          },
+          {
+            "host": {
+              "tagName": "DIV",
+              "id": "",
+              "className": ""
+            },
+            "shadowRoot": false
+          },
+          {
+            "host": {
+              "tagName": "SN-CANVAS-APPSHELL-ROOT",
+              "id": "",
+              "className": ""
+            },
+            "shadowRoot": true
+          },
+          {
+            "host": {
+              "tagName": "SN-CANVAS-APPSHELL-LAYOUT",
+              "id": "",
+              "className": ""
+            },
+            "shadowRoot": true
+          },
+          {
+            "host": {
+              "tagName": "SN-POLARIS-LAYOUT",
+              "id": "",
+              "className": ""
+            },
+            "shadowRoot": true
+          }
+        ],
+        "rect": {
+          "x": 0,
+          "y": 0,
+          "width": 1280,
+          "height": 720
+        }
+      },
+      "coordinates": {
+        "x": 215,
+        "y": 26
+      }
+    },
+    {
+      "type": "click",
+      "timestamp": "2025-03-28T13:49:12.414Z",
+      "element": {
+        "tagName": "SN-POLARIS-LAYOUT",
+        "id": "",
+        "className": "",
+        "value": "",
+        "role": null,
+        "aria-label": null,
+        "xpath": "/div[1]/sn-canvas-appshell-root[1]/sn-canvas-appshell-layout[1]/sn-polaris-layout[1]",
+        "shadowPath": [
+          {
+            "host": {
+              "tagName": "HTML",
+              "id": "",
+              "className": ""
+            },
+            "shadowRoot": false
+          },
+          {
+            "host": {
+              "tagName": "BODY",
+              "id": "",
+              "className": ""
+            },
+            "shadowRoot": false
+          },
+          {
+            "host": {
+              "tagName": "MACROPONENT-F51912F4C700201072B211D4D8C26010",
+              "id": "",
+              "className": ""
+            },
+            "shadowRoot": true
+          },
+          {
+            "host": {
+              "tagName": "DIV",
+              "id": "",
+              "className": ""
+            },
+            "shadowRoot": false
+          },
+          {
+            "host": {
+              "tagName": "SN-CANVAS-APPSHELL-ROOT",
+              "id": "",
+              "className": ""
+            },
+            "shadowRoot": true
+          },
+          {
+            "host": {
+              "tagName": "SN-CANVAS-APPSHELL-LAYOUT",
+              "id": "",
+              "className": ""
+            },
+            "shadowRoot": true
+          },
+          {
+            "host": {
+              "tagName": "SN-POLARIS-LAYOUT",
+              "id": "",
+              "className": ""
+            },
+            "shadowRoot": true
+          }
+        ],
+        "rect": {
+          "x": 0,
+          "y": 0,
+          "width": 1280,
+          "height": 720
+        }
+      },
+      "coordinates": {
+        "x": 215,
+        "y": 26
+      }
+    },
+    {
+      "type": "click",
+      "timestamp": "2025-03-28T13:49:12.414Z",
+      "element": {
+        "tagName": "SN-POLARIS-HEADER",
+        "id": "",
+        "className": "",
+        "value": "",
+        "role": null,
+        "aria-label": null,
+        "xpath": "/div[2]/div[2]/div[1]/sn-polaris-header[1]",
+        "shadowPath": [
+          {
+            "host": {
+              "tagName": "HTML",
+              "id": "",
+              "className": ""
+            },
+            "shadowRoot": false
+          },
+          {
+            "host": {
+              "tagName": "BODY",
+              "id": "",
+              "className": ""
+            },
+            "shadowRoot": false
+          },
+          {
+            "host": {
+              "tagName": "MACROPONENT-F51912F4C700201072B211D4D8C26010",
+              "id": "",
+              "className": ""
+            },
+            "shadowRoot": true
+          },
+          {
+            "host": {
+              "tagName": "DIV",
+              "id": "",
+              "className": ""
+            },
+            "shadowRoot": false
+          },
+          {
+            "host": {
+              "tagName": "SN-CANVAS-APPSHELL-ROOT",
+              "id": "",
+              "className": ""
+            },
+            "shadowRoot": true
+          },
+          {
+            "host": {
+              "tagName": "SN-CANVAS-APPSHELL-LAYOUT",
+              "id": "",
+              "className": ""
+            },
+            "shadowRoot": true
+          },
+          {
+            "host": {
+              "tagName": "SN-POLARIS-LAYOUT",
+              "id": "",
+              "className": ""
+            },
+            "shadowRoot": true
+          },
+          {
+            "host": {
+              "tagName": "DIV",
+              "id": "",
+              "className": "sn-polaris-layout polaris-enabled"
+            },
+            "shadowRoot": false
+          },
+          {
+            "host": {
+              "tagName": "DIV",
+              "id": "",
+              "className": "layout-main"
+            },
+            "shadowRoot": false
+          },
+          {
+            "host": {
+              "tagName": "DIV",
+              "id": "",
+              "className": "header-bar"
+            },
+            "shadowRoot": false
+          },
+          {
+            "host": {
+              "tagName": "SN-POLARIS-HEADER",
+              "id": "",
+              "className": ""
+            },
+            "shadowRoot": true
+          }
+        ],
+        "rect": {
+          "x": 0,
+          "y": 0,
+          "width": 1280,
+          "height": 52
+        }
+      },
+      "coordinates": {
+        "x": 215,
+        "y": 26
+      }
+    },
+    {
+      "type": "click",
+      "timestamp": "2025-03-28T13:49:12.414Z",
+      "element": {
+        "tagName": "DIV",
+        "id": "d6e462a5c3533010cbd77096e940dd8c",
+        "className": "sn-polaris-tab can-animate polaris-enabled",
+        "value": "",
+        "role": "menuitem",
+        "aria-label": "All",
+        "xpath": "//*[@id='d6e462a5c3533010cbd77096e940dd8c']",
+        "shadowPath": [
+          {
+            "host": {
+              "tagName": "HTML",
+              "id": "",
+              "className": ""
+            },
+            "shadowRoot": false
+          },
+          {
+            "host": {
+              "tagName": "BODY",
+              "id": "",
+              "className": ""
+            },
+            "shadowRoot": false
+          },
+          {
+            "host": {
+              "tagName": "MACROPONENT-F51912F4C700201072B211D4D8C26010",
+              "id": "",
+              "className": ""
+            },
+            "shadowRoot": true
+          },
+          {
+            "host": {
+              "tagName": "DIV",
+              "id": "",
+              "className": ""
+            },
+            "shadowRoot": false
+          },
+          {
+            "host": {
+              "tagName": "SN-CANVAS-APPSHELL-ROOT",
+              "id": "",
+              "className": ""
+            },
+            "shadowRoot": true
+          },
+          {
+            "host": {
+              "tagName": "SN-CANVAS-APPSHELL-LAYOUT",
+              "id": "",
+              "className": ""
+            },
+            "shadowRoot": true
+          },
+          {
+            "host": {
+              "tagName": "SN-POLARIS-LAYOUT",
+              "id": "",
+              "className": ""
+            },
+            "shadowRoot": true
+          },
+          {
+            "host": {
+              "tagName": "DIV",
+              "id": "",
+              "className": "sn-polaris-layout polaris-enabled"
+            },
+            "shadowRoot": false
+          },
+          {
+            "host": {
+              "tagName": "DIV",
+              "id": "",
+              "className": "layout-main"
+            },
+            "shadowRoot": false
+          },
+          {
+            "host": {
+              "tagName": "DIV",
+              "id": "",
+              "className": "header-bar"
+            },
+            "shadowRoot": false
+          },
+          {
+            "host": {
+              "tagName": "SN-POLARIS-HEADER",
+              "id": "",
+              "className": ""
+            },
+            "shadowRoot": true
+          },
+          {
+            "host": {
+              "tagName": "NAV",
+              "id": "",
+              "className": "polaris-layout"
+            },
+            "shadowRoot": false
+          },
+          {
+            "host": {
+              "tagName": "DIV",
+              "id": "",
+              "className": "polaris-header can-animate polaris-enabled"
+            },
+            "shadowRoot": false
+          },
+          {
+            "host": {
+              "tagName": "DIV",
+              "id": "",
+              "className": "starting-header-zone"
+            },
+            "shadowRoot": false
+          },
+          {
+            "host": {
+              "tagName": "DIV",
+              "id": "",
+              "className": "sn-polaris-navigation polaris-header-menu"
+            },
+            "shadowRoot": false
+          },
+          {
+            "host": {
+              "tagName": "DIV",
+              "id": "d6e462a5c3533010cbd77096e940dd8c",
+              "className": "sn-polaris-tab can-animate polaris-enabled"
+            },
+            "shadowRoot": false
+          }
+        ],
+        "rect": {
+          "x": 194,
+          "y": 10,
+          "width": 42.234375,
+          "height": 32
+        }
+      },
+      "coordinates": {
+        "x": 215,
+        "y": 26
+      }
+    },
+    {
+      "type": "click",
+      "timestamp": "2025-03-28T13:49:15.498Z",
+      "element": {
+        "tagName": "MACROPONENT-F51912F4C700201072B211D4D8C26010",
+        "id": "",
+        "className": "",
+        "value": "",
+        "role": null,
+        "aria-label": null,
+        "xpath": "/html[1]/body[1]/macroponent-f51912f4c700201072b211d4d8c26010[1]",
+        "shadowPath": [
+          {
+            "host": {
+              "tagName": "HTML",
+              "id": "",
+              "className": ""
+            },
+            "shadowRoot": false
+          },
+          {
+            "host": {
+              "tagName": "BODY",
+              "id": "",
+              "className": ""
+            },
+            "shadowRoot": false
+          },
+          {
+            "host": {
+              "tagName": "MACROPONENT-F51912F4C700201072B211D4D8C26010",
+              "id": "",
+              "className": ""
+            },
+            "shadowRoot": true
+          }
+        ],
+        "rect": {
+          "x": 0,
+          "y": 0,
+          "width": 1280,
+          "height": 720
+        }
+      },
+      "coordinates": {
+        "x": 226,
+        "y": 261
+      }
+    },
+    {
+      "type": "click",
+      "timestamp": "2025-03-28T13:49:15.498Z",
+      "element": {
+        "tagName": "SN-POLARIS-LAYOUT",
+        "id": "",
+        "className": "",
+        "value": "",
+        "role": null,
+        "aria-label": null,
+        "xpath": "/div[1]/sn-canvas-appshell-root[1]/sn-canvas-appshell-layout[1]/sn-polaris-layout[1]",
+        "shadowPath": [
+          {
+            "host": {
+              "tagName": "HTML",
+              "id": "",
+              "className": ""
+            },
+            "shadowRoot": false
+          },
+          {
+            "host": {
+              "tagName": "BODY",
+              "id": "",
+              "className": ""
+            },
+            "shadowRoot": false
+          },
+          {
+            "host": {
+              "tagName": "MACROPONENT-F51912F4C700201072B211D4D8C26010",
+              "id": "",
+              "className": ""
+            },
+            "shadowRoot": true
+          },
+          {
+            "host": {
+              "tagName": "DIV",
+              "id": "",
+              "className": ""
+            },
+            "shadowRoot": false
+          },
+          {
+            "host": {
+              "tagName": "SN-CANVAS-APPSHELL-ROOT",
+              "id": "",
+              "className": ""
+            },
+            "shadowRoot": true
+          },
+          {
+            "host": {
+              "tagName": "SN-CANVAS-APPSHELL-LAYOUT",
+              "id": "",
+              "className": ""
+            },
+            "shadowRoot": true
+          },
+          {
+            "host": {
+              "tagName": "SN-POLARIS-LAYOUT",
+              "id": "",
+              "className": ""
+            },
+            "shadowRoot": true
+          }
+        ],
+        "rect": {
+          "x": 0,
+          "y": 0,
+          "width": 1280,
+          "height": 720
+        }
+      },
+      "coordinates": {
+        "x": 226,
+        "y": 261
+      }
+    },
+    {
+      "type": "click",
+      "timestamp": "2025-03-28T13:49:15.498Z",
+      "element": {
+        "tagName": "SN-POLARIS-LAYOUT",
+        "id": "",
+        "className": "",
+        "value": "",
+        "role": null,
+        "aria-label": null,
+        "xpath": "/div[1]/sn-canvas-appshell-root[1]/sn-canvas-appshell-layout[1]/sn-polaris-layout[1]",
+        "shadowPath": [
+          {
+            "host": {
+              "tagName": "HTML",
+              "id": "",
+              "className": ""
+            },
+            "shadowRoot": false
+          },
+          {
+            "host": {
+              "tagName": "BODY",
+              "id": "",
+              "className": ""
+            },
+            "shadowRoot": false
+          },
+          {
+            "host": {
+              "tagName": "MACROPONENT-F51912F4C700201072B211D4D8C26010",
+              "id": "",
+              "className": ""
+            },
+            "shadowRoot": true
+          },
+          {
+            "host": {
+              "tagName": "DIV",
+              "id": "",
+              "className": ""
+            },
+            "shadowRoot": false
+          },
+          {
+            "host": {
+              "tagName": "SN-CANVAS-APPSHELL-ROOT",
+              "id": "",
+              "className": ""
+            },
+            "shadowRoot": true
+          },
+          {
+            "host": {
+              "tagName": "SN-CANVAS-APPSHELL-LAYOUT",
+              "id": "",
+              "className": ""
+            },
+            "shadowRoot": true
+          },
+          {
+            "host": {
+              "tagName": "SN-POLARIS-LAYOUT",
+              "id": "",
+              "className": ""
+            },
+            "shadowRoot": true
+          }
+        ],
+        "rect": {
+          "x": 0,
+          "y": 0,
+          "width": 1280,
+          "height": 720
+        }
+      },
+      "coordinates": {
+        "x": 226,
+        "y": 261
+      }
+    },
+    {
+      "type": "click",
+      "timestamp": "2025-03-28T13:49:15.498Z",
+      "element": {
+        "tagName": "SN-POLARIS-LAYOUT",
+        "id": "",
+        "className": "",
+        "value": "",
+        "role": null,
+        "aria-label": null,
+        "xpath": "/div[1]/sn-canvas-appshell-root[1]/sn-canvas-appshell-layout[1]/sn-polaris-layout[1]",
+        "shadowPath": [
+          {
+            "host": {
+              "tagName": "HTML",
+              "id": "",
+              "className": ""
+            },
+            "shadowRoot": false
+          },
+          {
+            "host": {
+              "tagName": "BODY",
+              "id": "",
+              "className": ""
+            },
+            "shadowRoot": false
+          },
+          {
+            "host": {
+              "tagName": "MACROPONENT-F51912F4C700201072B211D4D8C26010",
+              "id": "",
+              "className": ""
+            },
+            "shadowRoot": true
+          },
+          {
+            "host": {
+              "tagName": "DIV",
+              "id": "",
+              "className": ""
+            },
+            "shadowRoot": false
+          },
+          {
+            "host": {
+              "tagName": "SN-CANVAS-APPSHELL-ROOT",
+              "id": "",
+              "className": ""
+            },
+            "shadowRoot": true
+          },
+          {
+            "host": {
+              "tagName": "SN-CANVAS-APPSHELL-LAYOUT",
+              "id": "",
+              "className": ""
+            },
+            "shadowRoot": true
+          },
+          {
+            "host": {
+              "tagName": "SN-POLARIS-LAYOUT",
+              "id": "",
+              "className": ""
+            },
+            "shadowRoot": true
+          }
+        ],
+        "rect": {
+          "x": 0,
+          "y": 0,
+          "width": 1280,
+          "height": 720
+        }
+      },
+      "coordinates": {
+        "x": 226,
+        "y": 261
+      }
+    },
+    {
+      "type": "click",
+      "timestamp": "2025-03-28T13:49:15.498Z",
+      "element": {
+        "tagName": "SN-POLARIS-HEADER",
+        "id": "",
+        "className": "",
+        "value": "",
+        "role": null,
+        "aria-label": null,
+        "xpath": "/div[2]/div[2]/div[1]/sn-polaris-header[1]",
+        "shadowPath": [
+          {
+            "host": {
+              "tagName": "HTML",
+              "id": "",
+              "className": ""
+            },
+            "shadowRoot": false
+          },
+          {
+            "host": {
+              "tagName": "BODY",
+              "id": "",
+              "className": ""
+            },
+            "shadowRoot": false
+          },
+          {
+            "host": {
+              "tagName": "MACROPONENT-F51912F4C700201072B211D4D8C26010",
+              "id": "",
+              "className": ""
+            },
+            "shadowRoot": true
+          },
+          {
+            "host": {
+              "tagName": "DIV",
+              "id": "",
+              "className": ""
+            },
+            "shadowRoot": false
+          },
+          {
+            "host": {
+              "tagName": "SN-CANVAS-APPSHELL-ROOT",
+              "id": "",
+              "className": ""
+            },
+            "shadowRoot": true
+          },
+          {
+            "host": {
+              "tagName": "SN-CANVAS-APPSHELL-LAYOUT",
+              "id": "",
+              "className": ""
+            },
+            "shadowRoot": true
+          },
+          {
+            "host": {
+              "tagName": "SN-POLARIS-LAYOUT",
+              "id": "",
+              "className": ""
+            },
+            "shadowRoot": true
+          },
+          {
+            "host": {
+              "tagName": "DIV",
+              "id": "",
+              "className": "sn-polaris-layout polaris-enabled"
+            },
+            "shadowRoot": false
+          },
+          {
+            "host": {
+              "tagName": "DIV",
+              "id": "",
+              "className": "layout-main"
+            },
+            "shadowRoot": false
+          },
+          {
+            "host": {
+              "tagName": "DIV",
+              "id": "",
+              "className": "header-bar"
+            },
+            "shadowRoot": false
+          },
+          {
+            "host": {
+              "tagName": "SN-POLARIS-HEADER",
+              "id": "",
+              "className": ""
+            },
+            "shadowRoot": true
+          }
+        ],
+        "rect": {
+          "x": 0,
+          "y": 0,
+          "width": 1280,
+          "height": 52
+        }
+      },
+      "coordinates": {
+        "x": 226,
+        "y": 261
+      }
+    },
+    {
+      "type": "click",
+      "timestamp": "2025-03-28T13:49:15.498Z",
+      "element": {
+        "tagName": "SN-POLARIS-MENU",
+        "id": "",
+        "className": "can-animate is-main-menu is-open",
+        "value": "",
+        "role": "navigation",
+        "aria-label": "Unpinned All menu",
+        "xpath": "/nav[1]/div[1]/div[1]/sn-polaris-menu[1]",
+        "shadowPath": [
+          {
+            "host": {
+              "tagName": "HTML",
+              "id": "",
+              "className": ""
+            },
+            "shadowRoot": false
+          },
+          {
+            "host": {
+              "tagName": "BODY",
+              "id": "",
+              "className": ""
+            },
+            "shadowRoot": false
+          },
+          {
+            "host": {
+              "tagName": "MACROPONENT-F51912F4C700201072B211D4D8C26010",
+              "id": "",
+              "className": ""
+            },
+            "shadowRoot": true
+          },
+          {
+            "host": {
+              "tagName": "DIV",
+              "id": "",
+              "className": ""
+            },
+            "shadowRoot": false
+          },
+          {
+            "host": {
+              "tagName": "SN-CANVAS-APPSHELL-ROOT",
+              "id": "",
+              "className": ""
+            },
+            "shadowRoot": true
+          },
+          {
+            "host": {
+              "tagName": "SN-CANVAS-APPSHELL-LAYOUT",
+              "id": "",
+              "className": ""
+            },
+            "shadowRoot": true
+          },
+          {
+            "host": {
+              "tagName": "SN-POLARIS-LAYOUT",
+              "id": "",
+              "className": ""
+            },
+            "shadowRoot": true
+          },
+          {
+            "host": {
+              "tagName": "DIV",
+              "id": "",
+              "className": "sn-polaris-layout polaris-enabled"
+            },
+            "shadowRoot": false
+          },
+          {
+            "host": {
+              "tagName": "DIV",
+              "id": "",
+              "className": "layout-main"
+            },
+            "shadowRoot": false
+          },
+          {
+            "host": {
+              "tagName": "DIV",
+              "id": "",
+              "className": "header-bar"
+            },
+            "shadowRoot": false
+          },
+          {
+            "host": {
+              "tagName": "SN-POLARIS-HEADER",
+              "id": "",
+              "className": ""
+            },
+            "shadowRoot": true
+          },
+          {
+            "host": {
+              "tagName": "NAV",
+              "id": "",
+              "className": "polaris-layout"
+            },
+            "shadowRoot": false
+          },
+          {
+            "host": {
+              "tagName": "DIV",
+              "id": "",
+              "className": "polaris-header can-animate polaris-enabled"
+            },
+            "shadowRoot": false
+          },
+          {
+            "host": {
+              "tagName": "DIV",
+              "id": "",
+              "className": "starting-header-zone"
+            },
+            "shadowRoot": false
+          },
+          {
+            "host": {
+              "tagName": "SN-POLARIS-MENU",
+              "id": "",
+              "className": "can-animate is-main-menu is-open"
+            },
+            "shadowRoot": true
+          }
+        ],
+        "rect": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        }
+      },
+      "coordinates": {
+        "x": 226,
+        "y": 261
+      }
+    },
+    {
+      "type": "click",
+      "timestamp": "2025-03-28T13:49:15.498Z",
+      "element": {
+        "tagName": "SN-COLLAPSIBLE-LIST",
+        "id": "",
+        "className": "",
+        "value": "",
+        "role": null,
+        "aria-label": null,
+        "xpath": "/nav[1]/div[2]/div[2]/div[4]/div[1]/div[1]/div[1]/sn-collapsible-list[1]",
+        "shadowPath": [
+          {
+            "host": {
+              "tagName": "HTML",
+              "id": "",
+              "className": ""
+            },
+            "shadowRoot": false
+          },
+          {
+            "host": {
+              "tagName": "BODY",
+              "id": "",
+              "className": ""
+            },
+            "shadowRoot": false
+          },
+          {
+            "host": {
+              "tagName": "MACROPONENT-F51912F4C700201072B211D4D8C26010",
+              "id": "",
+              "className": ""
+            },
+            "shadowRoot": true
+          },
+          {
+            "host": {
+              "tagName": "DIV",
+              "id": "",
+              "className": ""
+            },
+            "shadowRoot": false
+          },
+          {
+            "host": {
+              "tagName": "SN-CANVAS-APPSHELL-ROOT",
+              "id": "",
+              "className": ""
+            },
+            "shadowRoot": true
+          },
+          {
+            "host": {
+              "tagName": "SN-CANVAS-APPSHELL-LAYOUT",
+              "id": "",
+              "className": ""
+            },
+            "shadowRoot": true
+          },
+          {
+            "host": {
+              "tagName": "SN-POLARIS-LAYOUT",
+              "id": "",
+              "className": ""
+            },
+            "shadowRoot": true
+          },
+          {
+            "host": {
+              "tagName": "DIV",
+              "id": "",
+              "className": "sn-polaris-layout polaris-enabled"
+            },
+            "shadowRoot": false
+          },
+          {
+            "host": {
+              "tagName": "DIV",
+              "id": "",
+              "className": "layout-main"
+            },
+            "shadowRoot": false
+          },
+          {
+            "host": {
+              "tagName": "DIV",
+              "id": "",
+              "className": "header-bar"
+            },
+            "shadowRoot": false
+          },
+          {
+            "host": {
+              "tagName": "SN-POLARIS-HEADER",
+              "id": "",
+              "className": ""
+            },
+            "shadowRoot": true
+          },
+          {
+            "host": {
+              "tagName": "NAV",
+              "id": "",
+              "className": "polaris-layout"
+            },
+            "shadowRoot": false
+          },
+          {
+            "host": {
+              "tagName": "DIV",
+              "id": "",
+              "className": "polaris-header can-animate polaris-enabled"
+            },
+            "shadowRoot": false
+          },
+          {
+            "host": {
+              "tagName": "DIV",
+              "id": "",
+              "className": "starting-header-zone"
+            },
+            "shadowRoot": false
+          },
+          {
+            "host": {
+              "tagName": "SN-POLARIS-MENU",
+              "id": "",
+              "className": "can-animate is-main-menu is-open"
+            },
+            "shadowRoot": true
+          },
+          {
+            "host": {
+              "tagName": "NAV",
+              "id": "",
+              "className": "menu-body can-animate is-visible"
+            },
+            "shadowRoot": false
+          },
+          {
+            "host": {
+              "tagName": "DIV",
+              "id": "",
+              "className": "sn-polaris-nav d6e462a5c3533010cbd77096e940dd8c can-animate"
+            },
+            "shadowRoot": false
+          },
+          {
+            "host": {
+              "tagName": "DIV",
+              "id": "",
+              "className": "super-filter-container all-results-open"
+            },
+            "shadowRoot": false
+          },
+          {
+            "host": {
+              "tagName": "DIV",
+              "id": "",
+              "className": "all-results-section section-open results-section"
+            },
+            "shadowRoot": false
+          },
+          {
+            "host": {
+              "tagName": "DIV",
+              "id": "",
+              "className": "sn-tree-menu sn-polaris-nav-content"
+            },
+            "shadowRoot": false
+          },
+          {
+            "host": {
+              "tagName": "DIV",
+              "id": "",
+              "className": "sn-polaris-tab-content -left is-visible can-animate"
+            },
+            "shadowRoot": false
+          },
+          {
+            "host": {
+              "tagName": "DIV",
+              "id": "",
+              "className": "sn-polaris-nav-body hide-scroll"
+            },
+            "shadowRoot": false
+          },
+          {
+            "host": {
+              "tagName": "SN-COLLAPSIBLE-LIST",
+              "id": "",
+              "className": ""
+            },
+            "shadowRoot": true
+          }
+        ],
+        "rect": {
+          "x": 81,
+          "y": 213.25,
+          "width": 285,
+          "height": 64
+        }
+      },
+      "coordinates": {
+        "x": 226,
+        "y": 261
+      }
+    }
+  ],
+  "events": [
+    {
+      "type": "recorded-click",
+      "detail": {
+        "type": "click",
+        "timestamp": "2025-03-28T13:49:12.414Z",
+        "element": {
+          "tagName": "MACROPONENT-F51912F4C700201072B211D4D8C26010",
+          "id": "",
+          "className": "",
+          "value": "",
+          "role": null,
+          "aria-label": null,
+          "xpath": "/html[1]/body[1]/macroponent-f51912f4c700201072b211d4d8c26010[1]",
+          "shadowPath": [
+            {
+              "host": {
+                "tagName": "HTML",
+                "id": "",
+                "className": ""
+              },
+              "shadowRoot": false
+            },
+            {
+              "host": {
+                "tagName": "BODY",
+                "id": "",
+                "className": ""
+              },
+              "shadowRoot": false
+            },
+            {
+              "host": {
+                "tagName": "MACROPONENT-F51912F4C700201072B211D4D8C26010",
+                "id": "",
+                "className": ""
+              },
+              "shadowRoot": true
+            }
+          ],
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "coordinates": {
+          "x": 215,
+          "y": 26
+        }
+      }
+    },
+    {
+      "type": "recorded-click",
+      "detail": {
+        "type": "click",
+        "timestamp": "2025-03-28T13:49:12.414Z",
+        "element": {
+          "tagName": "SN-POLARIS-LAYOUT",
+          "id": "",
+          "className": "",
+          "value": "",
+          "role": null,
+          "aria-label": null,
+          "xpath": "/div[1]/sn-canvas-appshell-root[1]/sn-canvas-appshell-layout[1]/sn-polaris-layout[1]",
+          "shadowPath": [
+            {
+              "host": {
+                "tagName": "HTML",
+                "id": "",
+                "className": ""
+              },
+              "shadowRoot": false
+            },
+            {
+              "host": {
+                "tagName": "BODY",
+                "id": "",
+                "className": ""
+              },
+              "shadowRoot": false
+            },
+            {
+              "host": {
+                "tagName": "MACROPONENT-F51912F4C700201072B211D4D8C26010",
+                "id": "",
+                "className": ""
+              },
+              "shadowRoot": true
+            },
+            {
+              "host": {
+                "tagName": "DIV",
+                "id": "",
+                "className": ""
+              },
+              "shadowRoot": false
+            },
+            {
+              "host": {
+                "tagName": "SN-CANVAS-APPSHELL-ROOT",
+                "id": "",
+                "className": ""
+              },
+              "shadowRoot": true
+            },
+            {
+              "host": {
+                "tagName": "SN-CANVAS-APPSHELL-LAYOUT",
+                "id": "",
+                "className": ""
+              },
+              "shadowRoot": true
+            },
+            {
+              "host": {
+                "tagName": "SN-POLARIS-LAYOUT",
+                "id": "",
+                "className": ""
+              },
+              "shadowRoot": true
+            }
+          ],
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "coordinates": {
+          "x": 215,
+          "y": 26
+        }
+      }
+    },
+    {
+      "type": "recorded-click",
+      "detail": {
+        "type": "click",
+        "timestamp": "2025-03-28T13:49:12.414Z",
+        "element": {
+          "tagName": "SN-POLARIS-LAYOUT",
+          "id": "",
+          "className": "",
+          "value": "",
+          "role": null,
+          "aria-label": null,
+          "xpath": "/div[1]/sn-canvas-appshell-root[1]/sn-canvas-appshell-layout[1]/sn-polaris-layout[1]",
+          "shadowPath": [
+            {
+              "host": {
+                "tagName": "HTML",
+                "id": "",
+                "className": ""
+              },
+              "shadowRoot": false
+            },
+            {
+              "host": {
+                "tagName": "BODY",
+                "id": "",
+                "className": ""
+              },
+              "shadowRoot": false
+            },
+            {
+              "host": {
+                "tagName": "MACROPONENT-F51912F4C700201072B211D4D8C26010",
+                "id": "",
+                "className": ""
+              },
+              "shadowRoot": true
+            },
+            {
+              "host": {
+                "tagName": "DIV",
+                "id": "",
+                "className": ""
+              },
+              "shadowRoot": false
+            },
+            {
+              "host": {
+                "tagName": "SN-CANVAS-APPSHELL-ROOT",
+                "id": "",
+                "className": ""
+              },
+              "shadowRoot": true
+            },
+            {
+              "host": {
+                "tagName": "SN-CANVAS-APPSHELL-LAYOUT",
+                "id": "",
+                "className": ""
+              },
+              "shadowRoot": true
+            },
+            {
+              "host": {
+                "tagName": "SN-POLARIS-LAYOUT",
+                "id": "",
+                "className": ""
+              },
+              "shadowRoot": true
+            }
+          ],
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "coordinates": {
+          "x": 215,
+          "y": 26
+        }
+      }
+    },
+    {
+      "type": "recorded-click",
+      "detail": {
+        "type": "click",
+        "timestamp": "2025-03-28T13:49:12.414Z",
+        "element": {
+          "tagName": "SN-POLARIS-LAYOUT",
+          "id": "",
+          "className": "",
+          "value": "",
+          "role": null,
+          "aria-label": null,
+          "xpath": "/div[1]/sn-canvas-appshell-root[1]/sn-canvas-appshell-layout[1]/sn-polaris-layout[1]",
+          "shadowPath": [
+            {
+              "host": {
+                "tagName": "HTML",
+                "id": "",
+                "className": ""
+              },
+              "shadowRoot": false
+            },
+            {
+              "host": {
+                "tagName": "BODY",
+                "id": "",
+                "className": ""
+              },
+              "shadowRoot": false
+            },
+            {
+              "host": {
+                "tagName": "MACROPONENT-F51912F4C700201072B211D4D8C26010",
+                "id": "",
+                "className": ""
+              },
+              "shadowRoot": true
+            },
+            {
+              "host": {
+                "tagName": "DIV",
+                "id": "",
+                "className": ""
+              },
+              "shadowRoot": false
+            },
+            {
+              "host": {
+                "tagName": "SN-CANVAS-APPSHELL-ROOT",
+                "id": "",
+                "className": ""
+              },
+              "shadowRoot": true
+            },
+            {
+              "host": {
+                "tagName": "SN-CANVAS-APPSHELL-LAYOUT",
+                "id": "",
+                "className": ""
+              },
+              "shadowRoot": true
+            },
+            {
+              "host": {
+                "tagName": "SN-POLARIS-LAYOUT",
+                "id": "",
+                "className": ""
+              },
+              "shadowRoot": true
+            }
+          ],
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "coordinates": {
+          "x": 215,
+          "y": 26
+        }
+      }
+    },
+    {
+      "type": "recorded-click",
+      "detail": {
+        "type": "click",
+        "timestamp": "2025-03-28T13:49:12.414Z",
+        "element": {
+          "tagName": "SN-POLARIS-HEADER",
+          "id": "",
+          "className": "",
+          "value": "",
+          "role": null,
+          "aria-label": null,
+          "xpath": "/div[2]/div[2]/div[1]/sn-polaris-header[1]",
+          "shadowPath": [
+            {
+              "host": {
+                "tagName": "HTML",
+                "id": "",
+                "className": ""
+              },
+              "shadowRoot": false
+            },
+            {
+              "host": {
+                "tagName": "BODY",
+                "id": "",
+                "className": ""
+              },
+              "shadowRoot": false
+            },
+            {
+              "host": {
+                "tagName": "MACROPONENT-F51912F4C700201072B211D4D8C26010",
+                "id": "",
+                "className": ""
+              },
+              "shadowRoot": true
+            },
+            {
+              "host": {
+                "tagName": "DIV",
+                "id": "",
+                "className": ""
+              },
+              "shadowRoot": false
+            },
+            {
+              "host": {
+                "tagName": "SN-CANVAS-APPSHELL-ROOT",
+                "id": "",
+                "className": ""
+              },
+              "shadowRoot": true
+            },
+            {
+              "host": {
+                "tagName": "SN-CANVAS-APPSHELL-LAYOUT",
+                "id": "",
+                "className": ""
+              },
+              "shadowRoot": true
+            },
+            {
+              "host": {
+                "tagName": "SN-POLARIS-LAYOUT",
+                "id": "",
+                "className": ""
+              },
+              "shadowRoot": true
+            },
+            {
+              "host": {
+                "tagName": "DIV",
+                "id": "",
+                "className": "sn-polaris-layout polaris-enabled"
+              },
+              "shadowRoot": false
+            },
+            {
+              "host": {
+                "tagName": "DIV",
+                "id": "",
+                "className": "layout-main"
+              },
+              "shadowRoot": false
+            },
+            {
+              "host": {
+                "tagName": "DIV",
+                "id": "",
+                "className": "header-bar"
+              },
+              "shadowRoot": false
+            },
+            {
+              "host": {
+                "tagName": "SN-POLARIS-HEADER",
+                "id": "",
+                "className": ""
+              },
+              "shadowRoot": true
+            }
+          ],
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "width": 1280,
+            "height": 52
+          }
+        },
+        "coordinates": {
+          "x": 215,
+          "y": 26
+        }
+      }
+    },
+    {
+      "type": "recorded-click",
+      "detail": {
+        "type": "click",
+        "timestamp": "2025-03-28T13:49:12.414Z",
+        "element": {
+          "tagName": "DIV",
+          "id": "d6e462a5c3533010cbd77096e940dd8c",
+          "className": "sn-polaris-tab can-animate polaris-enabled",
+          "value": "",
+          "role": "menuitem",
+          "aria-label": "All",
+          "xpath": "//*[@id='d6e462a5c3533010cbd77096e940dd8c']",
+          "shadowPath": [
+            {
+              "host": {
+                "tagName": "HTML",
+                "id": "",
+                "className": ""
+              },
+              "shadowRoot": false
+            },
+            {
+              "host": {
+                "tagName": "BODY",
+                "id": "",
+                "className": ""
+              },
+              "shadowRoot": false
+            },
+            {
+              "host": {
+                "tagName": "MACROPONENT-F51912F4C700201072B211D4D8C26010",
+                "id": "",
+                "className": ""
+              },
+              "shadowRoot": true
+            },
+            {
+              "host": {
+                "tagName": "DIV",
+                "id": "",
+                "className": ""
+              },
+              "shadowRoot": false
+            },
+            {
+              "host": {
+                "tagName": "SN-CANVAS-APPSHELL-ROOT",
+                "id": "",
+                "className": ""
+              },
+              "shadowRoot": true
+            },
+            {
+              "host": {
+                "tagName": "SN-CANVAS-APPSHELL-LAYOUT",
+                "id": "",
+                "className": ""
+              },
+              "shadowRoot": true
+            },
+            {
+              "host": {
+                "tagName": "SN-POLARIS-LAYOUT",
+                "id": "",
+                "className": ""
+              },
+              "shadowRoot": true
+            },
+            {
+              "host": {
+                "tagName": "DIV",
+                "id": "",
+                "className": "sn-polaris-layout polaris-enabled"
+              },
+              "shadowRoot": false
+            },
+            {
+              "host": {
+                "tagName": "DIV",
+                "id": "",
+                "className": "layout-main"
+              },
+              "shadowRoot": false
+            },
+            {
+              "host": {
+                "tagName": "DIV",
+                "id": "",
+                "className": "header-bar"
+              },
+              "shadowRoot": false
+            },
+            {
+              "host": {
+                "tagName": "SN-POLARIS-HEADER",
+                "id": "",
+                "className": ""
+              },
+              "shadowRoot": true
+            },
+            {
+              "host": {
+                "tagName": "NAV",
+                "id": "",
+                "className": "polaris-layout"
+              },
+              "shadowRoot": false
+            },
+            {
+              "host": {
+                "tagName": "DIV",
+                "id": "",
+                "className": "polaris-header can-animate polaris-enabled"
+              },
+              "shadowRoot": false
+            },
+            {
+              "host": {
+                "tagName": "DIV",
+                "id": "",
+                "className": "starting-header-zone"
+              },
+              "shadowRoot": false
+            },
+            {
+              "host": {
+                "tagName": "DIV",
+                "id": "",
+                "className": "sn-polaris-navigation polaris-header-menu"
+              },
+              "shadowRoot": false
+            },
+            {
+              "host": {
+                "tagName": "DIV",
+                "id": "d6e462a5c3533010cbd77096e940dd8c",
+                "className": "sn-polaris-tab can-animate polaris-enabled"
+              },
+              "shadowRoot": false
+            }
+          ],
+          "rect": {
+            "x": 194,
+            "y": 10,
+            "width": 42.234375,
+            "height": 32
+          }
+        },
+        "coordinates": {
+          "x": 215,
+          "y": 26
+        }
+      }
+    },
+    {
+      "type": "recorded-click",
+      "detail": {
+        "type": "click",
+        "timestamp": "2025-03-28T13:49:15.498Z",
+        "element": {
+          "tagName": "MACROPONENT-F51912F4C700201072B211D4D8C26010",
+          "id": "",
+          "className": "",
+          "value": "",
+          "role": null,
+          "aria-label": null,
+          "xpath": "/html[1]/body[1]/macroponent-f51912f4c700201072b211d4d8c26010[1]",
+          "shadowPath": [
+            {
+              "host": {
+                "tagName": "HTML",
+                "id": "",
+                "className": ""
+              },
+              "shadowRoot": false
+            },
+            {
+              "host": {
+                "tagName": "BODY",
+                "id": "",
+                "className": ""
+              },
+              "shadowRoot": false
+            },
+            {
+              "host": {
+                "tagName": "MACROPONENT-F51912F4C700201072B211D4D8C26010",
+                "id": "",
+                "className": ""
+              },
+              "shadowRoot": true
+            }
+          ],
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "coordinates": {
+          "x": 226,
+          "y": 261
+        }
+      }
+    },
+    {
+      "type": "recorded-click",
+      "detail": {
+        "type": "click",
+        "timestamp": "2025-03-28T13:49:15.498Z",
+        "element": {
+          "tagName": "SN-POLARIS-LAYOUT",
+          "id": "",
+          "className": "",
+          "value": "",
+          "role": null,
+          "aria-label": null,
+          "xpath": "/div[1]/sn-canvas-appshell-root[1]/sn-canvas-appshell-layout[1]/sn-polaris-layout[1]",
+          "shadowPath": [
+            {
+              "host": {
+                "tagName": "HTML",
+                "id": "",
+                "className": ""
+              },
+              "shadowRoot": false
+            },
+            {
+              "host": {
+                "tagName": "BODY",
+                "id": "",
+                "className": ""
+              },
+              "shadowRoot": false
+            },
+            {
+              "host": {
+                "tagName": "MACROPONENT-F51912F4C700201072B211D4D8C26010",
+                "id": "",
+                "className": ""
+              },
+              "shadowRoot": true
+            },
+            {
+              "host": {
+                "tagName": "DIV",
+                "id": "",
+                "className": ""
+              },
+              "shadowRoot": false
+            },
+            {
+              "host": {
+                "tagName": "SN-CANVAS-APPSHELL-ROOT",
+                "id": "",
+                "className": ""
+              },
+              "shadowRoot": true
+            },
+            {
+              "host": {
+                "tagName": "SN-CANVAS-APPSHELL-LAYOUT",
+                "id": "",
+                "className": ""
+              },
+              "shadowRoot": true
+            },
+            {
+              "host": {
+                "tagName": "SN-POLARIS-LAYOUT",
+                "id": "",
+                "className": ""
+              },
+              "shadowRoot": true
+            }
+          ],
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "coordinates": {
+          "x": 226,
+          "y": 261
+        }
+      }
+    },
+    {
+      "type": "recorded-click",
+      "detail": {
+        "type": "click",
+        "timestamp": "2025-03-28T13:49:15.498Z",
+        "element": {
+          "tagName": "SN-POLARIS-LAYOUT",
+          "id": "",
+          "className": "",
+          "value": "",
+          "role": null,
+          "aria-label": null,
+          "xpath": "/div[1]/sn-canvas-appshell-root[1]/sn-canvas-appshell-layout[1]/sn-polaris-layout[1]",
+          "shadowPath": [
+            {
+              "host": {
+                "tagName": "HTML",
+                "id": "",
+                "className": ""
+              },
+              "shadowRoot": false
+            },
+            {
+              "host": {
+                "tagName": "BODY",
+                "id": "",
+                "className": ""
+              },
+              "shadowRoot": false
+            },
+            {
+              "host": {
+                "tagName": "MACROPONENT-F51912F4C700201072B211D4D8C26010",
+                "id": "",
+                "className": ""
+              },
+              "shadowRoot": true
+            },
+            {
+              "host": {
+                "tagName": "DIV",
+                "id": "",
+                "className": ""
+              },
+              "shadowRoot": false
+            },
+            {
+              "host": {
+                "tagName": "SN-CANVAS-APPSHELL-ROOT",
+                "id": "",
+                "className": ""
+              },
+              "shadowRoot": true
+            },
+            {
+              "host": {
+                "tagName": "SN-CANVAS-APPSHELL-LAYOUT",
+                "id": "",
+                "className": ""
+              },
+              "shadowRoot": true
+            },
+            {
+              "host": {
+                "tagName": "SN-POLARIS-LAYOUT",
+                "id": "",
+                "className": ""
+              },
+              "shadowRoot": true
+            }
+          ],
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "coordinates": {
+          "x": 226,
+          "y": 261
+        }
+      }
+    },
+    {
+      "type": "recorded-click",
+      "detail": {
+        "type": "click",
+        "timestamp": "2025-03-28T13:49:15.498Z",
+        "element": {
+          "tagName": "SN-POLARIS-LAYOUT",
+          "id": "",
+          "className": "",
+          "value": "",
+          "role": null,
+          "aria-label": null,
+          "xpath": "/div[1]/sn-canvas-appshell-root[1]/sn-canvas-appshell-layout[1]/sn-polaris-layout[1]",
+          "shadowPath": [
+            {
+              "host": {
+                "tagName": "HTML",
+                "id": "",
+                "className": ""
+              },
+              "shadowRoot": false
+            },
+            {
+              "host": {
+                "tagName": "BODY",
+                "id": "",
+                "className": ""
+              },
+              "shadowRoot": false
+            },
+            {
+              "host": {
+                "tagName": "MACROPONENT-F51912F4C700201072B211D4D8C26010",
+                "id": "",
+                "className": ""
+              },
+              "shadowRoot": true
+            },
+            {
+              "host": {
+                "tagName": "DIV",
+                "id": "",
+                "className": ""
+              },
+              "shadowRoot": false
+            },
+            {
+              "host": {
+                "tagName": "SN-CANVAS-APPSHELL-ROOT",
+                "id": "",
+                "className": ""
+              },
+              "shadowRoot": true
+            },
+            {
+              "host": {
+                "tagName": "SN-CANVAS-APPSHELL-LAYOUT",
+                "id": "",
+                "className": ""
+              },
+              "shadowRoot": true
+            },
+            {
+              "host": {
+                "tagName": "SN-POLARIS-LAYOUT",
+                "id": "",
+                "className": ""
+              },
+              "shadowRoot": true
+            }
+          ],
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "coordinates": {
+          "x": 226,
+          "y": 261
+        }
+      }
+    },
+    {
+      "type": "recorded-click",
+      "detail": {
+        "type": "click",
+        "timestamp": "2025-03-28T13:49:15.498Z",
+        "element": {
+          "tagName": "SN-POLARIS-HEADER",
+          "id": "",
+          "className": "",
+          "value": "",
+          "role": null,
+          "aria-label": null,
+          "xpath": "/div[2]/div[2]/div[1]/sn-polaris-header[1]",
+          "shadowPath": [
+            {
+              "host": {
+                "tagName": "HTML",
+                "id": "",
+                "className": ""
+              },
+              "shadowRoot": false
+            },
+            {
+              "host": {
+                "tagName": "BODY",
+                "id": "",
+                "className": ""
+              },
+              "shadowRoot": false
+            },
+            {
+              "host": {
+                "tagName": "MACROPONENT-F51912F4C700201072B211D4D8C26010",
+                "id": "",
+                "className": ""
+              },
+              "shadowRoot": true
+            },
+            {
+              "host": {
+                "tagName": "DIV",
+                "id": "",
+                "className": ""
+              },
+              "shadowRoot": false
+            },
+            {
+              "host": {
+                "tagName": "SN-CANVAS-APPSHELL-ROOT",
+                "id": "",
+                "className": ""
+              },
+              "shadowRoot": true
+            },
+            {
+              "host": {
+                "tagName": "SN-CANVAS-APPSHELL-LAYOUT",
+                "id": "",
+                "className": ""
+              },
+              "shadowRoot": true
+            },
+            {
+              "host": {
+                "tagName": "SN-POLARIS-LAYOUT",
+                "id": "",
+                "className": ""
+              },
+              "shadowRoot": true
+            },
+            {
+              "host": {
+                "tagName": "DIV",
+                "id": "",
+                "className": "sn-polaris-layout polaris-enabled"
+              },
+              "shadowRoot": false
+            },
+            {
+              "host": {
+                "tagName": "DIV",
+                "id": "",
+                "className": "layout-main"
+              },
+              "shadowRoot": false
+            },
+            {
+              "host": {
+                "tagName": "DIV",
+                "id": "",
+                "className": "header-bar"
+              },
+              "shadowRoot": false
+            },
+            {
+              "host": {
+                "tagName": "SN-POLARIS-HEADER",
+                "id": "",
+                "className": ""
+              },
+              "shadowRoot": true
+            }
+          ],
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "width": 1280,
+            "height": 52
+          }
+        },
+        "coordinates": {
+          "x": 226,
+          "y": 261
+        }
+      }
+    },
+    {
+      "type": "recorded-click",
+      "detail": {
+        "type": "click",
+        "timestamp": "2025-03-28T13:49:15.498Z",
+        "element": {
+          "tagName": "SN-POLARIS-MENU",
+          "id": "",
+          "className": "can-animate is-main-menu is-open",
+          "value": "",
+          "role": "navigation",
+          "aria-label": "Unpinned All menu",
+          "xpath": "/nav[1]/div[1]/div[1]/sn-polaris-menu[1]",
+          "shadowPath": [
+            {
+              "host": {
+                "tagName": "HTML",
+                "id": "",
+                "className": ""
+              },
+              "shadowRoot": false
+            },
+            {
+              "host": {
+                "tagName": "BODY",
+                "id": "",
+                "className": ""
+              },
+              "shadowRoot": false
+            },
+            {
+              "host": {
+                "tagName": "MACROPONENT-F51912F4C700201072B211D4D8C26010",
+                "id": "",
+                "className": ""
+              },
+              "shadowRoot": true
+            },
+            {
+              "host": {
+                "tagName": "DIV",
+                "id": "",
+                "className": ""
+              },
+              "shadowRoot": false
+            },
+            {
+              "host": {
+                "tagName": "SN-CANVAS-APPSHELL-ROOT",
+                "id": "",
+                "className": ""
+              },
+              "shadowRoot": true
+            },
+            {
+              "host": {
+                "tagName": "SN-CANVAS-APPSHELL-LAYOUT",
+                "id": "",
+                "className": ""
+              },
+              "shadowRoot": true
+            },
+            {
+              "host": {
+                "tagName": "SN-POLARIS-LAYOUT",
+                "id": "",
+                "className": ""
+              },
+              "shadowRoot": true
+            },
+            {
+              "host": {
+                "tagName": "DIV",
+                "id": "",
+                "className": "sn-polaris-layout polaris-enabled"
+              },
+              "shadowRoot": false
+            },
+            {
+              "host": {
+                "tagName": "DIV",
+                "id": "",
+                "className": "layout-main"
+              },
+              "shadowRoot": false
+            },
+            {
+              "host": {
+                "tagName": "DIV",
+                "id": "",
+                "className": "header-bar"
+              },
+              "shadowRoot": false
+            },
+            {
+              "host": {
+                "tagName": "SN-POLARIS-HEADER",
+                "id": "",
+                "className": ""
+              },
+              "shadowRoot": true
+            },
+            {
+              "host": {
+                "tagName": "NAV",
+                "id": "",
+                "className": "polaris-layout"
+              },
+              "shadowRoot": false
+            },
+            {
+              "host": {
+                "tagName": "DIV",
+                "id": "",
+                "className": "polaris-header can-animate polaris-enabled"
+              },
+              "shadowRoot": false
+            },
+            {
+              "host": {
+                "tagName": "DIV",
+                "id": "",
+                "className": "starting-header-zone"
+              },
+              "shadowRoot": false
+            },
+            {
+              "host": {
+                "tagName": "SN-POLARIS-MENU",
+                "id": "",
+                "className": "can-animate is-main-menu is-open"
+              },
+              "shadowRoot": true
+            }
+          ],
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          }
+        },
+        "coordinates": {
+          "x": 226,
+          "y": 261
+        }
+      }
+    },
+    {
+      "type": "recorded-click",
+      "detail": {
+        "type": "click",
+        "timestamp": "2025-03-28T13:49:15.498Z",
+        "element": {
+          "tagName": "SN-COLLAPSIBLE-LIST",
+          "id": "",
+          "className": "",
+          "value": "",
+          "role": null,
+          "aria-label": null,
+          "xpath": "/nav[1]/div[2]/div[2]/div[4]/div[1]/div[1]/div[1]/sn-collapsible-list[1]",
+          "shadowPath": [
+            {
+              "host": {
+                "tagName": "HTML",
+                "id": "",
+                "className": ""
+              },
+              "shadowRoot": false
+            },
+            {
+              "host": {
+                "tagName": "BODY",
+                "id": "",
+                "className": ""
+              },
+              "shadowRoot": false
+            },
+            {
+              "host": {
+                "tagName": "MACROPONENT-F51912F4C700201072B211D4D8C26010",
+                "id": "",
+                "className": ""
+              },
+              "shadowRoot": true
+            },
+            {
+              "host": {
+                "tagName": "DIV",
+                "id": "",
+                "className": ""
+              },
+              "shadowRoot": false
+            },
+            {
+              "host": {
+                "tagName": "SN-CANVAS-APPSHELL-ROOT",
+                "id": "",
+                "className": ""
+              },
+              "shadowRoot": true
+            },
+            {
+              "host": {
+                "tagName": "SN-CANVAS-APPSHELL-LAYOUT",
+                "id": "",
+                "className": ""
+              },
+              "shadowRoot": true
+            },
+            {
+              "host": {
+                "tagName": "SN-POLARIS-LAYOUT",
+                "id": "",
+                "className": ""
+              },
+              "shadowRoot": true
+            },
+            {
+              "host": {
+                "tagName": "DIV",
+                "id": "",
+                "className": "sn-polaris-layout polaris-enabled"
+              },
+              "shadowRoot": false
+            },
+            {
+              "host": {
+                "tagName": "DIV",
+                "id": "",
+                "className": "layout-main"
+              },
+              "shadowRoot": false
+            },
+            {
+              "host": {
+                "tagName": "DIV",
+                "id": "",
+                "className": "header-bar"
+              },
+              "shadowRoot": false
+            },
+            {
+              "host": {
+                "tagName": "SN-POLARIS-HEADER",
+                "id": "",
+                "className": ""
+              },
+              "shadowRoot": true
+            },
+            {
+              "host": {
+                "tagName": "NAV",
+                "id": "",
+                "className": "polaris-layout"
+              },
+              "shadowRoot": false
+            },
+            {
+              "host": {
+                "tagName": "DIV",
+                "id": "",
+                "className": "polaris-header can-animate polaris-enabled"
+              },
+              "shadowRoot": false
+            },
+            {
+              "host": {
+                "tagName": "DIV",
+                "id": "",
+                "className": "starting-header-zone"
+              },
+              "shadowRoot": false
+            },
+            {
+              "host": {
+                "tagName": "SN-POLARIS-MENU",
+                "id": "",
+                "className": "can-animate is-main-menu is-open"
+              },
+              "shadowRoot": true
+            },
+            {
+              "host": {
+                "tagName": "NAV",
+                "id": "",
+                "className": "menu-body can-animate is-visible"
+              },
+              "shadowRoot": false
+            },
+            {
+              "host": {
+                "tagName": "DIV",
+                "id": "",
+                "className": "sn-polaris-nav d6e462a5c3533010cbd77096e940dd8c can-animate"
+              },
+              "shadowRoot": false
+            },
+            {
+              "host": {
+                "tagName": "DIV",
+                "id": "",
+                "className": "super-filter-container all-results-open"
+              },
+              "shadowRoot": false
+            },
+            {
+              "host": {
+                "tagName": "DIV",
+                "id": "",
+                "className": "all-results-section section-open results-section"
+              },
+              "shadowRoot": false
+            },
+            {
+              "host": {
+                "tagName": "DIV",
+                "id": "",
+                "className": "sn-tree-menu sn-polaris-nav-content"
+              },
+              "shadowRoot": false
+            },
+            {
+              "host": {
+                "tagName": "DIV",
+                "id": "",
+                "className": "sn-polaris-tab-content -left is-visible can-animate"
+              },
+              "shadowRoot": false
+            },
+            {
+              "host": {
+                "tagName": "DIV",
+                "id": "",
+                "className": "sn-polaris-nav-body hide-scroll"
+              },
+              "shadowRoot": false
+            },
+            {
+              "host": {
+                "tagName": "SN-COLLAPSIBLE-LIST",
+                "id": "",
+                "className": ""
+              },
+              "shadowRoot": true
+            }
+          ],
+          "rect": {
+            "x": 81,
+            "y": 213.25,
+            "width": 285,
+            "height": 64
+          }
+        },
+        "coordinates": {
+          "x": 226,
+          "y": 261
+        }
+      }
+    }
+  ]
+}
