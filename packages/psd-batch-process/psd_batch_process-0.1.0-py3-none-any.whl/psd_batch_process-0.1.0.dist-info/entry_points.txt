@@ -1,0 +1,2 @@
+[console_scripts]
+psd-batch-process = psd_batch_process.cli:main

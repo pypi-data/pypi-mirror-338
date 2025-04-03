@@ -1,0 +1,11 @@
+psd_batch_process/__init__.py,sha256=oHEfcVXTk48GBHdcvTfIb3DZWkjnQi6tBQHIps7FFnc,96
+psd_batch_process/cli.py,sha256=rOaQxnnzUh0YHXGFtU6kRzG6_mYyvlXEigU9BMlEcSM,1014
+psd_batch_process/processor.py,sha256=wxxUHhJcIpJ9nD0IivZJNwkgv_OQWhppiZUBh4HEv_c,4666
+psd_batch_process-0.1.0.dist-info/licenses/LICENSE,sha256=OphKV48tcMv6ep-7j-8T6nycykPT0g8ZlMJ9zbGvdPs,1066
+tests/__init__.py,sha256=Ujo9bk2otWhHV6ObQ9JcsNKAEnKLqiA1t1jJhS-VbsY,30
+tests/test_processor.py,sha256=LhX6LIY1qjtZkooM8vQbhE-ODuZQ78km3je5zoE3Nmw,4050
+psd_batch_process-0.1.0.dist-info/METADATA,sha256=F1V-GMlbXFa1ZeYB-ADQXfXMNIKYtFT2JOtNhQjrJ_4,2136
+psd_batch_process-0.1.0.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+psd_batch_process-0.1.0.dist-info/entry_points.txt,sha256=sD8_8aw_0oMIVp1h0wQnezNuXdnoO_cj4Wgh5hnXz_8,65
+psd_batch_process-0.1.0.dist-info/top_level.txt,sha256=SExoVIarnP1zhT-8zeo_D_g6R0KxfsXxqPPYNp-n1E0,24
+psd_batch_process-0.1.0.dist-info/RECORD,,
