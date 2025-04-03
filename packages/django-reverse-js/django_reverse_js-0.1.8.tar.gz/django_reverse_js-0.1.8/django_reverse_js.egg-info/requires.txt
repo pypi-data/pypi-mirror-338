@@ -1,0 +1,7 @@
+django>=4.2
+
+[tests]
+coverage[toml]
+pytest
+pytest-django
+pytest-cov
