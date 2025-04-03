@@ -1,0 +1,32 @@
+[tool.poetry]
+name = "cv_model"
+version = "1.4.0"
+description = ""
+authors = ["Dariusz Homa <dariuszhoma7@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.scripts]
+train = "train.train:main"
+lint = "scripts.scripts:run_linter"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+argparse = "^1.4.0"
+scikit-learn = "^1.6.1"
+pandas = "^2.2.3"
+numpy = "^2.2.4"
+bs4 = "^0.0.2"
+nltk = "^3.9.1"
+transformers = "^4.50.3"
+matplotlib = "^3.10.1"
+wordcloud = "^1.9.4"
+
+
+[tool.poetry.group.dev.dependencies]
+pylint = "^3.3.4"
+notebook = "^7.3.3"
+nbconvert = "^7.16.6"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
