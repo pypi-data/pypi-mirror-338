@@ -1,0 +1,2 @@
+[console_scripts]
+wows-eval = wows_eval:cli
