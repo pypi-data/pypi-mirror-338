@@ -1,0 +1,14 @@
+oflo_agent_protocol/__init__.py,sha256=Jk9zcPp182vHGIEveGM5H8CqxsMJLAelB02xEilA6j0,499
+oflo_agent_protocol/agent.py,sha256=sjLESgcxRT99eq1yysgQ7LXqR-pxTSP1NtYM3voZdMo,32785
+oflo_agent_protocol/cmo.py,sha256=aJcvxmQO5yHvgUcz_ZRikjxosxL2_HZq8FE4ThlMnP0,82
+oflo_agent_protocol/factory.py,sha256=SvXefjCFwpYe0kgkUPFtPWB_Ae3eDanjwdZbeAv2dZo,3068
+oflo_agent_protocol/mcp.py,sha256=mdDrKRmjZU7o6q60wClti29ZIuAKjJ70ukm1aUQb2Ww,1457
+oflo_agent_protocol/resource.py,sha256=OkagbmERg7QmANFGR9H46B7ZWrbxoFM__xXpwQFKxlk,419
+oflo_agent_protocol/tool.py,sha256=KK7OZ7szYJilOZFcEqooxugJDYeV_tBJ0leA5GlBajI,429
+oflo_agent_protocol/adapters/crewai_adapter.py,sha256=JxAwLE0PWJpjPmApXp_inhq3e7Ptd4Zc5BDZSFMzHCA,6488
+oflo_agent_protocol/adapters/langgraph_adapter.py,sha256=Cem5rmOE_OILjpknny8waPPDNVLlGZRMe9pOfESFoeQ,8743
+oflo_ai_agent_protocol-0.1.0.dist-info/licenses/LICENSE,sha256=PiYdsBRGxSqXu7W5NtER40VbpMQVVLm3GBpIjbE9_3Y,1067
+oflo_ai_agent_protocol-0.1.0.dist-info/METADATA,sha256=hsF8xHtLLP95tCJAeOKaRvu2MVQqDosgR2Mycj4d6ic,6100
+oflo_ai_agent_protocol-0.1.0.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+oflo_ai_agent_protocol-0.1.0.dist-info/top_level.txt,sha256=jKY5iW3mCHKNhNURk44xGROgBfBiqLoBsu6TI5YzbjY,20
+oflo_ai_agent_protocol-0.1.0.dist-info/RECORD,,
