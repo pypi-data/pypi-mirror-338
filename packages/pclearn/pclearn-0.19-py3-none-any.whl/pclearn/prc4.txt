@@ -1,0 +1,76 @@
+//Q1_jsp
+
+<body>
+        <h1>Calculator</h1>
+        <%
+            com.kk._operation a1 = new com.kk._operation(); // already there according to your project replace it
+            int d = a1.Add(10, 6);
+            int e = a1.Subtraction(45, 25);
+            int f = a1.Multi(20, 3);
+            int g = a1.Div(6, 6);
+            out.println("Addition of two numbers is: "+d+"<br>");
+            out.println("Subtraction of two numbers is: "+e+"<br>");
+            out.println("Multiplication of two numbers is: "+f+"<br>");
+            out.println("Division of two numbers is: "+g+"<br>");
+        %>
+
+    </body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//change as per operation definition 
+int C=A+B;
+        return C;
+int F=D-E;
+        return F;
+ int R=G*H;
+        return R;
+int Q=W/S;
+        return Q;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//Q2 web_service
+public double square (double val) {
+        return val*val;
+}
+
+
+//Q2 java_application 
+MyWebServices_Service service = new MyWebServices_Service();
+ final MyWebService proxy = service.getMyWebServicePort();
+ System.out.println(proxy.square(7));

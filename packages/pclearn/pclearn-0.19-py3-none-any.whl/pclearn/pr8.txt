@@ -1,0 +1,45 @@
+PRACTICAL-8
+Aim: Implementing virtualization using VMWare ESXi server and managing with vCenter
+●	Open VMWare Workstation Click on File->New Virtual Machine->Next->Select I will install OS later->Next.
+
+●	Select VMWare ESX -> Name the Virtual Machine -> Enter the Size 100GB->Next.
+
+●	Click on Finish. You can now see your Virtual Machine.
+
+●	Click on Edit virtual machine setting -> Go to CD/DVD. Browse to the ISO file and upload it.
+
+●	Power on the VM and hit enter.
+    
+●	Wait for the ESXi to load.
+       
+●	Hit Enter and then F11 to continue.
+     
+●	Press Enter-> Select the Language.
+    
+●	Enter the password and confirm installation.
+
+●	Open VMWare vSphere Client and type in username and password.
+    
+●	Hit Enter and wait for rebooting server and then loading.
+
+●	Take a note of the IP address and enter that in the VMWare vSphere Client.
+
+●	Login -> Click on Inventory -> Go the Server -> Configuration.
+
+●	Click on Storage-> data source.
+ 
+●	Right click on data source -> Browse data source -> Upload the file. 
+ 
+●	Right click on the server -> create new virtual machine -> next.
+    
+●	Enter the name of the Virtual Machine -> Click on Next.
+    
+●	Select your Operating System and hit Next until Finish.
+    
+●	Select Edit virtual machine settings -> Browse to the iso file -> Check connect at power on.
+   
+
+ 
+
+ 
+
