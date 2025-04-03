@@ -1,0 +1,75 @@
+[build-system]
+requires = ["setuptools>=45", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "oflo-ai-agent-protocol"
+version = "0.1.0"
+description = "A protocol for building business AI agents with MCP integration"
+authors = [
+    { name = "Ankit Buti", email = "ankit@oflo.ai" }
+]
+readme = "README.md"
+license = { file = "LICENSE" }
+requires-python = ">=3.8"
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11"
+]
+dependencies = [
+    "aiohttp>=3.8.0",
+    "anthropic>=0.8.0",
+    "openai>=1.3.0",
+    "pydantic>=2.0.0",
+    "python-dotenv>=1.0.0",
+    "slack-sdk>=3.19.0",
+    "typing-extensions>=4.0.0",
+    "cloudflare>=2.8.0",
+    "weaviate-client>=3.24.1",
+    "crewai>=0.11.0",
+    "langchain>=0.1.0",
+    "langgraph>=0.0.15",
+    "langchain-core>=0.1.0",
+    "mcp-python-sdk>=0.1.0"
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0.0",
+    "pytest-asyncio>=0.20.0",
+    "pytest-cov>=4.0.0",
+    "black>=22.0.0",
+    "isort>=5.0.0",
+    "mypy>=1.0.0",
+    "flake8>=6.0.0",
+    "build>=0.7.0",
+    "twine>=4.0.0"
+]
+docs = [
+    "sphinx>=4.0.0",
+    "sphinx-rtd-theme>=1.0.0",
+    "myst-parser>=1.0.0"
+]
+
+[tool.setuptools]
+packages = ["oflo_agent_protocol"]
+
+[tool.setuptools.dynamic]
+version = {attr = "oflo_agent_protocol.__version__"}
+
+[tool.black]
+line-length = 88
+target-version = ['py38']
+include = '\.pyi?$'
+
+[tool.isort]
+profile = "black"
+multi_line_output = 3
+line_length = 88
