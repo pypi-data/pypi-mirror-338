@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+naapdf/__init__.py
+naapdf/pdf2text.py
+naapdf.egg-info/PKG-INFO
+naapdf.egg-info/SOURCES.txt
+naapdf.egg-info/dependency_links.txt
+naapdf.egg-info/top_level.txt
