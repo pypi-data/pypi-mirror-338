@@ -1,0 +1,11 @@
+asimov_cogwheel/__init__.py,sha256=liE8HY7wuAT8yAE6VtG_3CPmZaius0yOcZyMUOBhJ4c,319
+asimov_cogwheel/__main__.py,sha256=eRk3KvyOzRDrXTDqvNsctoUGeTjrGeoWk1aOMldTFRc,6170
+asimov_cogwheel/asimov.py,sha256=NlQe-QU0efXqfpTpwUmOJ3IP7qOlDhw6ee9_maP1TZ8,6566
+asimov_cogwheel/asimov_template.yaml,sha256=q_8I6y6QovGFpxvjh5LauwVfVYTm-LLj6mHG39W2CwQ,1466
+asimov_cogwheel/config.py,sha256=vcodXoQgnJFn3YNF-IEI-0NY3N_c7i-Ptw0q_dQ_E5o,300
+asimov_cogwheel/data.py,sha256=7ZvKKefZ3puUrmkbRzFbQJh8LZMm3bOFb6bOj3Xoa7Y,195
+asimov_cogwheel-0.1.1.dist-info/METADATA,sha256=DSo1oozNoDex-nEoixjB1B9vHKbs8FZzTUWvxd_h5YI,994
+asimov_cogwheel-0.1.1.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+asimov_cogwheel-0.1.1.dist-info/entry_points.txt,sha256=moGrLRQTfarbvVak5tCmMCfjKQQtQichbYdXec8Z19A,134
+asimov_cogwheel-0.1.1.dist-info/top_level.txt,sha256=XSZeFSGysOK3HvkCK7W57y6BJccAW1O7dwJo6U6BTDA,16
+asimov_cogwheel-0.1.1.dist-info/RECORD,,
