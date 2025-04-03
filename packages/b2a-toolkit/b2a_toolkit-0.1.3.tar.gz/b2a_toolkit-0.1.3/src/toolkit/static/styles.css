@@ -1,0 +1,65 @@
+body {
+    font-family: system-ui, sans-serif;
+    margin: 2rem;
+    line-height: 1.5;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logs-container {
+    background: white;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+#logs-list {
+    margin-top: 20px;
+}
+
+.logs {
+    margin-top: 2rem;
+}
+
+.log-entry {
+    border: 1px solid #eee;
+    padding: 1rem;
+    margin: 1rem 0;
+    border-radius: 6px;
+}
+
+.call-id {
+    font-family: monospace;
+    background: #f5f5f5;
+    padding: 0.2rem 0.5rem;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.call-id:hover {
+    background: #e5e5e5;
+}
+
+.replay-command {
+    color: #666;
+    font-size: 0.9em;
+    margin-top: 0.5rem;
+}
+
+.filters {
+    margin: 1rem 0;
+    display: flex;
+    gap: 1rem;
+}
+
+.filters input, .filters select {
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.success { color: green; }
+.error { color: red; } 
