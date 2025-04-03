@@ -1,0 +1,6 @@
+
+[tests]
+pytest
+pillow
+imagehash
+texture2ddecoder
