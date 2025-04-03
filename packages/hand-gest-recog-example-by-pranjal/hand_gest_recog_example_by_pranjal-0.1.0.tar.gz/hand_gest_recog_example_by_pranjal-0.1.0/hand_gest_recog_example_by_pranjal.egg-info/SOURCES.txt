@@ -1,0 +1,9 @@
+README.md
+setup.py
+hand_gest_example/__init__.py
+hand_gest_example/handGestTest.py
+hand_gest_recog_example_by_pranjal.egg-info/PKG-INFO
+hand_gest_recog_example_by_pranjal.egg-info/SOURCES.txt
+hand_gest_recog_example_by_pranjal.egg-info/dependency_links.txt
+hand_gest_recog_example_by_pranjal.egg-info/requires.txt
+hand_gest_recog_example_by_pranjal.egg-info/top_level.txt
