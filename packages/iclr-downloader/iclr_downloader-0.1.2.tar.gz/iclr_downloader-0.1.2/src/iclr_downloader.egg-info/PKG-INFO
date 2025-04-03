@@ -1,0 +1,8 @@
+Metadata-Version: 2.4
+Name: iclr-downloader
+Version: 0.1.2
+Summary: Add your description here
+Requires-Python: >=3.11.5
+Description-Content-Type: text/markdown
+Requires-Dist: openreview-py>=1.47.1
+Requires-Dist: sienna>=0.2.6
