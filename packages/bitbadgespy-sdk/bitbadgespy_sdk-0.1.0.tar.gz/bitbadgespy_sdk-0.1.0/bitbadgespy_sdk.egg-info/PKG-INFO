@@ -1,0 +1,29 @@
+Metadata-Version: 2.4
+Name: bitbadgespy-sdk
+Version: 0.1.0
+Summary: BitBadges Python SDK
+Author-email: BitBadges <support@bitbadges.io>
+Project-URL: Homepage, https://github.com/BitBadges/bitbadgesjs
+Project-URL: Bug Tracker, https://github.com/BitBadges/bitbadgesjs/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+# BitBadgesPy SDK
+
+BitBadges Python SDK
+
+## Installation
+
+```bash
+pip install bitbadgespy-sdk
+```
+
+## Usage
+
+```python
+from bitbadgespy-sdk import ApiClient
+# Add usage examples here
+```
