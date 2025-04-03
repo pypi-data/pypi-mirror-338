@@ -1,0 +1,78 @@
+minimum_cli_version: "2.7.0"
+files_to_render:
+  - snowflake.yml
+variables:
+  - name: name
+    description: Name of the Streamlit app
+    type: string
+    help: Name of the Streamlit application
+    prompt: "Name of the Streamlit app"
+    default: my_app
+    required: true
+
+  - name: query_warehouse
+    description: Warehouse to use for queries
+    type: string
+    help: Warehouse to use for running queries
+    prompt: "On which warehouse SQL queries issued by the application are run"
+    default: compute_wh
+    required: true
+
+  - name: app_warehouse
+    description: Warehouse to use for running the app
+    type: string
+    help: Warehouse to use for running the app
+    prompt: "On which warehouse the Streamlit app will run"
+    default: streamlit
+    required: true
+
+  - name: schema
+    description: Schema to use for the app
+    type: string
+    help: Schema to use for the app
+    default: public
+
+  - name: database
+    description: Database to use for the app
+    type: string
+    help: Database to use for the app
+    prompt: "On which database the Streamlit app will run"
+    default: streamlit
+    required: true
+
+  - name: preview_database
+    description: Database to use for preview deployments
+    type: string
+    help: Database to use when deploying the app in preview mode
+    prompt: "Which database should be used for preview deployments"
+    default: "${database}"
+    required: false
+
+  - name: preview_schema
+    description: Schema to use for preview deployments
+    type: string
+    help: Schema to use when deploying the app in preview mode
+    default: "${schema}"
+    required: false
+
+  - name: preview_role
+    description: Role to use for preview deployments
+    type: string
+    help: Role to use when deploying the app in preview mode
+    default: "${role}"
+    required: false
+
+  - name: role
+    description: Role to use for the app
+    type: string
+    help: Role to use for the app
+    prompt: "On which role the Streamlit app will run"
+    default: accountadmin
+    required: true
+
+  - name: stage
+    type: string
+    help: Stage to store app artifacts
+    prompt: "What stage should the app be deployed to?"
+    default: streamlit_stage
+    required: false
