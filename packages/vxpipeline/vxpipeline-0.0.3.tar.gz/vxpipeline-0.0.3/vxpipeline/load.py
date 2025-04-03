@@ -1,0 +1,45 @@
+import awswrangler as wr
+import logging
+import time
+import pandas as pd
+from typing import Optional, List
+
+logging.getLogger().handlers.clear()
+logging.basicConfig(level=logging.INFO, format='%(message)s')
+
+
+def load_to_s3_parquet(path: str, df: pd.DataFrame, partition_cols: Optional[List[str]] = None, **kwargs) -> list:
+    """
+    Salva um DataFrame como arquivo Parquet no S3 usando AWS Wrangler.
+
+    Args:
+        path (str): Caminho do bucket S3 onde o arquivo Parquet será salvo.
+        df (pd.DataFrame): DataFrame a ser salvo.
+        partition_cols (Optional[List[str]]): Lista de colunas para particionamento.
+        **kwargs: Parâmetros adicionais que serão repassados para wr.s3.to_parquet.
+                  (Ex.: mode, database, table, compression, etc.)
+
+    Returns:
+        list: Lista de caminhos dos arquivos Parquet salvos.
+
+    Raises:
+        RuntimeError: Se ocorrer algum erro ao salvar o DataFrame.
+    """
+    try:
+        start_time = time.perf_counter()
+        
+        response = wr.s3.to_parquet(
+            df=df,
+            path=path,
+            partition_cols=partition_cols,
+            dataset=True,
+            **kwargs
+        )
+        
+        elapsed = time.perf_counter() - start_time
+        logging.info(f"{len(df)} linhas salvas com sucesso em {path} in {elapsed:.2f}s")
+        
+        return response.get("paths", [])
+    except Exception as e:
+        logging.error(f"Erro ao salvar o DataFrame no S3: {e}", exc_info=True)
+        raise
