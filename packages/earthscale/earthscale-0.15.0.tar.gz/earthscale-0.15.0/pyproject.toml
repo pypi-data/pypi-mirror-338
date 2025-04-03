@@ -1,0 +1,32 @@
+[project]
+name = "earthscale"
+version = "0.15.0"
+description = "Client for the Earthscale HTTP API"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "click",
+    "pydantic>=2",
+    "pydantic-settings>=2",
+    "requests",
+    "supabase",
+]
+
+[project.scripts]
+earthscale = "earthscale.cli:cli"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.mypy]
+files = "."
+python_version = "3.10"
+strict = true
+
+[tool.ruff]
+target-version = "py310"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+asyncio_default_fixture_loop_scope = "function"
