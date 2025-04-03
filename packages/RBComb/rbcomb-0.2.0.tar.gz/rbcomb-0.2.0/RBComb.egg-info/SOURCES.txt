@@ -1,0 +1,41 @@
+pyproject.toml
+setup.py
+Examples/ArbiPhase.ipynb
+Examples/FrequencySweep.ipynb
+Examples/PascalPlayground.ipynb
+Examples/Playground.ipynb
+Examples/README.md
+Examples/RogueDrum.ipynb
+Examples/SetOutputInteractive.ipynb
+Examples/SimpleLaserExample-original.ipynb
+Examples/SoftwareLockin.ipynb
+Examples/TightBinding.ipynb
+Examples/UniformBraiding.ipynb
+Examples/Example Scope captures/ArbiPhase/Detail.png
+Examples/Example Scope captures/ArbiPhase/Full sequence.png
+Examples/Example Scope captures/Sweeps/Full sequence.png
+Examples/Example Scope captures/Sweeps/Sweep details.png
+Examples/Example Scope captures/UniformBraiding/Braiding sequence.png
+Examples/data/coefficients_A.npy
+Examples/data/coefficients_B.npy
+RBComb/LaserInterface.py
+RBComb/RBComb576.py
+RBComb/SerialBridge.py
+RBComb/__init__.py
+RBComb.egg-info/PKG-INFO
+RBComb.egg-info/SOURCES.txt
+RBComb.egg-info/dependency_links.txt
+RBComb.egg-info/requires.txt
+RBComb.egg-info/top_level.txt
+RBComb/Helper/BoardPinout.py
+RBComb/Helper/BoardPinout.pyc
+RBComb/Helper/BoardUnits.py
+RBComb/Helper/BoardUnits.pyc
+RBComb/Helper/FunctionInterpolator.py
+RBComb/Helper/FunctionInterpolator.pyc
+RBComb/Helper/__init__.py
+RBComb/Helper/__init__.pyc
+RBComb/Helper/__pycache__/BoardPinout.cpython-36.pyc
+RBComb/Helper/__pycache__/BoardUnits.cpython-36.pyc
+RBComb/Helper/__pycache__/FunctionInterpolator.cpython-36.pyc
+RBComb/Helper/__pycache__/__init__.cpython-36.pyc

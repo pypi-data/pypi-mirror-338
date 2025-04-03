@@ -1,0 +1,18 @@
+Metadata-Version: 2.4
+Name: RBComb
+Version: 0.2.0
+Summary: API to talk to the RBComb bridge
+Home-page: https://gitlab.phys.ethz.ch/code/experiment/rbcomb-fpgaCode/
+Author: Pascal Engeler
+Author-email: huberse@phys.ethz.ch
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: numpy>=1.18.0
+Requires-Dist: pyserial>=3.5
+Dynamic: author
+Dynamic: author-email
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
