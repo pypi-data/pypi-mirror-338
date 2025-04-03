@@ -1,0 +1,12 @@
+pdf_to_markdown_llm/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pdf_to_markdown_llm/config.py,sha256=4XC9R3vAwWPkvjUXP4W00tpWjHLngacGS7hWg0tlU0U,796
+pdf_to_markdown_llm/logger.py,sha256=7K_Ff8P3g1fmAHMoMMz1zGbNqqrgLHNOcd0WBWi7YIg,1070
+pdf_to_markdown_llm/logging_config.yaml,sha256=XNfAVN4xOAOMCDlv9kGEG_ZhegPb_UuYLPCuawC7n34,368
+pdf_to_markdown_llm/main/cli.py,sha256=KEZT7LXBa-LAZURiWaWyJyYc3WIE-N7xzSb7QFCAo7o,2605
+pdf_to_markdown_llm/model/process_results.py,sha256=nQCtMvJxEjTbBieuhqWyh5GOpXgnmPFOpSVGVrb6Kl8,280
+pdf_to_markdown_llm/service/gemini_pdf_to_text.py,sha256=Vp69S7JlBcLHNr6w7EcpiHr5_BlWxtOPHKdaiM2T4-I,1102
+pdf_to_markdown_llm/service/pdf_to_text.py,sha256=kGQ8vn2dhZ487czsCISdYMVbcV_YuFp10OLCicLheiM,10648
+pdf_to_markdown_llm-0.1.10.dist-info/LICENSE,sha256=L5nzpGbtEfcvouT-2j3RhrO3bCLTQQAAqleRPedg7eU,1101
+pdf_to_markdown_llm-0.1.10.dist-info/METADATA,sha256=ZwUgWbNPJLcUXYtqILWbMSQLS9Fc4XezZ1cqlFelWdE,2639
+pdf_to_markdown_llm-0.1.10.dist-info/WHEEL,sha256=IYZQI976HJqqOpQU6PHkJ8fb3tMNBFjg-Cn-pwAbaFM,88
+pdf_to_markdown_llm-0.1.10.dist-info/RECORD,,
