@@ -1,0 +1,8 @@
+pyxfr/__init__.py,sha256=5YdqCjKwUgsv_Zf_8EA5ZxCjfC8Xwn1gPtSEPc-yffM,480
+pyxfr/pyxfr.cpython-312-darwin.so,sha256=Wcc-XEueNoQzV2iIbxeSkktBtMz4B8fENw3im0zYqUg,6410792
+pyxfr/pyxfr_utils.py,sha256=APVQMehPA9FPo7jQOn12Eb3wLRWKxGqolY7wXFPJJRQ,2502
+pyxfr/data/transferase_data_0.6.0.json,sha256=sZnjy5Kr4PyrjUPcAQDcEKviBkplFHRDP4u81yrSc1w,362
+pyxfr-0.6.0.dist-info/METADATA,sha256=-s6qMYFZ6ftGzHb3bMP5buLxdKM_DXIA4tq18WVua-0,9082
+pyxfr-0.6.0.dist-info/WHEEL,sha256=-3kNVn2TJCWObb0m6_dmYue9Vi2TUw_DAQ0EPa0Jp0w,104
+pyxfr-0.6.0.dist-info/licenses/LICENSE,sha256=rM8deBXb6huC2N-DWuqXFsFQpjxbEzzV1uXMyKuehzQ,8114
+pyxfr-0.6.0.dist-info/RECORD,,
