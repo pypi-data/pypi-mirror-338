@@ -1,0 +1,11 @@
+Metadata-Version: 2.4
+Name: fluix
+Version: 0.1.1
+Summary: Python Post-Processing Toolkit for Scientific Visualization
+Author-email: dhanushenoy <dhanushenoy@gmail.com>
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+Requires-Dist: imageio
+
+# Fluix
+Modular Python utilities for scientific post-processing: plotting, animations, and flow visualization.
