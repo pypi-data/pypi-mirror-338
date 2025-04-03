@@ -1,0 +1,3 @@
+[console_scripts]
+bufr2geojson = bufr2geojson.cli:cli
+

@@ -1,0 +1,8 @@
+attrs>=22.2.0
+cfunits
+click
+eccodes
+jsonschema
+jsonpath_ng
+pyoscar
+PyYAML
