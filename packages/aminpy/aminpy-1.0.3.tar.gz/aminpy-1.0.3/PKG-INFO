@@ -1,0 +1,49 @@
+Metadata-Version: 2.4
+Name: aminpy
+Version: 1.0.3
+Summary: A Python library - rubino
+Home-page: https://t.me/MeAminCoder/3
+Author: Amin Ebrahimi
+Author-email: sinyoramin@gmail.com
+Keywords: rubika,api,bot,aminpy
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: aiohttp>=3.11.15
+Requires-Dist: aiofiles>=24.1.0
+Requires-Dist: tqdm>=4.67.1
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: keywords
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+from aminpy import rubino
+import asyncio
+from termcolor import colored
+#AminEbrahimi
+async def main():
+    async with rubino("YOUR_AUTH_TOKEN") as bot:
+        # Upload an image post
+        post = await bot.add_post(
+            "image.jpg",
+            text="Hello from aminpy!",
+            type="Picture"
+        )
+        print(colored("Post Created:", "green"), post)
+
+asyncio.run(main())

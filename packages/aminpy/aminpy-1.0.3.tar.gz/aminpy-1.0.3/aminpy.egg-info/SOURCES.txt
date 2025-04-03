@@ -1,0 +1,10 @@
+README.md
+setup.cfg
+setup.py
+aminpy/__init__.py
+aminpy/aminpy.py
+aminpy.egg-info/PKG-INFO
+aminpy.egg-info/SOURCES.txt
+aminpy.egg-info/dependency_links.txt
+aminpy.egg-info/requires.txt
+aminpy.egg-info/top_level.txt
