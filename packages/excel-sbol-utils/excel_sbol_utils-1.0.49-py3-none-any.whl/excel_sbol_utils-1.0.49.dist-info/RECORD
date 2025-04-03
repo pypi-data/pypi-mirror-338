@@ -1,0 +1,10 @@
+excel_sbol_utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+excel_sbol_utils/helpers.py,sha256=URPBIIwe02e5g-bsZioACVXi5AL_DOfukZtMyzzcuE0,8416
+excel_sbol_utils/library2.py,sha256=5M6f4auo22w08AvBZucRRRF5e2vxv6-LcI4KovXoHgI,40280
+excel_sbol_utils/library3.py,sha256=_H29uCrP2PhmtlCgZbKSj6CTa10UtKX2sowVXW5xjeU,15861
+excel_sbol_utils/temp.py,sha256=xSICoT9v4odychFPLH9MFTJ_W7oj8Q7K7McAuybE-lk,436
+excel_sbol_utils/test.py,sha256=pujzF7W35ipqMtBB6LtXpm6EJohU7m2JVzB7PAd_JKs,145
+excel_sbol_utils-1.0.49.dist-info/METADATA,sha256=Ma2omXBfsR4UESx8yULtKw2v9iI2DRM5ohGxiN-BJE4,527
+excel_sbol_utils-1.0.49.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+excel_sbol_utils-1.0.49.dist-info/top_level.txt,sha256=FtX2tWfpJGAD2Dw_aGT7rN2vvYCAgvj4EijnU94TIK4,17
+excel_sbol_utils-1.0.49.dist-info/RECORD,,
