@@ -1,0 +1,58 @@
+Metadata-Version: 2.3
+Name: onzr
+Version: 0.1.0
+Summary: The one-hour-late Deezer CLI.
+License: MIT
+Author: Julien Maupetit
+Author-email: julien@maupetit.net
+Requires-Python: >3.9,<4.0.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Dist: deezer-py (>=1.3.7,<2.0.0)
+Requires-Dist: dynaconf (>=3.2.10,<4.0.0)
+Requires-Dist: pycryptodomex (>=3.21.0,<4.0.0)
+Requires-Dist: pynput (>=1.8.1,<2.0.0)
+Requires-Dist: python-vlc (>=3.0.21203,<4.0.0)
+Requires-Dist: typer (>=0.15.2,<0.16.0)
+Description-Content-Type: text/markdown
+
+# Onzr
+
+The one-hour-late Deezer 💜 CLI.
+
+> :warning: This project is a work in progress. It works in its core parts, but
+> will not meet standard requirements for a decent player.
+
+## Requirements
+
+- [VLC](https://www.videolan.org/vlc/index.en_GB.html): we use VLC bindings to
+  play tracks, so this is a strict requirement.
+
+## Quick start guide (for developers)
+
+Install dependencies in a working environment:
+
+```sh
+make bootstrap
+```
+
+Run linters:
+
+```sh
+make lint
+```
+
+Run tests:
+
+```sh
+make test
+```
+
+## License
+
+This work is released under the MIT License.
+
