@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: cursofiap-AV-package
+Version: 1.0.0
+Summary: Descricao da sua lib cursofiap
+Home-page: https://github.com/Antonio-AV/cursofiap
+Author: Antonio Victor M Fonseca
+Author-email: anvimefo0123@gmail.com
+License: MIT
+Description-Content-Type: text/markdown
+
+# Cursofiap
+A simple example library.
+## Installation
+```sh
+pip install cursofiap
+```
+## Usage
+```python
+from cursofiap import hello_world
+print(hello_world())
+```

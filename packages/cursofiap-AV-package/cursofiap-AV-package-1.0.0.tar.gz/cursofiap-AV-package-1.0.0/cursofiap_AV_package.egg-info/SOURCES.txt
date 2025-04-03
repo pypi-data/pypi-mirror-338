@@ -1,0 +1,8 @@
+README.md
+setup.py
+cursofiap/__init__.py
+cursofiap/core.py
+cursofiap_AV_package.egg-info/PKG-INFO
+cursofiap_AV_package.egg-info/SOURCES.txt
+cursofiap_AV_package.egg-info/dependency_links.txt
+cursofiap_AV_package.egg-info/top_level.txt
