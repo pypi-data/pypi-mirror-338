@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+examples/train_example.py
+mlchemy/__init__.py
+mlchemy/model.py
+mlchemy/preprocessing.py
+mlchemy/utils.py
+mlchemy/validation.py
+mlchemy.egg-info/PKG-INFO
+mlchemy.egg-info/SOURCES.txt
+mlchemy.egg-info/dependency_links.txt
+mlchemy.egg-info/entry_points.txt
+mlchemy.egg-info/requires.txt
+mlchemy.egg-info/top_level.txt
+tests/test_model.py
