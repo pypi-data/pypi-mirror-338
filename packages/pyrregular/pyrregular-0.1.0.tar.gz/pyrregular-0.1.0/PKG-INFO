@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: pyrregular
+Version: 0.1.0
+Author: Francesco Spinnato, Cristiano Landi
+Author-email: francesco.spinnato@di.unipi.it
+Requires-Python: >=3.9
+Provides-Extra: test
+Provides-Extra: notebooks
