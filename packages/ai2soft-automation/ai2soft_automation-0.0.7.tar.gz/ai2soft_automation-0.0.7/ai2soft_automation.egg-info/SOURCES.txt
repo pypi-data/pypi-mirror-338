@@ -1,0 +1,16 @@
+LICENSE
+setup.py
+ai2soft_automation.egg-info/PKG-INFO
+ai2soft_automation.egg-info/SOURCES.txt
+ai2soft_automation.egg-info/dependency_links.txt
+ai2soft_automation.egg-info/top_level.txt
+src/__init__.py
+src/automation.py
+src/internals/__init__.py
+src/internals/keyboard.py
+src/internals/mouse.py
+src/internals/ocr.py
+src/internals/screenShot.py
+src/models/__init__.py
+src/models/datetime.py
+src/models/screenItem.py
