@@ -1,0 +1,10 @@
+README.md
+setup.py
+instasend/Instagram.py
+instasend/__init__.py
+instasend/constants.py
+instasend.egg-info/PKG-INFO
+instasend.egg-info/SOURCES.txt
+instasend.egg-info/dependency_links.txt
+instasend.egg-info/requires.txt
+instasend.egg-info/top_level.txt
