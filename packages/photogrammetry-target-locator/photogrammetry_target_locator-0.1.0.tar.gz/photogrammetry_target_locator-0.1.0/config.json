@@ -1,0 +1,31 @@
+{
+  "camera": {
+    "position": {
+      "latitude": 37.7749,
+      "longitude": -122.4194,
+      "altitude": 100.0,
+      "heading": 0.0
+    },
+    "orientation": {
+      "roll": 0.0,
+      "pitch": -90.0,
+      "yaw": 0.0
+    },
+    "intrinsics": {
+      "field_of_view": {
+        "horizontal_degrees": 65.5,
+        "vertical_degrees": 46.4
+      },
+      "sensor_size": {
+        "width": 1920,
+        "height": 1080
+      }
+    }
+  },
+  "target": {
+    "pixel_coordinates": {
+      "x": 1200,
+      "y": 700
+    }
+  }
+} 

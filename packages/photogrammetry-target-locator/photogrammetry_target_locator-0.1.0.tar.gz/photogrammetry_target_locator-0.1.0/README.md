@@ -1,0 +1,136 @@
+# Photogrammetry Target Locator
+
+This tool calculates the real-world geographic coordinates (latitude, longitude, altitude) of a target point identified in a camera image, based on the camera's position, orientation, and intrinsic parameters.
+
+## Features
+
+- Camera position and orientation input
+- Camera intrinsic parameter configuration with FOV angles
+- Target pixel coordinate specification
+- Terrain elevation data from USGS Elevation Point Query Service (EPQS)
+- WGS84 coordinate system
+- Configurable via JSON
+
+## Installation
+
+1. Clone this repository
+2. Install the required dependencies:
+
+```bash
+pip install -r requirements.txt
+```
+
+## Usage
+
+1. Configure your camera and target parameters in `config.json`
+2. Run the program:
+
+```bash
+python main.py
+```
+
+Alternatively, you can specify a different configuration file:
+
+```bash
+python main.py path/to/your/config.json
+```
+
+## Configuration
+
+The configuration file (`config.json`) contains the following parameters:
+
+- **Camera Position**: 
+  - Latitude, longitude, altitude
+  - Heading (0-360 degrees, clockwise from North)
+- **Camera Orientation**: Roll, pitch, yaw (in degrees)
+- **Camera Intrinsics**: 
+  - Field of view (horizontal and vertical angles in degrees) 
+  - Principal point (optional, defaults to image center)
+  - Sensor size (width and height in pixels)
+- **Target**: Pixel coordinates in the image
+
+Example configuration:
+
+```json
+{
+  "camera": {
+    "position": {
+      "latitude": 37.7749,
+      "longitude": -122.4194,
+      "altitude": 100.0,
+      "heading": 45.0
+    },
+    "orientation": {
+      "roll": 0.0,
+      "pitch": -120.0,
+      "yaw": 0.0
+    },
+    "intrinsics": {
+      "field_of_view": {
+        "horizontal_degrees": 65.5,
+        "vertical_degrees": 46.4
+      },
+      "sensor_size": {
+        "width": 1920,
+        "height": 1080
+      }
+    }
+  },
+  "target": {
+    "pixel_coordinates": {
+      "x": 1200,
+      "y": 700
+    }
+  }
+}
+```
+
+### Position vs. Orientation
+
+The difference between `heading` and `yaw`:
+
+- **Heading**: The compass direction the camera platform is facing (0-360° clockwise from North)
+- **Yaw**: The rotation of the camera relative to the platform's heading
+
+For example, if your drone is flying north (heading = 0°) but the camera is rotated 45° to the right, you would set heading = 0° and yaw = 45°. The effective camera direction would be northeast.
+
+### Terrain Elevation
+
+The program uses the USGS Elevation Point Query Service (EPQS) to provide accurate elevation data, which offers several advantages:
+
+- **Real-time data**: Retrieves elevation data on demand
+- **No local files**: No need to download and manage large DEM files
+- **Up-to-date information**: Access to the most current elevation data
+- **Wide coverage**: Covers the United States and many international locations
+
+The system automatically handles:
+- API request caching to improve performance
+- Rate limiting to avoid service throttling 
+- Multiple retries for intermittent connectivity issues
+- Graceful fallback to a default height of 0.0 meters if the service is unavailable
+
+#### About USGS Elevation Point Query Service (EPQS)
+
+The USGS EPQS provides elevation data for any point in the United States and many international locations. The service:
+
+- Is free to use (with reasonable rate limits)
+- Provides data from multiple elevation datasets
+- Returns elevations in meters or feet
+- Has a REST API that's easy to work with
+
+## Output
+
+The program outputs the calculated target coordinates to the console and saves them to a JSON file with the same name as the input configuration file, but with `_result.json` appended.
+
+Example output:
+
+```
+Target coordinates:
+  Latitude:  37.77375463 degrees
+  Longitude: -122.42089574 degrees
+  Altitude:  105.32 meters
+
+Results saved to config_result.json
+```
+
+The altitude value reflects the accurate terrain height at the target location based on USGS elevation data. 
