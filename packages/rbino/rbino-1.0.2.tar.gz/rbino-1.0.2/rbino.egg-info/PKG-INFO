@@ -1,0 +1,47 @@
+Metadata-Version: 2.4
+Name: rbino
+Version: 1.0.2
+Summary: Rubino Library for Python
+Home-page: https://t.me/MeAminCoder
+Author: AminEbrahimi
+Author-email: SinyorAmin@gmail.com
+License: MIT
+Keywords: rubika,bot,rubino,robot,library,rubikalib,rbino,Rubika
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: aiohttp>=3.0.0
+Requires-Dist: aiofiles>=0.7.0
+Requires-Dist: tqdm>=4.0.0
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: keywords
+Dynamic: license
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+from rbino import rubino
+import asyncio
+
+async def main():
+    async with rubino("YOUR_AUTH") as bot:
+        # Follow a user by their ID
+        follow_result = await bot.follow("USER_ID")
+        print("Follow Status:", follow_result)
+
+asyncio.run(main())
