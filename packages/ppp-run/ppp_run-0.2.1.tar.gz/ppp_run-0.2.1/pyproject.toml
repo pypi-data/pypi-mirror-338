@@ -1,0 +1,35 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ppp-run"
+version = "0.2.1"
+description = "A CLI tool to run scripts from pyproject.toml"
+readme = "README.md"
+authors = [{ name = "Konrad Frysiak", email = "konrad.frysiak@gmail.com" }]
+dependencies = [
+    "rich",
+    "setuptools",
+    "toml>=0.10.2",
+    "types-setuptools>=78.1.0.20250329",
+    "types-toml>=0.10.8.20240310",
+]
+
+
+[tool.ppp.scripts]
+# Prepare pypi bundle
+"prepare" = "python -m build"
+# Upload to pypi
+"deploy" = "twine upload dist/*"
+[dependency-groups]
+dev = [
+    "build>=1.2.2.post1",
+    "pytest>=8.3.5",
+    "ruff>=0.11.2",
+    "twine>=6.1.0",
+    "wheel>=0.45.1",
+]
+
+[project.scripts]
+ppp = "ppp.cli:main"
