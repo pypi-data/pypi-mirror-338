@@ -1,0 +1,15 @@
+autochat/__init__.py,sha256=tyDB4nu53_WcW7DStBDqQcu-AhTABneBnk1IFNvpggU,164
+autochat/base.py,sha256=sE6EUyC54evu8NX8h5l4bzaml9G4vZqfZ519l2npzNc,359
+autochat/chat.py,sha256=_GGMYhIwtmkSV4og0FTZOhxUiiSA09v5EGs8uKn4WuI,15438
+autochat/model.py,sha256=j7AOkA-a1-HuyAIhgQkinrCjcze4oBEfZLWwwP6QqAE,13991
+autochat/utils.py,sha256=e52FfXqO7oR_OUJWulumP7iTFTjyqumzH4X1zc287y8,8712
+autochat/providers/anthropic.py,sha256=hLoWRQvbK_pEDvCU-wjqjZZjs82DV-q1wQIjMtbcx2E,8332
+autochat/providers/base_provider.py,sha256=7sQLGPz6ZdBkwPvlHx62S8zo3AGXPyIaz7b29lYtSeE,1905
+autochat/providers/openai.py,sha256=53w8n2G8fwnKJypylkoR7UE99dkjCg6faFvpbbtG0xQ,5124
+autochat/providers/openai_hack.py,sha256=ThjL0trN_RySjRI7amEE7Ze6Rq8puWGPYzdzfqQIQps,4475
+autochat/providers/utils.py,sha256=j3DL4kL53Pg_932phTNTRwbxsD7xVu9llnbFTNQjuoo,1783
+autochat-0.12.0.dist-info/licenses/LICENSE,sha256=dUhuoK-TCRQMpuLEAdfme-qPSJI0TlcH9jlNxeg9_EQ,1056
+autochat-0.12.0.dist-info/METADATA,sha256=Z_LBSuVFs-i_4OyaPNhMpiL7g3hNxlP_ZWOVDTIV-Cs,7544
+autochat-0.12.0.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+autochat-0.12.0.dist-info/top_level.txt,sha256=X3S5YT08HGdgR7vgtCg8RgL44Cf9xw4wV_8IH03fYro,9
+autochat-0.12.0.dist-info/RECORD,,
