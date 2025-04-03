@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+arrangelt/__init__.py
+arrangelt/core.py
+arrangelt/utils.py
+arrangelt.egg-info/PKG-INFO
+arrangelt.egg-info/SOURCES.txt
+arrangelt.egg-info/dependency_links.txt
+arrangelt.egg-info/top_level.txt
+arrangelt/tests/__init__.py
+arrangelt/tests/test_core.py
