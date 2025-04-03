@@ -1,0 +1,64 @@
+Metadata-Version: 2.4
+Name: meprpo
+Version: 0.1.0
+Summary: Measuring predictive potential in graph databases
+Home-page: https://github.com/Jozef-Lauko/Measuring-predictive-potential-in-graph-databases
+Author: Jozef Lauko
+Author-email: laukojozef1@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: matplotlib
+Requires-Dist: scipy
+Requires-Dist: requests
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: license-file
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+# meprpo
+
+**meprpo** je Python knižnica obsahujúca rôzne užitočné skripty.
+
+## Inštalácia
+
+Môžete ju nainštalovať pomocou pip:
+```sh
+pip install meprpo
+```
+
+## Použitie
+
+Importovanie knižnice a použitie jej funkcií:
+```python
+import meprpo
+# Príklad použitia konkrétneho modulu alebo funkcie
+```
+
+## Závislosti
+Táto knižnica vyžaduje nasledovné balíčky:
+- `numpy`
+- `pandas`
+- `matplotlib`
+- `scipy`
+- `requests`
+
+## Kontakt
+Autor: **Jozef Lauko**  
+E-mail: **laukojozef1@gmail.com**  
+GitHub: [Repozitár](https://github.com/Jozef-Lauko/Measuring-predictive-potential-in-graph-databases)
+
+## Licencia
+Táto knižnica je licencovaná pod MIT licenciou.
+
