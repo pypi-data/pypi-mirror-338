@@ -1,0 +1,33 @@
+[project]
+name = "logician"
+version = "0.3.1"
+description = "The logical choice for Python logging"
+authors = [{ name = "Danny Stewart", email = "danny@stewart.cc" }]
+license = "LGPL-3.0-or-later"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = ["masterclass (>=0.1.0)", "timecapsule (>=0.1.0)"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: GNU Lesser General Public License v3 or later (LGPLv3+)",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+]
+
+[tool.poetry.group.dev.dependencies]
+mypy = ">=1.15.0"
+pdoc = ">=15.0.1"
+pre-commit = ">=4.2.0"
+ruff = ">=0.11.2"
+devpkg = { path = "../devpkg", develop = true }
+enviromancer = { path = "../enviromancer", develop = true }
+shelper = { path = "../shelper", develop = true }
+textparse = { path = "../textparse", develop = true }
+timecapsule = { path = "../timecapsule", develop = true }
+walking-man = { path = "../walking-man", develop = true }
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
