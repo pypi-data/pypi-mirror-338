@@ -1,0 +1,21 @@
+[project]
+name = "agentmail-toolkit"
+version = "0.1.6"
+description = "AgentMail Toolkit"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "agentmail>=0.0.19",
+    "openai-agents>=0.0.3",
+    "pydantic>=2.10.6",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[dependency-groups]
+dev = [
+    "build>=1.2.2.post1",
+    "twine>=6.1.0",
+]
