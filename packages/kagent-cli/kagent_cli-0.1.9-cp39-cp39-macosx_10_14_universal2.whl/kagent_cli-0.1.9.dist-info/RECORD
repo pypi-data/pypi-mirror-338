@@ -1,0 +1,10 @@
+kagent_cli/__init__.py,sha256=kUR5RAFc7HCeiqdlX36dZOHkUI5wI6V_43RpEcD8b-0,22
+kagent_cli/__main__.cpython-39-darwin.so,sha256=0iVSUwAIKvFLsF6j5J8S-0iuBf6EPIg0u8fTPN1NA_U,48152
+kagent_cli/__main__.py,sha256=oTgJsk3XeX68nI9TUifVbkc2Pm2qJOkTz9G4goVVMPc,341
+kagent_cli/client.cpython-39-darwin.so,sha256=LTpRIRCpzHkdrrVPYm0eJvjqDtkzBmM1C7rIx_Jcufk,226712
+kagent_cli/client.py,sha256=tFkVZSr_J87kkvP0mC9a6yVh3LZ-uaQgAa6ng7zHEM4,6590
+kagent_cli-0.1.9.dist-info/licenses/LICENSE,sha256=QdMM0d3lfs8Zx8AxAVQVIgbfV4P_pQW8hgZu-bUKFeQ,1066
+kagent_cli-0.1.9.dist-info/METADATA,sha256=HyhlCRO8B_RIWv1ery_9CUPMTVsS-bFT1Kmw8NdEBGk,1326
+kagent_cli-0.1.9.dist-info/WHEEL,sha256=wnL1MLZ7Uuuxp0AhDryRH-f6xKEYi88Cekf_HJaGZRk,113
+kagent_cli-0.1.9.dist-info/top_level.txt,sha256=Lxqr1v_k1dxzF-iGG0vknsQbgx5U8iue3QKWI0LJsaU,11
+kagent_cli-0.1.9.dist-info/RECORD,,
