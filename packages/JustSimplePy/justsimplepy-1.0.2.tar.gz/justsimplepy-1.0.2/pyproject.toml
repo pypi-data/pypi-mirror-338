@@ -1,0 +1,13 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "JustSimplePy"
+version = "1.0.2"
+description = "A library for Easy Python codes"
+authors = [{name = "Kshiraj Vij"}]
+dependencies = ["psycopg2"]
+
+[tool.setuptools.packages.find]
+where = ["."]
