@@ -1,0 +1,11 @@
+Metadata-Version: 2.4
+Name: ppp-run
+Version: 0.2.0
+Summary: A CLI tool to run scripts from pyproject.toml
+Author-email: Konrad Frysiak <konrad.frysiak@gmail.com>
+Description-Content-Type: text/markdown
+Requires-Dist: rich
+Requires-Dist: setuptools
+Requires-Dist: toml>=0.10.2
+Requires-Dist: types-setuptools>=78.1.0.20250329
+Requires-Dist: types-toml>=0.10.8.20240310
