@@ -1,0 +1,7 @@
+README.md
+setup.py
+signally.egg-info/PKG-INFO
+signally.egg-info/SOURCES.txt
+signally.egg-info/dependency_links.txt
+signally.egg-info/top_level.txt
+test/test_event.py
