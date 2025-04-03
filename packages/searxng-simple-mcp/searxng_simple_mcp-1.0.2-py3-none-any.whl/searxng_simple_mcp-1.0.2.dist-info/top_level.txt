@@ -1,0 +1,2 @@
+run_server
+searxng_simple_mcp
