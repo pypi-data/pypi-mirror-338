@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: multi-getch
+Version: 1.0.0
+Summary: getch multiplatform
+Author: azzammuhyala
+Author-email: azzammuhyala@gmail.com
+License: MIT
+Keywords: getch,getch multi platform,get character
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.0
+Description-Content-Type: text/markdown
+
+# Getch Multi-Platform
+
+Example:
+```py
+from getch import getch
+
+print(getch())
+```
