@@ -1,0 +1,10 @@
+gradio_xterm_logger/__init__.py,sha256=cnKIDhIkG74vpCwgTplUg4SzIZa15JWfDRM3Lx53_EI,85
+gradio_xterm_logger/gradio_xterm_logger.py,sha256=JxXpHLiFljspgMwwuhQGFFLwHj9w5wddun7U_j71izs,4652
+gradio_xterm_logger/gradio_xterm_logger.pyi,sha256=WZx07uCiX3XicVYq1gtoyLDgxjOGWQMdAhD6OCZKF1M,16692
+gradio_xterm_logger/templates/component/index.js,sha256=4xDbDDfkVm04mLRJPSWlKkwyUiOKr35aNE1V05G88jY,898763
+gradio_xterm_logger/templates/component/style.css,sha256=Z5vk1UUp6T30gO5OPHo7vBpW5xnOdFJXK4_MTi2RkcQ,1483933
+gradio_xterm_logger/templates/example/index.js,sha256=S0rQhEVCiO6TrKOl5wSmmKeYSD4WufxrYzuLtpfb-fo,1818
+gradio_xterm_logger/templates/example/style.css,sha256=Aj4k-S41TV83pot-J9j9Fi2UonrXHFC1Jl4Zb1xaYo4,61
+gradio_xterm_logger-0.0.2.dist-info/METADATA,sha256=Fe2ecb7mhfeJogY_VJvK0Hd0p7FVFbys6CidMOky1ww,6424
+gradio_xterm_logger-0.0.2.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+gradio_xterm_logger-0.0.2.dist-info/RECORD,,
