@@ -1,0 +1,54 @@
+"""
+NOTE: This file contains schema definitions for future implementation of structured extraction results.
+These models will be used in a future version to provide more structured and validated output from the GitRepo class.
+
+Current Status: Not implemented
+Future Plans:
+- Implement in GitRepo methods to return structured data
+- Add validation for all fields
+- Add serialization methods
+- Add examples of usage
+"""
+
+from pydantic import BaseModel, Field
+from typing import Optional, Dict, List, Union
+from pathlib import Path
+
+
+class FileInfo(BaseModel):
+    """Information about a single file in the repository.
+    
+    Attributes:
+        path (str): Relative path to the file
+        size (int): Size in bytes
+        content_type (str): MIME type or best guess of content type
+        is_binary (bool): Whether the file appears to be binary
+    """
+    path: str = Field(..., description="Relative path to the file")
+    size: int = Field(..., description="Size in bytes")
+    content_type: str = Field(..., description="MIME type or content type")
+    is_binary: bool = Field(..., description="Whether file is binary")
+
+
+class ExtractionResult(BaseModel):
+    """Results from repository extraction operations.
+    
+    Attributes:
+        repo_name (str): Name of the repository
+        repo_path (Union[str, Path]): Path to the repository (local or remote)
+        file_tree (Optional[Dict]): Structured file tree
+        readme (Optional[str]): Content of README file
+        dependencies (Optional[Dict]): Parsed dependencies
+        language_stats (Optional[Dict[str, float]]): Language usage percentages
+        custom_files (Optional[List[FileInfo]]): Custom filtered files
+        documentation (Optional[List[str]]): Documentation files found
+    """
+    
+    repo_name: str = Field(..., description="Repository name")
+    repo_path: Union[str, Path] = Field(..., description="Repository path")
+    file_tree: Optional[Dict] = Field(default=None, description="File tree structure")
+    readme: Optional[str] = Field(default=None, description="README content")
+    dependencies: Optional[Dict] = Field(default=None, description="Dependencies found")
+    language_stats: Optional[Dict[str, float]] = Field(default=None, description="Language statistics")
+    custom_files: Optional[List[FileInfo]] = Field(default=None, description="Custom filtered files")
+    documentation: Optional[List[str]] = Field(default=None, description="Documentation files") 
