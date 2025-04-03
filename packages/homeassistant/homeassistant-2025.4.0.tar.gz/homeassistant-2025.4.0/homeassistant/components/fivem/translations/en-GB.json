@@ -1,0 +1,32 @@
+{
+    "config": {
+        "error": {
+            "unknown": "Unexpected error"
+        },
+        "step": {
+            "user": {
+                "data_description": {
+                    "host": "The hostname or IP address of your FiveM server."
+                }
+            }
+        }
+    },
+    "entity": {
+        "binary_sensor": {
+            "status": {
+                "name": "Status"
+            }
+        },
+        "sensor": {
+            "max_players": {
+                "name": "Players max"
+            },
+            "online_players": {
+                "name": "Players online"
+            },
+            "resources": {
+                "name": "Resources"
+            }
+        }
+    }
+}

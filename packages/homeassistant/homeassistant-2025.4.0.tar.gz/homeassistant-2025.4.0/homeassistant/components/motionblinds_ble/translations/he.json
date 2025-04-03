@@ -1,0 +1,20 @@
+{
+    "entity": {
+        "button": {
+            "connect": {
+                "name": "\u05d4\u05ea\u05d7\u05d1\u05e8"
+            },
+            "disconnect": {
+                "name": "\u05d4\u05ea\u05e0\u05ea\u05e7\u05d5\u05ea"
+            }
+        },
+        "sensor": {
+            "connection": {
+                "state": {
+                    "connected": "\u05de\u05d7\u05d5\u05d1\u05e8",
+                    "disconnected": "\u05de\u05e0\u05d5\u05ea\u05e7"
+                }
+            }
+        }
+    }
+}
