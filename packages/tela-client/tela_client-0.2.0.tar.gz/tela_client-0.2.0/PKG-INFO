@@ -1,0 +1,213 @@
+Metadata-Version: 2.4
+Name: tela-client
+Version: 0.2.0
+Summary: A client library for interacting with the Tela API
+Home-page: https://github.com/yourusername/tela-client
+Author: Meistrari
+Author-email: contato@meistrari.com
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: requests
+Requires-Dist: pandas
+Requires-Dist: watchdog
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+
+# Tela Client Library
+
+Tela Client is a Python library for interacting with the Tela AI platform, enabling seamless integration with Tela's canvas functionality and file management features.
+
+## Installation
+
+Install the library via pip:
+
+```bash
+pip install tela-client
+```
+
+Or add to your requirements.txt:
+
+```
+tela-client==0.4.1
+```
+
+## Quick Start
+
+```python
+from tela_client import TelaClient, Canvas, file
+
+# Initialize client with your API key
+tela_client = TelaClient("your_tela_api_key")
+
+# Upload a file
+file_id = tela_client.upload_file("path/to/your/file.pdf")
+
+# Run a canvas with the file
+canvas = Canvas(canvas_id="your-canvas-id", tela_client=tela_client)
+result = canvas.run(document=file("path/to/your/file.pdf"))
+
+print(result)
+```
+
+## Core Features
+
+### TelaClient
+
+The main client class for interacting with Tela's API.
+
+```python
+from tela_client import TelaClient
+
+# Initialize the client
+tela_client = TelaClient("your_tela_api_key")
+```
+
+### File Management
+
+Upload files to Tela and use them in canvas workflows:
+
+```python
+# Upload a file directly
+file_id = tela_client.upload_file("path/to/document.pdf")
+
+# Use the file helper for canvas inputs
+from tela_client import file
+file_input = file("path/to/document.pdf")
+```
+
+### Canvas Operations
+
+Work with Tela canvases for AI processing:
+
+```python
+from tela_client import Canvas
+
+# Initialize a canvas with its ID
+canvas = Canvas(canvas_id="your-canvas-id", tela_client=tela_client)
+
+# Run the canvas with parameters
+result = canvas.run(
+    document=file_input,
+    parameter1="value1",
+    parameter2="value2"
+)
+```
+
+#### Canvas Caching
+
+Improve performance by caching canvas results:
+
+```python
+# Enable caching (default is False)
+result = canvas.run(use_cache=True, document=file_input)
+```
+
+#### Model Override
+
+Override the default model used by a canvas:
+
+```python
+# Specify a different model
+result = canvas.run(
+    override={"model": "gemini-2.0-flash"},
+    document=file_input
+)
+```
+
+## Advanced Usage
+
+### Processing Document Classification
+
+Identify specific document types within larger documents:
+
+```python
+def classify_document(origin_path, document_type):
+    tela_client = TelaClient("your_tela_api_key")
+    canvas = Canvas(canvas_id="document-classifier-id", tela_client=tela_client)
+  
+    result = canvas.run(
+        use_cache=True,
+        document=file(origin_path),
+        document_type=document_type
+    )
+  
+    return result
+```
+
+### Working with JSON Data
+
+Pass structured data to and from canvases:
+
+```python
+import json
+
+# Pass JSON data to a canvas
+canvas_args = {
+    'variables': json.dumps(variables_dict, ensure_ascii=False),
+    'dependencies': json.dumps(dependencies_dict, ensure_ascii=False),
+}
+
+result = canvas.run(use_cache=True, **canvas_args)
+```
+
+### Handling Canvas Dependencies
+
+Work with multiple canvases that depend on each other:
+
+```python
+# Process results from one canvas to use in another
+canvas1_result = canvas1.run(document=file_input)
+
+canvas2_args = {
+    'previous_result': json.dumps(canvas1_result, ensure_ascii=False)
+}
+
+canvas2_result = canvas2.run(**canvas2_args)
+```
+
+## Error Handling
+
+Implement proper error handling for canvas operations:
+
+```python
+try:
+    result = canvas.run(document=file_input)
+    if result is None:
+        print("Canvas execution failed")
+    else:
+        process_result(result)
+except Exception as e:
+    print(f"Error executing canvas: {e}")
+```
+
+## Best Practices
+
+1. **API Key Management**: Store your Tela API key securely using environment variables or secret management solutions
+2. **Optimize Caching**: Use the `use_cache` parameter to improve performance for repetitive operations
+3. **Error Handling**: Always implement proper error handling for API operations
+4. **Resource Cleanup**: Manage file resources properly to avoid memory leaks
+5. **Logging**: Implement appropriate logging for debugging and monitoring
+
+## License
+
+This library is licensed under [LICENSE TERMS].
+
+## Support
+
+For support, please contact [support information].
