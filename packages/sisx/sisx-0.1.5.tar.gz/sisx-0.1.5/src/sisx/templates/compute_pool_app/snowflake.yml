@@ -1,0 +1,25 @@
+definition_version: "2"
+env:
+  name: "<!name!>"
+  compute_pool: "<!compute_pool!>"
+  schema: "<!schema!>"
+  database: "<!database!>"
+  preview_database: "<!preview_database!>"
+  preview_schema: "<!preview_schema!>"
+  preview_role: "<!preview_role!>"
+  stage: "<!stage!>"
+entities:
+  streamlit_app:
+    type: streamlit
+    identifier:
+      name: <% ctx.env.name %>
+      schema: <% ctx.env.schema %>
+      database: <% ctx.env.database %>
+    stage: <% ctx.env.stage %>
+    compute_pool: <% ctx.env.compute_pool %>
+    main_file: streamlit_app.py
+    pages_dir: pages/
+    artifacts:
+      - "**/*.py"
+      - "requirements.txt"
+      - "*.yml"

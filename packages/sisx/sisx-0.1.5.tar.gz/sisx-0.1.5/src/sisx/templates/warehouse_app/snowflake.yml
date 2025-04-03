@@ -1,0 +1,26 @@
+definition_version: "2"
+env:
+  name: "<!name!>"
+  query_warehouse: "<!query_warehouse!>"
+  app_warehouse: "<!app_warehouse!>"
+  schema: "<!schema!>"
+  database: "<!database!>"
+  role: "<!role!>"
+  preview_database: "<!preview_database!>"
+  preview_schema: "<!preview_schema!>"
+  preview_role: "<!preview_role!>"
+  stage: "<!stage!>"
+entities:
+  streamlit_app:
+    type: streamlit
+    identifier:
+      name: <% ctx.env.name %>
+      schema: <% ctx.env.schema %>
+      database: <% ctx.env.database %>
+    stage: <% ctx.env.stage %>
+    query_warehouse: <% ctx.env.query_warehouse %> # Used for queries by default
+    main_file: streamlit_app.py
+    pages_dir: pages/
+    artifacts:
+      - "**/*.py"
+      - "*.yml"
