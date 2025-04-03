@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+img_fit/__init__.py
+imgfit.egg-info/PKG-INFO
+imgfit.egg-info/SOURCES.txt
+imgfit.egg-info/dependency_links.txt
+imgfit.egg-info/requires.txt
+imgfit.egg-info/top_level.txt
+scripts/img.exe
