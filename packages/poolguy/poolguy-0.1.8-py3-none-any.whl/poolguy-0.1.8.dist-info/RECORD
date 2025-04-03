@@ -1,0 +1,13 @@
+poolguy/__init__.py,sha256=NED2CQxmcY2Y0uaX-akYnyp5YLl6Q5T2EDp3l92_fwQ,277
+poolguy/http.py,sha256=Qp-O4VcON8P7CE1o1ZCEZkr1GGTXT34CwGP7wc0a60k,3826
+poolguy/oauth.py,sha256=epXHv0h8-kC_j2CFTTDiEdSLekAFs8thMEMu4MljGe8,9925
+poolguy/storage.py,sha256=BOmbZFITAZn1bS9wXzNL6xSVYeuec9ZMVdz7cm4TBlo,6843
+poolguy/twitch.py,sha256=k1sLg51HtX9Cmo8DdWKLFOr94yyfQWkkXERP8VEssG4,10907
+poolguy/twitchapi.py,sha256=7r1jIF42HJefU9RUBeF4oCrr8XjUmYYjkxU_XFHHeV8,32596
+poolguy/twitchws.py,sha256=9ltVNE_9fMBxM1xkWNAeU_s-U7agwLvKKT6WiBfYAZM,13135
+poolguy/webserver.py,sha256=DCzgNx3bzF7Hme40aF24Y9cN5m2TVvEG78LqVmGnlec,5316
+poolguy-0.1.8.dist-info/licenses/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+poolguy-0.1.8.dist-info/METADATA,sha256=kjcjNE0QNXnQAHDPRFS7Wy-OG8C7xkhkFDrQiFYhz0s,4125
+poolguy-0.1.8.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+poolguy-0.1.8.dist-info/top_level.txt,sha256=r52HVs346uBDt3zszuULNjIF9E_zIBMAHeFIxhkKnvQ,8
+poolguy-0.1.8.dist-info/RECORD,,
