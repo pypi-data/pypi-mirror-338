@@ -1,0 +1,14 @@
+gitparse/__init__.py,sha256=9lPkOspnIGz_MLOrr4vXCID6OoOAhmeBJPYFqua5ifo,249
+gitparse/cli.py,sha256=QpW5rjkpkBgQmwDqUcBNRnQGmkj21BZPI1OH3lc4DFg,7037
+gitparse/core/async_repo.py,sha256=_TV_I_SVEcHqcQBUSBhGmviIT63fusIHzZFGdE5ymXE,5103
+gitparse/core/repo.py,sha256=uvd4VI4Ug3Qn6udR-1osBqbhj-jMZiDqVEgzT2_ZaD0,31862
+gitparse/schema/config.py,sha256=2zwFnE2ZZqmNn53CphOZSdo7aCV7pslYd-0CEcly0Po,1101
+gitparse/vars/__init__.py,sha256=jKg-jLdddM2HOXiSDi2XYToWWjWBtGcbxyB--QcwcDk,444
+gitparse/vars/exclude_patterns.py,sha256=oH-TpSu0YV7vHsuVC53VTi3CdVHSCXdcKJhEb1ZtTOk,1299
+gitparse/vars/file_types.py,sha256=6tlcSMKS-98R8FPwvte3ZFIaNLGkVu6YJCse5ir0_T0,2728
+gitparse/vars/git_hosts.py,sha256=_4eCvG96BOmiuATtT1Je7WwijATzGLIRCVtMDr6Yngc,2063
+gitparse/vars/limits.py,sha256=hf4OfBDfbIXn0EV_3XkoE06QZkdSq-rtdLeZJBxbg80,1135
+gitparse-0.1.1.dist-info/entry_points.txt,sha256=slGMrlazmzRC4NomQ7OrUP-gxKKVlPMppsyopjPm0ZY,46
+gitparse-0.1.1.dist-info/METADATA,sha256=EGVV5byKzCipaIXQNimd0wkSxRdhOGEsOLWNdQW35nE,5331
+gitparse-0.1.1.dist-info/WHEEL,sha256=IYZQI976HJqqOpQU6PHkJ8fb3tMNBFjg-Cn-pwAbaFM,88
+gitparse-0.1.1.dist-info/RECORD,,
