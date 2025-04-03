@@ -1,0 +1,19 @@
+[project]
+name = "buildingpy"
+version = "0.0.1"
+authors = [
+  { name="3BM", email="info@3bm.co.nl" },
+]
+description = "BIM for python"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+license = "GPL-2.0-or-later"
+license-files = ["LICEN[CS]E*"]
+
+[project.urls]
+Homepage = "https://github.com/3BMLabs/building.py"
+Issues = "https://github.com/3BMLabs/building.py/issues"
