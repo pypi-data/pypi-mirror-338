@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cellar_extractor"
+readme = {file = "README.md", content-type = "text/markdown"}
+version = "1.2.2"
+requires-python = ">= 3.9"
+description = "Library for extracting cellar data"
+authors = [
+    { name = "LawTech Lab", email = "law-techlab@maastrichtuniversity.nl" }
+]
+license = { file = "LICENSE" }
+keywords = ["cellar", "extractor"]
+dependencies = [
+    "bs4",
+    "SPARQLWrapper",
+    "requests",
+    "pandas",
+    "xmltodict",
+    "tqdm"
+]
+
+[project.urls]
+"Bug Tracker" = "https://github.com/maastrichtlawtech/extraction_libraries"
+"Build Source" = "https://github.com/maastrichtlawtech/extraction_libraries"
+
+[tool.setuptools.packages.find]
+include = ["cellar_extractor"]
+namespaces = false
