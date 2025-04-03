@@ -1,0 +1,32 @@
+Metadata-Version: 2.4
+Name: multi-classifier-tester
+Version: 1.0.0
+Summary: Multi-Classifier Tester for your classification data
+Home-page: https://github.com/aribilgiogr/multi-classifier-tester
+Author: Arı Bilgi Ogr
+Author-email: aribilgiogr@gmail.com
+License: MIT
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: lightgbm==4.6.0
+Requires-Dist: numpy==2.2.4
+Requires-Dist: pandas==2.2.3
+Requires-Dist: scikit-learn==1.6.1
+Requires-Dist: xgboost==3.0.0
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: license
+Dynamic: license-file
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+# Multi Classifier Tester

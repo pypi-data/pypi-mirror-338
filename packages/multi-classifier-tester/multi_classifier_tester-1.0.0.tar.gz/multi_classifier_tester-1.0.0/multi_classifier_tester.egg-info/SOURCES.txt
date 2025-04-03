@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+multi_classifier_tester/__init__.py
+multi_classifier_tester/classifier_tester.py
+multi_classifier_tester.egg-info/PKG-INFO
+multi_classifier_tester.egg-info/SOURCES.txt
+multi_classifier_tester.egg-info/dependency_links.txt
+multi_classifier_tester.egg-info/requires.txt
+multi_classifier_tester.egg-info/top_level.txt
