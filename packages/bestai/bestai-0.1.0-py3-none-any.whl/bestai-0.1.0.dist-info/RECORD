@@ -1,0 +1,9 @@
+bestai/__init__.py,sha256=YMfx2wpv8ihoz0nMU8SZm4fGoweh8DQpo9KiMVhSUsQ,56
+bestai/client.py,sha256=dEgBvj0Cf5E9fa_LxVVMM2oXS95FQZjhemDAi9Rbi54,5419
+bestai/router.py,sha256=D4odn4NcxCHLOhZBZTDhfybnRHAwi2fK1BHGaVuQz4g,6034
+bestai/utils.py,sha256=HWTM0IpHiWn80-dG8P2yxVWw5q9Dyoaa-hmPYnBqbS4,3629
+bestai/examples/simple_router.py,sha256=eOOsOYhMN7bnPBytrepexU65M2D-mjsKaQuj1adIT3k,4949
+bestai-0.1.0.dist-info/METADATA,sha256=vsG3JQXJMHO8pMgcl6BLfwOkqbtXUfZzVRW4tTZU0WI,4694
+bestai-0.1.0.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+bestai-0.1.0.dist-info/top_level.txt,sha256=W1voJSPPhDSl2xPceL5VQL9nN69ZDtNNDM8VKtvNT9Q,7
+bestai-0.1.0.dist-info/RECORD,,
