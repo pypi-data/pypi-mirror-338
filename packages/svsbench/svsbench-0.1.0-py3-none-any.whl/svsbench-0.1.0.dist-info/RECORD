@@ -1,0 +1,14 @@
+svsbench/__init__.py,sha256=mPycsu05OSSEjtI3_CirFlE3fev4rwofUOsk_ZQN2E4,120
+svsbench/build.py,sha256=5A9AcvkKvytwbiDdpzUrtZmDsEUp2CqDPdtusARGm5Q,13515
+svsbench/compress.py,sha256=3CIeyfWpvAFh-Hrr2MRdTZHUGoSIarnk1aULpXWaTW0,2601
+svsbench/consts.py,sha256=qABtxLYBNm0j4qZG6Pqe_nuwk3QHZdeLN5l1x9V7_7Q,1140
+svsbench/generate_ground_truth.py,sha256=MS1UH6UUTlY1mr-SisynzmtB1gJ0GYpG011Xfeik4Kw,2986
+svsbench/loader.py,sha256=qVr2ioawF_EF2Zjf8wlgtan1l8CGfRyYA4hiRhbw1yA,3736
+svsbench/merge.py,sha256=IcQYkk2AnGDbSO5XfZPmmqBTWfdeAvLDbJwUqDUHwVE,2031
+svsbench/search.py,sha256=WkFNBZT6Ub7fKuxcAohk65p1IUou32E8vKOSpNhKxbY,11996
+svsbench/utils.py,sha256=Z9Izz2VmD5ap84fyEia37ejlRZ0SYnNghLJagduG894,7383
+svsbench-0.1.0.dist-info/METADATA,sha256=snyVka4w9cXyBFN3cmpY8lh4lz4GOP_bzJc8Ysndb3M,2738
+svsbench-0.1.0.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+svsbench-0.1.0.dist-info/licenses/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+svsbench-0.1.0.dist-info/licenses/NOTICE,sha256=Marj7jIof6RgHm6Xg0oZqsewEbFrcfZw0eSn9S-XUUI,129
+svsbench-0.1.0.dist-info/RECORD,,
