@@ -1,0 +1,9 @@
+LICENSE.txt
+README.md
+setup.py
+pyiides/__init__.py
+pyiides/pyiides.py
+pyiides.egg-info/PKG-INFO
+pyiides.egg-info/SOURCES.txt
+pyiides.egg-info/dependency_links.txt
+pyiides.egg-info/top_level.txt
