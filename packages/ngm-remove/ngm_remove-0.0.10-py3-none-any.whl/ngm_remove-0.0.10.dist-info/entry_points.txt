@@ -1,0 +1,4 @@
+[console_scripts]
+copy = ngm_remove:run_copy
+reflink = ngm_remove:run_reflink
+remove = ngm_remove:run_remove
