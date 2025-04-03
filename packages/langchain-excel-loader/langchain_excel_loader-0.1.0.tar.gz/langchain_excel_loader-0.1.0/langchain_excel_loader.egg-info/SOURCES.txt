@@ -1,0 +1,9 @@
+README.md
+setup.py
+langchain_excel_loader/__init__.py
+langchain_excel_loader/main.py
+langchain_excel_loader.egg-info/PKG-INFO
+langchain_excel_loader.egg-info/SOURCES.txt
+langchain_excel_loader.egg-info/dependency_links.txt
+langchain_excel_loader.egg-info/requires.txt
+langchain_excel_loader.egg-info/top_level.txt

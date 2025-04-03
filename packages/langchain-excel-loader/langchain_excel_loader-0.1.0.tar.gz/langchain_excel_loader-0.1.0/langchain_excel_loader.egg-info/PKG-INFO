@@ -1,0 +1,109 @@
+Metadata-Version: 2.1
+Name: langchain-excel-loader
+Version: 0.1.0
+Description-Content-Type: text/markdown
+
+# An Excel Loader for Langchain that Preserves Document Structure
+
+## Background
+
+The [current solution from langchain](https://python.langchain.com/docs/integrations/document_loaders/microsoft_excel/) for loading .xlsx is by using the Unstructured document loader. This has two disadvantages:
+
+1. No attempt is made to preserve the structure of the document. This is as opposed to the [CSV loader](https://python.langchain.com/docs/integrations/document_loaders/csv/) for example which ingests by row with the column title for each cell on the row:
+
+### CSV loader example
+
+**csv:**
+
+Name,Age
+Harry,21
+Mary,48
+
+
+**Output:**
+```python
+[Document(page_content='Name: Harry \n Age: 21', metadata={'source':'csv.csv', 'row:0'}),
+ Document(page_content='Name: Mary \n Age: 48', metadata={'source':'csv.csv', 'row:1'})]
+```
+
+Documents like these give the LLM the context to understand the meaning behind data.
+
+Instead of an approach like the above, the Unstructured Excel Loader will simply add all the text content contained in the xlsx in one string with no indication of columns or rows.
+
+2. The second disadvantage is that the Unstructured package is large [with multiple system dependencies](https://python.langchain.com/docs/integrations/providers/unstructured/#installation-and-setup) and so not suitable for all environments and use cases.
+
+## Implementation of the StructuredExcelLoader
+
+This package provides a StructuredExcelLoader, which uses [openpyxl](https://openpyxl.readthedocs.io/en/stable/) to read the .xlsx file. Since Excel spreadsheets have a less fixed structure than csv files, we opt to preserve the column and row number for each cell, giving the LLM a greater remit in inferring meaning from the document.
+
+## Example Output
+
+Given an Excel file `sample.xlsx` with two sheets:
+
+**Sheet: "Employees"**
+| Employee | Department | Salary |
+|----------|------------|--------|
+| John Doe | Sales      | 50000  |
+| Jane Smith| Marketing | 55000  |
+
+**Sheet: "Departments"**
+| Department | Location | Manager |
+|------------|----------|---------|
+| Sales      | New York | Bob Wilson |
+| Marketing  | Chicago  | Sarah Lee |
+
+The StructuredExcelLoader will create separate documents for each sheet:
+
+```python
+[
+    Document(
+        page_content='''SHEET: "Employees"
+
+ROW 1:
+CELL A1: Employee
+CELL B1: Department
+CELL C1: Salary
+
+ROW 2:
+CELL A2: John Doe
+CELL B2: Sales
+CELL C2: 50000
+
+ROW 3:
+CELL A3: Jane Smith
+CELL B3: Marketing
+CELL C3: 55000''',
+        metadata={'source': 'sample.xlsx', 'sheet_name': 'Employees'}
+    ),
+    
+    Document(
+        page_content='''SHEET: "Departments"
+
+ROW 1:
+CELL A1: Department
+CELL B1: Location
+CELL C1: Manager
+
+ROW 2:
+CELL A2: Sales
+CELL B2: New York
+CELL C2: Bob Wilson
+
+ROW 3:
+CELL A3: Marketing
+CELL B3: Chicago
+CELL C3: Sarah Lee''',
+        metadata={'source': 'sample.xlsx', 'sheet_name': 'Departments'}
+    )
+]
+```
+
+## Disadvantages
+
+This approach is not as strong when the .xlsx is extremely complex as the LLM struggles to maintain understanding of the positioning of multiple Tables within a sheet. Although with the latest models (e.g. ChatGPT 4o, Gemini 2.5 at the time of writing) this limit has improved along with the LLMs' abilities to understand cell references accurately
+
+## Future Work
+
+After the effectiveness of this approach is validated, it should be incorportaed into the langchain_community.document_loaders repository, alongside the existing UnstructuredExcelLoader, which still provides use in some cases.
+
+Alternatively, an additional boolean argument could be provided called "preserve_structure", which would be set to true by default. If it is explicity set to false, the loader could produce documents as raw text strings without cell references.
