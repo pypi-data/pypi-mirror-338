@@ -1,0 +1,15 @@
+enverge_placeholder/__init__.py,sha256=Pfr70syDjtxPv2D9UcynKg_JyTv-rW-a5GNKPwwsKgc,596
+enverge_placeholder/_version.py,sha256=qDHKKtQbqZgUaeTI_SRS2Ofjha_XIPYSZP0V8lw2wOI,172
+enverge_placeholder/config/themes.jupyterlab-settings.json,sha256=AcqD7YCRSB4uotpQs_Bvxzn_Z_HEtJIAiW8-XE-yMWM,26
+enverge_placeholder-0.0.11.data/data/share/jupyter/labextensions/enverge_placeholder/package.json,sha256=WFaRJyNFL718qmBmi7vOQGUT0JFgxll4n2x9C8LPu3Q,3419
+enverge_placeholder-0.0.11.data/data/share/jupyter/labextensions/enverge_placeholder/schemas/enverge_placeholder/package.json.orig,sha256=HaLMr0V5YR5-O_YaT1qMTVxdq6z3vSrN__kVhYUeqeU,3303
+enverge_placeholder-0.0.11.data/data/share/jupyter/labextensions/enverge_placeholder/schemas/enverge_placeholder/plugin.json,sha256=r-hzIDTOrAMZfKVT9-ccVsIwt3JnpLnUDdirM3mlT5g,274
+enverge_placeholder-0.0.11.data/data/share/jupyter/labextensions/enverge_placeholder/static/566.18fd41ad98bc542d480e.js,sha256=GP1BrZi8VC1IDnHX7FYW7Mrv3k-WNP8Qfhx8Ra6WnP0,30230
+enverge_placeholder-0.0.11.data/data/share/jupyter/labextensions/enverge_placeholder/static/remoteEntry.1979de4b1fc831af4bcb.js,sha256=GXneSx_IMa9LyyrfICys7VBfDuUweyYBmc-DOJX3Xvk,6947
+enverge_placeholder-0.0.11.data/data/share/jupyter/labextensions/enverge_placeholder/static/style.js,sha256=-CQt0ZTPaCTvrRiLcznxflAbfvIKlOVzjOos-muaXQ8,118
+enverge_placeholder-0.0.11.data/data/share/jupyter/labextensions/enverge_placeholder/static/third-party-licenses.json,sha256=W6N2sSD7tQihMqQk64F9xMd1Flfr2KO97esAiHUOYdM,2453
+enverge_placeholder-0.0.11.data/data/share/jupyter/labextensions/enverge_placeholder/install.json,sha256=OOJJyxeF9EVAmaSDCFUIk2HwzTvNsM0yA_8j0J1WdHY,199
+enverge_placeholder-0.0.11.dist-info/METADATA,sha256=KlWVMNzvdPCahzLGbjb6NMmo1FQZntAgqg_dNA7Q6-U,3129
+enverge_placeholder-0.0.11.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+enverge_placeholder-0.0.11.dist-info/licenses/LICENSE,sha256=cFETqAPbZPAiaEvqn0VLRRJXDSFKqa57Xnj54qNlk1Y,1538
+enverge_placeholder-0.0.11.dist-info/RECORD,,
