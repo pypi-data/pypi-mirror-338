@@ -1,0 +1,31 @@
+Metadata-Version: 2.4
+Name: pretix_custom_head
+Version: 0.1.7.2
+Summary: A Pretix plugin to inject custom code into the <head> section and track events using Plausible Analytics.
+Home-page: https://github.com/bergruebe/pretix_custom_head
+Author: Bergruebe
+Author-email: Bergruebe <68869895+Bergruebe@users.noreply.github.com>
+License: MIT License
+Project-URL: homepage, https://github.com/bergruebe/pretix_custom_head
+Classifier: Development Status :: 3 - Alpha
+Classifier: Framework :: Django
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Dynamic: author
+Dynamic: home-page
+Dynamic: license-file
+
+# Pretix Custom Head Plugin
+
+This is a Pretix plugin that allows you to inject custom code into the `<head>` section of your event pages and track events using Plausible Analytics.
+
+## Features
+
+- Inject custom HTML/JavaScript code into the `<head>` section of event pages.
+- Configure Plausible Analytics tracking for your events.
