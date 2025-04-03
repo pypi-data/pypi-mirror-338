@@ -1,0 +1,14 @@
+{
+    "config": {
+        "error": {
+            "unknown": "Unexpected error"
+        }
+    },
+    "entity": {
+        "binary_sensor": {
+            "lost": {
+                "name": "Lost"
+            }
+        }
+    }
+}
