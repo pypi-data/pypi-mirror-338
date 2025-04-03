@@ -1,0 +1,5 @@
+spack.lock
+.spack-env/
+build-*
+
+__pycache__/
