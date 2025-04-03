@@ -1,0 +1,10 @@
+numba>=0.60.0
+gymnasium
+numba
+pygame
+xxhash==3.5.0
+opencv-python
+bidict
+matplotlib
+getch
+seaborn
