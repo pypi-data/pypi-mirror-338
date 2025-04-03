@@ -1,0 +1,11 @@
+ppp/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ppp/cli.py,sha256=pFyvRmtO2Spif_k_CFYSZtRhAQZcIl772_nbGrvlWNM,2659
+ppp/toml_service.py,sha256=lQzSUwhGWGTlBHblwo3xOlTp1R_PSgrGDByzkDrUZSI,3944
+ppp/toml_service_test.py,sha256=iAhI_jafpUcCmhitgRkNxNaP4ULZRBmMqujHqjmAQ1w,1067
+ppp/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ppp/tests/lib.py,sha256=45-BlkFqRAP_qtuqF3FzSJL-AxXLrcYyGAm_1Md5dyQ,154
+ppp_run-0.2.1.dist-info/METADATA,sha256=D6PxenUobaAqJhLtUlwLYyI5VwcvKaNipUFFNdmRpoE,1164
+ppp_run-0.2.1.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+ppp_run-0.2.1.dist-info/entry_points.txt,sha256=H5LHvIyiHQk0gn8J9WvUKOk_zrsa0VrLF_nEMyvXLDs,37
+ppp_run-0.2.1.dist-info/top_level.txt,sha256=lHndc_cGmc03ByjvZymW1Sn8NfzmwkdvLe2P6tB2Ucc,4
+ppp_run-0.2.1.dist-info/RECORD,,
