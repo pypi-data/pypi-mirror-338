@@ -1,0 +1,8 @@
+./.gitignore,sha256=qR7CgW5SvxCIscwZq0zqetTPh5lFueigL6OsVPJncAk,3227
+./PKG-INFO,sha256=YhLIMv4KBtowUkQGrzcFnx5NgM_PHTZvQauRUYGd0sg,1868
+./README.md,sha256=DtRAVg5hge_kU8ETCeWXNWaDdpEgIw9agK7lw3R_4Lw,1076
+./pyproject.toml,sha256=v2b6Zfr9fN_YNy0z1Hqa4vs1zcelwmt87QqBQkWYFTo,1038
+./mp_scrape_source_euparl/__init__.py,sha256=dwfxzA-KhuQ8ffsAnDYxN_lh2uQBwz_ohqquSfIrWm8,6806
+mp_scrape_source_euparl-0.1.0.dist-info/METADATA,sha256=YhLIMv4KBtowUkQGrzcFnx5NgM_PHTZvQauRUYGd0sg,1868
+mp_scrape_source_euparl-0.1.0.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+mp_scrape_source_euparl-0.1.0.dist-info/RECORD,,
