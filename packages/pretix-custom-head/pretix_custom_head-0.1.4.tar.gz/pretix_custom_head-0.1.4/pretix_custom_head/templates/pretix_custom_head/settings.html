@@ -1,0 +1,9 @@
+{% extends "pretixcontrol/event/base.html" %}
+{% block content %}
+<h2>Custom Head Injection & Plausible Tracking</h2>
+<form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Save</button>
+</form>
+{% endblock %}
