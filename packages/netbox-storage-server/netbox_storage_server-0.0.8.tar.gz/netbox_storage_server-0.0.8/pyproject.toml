@@ -1,0 +1,23 @@
+[project]
+name = "netbox-storage-server"
+dynamic = ["version"]
+description = "NetBox Storage Server plugin"
+readme = "README.md"
+authors = [
+    { name = "Kenneth Trelborg Vestergaard", email = "6765646+mortencombat@users.noreply.github.com" }
+]
+requires-python = ">=3.12"
+dependencies = []
+
+[build-system]
+requires = ["hatchling", "hatch-vcs"]
+build-backend = "hatchling.build"
+
+[tool.hatch.version]
+source = "vcs"
+raw-options = { version_scheme = "only-version", local_scheme = "no-local-version" }
+
+[dependency-groups]
+dev = [
+    "pytest>=8.3.5",
+]

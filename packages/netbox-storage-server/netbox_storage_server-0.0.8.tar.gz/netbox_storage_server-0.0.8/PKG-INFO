@@ -1,0 +1,19 @@
+Metadata-Version: 2.4
+Name: netbox-storage-server
+Version: 0.0.8
+Summary: NetBox Storage Server plugin
+Author-email: Kenneth Trelborg Vestergaard <6765646+mortencombat@users.noreply.github.com>
+License-File: LICENSE
+Requires-Python: >=3.12
+Description-Content-Type: text/markdown
+
+# NetBox Storage Server plugin
+
+Add storage server disk inventory/management functionality to NetBox
+
+> [!IMPORTANT]
+> This plugin is under development. It is not yet functional.
+
+## Development resources
+
+- [NetBox Plugin Development Tutorial](https://github.com/netbox-community/netbox-plugin-tutorial/blob/main/README.md)
