@@ -1,0 +1,7 @@
+iclr_downloader/__init__.py,sha256=ryiGun9PskUPD1A9MuWCPzpPeiPSh8Wu-V6k1HSCz_0,78
+iclr_downloader/core.py,sha256=X_F0AJLpOzsPiAwkf_hzZ5_z_5HETnhenrvNf781lVw,4175
+iclr_downloader/commands/download_by_year.py,sha256=S6MBi_UxGhITaD2HrLP8KG5H_Q6j0letWQ2QpyWUr6Y,1406
+iclr_downloader-0.1.3.dist-info/METADATA,sha256=JdaMLTrri05X7f3qjYxPrdCzfkZ5r5vtPTRr-HXRw5w,226
+iclr_downloader-0.1.3.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+iclr_downloader-0.1.3.dist-info/top_level.txt,sha256=ucQgelhEUP-5aEnDmRp6bvQqgYGMWlBj0z7OryGQmNc,16
+iclr_downloader-0.1.3.dist-info/RECORD,,
