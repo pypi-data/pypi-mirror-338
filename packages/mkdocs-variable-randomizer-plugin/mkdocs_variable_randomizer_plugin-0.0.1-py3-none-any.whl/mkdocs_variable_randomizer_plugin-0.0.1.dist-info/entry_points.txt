@@ -1,0 +1,2 @@
+[mkdocs.plugins]
+variable_randomizer = mkdocs_variable_randomizer_plugin:VariableRandomizerPlugin
