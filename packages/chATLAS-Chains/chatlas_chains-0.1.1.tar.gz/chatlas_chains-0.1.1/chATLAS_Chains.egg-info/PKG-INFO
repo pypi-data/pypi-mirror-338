@@ -1,0 +1,33 @@
+Metadata-Version: 2.4
+Name: chATLAS_Chains
+Version: 0.1.1
+Summary: A modular Python package for implementing Retrieval Augmented Generation chains for the chATLAS project.
+Home-page: https://gitlab.cern.ch/belliot/chatlas-packages/
+Author: Joe Egan
+Author-email: joseph.caimin.egan@cern.ch
+Project-URL: Documentation, https://chatlas-packages.docs.cern.ch/chATLAS_Chain/
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: chATLAS_Benchmark
+Requires-Dist: chATLAS_Embed>=0.1.14
+Requires-Dist: langchain~=0.3.3
+Requires-Dist: langchain_core
+Requires-Dist: langchain_openai
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: license-file
+Dynamic: project-url
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+
+Nothing to see here
