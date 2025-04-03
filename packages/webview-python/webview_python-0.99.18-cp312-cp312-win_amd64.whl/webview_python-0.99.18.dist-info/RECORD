@@ -1,0 +1,10 @@
+webview/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+webview/_dummy_holder.c,sha256=dM7jBYR5KhCerI_V1K_j7JezUZkrvXhyfon7SNcLQB0,154917
+webview/_dummy_holder.cp312-win_amd64.pyd,sha256=pJ1sYVcsQ0APtaT-weqFVa2OpVedfwuUa2ySr7Asi2c,19456
+webview/_webview_ffi.py,sha256=gtngzJhQtbr2aJlegmfkF-Rg0Tb2iEnmso1Htz6TkBo,6492
+webview/webview.py,sha256=K6cpeSObZ1PHWjBSgcdBCAUdapGr9Mn-zsKG1w-6fwY,3023
+webview_python-0.99.18.dist-info/licenses/LICENSE,sha256=4za-tnz_zaV1oY5vxbtLpVy2TvyOcRkT0nsku5qobSg,1105
+webview_python-0.99.18.dist-info/METADATA,sha256=mh7cgiA9isUndXq2JiCGRQsHStPm-5Sk-MZT9DNentU,10918
+webview_python-0.99.18.dist-info/WHEEL,sha256=ovhA9_Ei_7ok2fAych90j-feDV4goiAxbO7REePtvw0,101
+webview_python-0.99.18.dist-info/top_level.txt,sha256=d5SpaV1yBkWk3tar-VrEOX-bBM9jXPlVdVNpN5FQrxA,8
+webview_python-0.99.18.dist-info/RECORD,,
