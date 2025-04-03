@@ -1,0 +1,94 @@
+[build-system]
+requires = ["setuptools", "setuptools_scm[toml]>=8"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "PyMatcherUtil"
+description = "Python matcher utility for enhancing assertion in unit tests"
+readme = "README.md"
+authors = [
+  {name = "Akito Nozaki", email = "akito@tanoshi.net"}
+]
+maintainers = [
+  {name = "Akito Nozaki", email = "akito@tanoshi.net"}
+]
+requires-python = ">=3.9"
+dynamic = ["version"]
+
+[project.optional-dependencies]
+dev = [
+    "pylint~=3.3.1",
+    "mypy~=1.13.0",
+    "pytest~=8.3.3",
+    "pytest-cov~=6.0.0",
+    "black~=24.10.0",
+    "pydocstyle[toml]~=6.3.0",
+    "docformatter~=1.7.5"
+]
+
+[tool.docformatter]
+# recursive = true
+
+black = true
+in-place = true
+blank = true
+
+wrap-summaries = 0
+wrap-descriptions = 88
+force-wrap = true
+
+[tool.pydocstyle]
+convention = "pep257"
+match = ".*\\.py"
+add-ignore = [
+    "D100", # missing docstring in public module
+    "D104", # missing docstring in public package
+    "D107", # docstring in __init__.py
+]
+
+# ignore method that is overriden and annotated properly
+ignore-decorators = "override"
+
+[tool.setuptools_scm]
+fallback_version = "0.0.0"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+exclude = ["tests.*", "tests"]
+
+[tool.setuptools.package-data]
+pymatcher_utils = ["py.typed"]
+
+
+[tool.pylint.'MESSAGES CONTROL']
+disable = [
+    "missing-module-docstring",
+    "too-few-public-methods",
+]
+
+# summary and comment can be longer than 88 characters
+ignore-long-lines = "^\\s*(#|\"\"\")"
+
+# match black
+max-line-length = 88
+
+[tool.coverage.run]
+omit = [
+  "test/*",
+  ".venv/*",
+]
+
+[tool.coverage.report]
+exclude_lines = [
+    "pragma: no cover",
+    "raise AssertionError",
+    "raise NotImplementedError",
+]
+ignore_errors = true
+
+# increase this over time!
+fail_under = 80
+
+[tool.pytest.ini_options]
+addopts = ["--junitxml=junit.xml", "--cov=src", "--cov-report=term-missing", "--cov-report=xml"]
+pythonpath = "src"

@@ -1,0 +1,77 @@
+name-template: '$NEXT_MINOR_VERSION'
+tag-template: 'v$NEXT_MINOR_VERSION'
+filter-by-commitish: true
+commitish: main
+version-resolver:
+  major:
+    labels:
+      - 'breaking-change'
+      - 'major'
+  minor:
+    labels:
+      - 'feature'
+      - 'enhancement'
+      - 'minor'
+  patch:
+    labels:
+      - 'bug'
+      - 'fix'
+      - 'documentation'
+      - 'performance'
+      - 'refactor'
+      - 'patch'
+      - 'maintenance'
+  default: patch
+autolabeler:
+  - label: 'documentation'
+    files:
+      - '*.md'
+    branch:
+      - '/docs{0,1}\/.+/'
+  - label: 'bug'
+    branch:
+      - '/fix\/.+/'
+    title:
+      - '/fix/i'
+  - label: 'enhancement'
+    branch:
+      - '/feature\/.+/'
+  - label: maintenance
+    title:
+      - '/maintenance/i'
+    branch:
+      - '/maintenance\/.+/'
+categories:
+  - title: 🔥 Breaking Changes
+    labels:
+      - breaking
+  - title: 🧪 Experimental Features
+    labels:
+      - experimental
+  - title: 🚀 New Features
+    labels:
+      - feature
+      - enhancement
+  - title: 🐛 Bug Fixes
+    labels:
+      - bug
+  - title: 📝 Documentation updates
+    labels:
+      - documentation
+  - title: 🚦 Tests
+    labels:
+      - test
+  - title: ✍ Other changes
+  - title: 🧰 Maintenance
+    labels:
+      - chor
+      - maintenance
+change-template: '- $TITLE (#$NUMBER)'
+exclude-labels:
+  - skip-changelog
+  - invalid
+template: |
+  # Changes
+
+  $CHANGES
+
