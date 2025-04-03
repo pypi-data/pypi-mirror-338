@@ -1,0 +1,9 @@
+pydanticai_genai_hub/__init__.py,sha256=YrPnJ9uoCP8GS-73BU0eK5GNz-A_z1iFGQZDyt-RzOU,116
+pydanticai_genai_hub/anthropic.py,sha256=2K4-hcl_VQw5-9OmjW1z7VYPRiGPyquX_wTj7pAYblQ,15047
+pydanticai_genai_hub/openai.py,sha256=WcxoFc-qfXq5fTGU_ZVHb1cCS2hKyR2Semp6y04kP0k,40822
+pydanticai_genai_hub/providers.py,sha256=s568zrQLoQWCMWKivkMn9qv681BcbY_kVpA_Ud75xqI,2713
+pydanticai_genai_hub-0.1.10.dist-info/licenses/LICENSE,sha256=QlL1NZl3xtCvl4t_-iaPoTKgzrNloJJZ9HLi3MHs-Wc,1063
+pydanticai_genai_hub-0.1.10.dist-info/METADATA,sha256=QN-xISJMh-mQrl98kvckigZN0-WU-JMKyPWAEzj4ovw,2659
+pydanticai_genai_hub-0.1.10.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+pydanticai_genai_hub-0.1.10.dist-info/top_level.txt,sha256=mujHZY5pNp1CAKgecqh7f4VT6TLMSIYZ2R8B1_hxLng,21
+pydanticai_genai_hub-0.1.10.dist-info/RECORD,,
