@@ -1,0 +1,22 @@
+Metadata-Version: 2.4
+Name: Tech_Challenge_FIAP_Gabriel
+Version: 1.0.0
+Summary: Teste de publicação no Pypi
+Home-page: https://github.com/gabrielsiqueira97/tech-challenge-fiap
+Author: Gabriel Siqueira de Lima
+Author-email: gabrielsiqueira61@hotmail.com
+License: MIT
+Description-Content-Type: text/markdown
+Dynamic: author
+Dynamic: author-email
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: license
+Dynamic: summary
+
+# tech-challenge-fiap
+Projeto hands-on do curso de Machine Learning Engineer da FIAP
+
+
+Distribuido sob a licença MIT
