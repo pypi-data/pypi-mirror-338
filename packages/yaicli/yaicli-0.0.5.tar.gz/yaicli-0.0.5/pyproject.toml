@@ -1,0 +1,37 @@
+[project]
+name = "yaicli"
+version = "0.0.5"
+description = "A simple CLI tool to interact with LLM"
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+    "distro>=1.9.0",
+    "jmespath>=1.0.1",
+    "prompt-toolkit>=3.0.50",
+    "requests>=2.32.3",
+    "rich>=13.9.4",
+    "typer>=0.15.2",
+]
+
+[project.scripts]
+ai = "yaicli:app"
+
+[tool.uv]
+resolution = "highest"
+
+[dependency-groups]
+dev = [
+    "bump2version>=1.0.1",
+    "pytest>=8.3.5",
+    "ruff>=0.11.2",
+]
+
+[tool.ruff]
+line-length = 120
+select = ["E", "F", "W", "I", "B", "C90"]
+ignore = ["E501"]
+
+
+[build-system]
+requires = ["hatchling>=1.18.0"]
+build-backend = "hatchling.build"
