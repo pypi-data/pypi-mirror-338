@@ -1,0 +1,6 @@
+FROM pennlinc/slurm-docker-ci:0.11
+
+# # install BABS
+COPY . /babs
+WORKDIR /babs
+RUN pip install .[tests]
