@@ -1,0 +1,3 @@
+[console_scripts]
+toggl-track-exporter=prometheus_toggl_track_exporter.exporter:main
+
