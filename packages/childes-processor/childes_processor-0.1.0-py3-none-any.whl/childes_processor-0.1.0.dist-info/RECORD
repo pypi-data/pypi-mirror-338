@@ -1,0 +1,13 @@
+childes_processor/__init__.py,sha256=PVv_wQZTTANFmax9oYSS5WGlIznWC8Ep0fG2ClYk5dY,530
+childes_processor/main.py,sha256=sh48iz0jOo6jYDVirHzkb4-cVRnXL6ZJjxDYUK6Exb8,6704
+childes_processor/src/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+childes_processor/src/default_g2p_config.json,sha256=8AB4iXQliRzWD3D4Cx68wuV1_BOJ4Nn8vuz2PlaqGJ0,2690
+childes_processor/src/dicts.py,sha256=IoAkcDU4lixZQHYF4wbmLJX6qtB0AtooP9miuh0_kqE,5309
+childes_processor/src/downloader.py,sha256=DysNyVBHNLHoXl0tJ-9wnGcT2H0hCRItnx1PL4UiTOU,2862
+childes_processor/src/processor.py,sha256=QIPIILnikFw5Q7LF1K4Ye0jSlHB4HcOB7J7TqP918bs,11604
+childes_processor-0.1.0.dist-info/licenses/LICENSE,sha256=kS3lfgwrU5supS3gTTd9Q1PwJDzoaYAn-frRgYi46yk,1072
+childes_processor-0.1.0.dist-info/METADATA,sha256=egF2ZgMwgHfmlfV8F7x457QLAvgYoo2kHVhYIMT3hkQ,7799
+childes_processor-0.1.0.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+childes_processor-0.1.0.dist-info/entry_points.txt,sha256=tb9_G0fLiATBQoUB7JG73F3BUxeL6qd_PDqaKOl7y6c,66
+childes_processor-0.1.0.dist-info/top_level.txt,sha256=Ij-3XmGG4_BhZdrUVXZO29PBlOr3DT-IwWt9hMFYLsY,18
+childes_processor-0.1.0.dist-info/RECORD,,
