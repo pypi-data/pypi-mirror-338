@@ -1,0 +1,10 @@
+pretix_custom_head/__init__.py,sha256=GmypIHlw9-BaSEaoucCIwm0ut1DUut0hUvsyTCr17qk,21
+pretix_custom_head/apps.py,sha256=H9XFlL8wvHz41IZzVf-PQLmR1zACzUvjBTC-VFA4bS4,653
+pretix_custom_head/models.py,sha256=4NzBo5Xq3mbI6ZuGxj4Mu76w-g7WGChV77T607eJ0tk,547
+pretix_custom_head/signals.py,sha256=WPyJnAkKte5FPDe_USRBx_vzcA-askPCcVpomPvhyIc,1910
+pretix_custom_head-0.1.7.dist-info/licenses/LICENSE,sha256=Vbj6Uf2CQeWNVvoppRqXdcu7nMYYCV1xbFSDomQr6mY,1065
+pretix_custom_head-0.1.7.dist-info/METADATA,sha256=yOYhXWI_DHJsU3RihVqF4GqL-RXIub0dyCU4EO_lruY,1238
+pretix_custom_head-0.1.7.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+pretix_custom_head-0.1.7.dist-info/entry_points.txt,sha256=nDakqTR_wcKp3bu3ch7KVE3FRWXDJoYjHSyJBvK6J_8,73
+pretix_custom_head-0.1.7.dist-info/top_level.txt,sha256=R00-_nndVQMeJvHpkBDRYufMfj2hCDTPgg3uqUd7Guo,19
+pretix_custom_head-0.1.7.dist-info/RECORD,,
