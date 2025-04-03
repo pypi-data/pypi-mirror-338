@@ -1,0 +1,20 @@
+[
+  {
+    "timestamp": "2025-04-03T09:38:32.834719",
+    "action": "type",
+    "element": null,
+    "error": "Element not found: <input type=\"text\" placeholder=\"\" name=\"identifier\" id=\"input28\" value=\"\" aria-label=\"\" autocomplete=\"username\"> [interactive, top, highlight:3]"
+  },
+  {
+    "timestamp": "2025-04-03T09:38:33.841134",
+    "action": "type",
+    "element": null,
+    "error": "Element not found: <input type=\"text\" placeholder=\"\" name=\"identifier\" id=\"input28\" value=\"\" aria-label=\"\" autocomplete=\"username\"> [interactive, top, highlight:3]"
+  },
+  {
+    "timestamp": "2025-04-03T09:38:34.846227",
+    "action": "type",
+    "element": null,
+    "error": "Element not found: <input type=\"text\" placeholder=\"\" name=\"identifier\" id=\"input28\" value=\"\" aria-label=\"\" autocomplete=\"username\"> [interactive, top, highlight:3]"
+  }
+]
