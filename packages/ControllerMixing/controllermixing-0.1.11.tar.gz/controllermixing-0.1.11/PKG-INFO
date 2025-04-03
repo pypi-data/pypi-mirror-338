@@ -1,0 +1,27 @@
+Metadata-Version: 2.4
+Name: ControllerMixing
+Version: 0.1.11
+Summary: Fit proportional-integral controllers and estimate mixing coefficients.
+Author: Justin Michael Fine
+Author-email: justfineneuro@gmail.com
+License: MIT
+Requires-Python: >=3.8
+License-File: LICENSE
+Requires-Dist: pandas
+Requires-Dist: matplotlib
+Requires-Dist: numpy==1.23.5
+Requires-Dist: jax[cpu]
+Requires-Dist: numpyro
+Requires-Dist: mat73
+Requires-Dist: scipy
+Requires-Dist: ruptures
+Requires-Dist: dill
+Requires-Dist: tqdm
+Requires-Dist: optax
+Dynamic: author
+Dynamic: author-email
+Dynamic: license
+Dynamic: license-file
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary

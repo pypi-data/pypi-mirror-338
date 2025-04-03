@@ -1,0 +1,11 @@
+pandas
+matplotlib
+numpy==1.23.5
+jax[cpu]
+numpyro
+mat73
+scipy
+ruptures
+dill
+tqdm
+optax
