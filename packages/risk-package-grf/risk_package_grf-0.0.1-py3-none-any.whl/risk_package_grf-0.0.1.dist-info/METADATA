@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: risk_package_grf
+Version: 0.0.1
+Summary: Simple test package
+Author: Mateo Rodriguez
+Author-email: mateoalejandrorr641@gmail.com
+Description-Content-Type: text/markdown
+Requires-Dist: networkx
+
+# This is my simple project
+This is the project README
