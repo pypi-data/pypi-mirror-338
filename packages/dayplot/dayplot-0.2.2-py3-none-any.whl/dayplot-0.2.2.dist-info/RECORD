@@ -1,0 +1,11 @@
+dayplot/__init__.py,sha256=BwFUmSp4j2rSYfE-17roIYgb8PhFmXMbtL-y9-SRqaY,51
+dayplot/_parse_date.py,sha256=Yw01_6f-7byU71tmhpVx-5JKSmWb5FsxQZ9hlqHPyn8,370
+dayplot/data.py,sha256=dl_h_Ben2wdE8gJ-M50cNMemnSqrWM98CNjh833bU3k,310
+dayplot/github.py,sha256=4xtATwR0ZHxPw2xjby_P8PtYnb-N3h65awuD02HpSQg,2628
+dayplot/main.py,sha256=4UY3Jye9r_0gpnivkWVhThZilG7SVu5UBrwRpyNaLbI,14233
+dayplot/sample.csv,sha256=xvKnUahmfGPVtXCYae2cIUEH_E-MMfyCcX2hgFUCXRU,6537
+dayplot-0.2.2.dist-info/licenses/LICENSE,sha256=eRR87qRzOrcxWqks7w8lbQRATCtgCJwU_eXooRGUTBw,1062
+dayplot-0.2.2.dist-info/METADATA,sha256=Z2kp0zHM90cI8W9mAFjYhSdIRINu42W0_en0KDYAbHQ,2145
+dayplot-0.2.2.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+dayplot-0.2.2.dist-info/top_level.txt,sha256=R0HDS0oTgFLkVlue0lu-hFKqqhoflM2iu_KtdIPvouE,8
+dayplot-0.2.2.dist-info/RECORD,,
