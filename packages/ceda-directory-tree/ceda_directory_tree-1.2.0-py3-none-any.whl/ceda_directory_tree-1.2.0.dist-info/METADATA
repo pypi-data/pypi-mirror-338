@@ -1,0 +1,49 @@
+Metadata-Version: 2.3
+Name: ceda-directory-tree
+Version: 1.2.0
+Summary: Python package to create a virtual tree data structure to represent a directory tree to be used for efficient search
+License: BSD 3
+Author: Daniel Westwood
+Author-email: daniel.westwood@stfc.ac.uk
+Requires-Python: >=3.9,<4
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Plugins
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Requires-Dist: anytree (>=2.12.1,<3.0.0)
+Requires-Dist: requests (>=2.32.3,<3.0.0)
+Requires-Dist: tox (>=4.24.1,<5.0.0)
+Project-URL: Repository, https://github.com/cedadev/ceda-directory-tree
+Description-Content-Type: text/markdown
+
+
+[![Test](https://github.com/cedadev/ceda-directory-tree/actions/workflows/test.yml/badge.svg)](https://github.com/cedadev/ceda-directory-tree/actions/workflows/test.yml)
+![Static Badge](https://img.shields.io/badge/cci%20tagger%20workflow-8AD6F6)
+
+# CEDA directory-tree
+Data structure for storing and searching directory trees.
+
+This repo provides a efficient process for matching paths against known directories.
+
+[Library Documentation](https://cedadev.github.io/directory-tree/)
+
+## Installation
+
+Older versions:
+`pip install ceda-directory-tree`
+
+
+## Building and editing the docs
+
+The documentation is written and built using the Sphinx workflow.
+
+1. Install the docs requirements `pip install ceda-directory-tree[docs]
+`
+2. Edit the .rst files in the docsrc directory
+3. Build the docs `make html`
+
+This will build the docs and place in the `docsrc/build/html` directory. It will also
+copy the html to the `/doc` directory for serving with github pages.
+
