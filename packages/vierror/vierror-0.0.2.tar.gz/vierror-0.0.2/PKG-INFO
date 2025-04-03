@@ -1,0 +1,6 @@
+Metadata-Version: 2.4
+Name: vierror
+Version: 0.0.2
+Summary: Exception information processing
+License-File: LICENSE.txt
+Requires-Python: >=3.7

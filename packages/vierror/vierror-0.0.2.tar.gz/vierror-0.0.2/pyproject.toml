@@ -1,0 +1,11 @@
+[project]
+name = "vierror"
+version = "0.0.2"
+description = "Exception information processing"
+readme = "README.md"
+requires-python = ">=3.7"
+dependencies = []
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
