@@ -1,0 +1,2 @@
+[console_scripts]
+hackassemble = hackassembler.assembler:main

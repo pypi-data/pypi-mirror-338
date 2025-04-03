@@ -1,0 +1,16 @@
+README.md
+pyproject.toml
+hackassembler/__init__.py
+hackassembler/assembler.py
+hackassembler/code.py
+hackassembler/commands.py
+hackassembler/parser.py
+hackassembler_cli.egg-info/PKG-INFO
+hackassembler_cli.egg-info/SOURCES.txt
+hackassembler_cli.egg-info/dependency_links.txt
+hackassembler_cli.egg-info/entry_points.txt
+hackassembler_cli.egg-info/requires.txt
+hackassembler_cli.egg-info/top_level.txt
+tests/test_assembler.py
+tests/test_code.py
+tests/test_parser.py

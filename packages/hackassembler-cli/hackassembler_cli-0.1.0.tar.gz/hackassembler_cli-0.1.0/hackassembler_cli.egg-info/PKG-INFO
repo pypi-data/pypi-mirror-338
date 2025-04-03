@@ -1,0 +1,12 @@
+Metadata-Version: 2.4
+Name: hackassembler-cli
+Version: 0.1.0
+Summary: A Hack assembler for the Nand2Tetris project.
+Author-email: Alexander Borchert <alexander.he.borchert@googlemail.com>
+License-Expression: MIT
+Requires-Python: >=3.9
+Provides-Extra: dev
+Requires-Dist: mypy>=1.15.0; extra == "dev"
+Requires-Dist: pytest>=8.3.4; extra == "dev"
+Requires-Dist: ruff>=0.9.5; extra == "dev"
+Requires-Dist: pre-commit>=4.1.0; extra == "dev"
