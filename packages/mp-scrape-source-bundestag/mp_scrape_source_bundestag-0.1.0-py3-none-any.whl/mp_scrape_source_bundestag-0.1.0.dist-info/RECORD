@@ -1,0 +1,8 @@
+./.gitignore,sha256=qR7CgW5SvxCIscwZq0zqetTPh5lFueigL6OsVPJncAk,3227
+./PKG-INFO,sha256=8YBu9ACDmRq3oKcvg3OC0k3Ybr0osIYG-trBV1sI59Q,1929
+./README.md,sha256=qZNHU60qY8L_gH34bm2Ldyh4lTGhGJuU_rvuAq5Lxlg,1127
+./pyproject.toml,sha256=2t0oUkiNX8eJG9UP-417JZSwRmzpkQuDLLEQ0UMmxWE,1049
+./mp_scrape_source_bundestag/__init__.py,sha256=qu10ZUCPjnZxrQ64JUTkaP7SW5dU-gIPopltK4OnBy0,9861
+mp_scrape_source_bundestag-0.1.0.dist-info/METADATA,sha256=8YBu9ACDmRq3oKcvg3OC0k3Ybr0osIYG-trBV1sI59Q,1929
+mp_scrape_source_bundestag-0.1.0.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+mp_scrape_source_bundestag-0.1.0.dist-info/RECORD,,
