@@ -1,0 +1,45 @@
+Metadata-Version: 2.4
+Name: bsutils
+Version: 0.0.2.post1
+Summary: A collection of basic python utilities.
+Project-URL: Homepage, https://github.com/wangzhen0518/bsutils
+Project-URL: Issues, https://github.com/wangzhen0518/bsutils/issues
+Author-email: wangzhen0518 <wangzhen0518@126.com>
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.0
+Requires-Dist: pyjson5
+Description-Content-Type: text/markdown
+
+# bsutils: Basic Python Utilities
+
+![Downloads](https://img.shields.io/pypi/dm/bsutils.svg?style=flat)
+![Python Versions](https://img.shields.io/pypi/pyversions/bsutils.svg?style=flat)
+![License](https://img.shields.io/pypi/l/bsutils.svg?version=latest)
+
+A collection of basic python utilities.
+
+# Installation
+
+```python
+# With pip.
+pip install bsutils
+
+# Or pipx.
+pipx install bsutils
+
+# Or uv
+uv pip install bsutils
+```
+
+# Features
+## Json Utilities
+- `get_item_num`: Get the number of items in a JSON or JSONL file.
+- `iter_json_file`: Iterate over a JSON or a JSONL file.
+- `load_json_file`: Load a JSON or JSONL file.
+- `jsonl_to_json`: Convert a JSONL file to a JSON file.
+- `json_to_jsonl`: Convert a JSON file to a JSONL file.
+- `write_json_file`: Write a JSON or JSONL file.
+
+## File Utilities
+- `pure_file_name`: Get the pure file name from a path, e.g., "document" for "/path/to/ducumnet.pdf".
