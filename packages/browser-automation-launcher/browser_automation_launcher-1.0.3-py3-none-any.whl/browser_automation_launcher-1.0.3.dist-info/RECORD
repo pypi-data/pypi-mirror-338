@@ -1,0 +1,8 @@
+BrowserAutomationLauncher/__init__.py,sha256=BQdNq8Nsbo4SfRnOmOffQ8pj8UZg5cCbEKXtwfw_mZw,193
+BrowserAutomationLauncher/_browser.py,sha256=BnwfzkC9aVLKa6j1Ln3qWnKP7NK2K6dl3XkQWeIZm6M,3875
+BrowserAutomationLauncher/_utils/data_packet.py,sha256=2jcg_QScaN-CKdUbLxnTOq4FR64js2ocf16inHn_k-E,4499
+BrowserAutomationLauncher/launcher.py,sha256=FXC8a4Jq_6eHo8BW5R7cnNYdNq0y900jY50_7_1pkEw,504
+browser_automation_launcher-1.0.3.dist-info/LICENSE,sha256=abvuwGBKwUYguYGotWKXpzv-uL5iTs6J2ZDN7PMOmfw,1090
+browser_automation_launcher-1.0.3.dist-info/METADATA,sha256=jSfIuWhSDOXdLHDvcx6lH5cnXX1F0VWiQVHUtYrIGJw,1575
+browser_automation_launcher-1.0.3.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+browser_automation_launcher-1.0.3.dist-info/RECORD,,
