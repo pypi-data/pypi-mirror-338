@@ -1,0 +1,10 @@
+clip_streamlit/__init__.py,sha256=wE9t-G8rHK0ATjf8h7rxaZ9conGp4YL0MkcaNqOl3O8,95
+clip_streamlit/app.py,sha256=p6dgpb5vCPEWp8ZusijOg3LtMoBnGNr4FHYAFie4PRk,2917
+clip_streamlit/base.py,sha256=6bXV7bynXoMr8AIEsbSeyD5Zh7OBhPzrfzjsKmyKUg0,4701
+clip_streamlit/version.py,sha256=Aj77VL1d5Mdku7sgCgKQmPuYavPpAHuZuJcy6bygQZE,21
+clip_streamlit-1.0.0.dist-info/licenses/LICENSE,sha256=3HRi0cXapK8w5jOnIuVqbA8CTnt_lbwJux-s8IXgHgk,1069
+clip_streamlit-1.0.0.dist-info/METADATA,sha256=CqNcwIjk8J6Cr2Xd3BDQXuL1O5LgpB9UKMwj2pKXdtM,1826
+clip_streamlit-1.0.0.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+clip_streamlit-1.0.0.dist-info/entry_points.txt,sha256=Ih_NYrRJs8uMXUk7_Abw-sRe8GPPm8ai-DjNlH_FHV8,62
+clip_streamlit-1.0.0.dist-info/top_level.txt,sha256=a13XtiydVYWAPMDQC5VhvT4JMDRuqgNQPQV-j4I8pEQ,15
+clip_streamlit-1.0.0.dist-info/RECORD,,
