@@ -1,0 +1,11 @@
+aisec/__init__.py,sha256=gks7_thlO27vVafxZ3wMCkL-DoJM134bhhQdNLRFnm4,69
+aisec/aisec.py,sha256=hqQ16MfbeG8OxQH-FZ_BRhiNlAUxFxr7QtWHlZtWUk4,3208
+examples/__init__.py,sha256=sNybC3c6syAqUSfSDnFMEnai2QmJop1JlPDfA290S3c,29
+examples/basic_usage.py,sha256=G6GBShiXWqp8pfzRSbap10SVr1jQ6Ger3bkSF1Oub80,2049
+examples/batch_detection.py,sha256=Dngr8hAak1qiRj8O_QhD0FIr1CSc8-_43-ORx24FW3A,1268
+tests/__init__.py,sha256=ruygPhKhAk3FohllOuXIWAlJQVRjaCnb5--vmjmnyq8,26
+tests/test_aisec.py,sha256=X_5YlHDPfBN6GymsRrMz_zxpQxpXlM0P0VgxTd6rU60,3933
+aisec_sdk-0.1.0.dist-info/METADATA,sha256=mypkDEdP3PGHHmhnC97thmU0r9fzjrA8fBOCFst7Zic,505
+aisec_sdk-0.1.0.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+aisec_sdk-0.1.0.dist-info/top_level.txt,sha256=EzMi7FY69UzePNJPg3n1a5DM3gvuHh0X_6awYY9L4rc,21
+aisec_sdk-0.1.0.dist-info/RECORD,,
