@@ -1,0 +1,30 @@
+Metadata-Version: 2.2
+Name: briton-lib
+Version: 0.0.1
+Summary: Core Python module for Briton
+Author-Email: Mahmoud Hassan <mahmoud.hassan@baseten.co>
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+
+# Briton Core
+
+This package contains the core C++ extension for Briton. It provides metrics collection functionality and other core features.
+
+## Installation
+
+```
+pip install briton-core
+```
+
+## Development
+
+```
+pip install -e .
+``` 
