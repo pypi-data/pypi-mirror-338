@@ -1,0 +1,14 @@
+ptcmd/__init__.py,sha256=4EH0IAEko9AnX_kDNiZCw4T2mgrxXeFmZqn0wWYLs2Q,1231
+ptcmd/argument.py,sha256=cvmvvm-fGJ-iGz7SDkpMvh83Zg40CCVU1_ykvve7lHo,11406
+ptcmd/command.py,sha256=EdRQruYl_G94QAVIboU7Eb-YPOn5F1zFDGGcw5XSF2s,4311
+ptcmd/completer.py,sha256=I591qB8Ovj4LCZQhaicpM9TGEUe-FA0P9u6JMk7YKNc,16214
+ptcmd/constants.py,sha256=28Q8syoGtbhmjritLe9S2g0lJOabNQc5yujHBE_fJPc,189
+ptcmd/core.py,sha256=UlgPGlFhUO7Bbn9fpQWs5qM2MI5kEjjO1xAcTtBfDRE,21985
+ptcmd/decorators.py,sha256=IVfxwSl9LavKA2ZHGYlE9BCSgizvgnWWgQF1X3vC5wY,3855
+ptcmd/info.py,sha256=6kPPY1gtEbslmpCiPv1rV0i660UMwlLqssIZH6UPaR4,2570
+ptcmd/theme.py,sha256=WH1CIVonzdZ4mfNAIhwh51rNWq5AqttC8mbdntK9FOs,550
+ptcmd/version.py,sha256=InCNfYdRA-7K_i4nimeuARHghEiq0n3MiIDH8y5-VjU,513
+ptcmd-0.1.0b1.dist-info/METADATA,sha256=nlZIUY_l51i6Y7n9-fH5BXcVMRjrffRPR0uEK6a3Gq4,20139
+ptcmd-0.1.0b1.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+ptcmd-0.1.0b1.dist-info/licenses/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+ptcmd-0.1.0b1.dist-info/RECORD,,
