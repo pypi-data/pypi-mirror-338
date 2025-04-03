@@ -1,0 +1,15 @@
+gitlab_label_mover/__init__.py,sha256=JJnmaxExpH9eCshToP3ikdXszKAGYEm1Dt_rpRt7OW8,140
+gitlab_label_mover/cli.py,sha256=cPTZYUWCs2fEsmCgrEd_nMaZ1OJMDc3UIf6ecXnl99I,4909
+gitlab_label_mover/config.py,sha256=TNL-lmQASmVz-MqdbtHXOoZO2K-FS4lq9wuXj9BkEzM,13109
+gitlab_label_mover/core.py,sha256=DQyYtS6FyIhXssY5HACWwO9xvznJAb5ZMicbDvqY8E8,8292
+gitlab_label_mover/gitlab_api.py,sha256=HOv1RU8mRmGajEFF2srNMZI3IAN7scOY9VGlQFwAlyE,7496
+gitlab_label_mover/label_management.py,sha256=o81zCJROCGXL4xyp4f8TScgDUIG5EP8cq4UxWKncnxI,4455
+gitlab_label_mover/main.py,sha256=WLjBh0KtBsY6MuWlTqlXETX37_b5oXbmMVf8HMutWcM,1333
+gitlab_label_mover/resource_management.py,sha256=EJ2OINW4xc_9Tg9e81M65WDgkyWgbRKslmi3XaRdB6U,3176
+gitlab_label_mover/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+gitlab_label_mover/visualization.py,sha256=Vj6-N6EJOnxsM2BIXNHx1cBd-GbntJgG1P6JAl6WKLg,5776
+gitlab_label_mover-0.1.13.dist-info/LICENSE,sha256=V-mETWxk6NeEmMlY3leU0i4oxRvqZzT8d-4PjyTaNKA,1086
+gitlab_label_mover-0.1.13.dist-info/METADATA,sha256=R_DPQvn6LIBTszVVxARK26bTLrJimh5lCPF8_j3KdEo,8935
+gitlab_label_mover-0.1.13.dist-info/WHEEL,sha256=fGIA9gx4Qxk2KDKeNJCbOEwSrmLtjWCwzBz351GyrPQ,88
+gitlab_label_mover-0.1.13.dist-info/entry_points.txt,sha256=dQOg6-cNTnFrPUUlkMsHQa7BKYcubye0n9qLOxfgfVU,67
+gitlab_label_mover-0.1.13.dist-info/RECORD,,
