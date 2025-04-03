@@ -1,0 +1,7 @@
+README.md
+hello.py
+pyproject.toml
+art_server.egg-info/PKG-INFO
+art_server.egg-info/SOURCES.txt
+art_server.egg-info/dependency_links.txt
+art_server.egg-info/top_level.txt
