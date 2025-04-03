@@ -1,0 +1,8 @@
+Metadata-Version: 2.4
+Name: gkbus
+Version: 0.4.2
+Summary: GKBus: High level automotive protocol library
+Author-email: Dante <dante383@protonmail.com>
+License-File: LICENSE
+Requires-Dist: scapy==2.5.0
+Requires-Dist: pyserial==3.5
