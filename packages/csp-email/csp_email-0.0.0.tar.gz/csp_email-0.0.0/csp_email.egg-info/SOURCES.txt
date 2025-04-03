@@ -1,0 +1,8 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+csp_email.egg-info/PKG-INFO
+csp_email.egg-info/SOURCES.txt
+csp_email.egg-info/dependency_links.txt
+csp_email.egg-info/top_level.txt
