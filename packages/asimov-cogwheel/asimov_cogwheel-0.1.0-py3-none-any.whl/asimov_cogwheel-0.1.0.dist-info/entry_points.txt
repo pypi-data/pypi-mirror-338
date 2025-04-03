@@ -1,0 +1,5 @@
+[asimov.pipelines]
+cogwheel = asimov_cogwheel.asimov:Cogwheel
+
+[console_scripts]
+cogwheelpipe = asimov_cogwheel.__main__:cogwheelpipe

@@ -1,0 +1,30 @@
+Metadata-Version: 2.4
+Name: asimov-cogwheel
+Version: 0.1.0
+Summary: An asimov interface to the cogwheel parameter estimation code.
+Author-email: Daniel Williams <daniel.williams@ligo.org>
+License-Expression: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: click
+Requires-Dist: asimov>=0.6.1
+Requires-Dist: lalsuite>=7.14
+Requires-Dist: pesummary
+Requires-Dist: nbconvert
+Requires-Dist: bilby
+Provides-Extra: docs
+Requires-Dist: sphinx; extra == "docs"
+Requires-Dist: kentigern; extra == "docs"
+
+# Asimov-Cogwheel
+
+This is asimov-cogwheel, an interface to the [cogwheel](https://cogwheel.readthedocs.io/) gravitational-wave parameter estimation code which allows the [asimov](https://asimov.docs.ligo.org/asimov/master/index.html) analysis automation code to run it.
+
+## Installation
+
+You can install asimov-cogwheel by running
+```
+$ pip install asimov-cogwheel
+```
