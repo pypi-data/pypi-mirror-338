@@ -1,0 +1,7 @@
+{
+  "ServerApp": {
+    "jpserver_extensions": {
+      "sinaraml_jupyter_host_ext": true
+    }
+  }
+}

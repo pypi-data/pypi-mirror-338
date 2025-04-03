@@ -1,0 +1,17 @@
+sinaraml_jupyter_host_ext/__init__.py,sha256=kLFzC9-a_r80J_yl81i8WbmxzI0HJDC7_0a1s3bOdRk,1164
+sinaraml_jupyter_host_ext/_version.py,sha256=DvRpo6VLQoXBv-yEs8aBRSgKPs_oxfOHmJh4aSwTxqQ,174
+sinaraml_jupyter_host_ext/handlers.py,sha256=RcNX0MS4_TuqxBuzDscw_UX-LIL6wlwjaL3OoB7sXr8,1053
+sinaraml_jupyter_host_ext/public/index.html,sha256=apeAtYb00_B7GDeP0PN2KaPvy1u3ny8EM3xkdMf4gyE,201
+sinaraml_jupyter_host_ext/tests/__init__.py,sha256=c_87Bs3L0saqFOAwsX1GwLs0ypd20-TsII6txVlwoLE,55
+sinaraml_jupyter_host_ext/tests/test_handlers.py,sha256=31Y0HbUZAGSICH9A7MUwHXP95IWh3N8EjxS2FgesdEQ,313
+sinaraml_jupyter_host_ext-2025.4.2.data/data/etc/jupyter/jupyter_server_config.d/sinaraml_jupyter_host_ext.json,sha256=2Ohc3Rtw1DoRJ5EXf_xAgmOEFlRaSpC5zMeDAlx89g8,100
+sinaraml_jupyter_host_ext-2025.4.2.data/data/share/jupyter/labextensions/@sinaraml/sinaraml_jupyter_host_ext/package.json,sha256=6qXJesZ1cuMC_r_YfYv1kDCkRdcWcHyAh2gsjm4DHYw,5886
+sinaraml_jupyter_host_ext-2025.4.2.data/data/share/jupyter/labextensions/@sinaraml/sinaraml_jupyter_host_ext/static/675.58f8c9afc915e46dbd48.js,sha256=WPjJr8kV5G29SF-RkiRYW5MKYHsZyGY0DST39PC-KXE,1174
+sinaraml_jupyter_host_ext-2025.4.2.data/data/share/jupyter/labextensions/@sinaraml/sinaraml_jupyter_host_ext/static/728.a249359cfaa14db2b512.js,sha256=okk1nPqhTbK1EssxPi2IdVfTTuVS-LNJE4i-9Wmi8QA,4041
+sinaraml_jupyter_host_ext-2025.4.2.data/data/share/jupyter/labextensions/@sinaraml/sinaraml_jupyter_host_ext/static/remoteEntry.a6a5ea9f25659b690b24.js,sha256=pqXqnyVlm2kLJN2PJ433YkhcKieTp9wwJGwqUOymdyQ,6930
+sinaraml_jupyter_host_ext-2025.4.2.data/data/share/jupyter/labextensions/@sinaraml/sinaraml_jupyter_host_ext/static/style.js,sha256=eMAMRYrpRkRiFual1MVijoNmH2-zKPs1n8Cx9mPnS0Q,178
+sinaraml_jupyter_host_ext-2025.4.2.data/data/share/jupyter/labextensions/@sinaraml/sinaraml_jupyter_host_ext/static/third-party-licenses.json,sha256=W6N2sSD7tQihMqQk64F9xMd1Flfr2KO97esAiHUOYdM,2453
+sinaraml_jupyter_host_ext-2025.4.2.data/data/share/jupyter/labextensions/@sinaraml/sinaraml_jupyter_host_ext/install.json,sha256=UleAenSs_GDf6_rF9pDjg7cYmtRknRJkt9ZfTEU2Ioc,211
+sinaraml_jupyter_host_ext-2025.4.2.dist-info/METADATA,sha256=aoLTcK90YiPDebcsFRYF_TqCVlrYk-cf7oGBg2e382c,4944
+sinaraml_jupyter_host_ext-2025.4.2.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+sinaraml_jupyter_host_ext-2025.4.2.dist-info/RECORD,,
