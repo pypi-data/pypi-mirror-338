@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "nninteractive-slicer-server"
+version = "0.1.0"
+description = "Server package for nnInteractive Slicer"
+readme = "README.md"
+license = "MIT"
+authors = [
+  { name = "Coen de Vente", email = "hello@coendevente.com" }
+]
+
+# This is where your dependencies go:
+dependencies = [
+	"nninteractive==1.0.1",
+	"fastapi==0.111.0",
+	"numpy==2.2.3",
+	"torch==2.6.0",
+	"Pillow==11.1.0",
+	"transformers==4.49.0",
+	"xxhash==3.5.0"
+]
+
+# If you want a console script so users can do `nninteractive-slicer-server` in the shell:
+[project.scripts]
+nninteractive-slicer-server = "nninteractive_slicer_server.main:main"
