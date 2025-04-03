@@ -1,0 +1,2 @@
+[console_scripts]
+phototarget = photogrammetry_target_locator.cli:cli
