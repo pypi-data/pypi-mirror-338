@@ -1,0 +1,24 @@
+logging:
+  level: INFO
+  format: '%(asctime)s - %(name)s - %(levelname)s - %(message)s'
+  render_json: false
+
+validation:
+  continue_on_error: true
+  collect_frames: false
+  max_errors: 100
+
+paths:
+  data_dir: ./_data
+  temp_dir: null
+
+access:
+  pff_api_key: null
+  pff_api_url: null
+
+pitch:
+  length: 105.0
+  width: 68.0
+
+visualization:
+  video_buffer_sec: 1.0
