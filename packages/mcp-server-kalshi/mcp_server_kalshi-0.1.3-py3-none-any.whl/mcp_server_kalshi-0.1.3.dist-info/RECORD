@@ -1,0 +1,10 @@
+mcp_server_kalshi/__init__.py,sha256=KO2JpPdu8JyIlq44b5Z7L4YO-KuZEOLjK3QL6zOXsM4,97
+mcp_server_kalshi/config.py,sha256=k-j3NZrhsbfUOT163GKn4tt2i202akX0nkIUyEcG4mQ,856
+mcp_server_kalshi/kalshi_client.py,sha256=hteont7Qcf22S6RrzUZr9DGI-z7NVGYu0EB0UYfV2RU,6080
+mcp_server_kalshi/schema.py,sha256=bS2LAoLt1HxoWXRjf_268nznkPKGhuyYZGoH_P44U5o,6648
+mcp_server_kalshi/server.py,sha256=5vWWKKroAf3WRxjpBYVkjddVoCjuJgQ1_LRSzgUi-4U,4084
+mcp_server_kalshi-0.1.3.dist-info/METADATA,sha256=QjDDyaA_SWLqszXzJSp9y_1sUkCpdTjTofyfrQYw3vM,3200
+mcp_server_kalshi-0.1.3.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+mcp_server_kalshi-0.1.3.dist-info/entry_points.txt,sha256=6M3SiR3VeTiGLeNIp6hCnSTjVBEYX0gtjyrv7zr22qY,145
+mcp_server_kalshi-0.1.3.dist-info/top_level.txt,sha256=_7cB00hDp9rfYVH1CYStbBJWmTZ4DjJi-S7rAGs3QjE,18
+mcp_server_kalshi-0.1.3.dist-info/RECORD,,
