@@ -1,0 +1,5 @@
+__version__ = "0.0.3"
+__author__ = "Rahmad Afandi"
+__author_email__ = "rahmadafandiii@gmail.com"
+__license__ = "MIT"
+__copyright__ = "2025, Rahmad Afandi"
