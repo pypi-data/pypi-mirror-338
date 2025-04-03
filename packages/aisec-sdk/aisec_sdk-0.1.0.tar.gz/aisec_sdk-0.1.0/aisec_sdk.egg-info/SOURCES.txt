@@ -1,0 +1,14 @@
+README.md
+setup.py
+aisec/__init__.py
+aisec/aisec.py
+aisec_sdk.egg-info/PKG-INFO
+aisec_sdk.egg-info/SOURCES.txt
+aisec_sdk.egg-info/dependency_links.txt
+aisec_sdk.egg-info/requires.txt
+aisec_sdk.egg-info/top_level.txt
+examples/__init__.py
+examples/basic_usage.py
+examples/batch_detection.py
+tests/__init__.py
+tests/test_aisec.py
