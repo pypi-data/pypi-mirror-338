@@ -1,0 +1,19 @@
+Metadata-Version: 2.3
+Name: genotype-json-tree
+Version: 0.1.0
+Summary: Genotype language JSON tree
+License: MIT
+Author: Sasha Koss
+Author-email: koss@nocorp.me
+Requires-Python: >=3.12,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Dist: genotype-runtime (>=0.4,<0.5)
+Description-Content-Type: text/markdown
+
+# Genotype language JSON tree
+
+🚧 Work in progress
+
