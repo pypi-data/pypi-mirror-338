@@ -1,0 +1,25 @@
+apiVersion: zagen/v1
+kind: Agent
+metadata:
+  labels:
+    app: rag
+spec:
+  template:
+    - name: Triage Agent
+      instructions:
+        - You are a friendly assistent, you are require to triage the users' request.
+      type: openai
+      model: gpt-4o
+      api_key:
+        envFrom:
+          name: OPENAI_API_KEY
+      base_url: ""
+      mcp:
+        - name: jira
+          type: sse
+          url: https://url.io/mcp/v1/sse
+        - name: slack
+          type: native
+        - name: notion
+          cmd: uvx ...
+    - type: groq
