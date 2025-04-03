@@ -1,0 +1,10 @@
+bufr2geojson/__init__.py,sha256=WewTRhr88ykOTI4pe5uvz4JkOB4bRofn9nAuG6usbHs,53533
+bufr2geojson/cli.py,sha256=OSaBiXODAZIqJwuJPeNApDJ0qj_-NluaCsUVio6BKRM,2633
+bufr2geojson/resources/031021.json,sha256=Je4EGtk-DGofg0dAu8cDsaWv-sIk6OQxQyOJd-un7C0,2251
+bufr2geojson/resources/schemas/wccdm-obs.json,sha256=FOPkSy6_owphxtzKvPVF_vT5C_yXLrnOS32rpxCmefU,9172
+bufr2geojson-0.7.1.dist-info/LICENSE,sha256=oALLnjxY-HXGwgQA4j2kzzurCYy5zDw4k3YyrRM-DGo,11376
+bufr2geojson-0.7.1.dist-info/METADATA,sha256=t-jEnxUcwnQ1UxSNjPkOxIyiCKkKzIEw8aeNmo7Cf_4,3104
+bufr2geojson-0.7.1.dist-info/WHEEL,sha256=z9j0xAa_JmUKMpmz72K0ZGALSM_n-wQVmGbleXx2VHg,110
+bufr2geojson-0.7.1.dist-info/entry_points.txt,sha256=9w6jPw0tvqIAM21XKPodhnBRvT7c3Rmy4dO1PZ9wJnQ,55
+bufr2geojson-0.7.1.dist-info/top_level.txt,sha256=bf5GrTg5DV_Law_VNRNCdRF5wPwMMtzgJ1mjCtM0a3w,13
+bufr2geojson-0.7.1.dist-info/RECORD,,
