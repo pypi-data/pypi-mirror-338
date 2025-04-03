@@ -1,0 +1,8 @@
+README.md
+setup.py
+my_investimento/__init__.py
+my_investimento/core.py
+my_investimento_package.egg-info/PKG-INFO
+my_investimento_package.egg-info/SOURCES.txt
+my_investimento_package.egg-info/dependency_links.txt
+my_investimento_package.egg-info/top_level.txt
