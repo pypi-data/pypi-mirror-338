@@ -1,0 +1,15 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+subwer/__init__.py
+subwer/core.py
+subwer/normalizer.py
+subwer/subtitle_reader.py
+subwer.egg-info/PKG-INFO
+subwer.egg-info/SOURCES.txt
+subwer.egg-info/dependency_links.txt
+subwer.egg-info/requires.txt
+subwer.egg-info/top_level.txt
+tests/__init__.py
+tests/test_subwer.py
