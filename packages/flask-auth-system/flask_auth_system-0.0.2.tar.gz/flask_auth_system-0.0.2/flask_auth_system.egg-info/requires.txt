@@ -1,0 +1,9 @@
+flask
+jwt
+email_validator
+flask_sqlalchemy
+flask_migrate
+fernet
+python-dotenv
+requests
+cryptography
