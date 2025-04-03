@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: ai2soft.automation
+Version: 0.0.5
+Summary: 用于完与一些自动化的操作
+Home-page: 
+Author: ai2soft.cn
+Author-email: goldli@live.cn
+License: MIT
+Classifier: Programming Language :: Python :: 3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+ai2soft.automation 用于对桌面系统的一些操作进行自动化处理
+
+依赖包不会自动安装，需要手动安装，以防止安装过程中出错
+
+## 依赖包
+    opencv-python >= 4.5.5.64',
+    pygetwindow >= 0.0.9',
+    mss >= 10.0.0',
+    numpy >= 1.25.1',
+    pyautogui >= 0.9.54',
+# 可选
+    paddleocr >= 2.9.1'
