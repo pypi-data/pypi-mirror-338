@@ -1,0 +1,11 @@
+subwer/__init__.py,sha256=x-3g9cAtmDolhRBtddDWhyy6VMX0Wm0nIeTxZS7Jypg,53
+subwer/core.py,sha256=mmCpgrpP1-u2L8yyGlhM3H6b4WMf_EdLLBn2x_M3Bi4,1712
+subwer/normalizer.py,sha256=ouQFoOuccXuecC3fN7A08wwMmp1nRvIPbk_ESEbQSNY,827
+subwer/subtitle_reader.py,sha256=fuX13b6GOxzfLIrEjaI_bYicSXfpTfjN_hPVxqbTMRQ,735
+subwer-0.1.0.dist-info/licenses/LICENSE,sha256=Dx-mL0e2HKOxMwRiMJwcXTIRBsEpNQFJq7vk87CAMFc,1064
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_subwer.py,sha256=w0TD-EyJPsZNlsOHOPEUHarg84YJIAf9rBnAWLRWPZc,1142
+subwer-0.1.0.dist-info/METADATA,sha256=ojP459TsTQO4TCbQD8_y3ObOVaqAKtELUY4hl3CyumY,1007
+subwer-0.1.0.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+subwer-0.1.0.dist-info/top_level.txt,sha256=Y1N9k0fWp63CJFj0yVtB0FKY50j2O6_cEjZnh7wM1u0,13
+subwer-0.1.0.dist-info/RECORD,,
