@@ -1,0 +1,68 @@
+Metadata-Version: 2.4
+Name: autopip-Ninja-22
+Version: 0.9
+Summary: Python modüllerini otomatik yükleyen kütüphane
+Author: Ninja-22
+Author-email: sametcevik88@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: requests>=2.25.1
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+# AutoPIP
+
+Python modÃ¼llerini otomatik yÃ¼kleyen kÃ¼tÃ¼phane. Import edilen modÃ¼ller eksikse otomatik olarak pip ile yÃ¼kleme yapar.
+
+## Kurulum
+
+```bash
+pip install autopip-Ninja-22
+```
+
+## KullanÄ±m
+
+Ä°ki farklÄ± kullanÄ±m ÅŸekli var:
+
+1. Kod Ã§alÄ±ÅŸÄ±rken otomatik yÃ¼kleme:
+```python
+import autopip
+autopip.watch()  # Bu satÄ±rÄ± kodunuzun baÅŸÄ±na ekleyin
+
+# ArtÄ±k eksik modÃ¼ller otomatik yÃ¼klenecek
+import pandas  # pandas yÃ¼klÃ¼ deÄŸilse otomatik yÃ¼klenir
+```
+
+2. Belirli bir kod parÃ§asÄ± iÃ§in yÃ¼kleme:
+```python
+import autopip
+
+kod = """
+import pandas
+import numpy
+"""
+
+# Eksik modÃ¼lleri yÃ¼kle
+yuklenenler = autopip.auto_install(kod)
+print("YÃ¼klenen modÃ¼ller:", yuklenenler)
+```
+
+## Ã–zellikler
+
+- Python kodundaki import ifadelerini otomatik tespit eder
+- Eksik modÃ¼lleri pip ile otomatik yÃ¼kler
+- Standart kÃ¼tÃ¼phane modÃ¼llerini yÃ¼klemeye Ã§alÄ±ÅŸmaz
+- Ä°ki farklÄ± kullanÄ±m modu (watch ve auto_install)
+
+## Lisans
+
+MIT License 
