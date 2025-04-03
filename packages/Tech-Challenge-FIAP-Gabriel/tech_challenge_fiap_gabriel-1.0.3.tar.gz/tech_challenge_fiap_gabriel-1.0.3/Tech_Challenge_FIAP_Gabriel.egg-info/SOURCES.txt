@@ -1,0 +1,9 @@
+README.md
+setup.py
+Tech_Challenge_FIAP_Gabriel.egg-info/PKG-INFO
+Tech_Challenge_FIAP_Gabriel.egg-info/SOURCES.txt
+Tech_Challenge_FIAP_Gabriel.egg-info/dependency_links.txt
+Tech_Challenge_FIAP_Gabriel.egg-info/top_level.txt
+core_projeto_tech_challenge/__init__.py
+core_projeto_tech_challenge/core.py
+tests/test_core.py
