@@ -1,0 +1,22 @@
+Metadata-Version: 2.4
+Name: jam-todos-cli
+Version: 0.6.3
+Summary: A simple and colorful To-Do List CLI
+Author-email: JamilaYDhedhi <nurjamila1@gmail.com>
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+Requires-Dist: rich>=14.0.0
+Requires-Dist: toml>=0.10.2
+Requires-Dist: typer>=0.15.2
+
+# To-Do CLI
+A simple, colorful to-do list in your terminal!
+
+## Install
+pip install jam-todo-cli
+
+## Usage
+- Add a task: `todo add "eat candy"`
+- List tasks: `todo list`
+- Complete a task: `todo complete 1`
+- Delete a task: `todo delete 1`

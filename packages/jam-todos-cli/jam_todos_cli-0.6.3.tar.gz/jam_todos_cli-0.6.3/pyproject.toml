@@ -1,0 +1,19 @@
+[project]
+name = "jam-todos-cli"
+version = "0.6.3"
+description = "A simple and colorful To-Do List CLI"
+authors = [{name = "JamilaYDhedhi", email = "nurjamila1@gmail.com"}]
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "rich>=14.0.0",
+    "toml>=0.10.2",
+    "typer>=0.15.2",
+]
+
+[project.scripts]
+todo = "main:app"
+
+[build-system]
+requires = ["setuptools>=61.0"]    # Use setuptools instead of hatchling
+build-backend = "setuptools.build_meta"
