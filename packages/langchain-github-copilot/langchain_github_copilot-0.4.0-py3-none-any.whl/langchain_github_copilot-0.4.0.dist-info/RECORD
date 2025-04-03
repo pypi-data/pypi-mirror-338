@@ -1,0 +1,7 @@
+langchain_github_copilot/__init__.py,sha256=6FN9s_P2K6f92ObqLy2IBFgAJr_3nA4lORXu6gXY92o,459
+langchain_github_copilot/base.py,sha256=GEnwYKB3vm1fGwUrjPsxg0iNfHfYf8eQiMfNfrYU2BU,84203
+langchain_github_copilot/chat_models.py,sha256=lsQ37hG9MZSydwazGw3K-yQI35TGEgMsmqQJXBjihQY,4792
+langchain_github_copilot-0.4.0.dist-info/LICENSE,sha256=2btS8uNUDWD_UNjw9ba6ZJt_00aUjEw9CGyK-xIHY8c,1072
+langchain_github_copilot-0.4.0.dist-info/METADATA,sha256=yOyODr-A37zCgN4mFwl1DiDZqOTko3bqB7qcEuTfFR0,4356
+langchain_github_copilot-0.4.0.dist-info/WHEEL,sha256=fGIA9gx4Qxk2KDKeNJCbOEwSrmLtjWCwzBz351GyrPQ,88
+langchain_github_copilot-0.4.0.dist-info/RECORD,,
