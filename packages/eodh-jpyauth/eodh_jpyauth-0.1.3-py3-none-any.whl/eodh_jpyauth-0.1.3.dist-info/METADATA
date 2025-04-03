@@ -1,0 +1,27 @@
+Metadata-Version: 2.4
+Name: eodh-jpyauth
+Version: 0.1.3
+Summary: A JupyterHub OIDC authenticator for Keycloak
+Author-email: Steven Gillies <steven.gillies@telespazio.com>
+Requires-Python: >=3.10
+Requires-Dist: jupyterhub-kubespawner>=7.0.0
+Requires-Dist: oauthenticator>=17.3.0
+Description-Content-Type: text/markdown
+
+# UK EO DataHub Jupyter Hub Authenticator
+
+Custom JupyterHub classes to integrate JupyterHub with the UK EO DataHub.
+
+Contains an EODHAuthenticator class to authenticate with the UK EO DataHub, as well as a custom KubeSpawner class to manage workspace scopes.
+
+## Build
+
+```bash
+make build
+```
+
+## Publish
+
+```bash
+make publish token=$PYPI_TOKEN
+```
