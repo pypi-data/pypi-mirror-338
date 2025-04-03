@@ -1,0 +1,17 @@
+gitparse/__init__.py,sha256=MnVS3Syllhq-v4PSwZAEOBOwK63fINt2cO4Jo-pTXfI,554
+gitparse/cli.py,sha256=oCrbce4MXIgDUX-1N5BLPXKmozLSR7H_ySo2AqC7-5M,8444
+gitparse/core/__init__.py,sha256=KGvrHFNHoK8LS3lG3d8NXC9gGaZ8iJyfee4lP7AGL6k,533
+gitparse/core/async_repo.py,sha256=9_yG-ulDClZF7Jc47xVlwPXVBfn6HzVaxgYJsypPJXc,6725
+gitparse/core/exceptions.py,sha256=Z3vPCxsaIE0tulUx_wjk_Fnc4gyB31Mt-k6qvqCovUg,1699
+gitparse/core/repo.py,sha256=EjH8bY6ACyc8k_Eyzx6YxNpuC6MSzGELtk6x_Jyyu0I,34322
+gitparse/schema/__init__.py,sha256=I2B3__q0Bo8uAE_NRNBxNDYcC7MMmgUTD6ktKwuSCsw,35
+gitparse/schema/config.py,sha256=8xGh8wtfdqNeoqwo6QApOsRPNxzwSjVtkC0yuXdVuqo,1225
+gitparse/vars/__init__.py,sha256=gN1iRlvUQ662o175PY5HggCxKlF0XWO0DcuP-kxxs5g,446
+gitparse/vars/exclude_patterns.py,sha256=zSyyGTyM-ImgltXxgQk01tDqCVRBTx6e3pFzw-GltP4,1246
+gitparse/vars/file_types.py,sha256=tiJbdXYezdbq9ZGkwvDXl4PdbJAyyOX8vqC00yiLUzg,2669
+gitparse/vars/git_hosts.py,sha256=Vy3HOr_4Bq_-Q0nb2pDRQJ5omBSb02fZwwjkIJ6LLls,2046
+gitparse/vars/limits.py,sha256=qJ90SRM-KHSo_TljzYZvYzf9mtpFd1r-j8ERbO6RKio,1106
+gitparse-0.1.2.dist-info/entry_points.txt,sha256=slGMrlazmzRC4NomQ7OrUP-gxKKVlPMppsyopjPm0ZY,46
+gitparse-0.1.2.dist-info/METADATA,sha256=tn2wXKNc5EpiTbNBEDGZJrYrC6Surt4IUf3Qcna5vtE,4016
+gitparse-0.1.2.dist-info/WHEEL,sha256=IYZQI976HJqqOpQU6PHkJ8fb3tMNBFjg-Cn-pwAbaFM,88
+gitparse-0.1.2.dist-info/RECORD,,
