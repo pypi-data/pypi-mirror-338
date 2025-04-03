@@ -1,0 +1,14 @@
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_mouse_controller.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+wayland_automation/__init__.py,sha256=oHdSVO7CJJq8wQASLVDzoPipkUx33A5vcnAwxyX8TH4,675
+wayland_automation/__main__.py,sha256=Z2iF9hEM_kdoiDLngn5tb7SvVUjvdFkSFkPKodriIaI,537
+wayland_automation/keyboard_controller.py,sha256=j_9FcTpJGYEKdj4u3pmZMyfM1bjiF-FHpi1wzkimNdM,3414
+wayland_automation/mouse_controller.py,sha256=AwZJxuFeidKiA9HZYCVTXdJ8bSkFwnOR59n2KZwgWPo,12468
+wayland_automation/utils/__init__.py,sha256=oC0KD_cGjLX5pW9Zy9erWKolSWS4G24h-XBx8jLzk6o,46
+wayland_automation/utils/screen_resolution.py,sha256=VWk2CM1XAnpnEe6HCbTBhABwfsilf7iFsKTTZUz6z-M,488
+wayland_automation-0.1.4.dist-info/licenses/LICENCE,sha256=7u9_hnn_kcX2zKPO0aUgNz2neF4UJQvTCgF4WgohUvE,1066
+wayland_automation-0.1.4.dist-info/METADATA,sha256=HgI8hsa3RlSHt9KgmeObAc3pICe9uRRWTFzoPci4jQ0,5335
+wayland_automation-0.1.4.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+wayland_automation-0.1.4.dist-info/entry_points.txt,sha256=I-KB5u1KBVdFrEqxggntV8U-aOWDszQvKl37VJXiDuQ,72
+wayland_automation-0.1.4.dist-info/top_level.txt,sha256=MdUUpTB4xLkA908T0roV3BQXygEPscixDhhRBqm76f4,25
+wayland_automation-0.1.4.dist-info/RECORD,,
