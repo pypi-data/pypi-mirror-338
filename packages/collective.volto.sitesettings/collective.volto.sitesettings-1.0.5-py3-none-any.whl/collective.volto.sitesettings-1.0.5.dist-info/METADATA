@@ -1,0 +1,191 @@
+Metadata-Version: 2.1
+Name: collective.volto.sitesettings
+Version: 1.0.5
+Summary: Plone addon to allow to extend @site controlpanel
+Home-page: https://github.com/collective/collective.volto.sitesettings
+Author: RedTurtle Technology
+Author-email: sviluppo@redturtle.it
+License: GPL version 2
+Project-URL: PyPI, https://pypi.org/project/collective.volto.sitesettings/
+Project-URL: Source, https://github.com/collective/collective.volto.sitesettings
+Project-URL: Tracker, https://github.com/collective/collective.volto.sitesettings/issues
+Keywords: Python Plone CMS
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Plone
+Classifier: Framework :: Plone :: Addon
+Classifier: Framework :: Plone :: 5.2
+Classifier: Framework :: Plone :: 6.0
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: GNU General Public License v2 (GPLv2)
+Requires-Python: >=3.7
+License-File: LICENSE.GPL
+License-File: LICENSE.rst
+Requires-Dist: setuptools
+Requires-Dist: Plone
+Provides-Extra: test
+Requires-Dist: plone.app.testing ; extra == 'test'
+Requires-Dist: plone.restapi[test] ; extra == 'test'
+
+.. This README is meant for consumption by humans and PyPI. PyPI can render rst files so please do not use Sphinx features.
+   If you want to learn more about writing documentation, please check out: http://docs.plone.org/about/documentation_styleguide.html
+   This text does not appear on PyPI or github. It is a comment.
+
+.. image:: https://github.com/collective/collective.volto.sitesettings/actions/workflows/plone-package.yml/badge.svg
+    :target: https://github.com/collective/collective.volto.sitesettings/actions/workflows/plone-package.yml
+
+.. image:: https://coveralls.io/repos/github/collective/collective.volto.sitesettings/badge.svg?branch=main
+    :target: https://coveralls.io/github/collective/collective.volto.sitesettings?branch=main
+    :alt: Coveralls
+
+.. image:: https://codecov.io/gh/collective/collective.volto.sitesettings/branch/master/graph/badge.svg
+    :target: https://codecov.io/gh/collective/collective.volto.sitesettings
+
+.. image:: https://img.shields.io/pypi/v/collective.volto.sitesettings.svg
+    :target: https://pypi.python.org/pypi/collective.volto.sitesettings/
+    :alt: Latest Version
+
+.. image:: https://img.shields.io/pypi/status/collective.volto.sitesettings.svg
+    :target: https://pypi.python.org/pypi/collective.volto.sitesettings
+    :alt: Egg Status
+
+.. image:: https://img.shields.io/pypi/pyversions/collective.volto.sitesettings.svg?style=plastic   :alt: Supported - Python Versions
+
+.. image:: https://img.shields.io/pypi/l/collective.volto.sitesettings.svg
+    :target: https://pypi.python.org/pypi/collective.volto.sitesettings/
+    :alt: License
+
+
+=============================
+collective.volto.sitesettings
+=============================
+
+Plone addon that extends @site controlpanel by adding new fields.
+
+This product is the backend part of volto-site-settings_.
+
+.. _volto-site-settings: https://github.com/collective/volto-site-settings
+
+Features
+--------
+
+- Can set site title in different languages
+- Can set a subtitle in different languages
+- Can add a logo footer
+
+It overrides `@site` endpoint to expose these new data.
+
+
+Translations
+------------
+
+This product has been translated into
+
+- Italian
+
+
+Installation
+------------
+
+Install collective.volto.sitesettings by adding it to your buildout::
+
+    [buildout]
+
+    ...
+
+    eggs =
+        collective.volto.sitesettings
+
+
+and then running ``bin/buildout``
+
+
+Authors
+-------
+
+Provided by awesome people ;)
+
+
+Contributors
+------------
+
+Put your name here, you deserve it!
+
+- ?
+
+
+Contribute
+----------
+
+- Issue Tracker: https://github.com/collective/collective.volto.sitesettings/issues
+- Source Code: https://github.com/collective/collective.volto.sitesettings
+- Documentation: https://docs.plone.org/foo/bar
+
+
+Support
+-------
+
+If you are having issues, please let us know.
+We have a mailing list located at: project@example.com
+
+
+License
+-------
+
+The project is licensed under the GPLv2.
+
+
+Contributors
+============
+
+- RedTurtle Technology, sviluppo@redturtle.it
+
+
+Changelog
+=========
+
+
+1.0.5 (2025-04-03)
+------------------
+
+- Add option to hide title.
+  [cekk]
+
+
+1.0.4 (2025-02-04)
+------------------
+
+- Add absolute_url method in registry-images view for compatibility with plone.namedfile >= 6.4.0.
+  [cekk]
+
+
+1.0.3 (2024-10-04)
+------------------
+
+- Better handle default value before run 1001 upgrade-step.
+  [cekk]
+
+
+1.0.2 (2024-10-04)
+------------------
+
+- Do not override site_title in schema: we use site_title_translated and then keep it in sync with site_title.
+  [cekk]
+
+
+1.0.1 (2024-07-10)
+------------------
+
+- Add compatibility with Plone52.
+  [cekk]
+
+
+1.0.0 (2024-07-10)
+------------------
+
+- Initial release.
+  [cekk]
