@@ -1,0 +1,13 @@
+_transformerbeeclient_version.py,sha256=Ui79YHRxRfg2Yk8f7S1RGQcYuTAo3-YJSMGCUb8i3gI,18
+transformerbeeclient/__init__.py,sha256=BIl5vLhbSX0r7keFnzEAOcEZxVyDgbwwCYSJDgvgDKs,447
+transformerbeeclient/client.py,sha256=rKZ1urZ_2D7HhM7RNSCjVnSOrI9ykiP3p8KOYs9x_Zk,14098
+transformerbeeclient/protocols.py,sha256=JVf6PggphbQf34d6M7SCG_y5S1L1KX87GdRnrwV0G9w,1134
+transformerbeeclient/py.typed,sha256=ZvYa-_QF7Xg7F6Dow8m1zHvSP6kNHuhh3BEBVxjAdUQ,168
+transformerbeeclient/models/__init__.py,sha256=IYVoq5eC1rzQzDlZWirtwJ60TdOIpawhHEp-nwqMZ80,119
+transformerbeeclient/models/boneycomb.py,sha256=HXTmYRaUBBGWb9ohqoW-Z4MMfNH4g3J_6e1UEOEI9i8,651
+transformerbeeclient/models/marktnachricht.py,sha256=uG858vjv7qCKTlbUgdDA5Dfyv76OaqayJ2gdySP1x20,1012
+transformerbeeclient/models/transformerapi.py,sha256=ZT9kWeS-YAeVQ0LaeO3jK-E0rUCnlZaegCzX-e_pt2I,1424
+transformerbeeclient-0.2.1.dist-info/METADATA,sha256=WlN822Oj1QEqmgSbexbCEgoBaXNqZC9ZvlAGhKWfPVk,7615
+transformerbeeclient-0.2.1.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+transformerbeeclient-0.2.1.dist-info/licenses/LICENSE,sha256=04B920e2sAO59yFAclMRa8PIsOMJYVRH9L2vWBFyoFc,1095
+transformerbeeclient-0.2.1.dist-info/RECORD,,
