@@ -1,0 +1,8 @@
+dialga_api/__init__.py,sha256=wTc41D_tMkusVCcvH14zdvfJ7oRV-tMeGC6V3L9fNTY,63
+dialga_api/scheduler_pb2.py,sha256=KH-TA5CddqQoW0sXpFEO_rLb1EVjJfbEnqf4nSDAKH8,4275
+dialga_api/scheduler_pb2.pyi,sha256=Jfa4MjfJHRlZ0JwAi8p4kqUtWSELWMbvthxiqI4GFcw,4174
+dialga_api/scheduler_pb2_grpc.py,sha256=LQilRrMJKONdZD3BWpuxD5FBzoZXgLpX-P3qcV-tW08,12817
+dialga_api-1.5.0.dist-info/METADATA,sha256=1vlmZKI3POZqFy5KDSF-wcTQ3WRc1r6XfcRa3GjmiEc,389
+dialga_api-1.5.0.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+dialga_api-1.5.0.dist-info/top_level.txt,sha256=_AHLu9znRxKBjLJ-JC7UtRZ707gbBXHwkYNwgql49JU,11
+dialga_api-1.5.0.dist-info/RECORD,,
