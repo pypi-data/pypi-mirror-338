@@ -1,0 +1,8 @@
+[workspace.package]
+version = "0.1.0-preview.0"
+edition = "2024"
+description = "英単語から読みを推論するライブラリ。"
+
+[workspace]
+members = ["crates/kanalizer-py"]
+resolver = "3"
