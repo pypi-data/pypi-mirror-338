@@ -1,0 +1,1 @@
+import{_ as a,o as s,b as t,q as n,E as o,aq as r}from"./index-DRQkzaGL.js";const d={};function c(e,i){return s(),t(r,{name:"slide-fade"},{default:n(()=>[o(e.$slots,"default",{},void 0,!0)]),_:3})}const f=a(d,[["render",c],["__scopeId","data-v-75fe1e40"]]);export{f as B};
