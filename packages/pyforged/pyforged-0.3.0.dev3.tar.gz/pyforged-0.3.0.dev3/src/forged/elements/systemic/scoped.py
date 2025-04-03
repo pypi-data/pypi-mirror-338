@@ -1,0 +1,3 @@
+"""
+Visibility and lifetime
+"""
