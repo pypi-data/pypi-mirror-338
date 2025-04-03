@@ -1,0 +1,8 @@
+sqlfingerprint/__init__.py,sha256=fCXsDmVSjNaxhnQxyqhEkG5I7U_utQAbpzvgDa87dTs,166
+sqlfingerprint/core.py,sha256=_C678Rc1NlScoLjGrhJLGBSS1esubp3HkniXI1zLc2Y,4017
+sqlfingerprint/exceptions.py,sha256=y0UoFYu7oa4uWMIP062PGucn9VeA3nkyk9eTeneqvM0,173
+sqlfingerprint/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sqlfingerprint-0.1.0.dist-info/METADATA,sha256=9a7G-n6GTn_4EJNAy9vDUH2n1BmYqdn8AyomYJP7Vz4,4777
+sqlfingerprint-0.1.0.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+sqlfingerprint-0.1.0.dist-info/licenses/LICENSE,sha256=EKJpIas5vdtfxYH_yY1j9sNveQkgzAUrJc6s9gISAO4,1083
+sqlfingerprint-0.1.0.dist-info/RECORD,,
