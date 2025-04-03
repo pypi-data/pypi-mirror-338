@@ -1,0 +1,14 @@
+dockerdo/__init__.py,sha256=iTyhASHLDtxtQkcblUwrBYupEXxLQHqlHYInOT_u2xk,184
+dockerdo/config.py,sha256=Hfo0M6-F83CpKibk_Ztb7mEUxU9k3KaQQUWOjnHfEgw,9619
+dockerdo/docker.py,sha256=vG5RpRb05RGX7o-o65_juANWCtDiePkXMrQ9Kwepkmg,1157
+dockerdo/dockerdo.bash-completion,sha256=3wYm8WILzuztVVzoQVvILqHNAD_N8GPFtWkEo1IFClE,684
+dockerdo/dockerdo.py,sha256=mS-jUGHMCFarkMRXqNNuH8qjPmTDFoFnsuqvxqE4Qco,26018
+dockerdo/inotify.py,sha256=dwpiKtTrQ2Uft-fHdNP9jLeWYa7ErAmZhxbpVILat6o,2177
+dockerdo/prettyprint.py,sha256=UwYO8c0g7JslVFyMVIaLrlA8rxw0T_CtTibcJ3pu0QM,4653
+dockerdo/shell.py,sha256=YWKQx_KpL3EwgBQFYN44Ie20Ey1erKlHJd2ReB2mHmY,7923
+dockerdo/utils.py,sha256=WGjbGZHyr3hmRRV-4biStn-xyY6yYN6sj04W12jHSjc,1172
+dockerdo-0.1.0.dist-info/entry_points.txt,sha256=YZyK3tevXPB7i7Q8-3OGHuGIjrah79Io8RDVO6rfjLk,41
+dockerdo-0.1.0.dist-info/licenses/LICENSE,sha256=tN67NvyKrGlvDsSfnj1-ixKFucrYjat_k3CxsJUfm-Q,1086
+dockerdo-0.1.0.dist-info/WHEEL,sha256=_2ozNFCLWc93bK4WKHCO-eDUENDlo-dgc9cU3qokYO4,82
+dockerdo-0.1.0.dist-info/METADATA,sha256=KJ4dzRDp5vMBcs1ISHOcFNXcRrOusXJUhnKJ8uSgIDM,11591
+dockerdo-0.1.0.dist-info/RECORD,,
