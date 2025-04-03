@@ -1,0 +1,57 @@
+Metadata-Version: 2.1
+Name: yt-adl
+Version: 1.0.0
+Summary: YouTube Audio and Video Downloader with advanced features
+Home-page: https://x.com/Lanaev0li
+Author: Avinion
+Author-email: shizofrin@gmail.com
+Project-URL: Bug Tracker, https://x.com/Lanaev0li
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: yt-dlp
+Requires-Dist: colorama
+Requires-Dist: tqdm
+Requires-Dist: mutagen
+Requires-Dist: pydub
+
+# YT-ADL - YouTube Audio Downloader
+
+![Banner](https://via.placeholder.com/800x200?text=YT-ADL+YouTube+Downloader)
+
+Advanced YouTube audio and video downloader with multiple quality options, conversion features, and playback capabilities.
+
+## Features
+
+- Download videos in multiple resolutions (144p to 4K)
+- Download high quality MP3 audio
+- Convert WebM files to MP3
+- Play downloaded audio files directly
+- Multi-language support (English/Russian)
+- Progress bars and visual feedback
+- Automatic dependency installation
+
+## Installation
+
+```bash
+pip install yt-adl
+
+
+Usage
+After installation, simply run:
+
+yt-adl
+
+
+Follow the on-screen menu to download or convert media.
+
+Requirements
+Python 3.6+
+
+ffmpeg (for audio conversion)
+
+License
+MIT License - Copyright (c) 2025 Avinion

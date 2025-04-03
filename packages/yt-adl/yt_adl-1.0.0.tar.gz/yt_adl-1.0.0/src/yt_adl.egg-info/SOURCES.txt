@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/yt_adl/__init__.py
+src/yt_adl/cli.py
+src/yt_adl.egg-info/PKG-INFO
+src/yt_adl.egg-info/SOURCES.txt
+src/yt_adl.egg-info/dependency_links.txt
+src/yt_adl.egg-info/entry_points.txt
+src/yt_adl.egg-info/requires.txt
+src/yt_adl.egg-info/top_level.txt
