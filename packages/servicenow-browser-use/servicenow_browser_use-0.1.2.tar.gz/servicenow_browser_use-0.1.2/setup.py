@@ -1,0 +1,57 @@
+from setuptools import setup, find_packages
+
+with open("README.md", "r", encoding="utf-8") as fh:
+    long_description = fh.read()
+
+setup(
+    name="servicenow-browser-use",
+    version="0.1.2",
+    author="Joshita Das",
+    author_email="joshita.das@servicenow.com",
+    description="A browser automation library specifically designed for ServiceNow applications",
+    long_description=long_description,
+    long_description_content_type="text/markdown",
+    url="https://github.com/joshita-das/servicenow-browser-use",
+    packages=find_packages(),
+    classifiers=[
+        "Development Status :: 3 - Alpha",
+        "Intended Audience :: Developers",
+        "Topic :: Software Development :: Libraries :: Python Modules",
+        "License :: OSI Approved :: MIT License",
+        "Programming Language :: Python :: 3",
+        "Programming Language :: Python :: 3.8",
+        "Programming Language :: Python :: 3.9",
+        "Programming Language :: Python :: 3.10",
+        "Programming Language :: Python :: 3.11",
+    ],
+    python_requires=">=3.8",
+    install_requires=[
+        "playwright>=1.51.0",
+        "langchain-openai>=0.3.1",
+        "pydantic>=2.10.6",
+        "python-dotenv>=1.0.1",
+        "requests>=2.32.3",
+        "selenium>=4.30.0",
+        "beautifulsoup4>=4.13.3",
+        "MainContentExtractor>=0.0.4",
+        "opentelemetry-api>=1.31.1",
+        "opentelemetry-sdk>=1.31.1",
+        "opentelemetry-instrumentation>=0.52b1",
+        "opentelemetry-instrumentation-langchain>=0.38.12",
+        "opentelemetry-instrumentation-requests>=0.52b1",
+        "opentelemetry-instrumentation-sqlalchemy>=0.52b1",
+        "opentelemetry-instrumentation-threading>=0.52b1",
+        "opentelemetry-instrumentation-urllib3>=0.52b1",
+        "opentelemetry-semantic-conventions>=0.52b1",
+        "opentelemetry-semantic-conventions-ai>=0.4.3",
+        "opentelemetry-util-http>=0.52b1",
+        "opentelemetry-exporter-otlp-proto-common>=1.31.1",
+        "opentelemetry-exporter-otlp-proto-grpc>=1.31.1",
+        "opentelemetry-exporter-otlp-proto-http>=1.31.1",
+        "opentelemetry-proto>=1.31.1",
+    ],
+    include_package_data=True,
+    package_data={
+        "servicenow_browser_use": ["dom/*.js"],
+    },
+) 
