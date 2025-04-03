@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: socsim
+Version: 0.1.1
+Summary: Python package for running simulations in psychology, sociology, political science, and economics.
+Author: Robert-Jia00129
+Author-email: jia00129@umn.edu
+Requires-Python: >=3.11,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Dist: dotenv (>=0.9.9,<0.10.0)
+Requires-Dist: matplotlib (>=3.10.1,<4.0.0)
+Requires-Dist: numpy (>=2.2.4,<3.0.0)
+Requires-Dist: pandas (>=2.2.3,<3.0.0)
+Requires-Dist: pydantic (>=2.11.1,<3.0.0)
+Requires-Dist: seaborn (>=0.13.2,<0.14.0)
+Requires-Dist: transformers (>=4.50.3,<5.0.0)
+Description-Content-Type: text/markdown
+
+
