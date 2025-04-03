@@ -1,0 +1,51 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "discord-mcp"
+version = "0.1.4"
+description = "Discord Message Context Provider for Claude"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [
+    {name = "Louis DiLello", email = "discord-mcp@example.com"}
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Topic :: Communications :: Chat",
+    "Topic :: Utilities",
+]
+dependencies = [
+    "mcp[cli]>=0.1.0",
+    "bm25s>=0.2.10",
+    "numpy>=1.24.0",
+    "tqdm>=4.66.1",
+    "requests>=2.31.0",
+    "pytz>=2023.3",
+    "flask>=2.3.0",
+    "python-dotenv>=1.0.0",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/LouD82/discord-mcp"
+"Bug Tracker" = "https://github.com/LouD82/discord-mcp/issues"
+
+[project.scripts]
+discord-mcp = "discord_mcp_server:main_cli"
+discord-webui = "discord_webui:main_cli"
+
+[tool.setuptools]
+include-package-data = true
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["*"]
+
+[tool.setuptools.package-data]
+discord_mcp = ["static/css/*.css", "templates/*.html"]
