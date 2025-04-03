@@ -1,0 +1,10 @@
+README.md
+setup.py
+mapper/__init__.py
+mapper/main.py
+mapper/second.py
+risk_package_grf.egg-info/PKG-INFO
+risk_package_grf.egg-info/SOURCES.txt
+risk_package_grf.egg-info/dependency_links.txt
+risk_package_grf.egg-info/requires.txt
+risk_package_grf.egg-info/top_level.txt
