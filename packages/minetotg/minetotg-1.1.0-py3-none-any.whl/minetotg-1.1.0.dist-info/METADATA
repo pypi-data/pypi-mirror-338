@@ -1,0 +1,60 @@
+Metadata-Version: 2.4
+Name: minetotg
+Version: 1.1.0
+Summary: A tool that reformat string with Minecraft text formatting to Telegram HTML.
+Author-email: R0boji <roboji.public@internet.ru>
+License-Expression: MIT
+Project-URL: Homepage, https://github.com/R0boji/minetotg
+Project-URL: Issues, https://github.com/R0boji/minetotg/issues
+Project-URL: GitVerse, https://gitverse.ru/roboji/minetotg
+Keywords: Telegram,Formatting,Minecraft
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Text Processing :: Markup
+Classifier: Operating System :: OS Independent
+Classifier: Development Status :: 5 - Production/Stable
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Dynamic: license-file
+
+# minetotg
+![PyPI - Downloads](https://img.shields.io/pypi/dm/minetotg?style=flat-square)
+![PyPI - Version](https://img.shields.io/pypi/v/minetotg?style=flat-square)
+![PyPI - Status](https://img.shields.io/pypi/status/minetotg?style=flat-square)
+![PyPI - License](https://img.shields.io/pypi/l/minetotg?style=flat-square)
+![PyPI - Python Version](https://img.shields.io/pypi/pyversions/minetotg?style=flat-square)
+
+This project was created in order to help Minecraft community to transform game text formatting to Telegram HTML format.
+
+### Installation
+
+```
+pip install minetotg
+```
+
+### Usage
+
+#### Python Module
+```python
+from minetotg import reformat
+
+some_reformatted_string = reformat("§kSpoiler§r§lBold§r")
+print(some_reformatted_string) # Output: <tg-spoiler>Spoiler</tg-spoiler><b>Bold</b>
+```
+
+#### CLI
+```commandline
+python -m minetotg §kSpoiler§r§lBold§r
+```
+Output:
+```commandline
+<tg-spoiler>Spoiler</tg-spoiler><b>Bold</b>
+```
