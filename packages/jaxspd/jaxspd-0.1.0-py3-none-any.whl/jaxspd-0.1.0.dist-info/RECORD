@@ -1,0 +1,10 @@
+jaxspd/__init__.py,sha256=tRM3hpcWyJwtOHiThYAAu3kfgUukSCV_Xn8TujCHijw,877
+jaxspd/gpu.py,sha256=PLqlhXlT_DrqTbWzyxG9jlqg9X6GnG65mvj54NQH2EM,2298
+jaxspd/jit.py,sha256=wmBnJFveWOt83fr25biFuSaA7g3SUREgpHHU5edu9K0,3169
+jaxspd/optimizations.py,sha256=aJHXhkruNW9gLiGNuEAkjHDP169nSn7aTBWNksSPnPQ,5000
+jaxspd/profiling.py,sha256=JEQvc_wlomKQfK_Dsg32-24LfPgA4f20Xn4ZzTXU0OI,4692
+jaxspd/utils.py,sha256=aXwqkWboGZtnBpgAcBOWNrJvpwJsOobbJyLnebAMfXQ,3001
+jaxspd-0.1.0.dist-info/METADATA,sha256=ZV9xkKUpCScJldYhhMmvWG8zjcCqjCN_EIbmUTvV4Kw,2883
+jaxspd-0.1.0.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+jaxspd-0.1.0.dist-info/top_level.txt,sha256=2ZcJQA0HRKNWgb3I-QZWbqtWhkrxVwT_hXVhtHQ6ZFE,7
+jaxspd-0.1.0.dist-info/RECORD,,
