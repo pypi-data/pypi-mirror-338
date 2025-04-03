@@ -1,0 +1,7 @@
+lib/libnvqir-QuantumRingsLib.so,sha256=7OlcC2wuZZFEl0PsunVxXlHM-Ps0oTi8Vjisiofj2ss,9938784
+quantumrings_toolkit_cudaq-0.1.91.dist-info/licenses/LICENSE.rst,sha256=gjTOlalh8rQGN2uJb06TX4RSNaISgdysUpj5kfl45kE,11097
+targets/QuantumRingsLib.yml,sha256=SEACvgl3eSgY5Af2mT4aJNRxQq44oOjAY_8TT9s5WIA,611
+quantumrings_toolkit_cudaq-0.1.91.dist-info/METADATA,sha256=faREns5QCFLyfcek7qOtidcxDQxg6sqcGTOCSVQm_4A,6712
+quantumrings_toolkit_cudaq-0.1.91.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+quantumrings_toolkit_cudaq-0.1.91.dist-info/top_level.txt,sha256=6EQeHL6o3m1zSyCDxeaBwLEcMD6xu6RuthHQgI50qaQ,12
+quantumrings_toolkit_cudaq-0.1.91.dist-info/RECORD,,
