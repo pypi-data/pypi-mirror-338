@@ -1,0 +1,15 @@
+asyncpg_datalayer/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+asyncpg_datalayer/base_repository.py,sha256=fAi4Z0h-0dnkgPAlds9tcHkNI1sj06nAZvBg4DKFMXo,17509
+asyncpg_datalayer/base_table.py,sha256=8iuJg-xt7OOa8gmrUcuoeZhavy85baeFF_XdWxi_uEc,263
+asyncpg_datalayer/criteria.py,sha256=2n2RVLaCTXoH0PrRHKh3TzpxpBY1m-Pub4sRGfsOb4M,4274
+asyncpg_datalayer/db.py,sha256=RaM7XbykhUyha8iaPfnW3bqhBkSRAlbARauh_WQY_U4,5900
+asyncpg_datalayer/errors.py,sha256=lbcaUZ4Tzt5mOrTWgOw33cQjJKviPtuTpnVCJvt4PPQ,1349
+asyncpg_datalayer/migrationtool/README.md,sha256=XLCcnUGskpXH0g1fx-xaZEPXZCPNf3CjxavxtcMVdck,441
+asyncpg_datalayer/migrationtool/__init__.py,sha256=N2rNaAjtrsayVgYnD6KZq9Ji6dSVjJsl2l6XEII40o0,4032
+asyncpg_datalayer/pagination_and_sorting.py,sha256=4tdrst6kUJoJomyygMe8stlIWKs94vC26njW6f4Zn9I,1657
+asyncpg_datalayer/types.py,sha256=YkoSLXjlZbyVZdblrlpy6ZV9nyp3Y7RC5oyUkSHuJFI,252
+asyncpg_datalayer/utils.py,sha256=FnY8ohtox5hB8qhC9Vzn5_SO3nTBKqJnO2FJqUHgZSY,417
+asyncpg_datalayer-0.0.0.dist-info/LICENSE,sha256=I4y5rncemEaBxME38OG_5a1fhrn_OaSrWNmM-Pk9XUc,1073
+asyncpg_datalayer-0.0.0.dist-info/METADATA,sha256=q0dKFnnaBePK6HRytde85C3grCbyynLpsexx-2lMCgs,1002
+asyncpg_datalayer-0.0.0.dist-info/WHEEL,sha256=fGIA9gx4Qxk2KDKeNJCbOEwSrmLtjWCwzBz351GyrPQ,88
+asyncpg_datalayer-0.0.0.dist-info/RECORD,,
