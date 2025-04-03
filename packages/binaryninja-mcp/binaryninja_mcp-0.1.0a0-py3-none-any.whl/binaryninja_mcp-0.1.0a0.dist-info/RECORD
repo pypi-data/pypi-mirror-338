@@ -1,0 +1,13 @@
+binaryninja_mcp/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+binaryninja_mcp/cli.py,sha256=P8IWBCdDN78YzxrrVKYURrSdUkdJtr4iw_xY81TEdJA,4213
+binaryninja_mcp/consts.py,sha256=7ioKmIJtyl4jK2tNj4CKeUjqMgz5KtSdY7CFXdyQdSE,76
+binaryninja_mcp/plugin.py,sha256=IvyrWjah0xIuSC0xKHfr4jENARelX_QHpD8hxLKwpuM,4954
+binaryninja_mcp/resources.py,sha256=Q9-hiw9hHxSB4MZ2TrrFDizyZF4F6mH2g08cF84M1kQ,6931
+binaryninja_mcp/server.py,sha256=bLUBO-Zoz2lMjJkJJYsE_FJpjLKDf9WSm50UeKIlaeg,19190
+binaryninja_mcp/tools.py,sha256=rF0AFFxlHKLnAyBu8T2qXcWuwKTl9qZ9wCxpz-1qfg0,13514
+binaryninja_mcp/utils.py,sha256=lcy5DzJyek4aYjTm2ILWRENsH-rG0XXXRk2pqUUqC3M,278
+binaryninja_mcp-0.1.0a0.dist-info/METADATA,sha256=JqK2UmhMOxwdH3GKI6ERsG1IWBFgiJXNB-k9THiuL0U,4599
+binaryninja_mcp-0.1.0a0.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+binaryninja_mcp-0.1.0a0.dist-info/entry_points.txt,sha256=_scur0gnQu9Oya69C-pmLV90cz_if_SC0cNK25KxjPA,60
+binaryninja_mcp-0.1.0a0.dist-info/licenses/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+binaryninja_mcp-0.1.0a0.dist-info/RECORD,,
