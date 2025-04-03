@@ -1,0 +1,10 @@
+cachetools/__init__.py,sha256=1RX-hyjRGAQXjLnnt6Oz8_ZuUY-rNkvDWAz1iQj0pJs,19322
+cachetools/_cached.py,sha256=B5EYZcQIFB4Sc-MZJkfOeCt8cRBwa4ezwvJuYkCzJVY,6254
+cachetools/_cachedmethod.py,sha256=LdpCvk7Btk72-7gexg8z5AmbiZxOV32t25KbdHzI1oI,3032
+cachetools/func.py,sha256=sqsnqE4vMiSdZhChpBCfOIoMnlcmgtKEGNv7A5BSH44,3208
+cachetools/keys.py,sha256=AOgfoi-oioBOnEEk115_9qs0HKISrYnbcV4F0hyZ1yk,1777
+cachetools-6.0.0b2.dist-info/licenses/LICENSE,sha256=I8Tv96HAJ6l3oLecRJfhdYLDNMXxfvasjKC1LR59hBc,1085
+cachetools-6.0.0b2.dist-info/METADATA,sha256=HsC6PWhnVBlEKDM3i6MxLxKW1_CWovrFvlRbhTN_ox4,5303
+cachetools-6.0.0b2.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+cachetools-6.0.0b2.dist-info/top_level.txt,sha256=ai2FH78TGwoBcCgVfoqbzk5IQCtnDukdSs4zKuVPvDs,11
+cachetools-6.0.0b2.dist-info/RECORD,,
