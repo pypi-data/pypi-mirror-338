@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pydictdiff"
+version = "1.0.0"
+description = "A Python package to diff two dictionaries"
+authors = [{ name = "Anupam", email = "anupamkrish@duck.com" }]
+license = { file = "LICENSE" }
+readme = "README.md"
+requires-python = ">=3.6"
+dependencies = []
+keywords = ["diff", "dictionary", "compare"]
+
+[project.urls]
+Homepage = "https://gitlab.com/anupamkrish/pydictdiff"
+Repository = "https://gitlab.com/anupamkrish/pydictdiff"
