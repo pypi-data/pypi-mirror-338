@@ -1,0 +1,9 @@
+vxpipeline/__init__.py,sha256=Hd4bu_69Cfw7r3SxsEi99D6pqCFNixcG0pg3S1T3mg4,151
+vxpipeline/conect.py,sha256=48QRxGcbi22GsQtJxx4y7Dlb3QSVogQ1oEwwQjIjxq0,794
+vxpipeline/extract.py,sha256=NhqCZJMmwqsNj7bT7zJb4l5rnU928QdrwqkmUDNCX98,2341
+vxpipeline/load.py,sha256=GXPAHMAPjF6kPErid3k3wQCAh0bVV6OlO-pzccHvhCU,1281
+vxpipeline/transform.py,sha256=Zu8bEs00RvnZ4fSeW_SqXlY0Qs01CKx3ihCww4zqpWw,3344
+vxpipeline-0.2.0.dist-info/METADATA,sha256=pDkZEDud-QIaxPdU0vsHh4DBw_MlfXTqYrh8KA1OEkg,597
+vxpipeline-0.2.0.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+vxpipeline-0.2.0.dist-info/top_level.txt,sha256=YGpLxZ4HdAvkTvYsVZ0jZMzC_TQ0_AIbUEtr8e3mypM,11
+vxpipeline-0.2.0.dist-info/RECORD,,
