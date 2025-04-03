@@ -1,0 +1,29 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "photoprotectionpy"
+version = "1.1.7"
+description = "PhotoprotectionPy: In vitro sunscreen protector factor evaluation python package"
+readme = "README.md"
+requires-python = ">=3.9"
+license = "Apache-2.0"
+license-files = ["LICEN[CS]E*"]
+keywords = ["sunscreen", "in vitro", "SPF", "UV", "ISO", "photoprotection", "skin"]
+authors = [
+  { name="Santiago Guerrero-Higareda", email="a01636858@tec.mx" },
+]
+classifiers = [
+    "Programming Language :: Python :: 3.9",
+    "License :: OSI Approved :: Apache Software License",
+    "Operating System :: OS Independent",
+]
+
+dependencies = [
+  "numpy", "scipy"
+]
+
+[project.urls]
+"Homepage" = "https://github.com/santiagohigareda/photoprotectionpy"
+"Wiki" = "https://github.com/santiagohigareda/photoprotectionpy/wiki"
