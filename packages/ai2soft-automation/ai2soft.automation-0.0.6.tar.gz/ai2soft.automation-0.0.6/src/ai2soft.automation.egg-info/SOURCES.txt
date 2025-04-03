@@ -1,0 +1,6 @@
+LICENSE
+setup.py
+src/ai2soft.automation.egg-info/PKG-INFO
+src/ai2soft.automation.egg-info/SOURCES.txt
+src/ai2soft.automation.egg-info/dependency_links.txt
+src/ai2soft.automation.egg-info/top_level.txt
