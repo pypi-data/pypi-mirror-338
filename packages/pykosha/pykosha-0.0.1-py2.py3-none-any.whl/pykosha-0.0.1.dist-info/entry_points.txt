@@ -1,0 +1,2 @@
+[console_scripts]
+pykosha = kosha.cli:main
