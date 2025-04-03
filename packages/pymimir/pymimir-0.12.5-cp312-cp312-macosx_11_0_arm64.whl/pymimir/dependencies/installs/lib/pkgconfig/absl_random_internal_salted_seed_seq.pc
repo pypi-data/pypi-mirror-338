@@ -1,0 +1,12 @@
+prefix=/Users/runner/work/mimir/mimir/build/lib.macosx-11.0-arm64-cpython-312/pymimir/dependencies/installs
+exec_prefix=${prefix}
+libdir=/Users/runner/work/mimir/mimir/build/lib.macosx-11.0-arm64-cpython-312/pymimir/dependencies/installs/lib
+includedir=/Users/runner/work/mimir/mimir/build/lib.macosx-11.0-arm64-cpython-312/pymimir/dependencies/installs/include
+
+Name: absl_random_internal_salted_seed_seq
+Description: Abseil random_internal_salted_seed_seq library
+URL: https://abseil.io/
+Version: head
+Requires: absl_inlined_vector = head, absl_optional = head, absl_span = head, absl_random_internal_seed_material = head, absl_type_traits = head
+Libs: -L${libdir}  
+Cflags: -I${includedir} -Wno-float-conversion -Wno-implicit-float-conversion -Wno-implicit-int-float-conversion -Wno-unknown-warning-option -DNOMINMAX
