@@ -1,0 +1,11 @@
+Metadata-Version: 2.4
+Name: rkmath
+Version: 0.1.2
+Summary: Math library for easy math operations
+Author: Swifterhtmler
+Description-Content-Type: text/markdown
+Requires-Dist: numpy==2.20.0
+Dynamic: author
+Dynamic: description-content-type
+Dynamic: requires-dist
+Dynamic: summary
