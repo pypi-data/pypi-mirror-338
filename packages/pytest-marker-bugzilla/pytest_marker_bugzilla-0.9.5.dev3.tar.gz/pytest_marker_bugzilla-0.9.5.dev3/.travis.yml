@@ -1,0 +1,19 @@
+language: python
+python:
+- '2.7'
+- '3.6'
+install:
+- pip install tox tox-travis codecov
+script:
+- tox
+after_success:
+- codecov
+deploy:
+  provider: pypi
+  user: eanxgeek
+  password:
+    secure: 'a7EOnQMsxAjQXvMrwJfHXx1tOpzsQq7T8gJ6hVdqYQj4JVyq/Vxp+ulJgpwrdLda5LAfB0Nrvodp8hJfx3z4i73/q8M2+HJNoTWB7O8S+6FFPSR4uAUhf58IkNlusjkttQx4YTxI53p9hyUcO0HFbShyetZeJPWeh59Rtl0O15TGUJAjELttlIG5YdO0D2n/KwoGeVtvCGpZ7NeBoazB7mpkcu4uemyY5kV9EbZgk7mNf4azMZouDVh/xxFMDMlS4oxjy5q4EgXozI+iBnN6Q3kDum1UkU7cNZcNv8HyZ/cNM8ccKSFqOOIROchWC6vLLxkusVqoUJD7vkrXvGVfdp2DwLE+TYi0Ci+ZLK63a65aRF0JUhj00MRj+UqU/2G/2D1vbXmAbYWZQEXhCOIa5uJMNXusTab4YAh3NAFEg6NikwiKs7R+vnyqADxnpcmQFhawMir4zPgCpBVu7rpiErZVKie8wrTdHU04PI5A4Y7ItZSNCnU9Hg4DqBFk8acxIBn1ZkZ5he2gQW8a1dfkh3Zwgl6W7t/owUJyH9tNbJKUqVqlftarKEpZhIDsO0StrwCtyQUaVCNWt6oWsgww9pyBS3gHD/zJHqfyVfm3UdEmOuXrv6daJ45hz6MPoBzKxbB8JyJBF4PvcYVss8hFznmykNmFw4loFhUtky1J9Vw='
+  on:
+    branch: master
+    tags: true
+  skip_upload_docs: true
