@@ -1,0 +1,27 @@
+[project]
+name = "entitled"
+version = "1.0.0"
+description = "A library to make writing, enforcing and auditing your authorization policies a breeze"
+requires-python = ">=3.12,<3.13"
+authors = [{ name = "Mathias Bigaignon", email = "m.bigaignon@xefi.fr" }]
+readme = "README.md"
+dependencies = []
+
+[dependency-groups]
+dev = [
+    "coverage == 7.6.1",
+    "mypy == 1.11.2",
+    "pre-commit == 3.8.0",
+    "pytest == 8.3.3",
+    "bandit == 1.7.10",
+    "ruff==0.8.0",
+    "factory-boy == 3.3.1",
+    "pytest-cov == 5.0.0",
+    "pydantic[email]>=2.10.6",
+    "anyio>=4.8.0",
+    "uvloop>=0.21.0",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"

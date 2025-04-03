@@ -1,0 +1,6 @@
+__pycache__
+.mypy-cache
+*.pyc
+.python-version
+poetry.lock
+.coverage
