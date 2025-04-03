@@ -1,0 +1,7 @@
+README.md
+setup.py
+Easyxp.egg-info/PKG-INFO
+Easyxp.egg-info/SOURCES.txt
+Easyxp.egg-info/dependency_links.txt
+Easyxp.egg-info/requires.txt
+Easyxp.egg-info/top_level.txt
