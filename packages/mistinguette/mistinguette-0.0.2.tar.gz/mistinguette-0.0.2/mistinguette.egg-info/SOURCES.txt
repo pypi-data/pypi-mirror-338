@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+settings.ini
+setup.py
+mistinguette/__init__.py
+mistinguette/_modidx.py
+mistinguette/core.py
+mistinguette/toolloop.py
+mistinguette.egg-info/PKG-INFO
+mistinguette.egg-info/SOURCES.txt
+mistinguette.egg-info/dependency_links.txt
+mistinguette.egg-info/entry_points.txt
+mistinguette.egg-info/not-zip-safe
+mistinguette.egg-info/requires.txt
+mistinguette.egg-info/top_level.txt
