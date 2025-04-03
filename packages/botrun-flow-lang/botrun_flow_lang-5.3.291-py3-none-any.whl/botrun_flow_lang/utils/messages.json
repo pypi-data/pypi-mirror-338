@@ -1,0 +1,113 @@
+{
+  "messages": [
+    {
+      "data": {
+        "additional_kwargs": {},
+        "content": "幫我生成一張有狗狗的圖片",
+        "example": false,
+        "id": "5e062425-3a02-48b7-a9a1-48a2187c03cd",
+        "name": null,
+        "response_metadata": {},
+        "type": "human"
+      },
+      "type": "human"
+    },
+    {
+      "data": {
+        "additional_kwargs": {},
+        "content": [
+          {
+            "index": 0,
+            "text": "我很樂意幫你生成一張狗狗的圖片！讓我使用生成圖片的工具來創建一張可愛的狗狗圖片。",
+            "type": "text"
+          },
+          {
+            "id": "toolu_014FfuZWphrrnX8JD7ecyWX5",
+            "index": 1,
+            "input": {},
+            "name": "generate_image",
+            "partial_json": "{\"user_input\": \"一隻可愛的狗狗，毛茸茸的，坐在草地上，陽光照射，高品質照片風格\"}",
+            "type": "tool_use"
+          }
+        ],
+        "example": false,
+        "id": "run-ba26ecfb-f060-4f3c-a3c2-3a33e4087bda",
+        "invalid_tool_calls": [],
+        "name": null,
+        "response_metadata": {
+          "model_name": "claude-3-7-sonnet-20250219",
+          "stop_reason": "tool_use",
+          "stop_sequence": null
+        },
+        "tool_calls": [
+          {
+            "args": {
+              "user_input": "一隻可愛的狗狗，毛茸茸的，坐在草地上，陽光照射，高品質照片風格"
+            },
+            "id": "toolu_014FfuZWphrrnX8JD7ecyWX5",
+            "name": "generate_image",
+            "type": "tool_call"
+          }
+        ],
+        "type": "ai",
+        "usage_metadata": {
+          "input_token_details": {
+            "cache_creation": 0,
+            "cache_read": 13806
+          },
+          "input_tokens": 13964,
+          "output_tokens": 148,
+          "total_tokens": 14112
+        }
+      },
+      "type": "ai"
+    },
+    {
+      "data": {
+        "additional_kwargs": {},
+        "artifact": null,
+        "content": "https://oaidalleapiprodscus.blob.core.windows.net/private/org-y4L0FopFTN25QFdlViUjR8pn/user-aPIcotI1abOeEQumwJ0L6tJs/img-tmIuaPolQgt4TISRVF6grnNS.png?st=2025-04-01T01%3A49%3A11Z&se=2025-04-01T03%3A49%3A11Z&sp=r&sv=2024-08-04&sr=b&rscd=inline&rsct=image/png&skoid=d505667d-d6c1-4a0a-bac7-5c84a87759f8&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-04-01T01%3A44%3A48Z&ske=2025-04-02T01%3A44%3A48Z&sks=b&skv=2024-08-04&sig=QvUXNIzrSW2JP%2BMwQvXRwdSRMg/0D/aktL3RulTfD2c%3D",
+        "id": "78738a51-bd43-4268-9e5d-a955113834cd",
+        "name": "generate_image",
+        "response_metadata": {},
+        "status": "success",
+        "tool_call_id": "toolu_014FfuZWphrrnX8JD7ecyWX5",
+        "type": "tool"
+      },
+      "type": "tool"
+    },
+    {
+      "data": {
+        "additional_kwargs": {},
+        "content": [
+          {
+            "index": 0,
+            "text": "這是為你生成的狗狗圖片：\n\n@begin img(\"https://oaidalleapiprodscus.blob.core.windows.net/private/org-y4L0FopFTN25QFdlViUjR8pn/user-aPIcotI1abOeEQumwJ0L6tJs/img-tmIuaPolQgt4TISRVF6grnNS.png?st=2025-04-01T01%3A49%3A11Z&se=2025-04-01T03%3A49%3A11Z&sp=r&sv=2024-08-04&sr=b&rscd=inline&rsct=image/png&skoid=d505667d-d6c1-4a0a-bac7-5c84a87759f8&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-04-01T01%3A44%3A48Z&ske=2025-04-02T01%3A44%3A48Z&sks=b&skv=2024-08-04&sig=QvUXNIzrSW2JP%2BMwQvXRwdSRMg/0D/aktL3RulTfD2c%3D\") @end\n\n希望你喜歡這張可愛的狗狗圖片！\n\n這裡有個笑話給你：\n為什麼狗狗不會用電腦？因為牠們總是怕滑鼠！🐶😂",
+            "type": "text"
+          }
+        ],
+        "example": false,
+        "id": "run-823f0ad7-a7aa-4e77-9d71-2629ddbc267e",
+        "invalid_tool_calls": [],
+        "name": null,
+        "response_metadata": {
+          "model_name": "claude-3-7-sonnet-20250219",
+          "stop_reason": "end_turn",
+          "stop_sequence": null
+        },
+        "tool_calls": [],
+        "type": "ai",
+        "usage_metadata": {
+          "input_token_details": {
+            "cache_creation": 0,
+            "cache_read": 13806
+          },
+          "input_tokens": 14443,
+          "output_tokens": 420,
+          "total_tokens": 14863
+        }
+      },
+      "type": "ai"
+    }
+  ]
+}
