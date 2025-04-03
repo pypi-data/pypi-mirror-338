@@ -1,0 +1,37 @@
+name: Nightly Validation
+
+on:
+  schedule:
+    # Run nightly at 2:00 UTC
+    - cron: '0 2 * * *'
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: actions/checkout@v3
+    
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.12'
+        
+    - name: Install uv
+      run: |
+        pip install uv
+        
+    - name: Install dependencies
+      run: |
+        uv pip install -e .
+        
+    - name: Download sample data
+      run: |
+        mkdir -p ./_data
+        # Replace with actual command to download sample data
+        # curl -L https://example.com/sample-data.jsonl.bz2 -o ./_data/sample-data.jsonl.bz2
+        
+    - name: Validate sample data
+      run: |
+        # Assuming your package has a CLI with a validate command
+        python -m gandula.cli validate --input-path ./_data
