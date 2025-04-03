@@ -1,0 +1,9 @@
+aichatcoder/__init__.py,sha256=k5tJXhBQJ4l9fKHJ76K5w98zBHoYvNk9r-UNH6eQ2-k,21
+aichatcoder/cli.py,sha256=ZxLjyxcMUtl-QLkQgxCEHEaxWiBegObi4Ru9XdPjzAU,1078
+aichatcoder/global_config.py,sha256=vEUT0UT2JeZRXwLa2x3L3pdhaxUwubE0DY25Ra7-RsU,1508
+aichatcoder/updater.py,sha256=XvwKN91jKNz7GZEuG6Gw5W8pqot4JDdVb7f5g68OOJ4,1141
+aichatcoder-0.0.3.dist-info/METADATA,sha256=9ATkAey0JlucE96mzYnzvhyMUSdC8fFgPIr0n14zIMA,5521
+aichatcoder-0.0.3.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+aichatcoder-0.0.3.dist-info/entry_points.txt,sha256=tEIuU_Xq60KKuv_ZHYiTZfG6cj7kJVy0Nk_Xau-mQjA,53
+aichatcoder-0.0.3.dist-info/licenses/LICENSE,sha256=qDR6FMPWVJ6Sgwk2ZWVpsATsfmapLgnJyvT_KUg4430,1489
+aichatcoder-0.0.3.dist-info/RECORD,,
