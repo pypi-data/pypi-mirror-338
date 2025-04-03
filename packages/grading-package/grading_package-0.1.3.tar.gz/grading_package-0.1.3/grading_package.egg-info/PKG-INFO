@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: grading-package
+Version: 0.1.3
+Summary: A brief description of your package
+Home-page: https://github.com/Elton133/GRADING-PACKAGE
+Author: Elton Morden, Joyce Elli, Jefferson Forson, Joseph Agyemang, Lovelace John Kwaku Baidoo, Claude Osabu-Kle
+Author-email: eltonmorden029@gmail.com, lovelacejohnkwakubaidoo@gmail.com, claude.osabu-kle@st.rmu.edu.gh, joseph.agyemang@st.rmu.edu.gh, joyce.elli@st.rmu.edu.gh, jefferson.forson@st.rmu.edu.gh
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# Grading Package
+
+A brief description of your package.
+
+## Installation
+
+You can install the package via pip:
+
+```bash
+pip install grading-package
+```
+
+
