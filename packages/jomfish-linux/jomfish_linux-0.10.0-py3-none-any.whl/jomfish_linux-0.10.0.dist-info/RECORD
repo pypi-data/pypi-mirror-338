@@ -1,0 +1,8 @@
+jomfish/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+jomfish/main.py,sha256=5uhm40DfA9Qcss1bCff5IbV3SoXEaMDKaIyr-UcVDro,334
+jomfish/bin/jomfish,sha256=sHY2GaRhTv39cAA5EEVWk7wSijhbu14wWDnLiF0HxW0,1036024
+jomfish_linux-0.10.0.dist-info/METADATA,sha256=3xZfCk6GKJYxvVfysj3683NP5Yr0LWOyfVBy_IyxIn8,459
+jomfish_linux-0.10.0.dist-info/WHEEL,sha256=L0N565qmK-3nM2eBoMNFszYJ_MTx03_tQ0CQu1bHLYo,91
+jomfish_linux-0.10.0.dist-info/entry_points.txt,sha256=tjxMuwmLek6G7JBypyNlCRJ9mWto1IkVLUBHme1ihRE,46
+jomfish_linux-0.10.0.dist-info/top_level.txt,sha256=CQ8WyUnjcsa2fhnHjHq31PjVoaFMbKYFVQjhBI_mnUI,8
+jomfish_linux-0.10.0.dist-info/RECORD,,
