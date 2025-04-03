@@ -1,0 +1,14 @@
+onzr/.secrets.toml.dist,sha256=dMX0ETZSOJP_X3eoze3hydMiwmtXmeXjk0JoEioN8Js,7
+onzr/__init__.py,sha256=K15bpmyFf4lKGI0DckWWPThyH8SSRyw2flhp3x2wMeg,12
+onzr/__main__.py,sha256=8Oh4fXCWmKJdadQ1j9F1ynQJo8E0g_I44yY7SLFT7z4,87
+onzr/cli.py,sha256=WJd5wNzcaGw3bSHa48F11NRKaGrvSwMKwwudV7_Yve4,5240
+onzr/config.py,sha256=XniFsJ4IuHZ_x2Pb2jwnnFuy0ZabHhggBB3ynCiqhZ0,161
+onzr/core.py,sha256=j4cHUtlE_mSG7Qs7OCeJRteobaGOqFo157YqaVbfPow,4076
+onzr/deezer.py,sha256=0Ugk2Y7XPeowd4PmBxBgMeiwwiJnW5qSFaOqcb-84Ms,12616
+onzr/player.py,sha256=cjYszP217cRLfnI_w3SQi9PWjXLqZSDTArwWYk084Lw,1171
+onzr/settings.toml.dist,sha256=_6qZ-RsN4ddSFUoiDaFvcCPI74oC8FPG-RJVjYfuR1A,353
+onzr-0.1.0.dist-info/LICENSE,sha256=SMOJjNUaIj_365zCsKuTFqVVsCnQmbSPdplvBww0faI,1103
+onzr-0.1.0.dist-info/METADATA,sha256=F51JXRflv8AVHNv-FDXlwCglF8m_fRJUyCcdAOTWlW8,1356
+onzr-0.1.0.dist-info/WHEEL,sha256=fGIA9gx4Qxk2KDKeNJCbOEwSrmLtjWCwzBz351GyrPQ,88
+onzr-0.1.0.dist-info/entry_points.txt,sha256=vI0fPZOney1fEOAc3VfbtugMMVkaJvlsEBzJbZEFsPg,37
+onzr-0.1.0.dist-info/RECORD,,
