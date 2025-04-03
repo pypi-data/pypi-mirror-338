@@ -1,0 +1,2 @@
+[console_scripts]
+mcpimageprocessing = mcpimageprocessing.main:main
