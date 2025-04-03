@@ -1,0 +1,9 @@
+celeri/__init__.py,sha256=oNYft2HbdrEBLNoDOClqlSMH89N2Q2xl7NRY54hS7Sg,2920
+celeri/celeri.py,sha256=LD0_bSLD24L0OyaQZrGPCVLl8f8LTMI9fsLPOrx-ido,315097
+celeri/celeri_closure.py,sha256=PEZ_YbmDoLyTAZrOtRekmh-KhWMKbOjAmRTeUH5UgLM,23758
+celeri/celeri_util.py,sha256=1fFZFXNmOgHW5RbN0c8na2qq5gn6aT0aKMfPdEHgOQ8,453
+celeri/hmatrix.py,sha256=_9FVnv4W72N9b11XlyPLj4pQz-KcB5zrPLeN8bOiB0w,22616
+celeri-0.0.2.dist-info/METADATA,sha256=qtcj9iLSQfhVO9FGSu16DSlkU5u_QZEhUt-8dFmdk8o,6781
+celeri-0.0.2.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+celeri-0.0.2.dist-info/licenses/LICENSE,sha256=h-CyWt1yMcUSrpWbMxkFNnwhr8VusUFwgBDfjMAIO8s,1069
+celeri-0.0.2.dist-info/RECORD,,

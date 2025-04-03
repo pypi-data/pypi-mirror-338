@@ -1,0 +1,169 @@
+Metadata-Version: 2.4
+Name: celeri
+Version: 0.0.2
+Summary: Next generation earthquake cycle kinematics
+Project-URL: Homepage, https://github.com/brendanjmeade/celeri
+Author-email: Brendan Meade <brendanjmeade@gmail.com>
+License: MIT License
+        
+        Copyright (c) 2005 brendanjmeade
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+License-File: LICENSE
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: Physics
+Classifier: Topic :: Scientific/Engineering :: Visualization
+Requires-Python: >=3.9
+Requires-Dist: addict
+Requires-Dist: cutde
+Requires-Dist: cvxopt
+Requires-Dist: gmsh
+Requires-Dist: h5py
+Requires-Dist: ipython
+Requires-Dist: ismember
+Requires-Dist: loguru
+Requires-Dist: matplotlib
+Requires-Dist: meshio
+Requires-Dist: numpy
+Requires-Dist: okada-wrapper
+Requires-Dist: pandas
+Requires-Dist: pyproj
+Requires-Dist: pytest
+Requires-Dist: scipy
+Requires-Dist: spherical-geometry
+Requires-Dist: tqdm
+Description-Content-Type: text/markdown
+
+
+
+# Next generation earthquake cycle imaging
+`celeri` is a python-based package designed to image earthquake cycle activity including the spatial and time varying fault coupling across geometrically complex fault systems at large scales. It features:
+
+- Friendly [Jupyter notebook examples](https://github.com/brendanjmeade/celeri/blob/main/notebooks/celeri_dense.ipynb)
+- Beautiful web-based model building with [`celeri_ui`](https://brendanjmeade.github.io/celeri_ui/)
+- Fast and automated block closure on the sphere
+- Small memory footprint (via H-matrix compression)
+- Blazingly fast elastic calculations (via [Ben Thompson's](https://github.com/tbenthompson) [C-based triangular dislocation calculations](https://github.com/tbenthompson/cutde))
+- Easy IO with standard file types (.csv, .json, .hdf5)
+- Rapid model diffs with [`celeri_report.py`](https://github.com/brendanjmeade/celeri/blob/main/notebooks/celeri_report.py)
+
+
+# Getting started
+To set up a development conda environment, install [pixi](https://pixi.sh/) and run the following command in the `celeri` folder.
+```bash
+pixi shell
+```
+
+Alternatively, run the following commands in the `celeri` folder.
+```
+conda config --prepend channels conda-forge
+conda env create
+conda activate celeri
+pip install --no-use-pep517 -e .
+```
+
+Once you are in a pixi shell or have activated the conda environment, start your favorite notebook viewer (`jupyter lab` or `vscode`) and open and run `celeri.ipynb`.
+
+
+### Folder structure and file locations for applications
+A large number of input files can be involved in a model run.  We assume that a project is arranged using the following folder structure:
+```
+project_name/
+├── README.md
+├── notebooks/
+│   ├── block_model.ipynb
+│   ├── visualize_results.ipynb
+│   └── resolution_tests.ipynb
+├── data/
+|   ├── command/
+│   |   ├── command_001.json
+│   |   └── command_NNN.json
+│   ├── segment/
+│   │   ├── segment_001.csv
+│   │   └── segment_NNN.csv
+│   ├── block/
+│   │   ├── block_001.csv
+│   │   └── block_NNN.csv
+│   ├── station/
+│   │   ├── station_001.csv
+│   │   └── station_NNN.csv
+│   ├── mesh/
+│   |   ├── mesh_params_001.json
+│   |   ├── mesh_params_NNN.json
+│   |   ├── mesh_001.msh
+│   |   └── mesh_NNN.msh
+|   └── operators/
+│       ├── elastic_001.hdf5
+│       └── elastic_NNN.hdf5
+└── runs/
+    ├── 2022-02-20-17-01-39/
+    │  ├── 2022-02-20-17-01-39.log
+    │  ├── elastic_operators.hdf5
+    │  ├── model_segment.csv
+    │  ├── model_block.csv
+    │  └── model_station.csv
+    └── NNNN-NN-NN-NN-NN-NN/
+       ├── NNNN-NN-NN-NN-NN-NN.log
+       ├── elastic_operators.hdf5
+       ├── model_segment.csv
+       ├── model_block.csv
+       └── model_station.csv
+```
+
+### The flow of files in and out of celeri
+The files listed above flow into celeri through `command.json` file. Files with dark orange background shading are required (automatically generated) and those with light blue background shading are optional (not automatically generated)
+```mermaid
+flowchart TD
+  classDef required fill:#f96;
+  subgraph input_files
+    command.json:::required --> segment.csv:::required
+    command.json:::required --> block.csv:::required
+    command.json:::required --> station.csv:::required
+    subgraph meshes
+      mesh_parameters.json
+      mesh_parameters.json --> mesh_001.msh
+      mesh_parameters.json --> mesh_NNN.msh
+    end
+    command.json --> meshes
+    command.json --> elastic_operators_precomputed.hdf5
+    command.json --> los.csv
+  end
+  subgraph celeri
+    notebook.ipynb:::required
+  end
+  subgraph output_files
+    model_segment.csv:::required
+    model_block.csv:::required
+    elastic_operators.hdf5
+    model_station.csv:::required
+    model_los.csv
+  end
+  input_files --> celeri
+  celeri --> output_files
+```
+
+# Other earthquake cycle kinematics software
+We think celeri is pretty great but there are other alternatives worth considering:
+- Jack Loveless' and Brendan Meade's Matlab-based [Blocks](https://github.com/jploveless/Blocks) 
+- Rob McCaffrey's Fortran-based [TDEFNODE](https://robmccaffrey.github.io/TDEFNODE/TDEFNODE.html)
+- Richard Styron's Julia-based (and cleverly named!) [Oiler](https://github.com/cossatot/Oiler)
