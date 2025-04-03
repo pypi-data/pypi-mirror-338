@@ -1,0 +1,10 @@
+fluix/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fluix/cli.py,sha256=GpQSI8HB6vBcT4KDKFav_i60sNuOcq16ZVPyBW1SPwc,1717
+fluix/cmds/anim_cmd.py,sha256=_MjsSXcpKs-I7rxdneEfnAzJxO0wY2WFnQ6LfGoIRxk,370
+fluix/core/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fluix/core/animate.py,sha256=J5YapatLFMpecNXRhzB5aiNK6DCGUYK6pscC5DONZAE,1188
+fluix-0.1.0.dist-info/METADATA,sha256=MLfquaH1Wpa5vBTo9YtIAM_POLTrdcPCmGRUXGy8vUo,367
+fluix-0.1.0.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+fluix-0.1.0.dist-info/entry_points.txt,sha256=16ZOpdECU6Xjs1_i-pRTuesYoluIiZ_FrUlL-LVjgIU,40
+fluix-0.1.0.dist-info/top_level.txt,sha256=VHBmTy1DiBDPVS1mGmuUxJ6s_zHRbQA01pJ3b_v-xUw,6
+fluix-0.1.0.dist-info/RECORD,,
