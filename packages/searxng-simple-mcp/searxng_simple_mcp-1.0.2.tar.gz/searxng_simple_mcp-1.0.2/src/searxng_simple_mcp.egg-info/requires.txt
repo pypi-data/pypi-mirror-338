@@ -1,0 +1,10 @@
+fastmcp
+httpx
+mcp[cli]>=1.6.0
+pydantic
+pydantic-settings
+
+[dev]
+ruff
+build
+twine
