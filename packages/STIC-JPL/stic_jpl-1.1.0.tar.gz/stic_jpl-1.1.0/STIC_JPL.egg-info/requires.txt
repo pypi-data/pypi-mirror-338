@@ -1,0 +1,16 @@
+colored-logging
+ECOv002-CMR
+ECOv002-granules
+GEOS5FP>=1.1.1
+numpy
+pandas
+rasters
+solar-apparent-time
+
+[dev]
+build
+pytest>=6.0
+pytest-cov
+jupyter
+pytest
+twine
