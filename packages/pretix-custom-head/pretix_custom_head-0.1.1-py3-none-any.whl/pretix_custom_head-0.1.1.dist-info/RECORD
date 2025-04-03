@@ -1,0 +1,12 @@
+pretix-custom-head/__init__.py,sha256=i06Xdtq9IaxkjqajAMOCJmHgiX3Chw08na8KyTnl0nw,610
+pretix-custom-head/apps.py,sha256=OnNxhviIr38vvksSd_lkaYaw_hrwhL4ZBt7aD-X_L40,222
+pretix-custom-head/models.py,sha256=4NzBo5Xq3mbI6ZuGxj4Mu76w-g7WGChV77T607eJ0tk,547
+pretix-custom-head/signals.py,sha256=DWjXVD8qp5A15ogD_TF31GqPeLAWKY_pMIKp0yVTztc,1250
+pretix-custom-head/urls.py,sha256=hR4ifpRx71aMII-PgdijFxt7--5VaOblbquIFJIjz2w,167
+pretix-custom-head/views.py,sha256=jmDFq6Gb_TP1Fo5wiEDA9nfmFGrcEJCnrfZXXJ9IPO8,1290
+pretix_custom_head-0.1.1.dist-info/licenses/LICENSE,sha256=Vbj6Uf2CQeWNVvoppRqXdcu7nMYYCV1xbFSDomQr6mY,1065
+pretix_custom_head-0.1.1.dist-info/METADATA,sha256=RLYlWt15MTtrakWkmRq5Tdpz2PhHSbgO9bD9zAdz8yY,1238
+pretix_custom_head-0.1.1.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+pretix_custom_head-0.1.1.dist-info/entry_points.txt,sha256=nDakqTR_wcKp3bu3ch7KVE3FRWXDJoYjHSyJBvK6J_8,73
+pretix_custom_head-0.1.1.dist-info/top_level.txt,sha256=Asi8GiuAi_itzFj6KUitGXUflhhdgpcQsDlzZCJzQw4,19
+pretix_custom_head-0.1.1.dist-info/RECORD,,
