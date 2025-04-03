@@ -1,0 +1,10 @@
+LICENSE.md
+README.md
+pyproject.toml
+src/yfiles_jupyter_graphs_for_sparql/Yfiles_Sparql_Graphs.py
+src/yfiles_jupyter_graphs_for_sparql/__init__.py
+src/yfiles_jupyter_graphs_for_sparql.egg-info/PKG-INFO
+src/yfiles_jupyter_graphs_for_sparql.egg-info/SOURCES.txt
+src/yfiles_jupyter_graphs_for_sparql.egg-info/dependency_links.txt
+src/yfiles_jupyter_graphs_for_sparql.egg-info/requires.txt
+src/yfiles_jupyter_graphs_for_sparql.egg-info/top_level.txt

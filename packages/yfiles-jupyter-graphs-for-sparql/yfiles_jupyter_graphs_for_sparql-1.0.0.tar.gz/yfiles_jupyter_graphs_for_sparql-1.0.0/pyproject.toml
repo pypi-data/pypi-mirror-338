@@ -1,0 +1,35 @@
+[project]
+name = "yfiles-jupyter-graphs-for-sparql"
+version = "1.0.0"
+authors = [
+  {name = "yWorks Support Team", email= "yfileshtml@yworks.com"},
+]
+description = "The open-source adapter for working with RDF databases and SPARQL queries in Jupyter notebooks leveraging the yFiles Graphs for Jupyter plugin."
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Framework :: IPython",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Science/Research",
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+    "Framework :: Jupyter",
+    "Framework :: Jupyter :: JupyterLab",
+    "Framework :: Jupyter :: JupyterLab :: 3",
+    "Framework :: Jupyter :: JupyterLab :: Extensions",
+    "Framework :: Jupyter :: JupyterLab :: Extensions :: Prebuilt",
+]
+license = {file = "LICENSE.md"}
+dependencies = [
+  "yfiles_jupyter_graphs>=1.9.0"
+]
+
+[project.urls]
+License = "https://github.com/yWorks/yfiles-jupyter-graphs-for-sparql/blob/main/LICENSE.md"
+"Bug Tracker" = "https://github.com/yWorks/yfiles-jupyter-graphs-for-sparql/issues"
+Documentation = "https://github.com/yWorks/yfiles-jupyter-graphs-for-sparql/"
+Repository = "https://github.com/yWorks/yfiles-jupyter-graphs-for-sparql.git"
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
