@@ -1,0 +1,10 @@
+codoff/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+codoff/codoff.py,sha256=-X8ssgDzTQdPjh_S-DU3hby3UeWV8JpnVXjxIYp-UNo,21129
+codoff/util.py,sha256=4EruAPaFLvxURIWqdXGoVNc04H4yn7gYS3CHKQ46Ghg,5642
+codoff-1.2.0.data/scripts/antismash_codoff,sha256=sMt9zCm4ncbt_ikKepH_5OdGiLzXBuZughlRmmgTnUU,3554
+codoff-1.2.0.data/scripts/codoff,sha256=jcHlRe4fcoB9pBkz69yxf9mCcTWEQsd9chrWRymSPw8,4345
+codoff-1.2.0.dist-info/licenses/LICENSE,sha256=hs0LGzAtSfLCB-BPb_bqe4GV5uZ63lLty3STPBnaQs0,1496
+codoff-1.2.0.dist-info/METADATA,sha256=bGNOfUU2l4PqE4TqgEkGmMifMvwrFb-v2SCVJl-_IZc,11951
+codoff-1.2.0.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+codoff-1.2.0.dist-info/top_level.txt,sha256=_RnlnBWqeF4K795pCpi6RVXymHdQP26BUDFSjEzYP5s,7
+codoff-1.2.0.dist-info/RECORD,,
