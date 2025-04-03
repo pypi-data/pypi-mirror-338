@@ -1,0 +1,11 @@
+httpx
+libtensorshield>=0.0.8
+tensorshield.ext.subtensor>=0.0.5
+
+[develop]
+bittensor>=9.0.0
+pytest
+pytest_asyncio
+coverage
+twine
+watchdog
