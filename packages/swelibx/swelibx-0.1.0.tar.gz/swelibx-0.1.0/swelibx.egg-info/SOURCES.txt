@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+swelibx/__init__.py
+swelibx/patch_utils.py
+swelibx.egg-info/PKG-INFO
+swelibx.egg-info/SOURCES.txt
+swelibx.egg-info/dependency_links.txt
+swelibx.egg-info/requires.txt
+swelibx.egg-info/top_level.txt
+tests/test_basic.py

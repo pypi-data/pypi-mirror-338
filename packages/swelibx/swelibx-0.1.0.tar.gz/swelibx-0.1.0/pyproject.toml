@@ -1,0 +1,28 @@
+[build-system]
+build-backend = "setuptools.build_meta"
+requires = ["setuptools>=42", "wheel"]
+
+[tool.setuptools.packages.find]
+include = ["swelibx*"]
+
+[project]
+name = "swelibx"
+version = "0.1.0"
+description = "A library for software engineering with LLMs."
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+
+authors = [{ name = "Lei Zhang", email = "jameszhang2880@gmail.com" }]
+
+
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+]
+
+dependencies = ["unidiff"]
+
+[project.optional-dependencies]
+test = ["pytest"]
