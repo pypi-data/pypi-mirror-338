@@ -1,0 +1,11 @@
+demexpy/__init__.py,sha256=i9ptY9hzPeWj9F2pbAj3SzZUl-NTPH9NqXL8ozy1eIY,72
+demexpy/encryption.py,sha256=6n0-ns7ZYBJodoudONLZwRh15Jccnr1xlQVgVpc3O38,4999
+demexpy/nodes.py,sha256=bJ5i_8cXtYxVGb_3muIEutnFR9uhPVn77oJjPuevMQI,14299
+demexpy/scripts.py,sha256=2hsV1CdvdHV089UnVpRi1p1v8kEJJay2QZBtSltC7Qw,54
+demexpy/utils.py,sha256=jQr_nW8YmU5AgUKdYq9T6ouPbB9-pcTP45UckliFNLc,213
+demexpy-0.8.1.dist-info/licenses/LICENSE,sha256=YHJPO3QgkSC3otXP1rXZrBC5kotPpE5E_fGDyk3KAPA,1077
+demexpy-0.8.1.dist-info/METADATA,sha256=leCGfXBykq6bkJUi3n79pkqMVkkXrNXQ3ck2vU_mFUc,4573
+demexpy-0.8.1.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+demexpy-0.8.1.dist-info/entry_points.txt,sha256=7CqtiozmFYUpDl9v3Pp_udtD4KIzmdK6u7wshkITz6I,62
+demexpy-0.8.1.dist-info/top_level.txt,sha256=waNtUGVFLOR-wMP3blh1paT7mXmgCt9PN29nMQycecg,8
+demexpy-0.8.1.dist-info/RECORD,,
