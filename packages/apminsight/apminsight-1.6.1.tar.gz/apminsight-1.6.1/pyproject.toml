@@ -1,0 +1,65 @@
+
+[project]
+name = "apminsight"
+dynamic = ["version"]
+description = "Site24x7 application performance monitoring"
+authors = [
+  { name = "Zoho Corporation PVt .Ltd.", email = "apm-insight@zohocorp.com"},
+]
+maintainers = [
+  { name = "ManageEngine Site24x7", email = "apm-insight@zohocorp.com"},
+]
+readme = {file = "README.md", content-type = "text/markdown"}
+license = { file="LICENSE.txt" }
+requires-python = ">=3.7,<4.0"
+
+classifiers = [
+  "Intended Audience :: Developers",
+  "Programming Language :: Python :: 3.7",
+  "Programming Language :: Python :: 3.8",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+]
+dependencies = [
+  "psutil"
+]
+keywords = [ "apm", "profiler", "site24x7", "apminsight", "monitoring"]
+
+
+[project.urls]
+Homepage = "https://sit24x7.com/"
+Documentation = "https://www.site24x7.com/help/apm/python-agent.html"
+Changelog = "https://www.site24x7.com/help/apm/python-agent/release-notes.html"
+
+[project.scripts]
+apminsight-run = "apminsight.commands.apm_run:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.version]
+path = "apminsight/__init__.py"
+
+[tool.hatch.build.targets.sdist]
+include = ["**/*"]
+exclude = ["tests", "tests/**"]
+
+[tool.hatch.build.targets.wheel]
+include = ["**/*"]
+exclude = ["tests", "tests/**"]
+
+[tool.black]
+line-length = 120
+target_version = ['py36','py37', 'py38', 'py39', 'py310', 'py311', 'py312']
+include = '''\.py[ix]?$'''
+exclude = '''
+(
+  .venv*
+  | tests/
+  | scripts/
+  | dist/
+)
+'''
