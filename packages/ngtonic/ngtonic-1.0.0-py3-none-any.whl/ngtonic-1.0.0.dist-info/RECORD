@@ -1,0 +1,12 @@
+ngtonic-1.0.0.dist-info/METADATA,sha256=BYcuF6mRivMRbU2EmQ_rqVXiMMFSBvEHuUiz3qnBHJ8,6554
+ngtonic-1.0.0.dist-info/WHEEL,sha256=thaaA2w1JzcGC48WYufAs8nrYZjJm8LqNfnXFOFyCC4,90
+ngtonic-1.0.0.dist-info/entry_points.txt,sha256=-SvP9pnAmKaitoRyFSdPsM3Xw2a5buAVaGtR-jvAzB4,65
+ngtonic-1.0.0.dist-info/licenses/LICENSE,sha256=33zWavrqGrmST0V-7M54x_pz6qqYaA1WSud0Pu3lTIg,1071
+ngtonic/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ngtonic/__main__.py,sha256=yDhDeh6lOAgc8ut8flMriMOYv023zvCjoWFJ3muAlAc,4378
+ngtonic/bills.py,sha256=-aRpnSFWZnqp8cUR-MVDLNJp-fnGzgC1SfmYwJpltNU,1296
+ngtonic/importer.py,sha256=m7jf4MCwPSdEsLDpKtAnf-HmzoBlPpUIGAPs8QMUzKE,3952
+ngtonic/movements.py,sha256=cMpCrmxUfa6wa4DqbayPNFD9JdiC85YGOwW2QOjT-3U,4227
+ngtonic/plotter.py,sha256=MJd7ysaS-zzM20wKNohQmA0aUSAeBn9NuMB9GjDQgVQ,1600
+ngtonic/printer.py,sha256=uTDIsFcepcPrYaFVXCn5IvVV-icrPmn2eOEX7NIUcEc,2249
+ngtonic-1.0.0.dist-info/RECORD,,
