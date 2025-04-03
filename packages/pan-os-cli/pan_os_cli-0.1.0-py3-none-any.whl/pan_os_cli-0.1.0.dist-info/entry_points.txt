@@ -1,0 +1,3 @@
+[console_scripts]
+pan-os-cli=pan_os_cli.main:app
+

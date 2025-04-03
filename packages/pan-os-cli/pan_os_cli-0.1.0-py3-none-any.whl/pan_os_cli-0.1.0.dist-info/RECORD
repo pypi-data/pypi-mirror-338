@@ -1,0 +1,12 @@
+pan_os_cli/__init__.py,sha256=jrrhZ2_LzOmriVbMoM7Aok4JUGfMNRaqhjEVI_yDVKg,70
+pan_os_cli/client.py,sha256=2HiloyKFFG09XfwYzNBkdJtGhUhNu6-HuKIAQ0Yepqc,27854
+pan_os_cli/commands/__init__.py,sha256=8S1NETUc5lxdlAz5nIVS6-u7acxhPIK3USFnzoyHwVk,102
+pan_os_cli/commands/objects.py,sha256=d4Q9_axsnC4C8JPtvt8JFnTcfkql4W0_u7_7S08ZNnY,45044
+pan_os_cli/config.py,sha256=dTszvLtTCp8U7lxjYzp0md0k6bG22VQMCjO6iGAZTP8,5114
+pan_os_cli/main.py,sha256=lJ-vi5LdvUAwMa6KqrxGXfb1jSZEyMaKMLyYq_3pBQA,11210
+pan_os_cli/models/objects.py,sha256=YlvrekmadxcNfEZP2wVTqS0Lu4pmUZrFSZoTXas60Bo,8181
+pan_os_cli/utils.py,sha256=YHYPNflpNAeQBfK9C2T0es6RtKHeJkDgQVElRfjCM0k,5717
+pan_os_cli-0.1.0.dist-info/METADATA,sha256=h4iWzeYusWwGkpzGhky4LwV0MUuy8qdmu1W1qmcQcCY,11113
+pan_os_cli-0.1.0.dist-info/WHEEL,sha256=fGIA9gx4Qxk2KDKeNJCbOEwSrmLtjWCwzBz351GyrPQ,88
+pan_os_cli-0.1.0.dist-info/entry_points.txt,sha256=QfVOlXdPJR9zcJQBTCpFq5nES1ftYJ-6jUtscL4GZLk,50
+pan_os_cli-0.1.0.dist-info/RECORD,,
