@@ -1,0 +1,34 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+
+        {
+            "name": "policy-generator",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/.venv/bin/oslopolicy-remote-policy-generator",
+            "console": "integratedTerminal",
+            "args": ["--namespace", "nova", "--output-file", "policy.yaml"]
+        },
+        {
+            "name": "sample-generator",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/.venv/bin/oslopolicy-remote-sample-generator",
+            "console": "integratedTerminal",
+            "args": ["--namespace", "nova", "--output-file", "policy.yaml"]
+        },
+        {
+            "name": "policy-checker",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/.venv/bin/oslopolicy-remote-checker",
+            "console": "integratedTerminal",
+            "args": ["--access", "sample_data/auth_v3_token_admin.json", "--policy", "policy.yaml", "--enforcer_namespace", "nova","--enforcer_config", "sample_data/remote_policy.conf"],
+            "justMyCode": false
+        },
+    ]
+}

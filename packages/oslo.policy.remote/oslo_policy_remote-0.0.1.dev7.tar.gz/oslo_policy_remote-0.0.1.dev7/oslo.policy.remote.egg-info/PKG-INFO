@@ -1,0 +1,115 @@
+Metadata-Version: 2.4
+Name: oslo.policy.remote
+Version: 0.0.1.dev7
+Summary: Remote HTTP-based policy checker for Oslo Policy
+Home-page: https://github.com/mehmettopcu/oslo.policy.remote
+Author: Mehmet TOPCU
+Author-email: mehmettopcu@outlook.com.tr
+License: Apache-2.0
+Classifier: Environment :: OpenStack
+Classifier: Intended Audience :: Information Technology
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Requires-Python: >=3.9
+License-File: LICENSE
+License-File: AUTHORS
+Requires-Dist: requests>=2.14.2
+Requires-Dist: oslo.config>=6.0.0
+Requires-Dist: oslo.context>=2.22.0
+Requires-Dist: oslo.i18n>=3.15.3
+Requires-Dist: oslo.serialization>=2.18.0
+Requires-Dist: PyYAML>=5.1
+Requires-Dist: stevedore>=1.20.0
+Requires-Dist: oslo.utils>=3.40.0
+Requires-Dist: oslo.policy>=4.0.0
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: license
+Dynamic: license-file
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+Remote Policy Checker for Oslo Policy
+=====================================
+
+.. warning::
+
+   This project is currently in early development phase and is **NOT** ready for production use.
+   The codebase is undergoing active development and significant changes may occur.
+   
+   Key limitations:
+   
+   * API interfaces may change without notice
+   * Some features are incomplete or experimental
+   * Documentation may be outdated
+   * Test coverage is not comprehensive
+   
+   Use at your own risk. For production use, please wait for a stable release.
+
+This package extends Oslo Policy to support remote HTTP-based policy checking,
+allowing policy decisions to be made by a remote service.
+
+Installation
+------------
+
+.. code-block:: bash
+
+   pip install oslo.policy.remote
+
+Configuration
+-------------
+
+Add to your service's configuration file:
+
+.. code-block:: ini
+
+   [remote_policy]
+   server_url = http://policy-server:8082
+   timeout = 3
+   fail_closed = true
+   ssl_verify = false
+
+Policy File Example
+-------------------
+
+.. code-block:: yaml
+
+   create_instance: remote:create_instance
+   delete_instance: rule:admin_or_owner
+
+Generating Sample Policies
+--------------------------
+
+.. code-block:: bash
+
+   oslopolicy-remote-policy-generator --namespace nova > /etc/nova/policy.yaml
+
+Development
+-----------
+
+To set up a development environment:
+
+.. code-block:: bash
+
+   git clone https://github.com/mehmettopcu/oslo.policy.remote
+   cd oslo.policy.remote
+   pip install -e .[test]
+   pytest tests/
+
+License
+-------
+
+Apache 2.0
+

@@ -1,0 +1,11 @@
+CHANGES
+=======
+
+* Update project metadata and documentation
+* Refactor SSL configuration in RemoteCheck class and improve flake8 linting in CI workflow. Cleaned up code by extracting SSL logic into a separate method and updated flake8 command to use configuration file
+* Update CI workflow to use Python 3.10 only
+* Add oslo.policy to requirements for policy management
+* Enhance CI workflow by installing package in development mode and improving flake8 linting configuration. Updated pytest command for verbose output
+* Update test requirements to include pytest for enhanced testing capabilities
+* Update test requirements to include flake8 for code style checks
+* Initial commit: oslo.policy.remote package setup
