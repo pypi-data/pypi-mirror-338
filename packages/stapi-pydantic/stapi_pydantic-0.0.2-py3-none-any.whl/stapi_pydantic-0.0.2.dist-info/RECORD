@@ -1,0 +1,15 @@
+stapi_pydantic/__init__.py,sha256=aZWT_P-x-dbEA5nVohcituBg7KMpQdo_ez5I3RxEidY,1347
+stapi_pydantic/conformance.py,sha256=Kojbclyf0R_vhtPZ483U1l0lpWHD9h6j05JXPz0fWms,161
+stapi_pydantic/constraints.py,sha256=F8kr_2Bg6PYs5Rflct85iwKMNwVm2LEjnzSpW1Syt70,120
+stapi_pydantic/datetime_interval.py,sha256=DriLWbk7m-VIa-K4_iw1AQLF_Ql1ULkaBy6WEBpFG8c,1151
+stapi_pydantic/filter.py,sha256=Oihqrq9MuYCQ9OQd19O9wFrGa3ocVRUL3mSPr1T30Hs,291
+stapi_pydantic/json_schema_model.py,sha256=l2bMAKfoeXK3DE0isnyWXO8a80jatOHuA-g7OIUGMRY,521
+stapi_pydantic/opportunity.py,sha256=DkA0HvKGaOWyoDlQasgWEMdZxy5lsQupi3H1Zid_Zro,2299
+stapi_pydantic/order.py,sha256=uiapkjJ6VwUmn3FaqNSlV5_5cbLJBhHsQMhyhKmv2Wg,3519
+stapi_pydantic/product.py,sha256=3P0Z1LOG2HeDdKdaxXIncZCHiagVPd1Zyt1KZVikUpw,2549
+stapi_pydantic/root.py,sha256=xrrIDJrImkXvc__JDz6yK0HdYS0cUprQ8y3RZotmIF8,263
+stapi_pydantic/shared.py,sha256=EZftJFAmOPQK6forenGN-bWImoAjvjn5eLPCSmEpe64,973
+stapi_pydantic-0.0.2.dist-info/METADATA,sha256=1ujAIyKNS2bxgMg4TvLuK7NYcDhp0LpOS76Ing2Or2g,646
+stapi_pydantic-0.0.2.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+stapi_pydantic-0.0.2.dist-info/entry_points.txt,sha256=VbacrIKUSlYY1mQt5uy76l_bwtUphgD1gFPPxikHbQ0,55
+stapi_pydantic-0.0.2.dist-info/RECORD,,
