@@ -1,0 +1,9 @@
+setup.py
+jomfish/__init__.py
+jomfish/main.py
+jomfish/bin/jomfish
+jomfish_linux.egg-info/PKG-INFO
+jomfish_linux.egg-info/SOURCES.txt
+jomfish_linux.egg-info/dependency_links.txt
+jomfish_linux.egg-info/entry_points.txt
+jomfish_linux.egg-info/top_level.txt
