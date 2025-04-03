@@ -1,0 +1,6 @@
+prefect_mcp_server_pkg/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+prefect_mcp_server_pkg/server.py,sha256=HN7l-JDoCDceCn5P2DPOy1GbVvAB3CgUEY5P1WtoBFo,9179
+prefect_mcp_server-1.0.1.dist-info/METADATA,sha256=Nbxxkp_xFBxcIIefTg13ceWp2Dx8elv203FEfjB4E50,2823
+prefect_mcp_server-1.0.1.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+prefect_mcp_server-1.0.1.dist-info/entry_points.txt,sha256=-Ej5KIyCjYy-VjyE7AP_ajAYbBTFK3FwXUOV0SHPeQY,78
+prefect_mcp_server-1.0.1.dist-info/RECORD,,
