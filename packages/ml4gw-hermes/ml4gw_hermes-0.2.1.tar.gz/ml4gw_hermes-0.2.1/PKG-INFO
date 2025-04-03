@@ -1,0 +1,24 @@
+Metadata-Version: 2.4
+Name: ml4gw-hermes
+Version: 0.2.1
+Summary: Inference-as-a-Service deployment made simple
+Author-email: Alec Gunny <alec.gunny@ligo.org>, Ethan Marx <emarx@mit.edu>
+License-File: LICENSE
+Requires-Python: <3.13,>=3.9
+Requires-Dist: numpy~=1.22
+Requires-Dist: protobuf~=3.17
+Requires-Dist: requests<3,>=2.26.0
+Requires-Dist: spython<0.3,>=0.2
+Requires-Dist: tblib~=1.7
+Requires-Dist: tritonclient[all]~=2.22
+Provides-Extra: gcs
+Requires-Dist: google-cloud-storage~=1.38; extra == 'gcs'
+Provides-Extra: tensorflow
+Requires-Dist: tensorflow<2.17; extra == 'tensorflow'
+Requires-Dist: tf-keras<2.17,>=2.16; extra == 'tensorflow'
+Provides-Extra: tensorrt
+Requires-Dist: nvidia-tensorrt~=8.0; extra == 'tensorrt'
+Provides-Extra: torch
+Requires-Dist: onnx<2,>=1.15.0; extra == 'torch'
+Requires-Dist: torch~=2.0; extra == 'torch'
+Requires-Dist: urllib3~=1.26; extra == 'torch'
