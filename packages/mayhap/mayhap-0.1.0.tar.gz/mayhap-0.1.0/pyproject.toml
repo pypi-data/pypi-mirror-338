@@ -1,0 +1,36 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mayhap"
+version = "0.1.0"
+description = "Where your functions may happen... or not. Embrace the uncertainty in your code execution!"
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "GPL-3.0-only" }
+authors = [
+    { name = "Vaadeendra Kumar Burra" }
+]
+keywords = ["randomness", "decorator", "probability", "uncertainty"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Topic :: Software Development :: Libraries :: Python Modules"
+]
+dependencies = [
+    "pydantic>=2.11.1"
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.3.5"
+]
+
+[project.urls]
+"Homepage" = "https://github.com/Vaadee/mayhap"
+"Bug Tracker" = "https://github.com/Vaadee/mayhap/issues"
+"Documentation" = "https://github.com/Vaadee/mayhap/blob/main/README.md"
+"Source Code" = "https://github.com/Vaadee/mayhap"
