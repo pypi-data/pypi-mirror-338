@@ -1,0 +1,18 @@
+Metadata-Version: 2.3
+Name: devpkg
+Version: 0.2.0
+Summary: Dev tools for Python packages
+Author: Danny Stewart
+Author-email: danny@stewart.cc
+Requires-Python: >=3.12
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Dist: packaging (>=24.2)
+Requires-Dist: requests (>=2.32.3)
+Description-Content-Type: text/markdown
+
+# devpkg
+
+Tools to help with package tracking and versioning.
+
