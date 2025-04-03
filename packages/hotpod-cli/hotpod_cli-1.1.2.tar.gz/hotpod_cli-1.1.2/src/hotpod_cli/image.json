@@ -1,0 +1,27 @@
+[
+    {
+        "name": "QwQ-32B(AnythingLLM)",
+        "imageId": "i-de9b194080374b52a00089b143be",
+        "description": "一款320亿参数的推理模型，其性能可比肩满血版DeepSeek-R1"
+    },
+    {
+        "name": "ComfyUI(林月月AI定制)",
+        "imageId": "i-52db8017ca5c4686bb05f2459486",
+        "description": "工业级AI绘画创作工具，集成了主流的插件，节点和模型，无需安装，一键使用，AI创作必备神器"
+    },
+    {
+        "name": "ComfyUI(云鼎专属镜像-V1)",
+        "imageId": "i-196876517677422f9213e1ff6e60",
+        "description": "云鼎客户专属镜像，支持多种AI图像处理能力"
+    },
+    {
+        "name": "DeepSeek-R1(AnythingLLM)",
+        "imageId": "i-06a91577a5814a42be4bfd22aa57",
+        "description": "预装DeepSeek-R1模型的1.5B、7B及32B参数模型环境，支持思维链输出，使用AnythingLLM作为用户界面"
+    },
+    {
+        "name": "JupyterLab(CUDA12.4)",
+        "imageId": "i-26f0855b19cc41d3892dae1ca12e",
+        "description": "JupyterLab(纯净版-CUDA12.4)@一个集文本编辑器、终端以及各种个性化组件于一体的集成开发环境，是算法学习的必备神器。推荐镜像制作者基于该镜像进行定制"
+    }
+]
