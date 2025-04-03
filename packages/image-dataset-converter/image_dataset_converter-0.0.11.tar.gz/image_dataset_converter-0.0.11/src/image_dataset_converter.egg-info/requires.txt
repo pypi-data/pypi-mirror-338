@@ -1,0 +1,13 @@
+defusedxml
+fast_opex>=0.0.2
+imagesize
+matplotlib
+numpy<2.0.0
+pillow
+python_image_complete
+seppl>=0.2.15
+setuptools
+shapely
+simple_palette_utils
+wai.common>=0.0.44
+wai_logging
