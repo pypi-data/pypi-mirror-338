@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="../../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>hipcheck_sdk.engine &#8212; hipcheck-sdk 0.1.0 documentation</title>
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=5ecbeea2" />
+    <link rel="stylesheet" type="text/css" href="../../_static/basic.css?v=686e5160" />
+    <link rel="stylesheet" type="text/css" href="../../_static/alabaster.css?v=27fed22d" />
+    <script src="../../_static/documentation_options.js?v=01f34227"></script>
+    <script src="../../_static/doctools.js?v=9bcbadda"></script>
+    <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+   
+  <link rel="stylesheet" href="../../_static/custom.css" type="text/css" />
+  
+
+  
+  
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <h1>Source code for hipcheck_sdk.engine</h1><div class="highlight"><pre>
+<span></span><span class="c1"># SPDX-License-Identifier: Apache-2.0</span>
+
+<span class="kn">from</span><span class="w"> </span><span class="nn">typing</span><span class="w"> </span><span class="kn">import</span> <span class="n">List</span><span class="p">,</span> <span class="n">Tuple</span><span class="p">,</span> <span class="n">Dict</span><span class="p">,</span> <span class="n">Optional</span>
+
+<span class="kn">import</span><span class="w"> </span><span class="nn">asyncio</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">logging</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">pydantic</span>
+
+<span class="kn">from</span><span class="w"> </span><span class="nn">hipcheck_sdk</span><span class="w"> </span><span class="kn">import</span> <span class="o">*</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">hipcheck_sdk.gen</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">gen</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">hipcheck_sdk.chunk</span><span class="w"> </span><span class="kn">import</span> <span class="o">*</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">hipcheck_sdk.error</span><span class="w"> </span><span class="kn">import</span> <span class="o">*</span>
+
+<span class="n">logger</span> <span class="o">=</span> <span class="n">logging</span><span class="o">.</span><span class="n">getLogger</span><span class="p">(</span><span class="vm">__name__</span><span class="p">)</span>
+
+
+<span class="k">def</span><span class="w"> </span><span class="nf">split_once</span><span class="p">(</span><span class="n">s</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">delim</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Tuple</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">str</span><span class="p">]]:</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Split `s` at first instance of `delim` and returns the resulting substrings</span>
+
+<span class="sd">    :param str s: The input string.</span>
+<span class="sd">    :param str delim: The delimiter at which to The concern to be recorded.</span>
+<span class="sd">    :return: A tuple containing the substrings split at the first instance</span>
+<span class="sd">        the delimiter. If the delimiter was not found, the second element of</span>
+<span class="sd">        the tuple is `None`.</span>
+
+<span class="sd">    :meta private:</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">res</span> <span class="o">=</span> <span class="n">s</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="n">delim</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+    <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">res</span><span class="p">)</span> <span class="o">!=</span> <span class="mi">2</span><span class="p">:</span>
+        <span class="n">res</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="kc">None</span><span class="p">)</span>
+    <span class="k">return</span> <span class="nb">tuple</span><span class="p">(</span><span class="n">res</span><span class="p">)</span>
+
+
+<span class="k">def</span><span class="w"> </span><span class="nf">parse_target_str</span><span class="p">(</span><span class="n">target</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Tuple</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="nb">str</span><span class="p">,</span> <span class="nb">str</span><span class="p">]:</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Return a tuple of (publisher, plugin, endpoint_name) from parsed from</span>
+<span class="sd">    a query target string (e.g. &quot;mitre/example/query&quot;). If the string contains</span>
+<span class="sd">    only one slash return &quot;&quot; for the endpoint name, indicating the default</span>
+<span class="sd">    query endpoint.</span>
+
+<span class="sd">    :param str target: A string of the form `&lt;PUBLISHER&gt;/&lt;PLUGIN&gt;/&lt;ENDPOINT&gt;`,</span>
+<span class="sd">        where `/&lt;ENDPOINT&gt;` may be omitted if targeting a default endpoint.</span>
+<span class="sd">    :return: A tuple of strings representing the publisher, plugin, and</span>
+<span class="sd">        endpoint name</span>
+
+<span class="sd">    :meta private:</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">publisher</span><span class="p">,</span> <span class="n">rest</span> <span class="o">=</span> <span class="n">split_once</span><span class="p">(</span><span class="n">target</span><span class="p">,</span> <span class="s2">&quot;/&quot;</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">rest</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="k">raise</span> <span class="n">InvalidQueryTargetFormat</span><span class="p">()</span>
+    <span class="n">plugin</span><span class="p">,</span> <span class="n">name</span> <span class="o">=</span> <span class="n">split_once</span><span class="p">(</span><span class="n">rest</span><span class="p">,</span> <span class="s2">&quot;/&quot;</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">name</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="n">name</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span>
+    <span class="k">return</span> <span class="p">(</span><span class="n">publisher</span><span class="p">,</span> <span class="n">plugin</span><span class="p">,</span> <span class="n">name</span><span class="p">)</span>
+
+
+<span class="k">def</span><span class="w"> </span><span class="nf">deserialize_key</span><span class="p">(</span><span class="n">json_str</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">target_type</span><span class="p">:</span> <span class="nb">type</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">object</span><span class="p">:</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Try to turn a JSON string into a given type</span>
+
+<span class="sd">    :param str json_str: The JSON string to be read</span>
+<span class="sd">    :param type target_type: The type to produce</span>
+<span class="sd">    :return: An instance of `target_type`</span>
+
+<span class="sd">    :meta private:</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">if</span> <span class="nb">issubclass</span><span class="p">(</span><span class="n">target_type</span><span class="p">,</span> <span class="n">pydantic</span><span class="o">.</span><span class="n">BaseModel</span><span class="p">):</span>
+        <span class="k">return</span> <span class="n">target_type</span><span class="o">.</span><span class="n">model_validate_json</span><span class="p">(</span><span class="n">json_str</span><span class="p">)</span>
+    <span class="k">elif</span> <span class="n">target_type</span> <span class="ow">in</span> <span class="p">[</span><span class="nb">int</span><span class="p">,</span> <span class="nb">bool</span><span class="p">,</span> <span class="nb">float</span><span class="p">,</span> <span class="nb">list</span><span class="p">,</span> <span class="nb">dict</span><span class="p">]:</span>
+        <span class="k">return</span> <span class="n">json</span><span class="o">.</span><span class="n">loads</span><span class="p">(</span><span class="n">json_str</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="k">return</span> <span class="n">json</span><span class="o">.</span><span class="n">loads</span><span class="p">(</span><span class="n">json_str</span><span class="p">,</span> <span class="bp">cls</span><span class="o">=</span><span class="n">target_type</span><span class="p">)</span>
+
+
+<div class="viewcode-block" id="QueryBuilder">
+<a class="viewcode-back" href="../../hipcheck_sdk.html#hipcheck_sdk.engine.QueryBuilder">[docs]</a>
+<span class="k">class</span><span class="w"> </span><span class="nc">QueryBuilder</span><span class="p">:</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    An alternative to calling `PluginEngine.batch_query()`, an instance of</span>
+<span class="sd">    this class is returned by `PluginQuery.batch()`, and allows plugin</span>
+<span class="sd">    authors to build up a list of keys for a batch query over time, then call</span>
+<span class="sd">    `QueryBuilder.send()` to send them in a single message to Hipcheck.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">engine</span><span class="p">,</span> <span class="n">target</span><span class="p">:</span> <span class="nb">str</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        :meta private:</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">engine</span> <span class="o">=</span> <span class="n">engine</span>
+        <span class="c1"># The keys that will be added to a batch query</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">keys</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="c1"># The target endpoint that all keys will be used to query</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">target</span> <span class="o">=</span> <span class="n">target</span>
+
+<div class="viewcode-block" id="QueryBuilder.query">
+<a class="viewcode-back" href="../../hipcheck_sdk.html#hipcheck_sdk.engine.QueryBuilder.query">[docs]</a>
+    <span class="k">def</span><span class="w"> </span><span class="nf">query</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">key</span><span class="p">:</span> <span class="nb">object</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">int</span><span class="p">:</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Adds a key to the batch query being built by this object</span>
+
+<span class="sd">        :param object key: The key to add to the query batch.</span>
+<span class="sd">        :return: The index of the list at which the key was added. Can be used</span>
+<span class="sd">            to index the output of `send()` to get the corresponding output for</span>
+<span class="sd">            that key.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">l</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">keys</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">keys</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">key</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">l</span></div>
+
+
+<div class="viewcode-block" id="QueryBuilder.send">
+<a class="viewcode-back" href="../../hipcheck_sdk.html#hipcheck_sdk.engine.QueryBuilder.send">[docs]</a>
+    <span class="k">async</span> <span class="k">def</span><span class="w"> </span><span class="nf">send</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">List</span><span class="p">[</span><span class="nb">object</span><span class="p">]:</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sends all keys aggregated with `query()` in a single batch query to</span>
+<span class="sd">        Hipcheck core.</span>
+
+<span class="sd">        :return: The list of output objects for the keys aggregated in this object</span>
+<span class="sd">        :raises SdkError:</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="k">await</span> <span class="bp">self</span><span class="o">.</span><span class="n">engine</span><span class="o">.</span><span class="n">batch_query</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">target</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">keys</span><span class="p">)</span></div>
+</div>
+
+
+
+<div class="viewcode-block" id="PluginEngine">
+<a class="viewcode-back" href="../../hipcheck_sdk.html#hipcheck_sdk.engine.PluginEngine">[docs]</a>
+<span class="k">class</span><span class="w"> </span><span class="nc">PluginEngine</span><span class="p">:</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Manages a particular query session.</span>
+
+<span class="sd">    An instance of this class invokes a query endpoint, passing a handle to</span>
+<span class="sd">    itself. This allows the query endpoint to request information from other</span>
+<span class="sd">    Hipcheck plugins as part of its logic.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span>
+        <span class="bp">self</span><span class="p">,</span>
+        <span class="n">session_id</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span>
+        <span class="n">tx</span><span class="p">:</span> <span class="n">asyncio</span><span class="o">.</span><span class="n">Queue</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+        <span class="n">rx</span><span class="p">:</span> <span class="n">asyncio</span><span class="o">.</span><span class="n">Queue</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+        <span class="n">drop_tx</span><span class="p">:</span> <span class="n">asyncio</span><span class="o">.</span><span class="n">Queue</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+        <span class="n">mock_responses</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">Dict</span><span class="p">[</span><span class="n">Tuple</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="nb">object</span><span class="p">],</span> <span class="nb">object</span><span class="p">]]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+    <span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        :meta private:</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">nones</span> <span class="o">=</span> <span class="p">[</span><span class="n">v</span> <span class="ow">is</span> <span class="kc">None</span> <span class="k">for</span> <span class="n">v</span> <span class="ow">in</span> <span class="p">[</span><span class="n">tx</span><span class="p">,</span> <span class="n">rx</span><span class="p">,</span> <span class="n">drop_tx</span><span class="p">]]</span>
+        <span class="k">if</span> <span class="nb">any</span><span class="p">(</span><span class="n">nones</span><span class="p">)</span> <span class="ow">and</span> <span class="ow">not</span> <span class="nb">all</span><span class="p">(</span><span class="n">nones</span><span class="p">):</span>
+            <span class="k">raise</span> <span class="n">UnspecifiedConfigError</span><span class="p">(</span>
+                <span class="n">msg</span><span class="o">=</span><span class="s2">&quot;tx, rx, and drop_tx must all be None or all be asyncio.Queue objects&quot;</span>
+            <span class="p">)</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">id</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="n">session_id</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">tx</span><span class="p">:</span> <span class="n">asyncio</span><span class="o">.</span><span class="n">Queue</span> <span class="o">=</span> <span class="n">tx</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">rx</span><span class="p">:</span> <span class="n">asyncio</span><span class="o">.</span><span class="n">Queue</span> <span class="o">=</span> <span class="n">rx</span>
+        <span class="c1"># So that we can remove ourselves when we get dropped</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">drop_tx</span><span class="p">:</span> <span class="n">asyncio</span><span class="o">.</span><span class="n">Queue</span> <span class="o">=</span> <span class="n">drop_tx</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">concerns</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="c1"># When unit testing, this enables the user to mock plugin responses to various inputs</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">mock_responses</span> <span class="o">=</span> <span class="n">mock_responses</span>
+
+<div class="viewcode-block" id="PluginEngine.mock">
+<a class="viewcode-back" href="../../hipcheck_sdk.html#hipcheck_sdk.engine.PluginEngine.mock">[docs]</a>
+    <span class="k">def</span><span class="w"> </span><span class="nf">mock</span><span class="p">(</span><span class="n">mock_responses</span><span class="p">:</span> <span class="n">Dict</span><span class="p">[</span><span class="n">Tuple</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="nb">object</span><span class="p">],</span> <span class="nb">object</span><span class="p">]):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        For unit testing purposes, construct a PluginEngine with a set of</span>
+<span class="sd">        mock responses</span>
+
+<span class="sd">        :param dict mock_responses: A dictionary that maps queries to mock</span>
+<span class="sd">            responses. The query is a tuple of a target string and a key</span>
+<span class="sd">            object, the response is the output object for that query.</span>
+
+<span class="sd">        :return: An instance of `PluginEngine`</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="n">PluginEngine</span><span class="p">(</span><span class="n">mock_responses</span><span class="o">=</span><span class="n">mock_responses</span><span class="p">)</span></div>
+
+
+    <span class="c1"># Convenience function to expose a `QueryBuilder` to make it easy to dynamically build</span>
+    <span class="c1"># up multi-key queries against a single target and send them over gRPC in as few</span>
+    <span class="c1"># gRPC calls as possible.</span>
+<div class="viewcode-block" id="PluginEngine.batch">
+<a class="viewcode-back" href="../../hipcheck_sdk.html#hipcheck_sdk.engine.PluginEngine.batch">[docs]</a>
+    <span class="k">def</span><span class="w"> </span><span class="nf">batch</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">target</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">QueryBuilder</span><span class="p">:</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Create a `QueryBuilder` instance to dynamically aggregate keys for a</span>
+<span class="sd">        batch query against `target` as opposed to using `PluginEngine.batch_query()`</span>
+<span class="sd">        which requires having all keys available immediately</span>
+
+<span class="sd">        :param str target: A string of the form `&lt;PUBLISHER&gt;/&lt;PLUGIN&gt;/&lt;ENDPOINT&gt;`,</span>
+<span class="sd">            where `/&lt;ENDPOINT&gt;` may be omitted if targeting a default endpoint.</span>
+<span class="sd">            Indicates the remote plugin endpoint to query.</span>
+
+<span class="sd">        :return: An instance of `QueryBuilder`</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="n">QueryBuilder</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">target</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="PluginEngine.query_inner">
+<a class="viewcode-back" href="../../hipcheck_sdk.html#hipcheck_sdk.engine.PluginEngine.query_inner">[docs]</a>
+    <span class="k">async</span> <span class="k">def</span><span class="w"> </span><span class="nf">query_inner</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">target</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">keys</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="nb">object</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="n">List</span><span class="p">[</span><span class="nb">object</span><span class="p">]:</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        :raises: SdkError</span>
+
+<span class="sd">        :meta: private</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="c1"># If using a mock engine, look to the `mock_responses` field for the query answer</span>
+        <span class="k">if</span> <span class="n">enabled</span><span class="p">(</span><span class="s2">&quot;mock_engine&quot;</span><span class="p">):</span>
+            <span class="n">results</span> <span class="o">=</span> <span class="p">[]</span>
+            <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">keys</span><span class="p">:</span>
+                <span class="n">opt_val</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">mock_responses</span><span class="o">.</span><span class="n">get</span><span class="p">((</span><span class="n">target</span><span class="p">,</span> <span class="n">i</span><span class="p">),</span> <span class="kc">None</span><span class="p">)</span>
+                <span class="k">if</span> <span class="n">opt_val</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+                    <span class="k">raise</span> <span class="n">UnknownPluginQuery</span><span class="p">()</span>
+                <span class="k">else</span><span class="p">:</span>
+                    <span class="n">results</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">opt_val</span><span class="p">)</span>
+            <span class="k">return</span> <span class="n">results</span>
+
+        <span class="k">else</span><span class="p">:</span>
+            <span class="c1"># Normal execution, send messages to Hipcheck core to query other plugins</span>
+
+            <span class="n">publisher</span><span class="p">,</span> <span class="n">plugin</span><span class="p">,</span> <span class="n">name</span> <span class="o">=</span> <span class="n">parse_target_str</span><span class="p">(</span><span class="n">target</span><span class="p">)</span>
+
+            <span class="n">query</span> <span class="o">=</span> <span class="n">Query</span><span class="p">(</span>
+                <span class="nb">id</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">id</span><span class="p">,</span>
+                <span class="n">direction</span><span class="o">=</span><span class="n">QueryDirection</span><span class="o">.</span><span class="n">REQUEST</span><span class="p">,</span>
+                <span class="n">publisher</span><span class="o">=</span><span class="n">publisher</span><span class="p">,</span>
+                <span class="n">plugin</span><span class="o">=</span><span class="n">plugin</span><span class="p">,</span>
+                <span class="n">query</span><span class="o">=</span><span class="n">name</span><span class="p">,</span>
+                <span class="n">key</span><span class="o">=</span><span class="n">keys</span><span class="p">,</span>
+                <span class="n">output</span><span class="o">=</span><span class="p">[],</span>
+                <span class="n">concerns</span><span class="o">=</span><span class="p">[],</span>
+            <span class="p">)</span>
+
+            <span class="k">await</span> <span class="bp">self</span><span class="o">.</span><span class="n">send</span><span class="p">(</span><span class="n">query</span><span class="p">)</span>
+            <span class="n">resp</span><span class="p">:</span> <span class="n">Query</span> <span class="o">=</span> <span class="k">await</span> <span class="bp">self</span><span class="o">.</span><span class="n">recv</span><span class="p">()</span>
+            <span class="k">return</span> <span class="nb">list</span><span class="p">(</span><span class="n">resp</span><span class="o">.</span><span class="n">output</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="PluginEngine.query">
+<a class="viewcode-back" href="../../hipcheck_sdk.html#hipcheck_sdk.engine.PluginEngine.query">[docs]</a>
+    <span class="k">async</span> <span class="k">def</span><span class="w"> </span><span class="nf">query</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">target</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">key</span><span class="p">:</span> <span class="nb">object</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">object</span><span class="p">:</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Query another Hipcheck plugin endpoint `target` with key `input`</span>
+
+<span class="sd">        :param str target: A string of the form `&lt;PUBLISHER&gt;/&lt;PLUGIN&gt;/&lt;ENDPOINT&gt;`,</span>
+<span class="sd">            where `/&lt;ENDPOINT&gt;` may be omitted if targeting a default endpoint.</span>
+<span class="sd">            Indicates the remote plugin endpoint to query.</span>
+<span class="sd">        :param object key: The key for the query</span>
+<span class="sd">        :return: The deserialized result</span>
+
+<span class="sd">        :raises: SdkError</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">outputs</span> <span class="o">=</span> <span class="k">await</span> <span class="bp">self</span><span class="o">.</span><span class="n">query_inner</span><span class="p">(</span><span class="n">target</span><span class="p">,</span> <span class="p">[</span><span class="n">key</span><span class="p">])</span>
+        <span class="k">return</span> <span class="n">outputs</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span></div>
+
+
+<div class="viewcode-block" id="PluginEngine.batch_query">
+<a class="viewcode-back" href="../../hipcheck_sdk.html#hipcheck_sdk.engine.PluginEngine.batch_query">[docs]</a>
+    <span class="k">async</span> <span class="k">def</span><span class="w"> </span><span class="nf">batch_query</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">target</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">keys</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="nb">object</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="n">List</span><span class="p">[</span><span class="nb">object</span><span class="p">]:</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Query another Hipcheck plugin endpoint `target` with a list of keys</span>
+
+<span class="sd">        :param str target: Indicates the remote plugin endpoint to query. Has</span>
+<span class="sd">            the same format requirements as `query()`</span>
+<span class="sd">        :param list keys: The list of keys to send as a single batch query to</span>
+<span class="sd">            Hipcheck core.</span>
+<span class="sd">        :return: A list of output values corresponding to each element of key</span>
+<span class="sd">            being applied to the target endpoint.</span>
+
+<span class="sd">        :raises: SdkError</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="k">await</span> <span class="bp">self</span><span class="o">.</span><span class="n">query_inner</span><span class="p">(</span><span class="n">target</span><span class="p">,</span> <span class="n">keys</span><span class="p">)</span></div>
+
+
+    <span class="k">async</span> <span class="k">def</span><span class="w"> </span><span class="nf">recv_raw</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Optional</span><span class="p">[</span><span class="n">List</span><span class="p">[</span><span class="n">gen</span><span class="o">.</span><span class="n">Query</span><span class="p">]]:</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        :meta private:</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">out</span> <span class="o">=</span> <span class="p">[]</span>
+
+        <span class="k">try</span><span class="p">:</span>
+            <span class="n">first</span> <span class="o">=</span> <span class="k">await</span> <span class="bp">self</span><span class="o">.</span><span class="n">rx</span><span class="o">.</span><span class="n">get</span><span class="p">()</span>
+        <span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+            <span class="c1"># Underlying gRPC channel closed</span>
+            <span class="c1"># @Todo - tighten this exception</span>
+            <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Recv exception: </span><span class="si">{</span><span class="n">e</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+            <span class="k">return</span> <span class="kc">None</span>
+
+        <span class="n">out</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">first</span><span class="p">)</span>
+
+        <span class="c1"># If more messages in the queue, opportunistically read more</span>
+        <span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+            <span class="k">try</span><span class="p">:</span>
+                <span class="n">msg</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">rx</span><span class="o">.</span><span class="n">get_nowait</span><span class="p">()</span>
+            <span class="k">except</span> <span class="n">asyncio</span><span class="o">.</span><span class="n">QueueEmpty</span><span class="p">:</span>
+                <span class="k">break</span>
+            <span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+                <span class="c1"># @Todo - tighten this exception</span>
+                <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Recv exception: </span><span class="si">{</span><span class="n">e</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+                <span class="k">break</span>
+            <span class="n">out</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">msg</span><span class="p">)</span>
+
+        <span class="k">return</span> <span class="n">out</span>
+
+    <span class="k">async</span> <span class="k">def</span><span class="w"> </span><span class="nf">send_session_error</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">plugin</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        :meta private:</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">query</span> <span class="o">=</span> <span class="n">gen</span><span class="o">.</span><span class="n">Query</span><span class="p">(</span>
+            <span class="nb">id</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">id</span><span class="p">,</span>
+            <span class="n">state</span><span class="o">=</span><span class="n">gen</span><span class="o">.</span><span class="n">QUERY_STATE_UNSPECIFIED</span><span class="p">,</span>
+            <span class="n">publisher_name</span><span class="o">=</span><span class="n">plugin</span><span class="o">.</span><span class="n">publisher</span><span class="p">,</span>
+            <span class="n">plugin_name</span><span class="o">=</span><span class="n">plugin</span><span class="o">.</span><span class="n">name</span><span class="p">,</span>
+            <span class="n">query_name</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">,</span>
+            <span class="n">concern</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">take_concerns</span><span class="p">(),</span>
+            <span class="n">split</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
+        <span class="p">)</span>
+        <span class="k">await</span> <span class="bp">self</span><span class="o">.</span><span class="n">tx</span><span class="o">.</span><span class="n">put</span><span class="p">(</span><span class="n">query</span><span class="p">)</span>
+
+    <span class="k">async</span> <span class="k">def</span><span class="w"> </span><span class="nf">recv</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Optional</span><span class="p">[</span><span class="n">Query</span><span class="p">]:</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        :raises: SdkError</span>
+<span class="sd">        :meta private:</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">synth</span> <span class="o">=</span> <span class="n">QuerySynthesizer</span><span class="p">()</span>
+        <span class="n">res</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">Query</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="k">while</span> <span class="n">res</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="n">opt_msg_chunks</span> <span class="o">=</span> <span class="k">await</span> <span class="bp">self</span><span class="o">.</span><span class="n">recv_raw</span><span class="p">()</span>
+            <span class="k">if</span> <span class="n">opt_msg_chunks</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+                <span class="k">return</span> <span class="kc">None</span>
+            <span class="n">msg_chunks</span> <span class="o">=</span> <span class="n">opt_msg_chunks</span>
+            <span class="n">res</span> <span class="o">=</span> <span class="n">synth</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">msg_chunks</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">res</span>
+
+<div class="viewcode-block" id="PluginEngine.record_concern">
+<a class="viewcode-back" href="../../hipcheck_sdk.html#hipcheck_sdk.engine.PluginEngine.record_concern">[docs]</a>
+    <span class="k">def</span><span class="w"> </span><span class="nf">record_concern</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">concern</span><span class="p">:</span> <span class="nb">str</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Records a concern that will be emitted in the final Hipcheck report.</span>
+<span class="sd">        Intended for use within a `@query`-decorated endpoint function.</span>
+
+<span class="sd">        :param str concern: The concern to be recorded</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">concerns</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">concern</span><span class="p">)</span></div>
+
+
+    <span class="k">def</span><span class="w"> </span><span class="nf">take_concerns</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        :meta private:</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">out</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">concerns</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">concerns</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="k">return</span> <span class="n">out</span>
+
+    <span class="k">async</span> <span class="k">def</span><span class="w"> </span><span class="nf">send</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">query</span><span class="p">:</span> <span class="n">Query</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Send a gRPC query from plugin to the hipcheck server</span>
+
+<span class="sd">        :raises SdkError:</span>
+<span class="sd">        :meta private:</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">query</span><span class="o">.</span><span class="n">id</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">id</span>  <span class="c1"># incoming id value is just a placeholder</span>
+        <span class="k">for</span> <span class="n">pq</span> <span class="ow">in</span> <span class="n">prepare</span><span class="p">(</span><span class="n">query</span><span class="p">):</span>
+            <span class="k">await</span> <span class="bp">self</span><span class="o">.</span><span class="n">tx</span><span class="o">.</span><span class="n">put</span><span class="p">(</span><span class="n">pq</span><span class="p">)</span>
+
+    <span class="k">async</span> <span class="k">def</span><span class="w"> </span><span class="nf">handle_session_fallible</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">plugin</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        :raises SdkError:</span>
+<span class="sd">        :meta private:</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">query</span><span class="p">:</span> <span class="n">Query</span> <span class="o">=</span> <span class="k">await</span> <span class="bp">self</span><span class="o">.</span><span class="n">recv</span><span class="p">()</span>
+
+        <span class="k">if</span> <span class="n">query</span><span class="o">.</span><span class="n">direction</span> <span class="o">==</span> <span class="n">QueryDirection</span><span class="o">.</span><span class="n">RESPONSE</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="n">ReceivedReplyWhenExpectingSubmitChunk</span><span class="p">()</span>
+
+        <span class="n">name</span> <span class="o">=</span> <span class="n">query</span><span class="o">.</span><span class="n">query</span>
+
+        <span class="c1"># Per RFD 0009, there should only be one query key per query</span>
+        <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">query</span><span class="o">.</span><span class="n">key</span><span class="p">)</span> <span class="o">!=</span> <span class="mi">1</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="n">UnspecifiedQueryState</span><span class="p">()</span>
+        <span class="n">key</span> <span class="o">=</span> <span class="n">query</span><span class="o">.</span><span class="n">key</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+
+        <span class="n">query</span> <span class="o">=</span> <span class="nb">next</span><span class="p">((</span><span class="n">x</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">plugin</span><span class="o">.</span><span class="n">queries</span><span class="p">()</span> <span class="k">if</span> <span class="n">x</span><span class="o">.</span><span class="n">name</span> <span class="o">==</span> <span class="n">name</span><span class="p">),</span> <span class="kc">None</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">query</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="n">UnknownPluginQuery</span><span class="p">()</span>
+
+        <span class="c1"># None key type means they used an explicit key_schema so we leave as dict</span>
+        <span class="k">if</span> <span class="n">query</span><span class="o">.</span><span class="n">key_type</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="c1"># Convert query as dict to target object schema</span>
+            <span class="k">try</span><span class="p">:</span>
+                <span class="n">key</span> <span class="o">=</span> <span class="n">deserialize_key</span><span class="p">(</span><span class="n">json</span><span class="o">.</span><span class="n">dumps</span><span class="p">(</span><span class="n">key</span><span class="p">),</span> <span class="n">query</span><span class="o">.</span><span class="n">key_type</span><span class="p">)</span>
+            <span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+                <span class="n">logger</span><span class="o">.</span><span class="n">error</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">e</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+                <span class="k">raise</span> <span class="n">InvalidJsonInQueryKey</span><span class="p">()</span>
+
+        <span class="n">value</span> <span class="o">=</span> <span class="k">await</span> <span class="n">query</span><span class="o">.</span><span class="n">func</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">key</span><span class="p">)</span>
+
+        <span class="n">out</span> <span class="o">=</span> <span class="n">Query</span><span class="p">(</span>
+            <span class="nb">id</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">id</span><span class="p">,</span>
+            <span class="n">direction</span><span class="o">=</span><span class="n">QueryDirection</span><span class="o">.</span><span class="n">RESPONSE</span><span class="p">,</span>
+            <span class="n">publisher</span><span class="o">=</span><span class="n">plugin</span><span class="o">.</span><span class="n">publisher</span><span class="p">,</span>
+            <span class="n">plugin</span><span class="o">=</span><span class="n">plugin</span><span class="o">.</span><span class="n">name</span><span class="p">,</span>
+            <span class="n">query</span><span class="o">=</span><span class="n">name</span><span class="p">,</span>
+            <span class="n">key</span><span class="o">=</span><span class="p">[],</span>
+            <span class="n">output</span><span class="o">=</span><span class="p">[</span><span class="n">value</span><span class="p">],</span>
+            <span class="n">concerns</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">take_concerns</span><span class="p">(),</span>
+        <span class="p">)</span>
+
+        <span class="k">await</span> <span class="bp">self</span><span class="o">.</span><span class="n">send</span><span class="p">(</span><span class="n">out</span><span class="p">)</span>
+
+        <span class="c1"># Notify HcSessionSocket that session is closed</span>
+        <span class="k">await</span> <span class="bp">self</span><span class="o">.</span><span class="n">drop_tx</span><span class="o">.</span><span class="n">put</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">id</span><span class="p">)</span>
+
+    <span class="k">async</span> <span class="k">def</span><span class="w"> </span><span class="nf">handle_session</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">plugin</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        :meta private:</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">try</span><span class="p">:</span>
+            <span class="k">await</span> <span class="bp">self</span><span class="o">.</span><span class="n">handle_session_fallible</span><span class="p">(</span><span class="n">plugin</span><span class="p">)</span>
+        <span class="c1"># Errors that we raise intentionally</span>
+        <span class="k">except</span> <span class="n">SdkError</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+            <span class="n">logger</span><span class="o">.</span><span class="n">error</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">e</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+            <span class="k">await</span> <span class="bp">self</span><span class="o">.</span><span class="n">send_session_error</span><span class="p">(</span><span class="n">plugin</span><span class="p">)</span>
+        <span class="c1"># Other errors, such as syntactical ones</span>
+        <span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+            <span class="n">logger</span><span class="o">.</span><span class="n">error</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">e</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+            <span class="k">await</span> <span class="bp">self</span><span class="o">.</span><span class="n">send_session_error</span><span class="p">(</span><span class="n">plugin</span><span class="p">)</span></div>
+
+        <span class="c1"># except asyncio.QueueShutDown:</span>
+        <span class="c1">#     return</span>
+</pre></div>
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="Main">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../../index.html">hipcheck-sdk</a></h1>
+
+
+
+
+
+
+
+
+
+<search id="searchbox" style="display: none" role="search">
+    <div class="searchformwrapper">
+    <form class="search" action="../../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" placeholder="Search"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</search>
+<script>document.getElementById('searchbox').style.display = "block"</script><h3>Navigation</h3>
+<p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../modules.html">hipcheck_sdk</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../../index.html">Documentation overview</a><ul>
+  <li><a href="../index.html">Module code</a><ul>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &#169;2025, Julian Lanson.
+      
+      |
+      Powered by <a href="https://www.sphinx-doc.org/">Sphinx 8.1.3</a>
+      &amp; <a href="https://alabaster.readthedocs.io">Alabaster 1.0.0</a>
+      
+    </div>
+
+    
+
+    
+  </body>
+</html>
