@@ -1,0 +1,8 @@
+README.md
+setup.py
+rkmath.egg-info/PKG-INFO
+rkmath.egg-info/SOURCES.txt
+rkmath.egg-info/dependency_links.txt
+rkmath.egg-info/requires.txt
+rkmath.egg-info/top_level.txt
+tests/test-myfunctions.py
