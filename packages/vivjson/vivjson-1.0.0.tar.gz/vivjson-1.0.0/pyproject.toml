@@ -1,0 +1,76 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "vivjson"
+version = "1.0.0"  # https://packaging.python.org/en/latest/discussions/versioning/
+description = "VivJson that is the embedded scripting language and the extension of JSON."
+readme = "README.md"
+requires-python = ">=3.9"
+license = "Apache-2.0"
+license-files = ["LICENSE"]
+keywords = ["script", "embed", "embedded", "language", "JSON", "development"]
+authors = [{ name = "Fumiaki Motegi", email = "motegi@benesult.com" }]
+# maintainers = [
+#   { name = "", email = "" },
+# ]
+
+# Classifiers help users find this project by categorizing it.
+# A list of valid classifiers: https://pypi.org/classifiers/
+classifiers = [
+  "Development Status :: 5 - Production/Stable",
+
+  # Indicate who this project is intended for
+  "Intended Audience :: Developers",
+  "Topic :: File Formats :: JSON",
+  "Topic :: Software Development :: Interpreters",
+
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: 3.13",
+  "Programming Language :: Python :: 3.14",
+  "Programming Language :: Python :: 3 :: Only",
+]
+
+# Install by pip when this project is installed.
+# https://packaging.python.org/discussions/install-requires-vs-requirements/
+dependencies = []
+
+# Optional dependencies
+# Users will be able to install these using the "extras" syntax, for example:
+# $ pip install vivjson[dev]
+[project.optional-dependencies]
+dev = []
+test = [
+    "pytest-cov ~= 6.0.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/benesult/vivjson-python"
+Source = "https://github.com/benesult/vivjson-python"
+Repository = "https://github.com/benesult/vivjson-python.git"
+Issues = "https://github.com/benesult/vivjson-python/issues"
+# "Funding" = "https://donate.pypi.org"
+# "Say Thanks!" = "http://saythanks.io/to/example"
+
+# The following would provide a command line executable called `vivjson`
+# which executes the function `main` from this package when invoked.
+[project.scripts]
+vivjson = "vivjson:main"
+
+# Configuration of the `setuptools` build backend
+# https://setuptools.pypa.io/en/latest/userguide/pyproject_config.html
+[tool.setuptools]
+packages = ["vivjson"]
+
+# Test with "python3 -m pytest".
+[tool.pytest.ini_options]
+addopts = "--cov --cov-report html --cov-report term-missing --cov-fail-under 90"
+
+[tool.coverage.run]
+branch = true
+source = ["vivjson"]
