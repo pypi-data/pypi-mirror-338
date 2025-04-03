@@ -1,0 +1,13 @@
+terminal_llm_assistant/__init__.py,sha256=2FUeE4AnpTpyaG3Iu2UfqSMcIn66DSMeQFPKEnEieb8,93
+terminal_llm_assistant/cli.py,sha256=-RMtpTM9oQfDDQOSFkRfRIECzzbvcnrSiQj2inY3ubQ,4486
+terminal_llm_assistant/server.py,sha256=sTpLHLSpzdzFbcvcYlmmuRmTE_ggivh4qr29aofbkIo,5628
+terminal_llm_assistant/utils.py,sha256=Eu59bYjpAtjd6yPmnqVaIn9DACVqn-pQGz3snToBqiM,2033
+terminal_llm_assistant/utils/__init__.py,sha256=ylR83r7XDjvhCgBqVYtg7LLnv0LZirfXoeR-jWLdz2U,1640
+terminal_llm_assistant-0.1.0.dist-info/licenses/LICENSE,sha256=d54U-nZhO7AWIN4koG-KK2j9NKqJu01cMbPCziaJHZo,1065
+tests/__init__.py,sha256=_cqk6vCRsjMWkSjDoo58v08VGVrkfUcuMNq-3N5aZKI,45
+tests/test_basic.py,sha256=EYNgxr0bwQ0Z1W1vN-WnPo0cm27aExNmuAK0Wovj7nM,69
+terminal_llm_assistant-0.1.0.dist-info/METADATA,sha256=tUjzt8nqktxSstTxNR6kz-QkBVtduQTQqHz09iARM0k,1017
+terminal_llm_assistant-0.1.0.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+terminal_llm_assistant-0.1.0.dist-info/entry_points.txt,sha256=2GCZNsm2EsJEUlUCzw3iFdBXPk-uYGSAu419M9l70zM,101
+terminal_llm_assistant-0.1.0.dist-info/top_level.txt,sha256=lTzk8krbMXZM4okoJLnLWgBaC4hvGyUDjaxvCSLvX1Y,29
+terminal_llm_assistant-0.1.0.dist-info/RECORD,,
