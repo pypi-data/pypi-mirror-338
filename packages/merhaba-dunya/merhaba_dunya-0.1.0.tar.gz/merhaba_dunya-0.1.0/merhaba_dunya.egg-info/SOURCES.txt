@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+merhaba_dunya/__init__.py
+merhaba_dunya/merhaba.py
+merhaba_dunya/yardimcilar.py
+merhaba_dunya.egg-info/PKG-INFO
+merhaba_dunya.egg-info/SOURCES.txt
+merhaba_dunya.egg-info/dependency_links.txt
+merhaba_dunya.egg-info/top_level.txt
