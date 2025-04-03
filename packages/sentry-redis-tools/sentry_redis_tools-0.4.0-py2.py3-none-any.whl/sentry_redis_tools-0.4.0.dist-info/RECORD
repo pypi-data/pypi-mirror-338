@@ -1,0 +1,13 @@
+sentry_redis_tools/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sentry_redis_tools/cardinality_limiter.py,sha256=ZcI-Ebgzg66E4O8N4UNSvhdopNKRnqVwCmcoxbjQhWY,19656
+sentry_redis_tools/clients.py,sha256=2MIsdZZhdtsVkYIg5V13DBIIsY-ufE-Z-Iwf-YVBvUU,257
+sentry_redis_tools/failover_redis.py,sha256=oyu8aNCz8NTS29yZ7YCaM--NSKID6WbV6HnAeaIGdMA,4996
+sentry_redis_tools/metrics.py,sha256=69azEN3oJDew2LLKVU2i762QErQGl1ug4vqB_rlLz6g,1462
+sentry_redis_tools/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sentry_redis_tools/retrying_cluster.py,sha256=3POgLDjhI24yqgzaGsOh7kBZ5k0zI1O77yh4c1T7HDQ,1292
+sentry_redis_tools/sliding_windows_rate_limiter.py,sha256=lGrLDkQbCu6aZDmNManJLPdlmihxzFoEQUddQ0h-iPc,14200
+sentry_redis_tools-0.4.0.dist-info/LICENSE,sha256=0Ng3MFdEcnz0sVD1XvGBBzbavvNp_7OAM5yVObB46jU,10829
+sentry_redis_tools-0.4.0.dist-info/METADATA,sha256=758vfOt_wb7UF1eaWRAr6_K_Egz-EthFg6scNF3R2mM,298
+sentry_redis_tools-0.4.0.dist-info/WHEEL,sha256=Kh9pAotZVRFj97E15yTA4iADqXdQfIVTHcNaZTjxeGM,110
+sentry_redis_tools-0.4.0.dist-info/top_level.txt,sha256=w8TVMaMbKGxG75YpBHnzHLOtzJy3UTqWEonKOXRJVhs,19
+sentry_redis_tools-0.4.0.dist-info/RECORD,,
