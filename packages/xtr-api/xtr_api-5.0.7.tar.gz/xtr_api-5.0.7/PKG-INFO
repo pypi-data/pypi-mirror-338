@@ -1,0 +1,22 @@
+Metadata-Version: 2.4
+Name: xtr-api
+Version: 5.0.7
+Summary: xtr-api
+Home-page: https://github.com/choll/xtr
+Download-URL: https://github.com/choll/xtr
+Author: Tom Christian
+Author-email: tom.christian@openxta.com
+Project-URL: Documentation, https://github.com/choll/xtr
+Description-Content-Type: text/plain
+License-File: LICENSE
+Dynamic: author
+Dynamic: author-email
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: download-url
+Dynamic: home-page
+Dynamic: license-file
+Dynamic: project-url
+Dynamic: summary
+
+This Python library simplifies the creation of extraction APIs to streamline file parsing for data science workflows. It provides intuitive abstractions for reading and transforming data from diverse file formats—like CSV, JSON, and more—letting you focus on insights rather than low-level parsing details. By centralizing and standardizing your data ingestion process, it accelerates development and ensures consistent, reliable results for any data science project.
