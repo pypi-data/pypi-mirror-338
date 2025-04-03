@@ -1,0 +1,15 @@
+Metadata-Version: 2.4
+Name: vhub
+Version: 0.1.0
+Summary: vHub - A Git-like version control system
+Author: Pavel
+Author-email: asuraspru@gmail.com
+Keywords: version control,git
+Requires-Python: >=3.6
+Requires-Dist: requests
+Dynamic: author
+Dynamic: author-email
+Dynamic: keywords
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
