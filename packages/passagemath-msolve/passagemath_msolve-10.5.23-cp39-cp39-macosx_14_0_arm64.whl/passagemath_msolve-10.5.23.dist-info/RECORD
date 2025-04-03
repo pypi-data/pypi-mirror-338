@@ -1,0 +1,15 @@
+passagemath_msolve-10.5.23.dist-info/RECORD,,
+passagemath_msolve-10.5.23.dist-info/WHEEL,sha256=cC_Ulcd0lK_YPq7PIyh1RXFikNky8AGWFHbH09HvWT0,107
+passagemath_msolve-10.5.23.dist-info/top_level.txt,sha256=hibFyzQHiLOMK68qL1OWsNKaXOmSXqZjeLTBem6Yy7I,5
+passagemath_msolve-10.5.23.dist-info/METADATA,sha256=0pcCAYf2AzcQLBQrjvFOT7hchuEzKRDdzPrzQ46MQ0g,3496
+passagemath_msolve.dylibs/libflint.19.0.dylib,sha256=yKW63R8fSQNgScG11ufFYZA9sx1ioVjkA6mNXbvjKX0,8722128
+passagemath_msolve.dylibs/libgmp.10.dylib,sha256=EovC86vng-EsoS0GJ8gcUQU5VGtWqOIFuZDPjy54N78,464688
+passagemath_msolve.dylibs/libmpfr.6.dylib,sha256=3G5w9iNYcIKYud9Xu8TvsSvlGj9k_WSdtWAZ37ORbzY,466160
+passagemath_msolve.dylibs/libneogb.0.dylib,sha256=vKgGp_LZj64PEPNDdNTphgJYC0MTW7Hfy0GdTG6r5ns,280672
+sage_wheels/bin/msolve,sha256=hmhF-4T6sAP4ABcdXOyC2joawJqc_0O-YkMyoqQO9Qg,305040
+sage/all__sagemath_msolve.py,sha256=No-scnoaPXyBy8fKkCMMH_r5NeyRWGOLoAQCE6RBJf4,126
+sage/libs/msolve.cpython-39-darwin.so,sha256=O5Z3gu58zBMHhyK9BFltCW2Tdl6Wka1uQ5I_2aIbeC4,55416
+sage/libs/all__sagemath_msolve.py,sha256=2EBXYFXTRFy1V7G9fp76GquuW78Y8nsj9YySeR0TJqI,45
+sage/rings/all__sagemath_msolve.py,sha256=2EBXYFXTRFy1V7G9fp76GquuW78Y8nsj9YySeR0TJqI,45
+sage/rings/polynomial/all__sagemath_msolve.py,sha256=2EBXYFXTRFy1V7G9fp76GquuW78Y8nsj9YySeR0TJqI,45
+sage/rings/polynomial/msolve.py,sha256=ZUZfH8RoxtstiRTI0K-agbU4w7qPGK5VWTrDz8AxcXg,13733
