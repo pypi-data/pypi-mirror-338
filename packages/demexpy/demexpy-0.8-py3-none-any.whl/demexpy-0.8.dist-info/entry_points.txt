@@ -1,0 +1,2 @@
+[console_scripts]
+demex-new = demex:demex_new
