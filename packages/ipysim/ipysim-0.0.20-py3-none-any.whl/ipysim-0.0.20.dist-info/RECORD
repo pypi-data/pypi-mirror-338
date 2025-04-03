@@ -1,0 +1,7 @@
+ipysim/__init__.py,sha256=0UzhXXUj7KdZEf2dtfn5rWkOL9OS_7AEfbK0Pt1rDI8,89
+ipysim/core.py,sha256=CrB9KXyy0DCbuTBwIRr2X_wsaQ8HSWOeEi1aluhtipQ,4128
+ipysim/params.py,sha256=5tvd3s5ppE-zO6FU14F2oycLnGzzrROjbrAGGkKnKZI,824
+ipysim/widgets.py,sha256=zAnwKhHTaMJYhBwPFLyihaVzMKSFMF9nRhSjC8gmYBs,12231
+ipysim-0.0.20.dist-info/METADATA,sha256=nUZaBKT0vraMJWGgF72xWBCG5j7CC-Vro0swHR81bfI,639
+ipysim-0.0.20.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+ipysim-0.0.20.dist-info/RECORD,,
