@@ -1,0 +1,11 @@
+dvrd_pydate/__init__.py,sha256=-gF3KqNPgWxqB5ArWqpeiciqHnTf-aea0hdz4W6WhaQ,99
+dvrd_pydate/enums.py,sha256=zH1KLEyc4j7yqJTFJUBmfnRuSqLAUWiIp8XNq_C_M4k,575
+dvrd_pydate/pydate.py,sha256=mzAA8uW8KVWT-dZrrq3t2RvNTgjyI8u_kuRl2ziRuNI,11271
+dvrd_pydate/pydatetime.py,sha256=jd_jELNpu5iibOTuR7jnvSfa49IbPQ6e8t1hxmLGFsg,10599
+dvrd_pydate/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dvrd_pydate/tests/test_pydate.py,sha256=91BcMUfGtTuAkFhNlgtFsC5Q4vfaVjdQGRASxG7Rahc,18567
+dvrd_pydate/tests/test_pydatetime.py,sha256=6_LRPtzhZOmrw4lpIasustLqPO7abVQ_Qoo9xR-bylE,9919
+dvrd_pydate-1.1.6.dist-info/METADATA,sha256=YoFDY-YRAoOH-dWY7FLSs020caqv5PBpuXooJNzVSNA,9226
+dvrd_pydate-1.1.6.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+dvrd_pydate-1.1.6.dist-info/top_level.txt,sha256=hnWZy6j-Br_wyCBxu3F9OMbEl0cqwUCSNwyflBB-OV4,12
+dvrd_pydate-1.1.6.dist-info/RECORD,,
