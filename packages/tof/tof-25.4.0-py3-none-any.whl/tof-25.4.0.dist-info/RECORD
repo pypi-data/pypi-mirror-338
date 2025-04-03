@@ -1,0 +1,16 @@
+tof/__init__.py,sha256=ArViglghHK5nAMUHP9KjjwzmAzdDBMzBW6mltleDZUs,678
+tof/chopper.py,sha256=MfayjZjN1qcr6hSSTZsrTWBHlCA2UhYx4RCf0jsVsq4,7278
+tof/deprecation.py,sha256=uaRjydY8TxsafUyf61j1Fojc-wLiQzJdwoFXeymWEWo,943
+tof/detector.py,sha256=ojrGjHxFfYBIm-yZMlapt7PDolUpLO1rAHFbC7-1EIg,1327
+tof/model.py,sha256=EkZF5zQg45e7ML4DIANg6-4Ea571GQ1NrrM9G1pyuzQ,5870
+tof/reading.py,sha256=ExhJEXAFZFzbKP_IsQerXnwBijUoxfzD_KCRu1uSPJ8,2997
+tof/result.py,sha256=nkpwr4MMvD9ft2ayGQmNTwQUAGr2E_em-mnkQxqRscA,11875
+tof/source.py,sha256=BwE5FBNm7l3giNAMqxU9cGctZcF2FxWrqQjmT2_CoQs,13287
+tof/utils.py,sha256=3umnOrbFUKMMwbA6y6_WoKYI1CgYXrbl1cw4Td3zwhQ,2099
+tof/facilities/__init__.py,sha256=fevtypcJAuIcCDDw6ehIRM2wiylXaYIWsoVYQGLWQjI,201
+tof/facilities/ess_pulse.py,sha256=J9XvZO_3T6BnqZEe4TGT_iGvQnehQeQpOw5BBkgz8ak,21487
+tof-25.4.0.dist-info/licenses/LICENSE,sha256=JRzWrOfjgkw3AjOfolQo6jEwJN0tRESp9_4_6sKo5F4,1492
+tof-25.4.0.dist-info/METADATA,sha256=iHKkVsL6UY1ih5vV2zLo0oNkdl7463bhjytLQvr7xf8,1201
+tof-25.4.0.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+tof-25.4.0.dist-info/top_level.txt,sha256=upC1MXnvAXCRxDTFs6kb8_Gfc-3IajmdcTWTosPJdBY,4
+tof-25.4.0.dist-info/RECORD,,
