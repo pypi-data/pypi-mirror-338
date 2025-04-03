@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "fastapi18n"
+version = "0.1.3"
+description = "Multilingual support middleware for FastAPI using gettext and Tortoise ORM"
+authors = [
+    { name = "Oleg Klishin", email = "klishinoleg@gmail.com" }
+]
+license = { text = "MIT" }
+dependencies = [
+    "google-cloud-translate",
+    "typing_extensions",
+    "starlette",
+    "python-dotenv",
+    "Babel",
+    "contextvars",
+    "tortoise-orm==0.24.2",
+    "aerich",
+    "fastapi",
+    "fastapi-admin",
+]
+readme = "README.md"
+requires-python = ">=3.8"
+
+[tool.setuptools.dynamic]
+classifiers = { file = ["classifiers.txt"] }
+
+[project.scripts]
+fastapi18n = "fastapi18n.utils.commands:main"

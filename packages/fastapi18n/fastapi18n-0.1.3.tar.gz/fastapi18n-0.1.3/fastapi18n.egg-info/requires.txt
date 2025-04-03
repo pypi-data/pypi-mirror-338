@@ -1,0 +1,10 @@
+google-cloud-translate
+typing_extensions
+starlette
+python-dotenv
+Babel
+contextvars
+tortoise-orm==0.24.2
+aerich
+fastapi
+fastapi-admin
