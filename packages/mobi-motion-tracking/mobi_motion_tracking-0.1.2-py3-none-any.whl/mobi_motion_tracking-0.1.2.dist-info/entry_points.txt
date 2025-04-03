@@ -1,0 +1,3 @@
+[console_scripts]
+mobi_motion_tracking=mobi_motion_tracking.__main__:run_main
+
