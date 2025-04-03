@@ -1,0 +1,10 @@
+click
+asimov>=0.6.1
+lalsuite>=7.14
+pesummary
+nbconvert
+bilby
+
+[docs]
+sphinx
+kentigern
