@@ -1,0 +1,11 @@
+bm25s
+db_service
+discord_exporter
+discord_mcp
+discord_mcp_server
+discord_webui
+docs
+remote_client
+static
+templates
+tests
