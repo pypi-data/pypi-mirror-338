@@ -1,0 +1,273 @@
+[
+  {
+    "timestamp": "2025-04-02T15:59:03.974885",
+    "action": "type",
+    "element": {
+      "tagName": "input",
+      "id": "user_name",
+      "classes": [
+        "form-control"
+      ],
+      "attributes": {
+        "type": "text",
+        "class": "form-control",
+        "id": "user_name",
+        "name": "user_name",
+        "value": "",
+        "autocomplete": "off",
+        "style": ""
+      },
+      "text": "",
+      "value": "admin",
+      "type": "text",
+      "name": "user_name",
+      "role": null,
+      "ariaLabel": null,
+      "ariaDescribedBy": null,
+      "ariaLabelledBy": null,
+      "isVisible": true,
+      "isInteractive": true,
+      "xpath": "//*[@id=\"user_name\"]",
+      "hasShadowDOM": false,
+      "shadowRoot": null,
+      "shadowElements": [],
+      "elementsWithShadowDOM": [],
+      "rect": {
+        "x": 495,
+        "y": 246,
+        "width": 290,
+        "height": 32
+      },
+      "computedStyle": {
+        "display": "flex",
+        "visibility": "visible",
+        "opacity": "1",
+        "position": "static",
+        "zIndex": "auto"
+      },
+      "actions": [
+        "type"
+      ]
+    },
+    "text": "admin"
+  },
+  {
+    "timestamp": "2025-04-02T15:59:05.085073",
+    "action": "type",
+    "element": {
+      "tagName": "input",
+      "id": "user_password",
+      "classes": [
+        "form-control"
+      ],
+      "attributes": {
+        "class": "form-control",
+        "type": "password",
+        "id": "user_password",
+        "name": "user_password",
+        "autocomplete": "off",
+        "style": "",
+        "browser-user-highlight-id": "playwright-highlight-3"
+      },
+      "text": "",
+      "value": "admin",
+      "type": "password",
+      "name": "user_password",
+      "role": null,
+      "ariaLabel": null,
+      "ariaDescribedBy": null,
+      "ariaLabelledBy": null,
+      "isVisible": true,
+      "isInteractive": true,
+      "xpath": "//*[@id=\"user_password\"]",
+      "hasShadowDOM": false,
+      "shadowRoot": null,
+      "shadowElements": [],
+      "elementsWithShadowDOM": [],
+      "rect": {
+        "x": 495,
+        "y": 305,
+        "width": 259,
+        "height": 32
+      },
+      "computedStyle": {
+        "display": "flex",
+        "visibility": "visible",
+        "opacity": "1",
+        "position": "relative",
+        "zIndex": "2"
+      },
+      "actions": [
+        "type"
+      ]
+    },
+    "text": "admin"
+  },
+  {
+    "timestamp": "2025-04-02T15:59:07.007956",
+    "action": "click",
+    "element": null
+  },
+  {
+    "timestamp": "2025-04-02T15:59:49.945343",
+    "action": "click",
+    "element": {
+      "tagName": "button",
+      "id": "trigger-f7ttubdqbmam-247",
+      "classes": [
+        "now-dropdown",
+        "-primary",
+        "-md",
+        "has-label",
+        "has-caret"
+      ],
+      "attributes": {
+        "slot": "trigger",
+        "type": "button",
+        "id": "trigger-f7ttubdqbmam-247",
+        "class": "now-dropdown -primary -md has-label has-caret",
+        "aria-label": "New",
+        "aria-haspopup": "menu",
+        "aria-expanded": "false",
+        "browser-user-highlight-id": "playwright-highlight-14"
+      },
+      "text": "New",
+      "value": "",
+      "type": "button",
+      "name": "",
+      "role": null,
+      "ariaLabel": "New",
+      "ariaDescribedBy": null,
+      "ariaLabelledBy": null,
+      "isVisible": true,
+      "isInteractive": true,
+      "xpath": "//*[@id=\"trigger-f7ttubdqbmam-247\"]",
+      "hasShadowDOM": true,
+      "shadowRoot": null,
+      "shadowElements": [],
+      "elementsWithShadowDOM": [
+        {
+          "tagName": "macroponent-d469c54f433f61106c4bb0117fb8f267",
+          "id": "",
+          "classes": [],
+          "xpath": "/html/body/macroponent-d469c54f433f61106c4bb0117fb8f267[1]"
+        },
+        {
+          "tagName": "sn-user-preferences-provider",
+          "id": "userPrefProvider",
+          "classes": [],
+          "xpath": "//*[@id=\"userPrefProvider\"]"
+        },
+        {
+          "tagName": "sn-aria-live-region",
+          "id": "",
+          "classes": [],
+          "xpath": "/html/body/sn-aria-live-region[1]"
+        }
+      ],
+      "rect": {
+        "x": 832.84375,
+        "y": 134,
+        "width": 82.15625,
+        "height": 32
+      },
+      "computedStyle": {
+        "display": "flex",
+        "visibility": "visible",
+        "opacity": "1",
+        "position": "static",
+        "zIndex": "auto"
+      },
+      "actions": [
+        "click"
+      ]
+    }
+  },
+  {
+    "timestamp": "2025-04-02T15:59:54.262943",
+    "action": "click",
+    "element": {
+      "tagName": "button",
+      "id": "label",
+      "classes": [
+        "now-pill-label-wrapper",
+        "-button"
+      ],
+      "attributes": {
+        "id": "label",
+        "type": "button",
+        "class": "now-pill-label-wrapper -button",
+        "aria-pressed": "true",
+        "browser-user-highlight-id": "playwright-highlight-7"
+      },
+      "text": "Playbooks",
+      "value": "",
+      "type": "button",
+      "name": "",
+      "role": null,
+      "ariaLabel": null,
+      "ariaDescribedBy": null,
+      "ariaLabelledBy": null,
+      "isVisible": true,
+      "isInteractive": true,
+      "xpath": "//*[@id=\"label\"]",
+      "hasShadowDOM": true,
+      "shadowRoot": null,
+      "shadowElements": [],
+      "elementsWithShadowDOM": [
+        {
+          "tagName": "macroponent-d469c54f433f61106c4bb0117fb8f267",
+          "id": "",
+          "classes": [],
+          "xpath": "/html/body/macroponent-d469c54f433f61106c4bb0117fb8f267[1]"
+        },
+        {
+          "tagName": "sn-user-preferences-provider",
+          "id": "userPrefProvider",
+          "classes": [],
+          "xpath": "//*[@id=\"userPrefProvider\"]"
+        },
+        {
+          "tagName": "sn-aria-live-region",
+          "id": "",
+          "classes": [],
+          "xpath": "/html/body/sn-aria-live-region[1]"
+        },
+        {
+          "tagName": "now-popover-panel",
+          "id": "",
+          "classes": [],
+          "xpath": "/html/body/now-popover-panel[1]"
+        },
+        {
+          "tagName": "seismic-hoist",
+          "id": "",
+          "classes": [],
+          "xpath": "/html/body/now-popover-panel[1]/seismic-hoist[1]"
+        },
+        {
+          "tagName": "seismic-hoist",
+          "id": "behavior-tooltip",
+          "classes": [],
+          "xpath": "//*[@id=\"behavior-tooltip\"]"
+        }
+      ],
+      "rect": {
+        "x": 33,
+        "y": 134,
+        "width": 109.8046875,
+        "height": 32
+      },
+      "computedStyle": {
+        "display": "flex",
+        "visibility": "visible",
+        "opacity": "1",
+        "position": "static",
+        "zIndex": "auto"
+      },
+      "actions": [
+        "click"
+      ]
+    }
+  }
+]
