@@ -1,0 +1,23 @@
+[project]
+name = "pystand-cli"
+version = "0.1.0"
+description = "PyStand打包命令行工具"
+authors = [
+    {name = "ASTWY",email = "astwy@outlook.com"}
+]
+license = {text = "MIT"}
+readme = "README.md"
+packages = [{ include = "pystand_cli" }]
+requires-python = ">=3.9"
+dependencies = [
+    "click (>=8.1.8,<9.0.0)",
+    "httpx (>=0.28.1,<0.29.0)",
+]
+
+[project.scripts]
+pystand-cl = "pystand_cli.cli:package_project"
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
