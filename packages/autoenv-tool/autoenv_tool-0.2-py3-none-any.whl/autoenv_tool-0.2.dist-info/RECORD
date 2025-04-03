@@ -1,0 +1,15 @@
+autoenv/__init__.py,sha256=BlDKKnc3poTs3Ri6woidM9PpPuORJeWKA7w6QM_nbyM,70
+autoenv/cli.py,sha256=NMo6e4gO_iVHdwZvNFIHe4ecX3-9chJKsVmNdyX1ZcY,1012
+autoenv/utils/__init__.py,sha256=VYC_TEkhSiaDwpMITWkESCCde0zNg2DHKWmc4k5ycRc,92
+autoenv/utils/env.py,sha256=pyEwJxaUl7rzRdt33CGP4dKZu0H2LmthTzvRjp-DVKU,528
+autoenv_tool/__init__.py,sha256=BlDKKnc3poTs3Ri6woidM9PpPuORJeWKA7w6QM_nbyM,70
+autoenv_tool/cli.py,sha256=7Y5ZBil5utQtgxxRfH2ZYbnv7BIz4OrPnVZqXWYONi8,1017
+autoenv_tool/utils/__init__.py,sha256=VYC_TEkhSiaDwpMITWkESCCde0zNg2DHKWmc4k5ycRc,92
+autoenv_tool/utils/env.py,sha256=pyEwJxaUl7rzRdt33CGP4dKZu0H2LmthTzvRjp-DVKU,528
+tests/__init__.py,sha256=ByXppl3hS3FjskD92NdLfDdgDgZSwsVLuhVle5kEXx4,57
+tests/test_autoenv.py,sha256=pC0lB761S15aeGNQdH6lOeYmwzhL5egLCNKUT-2Mb6s,746
+autoenv_tool-0.2.dist-info/METADATA,sha256=ovvqIteoclOMbmgOCDYuByVksFWs3esRV7hwHHbWjuw,711
+autoenv_tool-0.2.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+autoenv_tool-0.2.dist-info/entry_points.txt,sha256=UqMTo_WlMKpRM3pVQSSBDpebdiv_gqGcfJHoxoguErc,53
+autoenv_tool-0.2.dist-info/top_level.txt,sha256=Aefbpelgtcpn01nsL46BCX8iU05CM3Jho5qglaa1ONw,19
+autoenv_tool-0.2.dist-info/RECORD,,
