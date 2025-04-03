@@ -1,0 +1,17 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+bactovision/__init__.py
+bactovision/canvas.js
+bactovision/canvas_widget.py
+bactovision/image_processing.py
+bactovision/widget.py
+bactovision.egg-info/PKG-INFO
+bactovision.egg-info/SOURCES.txt
+bactovision.egg-info/dependency_links.txt
+bactovision.egg-info/requires.txt
+bactovision.egg-info/top_level.txt
+docs/images/bactovision-logo.png
+tests/test_image_processing.py

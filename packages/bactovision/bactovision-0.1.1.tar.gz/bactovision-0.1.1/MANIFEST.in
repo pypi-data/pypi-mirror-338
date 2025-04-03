@@ -1,0 +1,4 @@
+include bactovision/canvas.js
+include README.md
+include LICENSE.txt
+recursive-include docs/images *.*
