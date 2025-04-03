@@ -1,0 +1,19 @@
+{
+  "name": "flux-ws-module",
+  "version": "1.0.2",
+  "dependencies": [
+    "boost-system",
+    "boost-date-time",
+    "boost-serialization",
+    "boost-algorithm",
+    "boost-beast",
+    "websocketpp",
+    "nlohmann-json",
+    {
+      "name": "pybind11",
+      "platform": "!linux"
+    }
+    
+  ],
+  "builtin-baseline": "0b4805abfa6ad4c5a4f7fe7d067fdab8449fb915"
+}
