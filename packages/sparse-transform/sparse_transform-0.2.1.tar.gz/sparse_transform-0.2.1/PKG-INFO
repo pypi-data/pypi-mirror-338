@@ -1,0 +1,19 @@
+Metadata-Version: 2.4
+Name: sparse-transform
+Version: 0.2.1
+Summary: Efficiently computing sparse Fourier transforms of functions
+Project-URL: Homepage, https://github.com/basics-lab/sparse-transform
+Author-email: Yigit Efe Erginbas <erginbas@berkeley.edu>, Justin Kang <justin_kang@berkeley.edu>, Landon Butler <landonb@berkeley.edu>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.10
+Requires-Dist: galois>=0.4.1
+Requires-Dist: numpy>1.18
+Requires-Dist: scikit-learn
+Requires-Dist: scipy
+Requires-Dist: tqdm
+Provides-Extra: extra
+Requires-Dist: colorama; extra == 'extra'
+Requires-Dist: matplotlib; extra == 'extra'
