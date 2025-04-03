@@ -1,0 +1,62 @@
+Metadata-Version: 2.4
+Name: kagent-cli
+Version: 0.1.9
+Summary: KaioAgent Client (Pure Python)
+Home-page: https://github.com/siliconuy/kagent-dev
+Author: Silicon UY
+Author-email: Silicon UY <dev@siliconuy.com>
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: asyncio>=3.4.3
+Requires-Dist: websockets>=9.1
+Requires-Dist: aiohttp>=3.7.4
+Dynamic: author
+Dynamic: home-page
+Dynamic: license-file
+Dynamic: requires-python
+
+# KaioAgent CLI
+
+A simple and efficient client for KaioAgent services.
+
+## Installation
+
+```bash
+pip install kagent-cli
+```
+
+## Usage
+
+Simply run:
+
+```bash
+kagent-cli
+```
+
+## Features
+
+- WebSocket-based communication
+- Automatic session management
+- Command execution
+- File operations
+- Persistent workspace
+
+## Development
+
+1. Clone repository
+2. Install dependencies: `pip install -e .`
+3. Run locally: `python -m kagent_cli`
+
+## License
+
+MIT

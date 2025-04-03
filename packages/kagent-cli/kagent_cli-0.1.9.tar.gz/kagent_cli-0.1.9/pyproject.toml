@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=42.0", "wheel", "Cython>=0.29.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "kagent-cli"
+version = "0.1.9"
+description = "KaioAgent Client (Pure Python)"
+authors = [{ name = "Silicon UY", email = "dev@siliconuy.com" }]
+license = { text = "MIT" }
+readme = "README.md"
+requires-python = ">=3.7"
+dependencies = [
+    "asyncio>=3.4.3",
+    "websockets>=9.1",
+    "aiohttp>=3.7.4"
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]

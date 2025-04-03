@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+src/kagent_cli/__init__.py
+src/kagent_cli/__main__.py
+src/kagent_cli/client.py
+src/kagent_cli.egg-info/PKG-INFO
+src/kagent_cli.egg-info/SOURCES.txt
+src/kagent_cli.egg-info/dependency_links.txt
+src/kagent_cli.egg-info/requires.txt
+src/kagent_cli.egg-info/top_level.txt

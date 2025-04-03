@@ -1,0 +1,31 @@
+# Incluir archivos esenciales
+include LICENSE
+include README.md
+include pyproject.toml
+include setup.py
+
+# Incluir solo los archivos necesarios del módulo
+include src/kagent_cli/__init__.py
+
+# Excluir archivos de código fuente y compilación
+global-exclude *.py[cod]
+global-exclude *.c
+global-exclude *.so
+global-exclude *.pyd
+global-exclude *.dylib
+global-exclude __pycache__
+global-exclude *.pyc
+
+# Excluir archivos de desarrollo
+global-exclude .git*
+global-exclude .DS_Store
+global-exclude *.bak
+global-exclude *.swp
+global-exclude *.pyo
+global-exclude .pytest_cache
+global-exclude .coverage
+global-exclude htmlcov/
+global-exclude .tox/
+global-exclude .env
+global-exclude venv/
+global-exclude *.egg-info/
