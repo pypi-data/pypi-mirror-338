@@ -1,0 +1,14 @@
+[project]
+name = "openai-mcp-server"
+version = "1.0.0"
+description = "Dockerized MCP server for OpenAI models"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [ "mcp>=1.6.0",]
+
+[build-system]
+requires = [ "hatchling",]
+build-backend = "hatchling.build"
+
+[project.scripts]
+openai-mcp-server = "openai_mcp_server:main"
