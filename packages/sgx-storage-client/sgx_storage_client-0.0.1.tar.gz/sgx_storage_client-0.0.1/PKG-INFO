@@ -1,0 +1,19 @@
+Metadata-Version: 2.4
+Name: sgx-storage-client
+Version: 0.0.1
+Summary: sgx storage client
+Author: Maksim
+Author-email: mpe@exan.tech
+License: EULA
+Keywords: sgx security enclave dcap attestation
+Requires-Python: >=3.8
+Requires-Dist: requests==2.32.3
+Requires-Dist: cryptography==44.0.2
+Requires-Dist: pycryptodome==3.22.0
+Dynamic: author
+Dynamic: author-email
+Dynamic: keywords
+Dynamic: license
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
