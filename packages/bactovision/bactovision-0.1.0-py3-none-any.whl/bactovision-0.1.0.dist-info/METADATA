@@ -1,0 +1,23 @@
+Metadata-Version: 2.4
+Name: bactovision
+Version: 0.1.0
+Summary: A package for bacterial image processing
+Home-page: https://github.com/StarostinV/bactovision
+Author: Vladimir Starostin
+Author-email: vladimir.starostin@uni-tuebingen.de
+License-File: LICENSE.txt
+Requires-Dist: numpy
+Requires-Dist: scipy
+Requires-Dist: scikit-image
+Requires-Dist: Pillow
+Requires-Dist: opencv-python
+Requires-Dist: anywidget
+Requires-Dist: traitlets
+Requires-Dist: matplotlib
+Requires-Dist: jupyterlab
+Dynamic: author
+Dynamic: author-email
+Dynamic: home-page
+Dynamic: license-file
+Dynamic: requires-dist
+Dynamic: summary
