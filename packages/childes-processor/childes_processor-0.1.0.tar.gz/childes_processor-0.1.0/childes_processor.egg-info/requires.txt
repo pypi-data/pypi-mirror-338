@@ -1,0 +1,2 @@
+childespy>=1.0.0
+g2p_plus>=0.1.3

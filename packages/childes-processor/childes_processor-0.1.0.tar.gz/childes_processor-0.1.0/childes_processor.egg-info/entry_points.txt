@@ -1,0 +1,2 @@
+[console_scripts]
+childes_processor = childes_processor.main:main
