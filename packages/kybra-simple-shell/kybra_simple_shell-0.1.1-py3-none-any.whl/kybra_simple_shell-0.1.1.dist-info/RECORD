@@ -1,0 +1,14 @@
+kybra_simple_shell/__init__.py,sha256=qnhL2QsAkuCLMGIF9bOjbAYNl3LsaRWojW2aAoJd3kM,82
+kybra_simple_shell/cli.py,sha256=VyNh3k5NQLIBCnXJKHqUkSfQxyLM2q7UP33WMuSvw5U,926
+kybra_simple_shell/setup.py,sha256=t3gbmjxCnErYyRTgdn4k1cnkuoW20U8XAuGok4tOXhg,464
+kybra_simple_shell/shell.py,sha256=5o0ojMMylp4SDZSurr0N6pE4C9vTxBhQK6anVcKBmiE,5436
+kybra_simple_shell/test_runner.py,sha256=TOYoxZqoyc8YwPa3bDQw86uRIBEVA3jRVOCeMY6rVPE,687
+kybra_simple_shell/tests/__init__.py,sha256=EEYnmJ27ogflFlPxSdK8EJfoQ8KRDG-Y6YIj2sNJT-Y,38
+kybra_simple_shell/tests/test_cli.py,sha256=5UFSbRt_E-2mPtRgwZImTiVxyRh2ENsfcD_mrjVPJek,1997
+kybra_simple_shell/tests/test_shell.py,sha256=DWIaJFP-64XeI1_0_DkWW_v4JUm1Ah5k8KLPSHEQ51w,2688
+kybra_simple_shell-0.1.1.dist-info/licenses/LICENSE,sha256=6q6XYNOGnJcVSus2bAezFn7bU_2Y5T6W4aGQHBb8X-c,1079
+kybra_simple_shell-0.1.1.dist-info/METADATA,sha256=t41StxJ9EC2jMzwtGZWG18coFx05dv7KosGpbhiFx0Y,377
+kybra_simple_shell-0.1.1.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+kybra_simple_shell-0.1.1.dist-info/entry_points.txt,sha256=kaL-Ed3HwwiNtbbfzLpDkaFQGzl2DISykX1xn4d8m4s,67
+kybra_simple_shell-0.1.1.dist-info/top_level.txt,sha256=Gj1IWscZWhO5aPjOx_GOMhk_mrxUK480NGoZ1caFvN8,19
+kybra_simple_shell-0.1.1.dist-info/RECORD,,
