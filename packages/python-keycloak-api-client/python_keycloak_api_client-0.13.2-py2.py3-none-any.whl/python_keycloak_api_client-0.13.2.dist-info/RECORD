@@ -1,0 +1,10 @@
+keycloak_api_client/__init__.py,sha256=vFNVsU2CrjEnz6kDs9jspEuDKpCbUTHZLplFnPqJA7c,496
+keycloak_api_client/api_client.py,sha256=W2WfytwucSPSpPYhkKHIUaOyC7hBJ9vF5Avzw4Ii9zU,18249
+keycloak_api_client/data_classes.py,sha256=59hjFT9hHSUO6R7T13zGxSI8I6cir829ide-Z9nDAbA,993
+keycloak_api_client/exceptions.py,sha256=EP25JlYVV6O1a4H3YRrHM3rIU7kilBwXG9JuHOfSeFM,54
+keycloak_api_client/factories.py,sha256=AP5P47AlIc6lnSX_eR0HiGyoXyeb1GLS2Gnbq-XTp0Q,1388
+python_keycloak_api_client-0.13.2.dist-info/LICENSE,sha256=Uajvi-SsuYH9Ny3tUEdXyRXHzyXIXqWtSH35GVX-4AM,1065
+python_keycloak_api_client-0.13.2.dist-info/METADATA,sha256=_3Fu0oQloCPNPMjrGGotNS_KwdM8g9mpCw_E9WiNftw,2336
+python_keycloak_api_client-0.13.2.dist-info/WHEEL,sha256=Z-nyYpwrcSqxfdux5Mbn_DQ525iP7J2DG3JgGvOYyTQ,110
+python_keycloak_api_client-0.13.2.dist-info/top_level.txt,sha256=gzDhYfNsyr0iYes3bWBXzyrMsmK8_Ti8ka6MmeaN8k0,20
+python_keycloak_api_client-0.13.2.dist-info/RECORD,,
