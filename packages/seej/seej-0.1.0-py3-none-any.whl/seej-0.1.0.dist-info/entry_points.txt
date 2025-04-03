@@ -1,0 +1,2 @@
+[console_scripts]
+seej = seej.see_jsonl:main
