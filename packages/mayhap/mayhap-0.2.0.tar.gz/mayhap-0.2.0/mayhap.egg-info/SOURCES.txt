@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+mayhap/__init__.py
+mayhap/decorators.py
+mayhap/distributions.py
+mayhap/utils.py
+mayhap.egg-info/PKG-INFO
+mayhap.egg-info/SOURCES.txt
+mayhap.egg-info/dependency_links.txt
+mayhap.egg-info/requires.txt
+mayhap.egg-info/top_level.txt
+tests/test_decorators.py
+tests/test_distributions.py
+tests/test_utils.py
