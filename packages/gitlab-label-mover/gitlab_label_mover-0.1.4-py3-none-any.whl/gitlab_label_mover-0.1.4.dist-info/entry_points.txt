@@ -1,0 +1,3 @@
+[console_scripts]
+gitlab-label-mover=gitlab_label_mover.main:main
+
