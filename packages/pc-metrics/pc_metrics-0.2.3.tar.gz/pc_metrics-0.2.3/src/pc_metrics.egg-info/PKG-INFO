@@ -1,0 +1,45 @@
+Metadata-Version: 2.4
+Name: pc_metrics
+Version: 0.2.3
+Summary: Point Cloud Evaluation Metrics
+Home-page: https://github.com/URRealHero/point_cloud_metrics
+Author: Shu Pu
+Author-email: pushuabc@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: numpy>=1.20
+Requires-Dist: scipy>=1.7
+Requires-Dist: scikit-learn>=1.0
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+# Point Cloud Evaluation Metrics
+
+[![PyPI version](https://img.shields.io/pypi/v/pc_metrics.svg)](https://pypi.org/project/pc_metrics/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+A Python package implementing essential metrics for evaluating point cloud generation quality.
+
+## Features
+
+- ​**CD**: Chamfer Distance between point clouds
+- ​**EMD**: Earth Mover's Distance (Optimal Transport)
+- ​**JSD**: Jensen-Shannon Divergence (Voxel-based distribution similarity)
+- ​**MMD**: Minimum Matching Distance between sets
+- ​**Coverage**: Distribution coverage metric
+
+## Installation
+
+```bash
+pip install pc_metrics
+```
