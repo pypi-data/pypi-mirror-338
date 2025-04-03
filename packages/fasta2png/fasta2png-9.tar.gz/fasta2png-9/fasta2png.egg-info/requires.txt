@@ -1,0 +1,6 @@
+Pillow>=11.1.0
+
+[dev]
+setuptools>=61.0
+build
+twine
