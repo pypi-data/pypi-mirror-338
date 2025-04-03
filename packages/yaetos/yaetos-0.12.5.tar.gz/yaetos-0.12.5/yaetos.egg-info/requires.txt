@@ -1,0 +1,9 @@
+pyyaml
+awscli
+boto3
+cloudpathlib
+pandas
+sqlalchemy
+networkx
+duckdb
+py4j
