@@ -1,0 +1,11 @@
+qmlearn/__init__.py,sha256=Wg-GKEiZJQGodFfPqfV8CRQtT3tB11_BcDGXNbMfjEs,370
+qmlearn/classification.py,sha256=077hAfG9A_pfUU-WYnCXUHvhWh6eO5zGyftOIQOkSnw,953
+qmlearn/clustering.py,sha256=6_C0Eo7Uaq7ruE7ZmdHqNqRVCHF6-kWtI61LDUFUt0s,993
+qmlearn/qfm.py,sha256=3CGoP98kotiXbb-LxcJZOQhUSegBO7qb-4G7XIQnv7M,3215
+qmlearn/regression.py,sha256=d-VDRM2okmO-jR_CFxfCvG6huF1cupdq_DE5GKeaJr4,857
+qmlearn/vqc.py,sha256=_YNDsaMRMKFYIv2NQM_VhTdM_SA-j4X-cVHwipC-udE,3623
+quantum_learn-0.1.0.dist-info/licenses/LICENSE,sha256=-bEIEdwEh5sST509BLmbLNfjQuqolCQm4_4F3JGPvDQ,1070
+quantum_learn-0.1.0.dist-info/METADATA,sha256=WoMw2Tvec8xc3zJq6V4mRiReSi9aeCbx6BQstDDxVMw,2620
+quantum_learn-0.1.0.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+quantum_learn-0.1.0.dist-info/top_level.txt,sha256=r6M8cGMuK2TDaK7KrNakxbB2kzrYg_k0Wg5cl_jVhV4,8
+quantum_learn-0.1.0.dist-info/RECORD,,
