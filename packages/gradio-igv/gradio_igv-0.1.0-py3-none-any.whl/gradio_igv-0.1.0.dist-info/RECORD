@@ -1,0 +1,13 @@
+gradio_igv/__init__.py,sha256=Nw2xI58efK1n6OFVaK2hTYcSgVzMF8hdMBRk3jxl8xI,332
+gradio_igv/data_types.py,sha256=_9JGfL46YwsrjdKj-ddJD0qDJr1q0Q7t38EXW9bB1Tw,7091
+gradio_igv/features.py,sha256=KfYaUZ4cPbJ2BaU_krcEOHeRp8yr94-zOO5tWaKC5No,1961
+gradio_igv/igv.py,sha256=YwFmIXGbIAJXE2Vjcvo_VCtuc25vhpzYfNPMmvgybtY,1417
+gradio_igv/igv.pyi,sha256=O_g29mqYXqg5tdUSnd-5jqUgctoIxKiUqeib_8waGpc,35501
+gradio_igv/templates/component/index.js,sha256=oRdt_8SoTbTEVDQKKH3S7x6oQvsh8SIbRz7Q0fu0NDI,2301537
+gradio_igv/templates/component/style.css,sha256=t5bMVn9mSeFlCXifQ8-Y_F_WS_Y2DfY91lRQoMuLTgQ,1478685
+gradio_igv/templates/example/index.js,sha256=S0rQhEVCiO6TrKOl5wSmmKeYSD4WufxrYzuLtpfb-fo,1818
+gradio_igv/templates/example/style.css,sha256=Aj4k-S41TV83pot-J9j9Fi2UonrXHFC1Jl4Zb1xaYo4,61
+gradio_igv-0.1.0.dist-info/METADATA,sha256=l8RNf4TWfcHOIGskeJF7v9Z8UFaeI6WFgnHFKtRfCsQ,5990
+gradio_igv-0.1.0.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+gradio_igv-0.1.0.dist-info/licenses/LICENSE,sha256=F0e_7EHG5NUHzJr59lttcAP4BTvje4dTrTGwCClVI0Q,1499
+gradio_igv-0.1.0.dist-info/RECORD,,
