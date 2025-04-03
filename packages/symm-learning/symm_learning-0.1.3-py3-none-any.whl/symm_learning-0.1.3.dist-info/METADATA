@@ -1,0 +1,12 @@
+Metadata-Version: 2.4
+Name: symm-learning
+Version: 0.1.3
+Summary: Torch modules and utilities of equivariant/invariant learning
+Author-email: Daniel Ordoñez <daniels.ordonez@gmail.com>
+Requires-Python: >=3.8
+Requires-Dist: escnn
+Requires-Dist: torch
+Provides-Extra: dev
+Requires-Dist: pre-commit; extra == 'dev'
+Requires-Dist: pytest; extra == 'dev'
+Requires-Dist: ruff; extra == 'dev'
