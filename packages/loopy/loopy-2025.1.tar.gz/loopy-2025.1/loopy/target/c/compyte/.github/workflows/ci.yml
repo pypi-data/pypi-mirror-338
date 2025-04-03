@@ -1,0 +1,19 @@
+name: CI
+on:
+    push:
+        branches:
+        - main
+    pull_request:
+    schedule:
+        - cron:  '17 3 * * 0'
+
+jobs:
+    ruff:
+        name: Ruff
+        runs-on: ubuntu-latest
+        steps:
+        -   uses: actions/checkout@v3
+        -   name: "Main Script"
+            run: |
+                pipx install ruff
+                ruff check
