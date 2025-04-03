@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pretix-custom-head"
+version = "0.1.1"
+description = "A Pretix plugin to inject custom code into the <head> section and track events using Plausible Analytics."
+readme = "README.md"
+license = { text = "MIT License" }
+authors = [
+    { name = "Bergruebe", email = "68869895+Bergruebe@users.noreply.github.com" }
+]
+
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Framework :: Django",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10"
+]
+
+[project.urls]
+homepage = "https://github.com/bergruebe/pretix-custom-head"
