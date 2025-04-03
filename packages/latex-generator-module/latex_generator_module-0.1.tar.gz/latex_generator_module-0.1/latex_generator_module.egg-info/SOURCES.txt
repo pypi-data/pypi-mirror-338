@@ -1,0 +1,7 @@
+setup.py
+latex_generator_module/__init__.py
+latex_generator_module/latex_generator.py
+latex_generator_module.egg-info/PKG-INFO
+latex_generator_module.egg-info/SOURCES.txt
+latex_generator_module.egg-info/dependency_links.txt
+latex_generator_module.egg-info/top_level.txt
