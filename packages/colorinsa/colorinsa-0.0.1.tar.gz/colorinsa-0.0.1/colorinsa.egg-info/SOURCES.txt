@@ -1,0 +1,8 @@
+README.txt
+pyproject.toml
+colorinsa.egg-info/PKG-INFO
+colorinsa.egg-info/SOURCES.txt
+colorinsa.egg-info/dependency_links.txt
+colorinsa.egg-info/top_level.txt
+coloroma/__init__.py
+coloroma/main.py
