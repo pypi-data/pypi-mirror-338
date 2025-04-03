@@ -1,0 +1,3 @@
+[console_scripts]
+dircraft = dircraft.cli:main
+dircraft-gui = dircraft.gui:main
