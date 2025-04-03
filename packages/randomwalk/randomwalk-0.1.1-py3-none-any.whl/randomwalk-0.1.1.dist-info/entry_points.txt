@@ -1,0 +1,2 @@
+[console_scripts]
+resume-display = resume_package.resume:main
