@@ -1,0 +1,2 @@
+[console_scripts]
+taskops = task_processor.__main__:main
