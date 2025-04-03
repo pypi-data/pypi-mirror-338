@@ -1,0 +1,10 @@
+bactovision/__init__.py,sha256=grvBbDzb9Y1xAHL5b-Dovo0-q1cygrHxfNsG4fihwfk,192
+bactovision/canvas.js,sha256=etun77gPtUfA30ri3G895NRjrsfiAEEM7wDtxuWrtPE,13945
+bactovision/canvas_widget.py,sha256=LDQ_WKRgvvgNc7FBQ3aDB8kxkeGqN-T51PuISneGLMU,4522
+bactovision/image_processing.py,sha256=5AFDfcJEoSC9iBRSI4QHgk_rUKanzbs3k2_Cm4bWu1E,9413
+bactovision/widget.py,sha256=WzH_zqV5PnDTIyNtmLGBq-e-h4Xq4LhDiKQg4nRFOBI,13497
+bactovision-0.1.1.dist-info/licenses/LICENSE.txt,sha256=AbwnFSqdTifT8eq7xGXc9ug5xkGl6NrEmSvP_w1Ph24,1067
+bactovision-0.1.1.dist-info/METADATA,sha256=Aji9ZmMvLXqL8D4DDte1WaelAALiSgiIwl13056LIA8,2382
+bactovision-0.1.1.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+bactovision-0.1.1.dist-info/top_level.txt,sha256=6Ii-t0wHxe1bfU9zc5w1HXdjm0sjMg8d-LbGZgJf-tA,12
+bactovision-0.1.1.dist-info/RECORD,,
