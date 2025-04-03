@@ -1,0 +1,142 @@
+Metadata-Version: 2.4
+Name: biomcp-python
+Version: 0.0.2
+Summary: Biomedical Model Context Protocol Server
+Author-email: Ian Maurer <imaurer@gmail.com>
+Project-URL: Homepage, https://genomoncology.com/biomcp/
+Project-URL: Repository, https://github.com/genomoncology/biomcp
+Project-URL: Documentation, https://genomoncology.com/biomcp/
+Keywords: python
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: <4.0,>=3.11
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: anyio>=4.8.0
+Requires-Dist: certifi>=2025.1.31
+Requires-Dist: diskcache>=5.6.3
+Requires-Dist: httpx>=0.28.1
+Requires-Dist: mcp[cli]>=1.3.0
+Requires-Dist: platformdirs>=4.3.6
+Requires-Dist: pydantic>=2.10.6
+Requires-Dist: typer>=0.15.2
+Provides-Extra: api
+Dynamic: license-file
+
+# BioMCP: Biomedical Model Context Protocol
+
+BioMCP provides LLMs with structured access to critical biomedical databases
+through the Model Context Protocol (MCP).
+
+## Tools
+
+- PubTator3 (PubMed/PMC)
+  - Article Search
+  - Full Text
+- ClinicalTrials.gov
+  - Clinical Trial Advanced Search
+  - Protocols
+  - Outcomes
+  - Locations
+  - Reference
+- MyVariant.info
+  - Variant Search
+  - Annotations (CIViC, ClinVar, COSMIC, dbSNP, etc.)
+
+## Installation
+
+To install the BioMCP package to use it as a Python package or Command Line
+Interface (CLI), run the following command:
+
+```bash
+pip install biomcp-python
+```
+
+Or preferably:
+
+```bash
+uv pip install biomcp-python
+```
+
+Or just run it:
+
+```bash
+uvx --from biomcp-python biomcp trial search --condition "lung cancer" --intervention "pembro"
+```
+
+To install it as a MCP Server to Claude Desktop or similar "MCP Clients", try
+something like:
+
+```json
+{
+  "globalShortcut": "",
+  "mcpServers": {
+    "biomcp": {
+      "command": "uv",
+      "args": ["run", "--from" "biomcp-python", "biomcp", "run"]
+    }
+  }
+}
+```
+
+To test the MCP Server, using the MCP Inspector, run the following command:
+
+```bash
+npx @modelcontextprotocol/inspector uv run biomcp run
+```
+
+## Command Line Interface
+
+BioMCP provides a comprehensive CLI for direct interaction with biomedical
+databases:
+
+```bash
+# Get help
+biomcp --help
+
+# Run the MCP server
+biomcp run
+
+# Search for articles
+biomcp article search --gene BRAF --disease Melanoma
+
+# Get article details by PMID
+biomcp article get 21717063 --full
+
+# Search for clinical trials
+biomcp trial search --condition "Lung Cancer" --phase Phase_3
+
+# Get trial details by NCT ID
+biomcp trial get NCT04280705 Protocol
+
+# Search for variants
+biomcp variant search --gene BRAF --significance Pathogenic
+
+# Get variant details
+biomcp variant get rs113488022
+```
+
+## Commercial Version: OncoMCP
+
+OncoMCP extends BioMCP with GenomOncology's enterprise-grade precision oncology
+platform (POP), providing healthcare organizations with:
+
+- On-premise deployment with full HIPAA compliance
+- Real-time clinical trial recruiting status and arm-level matching
+- Seamless EHR and clinical data warehouse integration
+- Curated knowledge base of 15,000+ clinical trials and FDA approvals
+- Patient-trial matching using integrated clinical and molecular profiles
+- Advanced NLP for structured data extraction and normalization
+- Comprehensive biomarker and mutation rule processing
+
+Find out more about GenomOncology and OncoMCP by visiting:
+[GenomOncology](https://genomoncology.com/).
+
+## License
+
+This project is licensed under the MIT License.
