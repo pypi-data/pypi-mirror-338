@@ -1,0 +1,3 @@
+[console_scripts]
+pystand-cl=pystand_cli.cli:package_project
+
