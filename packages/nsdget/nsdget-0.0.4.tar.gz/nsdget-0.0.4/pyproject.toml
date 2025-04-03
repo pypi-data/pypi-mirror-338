@@ -1,0 +1,34 @@
+[project]
+name = "nsdget"
+version = "0.0.4"
+description = "Python API to easily download stimuli and fMRI betas from Natural Scenes Dataset."
+readme = "README.md"
+authors = [{ name = "xnought", email = "drbertucci@hotmail.com" }]
+requires-python = ">=3.10"
+dependencies = [
+    "colored>=2.3.0",
+    "nibabel>=5.3.2",
+    "numpy>=2.2.3",
+    "pandas>=2.2.3",
+    "pillow>=11.1.0",
+    "pyarrow>=19.0.1",
+    "tqdm>=4.67.1",
+]
+
+[project.scripts]
+nsdget = "nsdget:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[dependency-groups]
+dev = [
+    "ipykernel>=6.29.5",
+    "matplotlib>=3.10.1",
+    "nilearn>=0.11.1",
+    "torch==2.2.2",
+]
+
+[tool.hatch.build]
+exclude = ["notebooks/", "Makefile", "uv.lock", "nsdata/", "NOTES.md"]
