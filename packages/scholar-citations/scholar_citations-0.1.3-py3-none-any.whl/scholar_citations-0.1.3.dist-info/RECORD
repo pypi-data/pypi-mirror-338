@@ -1,0 +1,15 @@
+scholar_citations/__init__.py,sha256=yFKrj4bdCJmIxGxeX32OfxM3bEk6kTwZ4nPWF4V5BF0,179
+scholar_citations/__main__.py,sha256=Sn0ZIl1dK1fmWBUNxbayIzOgfpqn-NNv1etlMzVZOsg,104
+scholar_citations/analyzer.py,sha256=nisfdunRY1VSZNjT2qt1nGdaEd0Bw1XYNLsalOkyz40,19316
+scholar_citations/cli.py,sha256=r_sqfAy59m3ugCXFjBx1ID57mtDTct6ubUkvtuOSPjc,3182
+scholar_citations/driver.py,sha256=JwgUBp1es-zUp2JG9fHOnWntGlcLi163Jy3L0KLIOqQ,6308
+scholar_citations/parsers.py,sha256=I6qpsDMByZeNLegwOMdiu9YSwL6oHglO6tTJRMrCric,2243
+scholar_citations/utils.py,sha256=EcxDj9kGTWcI6HrAaY3c3BKmepNZJa-5iUMc1XLEvxg,445
+scholar_citations-0.1.3.dist-info/licenses/LICENSE,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_analyzer.py,sha256=EQGis1d9cEQNmPJqTshhh00mTpp93qaVa1Kx_gPV8ac,1213
+scholar_citations-0.1.3.dist-info/METADATA,sha256=rjhpohtK0RFQng21NAnY3myJiy2flmgG7-q3aI1zW30,6977
+scholar_citations-0.1.3.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+scholar_citations-0.1.3.dist-info/entry_points.txt,sha256=y6B6LcIzcHb3wBW0KEO5fM0O6bDhZpuqm-wXfzO-nQs,65
+scholar_citations-0.1.3.dist-info/top_level.txt,sha256=OIOEfOOsqAX4pdaS-PUrbyl_0d7K_VAfQSdf6fIsNoM,24
+scholar_citations-0.1.3.dist-info/RECORD,,
