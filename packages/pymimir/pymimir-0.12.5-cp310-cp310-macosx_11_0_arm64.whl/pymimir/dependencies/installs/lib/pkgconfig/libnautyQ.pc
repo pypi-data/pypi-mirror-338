@@ -1,0 +1,11 @@
+prefix=/Users/runner/work/mimir/mimir/build/lib.macosx-11.0-arm64-cpython-310/pymimir/dependencies/installs
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: nauty
+Description: Programs and library for graph isomorphism
+Version: 2.8.9
+Libs: -L${libdir} -lnautyQ
+Libs.private:
+Cflags: -I${includedir} -DWORDSIZE=128

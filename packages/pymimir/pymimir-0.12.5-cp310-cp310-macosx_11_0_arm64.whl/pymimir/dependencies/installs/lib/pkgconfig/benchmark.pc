@@ -1,0 +1,12 @@
+prefix=/Users/runner/work/mimir/mimir/build/lib.macosx-11.0-arm64-cpython-310/pymimir/dependencies/installs
+exec_prefix=${prefix}
+libdir=/Users/runner/work/mimir/mimir/build/lib.macosx-11.0-arm64-cpython-310/pymimir/dependencies/installs/lib
+includedir=/Users/runner/work/mimir/mimir/build/lib.macosx-11.0-arm64-cpython-310/pymimir/dependencies/installs/include
+
+Name: benchmark
+Description: Google microbenchmark framework
+Version: 1.8.3
+
+Libs: -L${libdir} -lbenchmark
+Libs.private: -lpthread
+Cflags: -I${includedir}
