@@ -1,0 +1,12 @@
+streamlit
+openai-whisper
+torch
+torchaudio
+pyannote.audio
+faiss-cpu
+langchain
+langchain-community
+langchain-openai
+transformers
+sentence-transformers
+llama-index
