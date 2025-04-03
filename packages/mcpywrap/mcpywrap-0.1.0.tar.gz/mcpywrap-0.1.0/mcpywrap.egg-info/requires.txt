@@ -1,0 +1,8 @@
+click>=8.0.0
+3to2>=1.1.1
+watchdog>=2.0.0
+twine>=3.4.0
+tomli
+tomli-w
+setuptools
+PyQt5>=5.15.0
