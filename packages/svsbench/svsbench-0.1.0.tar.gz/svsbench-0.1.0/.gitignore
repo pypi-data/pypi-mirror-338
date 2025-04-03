@@ -1,0 +1,25 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv
+
+# Vim
+.*.swp
+
+# Output
+out*
+
+# Logs
+logs*
+
+# Jupyter notebooks
+*.ipynb
+
+# All hidden files
+.*
