@@ -1,0 +1,9 @@
+HumanTone/__init__.py,sha256=waxG3_cIJc3NVBsyMtC-b-VJ1VqTGxFjtPw8Poi54YE,231
+HumanTone/paraphrase.py,sha256=oZtK71gE9R0xkl6hdEgf313PDBR8tJWYSTuiivNA6KU,1789
+HumanTone/sentiment.py,sha256=rdl91bvRnI_79ocxaInkVga0hltT-Y88GL8kqkqjULs,803
+HumanTone/similarity.py,sha256=4pdqYie5KxN1pj_dsGlRhw3JN4Og1qLo-x3eod8D5_0,4620
+HumanTone/speech.py,sha256=1FI-hYzv38wDAfgBwLJHyc98-iYhYFJONTPPxcSuruw,462
+humantone-0.0.7.dist-info/METADATA,sha256=c7Ev2zloaBseAxOar5Pg0y6uXPA7uErA-hQPAEvhdEI,718
+humantone-0.0.7.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+humantone-0.0.7.dist-info/top_level.txt,sha256=b816hMNpBExVm2yRPnsaEOb_LRCDK--9F5NXFC3IHx4,10
+humantone-0.0.7.dist-info/RECORD,,
