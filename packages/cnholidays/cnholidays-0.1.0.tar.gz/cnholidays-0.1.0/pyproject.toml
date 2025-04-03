@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cnholidays"
+version = "0.1.0"
+description = "A tool to get Chinese holidays and workdays"
+readme = "README.md"
+authors = [
+    {name = "Henry Wang", email = "whlweb@gmail.com"}
+]
+requires-python = ">=3.6"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://github.com/whlweb/cnholidays" 

@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+cnholidays/__init__.py
+cnholidays/core.py
+cnholidays/examples.py
+cnholidays.egg-info/PKG-INFO
+cnholidays.egg-info/SOURCES.txt
+cnholidays.egg-info/dependency_links.txt
+cnholidays.egg-info/top_level.txt
+tests/test_cnholidays.py
