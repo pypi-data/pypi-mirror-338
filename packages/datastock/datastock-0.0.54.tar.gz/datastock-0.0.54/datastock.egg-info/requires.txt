@@ -1,0 +1,10 @@
+numpy<1.25
+scipy
+matplotlib
+astropy
+
+[formatting]
+ruff
+
+[linting]
+ruff
