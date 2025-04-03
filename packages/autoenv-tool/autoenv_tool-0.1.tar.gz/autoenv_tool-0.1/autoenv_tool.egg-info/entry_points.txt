@@ -1,0 +1,2 @@
+[console_scripts]
+autoenv-tool = autoenv_tool.cli:autoenv_tool
