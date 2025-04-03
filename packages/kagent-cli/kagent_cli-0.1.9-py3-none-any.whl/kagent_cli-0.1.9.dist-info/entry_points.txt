@@ -1,0 +1,2 @@
+[console_scripts]
+kagent-cli = kagent_cli.__main__:main
