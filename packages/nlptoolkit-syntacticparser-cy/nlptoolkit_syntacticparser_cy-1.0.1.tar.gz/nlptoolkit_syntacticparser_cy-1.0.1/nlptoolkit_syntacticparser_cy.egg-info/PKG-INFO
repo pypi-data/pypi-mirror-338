@@ -1,0 +1,15 @@
+Metadata-Version: 2.4
+Name: nlptoolkit-syntacticparser-cy
+Version: 1.0.1
+Summary: Syntactic Parser
+Home-page: https://github.com/StarlangSoftware/SyntacticParser-Cy
+Author: olcaytaner
+Author-email: olcay.yildiz@ozyegin.edu.tr
+Requires-Dist: NlpToolkit-ParseTree-Cy
+Requires-Dist: NlpToolkit-Corpus-Cy
+Requires-Dist: NlpToolkit-DataStructure-Cy
+Dynamic: author
+Dynamic: author-email
+Dynamic: home-page
+Dynamic: requires-dist
+Dynamic: summary
