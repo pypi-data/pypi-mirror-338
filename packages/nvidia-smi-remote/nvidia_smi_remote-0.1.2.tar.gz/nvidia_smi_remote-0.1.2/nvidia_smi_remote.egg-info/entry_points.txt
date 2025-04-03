@@ -1,0 +1,2 @@
+[console_scripts]
+nvidia-smi-remote = nvidia_smi_remote.main:main
