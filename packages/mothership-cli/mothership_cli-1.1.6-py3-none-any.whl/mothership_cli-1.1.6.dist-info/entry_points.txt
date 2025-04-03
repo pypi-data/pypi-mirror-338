@@ -1,0 +1,3 @@
+[console_scripts]
+mothership = mothership_cli.cli:main
+startup = mothership_cli.cli:main
