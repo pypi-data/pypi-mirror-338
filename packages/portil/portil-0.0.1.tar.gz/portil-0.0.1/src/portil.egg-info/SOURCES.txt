@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+src/portil/__init__.py
+src/portil/portil.py
+src/portil.egg-info/PKG-INFO
+src/portil.egg-info/SOURCES.txt
+src/portil.egg-info/dependency_links.txt
+src/portil.egg-info/entry_points.txt
+src/portil.egg-info/requires.txt
+src/portil.egg-info/top_level.txt

@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools >= 77.0.3"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "portil"
+version = "0.0.1"
+authors = [
+  { name="DJ Holt" }
+]
+description = "A cloud-based application port forwarder."
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = ["paramiko", "platformdirs"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+license = {file = "LICENSE"}
+
+[project.scripts]
+portil = "portil:main"
+
+[project.urls]
+Homepage = "https://github.com/djholt/portil"
