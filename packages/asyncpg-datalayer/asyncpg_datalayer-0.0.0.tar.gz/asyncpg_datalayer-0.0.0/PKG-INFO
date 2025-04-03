@@ -1,0 +1,25 @@
+Metadata-Version: 2.3
+Name: asyncpg-datalayer
+Version: 0.0.0
+Summary: Datalayer implementation for Postgres using asyncpg
+License: MIT
+Author: svaponi
+Author-email: 10941963+svaponi@users.noreply.github.com
+Requires-Python: >=3.12,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Dist: asyncpg (>=0.30.0,<0.31.0)
+Requires-Dist: greenlet (>=3.1.1,<4.0.0)
+Requires-Dist: pydantic (>=2.11.1,<3.0.0)
+Requires-Dist: sqlalchemy (>=2.0.40,<3.0.0)
+Description-Content-Type: text/markdown
+
+# asyncpg-datalayer
+
+[![Test](https://github.com/svaponi/asyncpg-datalayer/actions/workflows/run-tests.yml/badge.svg)](https://github.com/svaponi/asyncpg-datalayer/actions/workflows/run-tests.yml)
+
+Datalayer implementation for [Postgres](https://www.postgresql.org/)
+using [asyncpg](https://github.com/MagicStack/asyncpg) (asynchronous Postgres driver).
+
