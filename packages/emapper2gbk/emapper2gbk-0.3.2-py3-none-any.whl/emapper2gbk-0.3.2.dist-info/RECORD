@@ -1,0 +1,13 @@
+emapper2gbk/__init__.py,sha256=SaVbYs2btYt16aId_Wn7GqEm7sWDUsqzPilNEUmu6Ks,829
+emapper2gbk/__main__.py,sha256=acpTd3Z0X5rOzQOOE4Mlzuegl1Gy4DHfjIz60RrT89c,13393
+emapper2gbk/emapper2gbk.py,sha256=QQz3FAlPBBg91V7p3K8aX6wX37WMnzcj-t5Gs2y0EKA,12636
+emapper2gbk/genes_to_gbk.py,sha256=gIhtY8x9be0IcnPgg1ukRyDCNuIjWwi4O1YIr1cy0hI,11473
+emapper2gbk/genomes_to_gbk.py,sha256=YOaQgu8AVJnwmABXykfnmMrSW7Ly4f0ZFI3Br0bB18M,17837
+emapper2gbk/utils.py,sha256=ZlyjqQR7xSPxIDrRktNfIYHpPD3vYuGL0H9uxW3NyaU,24713
+emapper2gbk-0.3.2.dist-info/licenses/AUTHORS.rst,sha256=GWkWhy3kSXKsho63vTJvuHsEEO7foeUxeqrv6DmbkXA,226
+emapper2gbk-0.3.2.dist-info/licenses/LICENSE,sha256=rymAta8z0pwrrZEKjbZ7sKE4SwTwIibuHYwF3cNo51w,7662
+emapper2gbk-0.3.2.dist-info/METADATA,sha256=pKqHB44qHnVqsmEv4CkNgDIKeqcBUH3hTr4p-C_nzNU,18585
+emapper2gbk-0.3.2.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+emapper2gbk-0.3.2.dist-info/entry_points.txt,sha256=kgQLI7cgU37A0jxeCmCO5KyIrSzp7LCmdba79Aouigw,57
+emapper2gbk-0.3.2.dist-info/top_level.txt,sha256=pbepKxmzW4W1IU7TJEEFZ9X-PlrtiUyszwLr5Hq3Hg4,12
+emapper2gbk-0.3.2.dist-info/RECORD,,
