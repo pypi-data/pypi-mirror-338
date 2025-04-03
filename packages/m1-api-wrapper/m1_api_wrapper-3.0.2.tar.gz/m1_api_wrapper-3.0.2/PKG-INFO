@@ -1,0 +1,30 @@
+Metadata-Version: 2.4
+Name: m1_api_wrapper
+Version: 3.0.2
+Summary: M1 RetroScore API Wrapper
+Home-page: https://github.com/molecule-one/m1wrapper-python
+Author: Molecule.one
+Author-email: support@molecule.one
+License: # todo: license
+        
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests==2.32.3
+Requires-Dist: urllib3==2.3.0
+Dynamic: author
+Dynamic: author-email
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: license
+Dynamic: license-file
+Dynamic: requires-dist
+Dynamic: summary
+
+# M1 RetroScore API Wrapper
+
+## User guide
+
+Please find the API user guide link in the footer section of your RetroScore environment.
+
+https://hub.YOUR_INSTANCE.molecule.one/docs/retro
