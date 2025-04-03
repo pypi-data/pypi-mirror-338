@@ -1,0 +1,30 @@
+Metadata-Version: 2.4
+Name: teste_fiap-package
+Version: 1.0.0
+Summary: Descricao da sua lib teste_fiap
+Home-page: https://github.com/milerazevedo0/teste_fiap
+Author: Miler Azevedo
+Author-email: estudos.miler@gmail.com
+License: MIT
+Description-Content-Type: text/markdown
+Dynamic: author
+Dynamic: author-email
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: license
+Dynamic: summary
+
+# Teste_fiap
+A simple example library.
+## Installation
+```sh
+pip install teste_fiap
+```
+## Usage
+```python
+from teste_fiap import hello_world
+print(hello_world())
+```
+## Liicense
+MIT

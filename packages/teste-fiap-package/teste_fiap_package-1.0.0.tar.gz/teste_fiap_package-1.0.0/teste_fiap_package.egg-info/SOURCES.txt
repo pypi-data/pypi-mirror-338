@@ -1,0 +1,9 @@
+README.md
+setup.py
+teste_fiap/__init__.py
+teste_fiap/core.py
+teste_fiap_package.egg-info/PKG-INFO
+teste_fiap_package.egg-info/SOURCES.txt
+teste_fiap_package.egg-info/dependency_links.txt
+teste_fiap_package.egg-info/top_level.txt
+tests/test_core.py
