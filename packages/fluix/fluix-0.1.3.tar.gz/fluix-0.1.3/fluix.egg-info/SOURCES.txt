@@ -1,0 +1,13 @@
+README.md
+pyproject.toml
+fluix/__init__.py
+fluix/cli.py
+fluix.egg-info/PKG-INFO
+fluix.egg-info/SOURCES.txt
+fluix.egg-info/dependency_links.txt
+fluix.egg-info/entry_points.txt
+fluix.egg-info/requires.txt
+fluix.egg-info/top_level.txt
+fluix/cmds/anim_cmd.py
+fluix/core/__init__.py
+fluix/core/animate.py
