@@ -1,0 +1,62 @@
+[project]
+name = "PyNN"
+version = "0.12.4"
+description = "A Python package for simulator-independent specification of neuronal network models"
+readme = "README.rst"
+requires-python = ">=3.9"
+license = "CECILL-2.1"
+authors = [
+  {name = "The PyNN team", email = "pynn-maintainers@protonmail.com"}
+]
+maintainers = [
+  {name = "The PyNN team", email = "pynn-maintainers@protonmail.com"}
+]
+keywords = ["computational neuroscience, simulation, neuron, nest, brian2, neuromorphic"]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Environment :: Console",
+  "Intended Audience :: Science/Research",
+  "Natural Language :: English",
+  "Operating System :: OS Independent",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: 3.13",
+  "Topic :: Education",
+  "Topic :: Scientific/Engineering"
+]
+dependencies = [
+  "lazyarray>=0.5.2",
+  "neo>=0.13.4",
+  "morphio"
+]
+
+[project.optional-dependencies]
+test = ["pytest", "pytest-cov", "flake8", "wheel", "mpi4py", "scipy", "matplotlib", "Cheetah3", "h5py", "Jinja2"]
+doc = ["sphinx"]
+examples = ["matplotlib", "scipy"]
+plotting = ["matplotlib", "scipy"]
+MPI = ["mpi4py"]
+sonata = ["h5py"]
+neuron = ["neuron", "nrnutils"]
+brian2 = ["brian2"]
+arbor = ["arbor==0.9.0", "libNeuroML"]
+spiNNaker = ["spyNNaker"]
+neuroml = ["libNeuroML"]
+
+[project.urls]
+homepage = "http://neuralensemble.org/PyNN/"
+documentation = "http://neuralensemble.org/docs/PyNN/"
+repository = "https://github.com/NeuralEnsemble/PyNN"
+changelog = "http://neuralensemble.org/docs/PyNN/release_notes.html"
+download = "http://pypi.python.org/pypi/PyNN"
+
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["pyNN*"]
