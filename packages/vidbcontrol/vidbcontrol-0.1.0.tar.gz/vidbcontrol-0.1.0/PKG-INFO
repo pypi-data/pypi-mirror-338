@@ -1,0 +1,80 @@
+Metadata-Version: 2.4
+Name: vidbcontrol
+Version: 0.1.0
+Summary: Add your description here
+License-File: LICENSE.txt
+Requires-Python: >=3.10
+Requires-Dist: psycopg2>=2.9.10
+Description-Content-Type: text/markdown
+
+
+
+# vidbcontrol
+
+一个可以进行数据验证的服务器配置信息库
+
+## 安装
+
+```powershell
+pip install vidbcontrol
+```
+
+## 使用
+
+### 生成sql语句
+
+```python
+    # 示例使用
+    table = Query("name", "public")
+
+    try:
+        sql, params = table.select(**{
+            "columns": ["name AS username", "age AS userage"],
+            "where": {
+                "and": {
+                    "name=": ["zhoubin", "zhangsan"],  # 支持列表
+                    "or": {
+                        "age>": 20,
+                        "age<": 10
+                    },
+                    "age BETWEEN": [18, 30]
+                }
+            },
+            "orderby": "name",
+            "limit": 1
+        })
+        print("SQL 语句:", sql)
+        print("参数列表:", params)
+
+        sql, params = table.insert({"name":  "test", "age": 20})
+        print("SQL 语句:", sql)
+        print("参数列表:", params)
+
+        sql, params = table.insert_mul(**{
+            "columns": ["name", "age"],
+            "data": [
+                ["zhoubin", 28],
+                ["zhangsan", 30]
+            ]
+        })
+        print("SQL 语句:", sql)
+        print("参数列表:", params)
+
+        sql, params = table.update({"name":  "test", "age": 20}, {"name=":  "test", "age=": 20})
+        print("SQL 语句:", sql)
+        print("参数列表:", params)
+
+        sql, params = table.delete({"name=":  "test", "age=": 20})
+        print("SQL 语句:", sql)
+        print("参数列表:", params)
+    except DBException as e:
+        print(f"数据库异常: {e}")
+```
+
+## 依赖库
+
+- `psycopg2`
+
+## 版权说明
+
+该项目签署了MIT 授权许可。详细请查看LICENSE
