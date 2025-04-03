@@ -1,0 +1,15 @@
+awkward
+numpy
+pandas
+xarray
+sparse
+h5py
+pyarrow
+pooch
+
+[notebooks]
+notebook
+
+[test]
+pytest
+pytest-cov
