@@ -1,0 +1,34 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pygridsio"
+version = "0.3.17"
+description = "This is a utility package to read in .zmap and .asc grids to numpy or xarrays"
+readme = "README.md"
+authors = [
+    { name = "Hen Brett", email = "hen.brett@tno.nl" }
+]
+license = { text = "MIT" }  # Adjust if necessary
+requires-python = ">=3.6"
+dependencies = [
+    "numpy",
+    "pandas",
+    "pykrige",
+    "xarray",
+    "rioxarray",
+    "netCDF4",
+    "plotly",
+    "geopandas",
+    "gdal"
+]
+
+[project.urls]
+Homepage = "https://ci.tno.nl/gitlab/AGS/pygridsio.git"
+
+[tool.setuptools.packages.find]
+include = ["pygridsio*"]
+
+[tool.setuptools.package-data]
+"pygridsio" = ["**/*"]  # Ensures package data is included
