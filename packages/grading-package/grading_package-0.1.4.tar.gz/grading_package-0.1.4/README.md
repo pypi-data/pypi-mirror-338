@@ -1,0 +1,151 @@
+# Grading Package README
+
+## Overview
+
+This Python grading package allows users to calculate their GPA, CGPA, and predict their final CGPA based on their current performance and remaining semesters. The package is modular, with different modules dedicated to specific tasks such as calculating GPA, CGPA, displaying results, and managing user input.
+
+### Key Features:
+
+1. **GPA Calculation**: Calculate the GPA for each semester based on grades and credit hours.
+2. **CGPA Calculation**: Compute the cumulative GPA across multiple semesters.
+3. **Grade Conversion**: Convert letter grades to grade points for GPA calculations.
+4. **Prediction**: Predict the final CGPA based on current performance and the target GPA for remaining semesters.
+5. **Table Display**: Display a table of GPA and credits for each semester in a structured format.
+
+## Modules and Functions
+
+### 1. **grade_convertor.py**
+
+This module is responsible for converting letter grades to grade points.
+
+#### Functions:
+
+- **`grade_to_point(grade)`**:
+  - Converts a letter grade (e.g., A, B+, C) to its corresponding grade point.
+  - Returns `None` for invalid grades.
+
+### 2. **gpa_calculator.py**
+
+This module handles the calculation of GPA for a list of courses.
+
+#### Functions:
+
+- **`calculate_gpa(courses)`**:
+  - Takes a list of courses where each course is a dictionary containing "Grade" and "Credit Hours".
+  - Returns the GPA calculated as the weighted average of grade points and credits.
+
+### 3. **input_handler.py**
+
+This module facilitates the input of course data from the user.
+
+#### Functions:
+
+- **`get_courses()`**:
+  - Prompts the user to enter the name of the course, grade, and credit hours.
+  - Collects and returns a list of courses as dictionaries.
+  - The loop continues until the user enters 'q' to quit.
+
+### 4. **predictions.py**
+
+This module predicts the final CGPA based on the current CGPA and the remaining semesters.
+
+#### Functions:
+
+- **`predict_final_cgpa(current_cgpa, remaining_semesters)`**:
+  - Predicts the final CGPA assuming the user maintains a GPA in different ranges (e.g., 4.0, 3.5, 3.0, 2.5) in the remaining semesters.
+
+### 5. **table_display.py**
+
+This module is used to display the GPA and credits for each semester in a tabular format.
+
+#### Functions:
+
+- **`display_table(semesters)`**:
+  - Accepts a list of semesters, each containing a GPA and credit hours, and prints them in a neat table format.
+
+### 6. **cummulative_gpa.py**
+
+This module handles the calculation of the cumulative GPA (CGPA).
+
+#### Functions:
+
+- **`calculate_cgpa(semesters)`**:
+  - Calculates the cumulative GPA from a list of semesters, each containing a GPA and credits.
+
+### 7. **display_results.py**
+
+This module displays the final results to the user.
+
+#### Functions:
+
+- **`display_gpa(gpa)`**:
+  - Displays the calculated GPA or CGPA to the user.
+
+---
+
+## How to Use
+
+1. **Install the Grading Package**:
+   Clone or download this repository, then ensure all modules are available in your project directory.
+   ## How to Install
+
+You can easily install the grading package from PyPI using pip:
+
+````bash
+pip install grading-package
+or to install a specific version pip install grading-package==0.1.3
+
+
+2. **Run the Program**:
+   Run the `main()` function in `main.py` to start the grading system.
+
+3. **Input Courses and Grades**:
+   Follow the prompts to enter the course name, grade, and credit hours for each semester. Enter `q` to quit adding courses.
+
+4. **View GPA and CGPA**:
+   After inputting all data, the program will display the GPA for each semester, your cumulative GPA (CGPA), and predictions for your final CGPA based on various target GPAs.
+
+---
+
+## Example Usage
+
+```python
+# Running the program will prompt the user for inputs
+if __name__ == "__main__":
+    main()
+
+
+
+````
+
+# Sample Output
+
+Enter number of semesters: 2
+
+Semester 1
+Enter course name, enter 'q' to quit: Math 101
+Enter grade (A, A-, B+, B, C+, C, D, E, F): A
+Enter credit hours: 4
+Enter course name, enter 'q' to quit: Science 101
+Enter grade (A, A-, B+, B, C+, C, D, E, F): B+
+Enter credit hours: 3
+Enter course name, enter 'q' to quit: q
+
+Semester-wise GPA and Credits:
+
++-----------+--------+--------+
+| Semester | GPA | Credits|
++-----------+--------+--------+
+| 1 | 3.75 | 7 |
+| 2 | 3.50 | 6 |
++-----------+--------+--------+
+
+Your Cumulative GPA (CGPA) is:
+Your GPA is: 3.65
+
+Enter number of remaining semesters: 3
+Based on your current performance, here are some CGPA predictions:
+If you maintain a GPA of 4.0, your final CGPA will be: 3.83
+If you maintain a GPA of 3.5, your final CGPA will be: 3.70
+If you maintain a GPA of 3.0, your final CGPA will be: 3.58
+If you maintain a GPA of 2.5, your final CGPA will be: 3.45
