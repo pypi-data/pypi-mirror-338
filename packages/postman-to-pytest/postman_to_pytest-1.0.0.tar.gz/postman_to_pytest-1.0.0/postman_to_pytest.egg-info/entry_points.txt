@@ -1,0 +1,2 @@
+[console_scripts]
+postman-to-pytest = postman_to_pytest:main

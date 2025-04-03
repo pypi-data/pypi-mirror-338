@@ -1,0 +1,56 @@
+[build-system]
+requires = ["setuptools>=45", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "postman-to-pytest"
+version = "1.0.0"
+description = "A tool to convert Postman collections to pytest test files"
+readme = "README.md"
+authors = [{name = "Barun Yadav", email = "benz3k3@gmail.com"}]
+license = {file = "LICENSE"}
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Developers",
+    "Topic :: Software Development :: Testing",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+keywords = ["postman", "pytest", "testing", "api", "converter"]
+dependencies = [
+]
+requires-python = ">=3.8"
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.4.0",
+    "pytest-cov>=4.1.0",
+    "black>=22.3.0",
+    "isort>=5.10.1",
+    "flake8>=4.0.1",
+    "twine>=4.0.2",
+    "build>=0.10.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/benz1k1/postman-to-pytest"
+Repository = "https://github.com/benz1k1/postman-to-pytest.git"
+"Bug Tracker" = "https://github.com/benz1k1/postman-to-pytest/issues"
+
+[project.scripts]
+postman-to-pytest = "postman_to_pytest:main"
+
+[tool.black]
+line-length = 88
+target-version = ["py38"]
+include = '\.pyi?$'
+
+[tool.isort]
+profile = "black"
+multi_line_output = 3 
