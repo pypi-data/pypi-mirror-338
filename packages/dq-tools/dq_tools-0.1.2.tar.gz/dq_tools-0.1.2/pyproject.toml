@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=77.0.0"]  # Version qui supporte la nouvelle syntaxe de license
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "dq-tools"
+version = "0.1.2"
+description = "Outil léger de data quality compatible avec DuckDB en mémoire"
+authors = [
+  { name="Abdoul-Karim CAMARA", email="akcamara14@gmail.com" }
+]
+readme = "README.md"
+license = "MIT"  # Nouvelle syntaxe simple pour la license
+requires-python = ">=3.8"
+dependencies = [
+  "duckdb",
+  "pyyaml"
+]
+
+[tool.setuptools]
+packages = ["dq_tools"]  # Spécifie explicitement le package à inclure
+package-dir = {"" = "."}
+
+[project.urls]
+Homepage = "https://pypi.org/project/dq-tools/"
