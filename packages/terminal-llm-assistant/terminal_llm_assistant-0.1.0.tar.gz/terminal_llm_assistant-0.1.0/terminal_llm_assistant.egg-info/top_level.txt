@@ -1,0 +1,2 @@
+terminal_llm_assistant
+tests

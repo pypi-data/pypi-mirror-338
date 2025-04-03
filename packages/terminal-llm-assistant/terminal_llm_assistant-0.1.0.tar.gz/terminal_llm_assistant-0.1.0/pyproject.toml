@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "terminal-llm-assistant"
+version = "0.1.0"
+description = "Assistente de terminal que integra com a API do Google Gemini"
+readme = "README.md"
+authors = [
+    {name = "Seu Nome", email = "seu.email@empresa.com"}
+]
+license = {text = "MIT"}
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+requires-python = ">=3.7"
+dependencies = [
+    "python-dotenv>=1.0.0",
+    "requests>=2.25.0",
+    "litellm>=1.0.0",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/seuusuario/terminal-llm-assistant"
+"Bug Tracker" = "https://github.com/seuusuario/terminal-llm-assistant/issues"
+
+[project.scripts]
+terminal-llm = "terminal_llm_assistant.cli:main"
+ai = "terminal_llm_assistant.cli:ask"
