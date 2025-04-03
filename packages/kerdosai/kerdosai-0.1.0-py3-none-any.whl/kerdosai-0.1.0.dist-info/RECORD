@@ -1,0 +1,9 @@
+kerdosai/__init__.py,sha256=9BCKKd3iOPot2puH1M1QHG2iBB8TZrtLnp25yOYSj6k,311
+kerdosai/agent.py,sha256=fm_-z9djRmHdWsr_peEZMVyNSKs9lzE6wSVgjuabiTA,4310
+kerdosai/deployer.py,sha256=01P_bboiI5cngLF7OXPF8gH1zq-gKryrmF_3LOtq2Wk,5264
+kerdosai/processor.py,sha256=a34eTByuFKqHronGQEyvCjKOsxtF8n0gAbMW0V_Q_zg,4459
+kerdosai/trainer.py,sha256=NA7IQoTfOlC1hw53Vnl_T85e6ZnMrkWIkjreviCiu9A,3106
+kerdosai-0.1.0.dist-info/METADATA,sha256=0OvKM7Z9C2SdbbNL7Mi0UCCbq5iPlNThoaUmuCEYODc,3132
+kerdosai-0.1.0.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+kerdosai-0.1.0.dist-info/top_level.txt,sha256=7mxwNm4xVSTrp3nn6m4blXplAlyt1OaMuBgre1s8EJw,9
+kerdosai-0.1.0.dist-info/RECORD,,
