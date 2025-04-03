@@ -1,0 +1,69 @@
+{
+    "entity_component": {
+        "_": {
+            "state": {
+                "off": "Up-to-date",
+                "on": "Update available"
+            },
+            "state_attributes": {
+                "auto_update": {
+                    "name": "Auto update",
+                    "state": {
+                        "false": "No",
+                        "true": "Yes"
+                    }
+                },
+                "in_progress": {
+                    "name": "In progress",
+                    "state": {
+                        "false": "No",
+                        "true": "Yes"
+                    }
+                },
+                "installed_version": {
+                    "name": "Installed version"
+                },
+                "latest_version": {
+                    "name": "Latest version"
+                },
+                "release_summary": {
+                    "name": "Release summary"
+                },
+                "release_url": {
+                    "name": "Release URL"
+                },
+                "skipped_version": {
+                    "name": "Skipped version"
+                },
+                "title": {
+                    "name": "Title"
+                }
+            }
+        },
+        "firmware": {
+            "name": "Firmware"
+        }
+    },
+    "services": {
+        "clear_skipped": {
+            "description": "Removes the skipped version marker from an update.",
+            "name": "Clear skipped update"
+        },
+        "install": {
+            "fields": {
+                "backup": {
+                    "name": "Backup"
+                },
+                "version": {
+                    "description": "The version to install. If omitted, the latest version will be installed.",
+                    "name": "Version"
+                }
+            },
+            "name": "Install update"
+        },
+        "skip": {
+            "description": "Marks currently available update as skipped.",
+            "name": "Skip update"
+        }
+    }
+}
