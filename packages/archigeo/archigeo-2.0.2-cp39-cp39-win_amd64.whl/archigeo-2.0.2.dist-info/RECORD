@@ -1,0 +1,11 @@
+archigeo/basic/geomutils.pyd,sha256=TSK3HvTk_7tBMzEw5Kzs1zaRLgzh5FMeThAJL2yA46s,842240
+archigeo/basic/geomutils.pyi,sha256=MTDfV5uR3YwPaOpYMBeaFUpx74gmYlKdBgM31842ziU,9639
+archigeo/compa/fieldgen.pyi,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+archigeo/rhinex/rhino_extend.pyd,sha256=zvBZfTNFR5ScCj8AWe7LxrvfWOVT-WqABtx26KCK_MQ,214528
+archigeo/rhinex/rhino_extend.pyi,sha256=x5KUpZxGN06ZCDQBfCmRrtN5RhlHiVoGsSjJ8L9U9ko,2202
+archigeo/visual/gamewindow.pyi,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+archigeo-2.0.2.dist-info/licenses/LICENSE,sha256=-cAr8ndmmrJbWsTXi4YuVVZ6dLWbeHpqs15-YxefQdE,1083
+archigeo-2.0.2.dist-info/METADATA,sha256=8fjO1Y0SXwCRHqigW7mUYHEgj6pYqxRjH6QKhugeCZk,431
+archigeo-2.0.2.dist-info/WHEEL,sha256=6-O8mn8U2U2bCcBsvZ-Lm1GPKa3quqOitz1I3qhmHJs,98
+archigeo-2.0.2.dist-info/top_level.txt,sha256=XQ_pUka8xgu7SGt3a-GpkcL3ug7hiv_u-lDznTwzbes,9
+archigeo-2.0.2.dist-info/RECORD,,
