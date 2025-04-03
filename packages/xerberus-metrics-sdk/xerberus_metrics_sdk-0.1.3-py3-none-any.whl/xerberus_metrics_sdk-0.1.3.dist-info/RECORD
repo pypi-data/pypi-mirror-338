@@ -1,0 +1,13 @@
+xerberus/__init__.py,sha256=N8O_ltTRHlWTxjxVfi5nT0L9eX5HkAai-8vFceT94wM,105
+xerberus/client.py,sha256=AeQKupq3Njxd26IpkgBojNZq3xZdixw3bkDwr-2kUvw,5635
+xerberus/config.py,sha256=5RL6E02s_sFDg_RNzjdqBJRfKzTfnZCB1oKtM6OgRYU,346
+xerberus/queries/chains.graphql,sha256=tIvAuZN9_mfsHPPdUSad2_f2n_jmdh4TuT1cO4nw7w8,30
+xerberus/queries/metrics.graphql,sha256=OclSSLune7uDy-T55hXRmaxEMbmEKgTtEzlEt5PPoEk,1038
+xerberus/queries/tokens.graphql,sha256=IEAQ3FPH6S13gI2JsFdpuybgAn5Tgl34inQodyurDdc,283
+xerberus/queries/tokens_by_similar_address.graphql,sha256=Y1uedYhmCs2arSrtSsQT9C5nYwf-fwzD96clIiszjug,356
+xerberus/queries/tokens_by_similar_symbol.graphql,sha256=wN0CZ2DlHNdwIUNhcqe-hVnsW6f9-RYHwY3s2f8zySw,317
+xerberus_metrics_sdk-0.1.3.dist-info/licenses/LICENSE,sha256=sq-mc-N6vD3w5fJvLshR3vvWSFbA9X5uN2k8-LYb6aI,1086
+xerberus_metrics_sdk-0.1.3.dist-info/METADATA,sha256=6EmEctc6oG1NzlC_2A17-dvuerkrBZNZAunC2Wzsblc,5003
+xerberus_metrics_sdk-0.1.3.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+xerberus_metrics_sdk-0.1.3.dist-info/top_level.txt,sha256=Li1IuvGXiSFELIrdjkK7_bfBilPr3nZ2M2uMUUq6WaA,9
+xerberus_metrics_sdk-0.1.3.dist-info/RECORD,,
