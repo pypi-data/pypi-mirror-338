@@ -1,0 +1,2 @@
+[console_scripts]
+dcm2dir = dcm2dir.dcm2dir:main
