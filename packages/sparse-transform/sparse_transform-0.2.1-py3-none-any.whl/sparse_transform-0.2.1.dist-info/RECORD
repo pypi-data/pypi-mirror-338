@@ -1,0 +1,17 @@
+sparse_transform/__init__.py,sha256=-bomfBvgdhPfn6XnI11A8hfmGE9N_thGtBwMs6NBcQo,782
+sparse_transform/qsft/__init__.py,sha256=BotqUAr_7eIFE1L9WY_sjCrROXQDNB91W0VXAGgdFJU,45
+sparse_transform/qsft/qsft.py,sha256=Pg227FxW2lXzuGWBmR1xbMubIT7sHJYHU0UrNyr55P0,23747
+sparse_transform/qsft/codes/BCH.py,sha256=7TYCelL7yxFdxT43Wbj-TRJZUlHyQgGeYqsusFw7A8s,14218
+sparse_transform/qsft/codes/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sparse_transform/qsft/signals/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sparse_transform/qsft/signals/input_signal.py,sha256=vRuwUPbnuXzSISGetv_f9rd__WdATr2lX2Pt_APVSUk,3691
+sparse_transform/qsft/signals/input_signal_subsampled.py,sha256=5nEx3kTvVkwGaUf2m4qOAKUjrB9icEeAgcUvrFf6DCc,14449
+sparse_transform/qsft/signals/synthetic_signal.py,sha256=C_IXSfUzVwYAgqt-azEpX26u09NM__PigFqJG_40vBM,9273
+sparse_transform/qsft/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sparse_transform/qsft/utils/general.py,sha256=qTaeYi9Ae5pIEKTytYVqVNtVu2rMhdoYnVGutdcH0S4,11430
+sparse_transform/qsft/utils/query.py,sha256=LPo78uIZT3K2iXN4WKBbnfEmt4_m5z2q-rG2DWA5c6c,11027
+sparse_transform/qsft/utils/reconstruct.py,sha256=Ll8hqwQkNjSYwUnKQGaBgHqRdyyylAw9eIvvadMKLdg,5982
+sparse_transform-0.2.1.dist-info/METADATA,sha256=RINE-z6bAfTStL12eEk38Z1Yvo-cp7i75tGzQcOwYF0,759
+sparse_transform-0.2.1.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+sparse_transform-0.2.1.dist-info/licenses/LICENSE,sha256=2bm9uFabQZ3Ykb_SaSU_uUbAj2-htc6WJQmS_65qD00,1073
+sparse_transform-0.2.1.dist-info/RECORD,,
