@@ -1,0 +1,33 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:browser="http://namespaces.zope.org/browser"
+    xmlns:plone="http://namespaces.plone.org/plone"
+    i18n_domain="rer.immersivereader"
+    >
+
+  <!-- Publish static files -->
+  <plone:static
+      directory="static"
+      name="rer.immersivereader"
+      type="plone"
+      />
+
+  <browser:viewlet
+      name="rer-immersivereader"
+      for="plone.dexterity.interfaces.IDexterityContent"
+      manager="plone.app.layout.viewlets.interfaces.IAboveContentBody"
+      class=".viewlets.ImmersiveReaderViewlet"
+      template="immersive_reader_viewlet.pt"
+      permission="zope2.View"
+      layer="rer.immersivereader.interfaces.IRerImmersivereaderLayer"
+      />
+
+  <browser:page
+      name="immersive-reader-settings"
+      for="Products.CMFPlone.interfaces.IPloneSiteRoot"
+      class=".controlpanel.SettingsView"
+      permission="cmf.ManagePortal"
+      layer="rer.immersivereader.interfaces.IRerImmersivereaderLayer"
+      />
+
+</configure>

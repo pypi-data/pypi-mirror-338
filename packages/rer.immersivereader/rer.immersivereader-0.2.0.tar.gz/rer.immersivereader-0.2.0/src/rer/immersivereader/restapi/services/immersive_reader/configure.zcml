@@ -1,0 +1,26 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:cache="http://namespaces.zope.org/cache"
+    xmlns:plone="http://namespaces.plone.org/plone"
+    xmlns:zcml="http://namespaces.zope.org/zcml"
+    >
+
+  <plone:service
+      method="GET"
+      factory=".get.ImmersiveReaderGet"
+      for="zope.interface.Interface"
+      permission="zope2.View"
+      name="@immersive-reader"
+      />
+
+  <adapter
+      factory=".get.ImmersiveReader"
+      name="immersive-reader"
+      />
+
+  <cache:ruleset
+      for=".get.ImmersiveReaderGet"
+      ruleset="plone.content.dynamic"
+      />
+
+</configure>
