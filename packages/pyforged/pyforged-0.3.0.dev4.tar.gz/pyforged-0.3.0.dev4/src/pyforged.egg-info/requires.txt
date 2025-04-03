@@ -1,0 +1,11 @@
+pip~=25.0.1
+wheel~=0.45.1
+setuptools~=61.0.0
+loguru~=0.7.3
+pytest~=8.3.5
+pytest-asyncio~=0.25.3
+pytest-loguru~=0.4.0
+watchdog~=6.0.0
+
+[dev]
+tox

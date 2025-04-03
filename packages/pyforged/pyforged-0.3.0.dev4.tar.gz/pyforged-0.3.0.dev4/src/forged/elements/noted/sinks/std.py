@@ -1,0 +1,3 @@
+"""
+stdout or stderr
+"""
