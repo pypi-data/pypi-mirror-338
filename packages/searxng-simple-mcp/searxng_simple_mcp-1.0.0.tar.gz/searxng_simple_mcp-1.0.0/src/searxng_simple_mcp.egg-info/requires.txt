@@ -1,0 +1,7 @@
+fastmcp
+httpx
+pydantic
+pydantic-settings
+
+[dev]
+ruff

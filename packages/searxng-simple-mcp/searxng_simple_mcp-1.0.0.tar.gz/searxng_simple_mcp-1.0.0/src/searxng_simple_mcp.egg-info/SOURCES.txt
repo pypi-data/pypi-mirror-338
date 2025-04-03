@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+src/run_server.py
+src/searxng_simple_mcp/__init__.py
+src/searxng_simple_mcp/config.py
+src/searxng_simple_mcp/searxng_client.py
+src/searxng_simple_mcp/server.py
+src/searxng_simple_mcp.egg-info/PKG-INFO
+src/searxng_simple_mcp.egg-info/SOURCES.txt
+src/searxng_simple_mcp.egg-info/dependency_links.txt
+src/searxng_simple_mcp.egg-info/entry_points.txt
+src/searxng_simple_mcp.egg-info/requires.txt
+src/searxng_simple_mcp.egg-info/top_level.txt
