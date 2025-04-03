@@ -1,0 +1,3 @@
+[console_scripts]
+dev-watch=watcher:main
+
