@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="../../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>hipcheck_sdk.query &#8212; hipcheck-sdk 0.1.0 documentation</title>
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=5ecbeea2" />
+    <link rel="stylesheet" type="text/css" href="../../_static/basic.css?v=686e5160" />
+    <link rel="stylesheet" type="text/css" href="../../_static/alabaster.css?v=27fed22d" />
+    <script src="../../_static/documentation_options.js?v=01f34227"></script>
+    <script src="../../_static/doctools.js?v=9bcbadda"></script>
+    <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+   
+  <link rel="stylesheet" href="../../_static/custom.css" type="text/css" />
+  
+
+  
+  
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <h1>Source code for hipcheck_sdk.query</h1><div class="highlight"><pre>
+<span></span><span class="c1"># SPDX-License-Identifier: Apache-2.0</span>
+
+<span class="kn">import</span><span class="w"> </span><span class="nn">functools</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">typing</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">typing</span><span class="w"> </span><span class="kn">import</span> <span class="n">Dict</span><span class="p">,</span> <span class="n">Optional</span><span class="p">,</span> <span class="n">Callable</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">dataclasses</span><span class="w"> </span><span class="kn">import</span> <span class="n">dataclass</span>
+
+<span class="kn">import</span><span class="w"> </span><span class="nn">pydantic</span>
+
+
+<span class="nd">@dataclass</span>
+<span class="k">class</span><span class="w"> </span><span class="nc">Endpoint</span><span class="p">:</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Class to encapsulate information about a `@query`-decorated function, thus</span>
+<span class="sd">    declared to be an endpoint for this plugin.</span>
+
+<span class="sd">    :meta private:</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="c1"># The name of the endpoint. If the default endpoint, name is &quot;&quot;</span>
+    <span class="n">name</span><span class="p">:</span> <span class="nb">str</span>
+    <span class="c1"># The actual function that implements this endpoint</span>
+    <span class="n">func</span><span class="p">:</span> <span class="n">Callable</span>
+    <span class="c1"># The JSON Schema for the expected key</span>
+    <span class="n">key_schema</span><span class="p">:</span> <span class="nb">dict</span>
+    <span class="c1"># The object type to convert json to</span>
+    <span class="n">key_type</span><span class="p">:</span> <span class="nb">type</span>
+    <span class="c1"># The JSON Schema for the produced output object</span>
+    <span class="n">output_schema</span><span class="p">:</span> <span class="nb">dict</span>
+
+    <span class="k">def</span><span class="w"> </span><span class="nf">is_default</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">name</span> <span class="o">==</span> <span class="s2">&quot;&quot;</span>
+
+
+<span class="c1"># A global registry of all detected `@query`-decorated functions in this plugin.</span>
+<span class="c1"># Used by the default `Plugin` class implementation to implement `queries()` and</span>
+<span class="c1"># `schemas()` functions.</span>
+<span class="n">query_registry</span><span class="p">:</span> <span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">Endpoint</span><span class="p">]</span> <span class="o">=</span> <span class="p">{}</span>
+
+
+<span class="k">def</span><span class="w"> </span><span class="nf">get_json_schema_for_type</span><span class="p">(</span><span class="n">ty</span><span class="p">:</span> <span class="nb">type</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">dict</span><span class="p">:</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Gets the JSON Schema for a Python object type. If the type is a child of</span>
+<span class="sd">    pydantic.BaseModel, use that. Otherwise, try to derive the schema.</span>
+
+<span class="sd">    :param type ty: The type for which to derive a JSON schema</span>
+<span class="sd">    :return: A jsonable dict representing the schema for `ty`</span>
+
+<span class="sd">    :meta private:</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">if</span> <span class="nb">issubclass</span><span class="p">(</span><span class="n">ty</span><span class="p">,</span> <span class="n">pydantic</span><span class="o">.</span><span class="n">BaseModel</span><span class="p">):</span>
+        <span class="k">return</span> <span class="n">ty</span><span class="o">.</span><span class="n">model_json_schema</span><span class="p">()</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">adapter</span> <span class="o">=</span> <span class="n">pydantic</span><span class="o">.</span><span class="n">TypeAdapter</span><span class="p">(</span><span class="n">ty</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">adapter</span><span class="o">.</span><span class="n">json_schema</span><span class="p">()</span>
+
+
+<span class="k">def</span><span class="w"> </span><span class="nf">register_query</span><span class="p">(</span><span class="n">func</span><span class="p">,</span> <span class="n">default</span><span class="p">,</span> <span class="n">key_schema</span><span class="p">,</span> <span class="n">output_schema</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Add the function to `query_registry`. If `key_schema` or `output_schema`</span>
+<span class="sd">    are None, try to derive the schema.</span>
+
+<span class="sd">    :meta private:</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">global</span> <span class="n">query_registry</span>
+
+    <span class="c1"># Validate that func has 2 positional args</span>
+    <span class="k">if</span> <span class="n">func</span><span class="o">.</span><span class="vm">__code__</span><span class="o">.</span><span class="n">co_argcount</span> <span class="o">!=</span> <span class="mi">2</span><span class="p">:</span>
+        <span class="k">raise</span> <span class="ne">TypeError</span><span class="p">(</span><span class="s2">&quot;query function must have exactly 2 positional arguments&quot;</span><span class="p">)</span>
+    <span class="n">var_names</span> <span class="o">=</span> <span class="n">func</span><span class="o">.</span><span class="vm">__code__</span><span class="o">.</span><span class="n">co_varnames</span>
+    <span class="n">hints</span> <span class="o">=</span> <span class="n">typing</span><span class="o">.</span><span class="n">get_type_hints</span><span class="p">(</span><span class="n">func</span><span class="p">)</span>
+
+    <span class="k">if</span> <span class="n">key_schema</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="c1"># Try to derive from function</span>
+        <span class="n">key_type</span> <span class="o">=</span> <span class="n">hints</span><span class="p">[</span><span class="n">var_names</span><span class="p">[</span><span class="mi">1</span><span class="p">]]</span>
+        <span class="n">key_schema</span> <span class="o">=</span> <span class="n">get_json_schema_for_type</span><span class="p">(</span><span class="n">key_type</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="c1"># We do not generate a class definition for key_schema due to</span>
+        <span class="c1"># potential code execution security concerns</span>
+        <span class="n">key_type</span> <span class="o">=</span> <span class="kc">None</span>
+
+    <span class="k">if</span> <span class="n">output_schema</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="k">if</span> <span class="s2">&quot;return&quot;</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">hints</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">TypeError</span><span class="p">(</span>
+                <span class="s2">&quot;cannot deduce query output type without return type hint on signature&quot;</span>
+            <span class="p">)</span>
+        <span class="n">out_hint</span> <span class="o">=</span> <span class="n">hints</span><span class="p">[</span><span class="s2">&quot;return&quot;</span><span class="p">]</span>
+        <span class="n">output_schema</span> <span class="o">=</span> <span class="n">get_json_schema_for_type</span><span class="p">(</span><span class="n">out_hint</span><span class="p">)</span>
+
+    <span class="n">key</span> <span class="o">=</span> <span class="n">func</span><span class="o">.</span><span class="vm">__name__</span>
+
+    <span class="c1"># Create an additional entry that maps this func to the empty string so queries</span>
+    <span class="c1">#   received without an endpoint name will call it</span>
+    <span class="k">if</span> <span class="n">default</span><span class="p">:</span>
+        <span class="k">if</span> <span class="s2">&quot;&quot;</span> <span class="ow">in</span> <span class="n">query_registry</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">TypeError</span><span class="p">(</span><span class="s2">&quot;default query already defined&quot;</span><span class="p">)</span>
+        <span class="n">query_registry</span><span class="p">[</span><span class="s2">&quot;&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">Endpoint</span><span class="p">(</span><span class="s2">&quot;&quot;</span><span class="p">,</span> <span class="n">func</span><span class="p">,</span> <span class="n">key_schema</span><span class="p">,</span> <span class="n">key_type</span><span class="p">,</span> <span class="n">output_schema</span><span class="p">)</span>
+
+    <span class="n">query_registry</span><span class="p">[</span><span class="n">key</span><span class="p">]</span> <span class="o">=</span> <span class="n">Endpoint</span><span class="p">(</span><span class="n">key</span><span class="p">,</span> <span class="n">func</span><span class="p">,</span> <span class="n">key_schema</span><span class="p">,</span> <span class="n">key_type</span><span class="p">,</span> <span class="n">output_schema</span><span class="p">)</span>
+
+
+<div class="viewcode-block" id="query">
+<a class="viewcode-back" href="../../hipcheck_sdk.html#hipcheck_sdk.query.query">[docs]</a>
+<span class="k">def</span><span class="w"> </span><span class="nf">query</span><span class="p">(</span>
+    <span class="n">f_py</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
+    <span class="n">default</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">False</span><span class="p">,</span>
+    <span class="n">key_schema</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">dict</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+    <span class="n">output_schema</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
+<span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Decorator function for query endpoints. Endpoint functions must have the</span>
+<span class="sd">    following signature:</span>
+
+<span class="sd">    .. code-block:: python</span>
+
+<span class="sd">        async fn &lt;QUERY_NAME&gt;(engine: hipcheck_sdk.engine.PluginEngine, key: &lt;TYPE&gt;) -&gt; &lt;TYPE&gt;</span>
+
+<span class="sd">    :param bool default: Whether this endpoint is the default for the plugin</span>
+<span class="sd">    :param dict key_schema: A jsonable dict representing the schema for the key</span>
+<span class="sd">        to this enpdpoint. If `None`, derive from type hint on key parameter of</span>
+<span class="sd">        function. If a schema is supplied explicitly instead of having the SDK</span>
+<span class="sd">        use the type hint, the object passed to the query func will not be</span>
+<span class="sd">        automatically converted to a class instance.</span>
+<span class="sd">    :param dict output_schema: A jsonable dict representing the schema for the</span>
+<span class="sd">        return value of this endpoint. If `None`, derive from type hint on</span>
+<span class="sd">        return value of function.</span>
+<span class="sd">    :raises TypeError: The function lacked type hints or a JSON schema could</span>
+<span class="sd">        not be derived from them</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">global</span> <span class="n">query_registry</span>
+    <span class="k">assert</span> <span class="nb">callable</span><span class="p">(</span><span class="n">f_py</span><span class="p">)</span> <span class="ow">or</span> <span class="n">f_py</span> <span class="ow">is</span> <span class="kc">None</span>
+
+    <span class="k">def</span><span class="w"> </span><span class="nf">_decorator</span><span class="p">(</span><span class="n">func</span><span class="p">):</span>
+        <span class="n">register_query</span><span class="p">(</span><span class="n">func</span><span class="p">,</span> <span class="n">default</span><span class="p">,</span> <span class="n">key_schema</span><span class="p">,</span> <span class="n">output_schema</span><span class="p">)</span>
+
+        <span class="nd">@functools</span><span class="o">.</span><span class="n">wraps</span><span class="p">(</span><span class="n">func</span><span class="p">)</span>
+        <span class="k">def</span><span class="w"> </span><span class="nf">wrapper</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+            <span class="k">return</span> <span class="n">func</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+
+        <span class="k">return</span> <span class="n">wrapper</span>
+
+    <span class="k">return</span> <span class="n">_decorator</span><span class="p">(</span><span class="n">f_py</span><span class="p">)</span> <span class="k">if</span> <span class="nb">callable</span><span class="p">(</span><span class="n">f_py</span><span class="p">)</span> <span class="k">else</span> <span class="n">_decorator</span></div>
+
+</pre></div>
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="Main">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../../index.html">hipcheck-sdk</a></h1>
+
+
+
+
+
+
+
+
+
+<search id="searchbox" style="display: none" role="search">
+    <div class="searchformwrapper">
+    <form class="search" action="../../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" placeholder="Search"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</search>
+<script>document.getElementById('searchbox').style.display = "block"</script><h3>Navigation</h3>
+<p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../modules.html">hipcheck_sdk</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../../index.html">Documentation overview</a><ul>
+  <li><a href="../index.html">Module code</a><ul>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &#169;2025, Julian Lanson.
+      
+      |
+      Powered by <a href="https://www.sphinx-doc.org/">Sphinx 8.1.3</a>
+      &amp; <a href="https://alabaster.readthedocs.io">Alabaster 1.0.0</a>
+      
+    </div>
+
+    
+
+    
+  </body>
+</html>

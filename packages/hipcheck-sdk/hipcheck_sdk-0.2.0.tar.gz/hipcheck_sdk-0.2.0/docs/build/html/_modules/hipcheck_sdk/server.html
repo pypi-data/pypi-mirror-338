@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="../../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>hipcheck_sdk.server &#8212; hipcheck-sdk 0.1.0 documentation</title>
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=5ecbeea2" />
+    <link rel="stylesheet" type="text/css" href="../../_static/basic.css?v=686e5160" />
+    <link rel="stylesheet" type="text/css" href="../../_static/alabaster.css?v=27fed22d" />
+    <script src="../../_static/documentation_options.js?v=01f34227"></script>
+    <script src="../../_static/doctools.js?v=9bcbadda"></script>
+    <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+   
+  <link rel="stylesheet" href="../../_static/custom.css" type="text/css" />
+  
+
+  
+  
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <h1>Source code for hipcheck_sdk.server</h1><div class="highlight"><pre>
+<span></span><span class="c1"># SPDX-License-Identifier: Apache-2.0</span>
+
+<span class="kn">from</span><span class="w"> </span><span class="nn">abc</span><span class="w"> </span><span class="kn">import</span> <span class="n">ABC</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">typing</span><span class="w"> </span><span class="kn">import</span> <span class="n">List</span><span class="p">,</span> <span class="n">Dict</span><span class="p">,</span> <span class="n">Optional</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">signal</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">logging</span>
+
+<span class="kn">import</span><span class="w"> </span><span class="nn">asyncio</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">grpc</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">json</span>
+
+<span class="kn">import</span><span class="w"> </span><span class="nn">hipcheck_sdk.gen</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">gen</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">hipcheck_sdk.error</span><span class="w"> </span><span class="kn">import</span> <span class="p">(</span>
+    <span class="n">ConfigError</span><span class="p">,</span>
+    <span class="n">to_set_config_response</span><span class="p">,</span>
+    <span class="n">ReceivedReplyWhenExpectingSubmitChunk</span><span class="p">,</span>
+<span class="p">)</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">hipcheck_sdk.query</span><span class="w"> </span><span class="kn">import</span> <span class="n">Endpoint</span><span class="p">,</span> <span class="n">query_registry</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">hipcheck_sdk.engine</span><span class="w"> </span><span class="kn">import</span> <span class="n">PluginEngine</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">hipcheck_sdk.chunk</span><span class="w"> </span><span class="kn">import</span> <span class="n">Query</span>
+
+<span class="n">logger</span> <span class="o">=</span> <span class="n">logging</span><span class="o">.</span><span class="n">getLogger</span><span class="p">(</span><span class="vm">__name__</span><span class="p">)</span>
+
+
+<div class="viewcode-block" id="Plugin">
+<a class="viewcode-back" href="../../hipcheck_sdk.html#hipcheck_sdk.server.Plugin">[docs]</a>
+<span class="k">class</span><span class="w"> </span><span class="nc">Plugin</span><span class="p">(</span><span class="n">ABC</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">__init_subclass__</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Ensure that subclasses have required class variables `name` and `publisher`</span>
+
+<span class="sd">        :meta private:</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">for</span> <span class="n">required</span> <span class="ow">in</span> <span class="p">(</span>
+            <span class="s2">&quot;name&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;publisher&quot;</span><span class="p">,</span>
+        <span class="p">):</span>
+            <span class="k">try</span><span class="p">:</span>
+                <span class="nb">getattr</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="n">required</span><span class="p">)</span>
+            <span class="k">except</span> <span class="ne">AttributeError</span><span class="p">:</span>
+                <span class="k">raise</span> <span class="ne">TypeError</span><span class="p">(</span>
+                    <span class="sa">f</span><span class="s2">&quot;Can&#39;t instantiate abstract class </span><span class="si">{</span><span class="bp">cls</span><span class="o">.</span><span class="vm">__name__</span><span class="si">}</span><span class="s2"> without </span><span class="si">{</span><span class="n">required</span><span class="si">}</span><span class="s2"> attribute defined&quot;</span>
+                <span class="p">)</span>
+        <span class="k">return</span> <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="n">__init_subclass__</span><span class="p">(</span><span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+
+<div class="viewcode-block" id="Plugin.set_config">
+<a class="viewcode-back" href="../../hipcheck_sdk.html#hipcheck_sdk.server.Plugin.set_config">[docs]</a>
+    <span class="k">def</span><span class="w"> </span><span class="nf">set_config</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">config</span><span class="p">:</span> <span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="nb">object</span><span class="p">]):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Configure the plugin according to the fields received from the policy</span>
+<span class="sd">        file used for this analysis.</span>
+
+<span class="sd">        :param dict config: The configuration key-value map</span>
+<span class="sd">        :raises ConfigError: The `config` value was invalid</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">pass</span></div>
+
+
+<div class="viewcode-block" id="Plugin.default_policy_expr">
+<a class="viewcode-back" href="../../hipcheck_sdk.html#hipcheck_sdk.server.Plugin.default_policy_expr">[docs]</a>
+    <span class="k">def</span><span class="w"> </span><span class="nf">default_policy_expr</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">str</span><span class="p">]:</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Return the plugin&#39;s default policy expression. This will only ever be</span>
+<span class="sd">        called after `Plugin.set_config()`. This should only be overriden if</span>
+<span class="sd">        the plugin defines a default query endpoint. For more information on</span>
+<span class="sd">        policy expression syntax, see the Hipcheck website.</span>
+
+<span class="sd">        :return: The default policy expression</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="kc">None</span></div>
+
+
+<div class="viewcode-block" id="Plugin.explain_default_query">
+<a class="viewcode-back" href="../../hipcheck_sdk.html#hipcheck_sdk.server.Plugin.explain_default_query">[docs]</a>
+    <span class="k">def</span><span class="w"> </span><span class="nf">explain_default_query</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">str</span><span class="p">]:</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        This should only be overriden if the plugin defines a default query</span>
+<span class="sd">        endpoint.</span>
+
+<span class="sd">        :return: An unstructured description of what is returned by the plugin&#39;s default query endpoint.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="kc">None</span></div>
+
+
+    <span class="k">def</span><span class="w"> </span><span class="nf">queries</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">List</span><span class="p">[</span><span class="n">Endpoint</span><span class="p">]:</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Get all the queries supported by the plugin. Each query endpoint in a</span>
+<span class="sd">        plugin is a function decorated with `@query`. This function returns</span>
+<span class="sd">        an iterator containing one `Endpoint` instance for each `@query`</span>
+<span class="sd">        function defined in this plugin and imported when the plugin server</span>
+<span class="sd">        starts.</span>
+
+<span class="sd">        :return: A list of detected query endpoints.</span>
+
+<span class="sd">        :meta private:</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">global</span> <span class="n">query_registry</span>
+        <span class="k">return</span> <span class="nb">list</span><span class="p">(</span><span class="n">query_registry</span><span class="o">.</span><span class="n">values</span><span class="p">())</span>
+
+<div class="viewcode-block" id="Plugin.default_query">
+<a class="viewcode-back" href="../../hipcheck_sdk.html#hipcheck_sdk.server.Plugin.default_query">[docs]</a>
+    <span class="k">def</span><span class="w"> </span><span class="nf">default_query</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Optional</span><span class="p">[</span><span class="n">Endpoint</span><span class="p">]:</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Get the plugin&#39;s default query, if it has one. The default query is a</span>
+<span class="sd">        `@query` function with `default=True` in the decorator arguments.</span>
+
+<span class="sd">        :return: The endpoint instance marked default, if one exists else None</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">queries</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">queries</span><span class="p">()</span>
+        <span class="k">for</span> <span class="n">q</span> <span class="ow">in</span> <span class="n">queries</span><span class="p">:</span>
+            <span class="k">if</span> <span class="n">name</span><span class="o">.</span><span class="n">is_default</span><span class="p">():</span>
+                <span class="k">return</span> <span class="n">q</span>
+        <span class="k">return</span> <span class="kc">None</span></div>
+</div>
+
+
+
+<span class="c1"># Manages incoming gRPC query messages in the bidirectional query protocol. Determines</span>
+<span class="c1"># when to pass messages onto existing `PluginEngine` object queues or create a new</span>
+<span class="c1"># `PluginEngine` to represent a new session. When `PluginEngine` objects close because</span>
+<span class="c1"># the session ends, they put their ID on the `self.drop` Queue, so this object can</span>
+<span class="c1"># clear their state from `self.sessions`.</span>
+<span class="k">class</span><span class="w"> </span><span class="nc">HcSessionSocket</span><span class="p">:</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    :meta private:</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">stream</span><span class="p">,</span> <span class="n">context</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">stream</span> <span class="o">=</span> <span class="n">stream</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">context</span> <span class="o">=</span> <span class="n">context</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">out</span> <span class="o">=</span> <span class="n">asyncio</span><span class="o">.</span><span class="n">Queue</span><span class="p">()</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">drop</span> <span class="o">=</span> <span class="n">asyncio</span><span class="o">.</span><span class="n">Queue</span><span class="p">()</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">sessions</span><span class="p">:</span> <span class="n">Dict</span><span class="p">[</span><span class="nb">int</span><span class="p">,</span> <span class="n">asyncio</span><span class="o">.</span><span class="n">Queue</span><span class="p">]</span> <span class="o">=</span> <span class="p">{}</span>
+
+    <span class="k">def</span><span class="w"> </span><span class="nf">get_queue</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">out</span>
+
+    <span class="c1"># Clean up completed sessions by going through all drop messages.</span>
+    <span class="k">async</span> <span class="k">def</span><span class="w"> </span><span class="nf">cleanup_sessions</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">while</span> <span class="ow">not</span> <span class="bp">self</span><span class="o">.</span><span class="n">drop</span><span class="o">.</span><span class="n">empty</span><span class="p">():</span>
+            <span class="n">session_id</span> <span class="o">=</span> <span class="k">await</span> <span class="bp">self</span><span class="o">.</span><span class="n">drop</span><span class="o">.</span><span class="n">get</span><span class="p">()</span>
+            <span class="n">val</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">sessions</span><span class="o">.</span><span class="n">pop</span><span class="p">(</span><span class="n">session_id</span><span class="p">)</span>
+            <span class="k">if</span> <span class="n">val</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+                <span class="n">logger</span><span class="o">.</span><span class="n">warning</span><span class="p">(</span>
+                    <span class="s2">&quot;HcSessionSocket got request to drop a session that does not exist&quot;</span>
+                <span class="p">)</span>
+                <span class="k">continue</span>
+            <span class="n">task</span><span class="p">,</span> <span class="n">queue</span> <span class="o">=</span> <span class="n">val</span>
+            <span class="k">await</span> <span class="n">task</span>
+
+    <span class="c1"># Using the session tracker, determine if this message constitutes</span>
+    <span class="c1"># a new session or should be passed to an existing one.</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">decide_action</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">query</span><span class="p">:</span> <span class="n">Query</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Optional</span><span class="p">[</span><span class="n">asyncio</span><span class="o">.</span><span class="n">Queue</span><span class="p">]:</span>
+        <span class="k">if</span> <span class="n">query</span><span class="o">.</span><span class="n">id</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">sessions</span><span class="o">.</span><span class="n">keys</span><span class="p">():</span>
+            <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">sessions</span><span class="p">[</span><span class="n">query</span><span class="o">.</span><span class="n">id</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span>
+
+        <span class="k">if</span> <span class="n">query</span><span class="o">.</span><span class="n">state</span> <span class="ow">in</span> <span class="p">[</span>
+            <span class="n">gen</span><span class="o">.</span><span class="n">QueryState</span><span class="o">.</span><span class="n">QUERY_STATE_SUBMIT_IN_PROGRESS</span><span class="p">,</span>
+            <span class="n">gen</span><span class="o">.</span><span class="n">QueryState</span><span class="o">.</span><span class="n">QUERY_STATE_SUBMIT_COMPLETE</span><span class="p">,</span>
+        <span class="p">]:</span>
+            <span class="k">return</span> <span class="kc">None</span>
+
+        <span class="k">raise</span> <span class="n">ReceivedReplyWhenExpectingSubmitChunk</span><span class="p">()</span>
+
+    <span class="k">async</span> <span class="k">def</span><span class="w"> </span><span class="nf">run_inner</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">plugin</span><span class="p">):</span>
+        <span class="c1"># Outstanding issue in tonic crate used by Hipcheck core for gRPC:</span>
+        <span class="c1">#   https://github.com/hyperium/tonic/issues/515</span>
+        <span class="c1"># We have to send *something* otherwise the stream creation gets</span>
+        <span class="c1"># blocked on the tonic side.</span>
+        <span class="c1"># ID currently 0 so that it gets ignored by Hipcheck core, but that&#39;s</span>
+        <span class="c1">#   a bit hacky.</span>
+        <span class="n">query</span> <span class="o">=</span> <span class="n">gen</span><span class="o">.</span><span class="n">Query</span><span class="p">(</span>
+            <span class="nb">id</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span>
+            <span class="n">state</span><span class="o">=</span><span class="n">gen</span><span class="o">.</span><span class="n">QueryState</span><span class="o">.</span><span class="n">QUERY_STATE_UNSPECIFIED</span><span class="p">,</span>
+            <span class="n">publisher_name</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">,</span>
+            <span class="n">plugin_name</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">,</span>
+            <span class="n">query_name</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">,</span>
+            <span class="n">key</span><span class="o">=</span><span class="p">[],</span>
+            <span class="n">output</span><span class="o">=</span><span class="p">[],</span>
+            <span class="n">split</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
+        <span class="p">)</span>
+        <span class="k">await</span> <span class="bp">self</span><span class="o">.</span><span class="n">out</span><span class="o">.</span><span class="n">put</span><span class="p">(</span><span class="n">query</span><span class="p">)</span>
+
+        <span class="k">async</span> <span class="k">for</span> <span class="n">request</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">stream</span><span class="p">:</span>
+            <span class="n">query</span> <span class="o">=</span> <span class="n">request</span><span class="o">.</span><span class="n">query</span>
+
+            <span class="c1"># While we were waiting for a message, some session objects may have</span>
+            <span class="c1"># dropped, handle them before we look at the ID of this message.</span>
+            <span class="c1"># The downside of this strategy is that once we receive our last message,</span>
+            <span class="c1"># we won&#39;t clean up any sessions that close after</span>
+            <span class="k">await</span> <span class="bp">self</span><span class="o">.</span><span class="n">cleanup_sessions</span><span class="p">()</span>
+
+            <span class="n">decision</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">decide_action</span><span class="p">(</span><span class="n">query</span><span class="p">)</span>
+            <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">decision</span><span class="p">,</span> <span class="n">asyncio</span><span class="o">.</span><span class="n">Queue</span><span class="p">):</span>
+                <span class="k">await</span> <span class="n">decision</span><span class="o">.</span><span class="n">put</span><span class="p">(</span><span class="n">query</span><span class="p">)</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="n">engine_queue</span> <span class="o">=</span> <span class="n">asyncio</span><span class="o">.</span><span class="n">Queue</span><span class="p">()</span>
+                <span class="n">session</span> <span class="o">=</span> <span class="n">PluginEngine</span><span class="p">(</span>
+                    <span class="n">session_id</span><span class="o">=</span><span class="n">query</span><span class="o">.</span><span class="n">id</span><span class="p">,</span> <span class="n">tx</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">out</span><span class="p">,</span> <span class="n">rx</span><span class="o">=</span><span class="n">engine_queue</span><span class="p">,</span> <span class="n">drop_tx</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">drop</span>
+                <span class="p">)</span>
+                <span class="k">await</span> <span class="n">engine_queue</span><span class="o">.</span><span class="n">put</span><span class="p">(</span><span class="n">query</span><span class="p">)</span>
+
+                <span class="n">task</span> <span class="o">=</span> <span class="n">asyncio</span><span class="o">.</span><span class="n">create_task</span><span class="p">(</span><span class="n">session</span><span class="o">.</span><span class="n">handle_session</span><span class="p">(</span><span class="n">plugin</span><span class="p">))</span>
+
+                <span class="bp">self</span><span class="o">.</span><span class="n">sessions</span><span class="p">[</span><span class="n">query</span><span class="o">.</span><span class="n">id</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span><span class="n">task</span><span class="p">,</span> <span class="n">engine_queue</span><span class="p">)</span>
+
+        <span class="n">logger</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s2">&quot;Stream closed, exiting&quot;</span><span class="p">)</span>
+
+    <span class="k">async</span> <span class="k">def</span><span class="w"> </span><span class="nf">run</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">plugin</span><span class="p">):</span>
+        <span class="k">try</span><span class="p">:</span>
+            <span class="k">await</span> <span class="bp">self</span><span class="o">.</span><span class="n">run_inner</span><span class="p">(</span><span class="n">plugin</span><span class="p">)</span>
+        <span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+            <span class="n">logger</span><span class="o">.</span><span class="n">error</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">e</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+            <span class="n">query</span> <span class="o">=</span> <span class="n">gen</span><span class="o">.</span><span class="n">Query</span><span class="p">(</span>
+                <span class="nb">id</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span>
+                <span class="n">state</span><span class="o">=</span><span class="n">gen</span><span class="o">.</span><span class="n">QueryState</span><span class="o">.</span><span class="n">QUERY_STATE_UNSPECIFIED</span><span class="p">,</span>
+                <span class="n">publisher_name</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">,</span>
+                <span class="n">plugin_name</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">,</span>
+                <span class="n">query_name</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">,</span>
+                <span class="n">key</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;&quot;</span><span class="p">],</span>
+                <span class="n">output</span><span class="o">=</span><span class="p">[</span><span class="sa">f</span><span class="s2">&quot;HcSessionSocket error: </span><span class="si">{</span><span class="n">e</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">],</span>
+                <span class="n">split</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
+            <span class="p">)</span>
+            <span class="k">await</span> <span class="bp">self</span><span class="o">.</span><span class="n">out</span><span class="o">.</span><span class="n">put</span><span class="p">(</span><span class="n">query</span><span class="p">)</span>
+        <span class="k">finally</span><span class="p">:</span>
+            <span class="c1"># Shut down queue so that PluginServer also closes.</span>
+            <span class="c1"># queue.shutdown() available in 3.13, but we are using</span>
+            <span class="c1"># a sentinel None value for now</span>
+            <span class="k">await</span> <span class="bp">self</span><span class="o">.</span><span class="n">out</span><span class="o">.</span><span class="n">put</span><span class="p">(</span><span class="kc">None</span><span class="p">)</span>
+
+
+<div class="viewcode-block" id="PluginServer">
+<a class="viewcode-back" href="../../hipcheck_sdk.html#hipcheck_sdk.server.PluginServer">[docs]</a>
+<span class="k">class</span><span class="w"> </span><span class="nc">PluginServer</span><span class="p">(</span><span class="n">gen</span><span class="o">.</span><span class="n">PluginServiceServicer</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    The server object which runs a plugin class implementation</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">plugin</span><span class="p">:</span> <span class="n">Plugin</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        :meta private:</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">plugin</span> <span class="o">=</span> <span class="n">plugin</span>
+
+<div class="viewcode-block" id="PluginServer.register">
+<a class="viewcode-back" href="../../hipcheck_sdk.html#hipcheck_sdk.server.PluginServer.register">[docs]</a>
+    <span class="k">def</span><span class="w"> </span><span class="nf">register</span><span class="p">(</span><span class="n">plugin</span><span class="p">:</span> <span class="n">Plugin</span><span class="p">,</span> <span class="n">log_level</span><span class="o">=</span><span class="s2">&quot;error&quot;</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Set the server to use `plugin` as its implementation</span>
+
+<span class="sd">        :param Plugin plugin: The plugin instance with which to run</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">plugin_server</span> <span class="o">=</span> <span class="n">PluginServer</span><span class="p">(</span><span class="n">plugin</span><span class="p">)</span>
+        <span class="n">plugin_server</span><span class="o">.</span><span class="n">init_logger</span><span class="p">(</span><span class="n">log_level</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">plugin_server</span></div>
+
+
+<div class="viewcode-block" id="PluginServer.init_logger">
+<a class="viewcode-back" href="../../hipcheck_sdk.html#hipcheck_sdk.server.PluginServer.init_logger">[docs]</a>
+    <span class="k">def</span><span class="w"> </span><span class="nf">init_logger</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">log_level_str</span><span class="o">=</span><span class="nb">str</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Setup plugin logger in JSON at appropriate level.</span>
+
+<span class="sd">        :param str log_level_str: maximum produced log level for plugin</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="c1"># set output format</span>
+        <span class="n">log_format</span> <span class="o">=</span> <span class="p">(</span>
+            <span class="s2">&quot;{</span><span class="se">\&quot;</span><span class="s2">target</span><span class="se">\&quot;</span><span class="s2">: </span><span class="se">\&quot;</span><span class="s2">&quot;</span>
+            <span class="o">+</span> <span class="bp">self</span><span class="o">.</span><span class="n">plugin</span><span class="o">.</span><span class="n">name</span>
+            <span class="o">+</span> <span class="s2">&quot;</span><span class="se">\&quot;</span><span class="s2">, </span><span class="se">\&quot;</span><span class="s2">level</span><span class="se">\&quot;</span><span class="s2">: </span><span class="se">\&quot;</span><span class="si">%(levelname)s</span><span class="se">\&quot;</span><span class="s2">, </span><span class="se">\&quot;</span><span class="s2">fields</span><span class="se">\&quot;</span><span class="s2">: { </span><span class="se">\&quot;</span><span class="s2">message</span><span class="se">\&quot;</span><span class="s2">: </span><span class="se">\&quot;</span><span class="si">%(message)s</span><span class="se">\&quot;</span><span class="s2"> } }&quot;</span>
+        <span class="p">)</span>
+        <span class="n">logging</span><span class="o">.</span><span class="n">basicConfig</span><span class="p">(</span><span class="nb">format</span><span class="o">=</span><span class="n">log_format</span><span class="p">,</span> <span class="n">level</span><span class="o">=</span><span class="n">logging</span><span class="o">.</span><span class="n">ERROR</span><span class="p">)</span>
+
+        <span class="c1"># set the logger&#39;s level</span>
+        <span class="n">log_level</span> <span class="o">=</span> <span class="n">logging</span><span class="o">.</span><span class="n">getLevelName</span><span class="p">(</span><span class="n">log_level_str</span><span class="o">.</span><span class="n">upper</span><span class="p">())</span>
+        <span class="c1"># if log level arg is invalid - default to ERROR level</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">log_level</span><span class="p">,</span> <span class="nb">int</span><span class="p">):</span>
+            <span class="n">logging</span><span class="o">.</span><span class="n">error</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Invalid log level string: </span><span class="si">{</span><span class="n">log_level_str</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+            <span class="n">log_level</span> <span class="o">=</span> <span class="n">logging</span><span class="o">.</span><span class="n">ERROR</span>
+        <span class="n">logging</span><span class="o">.</span><span class="n">getLogger</span><span class="p">()</span><span class="o">.</span><span class="n">setLevel</span><span class="p">(</span><span class="n">log_level</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="PluginServer.listen">
+<a class="viewcode-back" href="../../hipcheck_sdk.html#hipcheck_sdk.server.PluginServer.listen">[docs]</a>
+    <span class="k">def</span><span class="w"> </span><span class="nf">listen</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">port</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span> <span class="n">host</span><span class="o">=</span><span class="s2">&quot;127.0.0.1&quot;</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Start the plugin listening for an incoming gRPC connection from Hipcheck core</span>
+
+<span class="sd">        :param int port: The port on which to listen</span>
+<span class="sd">        :param str host: The host IP on which to listen. Defaults to loopback, for plugins</span>
+<span class="sd">            that will be run in a docker container you will need to change it to listen on</span>
+<span class="sd">            all network interfaces, e.g. &#39;0.0.0.0&#39;.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+
+        <span class="k">async</span> <span class="k">def</span><span class="w"> </span><span class="nf">inner</span><span class="p">(</span><span class="n">s</span><span class="p">:</span> <span class="n">PluginServer</span><span class="p">,</span> <span class="n">port</span><span class="p">:</span> <span class="nb">int</span><span class="p">):</span>
+            <span class="c1"># Create server</span>
+            <span class="n">server</span> <span class="o">=</span> <span class="n">grpc</span><span class="o">.</span><span class="n">aio</span><span class="o">.</span><span class="n">server</span><span class="p">()</span>
+            <span class="n">gen</span><span class="o">.</span><span class="n">add_PluginServiceServicer_to_server</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">server</span><span class="p">)</span>
+            <span class="n">server</span><span class="o">.</span><span class="n">add_insecure_port</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">host</span><span class="si">}</span><span class="s2">:</span><span class="si">{</span><span class="n">port</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+            <span class="k">await</span> <span class="n">server</span><span class="o">.</span><span class="n">start</span><span class="p">()</span>
+
+            <span class="c1"># Define handler func to stop server</span>
+            <span class="k">async</span> <span class="k">def</span><span class="w"> </span><span class="nf">stop_server</span><span class="p">():</span>
+                <span class="k">await</span> <span class="n">server</span><span class="o">.</span><span class="n">stop</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+
+            <span class="c1"># Register handler</span>
+            <span class="n">loop</span> <span class="o">=</span> <span class="n">asyncio</span><span class="o">.</span><span class="n">get_event_loop</span><span class="p">()</span>
+            <span class="k">for</span> <span class="n">signame</span> <span class="ow">in</span> <span class="p">(</span><span class="s2">&quot;SIGINT&quot;</span><span class="p">,</span> <span class="s2">&quot;SIGTERM&quot;</span><span class="p">):</span>
+                <span class="n">loop</span><span class="o">.</span><span class="n">add_signal_handler</span><span class="p">(</span>
+                    <span class="nb">getattr</span><span class="p">(</span><span class="n">signal</span><span class="p">,</span> <span class="n">signame</span><span class="p">),</span> <span class="k">lambda</span><span class="p">:</span> <span class="n">asyncio</span><span class="o">.</span><span class="n">create_task</span><span class="p">(</span><span class="n">stop_server</span><span class="p">())</span>
+                <span class="p">)</span>
+            <span class="n">s</span><span class="o">.</span><span class="n">stop_queue</span> <span class="o">=</span> <span class="n">asyncio</span><span class="o">.</span><span class="n">Queue</span><span class="p">()</span>
+
+            <span class="c1"># Wait for either the server to terminate, or for a single queue object</span>
+            <span class="c1">#   that notifies us to stop the server</span>
+            <span class="n">wait_server_task</span> <span class="o">=</span> <span class="n">asyncio</span><span class="o">.</span><span class="n">create_task</span><span class="p">(</span><span class="n">server</span><span class="o">.</span><span class="n">wait_for_termination</span><span class="p">())</span>
+            <span class="n">notify_stop_task</span> <span class="o">=</span> <span class="n">asyncio</span><span class="o">.</span><span class="n">create_task</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">stop_queue</span><span class="o">.</span><span class="n">get</span><span class="p">())</span>
+            <span class="n">done</span><span class="p">,</span> <span class="n">pending</span> <span class="o">=</span> <span class="k">await</span> <span class="n">asyncio</span><span class="o">.</span><span class="n">wait</span><span class="p">(</span>
+                <span class="p">[</span><span class="n">wait_server_task</span><span class="p">,</span> <span class="n">notify_stop_task</span><span class="p">],</span>
+                <span class="n">return_when</span><span class="o">=</span><span class="n">asyncio</span><span class="o">.</span><span class="n">FIRST_COMPLETED</span><span class="p">,</span>
+            <span class="p">)</span>
+
+            <span class="c1"># If the &quot;wait for server&quot; task is still pending, we got notifed by the stop_queue,</span>
+            <span class="c1">#   so trigger server shutdown</span>
+            <span class="k">if</span> <span class="n">wait_server_task</span> <span class="ow">in</span> <span class="n">pending</span><span class="p">:</span>
+                <span class="k">await</span> <span class="n">stop_server</span><span class="p">()</span>
+                <span class="c1"># Now that we have called server.stop, the wait_server task should finish quickly</span>
+                <span class="k">await</span> <span class="n">wait_server_task</span>
+
+        <span class="n">asyncio</span><span class="o">.</span><span class="n">run</span><span class="p">(</span><span class="n">inner</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">port</span><span class="p">))</span></div>
+
+
+    <span class="k">def</span><span class="w"> </span><span class="nf">GetQuerySchemas</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">request</span><span class="p">,</span> <span class="n">context</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        :meta private:</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">for</span> <span class="n">q</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">plugin</span><span class="o">.</span><span class="n">queries</span><span class="p">():</span>
+            <span class="n">key_schema</span> <span class="o">=</span> <span class="n">json</span><span class="o">.</span><span class="n">dumps</span><span class="p">(</span><span class="n">q</span><span class="o">.</span><span class="n">key_schema</span><span class="p">)</span>
+            <span class="n">output_schema</span> <span class="o">=</span> <span class="n">json</span><span class="o">.</span><span class="n">dumps</span><span class="p">(</span><span class="n">q</span><span class="o">.</span><span class="n">output_schema</span><span class="p">)</span>
+            <span class="k">yield</span> <span class="n">gen</span><span class="o">.</span><span class="n">GetQuerySchemasResponse</span><span class="p">(</span>
+                <span class="n">query_name</span><span class="o">=</span><span class="n">q</span><span class="o">.</span><span class="n">name</span><span class="p">,</span> <span class="n">key_schema</span><span class="o">=</span><span class="n">key_schema</span><span class="p">,</span> <span class="n">output_schema</span><span class="o">=</span><span class="n">output_schema</span>
+            <span class="p">)</span>
+
+    <span class="k">def</span><span class="w"> </span><span class="nf">SetConfiguration</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">request</span><span class="p">,</span> <span class="n">context</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        :meta private:</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">config</span> <span class="o">=</span> <span class="n">json</span><span class="o">.</span><span class="n">loads</span><span class="p">(</span><span class="n">request</span><span class="o">.</span><span class="n">configuration</span><span class="p">)</span>
+        <span class="k">try</span><span class="p">:</span>
+            <span class="n">result</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">plugin</span><span class="o">.</span><span class="n">set_config</span><span class="p">(</span><span class="n">config</span><span class="p">)</span>
+            <span class="k">return</span> <span class="n">gen</span><span class="o">.</span><span class="n">SetConfigurationResponse</span><span class="p">(</span>
+                <span class="n">status</span><span class="o">=</span><span class="n">gen</span><span class="o">.</span><span class="n">ConfigurationStatus</span><span class="o">.</span><span class="n">CONFIGURATION_STATUS_NONE</span><span class="p">,</span> <span class="n">message</span><span class="o">=</span><span class="s2">&quot;&quot;</span>
+            <span class="p">)</span>
+        <span class="k">except</span> <span class="n">ConfigError</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+            <span class="k">return</span> <span class="n">to_set_config_response</span><span class="p">(</span><span class="n">e</span><span class="p">)</span>
+
+    <span class="k">def</span><span class="w"> </span><span class="nf">GetDefaultPolicyExpression</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">request</span><span class="p">,</span> <span class="n">context</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        :meta private:</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="n">gen</span><span class="o">.</span><span class="n">GetDefaultPolicyExpressionResponse</span><span class="p">(</span>
+            <span class="n">policy_expression</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">plugin</span><span class="o">.</span><span class="n">default_policy_expr</span><span class="p">()</span>
+        <span class="p">)</span>
+
+    <span class="k">def</span><span class="w"> </span><span class="nf">ExplainDefaultQuery</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">request</span><span class="p">,</span> <span class="n">context</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        :meta private:</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="n">gen</span><span class="o">.</span><span class="n">ExplainDefaultQueryResponse</span><span class="p">(</span>
+            <span class="n">explanation</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">plugin</span><span class="o">.</span><span class="n">explain_default_query</span><span class="p">()</span>
+        <span class="p">)</span>
+
+    <span class="k">async</span> <span class="k">def</span><span class="w"> </span><span class="nf">InitiateQueryProtocol</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">stream</span><span class="p">,</span> <span class="n">context</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        :meta private:</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">session_socket</span> <span class="o">=</span> <span class="n">HcSessionSocket</span><span class="p">(</span><span class="n">stream</span><span class="p">,</span> <span class="n">context</span><span class="p">)</span>
+        <span class="n">out_queue</span> <span class="o">=</span> <span class="n">session_socket</span><span class="o">.</span><span class="n">get_queue</span><span class="p">()</span>
+
+        <span class="n">socket_task</span> <span class="o">=</span> <span class="n">asyncio</span><span class="o">.</span><span class="n">create_task</span><span class="p">(</span><span class="n">session_socket</span><span class="o">.</span><span class="n">run</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">plugin</span><span class="p">))</span>
+        <span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+            <span class="n">query</span> <span class="o">=</span> <span class="k">await</span> <span class="n">out_queue</span><span class="o">.</span><span class="n">get</span><span class="p">()</span>
+            <span class="c1"># In 3.13 there is QueueShutDown to signal this, but</span>
+            <span class="c1">#   to not require 3.13 we are using a sentinel &#39;None&#39;</span>
+            <span class="c1">#   value instead</span>
+            <span class="k">if</span> <span class="n">query</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+                <span class="k">break</span>
+            <span class="k">yield</span> <span class="n">gen</span><span class="o">.</span><span class="n">InitiateQueryProtocolResponse</span><span class="p">(</span><span class="n">query</span><span class="o">=</span><span class="n">query</span><span class="p">)</span>
+            <span class="n">out_queue</span><span class="o">.</span><span class="n">task_done</span><span class="p">()</span>
+        <span class="c1"># We currently have the semantics that when the query protocol</span>
+        <span class="c1"># with HC core closes, the plugin must shut down.</span>
+        <span class="k">await</span> <span class="bp">self</span><span class="o">.</span><span class="n">stop_queue</span><span class="o">.</span><span class="n">put</span><span class="p">(</span><span class="kc">None</span><span class="p">)</span></div>
+
+</pre></div>
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="Main">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../../index.html">hipcheck-sdk</a></h1>
+
+
+
+
+
+
+
+
+
+<search id="searchbox" style="display: none" role="search">
+    <div class="searchformwrapper">
+    <form class="search" action="../../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" placeholder="Search"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</search>
+<script>document.getElementById('searchbox').style.display = "block"</script><h3>Navigation</h3>
+<p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../modules.html">hipcheck_sdk</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../../index.html">Documentation overview</a><ul>
+  <li><a href="../index.html">Module code</a><ul>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &#169;2025, Julian Lanson.
+      
+      |
+      Powered by <a href="https://www.sphinx-doc.org/">Sphinx 8.1.3</a>
+      &amp; <a href="https://alabaster.readthedocs.io">Alabaster 1.0.0</a>
+      
+    </div>
+
+    
+
+    
+  </body>
+</html>
