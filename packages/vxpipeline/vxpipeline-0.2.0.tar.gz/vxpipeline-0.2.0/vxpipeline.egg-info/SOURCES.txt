@@ -1,0 +1,12 @@
+README.md
+pyproject.toml
+vxpipeline/__init__.py
+vxpipeline/conect.py
+vxpipeline/extract.py
+vxpipeline/load.py
+vxpipeline/transform.py
+vxpipeline.egg-info/PKG-INFO
+vxpipeline.egg-info/SOURCES.txt
+vxpipeline.egg-info/dependency_links.txt
+vxpipeline.egg-info/requires.txt
+vxpipeline.egg-info/top_level.txt
