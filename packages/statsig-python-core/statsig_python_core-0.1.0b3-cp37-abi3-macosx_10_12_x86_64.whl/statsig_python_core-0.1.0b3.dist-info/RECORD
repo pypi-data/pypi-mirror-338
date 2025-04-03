@@ -1,0 +1,10 @@
+statsig_python_core-0.1.0b3.dist-info/METADATA,sha256=gmRL4nCPp8xI-6kQ90qcyooxqDrpYeajReO81sNTYEs,307
+statsig_python_core-0.1.0b3.dist-info/WHEEL,sha256=1QkniwphdNsNM-8ykQxnO_dvPvjUdTqDZiTxgmCvo-Y,104
+statsig_python_core/requirements.txt,sha256=fMSVmHfb5rbGOo6xv-O_tUX6j-WyixssE-SnwcDRxNQ,9
+statsig_python_core/__init__.py,sha256=pECwurx5H-I5x7Uj48cBTItKD5KS11xNFCSY2xqGPCU,150
+statsig_python_core/observability_client.py,sha256=NHXBWZd8-ZaEB2pvl4LTmyP9MnNp7d95u4w9Pr7-BMM,701
+statsig_python_core/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+statsig_python_core/statsig.py,sha256=Kd4UwtnPO_N6X1TIlUBIeo9SSeCvJW-4Y-wxzdhb3Pc,2142
+statsig_python_core/statsig_python_core.pyi,sha256=wjyS-J8w1TYMbFecmnR3SHeS2m4zal4npgj_-fqoHOw,7015
+statsig_python_core/statsig_python_core.abi3.so,sha256=TzkfR65eFC1vHRl9hm_j_RR0FNyzu1qbcE_ym6dhNJo,3337216
+statsig_python_core-0.1.0b3.dist-info/RECORD,,
