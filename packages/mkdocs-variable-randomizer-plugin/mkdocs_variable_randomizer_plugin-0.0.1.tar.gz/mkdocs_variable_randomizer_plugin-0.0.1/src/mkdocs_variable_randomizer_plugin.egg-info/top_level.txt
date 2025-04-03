@@ -1,0 +1,1 @@
+mkdocs_variable_randomizer_plugin

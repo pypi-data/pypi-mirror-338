@@ -1,0 +1,21 @@
+Metadata-Version: 2.4
+Name: mkdocs-variable-randomizer-plugin
+Version: 0.0.1
+Summary: Replace some variables in snippets with random names
+Home-page: https://github.com/six-two/mkdocs-variable-randomizer-plugin
+Author: six-two
+Author-email: six-two <pip@six-two.dev>
+License-Expression: MIT
+Project-URL: Homepage, https://github.com/six-two/mkdocs-variable-randomizer-plugin
+Project-URL: Issues, https://github.com/six-two/mkdocs-variable-randomizer-plugin/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Dynamic: license-file
+
+# MkDocs Variable Randomizer Plugin
+
+Basically the idea is to use random variable names in code snippets.
+This can for example be used to make code snippets that are [harder to fingerprint](https://github.com/t3l3machus/PowerShell-Obfuscation-Bible?tab=readme-ov-file#rename-objects), thus useful for offensive code like AMSI bypasses.
