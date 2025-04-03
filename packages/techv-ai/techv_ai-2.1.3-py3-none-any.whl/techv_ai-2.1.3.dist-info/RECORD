@@ -1,0 +1,13 @@
+Techv_ai/__init__.py,sha256=cUBWs8stvx4RZCy7DxSaSWwIQ7ZCCEqx_nqSpTdv1LE,170
+Techv_ai/api_key.py,sha256=P8EwY1iDDewu1h-Zk5gO0rHnPC78DS-vqrlKCPsTwig,733
+Techv_ai/auth.py,sha256=E-wf9fRvUqcbPJjFz6aDQ6uODn68e4jQMdVaqqeP9iM,1260
+Techv_ai/chat.py,sha256=amFtV3__wb9_GtpHSvpYEfBZfYSRkrPtOq3mx_E9jSs,1673
+Techv_ai/client.py,sha256=MyGuBmlBzaIBEflVJVGoG3HPDaQeEOMfIJ45_Ta3GVg,1613
+Techv_ai/config.py,sha256=90TlQlPqAeNAH1IFiYU7C7ZC2pw36zS-2nTXljF6XNU,205
+Techv_ai/routeing.py,sha256=nhW3Ucozwfs295o6Cm8L7283_mYlNxzf22j9v0qK98k,8648
+techv_ai-2.1.3.dist-info/LICENCE,sha256=k4_EsNO-ohrE3dkghfQmOmS1mS1OBf0IdW1w25m4xJA,1099
+techv_ai-2.1.3.dist-info/METADATA,sha256=x6SZpP6Shvxjyu7_WyiVchSfl2jmVoB0dTYin4qJnP0,812
+techv_ai-2.1.3.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+techv_ai-2.1.3.dist-info/entry_points.txt,sha256=2zf0Lz8UHYVCW8HYQTBUvwdtHkpV3EAKTW9gRMt9Dgc,52
+techv_ai-2.1.3.dist-info/top_level.txt,sha256=am8XvTNWHsFiUfo0GtD4C1hHz28jAsIIVTSXlyj2wkU,9
+techv_ai-2.1.3.dist-info/RECORD,,
