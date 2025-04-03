@@ -1,0 +1,23 @@
+Metadata-Version: 2.3
+Name: timecapsule
+Version: 0.1.2
+Summary: Human-friendly datetime handling for Python
+Author: Danny Stewart
+Author-email: danny@stewart.cc
+Requires-Python: >=3.12
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Dist: devpkg (>=0.2.0)
+Requires-Dist: python-dateutil (>=2.9.0.post0)
+Requires-Dist: tzlocal (>=5.3.1)
+Description-Content-Type: text/markdown
+
+# TimeCapsule
+
+[![PyPI version](https://img.shields.io/pypi/v/timecapsule.svg)](https://pypi.org/project/timecapsule/)
+[![Python versions](https://img.shields.io/pypi/pyversions/timecapsule.svg)](https://pypi.org/project/timecapsule/)
+[![PyPI downloads](https://img.shields.io/pypi/dm/timecapsule.svg)](https://pypi.org/project/timecapsule/)
+
+Parse, format, and transform datetimes with human-friendly precision. Make Python's datetime as friendly as it should have been.
+
