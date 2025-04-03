@@ -1,0 +1,17 @@
+npqtools/UI.py,sha256=2aJaZyxFspke-u3stgKwxBb-1MdJfqpYsUToRMgOOyQ,7201
+npqtools/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+npqtools/test.py,sha256=wLwuB0EEdy_KO89FKw8QGmryyb6Mli0v7tbbwHe2Khg,161
+npqtools/problems/PrintGraph.py,sha256=MrPOCy22nyY34kdAarq_osL7CN1cdTj1TlUC2_G55A4,8093
+npqtools/problems/QuboClique.py,sha256=b1fq9AW8BtJ7Lhhojw7ypiO2qx9qGtXeS6tgNY6kHsA,2653
+npqtools/problems/QuboKnapsack.py,sha256=0jb806L_DjaXSgSCCqhTFUw3439f9YpWY-I_P3OndlQ,3106
+npqtools/problems/QuboMaxWeightClique.py,sha256=IpDb4Jl5aeSVAvkV0YtVUdrA3bI7eHnQwD3qMFP91h0,2657
+npqtools/problems/QuboMultiKnapsack.py,sha256=cXK0i95dMAXlsm25wIafrb4flN54vgupOW3ws_OxegM,3100
+npqtools/problems/QuboProductionScheduling.py,sha256=dw5qdeKqX6bqliolGBk0m2_CtCEQoFnk6Z6csRhhjL8,5758
+npqtools/problems/QuboSalesman.py,sha256=LxNG2-JNW1Rr8HpADgHKDeXdefw75pyWmyd1jC9wlNk,3883
+npqtools/problems/QuboTiling2Dim.py,sha256=nmNV5q_gnCWXgQy-YUXCC6zge4J2P4u-WcdNnScZrKI,5730
+npqtools/problems/__init__.py,sha256=U1tq96XtXGMLR8d92MI68F_kYPXPkKstyTgz425Lj54,527
+npqtools/problems/qubo.py,sha256=NwOANeCJYX6A_Gp3KIrKuK2C06lbIszr7dz7heGKCiM,8097
+npqtools-0.1.15.dist-info/METADATA,sha256=o-TKkiCYPaMGAxzFN3yX3JoLGMg82S-enYmDPM66IFM,1336
+npqtools-0.1.15.dist-info/WHEEL,sha256=yQN5g4mg4AybRjkgi-9yy4iQEFibGQmlz78Pik5Or-A,92
+npqtools-0.1.15.dist-info/top_level.txt,sha256=SGyPeOfjaHkUQMwMvDcOaxogW4u4Ky5J_Y5GnkC7JEY,9
+npqtools-0.1.15.dist-info/RECORD,,
