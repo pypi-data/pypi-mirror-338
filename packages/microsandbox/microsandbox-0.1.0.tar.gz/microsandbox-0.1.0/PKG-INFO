@@ -1,0 +1,92 @@
+Metadata-Version: 2.4
+Name: microsandbox
+Version: 0.1.0
+Summary: Microsandbox Python SDK
+Home-page: https://microsandbox.dev
+Author: Microsandbox Team
+Author-email: team@microsandbox.dev
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Provides-Extra: dev
+Requires-Dist: pytest>=6.0.0; extra == "dev"
+Requires-Dist: black>=22.0.0; extra == "dev"
+Requires-Dist: isort>=5.0.0; extra == "dev"
+Requires-Dist: mypy>=0.900; extra == "dev"
+Requires-Dist: build>=0.8.0; extra == "dev"
+Requires-Dist: twine>=4.0.0; extra == "dev"
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: provides-extra
+Dynamic: requires-python
+Dynamic: summary
+
+# Microsandbox Python SDK
+
+A minimal Python SDK for the Microsandbox project.
+
+## Installation
+
+```bash
+pip install microsandbox
+```
+
+## Usage
+
+```python
+from microsandbox import hello
+
+# Print a greeting
+hello.greet("World")
+```
+
+## Development
+
+### Setup
+
+```bash
+# Clone the repository
+git clone https://github.com/yourusername/monocore.git
+cd monocore/sdk/python
+
+# Create a virtual environment
+python -m venv venv
+source venv/bin/activate  # On Windows: venv\Scripts\activate
+
+# Install development dependencies
+pip install -e ".[dev]"
+```
+
+### Building the Package
+
+```bash
+python -m build
+```
+
+### Publishing to PyPI
+
+```bash
+# Install publishing tools
+pip install twine
+
+# Build the distribution
+python -m build
+
+# Upload to TestPyPI first (recommended)
+twine upload --repository-url https://test.pypi.org/legacy/ dist/*
+
+# Upload to PyPI
+twine upload dist/*
+```
+
+Make sure you have registered for an account on [PyPI](https://pypi.org/) and created an API token for authentication.
+
+## License
+
+[MIT](LICENSE)
