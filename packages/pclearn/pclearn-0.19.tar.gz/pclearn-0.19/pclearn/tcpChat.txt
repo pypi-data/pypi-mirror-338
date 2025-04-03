@@ -1,0 +1,69 @@
+//ChatServer.java
+import java.net.*;
+import java.io.*;
+class ChatServer {
+public static void main(String args[]) {
+try (ServerSocket ss = new ServerSocket(8000)) {
+System.out.println("Waiting for client to connect..");
+try (Socket s = ss.accept();
+BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+PrintWriter out = new PrintWriter(s.getOutputStream(), true);
+BufferedReader in = new BufferedReader(new InputStreamReader(s.getInputStream()))) {
+String receive, send;
+while ((receive = in.readLine()) != null) {
+if (receive.equals("STOP")) break;
+System.out.println("Client Says: " + receive);
+System.out.print("Server Says: ");
+send = br.readLine();
+out.println(send);
+}
+}
+} catch (IOException e) {
+e.printStackTrace();
+}
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//ChatClient.java
+import java.net.*;
+import java.io.*;
+class ChatClient {
+public static void main(String args[]) {
+try (Socket s = new Socket("localhost", 8000);
+BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+PrintWriter out = new PrintWriter(s.getOutputStream(), true);
+BufferedReader in = new BufferedReader(new InputStreamReader(s.getInputStream()))) {
+String msg;
+System.out.println("To stop chatting with server type STOP");
+System.out.print("Client Says: ");
+while ((msg = br.readLine()) != null) {
+out.println(msg);
+if (msg.equals("STOP")) break;
+System.out.println("Server Says: " + in.readLine());
+System.out.print("Client Says: ");
+}
+} catch (IOException e) {
+e.printStackTrace();
+}
+}
+}

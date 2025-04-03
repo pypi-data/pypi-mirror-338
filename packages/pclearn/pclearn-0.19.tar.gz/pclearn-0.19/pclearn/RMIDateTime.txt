@@ -1,0 +1,98 @@
+//RMIInterfaceDate.java
+import java.rmi.*;
+public interface RMIInterfaceDate extends Remote {
+public String printDate() throws Exception;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//RMIServerDate.java
+import java.rmi.*;
+import java.rmi.server.*;
+import java.util.*;
+import java.util.Date;
+import java.text.SimpleDateFormat;
+public class RMIServerDate extends UnicastRemoteObject implements RMIInterfaceDate {
+public RMIServerDate() throws Exception {
+System.out.println("Server is initialised");
+}
+public String printDate() throws Exception {
+Date d = new Date();
+SimpleDateFormat myFormat = new SimpleDateFormat("dd-MM-yyyy hh:mm:ss");
+String myDate = myFormat.format(d);
+System.out.println("Server: " + myDate);
+return myDate;
+}
+public static void main(String[] args) throws Exception {
+System.out.println("RMIServerDate started.");
+RMIServerDate obj = new RMIServerDate();
+Naming.bind("RMIServerDate", obj);
+System.out.println("Object registered.");
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//RMIClientDate.java
+import java.rmi.*;
+import java.io.*;
+public class RMIClientDate {
+public static void main(String[] args) throws Exception {
+System.out.println("RMIClientDate started.");
+RMIInterfaceDate server = (RMIInterfaceDate) Naming.lookup("RMIServerDate");
+String serverDate = server.printDate();
+System.out.println("Server: " + serverDate);
+}
+}

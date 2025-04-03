@@ -1,0 +1,79 @@
+Practical No 7
+Aim: Implement Windows Hyper V virtualization
+Step 1: Search for windows features on or off in search bar and open it.
+ 
+Step 2:Now scroll down click on  Hyper-v  (“Don’t Click  ok go to step no 3”).
+ 
+Step 3:Now scroll down click on  Windows Sandbox and then click on ok 
+ 
+Step 4: Now Click on Restart Now (Pc will restart automatically and  it will take few minutes for the setup.)
+ 
+
+Step 5 : Now in Start Search for Hyper V-manager and open it.
+ 
+Step 6 : Now click on the new-> Virtual Machine (Located on the right hand side of the tab) to create a virtual machine.
+ 
+Step 7 : Press next and then assign the name for virtual machine and click on next.
+   
+Step 8 :  Now in the next assign memory(RAM ) 2048 or 4096 MB and click on next
+ 
+
+Step 9 : Now in the Configure networking section select Default switch and click on next.
+ 
+Step 10 : Now in Connect Virtual Hard Disk Section select the location where you want to save the VM file And now increase of memory to 140GB and click on next (Note:select the drive which have atleast 140 GB free .)
+ 
+
+
+Step 11 : Now in Installation Option  section Select “Install an operating system from cd/DVD-ROM” ,
+Then Click on Image file -> Browse.. and select the Ubuntu Iso file and click on next. 
+(This file in the TYCS_CC_SOFTWARE folder check in Lab 1-1 )
+   
+Step 12 : Now click on the finish Now the Vm is created
+Step 13 : Now click on “Connect” located Right Handside in the Action (under the name of virtual machine which you have given.)
+ 
+Step 14 : Now click on start.
+Step 15 : Now use arrow keys and select the try or install ubuntu and press enter.
+ 
+
+Step 16 : And now wait for the ubuntu to complete its installation. 
+Step 17 : Now open the terminal and execute the below commands in it.
+
+Set 1:
+
+* i) Display calendar of current year: cal
+* ii) Display today's date: date
+* iii) Display list of all users currently logged in: whoami
+* iv) Display message "Hello World": echo "Hello World"
+* v) Perform some calculation: bc (starts an interactive calculator)
+
+Set 2:
+
+* i) Display present working directory: pwd
+* ii) Display today's date and time in 2 different lines:
+   bash
+   date +"%D"
+   date +"%T"
+   
+* iii) Display your terminal address: tty
+* iv) Display login name of user currently logged in: whoami
+* v) Display all processes of the users: ps aux
+* vi) Display all files and directories in current working directory: ls -l
+
+Set 3:
+
+* i) Display content of file: cat filename
+* ii) Copy the given file: cp filename destination
+* iii) Rename the given file: mv oldname newname
+* iv) Delete the given file: rm filename
+* v) Exit: exit or press Ctrl+D
+* vi) If above 4 are not there then print error message:
+   bash
+   case $1 in
+       "cat") cat $2 ;;
+       "cp") cp $2 $3 ;;
+       "mv") mv $2 $3 ;;
+       "rm") rm $2 ;;
+       "exit") exit ;;
+       *) echo "Invalid command" ;;
+   esac
+

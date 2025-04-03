@@ -1,0 +1,123 @@
+//RPCNumServer.java
+import java.util.*;
+import java.net.*;
+import java.io.*;
+class RPCNumServer {
+DatagramSocket ds;
+DatagramPacket dp;
+String str, methodName, result;
+int val;
+RPCNumServer() {
+try {
+ds = new DatagramSocket(1200);
+byte b[] = new byte[4096];
+while (true) {
+dp = new DatagramPacket(b, b.length);
+ds.receive(dp);
+str = new String(dp.getData(), 0, dp.getLength());
+System.out.println("Received request: " + str); // Print the received request
+if (str.equalsIgnoreCase("q")) {
+System.exit(1);
+} else {
+StringTokenizer st = new StringTokenizer(str, " ");
+methodName = st.nextToken();
+val = Integer.parseInt(st.nextToken());
+}
+InetAddress ia = InetAddress.getLocalHost();
+if (methodName.equalsIgnoreCase("square")) {
+result = "" + square(val);
+} else if (methodName.equalsIgnoreCase("squareroot")) {
+result = "" + squareroot(val);
+} else if (methodName.equalsIgnoreCase("cube")) {
+result = "" + cube(val);
+} else if (methodName.equalsIgnoreCase("cuberoot")) {
+result = "" + cuberoot(val);
+} else {
+result = "Invalid method";
+}
+byte b1[] = result.getBytes();
+DatagramSocket ds1 = new DatagramSocket();
+DatagramPacket dp1 = new DatagramPacket(b1, b1.length, InetAddress.getLocalHost(), 1300);
+ds1.send(dp1);
+System.out.println("Result: " + result);
+}
+} catch (Exception e) {
+e.printStackTrace();
+}
+}
+public double square(int a) {
+return a * a;
+}
+public double squareroot(int a) {
+return Math.sqrt(a);
+}
+public double cube(int a) {
+return a * a * a;
+}
+public double cuberoot(int a) {
+return Math.cbrt(a);
+}
+public static void main(String[] args) {
+new RPCNumServer();
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//RPCNumClient.java
+import java.io.*;
+import java.net.*;
+class RPCNumClient {
+RPCNumClient() {
+try {
+InetAddress ia = InetAddress.getLocalHost();
+DatagramSocket ds = new DatagramSocket();
+DatagramSocket ds1 = new DatagramSocket(1300);
+System.out.println("RPC Client");
+System.out.println("1. Square of the number - square");
+System.out.println("2. Square root of the number - squareroot");
+System.out.println("3. Cube of the number - cube");
+System.out.println("4. Cube root of the number - cuberoot");
+System.out.println("Enter method name and the number");
+while (true) {
+BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+String str = br.readLine();
+byte b[] = str.getBytes();
+DatagramPacket dp = new DatagramPacket(b, b.length, ia, 1200);
+ds.send(dp);
+dp = new DatagramPacket(new byte[4096], 4096);
+ds1.receive(dp);
+String s = new String(dp.getData(), 0, dp.getLength());
+System.out.println("Result = " + s);
+}
+} catch (Exception e) {
+e.printStackTrace();
+}
+}
+public static void main(String[] args) {
+new RPCNumClient();
+}
+}

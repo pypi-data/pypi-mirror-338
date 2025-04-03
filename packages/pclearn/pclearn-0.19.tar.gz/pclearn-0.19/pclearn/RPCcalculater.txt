@@ -1,0 +1,127 @@
+//RPCServer.java
+import java.util.*;
+import java.net.*;
+class RPCServer {
+DatagramSocket ds;
+RPCServer() {
+try {
+ds = new DatagramSocket(1200);
+byte[] buffer = new byte[4096];
+while (true) {
+DatagramPacket dp = new DatagramPacket(buffer, buffer.length);
+ds.receive(dp);
+String request = new String(dp.getData(), 0, dp.getLength());
+System.out.println("Received request: " + request); 
+if (request.equalsIgnoreCase("q")) {
+System.exit(1);
+}
+StringTokenizer st = new StringTokenizer(request, " ");
+String methodName = st.nextToken();
+int val1 = Integer.parseInt(st.nextToken());
+int val2 = Integer.parseInt(st.nextToken());
+String result = processRequest(methodName, val1, val2);
+System.out.println("Result: " + result); // Display the result on the server
+sendResponse(result);
+}
+} catch (Exception e) {
+e.printStackTrace();
+}
+}
+private String processRequest(String methodName, int val1, int val2) {
+switch (methodName.toLowerCase()) {
+case "add": return String.valueOf(add(val1, val2));
+case "sub": return String.valueOf(sub(val1, val2));
+case "mul": return String.valueOf(mul(val1, val2));
+case "div": return String.valueOf(div(val1, val2));
+default: return "Invalid method";
+}
+}
+private void sendResponse(String result) throws Exception {
+byte[] responseBytes = result.getBytes();
+DatagramSocket ds1 = new DatagramSocket();
+DatagramPacket dp1 = new DatagramPacket(responseBytes, responseBytes.length, InetAddress.getLocalHost(), 1300);
+ds1.send(dp1);
+ds1.close();
+}
+public int add(int val1, int val2) {
+return val1 + val2;
+}
+public int sub(int val1, int val2) {
+return val1 - val2;
+}
+public int mul(int val1, int val2) {
+return val1 * val2;
+}
+public int div(int val1, int val2) {
+return (val2 != 0) ? val1 / val2 : 0; 
+}
+public static void main(String[] args) {
+new RPCServer();
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//RPCClient.java
+import java.io.*;
+import java.net.*;
+class RPCClient {
+RPCClient() {
+try {
+InetAddress ia = InetAddress.getLocalHost();
+DatagramSocket ds = new DatagramSocket();
+DatagramSocket ds1 = new DatagramSocket(1300);
+System.out.println("RPC Client");
+System.out.println("Available operations:");
+System.out.println("1. Addition - add num1 num2");
+System.out.println("2. Subtraction - sub num1 num2");
+System.out.println("3. Multiplication - mul num1 num2");
+System.out.println("4. Division - div num1 num2");
+System.out.println("Type 'q' to quit.");
+while (true) {
+BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+System.out.print("Enter operation: ");
+String str = br.readLine();
+byte[] b = str.getBytes();
+DatagramPacket dp = new DatagramPacket(b, b.length, ia, 1200);
+ds.send(dp);
+dp = new DatagramPacket(new byte[4096], 4096);
+ds1.receive(dp);
+String s = new String(dp.getData(), 0, dp.getLength());
+System.out.println("Result = " + s);
+}
+} catch (Exception e) {
+e.printStackTrace();
+}
+}
+public static void main(String[] args) {
+new RPCClient();
+}
+}
