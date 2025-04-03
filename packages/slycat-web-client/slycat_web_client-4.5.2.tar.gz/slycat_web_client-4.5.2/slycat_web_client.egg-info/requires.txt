@@ -1,0 +1,8 @@
+requests
+requests-kerberos
+numpy
+cherrypy
+scikit-learn
+npTDMS
+pandas
+natsort
