@@ -1,0 +1,6 @@
+connectors
+dist
+minimal_client
+notebooks
+tests
+uns_mcp
