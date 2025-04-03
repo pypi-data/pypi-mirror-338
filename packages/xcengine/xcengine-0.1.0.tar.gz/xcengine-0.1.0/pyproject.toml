@@ -1,0 +1,74 @@
+[build-system]
+requires = [
+  "setuptools >= 40.9.0",
+]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "xcengine"
+dynamic = ["version"]
+authors = [
+  {name = "Pontus Lurcock", email = "pontus.lurcock@brockmann-consult.de"}
+]
+description = """\
+  Create OGC Earth Observation Application Packages from Jupyter notebooks\
+  """
+keywords = [
+  "analysis ready data", "data science", "datacube", "xarray", "zarr"
+]
+readme = {file = "README.md", content-type = "text/markdown"}
+license = "MIT"
+license-files = ["LICEN[CS]E*"]
+requires-python = ">=3.11"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+    "Development Status :: 4 - Beta",
+    "Topic :: Scientific/Engineering"
+]
+dependencies = [
+  "click",
+  "docker",
+  "ipython",  # Used by nbconvert to transform IPython syntax to pure Python
+  "nbconvert",
+  "nbformat",
+  "pystac",
+  "pyyaml",
+  "xarray",
+  "xcube-core"
+]
+
+[tool.setuptools.dynamic]
+version = {attr = "xcengine.__version__"}
+
+[tool.setuptools.packages.find]
+exclude = [
+  "test*",
+  "doc*",
+  "site*",
+  "htmlcov*"
+]
+
+[project.scripts]
+xcetool = "xcengine.cli:cli"
+
+[project.optional-dependencies]
+dev = [
+  "pytest",
+  "pytest-cov",
+  "black",
+  "flake8"
+]
+doc = [
+  "mkdocs",
+  "mkdocs-material",
+  "mkdocstrings",
+  "mkdocstrings-python"
+]
+
+[project.urls]
+Documentation = "https://github.com/xcube-dev/xcengine/blob/main/README.md"
+Issues = "https://github.com/xcube-dev/xcengine/issues"
+Changelog = "https://github.com/xcube-dev/xcengine/blob/main/CHANGES.md"
+Repository = "https://github.com/xcube-dev/xcengine"
+Homepage = "https://github.com/xcube-dev/xcengine"

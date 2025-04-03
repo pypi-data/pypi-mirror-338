@@ -1,0 +1,89 @@
+Metadata-Version: 2.4
+Name: xcengine
+Version: 0.1.0
+Summary: Create OGC Earth Observation Application Packages from Jupyter notebooks
+Author-email: Pontus Lurcock <pontus.lurcock@brockmann-consult.de>
+License-Expression: MIT
+Project-URL: Documentation, https://github.com/xcube-dev/xcengine/blob/main/README.md
+Project-URL: Issues, https://github.com/xcube-dev/xcengine/issues
+Project-URL: Changelog, https://github.com/xcube-dev/xcengine/blob/main/CHANGES.md
+Project-URL: Repository, https://github.com/xcube-dev/xcengine
+Project-URL: Homepage, https://github.com/xcube-dev/xcengine
+Keywords: analysis ready data,data science,datacube,xarray,zarr
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Classifier: Development Status :: 4 - Beta
+Classifier: Topic :: Scientific/Engineering
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: click
+Requires-Dist: docker
+Requires-Dist: ipython
+Requires-Dist: nbconvert
+Requires-Dist: nbformat
+Requires-Dist: pystac
+Requires-Dist: pyyaml
+Requires-Dist: xarray
+Requires-Dist: xcube-core
+Provides-Extra: dev
+Requires-Dist: pytest; extra == "dev"
+Requires-Dist: pytest-cov; extra == "dev"
+Requires-Dist: black; extra == "dev"
+Requires-Dist: flake8; extra == "dev"
+Provides-Extra: doc
+Requires-Dist: mkdocs; extra == "doc"
+Requires-Dist: mkdocs-material; extra == "doc"
+Requires-Dist: mkdocstrings; extra == "doc"
+Requires-Dist: mkdocstrings-python; extra == "doc"
+Dynamic: license-file
+
+[![Unit tests](https://github.com/xcube-dev/xcengine/actions/workflows/tests.yaml/badge.svg)](https://github.com/xcube-dev/xcengine/actions/workflows/tests.yaml)
+[![codecov](https://codecov.io/gh/xcube-dev/xcengine/graph/badge.svg?token=dTPaJB6nR3)](https://codecov.io/gh/xcube-dev/xcengine)
+
+# xcengine: turn Jupyter notebooks into Application Packages
+
+xcengine provides tools to convert a Jupyter notebook into one of several
+parameterized, headlessly runnable forms:
+
+-   A Python script
+-   A Docker container image
+-   An OGC [Earth Observation Application
+    Package](https://docs.ogc.org/bp/20-089r1.html)
+
+# Defining parameters in a notebook
+
+xcengine uses the same convention as
+[papermill](https://papermill.readthedocs.io/)
+for defining parameters in a notebook. All parameters should be set as
+Python variables in the same notebook code cell, and that cell should be
+designated as the parameter cell by giving it the tag `parameters`. In
+JupyterLab, you can do this using the property inspector (⚙⚙ icon in the
+right sidebar). See the [papermill
+documentation](https://papermill.readthedocs.io/en/latest/usage-parameterize.html#designate-parameters-for-a-cell)
+for more details.
+
+During conversion, `xcetool` will detect any variables that are set in the
+parameters cell and make them available as command-line parameters for the
+output script and container, and as workflow parameters for the application
+package.
+
+# xcetool usage
+
+xcengine provides a command-line tool called `xcetool`, which has several
+subcommands for different functions. Use the `--help` option with these
+subcommands to get more details on usage.
+
+## `xcetool make-script`
+
+Convert a Jupyter notebook to a non-interactive Python script.
+
+## `xcetool image build`
+
+Convert a Jupyter notebook to a Docker container image. This subcommand can
+additionally produce a Common Workflow Language (CWL) file defining an OGC
+[Earth Observation Application Package](https://docs.ogc.org/bp/20-089r1.html) which uses the container image.
+
+## `xcetool image run`
+
+Run a Docker container using an image converted from a Jupyter notebook.
