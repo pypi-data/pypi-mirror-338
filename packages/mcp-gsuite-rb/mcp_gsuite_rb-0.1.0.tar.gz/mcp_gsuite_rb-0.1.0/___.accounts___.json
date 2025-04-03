@@ -1,0 +1,9 @@
+{
+    "accounts": [
+        {
+            "email": "hillary.kipkemoi@rizzbuzz.com",
+            "account_type": "work",
+            "extra_info": "Contains Work email and calendar. Used for communciation with team members and getting updates on meetings and projects progress"
+        }
+    ]
+}
