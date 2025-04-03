@@ -1,0 +1,13 @@
+xserver/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+xserver/attribute.py,sha256=WiUZAqNUkx5YiNvh8kgutq5fbR3chYx7szPXyf8TIg8,230
+xserver/http/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+xserver/http/proxy.py,sha256=sa1bUHS2rydCcBhdcQhT2O5GFeRfJyVA1XPX0CrM7uE,4164
+xserver/sock/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+xserver/unittest/http/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+xserver/unittest/http/test_proxy.py,sha256=eLziumOD2XLIAIA4Lt2qjRkOAH87F2Gh68GMko56rMU,5164
+xser-0.1.dist-info/LICENSE,sha256=gXf5dRMhNSbfLPYYTY_5hsZ1r7UU1OaKQEAQUhuIBkM,18092
+xser-0.1.dist-info/METADATA,sha256=UY11uF9_LHEDgIdwqncm5LqC8YMN1mXXkVaTU_nKOAA,740
+xser-0.1.dist-info/WHEEL,sha256=pWvVuNuBTVmNV7Lp2jMAgt1NplTICeFdl1SW8U3MWN4,109
+xser-0.1.dist-info/top_level.txt,sha256=XoOmQtzRYDUfXN6-ypMFgEAi--e403RI5CjbA4vuujo,8
+xser-0.1.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+xser-0.1.dist-info/RECORD,,
