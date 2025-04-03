@@ -1,0 +1,43 @@
+[build-system] 
+requires = ["setuptools>=61.0", "wheel"] 
+build-backend = "setuptools.build_meta" 
+ 
+[project] 
+name = "neuropipeline2" 
+version = "0.1.1" 
+authors = [ 
+  { name = "Adam Emile Aske", email = "adamaske@live.no" }, 
+] 
+description = "A short description of my project." 
+readme = "README.md" 
+license = { file = "LICENSE" }
+requires-python = ">=3.13" 
+classifiers = [ 
+    "Programming Language :: Python :: 3", 
+    "License :: OSI Approved :: MIT License", 
+    "Operating System :: OS Independent", 
+] 
+dependencies = [
+    "numpy",
+    "pandas",
+    "mne",
+    "mne-nirs",
+    "matplotlib",
+    "snirf",
+    "nilearn",
+    "pylsl",
+    "scipy",
+    "h5py",
+    "pywavelets",
+    "pyedflib",
+]
+
+[project.urls] 
+"Homepage" = "https://github.com/yourusername/neuropipeline2" 
+"Bug Tracker" = "https://github.com/yourusername/neuropipeline2/issues" 
+
+[project.optional-dependencies]
+dev = [
+    "pytest",
+    "flake8",
+]
