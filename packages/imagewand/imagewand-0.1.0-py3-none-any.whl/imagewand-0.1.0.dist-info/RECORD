@@ -1,0 +1,17 @@
+imagewand/__init__.py,sha256=OMXzSuR_T9RRCZQLe1I4mpFLMbg9xrT-qh6Z3qe0Hbc,409
+imagewand/autofix.py,sha256=a3xM9CV0yuHRWVPi_2r1sM-Ur8m-J_ku1dDHRkEtsvM,11005
+imagewand/automerge.py,sha256=GOkHN_HzqKNUMYr2RcshOGreVRtiJx_963s1H0J6JNs,12158
+imagewand/cli.py,sha256=he0EagAbOq1M8__TK8bNPNJLILUjld7cKUZdXlA_01A,20621
+imagewand/config.py,sha256=rbpJ2KuuhyY1zg9SBNAwO5YkooIOaZkEYn6HbCARll0,965
+imagewand/filters.py,sha256=sO29gywGUJV65mAHtxBg7yCKWSQaNpgkUGJt86M1LrY,18383
+imagewand/pdf2img.py,sha256=vLrmz6ZrbofNJrTXz2ciryqJlGm-ysojjGb6zMJPFyQ,1414
+imagewand/resize.py,sha256=I9YBUzydMjnBcRffoyDfbY0Po4-e0rVzJOsgHWTKs7I,1033
+imagewand/plugins/__init__.py,sha256=2QWlIhXCkgOtfFieHE86W-vofduJTJj-uJY87TOI1FQ,418
+imagewand/plugins/custom_filters.py,sha256=przv9qgAS8F9-MD2kVNxNzX_gJGrTdmsneVljqHoaMk,884
+imagewand/scripts/merge_command.py,sha256=23ahaLzmKULzuZoMxGvPjP-_rw8x5rNO9kFDmcnLRKk,1481
+imagewand-0.1.0.dist-info/licenses/LICENSE,sha256=Y0vyUP2m-45fDAC0ly4TCNew3ctnn53CYDX1-3P0xHs,10749
+imagewand-0.1.0.dist-info/METADATA,sha256=PVGE9S1iDxqCZa5UyKLu_o8vk9uDKWnEUih8h4FXf1k,5894
+imagewand-0.1.0.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+imagewand-0.1.0.dist-info/entry_points.txt,sha256=hQyfN6J6muIRCiH08eKX-pyOqGEiC3ceH-vfRB0e2zQ,199
+imagewand-0.1.0.dist-info/top_level.txt,sha256=DZUZNTiOq0wnEeRBuJUwTzDZDMxUC3xMLZq7F8TxVUQ,10
+imagewand-0.1.0.dist-info/RECORD,,
