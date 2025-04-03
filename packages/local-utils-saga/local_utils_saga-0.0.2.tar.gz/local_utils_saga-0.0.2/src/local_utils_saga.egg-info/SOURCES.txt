@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+src/local_utils_saga/__init__.py
+src/local_utils_saga/notification.py
+src/local_utils_saga/workflow_server_utils.py
+src/local_utils_saga.egg-info/PKG-INFO
+src/local_utils_saga.egg-info/SOURCES.txt
+src/local_utils_saga.egg-info/dependency_links.txt
+src/local_utils_saga.egg-info/top_level.txt
