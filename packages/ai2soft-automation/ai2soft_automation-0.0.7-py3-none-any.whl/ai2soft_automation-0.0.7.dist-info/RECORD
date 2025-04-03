@@ -1,0 +1,15 @@
+src/__init__.py,sha256=lafFAL63cWCpbYYy-YoHvwG2KuEPH2xNflfjudsbe90,353
+src/automation.py,sha256=_v_tLKJtCFfeEoDzxs5n3QLZ8C-CS87WO07zS6N_NtI,2825
+src/internals/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+src/internals/keyboard.py,sha256=xrCYFnOdgeN8IVo8y8or0bGUMjVX1x2IdKCZm8Cyqzw,28
+src/internals/mouse.py,sha256=9_nMwFKcmfWjq3NSLBRuC98XFp4LLD9p6ZNqcMXjNB0,2168
+src/internals/ocr.py,sha256=OClylnllT8DM0Suw6H8MD9kPSL0aYw8czClTA5nlBBA,3935
+src/internals/screenShot.py,sha256=LP9kAKU4V5OjbLzv0FH2Jnf9Kd7mLHEZCXF6zH83CC0,6266
+src/models/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+src/models/datetime.py,sha256=MGPiDSwLlbaawfpWlJMt7h8_CXeYYe-FuM7DKweSr6I,4283
+src/models/screenItem.py,sha256=FM4l2pabXDiqarucsVP9ALv73EnJ3oPr8xEUAxi5Bic,1589
+ai2soft_automation-0.0.7.dist-info/LICENSE,sha256=FpEG_RqWdy76t8wkU4QmaOXVInnYF731fSJql5SQrJw,1071
+ai2soft_automation-0.0.7.dist-info/METADATA,sha256=_-v71MdbzMo9vwo3XC7higy6j_CjTFFa0Osq62HLn0Q,629
+ai2soft_automation-0.0.7.dist-info/WHEEL,sha256=tZoeGjtWxWRfdplE7E3d45VPlLNQnvbKiYnx7gwAy8A,92
+ai2soft_automation-0.0.7.dist-info/top_level.txt,sha256=74rtVfumQlgAPzR5_2CgYN24MB0XARCg0t-gzk6gTrM,4
+ai2soft_automation-0.0.7.dist-info/RECORD,,
