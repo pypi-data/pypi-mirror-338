@@ -1,0 +1,7 @@
+prefix=/Users/runner/work/mimir/mimir/build/lib.macosx-11.0-arm64-cpython-39/pymimir/dependencies/installs
+includedir=${prefix}/include
+
+Name: pybind11
+Description: Seamless operability between C++11 and Python
+Version: 2.11.1
+Cflags: -I${includedir}
