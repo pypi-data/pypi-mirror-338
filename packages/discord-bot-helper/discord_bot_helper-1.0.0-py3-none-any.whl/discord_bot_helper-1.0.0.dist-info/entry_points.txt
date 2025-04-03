@@ -1,0 +1,2 @@
+[console_scripts]
+dbh-init = discord_bot_helper.__main__:main
