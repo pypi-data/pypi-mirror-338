@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+adjeleypdf/__init__.py
+adjeleypdf/pdf2image.py
+adjeleypdf/pdf2text.py
+adjeleypdf.egg-info/PKG-INFO
+adjeleypdf.egg-info/SOURCES.txt
+adjeleypdf.egg-info/dependency_links.txt
+adjeleypdf.egg-info/top_level.txt
