@@ -1,0 +1,43 @@
+Metadata-Version: 2.4
+Name: pybithumb2
+Version: 0.0.1.dev0
+Summary: Bithumb API 2.0 wrapper for Python environments using Pydantic models
+Author-email: kahngjoonkoh <kahngjoonk@gmail.com>
+License-Expression: MIT
+Project-URL: Issues, https://github.com/kahngjoonkoh/pybithumb2/issues
+Project-URL: Documentation, https://github.com/kahngjoonkoh/pybithumb2/docs
+Project-URL: Source Code, https://github.com/kahngjoonkoh/pybithumb2
+Keywords: python,client,library,trading,websocket,realtime,investing,crypto,bithumb,api
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Information Technology
+Classifier: Intended Audience :: Financial and Insurance Industry
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Office/Business :: Financial
+Classifier: Topic :: Office/Business :: Financial :: Investment
+Classifier: Typing :: Typed
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pydantic==2.11.1
+Requires-Dist: PyJWT==2.10.1
+Requires-Dist: pytest==8.3.2
+Requires-Dist: python-dotenv==1.1.0
+Requires-Dist: Requests==2.32.3
+Dynamic: license-file
+
+# PyBithumb2
+Bithumb API 2.0 wrapper for Python environments using Pydantic models and the python typing library to enhance developer experience.
+
+## Installation
+`pip install pybithumb2`
+
+## Credits
+Alpaca-trading python SDK
+Python-KIS
