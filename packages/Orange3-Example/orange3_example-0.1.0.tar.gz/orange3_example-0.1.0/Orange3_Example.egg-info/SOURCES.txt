@@ -1,0 +1,17 @@
+MANIFEST.in
+setup.py
+Orange3_Example.egg-info/PKG-INFO
+Orange3_Example.egg-info/SOURCES.txt
+Orange3_Example.egg-info/dependency_links.txt
+Orange3_Example.egg-info/entry_points.txt
+Orange3_Example.egg-info/not-zip-safe
+Orange3_Example.egg-info/requires.txt
+Orange3_Example.egg-info/top_level.txt
+orangecontrib/orange3example/__init__.py
+orangecontrib/orange3example/utils/llm.py
+orangecontrib/orange3example/utils/microbit.py
+orangecontrib/orange3example/utils/webcam.py
+orangecontrib/orange3example/widgets/__init__.py
+orangecontrib/orange3example/widgets/owllmtransformer.py
+orangecontrib/orange3example/widgets/owmicrobit.py
+orangecontrib/orange3example/widgets/owwebcam.py
