@@ -1,0 +1,24 @@
+Metadata-Version: 2.4
+Name: notebookforms
+Version: 0.1.1
+Project-URL: Documentation, https://github.com/Alexander Schau/forms#readme
+Project-URL: Issues, https://github.com/Alexander Schau/forms/issues
+Project-URL: Source, https://github.com/Alexander Schau/forms
+Author-email: Alexander Schau <alexander@schau.email>
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.8
+Requires-Dist: requests
+Requires-Dist: websockets
+Description-Content-Type: text/markdown
+
+# Notebookforms
+
+...
