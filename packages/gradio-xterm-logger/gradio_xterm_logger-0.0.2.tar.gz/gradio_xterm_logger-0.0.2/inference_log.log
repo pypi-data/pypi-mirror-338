@@ -1,0 +1,9 @@
+* Running on local URL:  http://127.0.0.1:7860
+
+To create a public link, set `share=True` in `launch()`.
+Keyboard interruption in main thread... closing server.
+* Running on local URL:  http://127.0.0.1:7860
+
+To create a public link, set `share=True` in `launch()`.
+Changes detected in: /mnt/c/Users/Lawrence/0402-gradio/gradio_xterm_logger/demo/app.py
+Keyboard interruption in main thread... closing server.
