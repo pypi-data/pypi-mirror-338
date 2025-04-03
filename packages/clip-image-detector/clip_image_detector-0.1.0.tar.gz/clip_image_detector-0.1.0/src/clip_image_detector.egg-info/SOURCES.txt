@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/clip_image_detector.egg-info/PKG-INFO
+src/clip_image_detector.egg-info/SOURCES.txt
+src/clip_image_detector.egg-info/dependency_links.txt
+src/clip_image_detector.egg-info/requires.txt
+src/clip_image_detector.egg-info/top_level.txt
+src/clipimagedetector/__init__.py
+src/clipimagedetector/app.py
+src/clipimagedetector/version.py
