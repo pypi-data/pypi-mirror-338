@@ -1,0 +1,9 @@
+django_sandwich_tag-0.1.3.dist-info/licenses/LICENSE,sha256=DHRCrHuMBNtySvuj5gLP4aL5Y0-Ihvv-zdGGP9UhpX0,1070
+sandwich_tag/__init__.py,sha256=R5TtpJu7Qu6sOarfDpp-5Oyy8Pi2Ir3VewCvsCQiAgo,21
+sandwich_tag/apps.py,sha256=Sqbnu9xU-elFHA5gzwkdoYhYq5MnzoNluJX_kmrzks4,96
+sandwich_tag/templatetags/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sandwich_tag/templatetags/sandwich.py,sha256=tN2gcPUNbkhhwrBFGP0GF4RZGMcSgZbHJvcYCG2bRGw,4523
+django_sandwich_tag-0.1.3.dist-info/METADATA,sha256=2BI43vppdlljZpit135N-JnmROgN2gm8vvHpH1uhSnw,8455
+django_sandwich_tag-0.1.3.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+django_sandwich_tag-0.1.3.dist-info/top_level.txt,sha256=ATn56SnwXu-oqP8GmlD8C2F-xAktaRNBTP5pHaCwviw,13
+django_sandwich_tag-0.1.3.dist-info/RECORD,,
