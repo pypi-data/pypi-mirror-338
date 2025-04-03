@@ -1,0 +1,5 @@
+include README.md
+include NOTES.md
+include TODO.md
+include controllers/Notebooks/*.ipynb
+include controllers/testdata/*.pkl
