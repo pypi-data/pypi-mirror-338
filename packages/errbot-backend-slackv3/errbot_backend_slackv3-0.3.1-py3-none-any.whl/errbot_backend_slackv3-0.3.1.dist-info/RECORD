@@ -1,0 +1,13 @@
+slackv3/__init__.py,sha256=w-xFMG_IN16TUnsFdHqaD21YgxppfPxpRGd1gKqBpH0,61
+slackv3/lib.py,sha256=IAbzyMFURP7nUYyKlpoU9Qu_XtQzjyyBXoyF1k8hjRU,1171
+slackv3/markdown.py,sha256=-Ibbsvfmx8RbKmr_oq0VqBQ4_aFVWBR_UqE65Zuuwms,1126
+slackv3/person.py,sha256=tocZ6V_Qfy58Xf3_b96_LC8OOaN0Vo0t-kTTiNNaX9Y,6689
+slackv3/room.py,sha256=SKy1J-ddoWEqkW-W1WTsKysa451taN6_ZoULQs2fVM8,12182
+slackv3/slackv3.plug,sha256=Faef6qhLI-98ZVOXFSPW59z_rAm8j5mAaPy7fEmq7y8,127
+slackv3/slackv3.py,sha256=Qh8vf8gv89y3_sRkbNEuG7y4x2hgwqiVkMaiRuv9Xcg,45887
+errbot_backend_slackv3-0.3.1.dist-info/LICENSE,sha256=WdZEwdh1TsFW74t_msPzKmr8r1RsmXkd1mFpn6p-WtY,35154
+errbot_backend_slackv3-0.3.1.dist-info/METADATA,sha256=B0LvRvNIDrmzKT2Kwu_9QctGiBkXqtHrkWJz_tTZbFY,1759
+errbot_backend_slackv3-0.3.1.dist-info/WHEEL,sha256=iAkIy5fosb7FzIOwONchHf19Qu7_1wCWyFNR5gu9nU0,91
+errbot_backend_slackv3-0.3.1.dist-info/entry_points.txt,sha256=3F9Y9NUBDeVTRXJL_Z_ivrAvGXlPyQFTUzRi023r3pw,54
+errbot_backend_slackv3-0.3.1.dist-info/top_level.txt,sha256=eZXVukXxIXKweajHDC_BG-22G5R0fZXOE-lE3ykyMIg,8
+errbot_backend_slackv3-0.3.1.dist-info/RECORD,,

@@ -1,0 +1,2 @@
+[errbot.backend_plugins]
+slack = slackv3:SlackBackend
