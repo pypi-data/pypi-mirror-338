@@ -1,0 +1,12 @@
+LICENSE
+README.md
+channels.py
+pyproject.toml
+sendonemail.py
+sendonteams.py
+sendnotifications.egg-info/PKG-INFO
+sendnotifications.egg-info/SOURCES.txt
+sendnotifications.egg-info/dependency_links.txt
+sendnotifications.egg-info/requires.txt
+sendnotifications.egg-info/top_level.txt
+tests/test_sendnotifications.py

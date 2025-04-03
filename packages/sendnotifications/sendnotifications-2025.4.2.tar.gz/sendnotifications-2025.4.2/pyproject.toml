@@ -1,0 +1,35 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+py-modules = ["channels","sendonemail","sendonteams"]
+
+[project]
+name = "sendnotifications"
+version = "2025.04.02"
+dependencies = [
+  "urllib3"
+]
+requires-python = ">=3.10"
+authors = [
+  {name = "Vara Thelu", email = "vthelu@costar.com"}
+]
+maintainers = [
+  {name = "Vara Thelu", email = "vthelu@costar.com"}
+]
+description = "Send Notifications to MSTeams or Email via sns!"
+readme = "README.md"
+license = "MIT"
+keywords = ["sendnotifications", "NotifyMSTeams", "NotifyEmail"]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Programming Language :: Python"
+]
+
+[project.urls]
+Homepage = "https://example.com"
+Documentation = "https://readthedocs.org"
+Repository = "https://github.com/me/spam.git"
+"Bug Tracker" = "https://github.com/me/spam/issues"
+Changelog = "https://github.com/me/spam/blob/master/CHANGELOG.md"
