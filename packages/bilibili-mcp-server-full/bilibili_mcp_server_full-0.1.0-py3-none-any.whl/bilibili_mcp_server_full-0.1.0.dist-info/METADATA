@@ -1,0 +1,22 @@
+Metadata-Version: 2.4
+Name: bilibili-mcp-server-full
+Version: 0.1.0
+Summary: Add your description here
+Author-email: huanyushi <1174601344@qq.com>
+Requires-Python: >=3.10
+Requires-Dist: bilibili-api-python>=17.1.4
+Requires-Dist: mcp[cli]>=1.6.0
+Description-Content-Type: text/markdown
+
+# 
+
+
+## Mcp Debug
+```
+uv run mcp dev src/bilibili_mcp_server_full/server.py
+```
+
+## Client Debug
+```
+uv run --with mcp mcp run src/bilibili_mcp_server_full/server.py
+```

@@ -1,0 +1,2 @@
+[console_scripts]
+bilibili-mcp-server-full = bilibili_mcp_server_full:main
