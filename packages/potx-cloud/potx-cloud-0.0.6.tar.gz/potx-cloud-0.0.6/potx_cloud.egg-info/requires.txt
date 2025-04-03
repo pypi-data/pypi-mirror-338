@@ -1,0 +1,8 @@
+tencentcloud-sdk-python
+PyMuPDF
+pofile
+pandas
+loguru
+toml
+huaweicloudsdkcore
+huaweicloudsdkocr
