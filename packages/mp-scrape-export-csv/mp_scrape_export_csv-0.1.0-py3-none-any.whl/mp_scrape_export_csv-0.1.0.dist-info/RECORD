@@ -1,0 +1,8 @@
+./.gitignore,sha256=qR7CgW5SvxCIscwZq0zqetTPh5lFueigL6OsVPJncAk,3227
+./PKG-INFO,sha256=iHqr_Q8cGGk0mDQDWAAiW41maIxObmftoR_Or0_SRnA,1288
+./README.md,sha256=Fdma2I5cqcG4gNl7YMUbyVmwO4Z9aWxE96Wjb2HymBg,534
+./pyproject.toml,sha256=MzJbScynhg4_9YromSMasoi7L4NM6Z3c9zEePn9cTHI,1009
+./mp_scrape_export_csv/__init__.py,sha256=xNAOgeZ_N87Ik9nmFLveUbuFLfwhxeXvCBmIC74wwD4,1436
+mp_scrape_export_csv-0.1.0.dist-info/METADATA,sha256=iHqr_Q8cGGk0mDQDWAAiW41maIxObmftoR_Or0_SRnA,1288
+mp_scrape_export_csv-0.1.0.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+mp_scrape_export_csv-0.1.0.dist-info/RECORD,,
