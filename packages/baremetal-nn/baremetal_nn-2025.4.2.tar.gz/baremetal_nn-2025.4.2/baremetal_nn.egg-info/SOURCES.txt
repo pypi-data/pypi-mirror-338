@@ -1,0 +1,9 @@
+README.md
+setup.py
+baremetal_nn/__init__.py
+baremetal_nn/traced_module.py
+baremetal_nn.egg-info/PKG-INFO
+baremetal_nn.egg-info/SOURCES.txt
+baremetal_nn.egg-info/dependency_links.txt
+baremetal_nn.egg-info/requires.txt
+baremetal_nn.egg-info/top_level.txt
