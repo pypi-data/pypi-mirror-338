@@ -1,0 +1,19 @@
+Metadata-Version: 2.4
+Name: TT_probability_package
+Version: 0.1.1
+Summary: A library for probability analysis.
+Home-page: 
+Author: Timothy Tew
+Author-email: Timothy Tew <tewtimothy@gmail.com>
+License-Expression: MIT
+Keywords: probability
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Dynamic: author
+Dynamic: license-file
+
+
+
+Test cases:
+
+Run python -m unittest discover tests
