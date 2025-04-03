@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+dbzero/__init__.py
+dbzero.egg-info/PKG-INFO
+dbzero.egg-info/SOURCES.txt
+dbzero.egg-info/dependency_links.txt
+dbzero.egg-info/top_level.txt
