@@ -1,0 +1,16 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:zcml="http://namespaces.zope.org/zcml"
+    >
+
+  <include package="plone.restapi" />
+
+  <include package=".services" />
+
+  <!-- enable controlpanel on plone.restapi -->
+  <adapter
+      factory=".controlpanel.ImmersiveReaderControlpanel"
+      provides="rer.immersivereader.interfaces.IImmersiveReaderControlpanel"
+      name="immersive-reader-settings"
+      />
+</configure>
