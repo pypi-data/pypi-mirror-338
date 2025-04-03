@@ -1,0 +1,8 @@
+sgx/__init__.py,sha256=y4Ncum3_CPMeA6ZvFxfa3wOleonHukuRlHhEXSS9RjY,16
+sgx/attestaion.py,sha256=2jg27IzDYL9Ypq8E1q8dFqcNr9yuk2fStzEFOEcEMrU,13332
+sgx/client.py,sha256=1nOV9l8XAws14HVMe6N3xZOe84UGu1uM5gP5mSmlDWo,13792
+sgx/session.py,sha256=IimU9DzBDLWGsDUEogcFZfbIKummJKJz_Y3taDvZHuA,13426
+sgx_storage_client-0.0.3.dist-info/METADATA,sha256=-98JZywLJwPpTIhlE9Jt088ClS_-jRjdYGu1cc_IuUY,4521
+sgx_storage_client-0.0.3.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+sgx_storage_client-0.0.3.dist-info/top_level.txt,sha256=oW7o1QqOhaMx1mmI_s0gUsUQrfxj-1UUvnZAZeOPhhw,4
+sgx_storage_client-0.0.3.dist-info/RECORD,,
