@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+discord_bot_helper/__init__.py
+discord_bot_helper/__main__.py
+discord_bot_helper/bot_setup.py
+discord_bot_helper/config_setup.py
+discord_bot_helper.egg-info/PKG-INFO
+discord_bot_helper.egg-info/SOURCES.txt
+discord_bot_helper.egg-info/dependency_links.txt
+discord_bot_helper.egg-info/entry_points.txt
+discord_bot_helper.egg-info/requires.txt
+discord_bot_helper.egg-info/top_level.txt
