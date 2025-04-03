@@ -1,0 +1,2 @@
+[console_scripts]
+stssamldriver = sts_saml_driver:main
