@@ -1,0 +1,13 @@
+README.md
+setup.py
+kerdosai/__init__.py
+kerdosai/agent.py
+kerdosai/deployer.py
+kerdosai/processor.py
+kerdosai/trainer.py
+kerdosai.egg-info/PKG-INFO
+kerdosai.egg-info/SOURCES.txt
+kerdosai.egg-info/dependency_links.txt
+kerdosai.egg-info/requires.txt
+kerdosai.egg-info/top_level.txt
+tests/test_kerdosai.py
