@@ -1,0 +1,10 @@
+nonlinear-benchmarks
+h5py
+easyDataverse
+pandas
+gdown
+bagpy
+
+[dev]
+matplotlib
+nbdev
