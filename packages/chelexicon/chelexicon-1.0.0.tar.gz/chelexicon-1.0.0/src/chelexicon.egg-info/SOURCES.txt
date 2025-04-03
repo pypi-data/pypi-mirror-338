@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+src/chelexicon/__init__.py
+src/chelexicon.egg-info/PKG-INFO
+src/chelexicon.egg-info/SOURCES.txt
+src/chelexicon.egg-info/dependency_links.txt
+src/chelexicon.egg-info/top_level.txt
+src/chelexicon/tools/__init__.py
+src/chelexicon/tools/sphinx_setup/__init__.py
+src/chelexicon/tools/sphinx_setup/setup.py

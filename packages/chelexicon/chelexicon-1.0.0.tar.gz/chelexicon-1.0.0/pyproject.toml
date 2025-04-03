@@ -1,0 +1,15 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "chelexicon"
+version = "1.0.0"
+description = "A wrapper for Sphinx that allows you to create an instance of SphinxSetup that will automatically configue Sphinx with minimal manual configuration."
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = []
+license = {file = "LICENSE"}
+authors = [
+    {name = "Chelsea Dax"},
+]
