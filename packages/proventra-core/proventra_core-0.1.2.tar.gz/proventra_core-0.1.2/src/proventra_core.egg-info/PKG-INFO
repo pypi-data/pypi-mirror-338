@@ -1,0 +1,203 @@
+Metadata-Version: 2.4
+Name: proventra-core
+Version: 0.1.2
+Summary: Prompt injection detection and prevention library for LLM applications
+Author: Gasper Pregelj
+License: MIT
+Project-URL: Repository, https://github.com/proventra/proventra-core
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: <4.0,>=3.11
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: torch>=2.2.1
+Requires-Dist: transformers>=4.38.2
+Requires-Dist: numpy>=1.26.4
+Requires-Dist: langchain>=0.1.4
+Requires-Dist: langchain-core>=0.1.27
+Requires-Dist: python-dotenv>=1.0.1
+Requires-Dist: tiktoken>=0.5.2
+Provides-Extra: google
+Requires-Dist: langchain-google-genai>=0.0.10; extra == "google"
+Provides-Extra: anthropic
+Requires-Dist: langchain-anthropic>=0.1.3; extra == "anthropic"
+Provides-Extra: openai
+Requires-Dist: langchain-openai>=0.0.8; extra == "openai"
+Provides-Extra: mistral
+Requires-Dist: langchain-mistralai>=0.0.5; extra == "mistral"
+Provides-Extra: all
+Requires-Dist: langchain-google-genai>=0.0.10; extra == "all"
+Requires-Dist: langchain-anthropic>=0.1.3; extra == "all"
+Requires-Dist: langchain-openai>=0.0.8; extra == "all"
+Requires-Dist: langchain-mistralai>=0.0.5; extra == "all"
+Provides-Extra: api
+Requires-Dist: fastapi>=0.109.2; extra == "api"
+Requires-Dist: uvicorn>=0.27.1; extra == "api"
+Provides-Extra: runpod
+Requires-Dist: runpod>=1.5.0; extra == "runpod"
+Provides-Extra: dev
+Requires-Dist: pytest>=8.0.2; extra == "dev"
+Requires-Dist: isort>=5.13.2; extra == "dev"
+Requires-Dist: mypy>=1.7.0; extra == "dev"
+Requires-Dist: ruff>=0.2.2; extra == "dev"
+Requires-Dist: build>=1.2.2; extra == "dev"
+Dynamic: license-file
+
+# ProventraCore
+
+A Python library for detecting and preventing prompt injection attacks in LLM applications.
+
+## Features
+
+- Text safety classification using transformer models
+- Content sanitization using LLMs
+- Modular architecture with clear interfaces
+- Flexible configuration options
+
+## Requirements
+
+- Python 3.11 or higher
+- For GPU acceleration: PyTorch with CUDA support
+
+## Installation
+
+```bash
+# Basic installation
+pip install proventra-core
+
+# With specific LLM provider
+pip install proventra-core[google]
+
+# With multiple providers
+pip install proventra-core[openai,anthropic]
+
+# With all providers
+pip install proventra-core[all]
+
+# For development
+pip install proventra-core[all,dev]
+```
+
+## Quick Start
+
+```python
+from proventra_core import GuardService, TransformersAnalyzer, LLMSanitizer
+
+# Initialize components
+analyzer = TransformersAnalyzer(
+    model_name="path/to/classification/model",
+    unsafe_label="unsafe"
+)
+
+sanitizer = LLMSanitizer(
+    provider="google",
+    model_name="gemini-2.0-flash",
+    temperature=0.1,
+    max_tokens=4096
+    api_key="your-llm-provider-api-key"
+)
+
+# Create service
+guard = GuardService(analyzer, sanitizer)
+
+# Analyze text
+analysis = guard.analyze("Some potentially unsafe text")
+print(f"Unsafe: {analysis.unsafe}")
+
+# Analyze and sanitize
+result = guard.analyze_and_sanitize("Some potentially unsafe text")
+if result.unsafe:
+    print("Text contains prompt injection")
+    if result.sanitized:
+        print(f"Sanitized version: {result.sanitized}")
+else:
+    print("Text is safe")
+```
+
+## Hosted API
+
+For quick implementation without setup, use our hosted API service at [https://api.proventra-ai.com/docs](https://api.proventra-ai.com/docs).
+
+## Core Components
+
+The library is organized into the following modules:
+
+1. **Models** (`proventra_core.models`)
+   - Base interfaces (`TextAnalyzer`, `TextSanitizer`)
+   - Result models (`AnalysisResult`, `SanitizationResult`, `FullAnalysisResult`)
+
+2. **Analyzers** (`proventra_core.analyzers`)
+   - `TransformersAnalyzer` - HuggingFace-based text safety analysis
+
+3. **Sanitizers** (`proventra_core.sanitizers`)
+   - `LLMSanitizer` - LLM-based text sanitization
+
+4. **Providers** (`proventra_core.providers`)
+   - LLM provider factory and configuration
+   - Supports: Google, OpenAI, Anthropic, Mistral
+
+5. **Services** (`proventra_core.services`)
+   - `GuardService` - Main service combining analysis and sanitization
+
+## Advanced Usage
+
+### Custom Analyzer
+
+```python
+from proventra_core import TextAnalyzer, GuardService
+from typing import Dict, Any
+
+class CustomAnalyzer(TextAnalyzer):
+    def __init__(self, threshold=0.5):
+        self.threshold = threshold
+        
+    def analyze(self, text: str) -> Dict[str, Any]:
+        # Your custom analysis logic
+        unsafe = any(bad_word in text.lower() for bad_word in ["hack", "ignore", "system"])
+        return {
+            "unsafe": unsafe,
+            # You can include additional properties
+            "matched_keywords": [word for word in ["hack", "ignore", "system"] if word in text.lower()]
+        }
+        
+    @property
+    def max_tokens(self):
+        return 1024
+        
+    @property
+    def chunk_overlap(self):
+        return 128
+
+# Use with existing service
+guard = GuardService(CustomAnalyzer(threshold=0.7), existing_sanitizer)
+```
+
+## Deployment Examples
+
+The repository includes examples for deploying the library:
+
+### FastAPI Server
+
+```bash
+cd examples/api
+pip install -e "../../[api,all]"
+uvicorn main:app --reload
+```
+
+### RunPod Serverless
+
+```bash
+cd examples/runpod
+pip install -e "../../[runpod,all]"
+```
+
+## Contributing
+
+Contributions are welcome! Please see [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
+
+## License
+
+MIT License
