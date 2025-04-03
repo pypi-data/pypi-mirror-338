@@ -1,0 +1,3 @@
+[console_scripts]
+diop-manage=diop_core.cli:manage
+
