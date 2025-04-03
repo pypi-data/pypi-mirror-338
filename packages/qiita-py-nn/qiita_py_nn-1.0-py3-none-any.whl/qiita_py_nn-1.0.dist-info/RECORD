@@ -1,0 +1,11 @@
+qiita_py_nn/__init__.py,sha256=aQX9_lzlKJ8LqBrcHnLz0OvZhwap8EBYZrD1XsaF_xg,94
+qiita_py_nn/classes.py,sha256=KBl4AacCmpwZFX3c_zwjcccBzWmIC4c5FXrOKxbWKfA,3581
+qiita_py_nn/client.py,sha256=ywouMJAV5Izy4skguGXC5UuKkWliOc7rCuRyLv64h9I,15977
+qiita_py_nn/client2.py,sha256=93pckOUx22ds8iWLWkWDjYC6WXxEIR7temNCW1hmqGM,3585
+qiita_py_nn/client_base.py,sha256=JotmptRuuGF3np15h3dMQjTppZH_6IWGuiru5OFwEK0,6064
+qiita_py_nn/exception.py,sha256=ahhdFn4WZFFdlAD4B5IPkm8gsyG9GWn2QiraQjrqvo4,140
+qiita_py_nn/response.py,sha256=E5So_cFUm7KFs7x6L0off3S58kB6qMgYitSaTUVDupk,1980
+qiita_py_nn-1.0.dist-info/METADATA,sha256=e72O8VX57I2PnvutVW9x1Oaq4tVAAFt26S-biTfWmCg,1796
+qiita_py_nn-1.0.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+qiita_py_nn-1.0.dist-info/top_level.txt,sha256=_e1IcYFkGm0IG6ndLj6OyljUBTAQk2d-9xeO__zvoFE,12
+qiita_py_nn-1.0.dist-info/RECORD,,
