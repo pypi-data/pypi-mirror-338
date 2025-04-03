@@ -1,0 +1,93 @@
+# DeMeXpy - Python
+Python implementation of the Decentralized Message Exchange protocol. Send and recieve python objects on different devices even if they are not connected to the same network. Uses `ntfy.sh` for communication (any host can be used; even self-hosted ones). Supports function calling on the reciever's end. All communication is fully encrypted end-to-end.
+
+## Concepts
+### Node
+A node is an object that can recieve messages. Each Node has a corresponding `.json` file, containing information about this node. This includes it's name, it's public and private keys, etc. This fie must not be version controlled; it contains private keys and must be kept safe. This file also contains two very important things: it's mailbox and it's neighbors.
+
+### Mailbox
+The mailbox of a node is what is required to send a message to it. It contains the name of the node and it's public key. This file is safe to be version controlled and/or transmitted insecurely. The library contains a convenience function that allows you to export the mailbox of a node as a seperate file.
+
+### Neighbor
+A neighbor is a reference to another node. A node will only know the names and public keys of it's neighbors, and can only recieve messages from a known neighbor. The `Neighbor` object is also used to send the actual message on the sending side - a `Neighbor` object is initialised by the mailbox of another node, and messages are sent to it through it's `.send_object()` method.
+
+### Action
+Nodes can send and recieve python dicts to each other. Actions are a special kind of dict, which can call functions upon recieval. A node object must first have a supported action's signature added to it, and then a corresponding function must be registered that gets executed when an action object corresponding to that signature is recieved.
+
+## Usage
+Let's call our two clients that need to talk to each other, Alice and Bob. They both must create a corresponding `Node` object for themselves.
+
+### Create Alice
+##### **`alice.py`**
+```python
+from demexpy import Node
+
+alice = Node() # Create the object
+alice.set_data_file("alice.json") # /secure/path/to/alice.json
+
+# Generate a uuid, public key and private key for this node.
+# These functions will do nothing if they've been called on the same file before,
+# so you can safely leave them in your code
+alice.generate_uuid()
+alice.generate_keys()
+
+# .set_date("key", "value") will set arbitrary data in the json file
+# This can come in handy with .get_data("key") to save information in the file
+alice.set_data("name", "Alice")
+
+# .save_mailbox() will save the mailbox section of alice.json 
+# in the sepcified file. Copy/download this file and have it available, Bob will need it to send messages to Alice.
+alice.save_mailbox("alice_mailbox.json")
+```
+
+
+### Create Bob 
+##### **`bob.py`**
+```python
+from demexpy import Node
+
+bob = Node() 
+bob.set_data_file("bob.json") 
+
+bob.generate_uuid()
+bob.generate_keys()
+
+bob.set_data("name", "Bob")
+
+# Copy/download this file and have it available, 
+# Alice will need it to know about the existence of Bob.
+bob.save_mailbox("bob_mailbox.json")
+```
+
+### Exchange Files
+Make sure Alice and Bob can access each other's mailboxes. They both need to have them 
+
+### Inform Alice and Bob about each other
+##### **`alice.py`**
+```python
+from demexpy import Neighbor
+
+bob_neighbor = Neighbor()
+bob_neighbor.from_mailbox_file("bob_mailbox.json")
+alice.add_neighbor(bob_neighbor)
+```
+##### **`bob.py`**
+```python
+alice_neighbor = Neighbor()
+alice_neighbor.from_mailbox_file("alice_mailbox.json")
+bob.add_neighbor(alice_neighbor)
+```
+
+### Set Bob to listen to Alice
+##### **`bob.py`**
+```python
+for msg in bob.listen():
+    print(msg)
+```
+
+### Send a message to Bob to Alice
+##### **`alice.py`**
+```python
+msg_to_send = {"message": "Hello, world!"}
+bob_neighbor.send_object(msg_to_send, alice)
+```
