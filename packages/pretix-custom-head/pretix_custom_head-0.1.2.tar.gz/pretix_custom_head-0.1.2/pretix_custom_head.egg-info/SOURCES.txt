@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+pretix-custom-head/__init__.py
+pretix-custom-head/apps.py
+pretix-custom-head/models.py
+pretix-custom-head/signals.py
+pretix-custom-head/urls.py
+pretix-custom-head/views.py
+pretix_custom_head.egg-info/PKG-INFO
+pretix_custom_head.egg-info/SOURCES.txt
+pretix_custom_head.egg-info/dependency_links.txt
+pretix_custom_head.egg-info/entry_points.txt
+pretix_custom_head.egg-info/top_level.txt

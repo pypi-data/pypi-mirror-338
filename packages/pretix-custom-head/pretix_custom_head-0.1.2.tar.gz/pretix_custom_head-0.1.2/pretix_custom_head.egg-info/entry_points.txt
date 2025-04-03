@@ -1,0 +1,2 @@
+[pretix.plugin]
+pretix_custom_head = pretix_custom_head:PretixPluginMeta
