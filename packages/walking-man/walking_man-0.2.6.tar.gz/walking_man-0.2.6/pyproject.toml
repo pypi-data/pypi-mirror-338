@@ -1,0 +1,28 @@
+[project]
+name = "walking-man"
+version = "0.2.6"
+description = "A friendly companion while you wait"
+authors = [{ name = "Danny Stewart", email = "danny@stewart.cc" }]
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = ["shelper (>=0.1.4)", "textparse (>=0.1.2)"]
+
+[tool.poetry.group.dev.dependencies]
+blessed = "^1.20.0"
+mypy = ">=1.15.0"
+pdoc = ">=15.0.1"
+pre-commit = "^4.2.0"
+ruff = ">=0.11.2"
+devpkg = { path = "../devpkg", develop = true }
+enviromancer = { path = "../enviromancer", develop = true }
+logician = { path = "../logician", develop = true }
+shelper = { path = "../shelper", develop = true }
+textparse = { path = "../textparse", develop = true }
+timecapsule = { path = "../timecapsule", develop = true }
+
+[build-system]
+requires = ["poetry-core>=2.0"]
+build-backend = "poetry.core.masonry.api"
+
+[project.scripts]
+walking-man = "walking_man.main:walking_man_adventure"
