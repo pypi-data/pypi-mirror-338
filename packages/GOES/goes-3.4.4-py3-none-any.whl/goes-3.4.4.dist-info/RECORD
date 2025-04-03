@@ -1,0 +1,10 @@
+GOES/__init__.py,sha256=B4_n2BTXKSKgkqEEPFjGYAT9U9D4OhDjMlUppnIFho8,616
+GOES/downloads/__init__.py,sha256=4YjMUMusEXpDQSwvy3KlkUhi6hz6qXWhonk9rNT2a6Y,70
+GOES/downloads/download_data.py,sha256=HOvvnkGtS4ejOqU-eKlCtiAGUhpkLvaLAnNyQn0ZYFA,26510
+GOES/processing/__init__.py,sha256=5bATZPlhJBl7K--JDCt6Wl1utbzmmg0xru2SaZgrmpg,73
+GOES/processing/processing_data.py,sha256=HF3Hbq3BO0qZJt3bT6quEA56kiwt7YCcndIZjmcZqO0,68451
+goes-3.4.4.dist-info/licenses/LICENSE,sha256=SAPZRWalI7jOfnNdBkN1oxnIx-c7YS9lV6TXCOjd5eU,1535
+goes-3.4.4.dist-info/METADATA,sha256=4qg8gYriiKVPlgdIKPf0zZQogedBFv5XIGNoTrmYfL4,2844
+goes-3.4.4.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+goes-3.4.4.dist-info/top_level.txt,sha256=Mf24acYD-qVgSZjyVM94nL-NkyFR_A0U_9VbAWJbQAs,5
+goes-3.4.4.dist-info/RECORD,,
