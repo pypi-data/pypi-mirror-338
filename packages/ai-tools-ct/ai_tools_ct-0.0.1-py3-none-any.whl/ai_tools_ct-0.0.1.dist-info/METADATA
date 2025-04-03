@@ -1,0 +1,42 @@
+Metadata-Version: 2.4
+Name: ai_tools_ct
+Version: 0.0.1
+Summary: A package deisnged to help with general AI related developments, mainly data generation
+Project-URL: Homepage, https://willmorcombe.dev
+Author-email: Will Morcombe <will.morcombe@centraltest.com>
+License-Expression: MIT
+License-File: LICENSE
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.9
+Requires-Dist: annotated-types==0.7.0
+Requires-Dist: anyio==4.9.0
+Requires-Dist: certifi==2025.1.31
+Requires-Dist: colorama==0.4.6
+Requires-Dist: distro==1.9.0
+Requires-Dist: exceptiongroup==1.2.2
+Requires-Dist: h11==0.14.0
+Requires-Dist: httpcore==1.0.7
+Requires-Dist: httpx==0.28.1
+Requires-Dist: idna==3.10
+Requires-Dist: jiter==0.9.0
+Requires-Dist: numpy==2.0.2
+Requires-Dist: openai==1.69.0
+Requires-Dist: pandas==2.2.3
+Requires-Dist: pydantic-core==2.33.0
+Requires-Dist: pydantic==2.11.0
+Requires-Dist: python-dateutil==2.9.0.post0
+Requires-Dist: pytz==2025.2
+Requires-Dist: six==1.17.0
+Requires-Dist: sniffio==1.3.1
+Requires-Dist: tqdm==4.67.1
+Requires-Dist: typing-extensions==4.13.0
+Requires-Dist: typing-inspection==0.4.0
+Requires-Dist: tzdata==2025.2
+Description-Content-Type: text/markdown
+
+# AI TOOL
+
+This repo is a collection of classes that shall hopefully be used to optimize CT workflow with AI. 
+
+The plan is to turn this into an importable package
