@@ -1,0 +1,2 @@
+[console_scripts]
+mcp-askcpg = askcpg.server:main
