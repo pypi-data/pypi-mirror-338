@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+pygerg/__init__.py
+pygerg/gerg88.py
+pygerg.egg-info/PKG-INFO
+pygerg.egg-info/SOURCES.txt
+pygerg.egg-info/dependency_links.txt
+pygerg.egg-info/top_level.txt
+tests/test_gerg88.py
