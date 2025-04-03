@@ -1,0 +1,7 @@
+numpy
+pytest
+requests-mock
+twine
+coverage
+nbqa
+proxy.py
