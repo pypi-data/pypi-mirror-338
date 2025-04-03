@@ -1,0 +1,90 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "symm-learning"
+version = "0.1.0"
+
+description = "Torch modules and utilities of equivariant/invariant learning"
+readme = "README.md"
+requires-python = ">=3.8"
+authors = [
+  {name = "Daniel Ordoñez", email = "daniels.ordonez@gmail.com" },
+]
+# Dependencies ___________________________________________________________________________________________________
+dependencies = [
+  "torch",
+  "escnn",
+]
+
+# Optional dependencies ___________________________________________________________________________________________
+[project.optional-dependencies]
+dev = [
+    "pytest",
+    "ruff"
+]
+
+# Develop dependencies
+
+# RUFF ___________________________________________________________________________________________________________
+[tool.ruff]
+line-length = 120
+
+[tool.ruff.lint]
+# Enable specific linting rules
+select = [
+  "F",    # pyflakes: general code quality checks
+  "E",    # pycodestyle: PEP8 error checks
+  "W",    # pycodestyle: PEP8 warning checks
+  "I",    # isort: import sorting checks
+  "D",    # pydocstyle: docstring style checks,
+  "FA",   # Future annotations
+  "ISC",  # String concat
+  "ICN",  # Import conventions
+  "SIM"   # flake8-simplify
+]
+
+# Ignore specific linting rules
+ignore = [
+  "D401", # Allow any docstring to start with a capital letter, not just "This"
+  "D405", # Allow non-imperative mood in docstring section names
+  "E701", # Allow multiple statements on one line (colon)
+  "D100",  # Ignore missing docstring in public module
+  "F401", # Don't remove unused imports
+  "D107", # Document __init__ arguments inside class docstring
+]
+
+# Exclude specific directories from linting
+exclude = [
+  ".git",  # Git version control directory
+  ".idea", # PyCharm project settings directory
+  ".venv",  # Virtual environment directory
+  ".vscode"
+]
+
+[tool.ruff.lint.pydocstyle]
+convention = "google"
+
+[tool.hatch.build]
+include = [
+  "symm_learning/**",   # Only include necessary package files
+]
+exclude = [
+  ".github/**",        # Exclude GitHub workflows
+  "tests/**",          # Exclude test files
+  "docs/**",           # Exclude documentation files
+  "paper/**",          # Exclude paper scripts.
+  #    "*.md",             # Exclude markdown files (e.g., README.md, CONTRIBUTING.md)
+  #    "*.yml", "*.yaml",  # Exclude CI/CD configuration files
+  #    "*.json",           # Exclude JSON files
+  #    "*.csv",            # Exclude CSV files
+  "*.log",             # Exclude log files
+  "*.zip", "*.tar.gz", # Exclude compressed files
+  "*.h5",              # Exclude large data files
+  "*.mat",             # Exclude large data files
+  "*.pkl",             # Exclude pickle files
+  #    "*.mp4", "*.avi",   # Exclude video files
+  #    "*.png", "*.jpg",   # Exclude image files
+  "__pycache__/**",    # Exclude Python cache files
+]
