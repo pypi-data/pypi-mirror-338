@@ -1,0 +1,7 @@
+package_test/__init__.py,sha256=S9B8H4iHC_iubD0yPnPVuA5W5AQfVWHvfa8F9qayYrQ,42
+package_test/add.py,sha256=r9ZZa3S8453oCYkB4DHQt_H3AEVCAZFnJdfHNXr8Lxw,30
+package_test/mul.py,sha256=JuKGOMrlscOQBz0L0EKqTI-RcCSAS3a-9w5vTlDTuEk,29
+math_package_vbi-0.1.0.dist-info/METADATA,sha256=Ae-8SkyERmUiKIcRw4ttOIEY0_wXrBuA7i_8yGzkYfY,622
+math_package_vbi-0.1.0.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+math_package_vbi-0.1.0.dist-info/top_level.txt,sha256=aWSEG6xBBmxdl2m4tdxqEd-VFm1HJd2IP76Dsl6rPkM,13
+math_package_vbi-0.1.0.dist-info/RECORD,,
