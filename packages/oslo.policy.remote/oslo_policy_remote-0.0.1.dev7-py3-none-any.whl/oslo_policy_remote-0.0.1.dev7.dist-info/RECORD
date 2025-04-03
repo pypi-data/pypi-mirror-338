@@ -1,0 +1,15 @@
+oslo_policy_remote/__init__.py,sha256=_rf4_w9sas-0chqzSH4ZmXbf_nko2OyhBQukwkxFTAg,545
+oslo_policy_remote/exceptions.py,sha256=BmVg-xNaWv6Ugwv83jvO9aIvzX5W51Bmv178L22Hq0I,1274
+oslo_policy_remote/generator.py,sha256=6_VO_RwJOdR_e_DjD9G05-HEPJXkjVw1VkYK3id_gMw,26010
+oslo_policy_remote/opts.py,sha256=pMK2WId6MnZTFHtds2bO6O-FXpVgUXDdttE6A8VsrWs,3588
+oslo_policy_remote/remote.py,sha256=n9nxU3RP6MY26-ydGf2y_knmSY4VbeX9uAnr1Y_OaXw,7396
+oslo_policy_remote/shell.py,sha256=2hVwElSeng7arXGOY9ucpr3yTZWpoS-3oTx4vy4Hnyg,5329
+oslo_policy_remote/version.py,sha256=E-F0Kz-eaBBrwQD9uIydEnletXwREQ027oySfkYJAWo,619
+oslo_policy_remote-0.0.1.dev7.dist-info/licenses/AUTHORS,sha256=S3F7EmjvFQLV0CmMdlzF4HzsbZ1_7JwtVVI6F55Vvhg,42
+oslo_policy_remote-0.0.1.dev7.dist-info/licenses/LICENSE,sha256=JtQ-WzaczMyqpTh9aL5Agz4zkY_Zwm_QCJnBNo0fQ0M,10776
+oslo_policy_remote-0.0.1.dev7.dist-info/METADATA,sha256=GlF3tlNOyY3OAaosvr1F0vMqAQXaJXjUKGfWd22WMJo,3045
+oslo_policy_remote-0.0.1.dev7.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+oslo_policy_remote-0.0.1.dev7.dist-info/entry_points.txt,sha256=URhoUqemossWPsbFjVQYXUqg-HsVpogkW0zwbvKImV0,403
+oslo_policy_remote-0.0.1.dev7.dist-info/pbr.json,sha256=p3QN23xLsOS3TyPxy1rgtgWtcqLw9IjHE9HPKXsMwAg,47
+oslo_policy_remote-0.0.1.dev7.dist-info/top_level.txt,sha256=NrY8VBtxtu0K-zjoOHlaeWNdccsVXyJIy2bz_D9Vz_M,19
+oslo_policy_remote-0.0.1.dev7.dist-info/RECORD,,

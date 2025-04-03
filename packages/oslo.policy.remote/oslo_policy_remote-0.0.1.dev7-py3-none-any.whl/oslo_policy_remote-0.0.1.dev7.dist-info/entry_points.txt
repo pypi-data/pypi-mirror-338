@@ -1,0 +1,10 @@
+[console_scripts]
+oslopolicy-remote-checker = oslo_policy_remote.shell:main
+oslopolicy-remote-policy-generator = oslo_policy_remote.generator:generate_remote_policy
+oslopolicy-remote-sample-generator = oslo_policy_remote.generator:generate_remote_sample
+
+[oslo.config.opts]
+oslo.policy.remote = oslo_policy_remote.opts:list_opts
+
+[oslo.policy.rule_checks]
+remote = oslo_policy_remote.remote:RemoteCheck
