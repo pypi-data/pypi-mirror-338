@@ -1,0 +1,14 @@
+Metadata-Version: 2.4
+Name: persist-spatial
+Version: 0.0.1
+Summary: A package for computing spatial structure scores using persistent homology.
+Project-URL: Homepage, https://github.com/Jamie-hb/persist/tree/main
+Author-email: James Boyle <james.boyle@maths.ox.ac.uk>
+License-Expression: Apache-2.0
+License-File: LICENSE
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+A simple package for using persistent homology to compute spatial structure scores in spatial transcriptomics data. See https://github.com/Jamie-hb/persist/tree/main for more details.
