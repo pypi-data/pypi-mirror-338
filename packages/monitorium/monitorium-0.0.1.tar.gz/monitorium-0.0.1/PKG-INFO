@@ -1,0 +1,12 @@
+Metadata-Version: 2.3
+Name: monitorium
+Version: 0.0.1
+Summary: Real-time monitoring of Python jobs.
+License: MIT
+Author: Luke Hicks
+Author-email: luke@coefficient.ai
+Requires-Python: >=3.12.9,<4.0.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.13
+Requires-Dist: pandas (>=2.2.3,<3.0.0)
