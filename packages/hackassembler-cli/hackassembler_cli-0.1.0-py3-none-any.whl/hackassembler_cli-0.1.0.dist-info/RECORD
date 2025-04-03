@@ -1,0 +1,10 @@
+hackassembler/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+hackassembler/assembler.py,sha256=PHb3SuHnK4A6-EXjDFYQCdPZCT3Fgmy3iRtsPN58BE4,3675
+hackassembler/code.py,sha256=-049xuoyozCE8xHpCl0bU0OSaYdDoyEKwZpRkuM_FKc,3113
+hackassembler/commands.py,sha256=FTL0HY_fr-nDHn3nRmtImjyg-JSScR8VjFpGixbgX3I,2218
+hackassembler/parser.py,sha256=qbOlNaaTwoNblu7nqoTLvhct6XzGxMTbvXJJvyL0RT0,4573
+hackassembler_cli-0.1.0.dist-info/METADATA,sha256=wHRcTXM9DPhfowEZBQpJntfW6A166coE6SfrlwJMqws,436
+hackassembler_cli-0.1.0.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+hackassembler_cli-0.1.0.dist-info/entry_points.txt,sha256=8bW7gri81_IiqJqcFfvIWinl_5USco2wMe7jgm5Iolw,62
+hackassembler_cli-0.1.0.dist-info/top_level.txt,sha256=dqNGV5IwCnjIEgrycJT4MUVTiTIUt6cb2_v2vj4l4Rs,14
+hackassembler_cli-0.1.0.dist-info/RECORD,,
