@@ -1,0 +1,17 @@
+Metadata-Version: 2.4
+Name: TT_probability_package
+Version: 0.1.0
+Summary: A project for all sorts probability packaged in a Python library
+Home-page: 
+Author: Timothy Tew
+Author-email: Timothy Tew <tewtimothy@gmail.com>
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Dynamic: author
+Dynamic: license-file
+
+
+
+Test cases:
+
+Run python -m unittest discover tests
