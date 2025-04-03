@@ -1,0 +1,7 @@
+README.md
+setup.py
+kwgzs.egg-info/PKG-INFO
+kwgzs.egg-info/SOURCES.txt
+kwgzs.egg-info/dependency_links.txt
+kwgzs.egg-info/top_level.txt
+kwgzsh-tools/__init__.py
