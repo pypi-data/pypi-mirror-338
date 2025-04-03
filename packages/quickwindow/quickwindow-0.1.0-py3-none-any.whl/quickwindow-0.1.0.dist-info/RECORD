@@ -1,0 +1,10 @@
+quickwindow/__init__.py,sha256=eT1L3ZTKHAxUtpYs-fb3A2_S21u5AxhA_pw2H9swNYY,1211
+quickwindow/event.py,sha256=HzH52mniRWxMfTOaogwilOTn-TbbZ9O_3u5E7UfJ9zg,2393
+quickwindow/glfw.py,sha256=zcUsGd2TgBdmxLTHlwjHvAi_QfclZJi8Z_aF2gM5KPY,20851
+quickwindow/quick.py,sha256=urZ4BrZyGptrkJ7wxWTu9GsTkdpkOnGkln6yW_aQku0,4086
+quickwindow/window.py,sha256=x9fGDRuIAbgQfWndt3pdDS8vdpAao2wxUjn9l6J0ysQ,28034
+quickwindow-0.1.0.dist-info/licenses/LICENSE,sha256=4WKPjVHaD5i_n-c1mwRBwO-QgOA-iE7pvIGmuAvusOQ,1948
+quickwindow-0.1.0.dist-info/METADATA,sha256=90NypkYBD_mGoEebuqm-q-OnjlNyZmCFF92B9QF8KEQ,2386
+quickwindow-0.1.0.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+quickwindow-0.1.0.dist-info/top_level.txt,sha256=9KirR1tK7wwxLEyf_2g-qCIUY6GLdum-i-rW8-7dK_k,12
+quickwindow-0.1.0.dist-info/RECORD,,
