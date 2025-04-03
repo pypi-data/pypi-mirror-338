@@ -1,0 +1,240 @@
+[build-system]
+requires = ["flit_core >=3.4.0,<4"]
+build-backend = "flit_core.buildapi"
+
+[project]
+name = "hydroflows"
+authors = [
+  { name = "Dirk Eilander", email = "dirk.eilander@deltares.nl" },
+  { name = "Willem Tromp", email = "willem.tromp@deltares.nl" },
+  { name = "Athanasios Tsiokanos", email = "athanasios.tsiokanos@deltares.nl"},
+  { name = "Brendan Dalmijn", email = "info@deltares.nl"},
+  { name = "Sarah Rautenbach", email = "info@deltares.nl"},
+]
+dependencies = [
+  "click",                    # CLI
+  "geopandas>=1.0, <2.0",     # Reading vector data
+  "graphviz",                 # plot graph
+  "importlib-metadata",       # entry points
+  "jinja2",                   # templating
+  "pandas",                   # data handling
+  "pooch",                    # test data fetching
+  "pydantic>=2.9, <3",        # data validation
+  "pyyaml",                   # configs
+  "typing_extensions",        # type hinting
+  "tqdm",                     # progress bar
+]
+
+
+requires-python = ">=3.10"
+readme = "README.rst"
+classifiers = [
+  "Development Status :: 5 - Production/Stable",
+  "Intended Audience :: Developers",
+  "Intended Audience :: Science/Research",
+  "Topic :: Scientific/Engineering :: Hydrology",
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3",
+]
+dynamic = ['version', 'description']
+
+[project.optional-dependencies]
+methods = [
+  "cartopy",                  # plotting
+  "contextily",               # basemaps
+  "dask==2024.11.2",
+  "fiat-toolbox>=0.1.16",     # toolbox for post-processing delft fiat output
+  "hatyan>=2.9, <3.0",        # harmonic tidal analysis and prediction
+  "hydromt>=0.9.4, <1.0",     # hydromt core for setting up models
+  "hydromt-fiat>=0.5.4, <1.0", # hydromt plugin for FIAT models
+  "hydromt_sfincs>=1.1.0, <2.0", # hydromt plugin for sfincs models
+  "hydromt_wflow>=0.6, <1.0",   # hydromt plugin for wflow models
+  "matplotlib",               # plotting
+  "netcdf4",                  # data handling
+  "numpy>=1.20",              # array handling
+  "requests",                 # data fetching
+  "shapely",                  # geometry
+  "xarray==2024.3.0",         # data handling
+]
+dev = [
+  "pip>=23.1.2", # needed for editable installs
+  "pre-commit",  # linting
+  "ruff",        # linting
+  "tomli",       # parsing toml files
+  "hydroflows[doc, extra, methods, test]", # install all dependencies
+]
+doc = [
+  "nbsphinx",  # Jupyter notebooks in Sphinx
+  "pip>=23.1.2", # needed for editable installs
+  "sphinx",
+  "sphinx_design",
+  "pydata-sphinx-theme",
+  "autodoc_pydantic",
+  "sphinxcontrib-programoutput",
+  "hydroflows[extra, methods]",
+]
+extra = [
+  "papermill",  # execute Jupyter notebooks
+  "jupyter",
+  "snakemake>=8.20, <9.0",      # Workflow manager
+  # "cwltool; platform_system != 'Windows'",  # Workflow manager for CWL This does not work with pixi..
+]
+test = [
+  "pytest>=2.7.3",  # testing framework
+  "pytest-cov",     # test coverage
+  "pytest-mock",    # mocking
+  "pytest-timeout", # darn hanging tests
+]
+models = [
+  "delft_fiat==0.2.0",  # Delft fiat
+  "juliaup"             # julia package manager to install julia & wflow
+]
+
+full = ["hydroflows[dev, doc, test, extra, methods, models]"]
+
+[project.urls]
+Source = "https://github.com/Deltares-research/HydroFlows"
+Documentation = "https://deltares-research.github.io/HydroFlows"
+
+[project.scripts]
+hydroflows = "hydroflows.cli.main:cli"
+
+[tool.flit.sdist]
+exclude = ["docs/", "tests/", "examples/", "cases/", ".*", "pixi.lock"]
+
+[tool.pytest.ini_options]
+testpaths = ["test"]
+markers = ["requires_test_data", "slow"]
+filterwarnings = [
+  "ignore::FutureWarning",
+  "ignore::DeprecationWarning:pyproj",
+  "ignore::RuntimeWarning:pyogrio",
+  "ignore::DeprecationWarning:scipy.ndimage.measurement",
+  "ignore::DeprecationWarning:hydromt",
+  "ignore::UserWarning:hydromt",
+]
+
+[tool.coverage.run]
+branch = true
+source = ["./hydroflows"]
+
+[tool.coverage.report]
+# Regexes for lines to exclude from consideration
+exclude_also = [
+    # Don't complain about missing debug-only code:
+    "def __repr__",
+    "if self\\.debug",
+
+    # Don't complain if tests don't hit defensive assertion code:
+    "raise AssertionError",
+    "raise NotImplementedError",
+
+    # Don't complain if non-runnable code isn't run:
+    "if 0:",
+    "if __name__ == .__main__.:",
+
+    # Don't complain about abstract methods, they aren't run:
+    "@(abc\\.)?abstractmethod",
+    ]
+
+ignore_errors = true
+
+[tool.coverage.html]
+directory = ".cov"
+
+[tool.ruff]
+line-length = 88
+target-version = "py310"
+
+# enable pydocstyle (E), pyflake (F) and isort (I), pytest-style (PT), bugbear (B)
+select = ["E", "F", "I", "PT", "D", "B"]
+ignore-init-module-imports = true
+ignore = ["D211", "D213", 'D206', 'E501', "E741", "D105", "E712", "B904", "B905"]
+exclude = ["docs"]
+
+[tool.ruff.per-file-ignores]
+"tests/**" = ["D100", "D101", "D102", "D103", "D104", "PT001"]
+"tests/conftest.py" = ["E402"]
+"hydroflows/__init__.py" = ["E402", "F401", "F403"]
+"hydroflows/**/__init__.py" = ["F401", "F403"]
+"hydroflows/templates/*.py" = ["D103", "D100", "D104", "D205", "D400", "F403"]
+
+[tool.ruff.pydocstyle]
+convention = "numpy"
+
+[tool.make_env]
+channels = ["conda-forge", "bioconda"]
+deps_not_in_conda = [
+  "hydromt_fiat",
+  "sphinx_design",
+  "hatyan",
+  "autodoc_pydantic",
+  "sphinxcontrib-programoutput",
+  "fiat-toolbox",
+  "hydromt-fiat"
+]
+
+[tool.pixi.project]
+channels = ["conda-forge", "bioconda"]
+platforms = ["win-64", "linux-64"]
+
+[tool.pixi.pypi-dependencies]
+hydroflows = { path = ".", editable = true }
+
+# conda dependencies
+[tool.pixi.dependencies]
+hydromt = ">=0.9.4,<1.0"
+hydromt_sfincs = ">=1.1.0,<2.0"  # conda-forge because solve breaks on numpy<2 pin in pypi version ?
+hydromt_wflow = ">=0.6,<1.0"
+xarray = "==2024.3.0"
+dask = "==2024.11.2"
+graphviz = "*" # conda-forge to get dot executable
+
+[tool.pixi.target.linux-64.dependencies]
+cwltool = "*"
+
+[tool.pixi.feature.doc.dependencies]
+nbsphinx = "*"
+papermill = "*"
+
+[tool.pixi.feature.extra.dependencies]
+snakemake = {version=">=8.20, <9.0", channel= "bioconda" }
+
+[tool.pixi.feature.models.dependencies]
+delft_fiat = "==0.2.0"
+
+[tool.pixi.feature.py311.dependencies]
+python = "3.11.*"
+
+[tool.pixi.environments]
+default = { features = ["extra", "methods"], solve-group = "py311" }
+full = { features = ["dev", "doc", "test", "extra", "py311", "models", "methods", "full"], solve-group = "py311" }
+doc = { features = ["doc", "extra", "methods"], solve-group = "py311" }
+slim = { solve-group = "py311" }
+test-py311 = { features = ["test", "extra", "methods"], solve-group = "py311" }
+
+[tool.pixi.tasks]
+install-pre-commit = "pre-commit install"
+
+lint = { cmd = ["pre-commit", "run", "--all"] }
+
+test = { cmd = ["pytest", "tests", "--cov=hydroflows", "--cov-report=term-missing"] }
+test-not-data = { cmd = ["pytest", "tests", "-m", "not requires_test_data and not slow", "-vv"] }
+test-not-slow = { cmd = ["pytest", "tests", "-m", "not slow", "-vv"] }
+
+examples = { cmd = ["python", "./docs/run_notebooks.py"]}
+examples-overwrite = { cmd = ["python", "./docs/run_notebooks.py", "--overwrite"]}
+examples-clean = { cmd = ["rm", "-rf", "examples/cases/**"] }
+
+docs-dummy = {cmd = ["sphinx-build", "./docs", "./docs/_build", "-b", "dummy", "-W"], depends-on = ["examples"]}
+docs-html = {cmd = ["sphinx-build", "-M", "html", "./docs", "./docs/_build", "-W"], depends-on = ["examples"]}
+docs-clean = {cmd = ["rm", "-rf", "./docs/_build", "./docs/_generated", "./docs/_examples"] }
+docs-html-clean = { depends-on = ["docs-clean", "docs-html"] }
+docs-html-no-examples = { cmd = ["sphinx-build", "-M", "html", "./docs", "./docs/_build", "-W"], depends-on = ["docs-clean"] }
+
+get-version = { cmd = ["python", "-c", "import hydroflows; print(hydroflows.__version__)"] }
+
+# Installation julia and wflow
+install-julia = "juliaup add 1.10.5 && juliaup override unset && juliaup override set 1.10.5"
+update-add-wflow = "julia --eval='using Pkg; Registry.update(); Pkg.add(name=\"Wflow\", version=\"0.8.1\")'"
+install-wflow = { depends-on = ["install-julia", "update-add-wflow"] }
