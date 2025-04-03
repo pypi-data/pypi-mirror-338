@@ -1,0 +1,10 @@
+photoprotectionpy/__init__.py,sha256=Sy8YYhVKy9EiXN-RIz5oNdIkiiXEbTIGqKypGD7c6EU,250
+photoprotectionpy/adjusted_spf.py,sha256=hUIjEugJyj9JVszK0SwpgaezzZJ3ccTLgmFwlqulUyg,27281
+photoprotectionpy/critical_wavelength.py,sha256=Tt69r1BkxEMiOKmi-Q6-zYHAivNvCWm8pV_CmAWC7Zk,4367
+photoprotectionpy/initial_spf.py,sha256=_KwWAVQL9HKoKh59JxCqT4unvODicO4S99CxF-Kv6uI,5369
+photoprotectionpy/uv_exposuredose.py,sha256=Vezdtpr9v8GXXfYZTHPfL0eWJj6QNdTehPjuXsg6mlI,985
+photoprotectionpy/uva_protectionfactor.py,sha256=0B4PzPdiuTx4CU6GeVvq3RK3aoMS9o-3zQQCA9dXMH4,6810
+photoprotectionpy-1.1.7.dist-info/METADATA,sha256=XGVR8bP7uxGAz2QlkuGXLGLcS-4Yf7P_fdOuy3cV75c,1952
+photoprotectionpy-1.1.7.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+photoprotectionpy-1.1.7.dist-info/licenses/LICENSE.txt,sha256=sG8VO-DJabUocqk1LOWxaCkqhOaQrIXXUpu1mMMpHKY,10345
+photoprotectionpy-1.1.7.dist-info/RECORD,,
