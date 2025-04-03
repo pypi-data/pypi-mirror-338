@@ -1,0 +1,9 @@
+modelopt_core/__init__.py,sha256=xppTVSh_22yvy9-jntZ3ueHpkn0gnDFGcblDN0RJ6Vo,860
+modelopt_core/torch/quantization/algorithms.cpython-312-x86_64-linux-gnu.so,sha256=UmG_MO_sZX81Kxt4AlHAvECy6M9nPhP24phrtrkn5BQ,3536664
+modelopt_core/torch/quantization/config.cpython-312-x86_64-linux-gnu.so,sha256=-oZvI00butvhmhRznikjbYxpmb7Ua-0N1embst4hCNk,172168
+modelopt_core/torch/quantization/qtensor/nvfp4_tensor.cpython-312-x86_64-linux-gnu.so,sha256=TZSLfquewNtB7IISzPq4jcA6zB8rjnPQ5W7bSikZmQ4,1255024
+nvidia_modelopt_core-0.27.0.dist-info/METADATA,sha256=9tf7Njk-BbnZ-AqRHQzn68WjwuvpNftbboqhDujo0Ac,847
+nvidia_modelopt_core-0.27.0.dist-info/WHEEL,sha256=hINYM2auGRUEro-OmY-yLZtRBiJS1MSLOxe7fAYQxZw,113
+nvidia_modelopt_core-0.27.0.dist-info/top_level.txt,sha256=ZfNmAEKPejz14Ded4nlbUoZ7dWU8aerBNi8dfb-zP3I,14
+nvidia_modelopt_core-0.27.0.dist-info/RECORD,,
+nvidia_modelopt_core-0.27.0.dist-info/licenses/LICENSE,sha256=zTHmxw8WRTs6NetKlZKuayfg2oKjES5uq6efvSn_HbM,659
