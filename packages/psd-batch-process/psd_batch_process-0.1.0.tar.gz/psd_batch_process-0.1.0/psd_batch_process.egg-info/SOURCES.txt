@@ -1,0 +1,14 @@
+LICENSE
+README.md
+setup.py
+psd_batch_process/__init__.py
+psd_batch_process/cli.py
+psd_batch_process/processor.py
+psd_batch_process.egg-info/PKG-INFO
+psd_batch_process.egg-info/SOURCES.txt
+psd_batch_process.egg-info/dependency_links.txt
+psd_batch_process.egg-info/entry_points.txt
+psd_batch_process.egg-info/requires.txt
+psd_batch_process.egg-info/top_level.txt
+tests/__init__.py
+tests/test_processor.py
