@@ -1,0 +1,21 @@
+Metadata-Version: 2.2
+Name: df-compress
+Version: 0.1.0
+Summary: A python package to compress pandas DataFrames akin to Stata's `compress` command
+Home-page: https://github.com/phchavesmaia/df-compress
+Author: Pedro H. Chaves Maia
+Author-email: pedro.maia@imdsbrasil.org
+License: MIT
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: Programming Language :: Python :: 3.13
+License-File: LICENSE
+Requires-Dist: pandas
+Requires-Dist: numpy
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: home-page
+Dynamic: license
+Dynamic: requires-dist
+Dynamic: summary
