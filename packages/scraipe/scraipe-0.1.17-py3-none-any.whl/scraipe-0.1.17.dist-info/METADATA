@@ -1,0 +1,32 @@
+Metadata-Version: 2.3
+Name: scraipe
+Version: 0.1.17
+Summary: AI web scraping workflow.
+License: MIT
+Author: Nibs
+Requires-Python: >=3.10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Provides-Extra: extras
+Requires-Dist: aiohttp (==3.11.16) ; extra == "extras"
+Requires-Dist: bs4 (==0.0.2)
+Requires-Dist: nest_asyncio (==1.6.0)
+Requires-Dist: openai[async] (==1.68.2) ; extra == "extras"
+Requires-Dist: pandas (>=2.2.3)
+Requires-Dist: pydantic (>=2.10.6)
+Requires-Dist: python-dotenv (==1.1.0) ; extra == "extras"
+Requires-Dist: requests
+Requires-Dist: telethon (==1.39.0) ; extra == "extras"
+Requires-Dist: tqdm
+Requires-Dist: trafilatura (==2.0.0) ; (python_version < "4") and (extra == "extras")
+Project-URL: Homepage, https://github.com/snpm/scraipe
+Description-Content-Type: text/markdown
+
+# scraipe
+AI web scraping workflow.
+
+Note: This project is under heavy development. The API is volatile.
