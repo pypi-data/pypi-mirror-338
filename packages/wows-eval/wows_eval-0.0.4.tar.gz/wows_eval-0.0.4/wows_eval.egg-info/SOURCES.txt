@@ -1,0 +1,9 @@
+setup.cfg
+setup.py
+wows_eval/__init__.py
+wows_eval.egg-info/PKG-INFO
+wows_eval.egg-info/SOURCES.txt
+wows_eval.egg-info/dependency_links.txt
+wows_eval.egg-info/entry_points.txt
+wows_eval.egg-info/requires.txt
+wows_eval.egg-info/top_level.txt

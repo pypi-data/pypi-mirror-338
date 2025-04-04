@@ -1,0 +1,33 @@
+Metadata-Version: 2.4
+Name: wows-eval
+Version: 0.0.4
+Summary: Evaluation script for the wows-eval shared task.
+Home-page: https://github.com/OpenWebSearch/wows-code/tree/main/ecir25/wows-eval
+Author: Maik Froebe
+Author-email: maik.froebe@uni-weimar.de
+Maintainer: Maik Froebe
+Project-URL: Bug Tracker, https://github.com/OpenWebSearch/wows-code/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: tira>=0.0.156
+Requires-Dist: tirex-tracker>=0.2.10
+Requires-Dist: pyyaml
+Requires-Dist: pandas
+Requires-Dist: packaging
+Requires-Dist: trectools
+Requires-Dist: click
+Requires-Dist: tqdm
+Provides-Extra: test
+Requires-Dist: pytest==8.*,>=8.0; extra == "test"
