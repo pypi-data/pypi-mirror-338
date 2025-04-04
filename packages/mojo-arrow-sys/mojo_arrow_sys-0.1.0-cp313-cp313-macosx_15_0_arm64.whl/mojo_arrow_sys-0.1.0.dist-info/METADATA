@@ -1,0 +1,23 @@
+Metadata-Version: 2.4
+Name: mojo_arrow_sys
+Version: 0.1.0
+Summary: Python C extension for accessing Arrow C streams from Mojo
+Home-page: https://github.com/mseritan/mojo_arrow_sys
+Author: Mihai Seritan
+Author-email: Marius Seritan <pypi@seritan.net>
+License-Expression: MIT
+Project-URL: Homepage, https://github.com/mseritan/mojo_arrow_sys
+Project-URL: BugTracker, https://github.com/mseritan/mojo_arrow_sys/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Operating System :: OS Independent
+Classifier: Development Status :: 3 - Alpha
+Requires-Python: >=3.7
+License-File: LICENSE
+Dynamic: author
+Dynamic: home-page
+Dynamic: license-file
+Dynamic: requires-python
