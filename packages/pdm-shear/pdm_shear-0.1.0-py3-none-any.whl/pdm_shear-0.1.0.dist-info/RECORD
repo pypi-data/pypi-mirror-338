@@ -1,0 +1,10 @@
+pdm_shear-0.1.0.dist-info/METADATA,sha256=tbeAsNzobnXbFjj84FcqI60RUkDMqaZtcNu066OeWWg,1733
+pdm_shear-0.1.0.dist-info/WHEEL,sha256=thaaA2w1JzcGC48WYufAs8nrYZjJm8LqNfnXFOFyCC4,90
+pdm_shear-0.1.0.dist-info/entry_points.txt,sha256=s1fvKMAER-UUp81xczq5n4B_hvvzEs0qzNR28j03uwo,77
+pdm_shear-0.1.0.dist-info/licenses/LICENSE,sha256=V16NdH_G-Mxh8i1iH63j4w-ERSiF3SYYZbx7qbPFp5Y,1060
+pdm_shear/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pdm_shear/actions.py,sha256=H1_COVWt-4h0qfQm86-R56NkGiQ1ZU29LxkBZsDAxAE,2160
+pdm_shear/main.py,sha256=sSKe65kUsGd91XnUQnmCQRTmZ1BX6YJAa8_N5TwHB7w,6340
+pdm_shear/parser.py,sha256=SLhnvJjgOF--dGqi8Czc8GyoRFHJp5Oim3QrdPz27O0,3085
+pdm_shear/plugin.py,sha256=3ShI52kdgll1QCM2rA-n4EGnFj-eBARiuynrfQZ0erU,1157
+pdm_shear-0.1.0.dist-info/RECORD,,
