@@ -1,0 +1,33 @@
+Metadata-Version: 2.4
+Name: GlueTools
+Version: 0.0.8
+Summary: Librería con funciones utilizadas recurrentemente por el Equipo BI
+Home-page: https://github.com/yddolem
+Author: Meloddy Guzmán Palma
+Author-email: guzmanpalmamel@gmail.com
+License: MIT
+Description-Content-Type: text/markdown
+Requires-Dist: setuptools
+Dynamic: author
+Dynamic: author-email
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: license
+Dynamic: requires-dist
+Dynamic: summary
+
+Librería con Herramientas de uso frecuente para el equipo BI 
+
+Prerequisitos
+Python3
+
+Ejemplo de uso
+
+from equipo-bi-tools import connectDB
+
+connectDB(mihost, midatabase, miuser, mipassword, miport)
+
+"Conexión exitosa a la base de datos."
+
+o "Error de conexión." u otro error
