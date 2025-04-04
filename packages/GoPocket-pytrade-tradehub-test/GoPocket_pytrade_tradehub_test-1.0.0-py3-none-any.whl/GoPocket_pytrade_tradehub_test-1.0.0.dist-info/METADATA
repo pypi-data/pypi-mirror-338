@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: GoPocket-pytrade-tradehub-test
+Version: 1.0.0
+Summary: Python SDK for integrating with Jainam trading platform.
+Home-page: https://protrade.jainam.in/
+Download-URL: https://github.com/Periyasamy-Dev/jainam_sdk.git
+Author: Codifi
+Author-email: periyasamy@codifi.in
+License: MIT
+Project-URL: Documentation, https://docs.gopocket.in/apidocs/
+Classifier: Programming Language :: Python :: 3.8
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Natural Language :: English
+Classifier: Intended Audience :: Developers
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: requests
+Requires-Dist: pandas
+Requires-Dist: websocket-client
+Requires-Dist: rel
+
+readme
