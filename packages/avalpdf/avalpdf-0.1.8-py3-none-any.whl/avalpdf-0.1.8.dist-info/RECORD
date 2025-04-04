@@ -1,0 +1,14 @@
+avalpdf/__init__.py,sha256=qmuOcpzCJJ8Sn6cnZMdqSFDZ10BEXv5NDI256hSvnDU,322
+avalpdf/cli.py,sha256=ysZCyJopaHx0DbA1aedCNOJJuo2wGa5vUaS0Lt1xWYs,24419
+avalpdf/converter.py,sha256=141NFckrNaJIISQdvVZyoNOLlcgJ1wc-g2J_ALzYlsc,972
+avalpdf/extractor.py,sha256=wvVIRD9WVyjzChkIFhvu1VRN3tLMd_UwHRm0ahYSq24,19338
+avalpdf/formatter.py,sha256=v47vfJj_XJCcXgspaZkMpOfsWnkWjybxpzwcYSQjBlA,11969
+avalpdf/rich_formatter.py,sha256=H1lehQwYg7GbFeuMk5xq9SnSMPN0x9Mq_SI7vlFhGOs,20220
+avalpdf/utils.py,sha256=N0n7gjrLYtY_hmbjfpg-6HeQ-6HCPWoI5V5FlbNxUOs,3608
+avalpdf/validator.py,sha256=C4_QntKkMtMtet6a0ma1xg3JWINrGrsSgrzVas5ej_8,89786
+avalpdf/version.py,sha256=B85Q4xPP4WLZ8OXHdA0CmuVncFSE3uWM3mAvWfu11ec,69
+avalpdf-0.1.8.dist-info/METADATA,sha256=5lDWO2tXrUzGFwVlon_1OKi5VNf-sETZuBktdH3ldl8,11545
+avalpdf-0.1.8.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+avalpdf-0.1.8.dist-info/entry_points.txt,sha256=RHrUh05ttGskVPZHGlTw6f25U7apKaf54H91IOyBFXE,41
+avalpdf-0.1.8.dist-info/top_level.txt,sha256=NmBvbRXlaEYK8gc4TQcUc14yRBRG1ej3uCu6a4k129Y,8
+avalpdf-0.1.8.dist-info/RECORD,,
