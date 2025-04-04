@@ -1,0 +1,10 @@
+datahub.cp312-win_amd64.pyd,sha256=o3-qkgPn3NLdvdC9lXrB9stv8S0U6hBmHDmXs2QYz30,1121280
+datahub.pyi,sha256=jmVpNfMpjO4_0RrTAxbK0ryA0LV2Ym-e8PtddMnCg5M,1085
+datahub/protos/martrix_pb2.pyi,sha256=SuTKcGctWdBsDVUneyBB60Ui_pEhvGs4gAf1cpuXWsE,1369
+datahub/protos/quote_pb2.pyi,sha256=UYh6NpNaIkHFs5tbTFBsJE01x8alITE6uD7gkOcQ_CQ,25183
+datahub/protos/session_pb2.pyi,sha256=bbZ7Ri83oHv4BjUTJ-gy8ldJEVMGdTImKV6T1EdT0pM,2955
+datahub.build/.gitignore,sha256=aEiIwOuxfzdCmLZe4oB1JsBmCUxwG8x-u-HBCV9JT8E,1
+datahub_binary-0.7.5.dist-info/METADATA,sha256=LEHjcdz9b3z-NCirGW6gVVCFxJRGawsdu0jQMD7pp38,670
+datahub_binary-0.7.5.dist-info/WHEEL,sha256=x5rgv--I0NI0IT1Lh9tN1VG2cI637p3deednwYLKnxc,96
+datahub_binary-0.7.5.dist-info/top_level.txt,sha256=J0rzqYfZghMgpObWaPGhQtV88I-KXrgArDvi_ddf6ZA,8
+datahub_binary-0.7.5.dist-info/RECORD,,
