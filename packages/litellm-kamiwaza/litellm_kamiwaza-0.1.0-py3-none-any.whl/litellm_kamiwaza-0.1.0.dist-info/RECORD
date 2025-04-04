@@ -1,0 +1,10 @@
+litellm_kamiwaza/__init__.py,sha256=aGOkYFEM3jt6ToyVvX_bspeVaNVLFcVn61iW6uqeWaI,122
+litellm_kamiwaza/kamiwaza_router.py,sha256=fYLJhFDn4M4rVSGUSe6vvCU_CrSFaUy7oz_Hap62v6Y,23567
+litellm_kamiwaza/version.py,sha256=kUR5RAFc7HCeiqdlX36dZOHkUI5wI6V_43RpEcD8b-0,22
+litellm_kamiwaza-0.1.0.dist-info/licenses/LICENSE,sha256=QJaIMbLLw2lqNz99xLeILcm0GV85Y1kWXO9EglVTOvs,1068
+tests/__init__.py,sha256=Ujo9bk2otWhHV6ObQ9JcsNKAEnKLqiA1t1jJhS-VbsY,30
+tests/test_kamiwaza_router.py,sha256=REauYXnejc7WCnyySKXij9DFTFb6OSfv9-7UZb0PLdg,2767
+litellm_kamiwaza-0.1.0.dist-info/METADATA,sha256=FTV9jMM4KdIRzhZoPAcO92xLNhDXek5ZmpipCnebGqc,2908
+litellm_kamiwaza-0.1.0.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+litellm_kamiwaza-0.1.0.dist-info/top_level.txt,sha256=qX1Vkl4N8EZ8kaI2kvnmlA8FTZsNeFoudy5ALV57YDM,23
+litellm_kamiwaza-0.1.0.dist-info/RECORD,,
