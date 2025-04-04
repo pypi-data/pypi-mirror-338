@@ -1,0 +1,2 @@
+[console_scripts]
+tmp = tmp_aiogram.cli:create
