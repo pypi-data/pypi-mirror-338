@@ -1,0 +1,14 @@
+ineedproxy/__init__.py,sha256=WkGsZF1AePQcP3or7pzIrTQkajrIUnJXiic4kqRoeUU,650
+ineedproxy/data_manager.py,sha256=IKS4cRb507S0X32NM0fEhiHAcQ4ApZUbFJIvtSFTRc0,9530
+ineedproxy/file_ops.py,sha256=H4h2U_tA9qbX-bdUEDh6vCQSv91AocmIVia-vDZ4VUg,1399
+ineedproxy/get.py,sha256=YYHjn94pAkLJGD81dne05fg_YwzAf8jzHZcTKOuuU4o,4216
+ineedproxy/logger.py,sha256=eat_43eH15E5mzp3S4m9TSRG26_b_TAoQYfNW2b2Srw,1084
+ineedproxy/manager.py,sha256=DCH3qUCniAToGGoVIKmw5o4p7vQe_8JKRNoZ-UsKQfc,7883
+ineedproxy/test_proxies.py,sha256=1HvDweSb9tQzCMEs8pJ9oGsMGyVeGlFfoKXSS4P9pjw,4429
+ineedproxy/utils.py,sha256=4_SZfX1zhov9wge0EyU8wPzf0-BvUxl454EBCyz6lNU,6860
+ineedproxy/version.py,sha256=QTYqXqSTHFRkM9TEgpDFcHvwLbvqHDqvqfQ9EiXkcAM,23
+ineedproxy-0.1.0.dist-info/licenses/LICENSE.md,sha256=37B3yVIPiSoOfDXKCFD4TjcfzoSir02IT75IHk7uHVQ,1062
+ineedproxy-0.1.0.dist-info/METADATA,sha256=g-FZF7Q1k2_woSX-xxpk954sCiGuItjbeqvdJ5KbLXk,1342
+ineedproxy-0.1.0.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+ineedproxy-0.1.0.dist-info/top_level.txt,sha256=VJ4K9vsa5fcTFPgLwHKlVKD_e2CY3wDJTY1jvn8GVtI,11
+ineedproxy-0.1.0.dist-info/RECORD,,
