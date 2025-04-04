@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+fadex/__init__.py
+fadex/fadex.py
+fadex_exp.egg-info/PKG-INFO
+fadex_exp.egg-info/SOURCES.txt
+fadex_exp.egg-info/dependency_links.txt
+fadex_exp.egg-info/requires.txt
+fadex_exp.egg-info/top_level.txt

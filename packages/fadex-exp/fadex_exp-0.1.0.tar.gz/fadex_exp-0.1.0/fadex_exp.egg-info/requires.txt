@@ -1,0 +1,11 @@
+numpy
+pandas
+scipy
+scikit-learn
+matplotlib
+plotly
+tqdm
+
+[gpu]
+cupy
+cuml
