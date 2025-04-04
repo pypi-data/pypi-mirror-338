@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+repotree/__init__.py
+repotree/main.py
+repotree.egg-info/PKG-INFO
+repotree.egg-info/SOURCES.txt
+repotree.egg-info/dependency_links.txt
+repotree.egg-info/entry_points.txt
+repotree.egg-info/top_level.txt
