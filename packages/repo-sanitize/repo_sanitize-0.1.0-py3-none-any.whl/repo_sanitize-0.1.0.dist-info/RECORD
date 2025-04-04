@@ -1,0 +1,11 @@
+repo_sanitize/__init__.py,sha256=pM9xZbtn9UOak7Y42XIjB_mVQzPvLpc0Oh_d8r-T6pY,290
+repo_sanitize/__main__.py,sha256=MSmt_5Xg84uHqzTN38JwgseJK8rsJn_11A8WD99VtEo,61
+repo_sanitize/cli.py,sha256=nj-wok8ep9BkRUsSW-R-IhwT06Gt91md0FWUPIxIzd8,793
+repo_sanitize/config.py,sha256=W2-V6poP_bGv90Rb3hBpZDVuUWlZuI5LNL2LFUQT7Vs,1317
+repo_sanitize/core.py,sha256=heSzD-wcb-jNL83LQyJMAs7gnlpBaJdizwpJx4zXbmA,9557
+repo_sanitize/git_tools.py,sha256=WtBcSxgH9OI350pzx3zOlHP0rN4sUmDOnR2Mt7VV910,898
+repo_sanitize-0.1.0.dist-info/LICENSE,sha256=i48eM0q4K8Yb-eWRInC0Aj7dz1Wx29jppL-ngQR3FcU,1061
+repo_sanitize-0.1.0.dist-info/METADATA,sha256=sCI_aHco7QU0joLr5ucGANYhyry8WcPlZCl0PNwaxwQ,2236
+repo_sanitize-0.1.0.dist-info/WHEEL,sha256=XbeZDeTWKc1w7CSIyre5aMDU_-PohRwTQceYnisIYYY,88
+repo_sanitize-0.1.0.dist-info/entry_points.txt,sha256=w3wHb9jZ4tA0N4lR85Q-VNNVYDgs8g1CJZCChW0xeUA,56
+repo_sanitize-0.1.0.dist-info/RECORD,,
