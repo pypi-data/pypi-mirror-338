@@ -1,0 +1,10 @@
+opengd77/__init__.py,sha256=4bm-BI9dyENB9V4Q3HfZ8RwirFm27QLaUKjxQFriB0U,52
+opengd77/constants.py,sha256=GActJw_2XDCnxhB5K19HLVM4XlLvTp-AGbupQb3lVPo,561
+opengd77/converters.py,sha256=aN6DwJbX9lg0VdE8_FVJs4ULmKgMCJaATFqV93btjGM,9284
+opengd77/csv_models.py,sha256=SvOxh-u9992hgjWi5gK_BJx1fJkdEKZxtxf68QfVCwk,3370
+opengd77/models.py,sha256=Toy9_ST7HBZWHJM1FFe-tY8VX4TmU10G1n8zF8N6BeI,9363
+opengd77/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+opengd77-0.2.0.dist-info/METADATA,sha256=OmNMMPrx5lcpmQ9U-itbF3hsmu6Il4fceo--uxYIopY,7179
+opengd77-0.2.0.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+opengd77-0.2.0.dist-info/licenses/LICENSE,sha256=TtbMt69RbQyifR_It2bTHKdlLR1Dj6x2A5y_oLOyoVk,1071
+opengd77-0.2.0.dist-info/RECORD,,
