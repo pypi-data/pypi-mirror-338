@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+ethcoinerdater/__init__.py
+ethcoinerdater/ethdata.py
+ethcoinerdater.egg-info/PKG-INFO
+ethcoinerdater.egg-info/SOURCES.txt
+ethcoinerdater.egg-info/dependency_links.txt
+ethcoinerdater.egg-info/requires.txt
+ethcoinerdater.egg-info/top_level.txt
