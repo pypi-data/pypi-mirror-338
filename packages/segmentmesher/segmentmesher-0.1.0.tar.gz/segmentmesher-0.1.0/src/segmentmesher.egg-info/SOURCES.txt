@@ -1,0 +1,13 @@
+README.md
+pyproject.toml
+src/main.py
+src/segmentmesher/__init__.py
+src/segmentmesher/geometry.py
+src/segmentmesher/mesh.py
+src/segmentmesher/test_data.py
+src/segmentmesher.egg-info/PKG-INFO
+src/segmentmesher.egg-info/SOURCES.txt
+src/segmentmesher.egg-info/dependency_links.txt
+src/segmentmesher.egg-info/entry_points.txt
+src/segmentmesher.egg-info/requires.txt
+src/segmentmesher.egg-info/top_level.txt

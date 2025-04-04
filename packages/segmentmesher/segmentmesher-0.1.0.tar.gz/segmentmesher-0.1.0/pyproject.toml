@@ -1,0 +1,24 @@
+[project]
+name = "segmentmesher"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+  "numpy>=2.1.2",
+  "pillow>=11.0.0",
+  "pyvista[all]>=0.44.1",
+  "scikit-image>=0.24.0",
+  "wildmeshing>=0.4",
+]
+
+[project.scripts]
+segmentmesher = "main:segmentmesher_cli"
+
+
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+package-dir = { "" = "src" }
