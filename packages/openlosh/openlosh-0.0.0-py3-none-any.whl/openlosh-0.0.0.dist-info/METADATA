@@ -1,0 +1,19 @@
+Metadata-Version: 2.4
+Name: openlosh
+Version: 0.0.0
+Summary: A dummy package named OpenLosh.
+Home-page: https://github.com/yourusername/openlosh
+Author: Your Name
+Author-email: Your Name <attentionmech@gmail.com>
+License: MIT License
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Dynamic: author
+Dynamic: home-page
+Dynamic: license-file
+Dynamic: requires-python
+
+# OpenLosh
+
+A dummy Python package.
