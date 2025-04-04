@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: nuchabal
+Version: 0.1.5
+Summary: Kinuk' ri taq chab'äl pa ri xekaj wachulew
+Author-Email: Julien Jean Malard-Adam <julien.malard@mail.mcgill.ca>
+License: AGPL-3.0
+Requires-Python: <4.0,>=3.12
+Provides-Extra: constellation
+Requires-Dist: constellationpy>=1.2.0; extra == "constellation"
+Provides-Extra: dev
+Requires-Dist: pytest>=8.3.5; extra == "dev"
+Requires-Dist: coverage>=7.8.0; extra == "dev"
+Description-Content-Type: text/markdown
+
+# nuchabal
