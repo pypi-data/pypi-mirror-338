@@ -1,0 +1,15 @@
+ennikkai-1.2.6.dist-info/METADATA,sha256=jGKS_TKzEvDgvjA8YpPtJMIu3NcMLCmCi2tasm8Se1E,294
+ennikkai-1.2.6.dist-info/WHEEL,sha256=thaaA2w1JzcGC48WYufAs8nrYZjJm8LqNfnXFOFyCC4,90
+ennikkai-1.2.6.dist-info/entry_points.txt,sha256=6OYgBcLyFCUgeqLgnvMyOJxPCWzgy7se4rLPKtNonMs,34
+ennikkai-1.2.6.dist-info/licenses/LICENSE,sha256=hIahDEOTzuHCU5J2nd07LWwkLW7Hko4UFO__ffsvB-8,34523
+எண்ணிக்கை/__init__.py,sha256=mTiiQV5huz4u6ontmV2dDmwrsVVxcrTi53eo9GObDEc,205
+எண்ணிக்கை/அடிமானம்.py,sha256=UbQSUyIqdR077HJun36PUy10BlYhi4hTV_RnSzdLGWg,5144
+எண்ணிக்கை/இடஞ்சார்.py,sha256=VgG6_591OebyP2tmLIW8X8G0ebXojvYuo9WRsY7l76s,5695
+எண்ணிக்கை/கருவிகள்.py,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+எண்ணிக்கை/தகவல்கள்.json,sha256=8mmvr3ffNETJVUvh-UhdCs5xvkEKQ-amuDulvGE71q0,13769
+எண்ணிக்கை/தகவல்கள்.py,sha256=E3cDpjjwic8ryXp8SFbYLR3ZsIhf22DEzBoP73oEit8,14186
+எண்ணிக்கை/பிழைகள்.py,sha256=Amrhzb2RvkgL6fBRr5qOpjJsuDjdA4a_ViRhOn1qTz0,80
+எண்ணிக்கை/மத்திய.py,sha256=gmQnHjustecHzDJn4EiqKMieS8AEUVBkbMq7mVW40_M,1204
+எண்ணிக்கை/முறைமைகள்.py,sha256=NWskZW-kp2wJypXSbjF4uaH3TWhDKZe2OG202Bn24hU,3209
+எண்ணிக்கை/வார்ப்புரு.py,sha256=RKPT5OSYwLMsRJ0McxobMQH-mpWudeCUajoPjgFz9Ag,761
+ennikkai-1.2.6.dist-info/RECORD,,
