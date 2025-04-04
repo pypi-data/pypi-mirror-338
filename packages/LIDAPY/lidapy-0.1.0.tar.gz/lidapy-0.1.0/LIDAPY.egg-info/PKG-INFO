@@ -1,0 +1,11 @@
+Metadata-Version: 2.4
+Name: LIDAPY
+Version: 0.1.0
+Summary: A Python framework for the LIDA Framework
+Author: Brian W Karimi, Katie Killian, Nicole Vadillo
+License-File: LICENSE
+Requires-Dist: requests
+Dynamic: author
+Dynamic: license-file
+Dynamic: requires-dist
+Dynamic: summary

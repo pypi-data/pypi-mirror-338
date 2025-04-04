@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+LIDAPY.egg-info/PKG-INFO
+LIDAPY.egg-info/SOURCES.txt
+LIDAPY.egg-info/dependency_links.txt
+LIDAPY.egg-info/requires.txt
+LIDAPY.egg-info/top_level.txt
