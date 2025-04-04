@@ -1,0 +1,3 @@
+[console_scripts]
+psll=psll.__main__:argparse_and_main
+
