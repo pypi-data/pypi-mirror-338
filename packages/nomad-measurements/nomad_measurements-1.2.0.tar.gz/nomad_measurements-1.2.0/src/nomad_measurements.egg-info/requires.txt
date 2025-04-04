@@ -1,0 +1,11 @@
+nomad-lab>=1.3.16dev
+pynxtools>=0.9.3
+fairmat-readers-xrd>=0.0.7
+fairmat-readers-transmission>=0.0.2
+toposort
+
+[dev]
+pytest
+ruff
+structlog
+python-logstash>=0.4.6
