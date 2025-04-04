@@ -1,0 +1,11 @@
+.venv
+*.pyc
+*.egg-info
+.pytest_cache
+secop_ophyd/asyncclient.log
+build
+dist
+.env
+**/_version.py
+pid
+logs
