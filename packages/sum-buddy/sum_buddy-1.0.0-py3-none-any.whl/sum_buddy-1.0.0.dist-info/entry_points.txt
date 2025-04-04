@@ -1,0 +1,2 @@
+[console_scripts]
+sum-buddy = sumbuddy.__main__:main
