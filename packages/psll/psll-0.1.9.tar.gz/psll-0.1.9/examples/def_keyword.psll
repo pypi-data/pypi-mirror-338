@@ -1,0 +1,42 @@
+(set a 0)
+
+////// Basic definition //////
+(def incr (set a (+ a 1))) // Increment a
+(incr) // This now becomes (set a (+ a 1))
+(out "a: " a "\n")
+
+////// Redefinition //////
+(def incr ( // Redefine 'incr' as itself + printing
+    (incr)
+    (out "<incr> a: " a "\n")
+))
+(incr) // This now does the original incr + print
+
+////// Aliasing //////
+(def f (incr)) // 'f' is an alias for 'incr'
+(f) // This now behaves as 'incr'
+
+////// Scope //////
+(
+    (out "entering scope 1\n")
+    (def f (out "Vikings approaching!\n")) // Redefine f as something else within the scope
+    (f)
+    (f)
+    (f)
+    (out "leaving scope 1\n")
+)
+(out "a: " a "\n") // But 'a' remains unchanged
+(f) // 'f' works the same way as before the scope
+(incr) // and 'incr' also works the same way
+
+// This is a bit of a technical point. Basically, empty brackets don't break it.
+// TODO: Fix this:
+(
+    (out "entering scope 2\n")
+    // Currently, they do in fact pop the stack ...
+    // () // Empty brackets don't pop the stack of defs
+    (out "leaving scope 2\n")
+)
+
+(incr)
+(incr)

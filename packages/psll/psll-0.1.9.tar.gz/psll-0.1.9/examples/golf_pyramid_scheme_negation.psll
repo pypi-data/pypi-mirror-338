@@ -1,0 +1,27 @@
+(set n (# line)) // Set n to line input
+
+// Left and right triangle
+(set lt "/!\\\n---")
+(set rt "^\n  /!\\\n ^---\n")
+
+// n = mod(m,2)
+((set m n) (loop (<=> (<=> m 2) -1) (set m (- m 2))))
+
+// Print the top and the first triangle
+(? (! (? m ( // If m
+    (out "   ")
+))) ( // Else
+    (out " ^\n")
+))
+
+(set l 0)
+(loop (! (! (<=> l n))) ( // While l < n
+    ((set k l) (loop (<=> (<=> k 2) -1) (set k (- k 2)))) // k = mod(l,2)
+    (? (! (? (! (<=> (+ k m) 1)) ( // If xor(k,m)
+        (out rt)
+    ))) ( // Else
+        (out lt)
+    ))
+(set l (+ l 1))
+))
+(out " -") // Bottom of the final triangle

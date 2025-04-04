@@ -1,0 +1,14 @@
+// Count the number of input arguments
+
+// Make nil by asking for the 999'th input argument
+(set nil (arg 999))
+
+// Count the number of input arguments - n
+(set nargin 0)
+(do cond (
+    (set nargin (+ nargin 1))
+    (set cond (! (= (arg nargin) nil)))
+))
+(set nargin (- nargin 1))
+
+(out "nargin: " nargin) // Print
