@@ -1,0 +1,14 @@
+markdown-it-py
+
+[front-matter]
+pyyaml
+
+[images]
+pillow
+
+[images-svg]
+pillow
+cairosvg
+
+[watch]
+pypager

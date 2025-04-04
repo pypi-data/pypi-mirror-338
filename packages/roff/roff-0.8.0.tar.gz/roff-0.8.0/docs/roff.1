@@ -1,0 +1,290 @@
+.\" generated with roff/v0.8.0
+.\" https://pypi.org/project/roff/0.8.0
+.\" https://github.com/utility-toolbox/roff/
+.\"
+.TH "ROFF" "1" "04 April 2025" "github.com/utility-toolbox/roff"
+.SH "NAME"
+\fBroff\fP \- python\[em]based cli to convert markdown to the roff (man\[em]pages) format
+.SH "SYNOPSIS"
+.PD 0
+.IP • 2
+\fBroff\fP [\fB\-h\fP] [\fB\-v\fP] {\fIconvert\fP,\fIfrom\[em]parser\fP,\fItemplate\fP,\fItree\fP,\fIwatch\fP} ...
+.PD
+.PD 0
+.IP • 2
+\fBroff\fP \fIconvert\fP [\fB\-h\fP] \fIsource\fP [\fIdest\fP]
+.PD
+.PD 0
+.IP • 2
+\fBroff\fP \fIfrom\[em]parser\fP [\fB\-h\fP] [\fB\-\-root\fP \fIROOT\fP] [\fB\-o\fP \fIOUTPUT\fP] \fIparser\fP
+.PD
+.PD 0
+.IP • 2
+\fBroff\fP \fItemplate\fP [\fB\-h\fP] \fIoutput\fP
+.PD
+.PD 0
+.IP • 2
+\fBroff\fP \fIwatch\fP [\fB\-h\fP] \fIsource\fP
+.PD
+.PD 0
+.IP • 2
+\fBroff\fP \fItree\fP [\fB\-h\fP] [\fB\-\-show\[em]text\fP | \fB\-\-no\[em]show\[em]text\fP] \fIsource\fP (debugging)
+.PD
+.sp
+.SH "DESCRIPTION"
+.P
+python\[em]based cli to convert markdown to the roff (man\[em]pages) format
+.sp
+.RS 2
+see \fBroff(5)\fP for more information about the file specification.
+.RE
+.sp
+.P
+Support for all* Markdown features:
+.sp
+.RS 2
+*h1 is reserved for the head.
+.RE
+.sp
+.PD 0
+.IP • 2
+heading (h2\[em]h6)
+.PD
+.PD 0
+.IP • 2
+Ordered Lists
+.PD
+.PD 0
+.IP • 2
+Unordered Lists
+.PD
+.PD 0
+.IP • 2
+Code\[em]Blocks
+.PD
+.PD 0
+.IP • 2
+Inline
+.PD
+.RS 2
+.PD 0
+.IP • 2
+Code
+.PD
+.PD 0
+.IP • 2
+Bold
+.PD
+.PD 0
+.IP • 2
+Emphasis
+.PD
+.PD 0
+.IP • 2
+Links
+.PD
+.RE
+.PD 0
+.IP • 2
+Images (rendered as braille\[em]art | requires \fIroff[images]\fP)
+.PD
+.PD 0
+.IP • 2
+Horizontal\[em]Rule
+.PD
+.sp
+.SH "OPTIONS"
+.P
+\fBroff\fP [\fB\-h\fP] [\fB\-v\fP] [\fB\-\-list\[em]areas\fP] {\fIconvert\fP,\fIfrom\[em]parser\fP,\fItemplate\fP,\fItree\fP,\fIwatch\fP} ...
+.PD 0
+.IP • 2
+\fB\-h\fP, \fB\-\-help\fP: show this help message and exit
+.PD
+.PD 0
+.IP • 2
+\fB\-v\fP, \fB\-\-version\fP: show program\[aq]s version number and exit
+.PD
+.PD 0
+.IP • 2
+\fB\-\-list\[em]areas\fP: Lists the manpage\[em]areas and exit
+.PD
+.sp
+.SS "\fBroff\fP \fIconvert\fP"
+.sp
+.RS 2
+Converts markdown files to roff files
+.RE
+.sp
+.P
+\fBroff\fP \fIconvert\fP [\fB\-h\fP] \fIsource\fP [\fIdest\fP]
+.PD 0
+.IP • 2
+\fB\-h\fP, \fB\-\-help\fP: show this help message and exit
+.PD
+.PD 0
+.IP • 2
+\fBsource\fP: Markdown file that should be parsed
+.PD
+.PD 0
+.IP • 2
+[\fIdest\fP]: Manpage file that should be generated
+.PD
+.sp
+.SS "\fBroff\fP \fIfrom\[em]parser\fP"
+.P
+\fBroff\fP \fIfrom\[em]parser\fP [\fB\-h\fP] [\fB\-\-root\fP \fIROOT\fP] [\fB\-o\fP \fIOUTPUT\fP] \fIparser\fP
+.PD 0
+.IP • 2
+\fB\-h\fP, \fB\-\-help\fP: show this help message and exit
+.PD
+.PD 0
+.IP • 2
+\fB\-\-root\fP: Root directory to the search the module in
+.PD
+.PD 0
+.IP • 2
+\fB\-o\fP, \fB\-\-output\fP: Output file name
+.PD
+.PD 0
+.IP • 2
+\fBparser\fP: Entrypoint\[em]Specification to the parser. (Format: \[aq]\fImodule[.submodule][:variable]\fP\[aq])
+.PD
+.sp
+.P
+Note: to specify the parser for an executable module use the format \[aq]\fImodule[.submodule].__main__[:variable]\fP\[aq].
+.SS "\fBroff\fP \fItemplate\fP"
+.sp
+.RS 2
+Generates a Markdown file that you can fill
+.RE
+.sp
+.P
+\fBroff\fP \fItemplate\fP [\fB\-h\fP] \fIoutput\fP
+.PD 0
+.IP • 2
+\fB\-h\fP, \fB\-\-help\fP: show this help message and exit
+.PD
+.PD 0
+.IP • 2
+\fIoutput\fP: Target file that should be generated
+.PD
+.sp
+.SS "\fBroff\fP \fIwatch\fP"
+.sp
+.RS 2
+Start the manpage while automatically updating it. (experimental)
+.RE
+.sp
+.P
+\fBroff\fP \fIwatch\fP [\fB\-h\fP] \fIsource\fP
+.PD 0
+.IP • 2
+\fB\-h\fP, \fB\-\-help\fP: show this help message and exit
+.PD
+.PD 0
+.IP • 2
+\fIsource\fP: Markdown file that should be parsed
+.PD
+.sp
+.sp
+warning:
+.sp
+.P
+This feature can be a bit buggy and require you to close your terminal.
+.SS "\fBroff\fP \fItree\fP"
+.sp
+.RS 2
+Shows the parsed tree\[em]structure of a markdown document. (For debugging purposes)
+.RE
+.sp
+.P
+\fBroff\fP \fItree\fP [\fB\-h\fP] [\fB\-\-show\[em]text\fP | \fB\-\-no\[em]show\[em]text\fP] \fIsource\fP
+.PD 0
+.IP • 2
+\fB\-h\fP, \fB\-\-help\fP: show this help message and exit
+.PD
+.PD 0
+.IP • 2
+\fB\-\-show\[em]text\fP, \fB\-\-no\[em]show\[em]text\fP: Shows text content in the tree
+.PD
+.PD 0
+.IP • 2
+\fIsource\fP: Markdown file that should be parsed
+.PD
+.sp
+.SH "EXIT STATUS"
+.PD 0
+.IP • 2
+\fI0\fP: Successful program execution
+.PD
+.PD 0
+.IP • 2
+\fI1\fP: Any error
+.PD
+.sp
+.SH "ENVIRONMENT"
+.SS "ROFF_WIDTH"
+.P
+This defines the width of rendering elements such as images or a separator.
+.PD 0
+.IP • 2
+Default: \fI80\fP
+.PD
+.PD 0
+.IP • 2
+Type: integer
+.PD
+.sp
+.SS "ROFF_ASCII"
+.P
+Defines if only ascii characters should be used during rendering. (e.g. separator)
+.sp
+.RS 2
+Note: This configures only by roff generated characters. Not the ones in your file!
+.RE
+.sp
+.PD 0
+.IP • 2
+Default: \fIfalse\fP
+.PD
+.PD 0
+.IP • 2
+Type: boolean
+.PD
+.sp
+.SS "ROFF_TABSIZE"
+.P
+When rendering code. This option defines into how many spaces a tab\[em]character is expanded.
+.PD 0
+.IP • 2
+Default: \fI4\fP
+.PD
+.PD 0
+.IP • 2
+Type: integer
+.PD
+.sp
+.SH "BUGS"
+.P
+
+.UR https://github.com/utility-toolbox/roff/issues
+.UE 
+.SH "AUTHOR"
+.P
+
+.UR https://github.com/Barakudum
+.UE 
+.SH "SEE ALSO"
+.SS "Other Man\[em]Pages"
+.P
+roff(5)
+.SS "Organisation:"
+.P
+
+.UR https://github.com/utility-toolbox
+.UE 
+.SS "Repository:"
+.P
+
+.UR https://github.com/utility-toolbox/roff
+.UE 
