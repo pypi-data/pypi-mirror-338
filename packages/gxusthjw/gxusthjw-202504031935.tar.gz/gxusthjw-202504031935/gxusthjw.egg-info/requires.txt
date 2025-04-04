@@ -1,0 +1,9 @@
+setuptools
+pytest
+numpy
+scipy
+sympy
+pandas
+matplotlib
+statsmodels
+lmfit
