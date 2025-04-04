@@ -1,0 +1,9 @@
+cfgtools/__init__.py,sha256=HYhnr4We19xe4hF30HX8vqaK2ZCTNq8iaYnsQKnIUtI,490
+cfgtools/__version__.py,sha256=5HmSOB0onitmDiKiTgjaEIBa3k89JqSemVUBPNqE5ro,83
+cfgtools/_typing.py,sha256=HDwkt2wFF0x_0UvRgqO_ONUjnxz8WzRHMa7DjdUDOT4,320
+cfgtools/core.py,sha256=rozHD4HiaUCj8j2m2Id8n-boDb8k9TTVSr8MVNz5U_g,175
+cfgtools-0.0.0.dist-info/LICENSE,sha256=rlOb8JrIQs-p03IkqjgLlXbFGIwdABeHAaRckd4b8N8,1495
+cfgtools-0.0.0.dist-info/METADATA,sha256=1T13YKg0sNPDulbjKz0oRdQ7MQBmjVfyocbvEH7hZfs,1153
+cfgtools-0.0.0.dist-info/WHEEL,sha256=Kh9pAotZVRFj97E15yTA4iADqXdQfIVTHcNaZTjxeGM,110
+cfgtools-0.0.0.dist-info/top_level.txt,sha256=JCfuZNbqcXVHCqCJQNPbzs_mlV0SHlIWTek7WFZ1xSU,9
+cfgtools-0.0.0.dist-info/RECORD,,
