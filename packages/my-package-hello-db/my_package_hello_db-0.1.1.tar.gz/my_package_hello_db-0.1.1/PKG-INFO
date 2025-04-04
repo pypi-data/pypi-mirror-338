@@ -1,0 +1,28 @@
+Metadata-Version: 2.4
+Name: my_package_hello_db
+Version: 0.1.1
+Summary: A simple Python package
+Author: darshil
+Author-email: darshilbabariya444@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: flask
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+# My Package
+
+This is a simple Python package.
+
+## Installation
+```sh
+pip install my_package
