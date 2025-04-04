@@ -1,0 +1,9 @@
+openfoamparser/__init__.py,sha256=Iwb3EjbPqdmQz_JoF-MbQBCxza7OG_yDDntiWl8DAWk,182
+openfoamparser/field_parser.py,sha256=afxwORNGgeYVVslKUSW45ukmxDEbc8cuniVN3DZunLM,7066
+openfoamparser/mesh_parser.py,sha256=8WXFxtVh_uMqg15u-VP4kDKsjjQIalu3d0S5qKBTtUk,13403
+openfoamparser/utils.py,sha256=4ij0I2F5GxzNbfksCU2BLboc4OLBFY8jCSrc7fckJUc,818
+openfoamparser_ilya-0.16.dist-info/licenses/LICENSE,sha256=hiSFIE6X5R4gdZVs4NDZll0EGgzSjHVzhOZn1SoeN2E,1111
+openfoamparser_ilya-0.16.dist-info/METADATA,sha256=TgYK9W3sKNKHQiP-DHodpsIPlr7S2bw0o3XGhtVXsZg,9867
+openfoamparser_ilya-0.16.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+openfoamparser_ilya-0.16.dist-info/top_level.txt,sha256=q7cFPne9fOGz5uNfPifFQnB5XqHAI8vkFgqfTCw_fvQ,15
+openfoamparser_ilya-0.16.dist-info/RECORD,,
