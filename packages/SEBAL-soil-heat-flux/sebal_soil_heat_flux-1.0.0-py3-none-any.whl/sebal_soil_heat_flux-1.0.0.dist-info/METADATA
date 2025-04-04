@@ -1,0 +1,23 @@
+Metadata-Version: 2.4
+Name: SEBAL-soil-heat-flux
+Version: 1.0.0
+Summary: Soil Heat Flux Remote Sensing Method from the Surface Energy Balance for Land (SEBAL) Evapotranspiration Model in Python
+Author-email: Gregory Halverson <gregory.h.halverson@jpl.nasa.gov>
+Project-URL: Homepage, https://github.com/JPL-Evapotranspiration-Algorithms/SEBAL-soil-heat-flux
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: rasters
+Provides-Extra: dev
+Requires-Dist: build; extra == "dev"
+Requires-Dist: pytest>=6.0; extra == "dev"
+Requires-Dist: pytest-cov; extra == "dev"
+Requires-Dist: jupyter; extra == "dev"
+Requires-Dist: pytest; extra == "dev"
+Requires-Dist: twine; extra == "dev"
+Dynamic: license-file
+
+# Soil Heat Flux Remote Sensing Method from the Surface Energy Balance for Land (SEBAL) Evapotranspiration Model in Python
