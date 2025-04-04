@@ -1,0 +1,9 @@
+README.md
+pyproject.toml
+setup.cfg
+yashmusic.egg-info/PKG-INFO
+yashmusic.egg-info/SOURCES.txt
+yashmusic.egg-info/dependency_links.txt
+yashmusic.egg-info/entry_points.txt
+yashmusic.egg-info/requires.txt
+yashmusic.egg-info/top_level.txt

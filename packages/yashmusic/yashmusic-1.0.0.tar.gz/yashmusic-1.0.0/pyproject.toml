@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "yashmusic"
+version = "1.0.0"
+description = "A simple MP3 music player built with Python using pygame and tkinter."
+authors = [
+    { name = "Yashovardhan", email = "your_email@example.com" }
+]
+license = { text = "MIT" }
+readme = "README.md"
+requires-python = ">=3.7"
+dependencies = [
+    "pygame"
+]
+
+[project.scripts]
+yashmusic = "yashmusic.player:run"
