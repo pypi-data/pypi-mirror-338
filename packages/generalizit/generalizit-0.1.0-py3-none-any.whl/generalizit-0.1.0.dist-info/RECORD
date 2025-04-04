@@ -1,0 +1,10 @@
+generalizit/__init__.py,sha256=tu_q35Pc2i7R3RHEDKQ-rX87cVd2bFVNX4ruPFWEBq4,64
+generalizit/design.py,sha256=43q2Fj1MyDAz-J3cId9gFIfmD44iBNlM52UCphlQvKI,69368
+generalizit/design_utils.py,sha256=EyFeAtaXdRi8NT9uU8W1e2Je_UqCnnlprxBqpyf2OZQ,14320
+generalizit/g_theory_utils.py,sha256=veT_aB8yYNrC5AVNR8XUVx8Y95wqmzmZ3SiWXqQQI7c,3716
+generalizit/generalizit.py,sha256=XtH-FPuzNwXnmXn4b2k4iy6YIAh4MWgmzSxkHLHhhGU,11970
+generalizit-0.1.0.dist-info/licenses/LICENSE,sha256=tz6UgLf6aJkPThsRWiQaMRPG5qVlqm4aTBXkDRx_bxM,1068
+generalizit-0.1.0.dist-info/METADATA,sha256=_-rERDzWq90E8YTt18PUAhvUInqfU5JctMkOXrF-nWY,7542
+generalizit-0.1.0.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+generalizit-0.1.0.dist-info/top_level.txt,sha256=fjG--Rg3eYGhMgzQPxHQNydv4qx5g42isIzH-BD01yk,12
+generalizit-0.1.0.dist-info/RECORD,,
