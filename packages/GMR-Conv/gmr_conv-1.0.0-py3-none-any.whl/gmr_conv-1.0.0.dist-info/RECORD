@@ -1,0 +1,12 @@
+GMR_Conv/__init__.py,sha256=M4BuyApTqFpIRupx1W8TSq8ZcU5eMdVAGnZ4RLzUjp8,318
+GMR_Conv/gmr_conv.py,sha256=_3Mz2T8sWvCh35iJrJTk0BAQh5f6u0-KH3yxnuXX-bA,41248
+GMR_Conv/gmr_resnet.py,sha256=-hvvxUyON4NlZK-1oI3s73JZvaQMM2ZzATY42N3MBKk,15943
+GMR_Conv/gmr_resnet_3d.py,sha256=sKOMr8bUiqhjHm-krsnIEvbzyoaTjXF6-pAiwGLYoC8,15920
+GMR_Conv/gmr_unet.py,sha256=C5pT9EnjVkYCYKnNiLIyHUAusfJt8HqpxVyVck9VxCo,26577
+GMR_Conv/transforms.py,sha256=2823vO7leylMt0TlW3f6r0_tkT5YByWCscEIoTkaOYk,23591
+GMR_Conv/utils.py,sha256=6bWeEV02TpmcZqm3tY6UTtGtEaRIppiDeRi_XBcMfN8,1660
+gmr_conv-1.0.0.dist-info/licenses/LICENSE,sha256=UaE524Mg7zyUmTZ5EFNktCYEIRTAdgwAQFEzy9mSjDw,1051
+gmr_conv-1.0.0.dist-info/METADATA,sha256=wbNydqJr95epdvlRVILYrwWCjOo7OcmexU5mKn0v3Fg,11621
+gmr_conv-1.0.0.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+gmr_conv-1.0.0.dist-info/top_level.txt,sha256=_QyFyu1DX00MUxVVCxNeiji4IYHYkccHaKN4Yniodbk,9
+gmr_conv-1.0.0.dist-info/RECORD,,
