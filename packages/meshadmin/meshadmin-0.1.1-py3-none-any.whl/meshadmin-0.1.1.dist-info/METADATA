@@ -1,0 +1,78 @@
+Metadata-Version: 2.4
+Name: meshadmin
+Version: 0.1.1
+Summary: Management for Nebula Mesh networks.
+License: Proprietary
+Requires-Python: >=3.13
+Requires-Dist: httpx>=0.28.1
+Requires-Dist: jwcrypto>=1.5.6
+Requires-Dist: pydantic>=2.10.6
+Requires-Dist: pyjwt>=2.10.1
+Requires-Dist: rich>=13.9.4
+Requires-Dist: structlog>=25.2.0
+Requires-Dist: typer>=0.15.2
+Provides-Extra: server
+Requires-Dist: django-allauth[socialaccount]>=65.4.1; extra == 'server'
+Requires-Dist: django-cotton>=1.6.0; extra == 'server'
+Requires-Dist: django-htmx>=1.22.0; extra == 'server'
+Requires-Dist: django-ninja>=1.3.0; extra == 'server'
+Requires-Dist: django-structlog>=9.0.1; extra == 'server'
+Requires-Dist: django-tailwind-cli>=4.1.0; extra == 'server'
+Requires-Dist: django-tailwind>=3.8.0; extra == 'server'
+Requires-Dist: django>=5.1.7; extra == 'server'
+Requires-Dist: jinja2>=3.1.6; extra == 'server'
+Requires-Dist: python-dotenv>=1.1.0; extra == 'server'
+Requires-Dist: python-semantic-release>=9.20.0; extra == 'server'
+Requires-Dist: pyyaml>=6.0.2; extra == 'server'
+Requires-Dist: syrupy>=4.8.2; extra == 'server'
+Requires-Dist: uvicorn>=0.34.0; extra == 'server'
+Requires-Dist: whitenoise>=6.9.0; extra == 'server'
+Description-Content-Type: text/markdown
+
+# Meshadmin
+A simple admin interface for the nebula mesh.
+
+Allows to administer multiple networks.
+
+## Installation
+###  Setup CLI on host
+```bash
+# Install Curl
+apt install curl
+
+# Install uv package manager
+curl -LsSf https://astral.sh/uv/install.sh | sh
+
+# Add uv to your current shell session
+source $HOME/.local/bin/env
+
+# Install meshadmin package
+uv tool install meshadmin
+```
+
+### Usage
+```bash
+# Download Nebula binaries
+meshadmin download
+
+# Enroll a new host
+meshadmin enroll --mesh-admin-endpoint <MESH_ADMIN_ENDPOINT> <ENROLLMENT_KEY>
+
+# Start process for config updates
+meshadmin start --mesh-admin-endpoint <MESH_ADMIN_ENDPOINT>
+
+# Install as a service
+meshadmin install-service --mesh-admin-endpoint <MESH_ADMIN_ENDPOINT>
+
+# Start service
+meshadmin start-service
+
+# Other commands
+meshadmin --help
+```
+
+### Configuration
+
+The CLI supports the following environment variable:
+
+- `MESH_ADMIN_ENDPOINT`: URL of the admin endpoint
