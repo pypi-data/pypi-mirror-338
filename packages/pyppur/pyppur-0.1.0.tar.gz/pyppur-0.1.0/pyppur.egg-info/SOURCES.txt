@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+pyppur/__init__.py
+pyppur/projection_pursuit.py
+pyppur.egg-info/PKG-INFO
+pyppur.egg-info/SOURCES.txt
+pyppur.egg-info/dependency_links.txt
+pyppur.egg-info/requires.txt
+pyppur.egg-info/top_level.txt
