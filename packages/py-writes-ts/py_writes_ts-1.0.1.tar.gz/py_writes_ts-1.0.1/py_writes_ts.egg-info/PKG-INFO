@@ -1,0 +1,139 @@
+Metadata-Version: 2.4
+Name: py-writes-ts
+Version: 1.0.1
+Summary: Generate typescript code from python
+Author-email: Oliver Sanz <oliverlsanz@gmail.com>
+License:  The MIT License (MIT)
+        
+        Copyright © 2025 <copyright holders>
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the “Software”), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+        
+Project-URL: Homepage, https://github.com/OliverLSanz/py-writes-ts
+Keywords: typescript
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.12.8
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Provides-Extra: dev
+Requires-Dist: pytest; extra == "dev"
+Dynamic: license-file
+
+# PY WRITES TS
+
+A library of tools to aid in the generation of typescript interfaces and functions from python dataclasses.
+
+Use this to write a script that generates a typescript sdk from your python backend!
+
+## Installation
+
+```bash
+pip install py-writes-ts
+```
+
+## Usage
+
+### Class to Interface
+
+```python
+from py_writes_ts.class_to_interface import generate_typescript_interfaces
+from dataclasses import dataclass
+
+@dataclass
+class User:
+    id: int
+    name: str
+    age: int
+
+code = generate_typescript_interfaces([User])
+print(code)
+```
+
+Output:
+
+```typescript
+export interface User {
+    id: number;
+    name: string;
+    age: number;
+}
+```
+
+### Function Generator
+
+```python
+from py_writes_ts.function_generator import generate_typescript_function
+from dataclasses import dataclass
+
+@dataclass
+class GetUserByIdRequest:
+    id: int
+
+@dataclass
+class GetUserByIdResponse:
+    id: int
+    name: str
+    age: int
+
+code = generate_typescript_function(
+    function_name="getUserById",
+    parameters={
+        "params": GetUserByIdRequest
+    },
+    return_type=GetUserByIdResponse,
+    valid_refs=[GetUserByIdRequest, GetUserByIdResponse],
+    body="""
+const response = await fetch(`/api/get_user_by_id`, {{
+  method: "POST",
+  headers: {{
+      "Content-Type": "application/json"
+  }},
+  body: JSON.stringify(params)
+}});
+
+const data = await response.json();
+return data;
+"""
+)
+print(code)
+```
+
+Output:
+
+```typescript
+export async function getUserById(
+    params: GetUserByIdRequest
+): Promise<GetUserByIdResponse> {
+    const response = await fetch(`/api/get_user_by_id`, {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify(params)
+    });
+    
+    if (!response.ok) {
+        throw new Error(`API call failed with status ${response.status}`);
+    }
+    
+    const data: GetUserByIdResponse = await response.json();
+    return data;
+}
+```
+
+### More examples
+
+Look at the tests for more examples.
+
+## Contributing
+
+Contributions are welcome! Please open an issue or submit a pull request.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details. 
