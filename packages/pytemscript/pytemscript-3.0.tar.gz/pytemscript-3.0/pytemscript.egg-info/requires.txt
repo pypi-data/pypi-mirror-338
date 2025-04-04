@@ -1,0 +1,13 @@
+comtypes>=1.2.1
+mrcfile
+numpy
+pillow
+
+[dev]
+matplotlib
+mypy
+
+[utapi]
+grpcio
+grpcio-tools
+protobuf
