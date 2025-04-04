@@ -1,0 +1,6 @@
+pytube
+moviepy
+yt-dlp
+soundfile
+pedalboard
+numpy
