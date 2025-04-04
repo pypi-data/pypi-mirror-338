@@ -1,0 +1,30 @@
+Metadata-Version: 2.4
+Name: ruby-commit-helper
+Version: 2025.4.3.0
+Summary: No more "offend" for your ruby commit!
+License-File: LICENSE
+Requires-Python: >=3.10
+Requires-Dist: rich>=13.9.4
+Description-Content-Type: text/markdown
+
+# ruby_commit_helper
+
+No more "offend" for your ruby commit!
+
+Install
+```bash
+pip install ruby-commit-helper
+```
+
+Run
+```bash
+ruby-commit-helper
+```
+
+## BEFORE
+
+<img src="https://raw.githubusercontent.com/soda92/ruby_commit_helper/refs/heads/main/image-1.png" alt="demo" style="width:400px;"/>
+
+## AFTER
+
+<img src="https://raw.githubusercontent.com/soda92/ruby_commit_helper/refs/heads/main/image.png" alt="demo" style="width:400px;"/>
