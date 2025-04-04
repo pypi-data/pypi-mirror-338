@@ -1,0 +1,122 @@
+Metadata-Version: 2.2
+Name: riboclette
+Version: 0.1.1
+Author: Vamsi Nallapareddy and Francesco Craighero
+Description-Content-Type: text/markdown
+Requires-Dist: numpy>=1.26.4
+Requires-Dist: transformers>=4.38.0
+Requires-Dist: captum>=0.8.0
+Provides-Extra: cuda
+Requires-Dist: torch==2.6.0+cu118; extra == "cuda"
+Provides-Extra: cpu
+Requires-Dist: torch==2.6.0; extra == "cpu"
+Dynamic: author
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: provides-extra
+Dynamic: requires-dist
+
+# Riboclette pip Package
+
+Riboclette is a Python package designed for analyzing ribosome footprints and calculating attributions for genes under 6 nutrient-deprivation conditions. It leverages a XLNet-based model to provide predictions and insights into translation elongation dynamics.
+
+---
+
+## Features
+
+- Predict ribosome footprints (RFP) for genes under different deprivation conditions.
+- Compute attributions for genes to understand the impact of specific codons.
+
+---
+
+## Installation
+
+Install the package using pip:
+
+```bash
+pip install riboclette
+```
+
+Ensure you have the required dependencies installed:
+- `numpy`
+- `torch`
+- `transformers`
+- `captum`
+- `tqdm`
+
+For GPU support, make sure that PyTorch is installed with CUDA.
+
+---
+
+## Usage
+
+### 1. Predict Ribosome Footprints (RFP)
+
+The `predictRFP` function predicts ribosome footprints for a given nucleotide sequence and condition.
+
+```python
+from riboclette import predictRFP
+
+sequence = "ATGCGTACGTAGCTAGCTAGC"
+condition = "ILE"  # Options: 'CTRL', 'ILE', 'LEU', 'LEU_ILE', 'LEU_ILE_VAL', 'VAL'
+
+ctrl_rfp, dd_rfp, dc_rfp = predictRFP(sequence, condition)
+print("Control RFP:", ctrl_rfp)
+print("DD RFP:", dd_rfp)
+print("Deprivation Condition RFP:", dc_rfp)
+```
+
+### 2. Compute Attributions
+
+The `getAttr` function calculates attributions for a nucleotide sequence under a specific condition and head.
+
+```python
+from riboclette import getAttr
+
+sequence = "ATGCGTACGTAGCTAGCTAGC"
+condition = "ILE"  # Options: 'CTRL', 'ILE', 'LEU', 'LEU_ILE', 'LEU_ILE_VAL', 'VAL'
+head = "CTRL"  # Options: 'CTRL', 'DD'
+
+attr = getAttr(sequence, condition, head)
+print("Attributions:", attr)
+```
+
+---
+
+## Input and Output Details
+
+### Input
+- **Sequence**: A string of nucleotide bases (e.g., "ATGCGTACGTAGCTAGCTAGC").
+- **Condition**: One of the following:
+  - `'CTRL'`
+  - `'ILE'`
+  - `'LEU'`
+  - `'LEU_ILE'`
+  - `'LEU_ILE_VAL'`
+  - `'VAL'`
+- **Head** (for `getAttr`): `'CTRL'` or `'DD'`.
+
+### Output
+- **`predictRFP`**: Returns three arrays:
+  - `ctrl_rfp`: Control RFP values.
+  - `dd_rfp`: DD RFP values.
+  - `dc_rfp`: Deprivation Condition RFP values.
+- **`getAttr`**: Returns an array of attributions for the given sequence and head.
+
+---
+
+## Model Details
+
+We employ the Riboclette Tr-Pl model for this package, and it is automatically loaded for all the computations.
+
+---
+
+## License
+
+This package is distributed under the MIT License. See the LICENSE file for more details.
+
+---
+
+## Contact
+
+For questions or issues, please contact the maintainers at [vamsi.nallapareddy@epfl.ch,francesco.craighero@epfl.ch].
