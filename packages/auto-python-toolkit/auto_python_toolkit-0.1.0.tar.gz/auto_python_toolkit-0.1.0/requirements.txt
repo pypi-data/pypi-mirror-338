@@ -1,0 +1,6 @@
+rich
+pandas
+tqdm
+termcolor
+progressbar
+xlrd

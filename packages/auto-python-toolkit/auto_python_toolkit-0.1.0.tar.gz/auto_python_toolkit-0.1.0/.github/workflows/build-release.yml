@@ -1,0 +1,83 @@
+name: Build and Release
+
+on:
+  push:
+    branches: [ main ]
+    tags:
+      - 'v*'  # Push events to matching v*, i.e. v1.0, v20.15.10
+
+jobs:
+  build:
+    runs-on: windows-latest
+    
+    steps:
+    - uses: actions/checkout@v3
+    
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.10'
+        
+    - name: Install uv
+      run: |
+        curl -LsSf https://astral.sh/uv/install.ps1 | powershell -c -
+        echo "$HOME/.cargo/bin" >> $GITHUB_PATH
+        
+    - name: Install build dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install build twine
+        
+    - name: Create test project
+      run: |
+        mkdir -p test_project
+        echo "print('Hello from auto-python-toolkit')" > test_project/hello.py
+        
+    - name: Create package versions
+      run: |
+        # Create a directory for packages
+        mkdir -p dist
+        
+        # Package Windows 10 64-bit with Python 3.10
+        python -m auto_python_toolkit --auto --lang en
+        
+        # Rename the output to include version
+        $VERSION = (git describe --tags --abbrev=0 2>$null)
+        if (-not $VERSION) { $VERSION = "v0.1.0" }
+        $VERSION = $VERSION.TrimStart("v")
+        
+        # Create zip archive of the entire toolkit
+        Compress-Archive -Path *.py,*.bat,requirements.txt,README.md,.gitignore -DestinationPath "dist/auto-python-toolkit-$VERSION.zip" -Force
+        
+        # Also copy the output files
+        if (Test-Path -Path "output") {
+          Copy-Item -Path "output\*.zip" -Destination "dist\" -Force
+        }
+        
+    - name: Build PyPI package
+      run: |
+        python -m build
+        twine check dist/*.whl dist/*.tar.gz
+        
+    - name: Create Release
+      id: create_release
+      uses: softprops/action-gh-release@v1
+      if: startsWith(github.ref, 'refs/tags/')
+      with:
+        files: dist/*.zip
+        draft: false
+        prerelease: false
+        
+    - name: Upload build artifacts
+      uses: actions/upload-artifact@v3
+      with:
+        name: auto-python-toolkit
+        path: dist/*.zip
+        
+    - name: Publish to PyPI
+      if: startsWith(github.ref, 'refs/tags/')
+      env:
+        TWINE_USERNAME: ${{ secrets.PYPI_USERNAME }}
+        TWINE_PASSWORD: ${{ secrets.PYPI_PASSWORD }}
+      run: |
+        twine upload dist/*.whl dist/*.tar.gz 

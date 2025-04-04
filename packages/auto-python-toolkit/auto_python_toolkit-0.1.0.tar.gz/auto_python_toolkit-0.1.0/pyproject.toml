@@ -1,0 +1,46 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "auto-python-toolkit"
+version = "0.1.0"
+description = "Create offline-ready Python environments for your projects"
+readme = "README.md"
+requires-python = ">=3.7"
+license = {text = "MIT"}
+authors = [
+    {name = "tkpdx01", email = "tkpdx01@outlook.com"},
+]
+keywords = ["python", "environment", "offline", "packaging", "uv"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: Microsoft :: Windows",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Software Development",
+    "Topic :: Utilities",
+]
+dependencies = [
+    "uv>=0.1.10",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/tkpdx01/auto-python-toolkit"
+"Bug Tracker" = "https://github.com/tkpdx01/auto-python-toolkit/issues"
+"Documentation" = "https://github.com/tkpdx01/auto-python-toolkit#readme"
+"Source Code" = "https://github.com/tkpdx01/auto-python-toolkit"
+
+[project.scripts]
+auto-python-toolkit = "auto_python_toolkit.cli:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["auto_python_toolkit"]
