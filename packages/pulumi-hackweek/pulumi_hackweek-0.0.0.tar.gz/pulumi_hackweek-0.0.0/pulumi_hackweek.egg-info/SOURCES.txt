@@ -1,0 +1,14 @@
+setup.py
+pulumi_hackweek/__init__.py
+pulumi_hackweek/_utilities.py
+pulumi_hackweek/hello_component.py
+pulumi_hackweek/hello_world.py
+pulumi_hackweek/provider.py
+pulumi_hackweek/pulumi-plugin.json
+pulumi_hackweek/py.typed
+pulumi_hackweek.egg-info/PKG-INFO
+pulumi_hackweek.egg-info/SOURCES.txt
+pulumi_hackweek.egg-info/dependency_links.txt
+pulumi_hackweek.egg-info/not-zip-safe
+pulumi_hackweek.egg-info/requires.txt
+pulumi_hackweek.egg-info/top_level.txt
