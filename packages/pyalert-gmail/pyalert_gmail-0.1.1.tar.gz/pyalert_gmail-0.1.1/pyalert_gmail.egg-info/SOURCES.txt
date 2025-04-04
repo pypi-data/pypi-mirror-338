@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+pyalert/__init__.py
+pyalert/pyalert.py
+pyalert_gmail.egg-info/PKG-INFO
+pyalert_gmail.egg-info/SOURCES.txt
+pyalert_gmail.egg-info/dependency_links.txt
+pyalert_gmail.egg-info/requires.txt
+pyalert_gmail.egg-info/top_level.txt
+tests/test_pyalert.py
