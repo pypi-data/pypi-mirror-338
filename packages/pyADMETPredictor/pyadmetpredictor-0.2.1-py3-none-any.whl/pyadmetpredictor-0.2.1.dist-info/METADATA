@@ -1,0 +1,105 @@
+Metadata-Version: 2.4
+Name: pyADMETPredictor
+Version: 0.2.1
+Author-email: "Rafal A. Bachorz" <rafal.bachorz@simulations-plus.com>
+License: LGPL-3.0
+Project-URL: homepage, https://bitbucket.org/slp-cheminformatics/pyadmetpredictor
+Project-URL: repository, https://bitbucket.org/slp-cheminformatics/pyadmetpredictor
+Keywords: Simulations Plus,ADMET Predictor,qsar,qspr,integration
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Healthcare Industry
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: Bio-Informatics
+Classifier: Topic :: Scientific/Engineering :: Chemistry
+Classifier: Topic :: Utilities
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests>=2.31.0
+Requires-Dist: pandas>=2.1.0
+Requires-Dist: rdkit>=2024.3.3
+Provides-Extra: dev
+Requires-Dist: pytest>=6; extra == "dev"
+Requires-Dist: pytest-cov; extra == "dev"
+Requires-Dist: pytest-timeout; extra == "dev"
+Requires-Dist: pytest-xdist; extra == "dev"
+Requires-Dist: pytest-asyncio; extra == "dev"
+Requires-Dist: twine; extra == "dev"
+Provides-Extra: notebook
+Requires-Dist: ipywidgets>=6; extra == "notebook"
+Dynamic: license-file
+
+# pyADMETPredictor
+
+**Python interface to [ADMET Predictor&reg;](https://www.simulations-plus.com/software/admetpredictor/). Supports both command line and the REST interfaces.**
+
+## Introduction
+To enable the application of various analytical techniques available in the Python ecosystem, we created the `pyADMETPredictor` module. This simple Python library allows seamless interfacing with the RESTful and command line (CMD) APIs natively exposed by ADMET Predictor. It supports prototyping calls to ADMET Predictor, whether available as an executable or exposed as a RESTful API service. The majority of the functionalities provided by these interfaces can be accessed through `pyADMETPredictor`. However, as `pyADMETPredictor` is an evolving project, any potential gaps will be systematically addressed. Currently, `pyADMETPredictor` is tested with Python interpreter versions 3.9, 3.10, 3.11, 3.12 and 3.13 on Windows and Linux operating systems.
+
+The `pyADMETPredictor` is open-source and free-of-charge. However, to launch it with [ADMET Predictor&reg;](https://www.simulations-plus.com/software/admetpredictor/) software, the appropriate license for the latter is required.
+
+## Installation
+The `pyADMETPredictor` can easily installed either from local file or from the PyPi repository:
+```bash
+pip install path/to/pyADMETPredictor.whl
+```
+or
+```bash
+pip install pyADMETPredictor
+```
+There `pyADMETPredictor` has the following dependencies:
+
+* requests
+* pandas
+* rdkit
+
+All of them are resolved by pip during the installation phase.
+
+## Applications
+Basic functionalities are explained in the Jupyter notebook:
+```bash
+notebooks/pyADMETPredictor_demo.ipynb
+```
+
+## For developers
+* All necessary development dependencies are available in the `requirements.txt` file.
+* The `tox` module is configured to test new builds.
+* The development of new functionalities should be reflected in new test cases contained in `tests` directory.
+### Preparing the build
+* Launching the tests with recreation of the environments:
+```bash
+tox -r
+```
+* Launching the tests for selected environment:
+```bash
+tox -e py311
+```
+* Creating the build
+```bash
+python -m build
+```
+* Uploading the build to test-PyPi
+
+```bash
+python -m twine upload --repository testpypi dist/build_file.whl
+```
+* Uploading the build to real-PyPi (no need to point `--repository`)
+```bash
+python -m twine upload dist/build_file.whl
+```
+* Pushing tags to the remote
+```bash
+git push --tags
+```
