@@ -1,0 +1,2 @@
+[console_scripts]
+ml_lab_fat = ml_lab_fat.main:show_options
