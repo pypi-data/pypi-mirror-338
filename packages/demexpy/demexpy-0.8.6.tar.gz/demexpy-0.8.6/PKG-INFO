@@ -1,0 +1,28 @@
+Metadata-Version: 2.4
+Name: demexpy
+Version: 0.8.6
+Summary: Python implementation of the DeMeX protocol
+Author-email: Abdullah Alam <abdullah@sentient-pixels.com>
+Maintainer-email: Abdullah Alam <abdullah@sentient-pixels.com>
+License-Expression: MIT
+Project-URL: Homepage, https://github.com/sentientpixels/demexpy
+Project-URL: Documentation, https://github.com/sentientpixels/demexpy/blob/main/README.md
+Project-URL: Repository, https://github.com/sentientpixels/demexpy
+Keywords: demex,message broker,decentralised,decentralized,send messages
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests
+Requires-Dist: cryptography
+Dynamic: license-file
+
+# DeMeXpy - Python
+Python implementation of the Decentralized Message Exchange protocol. Send and recieve python objects on different devices even if they are not connected to the same network. Uses `ntfy.sh` for communication (any host can be used; even self-hosted ones). Supports function calling on the reciever's end. All communication is fully encrypted end-to-end.
+
+## Installation
+```bash
+pip install demexpy
+```
+
+## Usage
+See [docs](docs/index.md).
