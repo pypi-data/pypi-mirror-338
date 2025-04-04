@@ -1,0 +1,21 @@
+Metadata-Version: 2.4
+Name: panmetrics
+Version: 0.1.1
+Summary: A library for evaluation metrics.
+Author: Morteza Alizadeh
+Author-email: alizadehmorteza2020@gmail.com
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+License-File: LICENSE
+Requires-Dist: numpy
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: license
+Dynamic: license-file
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary

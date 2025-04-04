@@ -1,0 +1,16 @@
+LICENSE
+README.md
+setup.py
+Test/__init__.py
+panmetrics/__init__.py
+panmetrics/classification.py
+panmetrics/clustering.py
+panmetrics/imagetoimage.py
+panmetrics/regression.py
+panmetrics/segmentation.py
+panmetrics/utils.py
+panmetrics.egg-info/PKG-INFO
+panmetrics.egg-info/SOURCES.txt
+panmetrics.egg-info/dependency_links.txt
+panmetrics.egg-info/requires.txt
+panmetrics.egg-info/top_level.txt
