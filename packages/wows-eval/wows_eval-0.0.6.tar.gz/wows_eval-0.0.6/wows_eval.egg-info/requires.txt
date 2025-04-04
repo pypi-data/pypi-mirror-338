@@ -1,0 +1,11 @@
+tira>=0.0.156
+tirex-tracker>=0.2.10
+pyyaml
+pandas
+packaging
+trectools
+click
+tqdm
+
+[test]
+pytest==8.*,>=8.0
