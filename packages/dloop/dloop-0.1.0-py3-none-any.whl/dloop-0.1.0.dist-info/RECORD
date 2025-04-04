@@ -1,0 +1,11 @@
+dloop/__init__.py,sha256=zd0lFr4tQ7aYRrRRR7Hn0IhV7ZhhjOUwv4nqrARUSmY,210
+dloop/events.py,sha256=NgfJgRpChgSY7N_f_5Xy_ftOuZVqNwSzwmUxJozrVTE,3752
+dloop/exceptions.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dloop/iter_logic.py,sha256=dIv4ZwcUZgBJDcyPyBHx3y53dJ8-AoENPS_KN8tq1Ao,8814
+dloop/loop.py,sha256=c6Dgmc12lIxIv9A9xFJ1AT4ER1_n1ydE-FM_rYcV5M0,3342
+dloop/types.py,sha256=C8XsdkR0hohmzMCpC9DHCHFon-tPJ9nY2jJRIk7PrBI,378
+dloop/utils.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dloop-0.1.0.dist-info/LICENSE,sha256=rkRYhWOhJ1I_sqblIUy6PWI6pUhqyuFNu0xMjXXk6Co,1083
+dloop-0.1.0.dist-info/METADATA,sha256=rwpjGB1EXt2qJ3ON4XkIErRtjNvEboB1xemRYKFbTzk,5202
+dloop-0.1.0.dist-info/WHEEL,sha256=Nq82e9rUAnEjt98J6MlVmMCZb-t9cYE2Ir1kpBmnWfs,88
+dloop-0.1.0.dist-info/RECORD,,
