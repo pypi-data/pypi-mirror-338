@@ -1,0 +1,6 @@
+README.md
+setup.py
+yandex_tvm2_test_version.egg-info/PKG-INFO
+yandex_tvm2_test_version.egg-info/SOURCES.txt
+yandex_tvm2_test_version.egg-info/dependency_links.txt
+yandex_tvm2_test_version.egg-info/top_level.txt
