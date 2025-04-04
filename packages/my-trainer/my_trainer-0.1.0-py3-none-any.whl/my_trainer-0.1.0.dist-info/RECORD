@@ -1,0 +1,7 @@
+my_train/__init__.py,sha256=CXimcvx9IDQxdowkmiEM-HfWGD2KbwTOy74pFLoghuA,28
+my_train/train_rnn.py,sha256=D-x4GemWJGlR9FIIBZjuP4ZRO0MtttNLFXbMp4xWSSc,5474
+my_train/trainer.py,sha256=APEUlLQKcqY18TXixz7XHfwwjRbo-RgnJYfR_6PkIXA,2084
+my_trainer-0.1.0.dist-info/METADATA,sha256=-JF8zmoJBp2Grt2mTMfE54794aB42fxibfSPMmI17eQ,346
+my_trainer-0.1.0.dist-info/WHEEL,sha256=XbeZDeTWKc1w7CSIyre5aMDU_-PohRwTQceYnisIYYY,88
+my_trainer-0.1.0.dist-info/entry_points.txt,sha256=o4TrO8M50MFmdecVqAnGYUzap9l7-B3GGjCfo4yfYJk,49
+my_trainer-0.1.0.dist-info/RECORD,,
