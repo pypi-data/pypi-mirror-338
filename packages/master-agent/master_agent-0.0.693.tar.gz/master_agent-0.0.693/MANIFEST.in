@@ -1,0 +1,2 @@
+include master_agent/llm/dataset/files/*.py
+include master_agent/llm/dataset/imgs/*.png 
