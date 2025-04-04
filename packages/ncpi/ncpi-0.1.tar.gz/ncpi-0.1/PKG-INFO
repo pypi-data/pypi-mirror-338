@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: ncpi
+Version: 0.1
+Summary: Neural circuit parameter inference using electrophysiological data
+Author: necolab
+Requires-Dist: scikit-learn
+Requires-Dist: pycatch22
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: scipy
+Requires-Dist: matplotlib
+Provides-Extra: torch
+Requires-Dist: torch; extra == "torch"
+Provides-Extra: lfpy
+Requires-Dist: LFPy; extra == "lfpy"
+Provides-Extra: lfpykernels
+Requires-Dist: lfpykernels; extra == "lfpykernels"
+Provides-Extra: lfpykit
+Requires-Dist: lfpykit; extra == "lfpykit"
+Provides-Extra: neuron
+Requires-Dist: neuron; extra == "neuron"
+Provides-Extra: nest
+Requires-Dist: nest; extra == "nest"
+Provides-Extra: fooof
+Requires-Dist: fooof; extra == "fooof"
+Provides-Extra: h5py
+Requires-Dist: h5py; extra == "h5py"
+Provides-Extra: pathos
+Requires-Dist: pathos; extra == "pathos"
+Provides-Extra: tqdm
+Requires-Dist: tqdm; extra == "tqdm"
+Provides-Extra: matlab
+Requires-Dist: matlab; extra == "matlab"
+Provides-Extra: matlabengine
+Requires-Dist: matlabengine; extra == "matlabengine"
+Provides-Extra: rpy2
+Requires-Dist: rpy2; extra == "rpy2"
+Provides-Extra: mpl-toolkits
+Requires-Dist: mpl_toolkits; extra == "mpl-toolkits"
+Provides-Extra: pyastronomy
+Requires-Dist: PyAstronomy; extra == "pyastronomy"
