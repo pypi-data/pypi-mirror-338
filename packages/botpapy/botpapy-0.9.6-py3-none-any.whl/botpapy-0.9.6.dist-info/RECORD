@@ -1,0 +1,14 @@
+botpapy/__init__.py,sha256=gIKdUHv5kt_LTCxohY3-OSKwTDybTNFLSmocczbpIkk,357
+botpapy/botpapy.py,sha256=aHo2AKd53TK-Uj-yG98gL2Lw47X0My7eh3uqycNmDXU,6025
+botpapy/color.py,sha256=qMTia2QkILYoP0cg1bkGrd9KCcAyT0NVGr2Oy8A79F0,2037
+botpapy/config.py,sha256=f7Wfk6Dzlyo1qFHo039-h5MNKdUY71WU-H2eVOF1kf8,67
+botpapy/crangeTester.py,sha256=qoiXv_knkUBHB13mELvHS8sfkwjNbyWD1W_pwTsWFS0,3099
+botpapy/helpers.py,sha256=ouvc_TY6tXljh-F3QyXuFcyUVBbCBAqGnPuXxYY-sck,694
+botpapy/image.py,sha256=gHwiy1OXRnrzY5proKzaQ-9wPXag2fIwPkEihcUHbp8,2350
+botpapy/match.py,sha256=dD2ccVJBcVXV27qZSHLtj58hyF9mWvkHrLWQXPt1NOg,491
+botpapy/rect.py,sha256=KSxsbxN57IWS4LUkp-Z4nT1fXOGS5IbH7kWvDH-LzOk,1408
+botpapy/selectWindow.py,sha256=03BHs_G0V7aPUMmx2tcV5i-9Wo6hGqYNaYW1lb14gTk,4254
+botpapy-0.9.6.dist-info/METADATA,sha256=gahk3NmXbUhwEQ_68ZwBnZgReGIYEncPkA91yzbf3ec,2037
+botpapy-0.9.6.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+botpapy-0.9.6.dist-info/top_level.txt,sha256=yQxHLw_eISG8f9CP0NRRaUy2Wa2ePWWm93Zxs7kUOfU,8
+botpapy-0.9.6.dist-info/RECORD,,
