@@ -1,0 +1,137 @@
+Metadata-Version: 2.4
+Name: ttaat
+Version: 0.1.4
+Summary: Two Truths and a Twist: A trivia game for users of AI
+Author-email: moorkh <moorkh@ergodic.xyz>
+License-File: LICENSE
+Requires-Python: >=3.13
+Requires-Dist: mcp[cli]>=1.6.0
+Requires-Dist: platformdirs>=4.0.0
+Description-Content-Type: text/markdown
+
+# TwoTruthsAndATwist
+
+Two Truths and a Twist: The world's first Model Context Protocol (MCP) game
+
+[Game design document](https://docs.google.com/document/d/1kW88UU5bjszQJgyB_JNkpvbnfaSNcKIP4mRR3R-HL1o/edit?usp=sharing)
+
+## Installation
+
+### Requirements
+- Python 3.13 or higher
+- MCP-compatible LLM (like Claude 3)
+
+You can install the game directly from PyPI:
+
+```bash
+pip install ttaat
+```
+
+Or if you prefer using `uv`:
+
+```bash
+uv pip install ttaat
+```
+
+## Usage
+
+### Initialize the Database
+First, initialize the game database:
+
+```bash
+ttaat db upgrade
+```
+
+### Start the Game Server
+To start the MCP server:
+
+```bash
+ttaat serve
+```
+
+This will start the Two Truths and a Twist MCP server, which LLMs can connect to for playing the game.
+
+### View Game Statistics
+To see game statistics:
+
+```bash
+ttaat db stats
+```
+
+## Connecting to the Server
+
+To connect an MCP-compatible LLM to the game server, you'll need to configure the MCP connection.
+
+### Installation with `uv` (Recommended)
+
+We recommend using `uv` for installation, as it provides faster and more reliable package management:
+
+1. First, install `uv` if you don't have it already:
+   ```bash
+   curl -LsSf https://astral.sh/uv/install.sh | sh
+   ```
+
+2. Create a configuration file (e.g., `claude_desktop_config.json`) with the following content:
+
+```json
+{
+  "mcpServers": {
+    "TwoTruthsAndATwist": {
+      "command": "uvx",
+      "args": ["-U", "ttaat", "serve"]
+    }
+  }
+}
+```
+
+### Traditional Installation
+
+If you prefer using the traditional approach after installing with pip:
+
+```json
+{
+  "mcpServers": {
+    "TwoTruthsAndATwist": {
+      "command": "ttaat",
+      "args": ["serve"]
+    }
+  }
+}
+```
+
+For Claude Desktop, place this file in:
+- macOS: `~/Library/Application Support/Claude/claude_desktop_config.json`
+- Windows: `%APPDATA%\Claude\claude_desktop_config.json`
+- Linux: `~/.config/Claude/claude_desktop_config.json`
+
+## Game Mechanics
+
+Two Truths and a Twist is a trivia game where:
+
+1. The AI creates a round with three statements about a topic - two truths and one "twist" (a playful, false statement)
+2. Players try to identify which statement is the twist 
+3. The AI reveals the answer with entertaining explanations
+
+The game leverages the MCP protocol to provide a fun, interactive trivia experience where AI models both generate the content and facilitate gameplay.
+
+## Example Prompts
+
+Once connected to an MCP-enabled LLM, you can start a game with prompts like:
+
+```
+Let's play Two Truths and a Twist! Create a round about space exploration.
+```
+
+```
+Create a game round about ancient civilizations.
+```
+
+## For Developers
+
+This package implements an MCP server that provides custom game tools:
+- `create_round`: Creates a new game round with a question and three statements
+- `submit_guess`: Lets players submit their guess for which statement is the twist
+- `reveal_twist`: Reveals the answer with explanations for each statement
+- `get_round`: Retrieves details for a specific round
+- `get_last_round`: Gets details of the most recent round
+- `get_stats`: Retrieves game statistics
