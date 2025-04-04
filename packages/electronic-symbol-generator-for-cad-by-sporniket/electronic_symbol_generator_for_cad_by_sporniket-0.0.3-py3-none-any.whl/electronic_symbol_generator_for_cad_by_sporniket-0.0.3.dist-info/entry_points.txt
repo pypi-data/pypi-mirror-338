@@ -1,0 +1,5 @@
+[console_scripts]
+elsygen = electronic_symbol_generator_for_cad.__main__:main
+
+[gui_scripts]
+
