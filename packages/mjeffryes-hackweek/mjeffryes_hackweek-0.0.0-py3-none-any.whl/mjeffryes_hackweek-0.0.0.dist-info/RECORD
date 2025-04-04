@@ -1,0 +1,11 @@
+mjeffryes_hackweek/__init__.py,sha256=Iay5iVnIRSn6EoIbk6yi1sRLsl9J4qpzgABxWAbk_8w,753
+mjeffryes_hackweek/_utilities.py,sha256=66uLGQDI1oMFOI3Fe5igAphtexWhcSLDyuVW50jW3ik,10789
+mjeffryes_hackweek/hello_component.py,sha256=_rgJeFer6TmTrAWky2fGJTcORkXUowB31kZDquenfvQ,4889
+mjeffryes_hackweek/hello_world.py,sha256=HZQwXcOmzrlN_f9MNNxcHT8XF-Khpu7Lb_aJcDkapxM,5506
+mjeffryes_hackweek/provider.py,sha256=7-zeWR6dOMMNLdu0IjbJewDijx8j-3Ii-ISjZZZzgwI,2928
+mjeffryes_hackweek/pulumi-plugin.json,sha256=kQr7RfO8Nm6EwmnuyCbH1qjGpzK9-ePJCR4rwBb0cNE,67
+mjeffryes_hackweek/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mjeffryes_hackweek-0.0.0.dist-info/METADATA,sha256=rqF0zOlHl_BlORd_zgWiY1JOkXKlrC9Ck7fbiazoyQQ,438
+mjeffryes_hackweek-0.0.0.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+mjeffryes_hackweek-0.0.0.dist-info/top_level.txt,sha256=Z15edGI0L2DDRg2grvU7RT414D8fcbWQhmuC-N8jpgg,19
+mjeffryes_hackweek-0.0.0.dist-info/RECORD,,
