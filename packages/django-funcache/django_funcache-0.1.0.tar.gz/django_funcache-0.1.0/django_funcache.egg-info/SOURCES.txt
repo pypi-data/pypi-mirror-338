@@ -1,0 +1,16 @@
+LICENCE.txt
+LICENSE
+README.md
+pyproject.toml
+setup.py
+django_funcache.egg-info/PKG-INFO
+django_funcache.egg-info/SOURCES.txt
+django_funcache.egg-info/dependency_links.txt
+django_funcache.egg-info/requires.txt
+django_funcache.egg-info/top_level.txt
+funcache/__init__.py
+funcache/apps.py
+funcache/signals.py
+funcache/utils.py
+funcache/migrations/__init__.py
+tests/test_funcache.py
