@@ -1,0 +1,66 @@
+Metadata-Version: 2.4
+Name: password_leak_verifier
+Version: 0.1.1
+Summary: Library for password checking. It checks the number of time the password has been leaked based on pwnedpasswords records.
+Home-page: https://github.com/rapzodo/password_checker
+Author: Danilo De Castro
+Author-email: danilocastro81@gmail.com
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: requests>=2.32.0
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: license
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+# Password Checker
+
+This project is a Python-based password checker that uses the [Have I Been Pwned](https://haveibeenpwned.com/) API to check if a password has been leaked in any data breaches.
+
+## Features
+
+- Check passwords interactively
+- Check passwords from a file
+- Uses SHA-1 hashing to securely check passwords against the API
+
+## Requirements
+
+- Python 3.9
+- `requests` library
+
+## Installation
+
+1. Clone the repository:
+    ```sh
+    git clone https://github.com/rapzodo/password_checker.git
+    cd password_checker
+    ```
+
+2. Create a virtual environment and activate it:
+    ```sh
+    python3.9 -m venv .venv
+    source .venv/bin/activate
+    ```
+
+3. Install the required packages:
+    ```sh
+    pip install -r requirements.txt
+    ```
+
+## Usage
+
+### Check Passwords Interactively
+
+Run the script and enter passwords when prompted:
+```sh
+python com/danilo/checkmypass.py
