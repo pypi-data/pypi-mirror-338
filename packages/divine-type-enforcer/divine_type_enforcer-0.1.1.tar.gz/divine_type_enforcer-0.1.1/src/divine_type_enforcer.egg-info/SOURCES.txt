@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+src/divine_type_enforcer.egg-info/PKG-INFO
+src/divine_type_enforcer.egg-info/SOURCES.txt
+src/divine_type_enforcer.egg-info/dependency_links.txt
+src/divine_type_enforcer.egg-info/requires.txt
+src/divine_type_enforcer.egg-info/top_level.txt
+src/type_enforcer/__init__.py
+src/type_enforcer/enforcer.py
+tests/test_enforcer.py
