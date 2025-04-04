@@ -1,0 +1,9 @@
+nonebot_plugin_baize-1.2.0.dist-info/METADATA,sha256=A-W9yImgZgrfvUie64vjHq_Q6lPmFH1RdwXWQkhctb4,2613
+nonebot_plugin_baize-1.2.0.dist-info/WHEEL,sha256=thaaA2w1JzcGC48WYufAs8nrYZjJm8LqNfnXFOFyCC4,90
+nonebot_plugin_baize-1.2.0.dist-info/entry_points.txt,sha256=6OYgBcLyFCUgeqLgnvMyOJxPCWzgy7se4rLPKtNonMs,34
+nonebot_plugin_baize-1.2.0.dist-info/licenses/LICENSE,sha256=Y1zE5ZPZmDEm-Gk57wOWmdWHBv7uhLPJDOYgCke_Yfc,1064
+nonebot_plugin_baize/__init__.py,sha256=VrE25ISDmIGqOaWXsdhqkcEyFa5DYels6r3ucgdJ1eQ,615
+nonebot_plugin_baize/__main__.py,sha256=2Wka0FUeiI5YlSKdCQrPB05O1UCj00FrX-Qy8Bmw9fo,3808
+nonebot_plugin_baize/config.py,sha256=SFN1PaUG3EWV-ool7nC0XAM2VQx4EfdtWGNVnAgftWc,322
+nonebot_plugin_baize/questions.json,sha256=-yqPMHBYmliZm2QX3hk7NuKV-xC5OEK9p4njgfmgqsM,710
+nonebot_plugin_baize-1.2.0.dist-info/RECORD,,
