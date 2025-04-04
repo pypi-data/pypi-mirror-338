@@ -1,0 +1,15 @@
+cirq-core
+numpy
+pandas
+matplotlib
+
+[dev]
+pytest<8.0.0,>=7.0.0
+pytest-cov
+black
+isort
+flake8
+
+[full]
+memory_profiler<0.62.0,>=0.60.0
+pytest<8.0.0,>=7.0.0
