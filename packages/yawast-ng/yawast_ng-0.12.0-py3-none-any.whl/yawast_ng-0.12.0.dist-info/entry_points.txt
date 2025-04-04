@@ -1,0 +1,2 @@
+[console_scripts]
+yawast = yawast.__main__:main
