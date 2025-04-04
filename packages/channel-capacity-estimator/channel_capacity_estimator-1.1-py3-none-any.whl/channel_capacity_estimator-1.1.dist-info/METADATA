@@ -1,0 +1,237 @@
+Metadata-Version: 2.1
+Name: channel-capacity-estimator
+Version: 1.1
+Summary: Package for estimation of information channel capacity.
+License: GPL-3.0
+Author: Frederic Grabowski
+Author-email: grabowski.frederic@gmail.com>, Pawel Czyz <pczyz@protonmail.com
+Requires-Python: >=3.8,<3.12
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: numpy (>=1.12,<2.0)
+Requires-Dist: scipy (>=1.0.0,<2.0.0)
+Requires-Dist: tensorflow (>=2.2.0)
+Description-Content-Type: text/x-rst
+
+==========================
+Channel Capacity Estimator
+==========================
+
+Channel Capacity Estimator (**cce**) is a Python module to estimate
+`information capacity`_ of a communication channel. Mutual information,
+computed as proposed by `Kraskov et al.`_ [*Physical Review E* 69:066138, 2004,
+equation 8], is maximized over input probabilities by means of a constrained
+gradient-based stochastic optimization. The only parameter of the Kraskov
+algorithm is the number of neighbors, *k*, used in the nearest neighbor
+search. In **cce**, channel input is expected to be of categorical type
+(meaning that it should be described by labels), whereas channel output
+is assumed to be in the form of points in real space of any dimensionality.
+
+The code performs local gradient-based optimization which, owing to the
+fact that mutual information is a concave function of input probabilities,
+is able to locate global maximum of mutual information. Maximization is
+performed according to ADAM algorithm as implemented in TensorFlow_.
+To use **cce**, you should have TensorFlow (with Python bindings) installed
+on your system. See file `requirements.txt` for a complete list of dependencies.
+
+Module **cce** features the research article "Limits to the rate of
+information transmission through the MAPK pathway" by `Grabowski et al.`_
+[*Journal of the Royal Society Interface* 16:20180792, 2019].
+Version 1.0 of **cce** has been included as the article supplementary code.
+
+For any updates and fixes to **cce**, please visit project homepage:
+http://pmbm.ippt.pan.pl/software/cce
+(this is a permalink that currently directs to a GitHub repository:
+https://github.com/pawel-czyz/channel-capacity-estimator).
+
+
+Usage
+-----
+
+There are three major use cases of **cce**:
+
+1. Calculation of mutual information (for equiprobable input distributions).
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+In the example below, mutual information is calculated between three sets
+of points drawn at random from two-dimensional Gaussian distributions,
+located at (0,0), (0,1), and at (3,3); covariance matrices of all three
+distributions are identity matrices (this is default in SciPy). Auxiliary
+function `label_all_with()` helps to prepare the list of all points, in
+which each point is labeled according to its distribution of origin.
+
+.. code:: python
+
+    >>> from scipy.stats import multivariate_normal as mvn
+    >>> from cce import WeightedKraskovEstimator as wke
+    >>>
+    >>> def label_all_with(label, values): return [(label, v) for v in values]
+    >>>
+    >>> data = label_all_with('A', mvn(mean=(0,0)).rvs(10000)) \
+             + label_all_with('B', mvn(mean=(0,1)).rvs(10000)) \
+             + label_all_with('C', mvn(mean=(3,3)).rvs(10000))
+    >>>
+    >>> wke(data).calculate_mi(k=10)
+    0.9552107248613955
+
+In this example, probabilities of input distributions, henceforth referred
+to as *weights*, are assumed to be equal for all input distributions. Format
+of data is akin to [('A', array([-0.4, 2.8])), ('A', array([-0.9, -0.1])), 
+..., ('B', array([1.7, 0.9])), ..., ('C', array([3.2, 3.3])), ...).
+Entries of data are not required to be grouped according to the label.
+Distribution labels can be given as strings, not just single characters. 
+Instead of NumPy arrays, ordinary lists with coordinates will be also 
+accepted. (This example involves random numbers, so your result may vary
+slightly.)
+
+
+2. Calculation of mutual information for input distributions with non-equal probabilities.
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+This example is structured as above, with an addition of weights of each 
+input distributions:
+
+.. code:: python
+
+    >>> from scipy.stats import multivariate_normal as mvn
+    >>> from cce import WeightedKraskovEstimator as wke
+    >>>
+    >>> def label_all_with(label, values): return [(label, v) for v in values]
+    >>>
+    >>> data = label_all_with('A', mvn(mean=(0,0)).rvs(10000)) \
+             + label_all_with('B', mvn(mean=(0,1)).rvs(10000)) \
+             + label_all_with('C', mvn(mean=(3,3)).rvs(10000))
+    >>>
+    >>> weights = {'A': 2/6, 'B': 1/6, 'C': 3/6}
+    >>> wke(data).calculate_weighted_mi(weights=weights, k=10)
+    1.0065891280377155
+
+(This example involves random numbers, so your result may vary slightly.)
+
+
+3. Estimation of channel capacity by maximizing MI with respect to input weights.
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. code:: python
+
+    >>> from scipy.stats import multivariate_normal as mvn
+    >>> from cce import WeightedKraskovEstimator as wke
+    >>>
+    >>> def label_all_with(label, values): return [(label, v) for v in values]
+    >>>
+    >>> data = label_all_with('A', mvn(mean=(0,0)).rvs(10000)) \
+             + label_all_with('B', mvn(mean=(0,1)).rvs(10000)) \
+             + label_all_with('C', mvn(mean=(3,3)).rvs(10000))
+    >>>
+    >>> wke(data).calculate_maximized_mi(k=10)
+    (1.0154510500713743, {'A': 0.33343804, 'B': 0.19158363, 'C': 0.4749783})
+
+The output tuple contains the maximized mutual information (channel capacity) 
+and probabilities of input distributions that maximize mutual information (argmax). 
+Optimization is performed within TensorFlow with multiple threads and takes 
+less than one minute on a computer with quad-core processor.
+(This example involves random numbers, so your result may vary slightly.)
+
+
+Installation
+------------
+
+Before installing the package, we recommend creating a new Python environment using `venv <https://docs.python.org/3/library/venv.html>`_ or `Micromamba <https://mamba.readthedocs.io/>`_.
+
+
+Python Package Index
+~~~~~~~~~~~~~~~~~~~~
+
+Once the environment has been created, the most convenient manner is to install the package from PyPI using:
+
+.. code:: bash
+
+   $ pip install channel-capacity-estimator
+
+Then, you can directly start using the package:
+
+.. code:: bash
+
+    $ python
+    >>> from cce import WeightedKraskovEstimator
+    >>> ...
+
+
+Local installation
+~~~~~~~~~~~~~~~~~~
+
+Alternatively, you can build the package locally.
+
+.. code:: bash
+
+   $ git clone https://github.com/pawel-czyz/channel-capacity-estimator.git
+   $ cd channel-capacity-estimator
+
+To install **cce** locally via pip, run:
+
+.. code:: bash
+
+    $ make install
+
+Then, you can directly start using the package:
+
+.. code:: bash
+
+    $ python
+    >>> from cce import WeightedKraskovEstimator
+    >>> ...
+
+
+
+Testing
+-------
+To launch a suite of unit tests, run:
+
+.. code:: bash
+
+    $ make test
+
+
+Documentation
+-------------
+Developer's code documentation may be generated with:
+
+.. code:: bash
+
+   $ cd docs
+   $ make html
+
+
+Authors
+-------
+
+The code was developed by `Frederic Grabowski`_ and `Paweł Czyż`_,
+with some guidance from `Marek Kochańczyk`_ and under supervision of 
+`Tomasz Lipniacki`_ from the `Laboratory of Modeling in Biology and Medicine`_,
+`Institute of Fundamental Technological Reasearch, Polish Academy of Sciences`_
+(IPPT PAN) in Warsaw.
+
+
+License
+-------
+
+This software is distributed under `GNU GPL 3.0 license`_.
+
+
+.. _information capacity: https://en.wikipedia.org/wiki/Channel_capacity
+.. _Kraskov et al.: https://dx.doi.org/10.1103/PhysRevE.69.066138
+.. _Grabowski et al.: https://dx.doi.org/10.1098/rsif.2018.0792
+.. _TensorFlow: https://www.tensorflow.org
+.. _Frederic Grabowski: https://github.com/grfrederic
+.. _Paweł Czyż: https://github.com/pawel-czyz
+.. _Marek Kochańczyk: http://pmbm.ippt.pan.pl/web/Marek_Kochanczyk
+.. _Tomasz Lipniacki: http://pmbm.ippt.pan.pl/web/Tomasz_Lipniacki
+.. _Laboratory of Modeling in Biology and Medicine: http://pmbm.ippt.pan.pl
+.. _Institute of Fundamental Technological Reasearch, Polish Academy of Sciences: http://www.ippt.pan.pl
+.. _GNU GPL 3.0 license: https://www.gnu.org/licenses/gpl-3.0.html
+
+
