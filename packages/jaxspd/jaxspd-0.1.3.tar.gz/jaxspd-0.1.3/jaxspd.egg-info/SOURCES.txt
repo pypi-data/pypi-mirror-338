@@ -1,0 +1,14 @@
+LICENSE
+README.md
+setup.py
+jaxspd/__init__.py
+jaxspd/gpu.py
+jaxspd/jit.py
+jaxspd/optimizations.py
+jaxspd/profiling.py
+jaxspd/utils.py
+jaxspd.egg-info/PKG-INFO
+jaxspd.egg-info/SOURCES.txt
+jaxspd.egg-info/dependency_links.txt
+jaxspd.egg-info/requires.txt
+jaxspd.egg-info/top_level.txt
