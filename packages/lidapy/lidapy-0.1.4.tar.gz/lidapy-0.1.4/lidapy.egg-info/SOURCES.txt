@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+lidapy.egg-info/PKG-INFO
+lidapy.egg-info/SOURCES.txt
+lidapy.egg-info/dependency_links.txt
+lidapy.egg-info/entry_points.txt
+lidapy.egg-info/requires.txt
+lidapy.egg-info/top_level.txt
