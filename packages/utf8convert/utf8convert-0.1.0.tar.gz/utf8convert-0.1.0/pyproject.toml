@@ -1,0 +1,19 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "utf8convert"
+version = "0.1.0"
+description = "A CLI tool to convert files (.cpp, .h, etc.) to UTF-8 encoding."
+authors = [{ name = "HanByul Yang", email = "hanbyul.yang@gmail.com" }]
+readme = "README.md"
+license = { file = "LICENSE" }
+requires-python = ">=3.7"
+dependencies = ["typer[all]", "chardet", "rich"]
+
+[project.scripts]
+utf8convert = "utf8convert.cli:main"
+
+[tool.hatch.build]
+include = ["utf8convert/**.py"]
