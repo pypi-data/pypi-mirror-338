@@ -1,0 +1,15 @@
+gemini_coder/__init__.py,sha256=fyufehp1H5NM7OfC8ZmVUHoc2KSEUSshTr_bCnUxB9g,162
+gemini_coder/cli.py,sha256=vYIUqsMJIYMkgPSz7eG4Xx7973X0ZMTobGW7OOhidaY,511
+gemini_coder/core/__init__.py,sha256=SIUFxRhSvmGtDuUYMK2I0wuqxUGY3RiASQMwEKyzpWE,55
+gemini_coder/core/config.py,sha256=GoIpFAnQk9qwlU3oz1MPpM4C-4i0C4on3yKgjFq9wkA,4692
+gemini_coder/core/generator.py,sha256=utWP6gZcfokouHx4xWj6pu6UIs5GRBCpP_hq8GvOCQY,3412
+gemini_coder/core/main.py,sha256=5UcVaSB4kehDAf3rhTW3GDEIhtN5gWKleV9GK_Q1f2M,4814
+gemini_coder/core/processor.py,sha256=ErsFb5REXLbSy8tlV2I991QXX0iFjgLyvyDbcDJ3QGs,3922
+gemini_coder-0.1.2.dist-info/licenses/LICENSE,sha256=c_mSEF9PaFQrBRknjV3JU5tCOP6cnl5Thp7Gp1b4os0,1090
+tests/__init__.py,sha256=ocH-z0RDnqmlQNP96Le4N20_zvNiKqNGm3-l-1Vsz38,50
+tests/test_config.py,sha256=HeiM1jCngSFWXjAKA7i0o6ZkZM1wt8gUeODmoJIYaTw,1557
+gemini_coder-0.1.2.dist-info/METADATA,sha256=Hx2YredKuU4oMoobpHO_n3O5OHkeOuC004_YOTkf5fQ,14074
+gemini_coder-0.1.2.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+gemini_coder-0.1.2.dist-info/entry_points.txt,sha256=L1pbgKPySFKbR33p56Dwloqy3WIm1P2SZGOj0xyH7PE,54
+gemini_coder-0.1.2.dist-info/top_level.txt,sha256=qZk7BBH6Cr6lm-i-Pp4Q7ZThX-dw8ySMaKLTKi6fTik,19
+gemini_coder-0.1.2.dist-info/RECORD,,
