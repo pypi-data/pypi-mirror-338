@@ -1,0 +1,2 @@
+[console_scripts]
+new_demex_node = demexpy:new_demex_node
