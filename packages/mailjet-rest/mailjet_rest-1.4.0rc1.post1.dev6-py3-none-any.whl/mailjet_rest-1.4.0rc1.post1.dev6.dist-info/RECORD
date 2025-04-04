@@ -1,0 +1,14 @@
+mailjet_rest/__init__.py,sha256=JnHcRPBDrQLecT1eP0XTj53RH4F5nzPd1lhvRLy99gs,825
+mailjet_rest/_version.py,sha256=t1ijekkTC-lLh6pqngLpfodZxV6vbQgKfqkTM3eGZps,35
+mailjet_rest/client.py,sha256=EE7w7XyQPhZSgXM34PBt7-nhhHv1eV0q_BBh0dagtD4,25628
+mailjet_rest/utils/__init__.py,sha256=oouy_jDJertxTuJS_zSMCqO9SnI9p3ge0IQMkZX64EU,233
+mailjet_rest/utils/version.py,sha256=cCJ6gs-lOay3yCxyBZAtG1jqvCXGFyGYTuhqAXJaCx8,2003
+mailjet_rest-1.4.0rc1.post1.dev6.dist-info/licenses/LICENSE,sha256=yVjFhuGrZ6BCaTNGMaHAn2mY9Zp8W1nI5BCtTGNmud4,1075
+tests/__init__.py,sha256=8tRanSWXVj1wQXzT-X44HKRMCUzm5BWUbi6MStWA38Q,351
+tests/test_client.py,sha256=id6bCIPG_Gq8z4XXWB9ZLkAEObD0dbQfm2DXkMX3LV4,21649
+tests/test_client1.py,sha256=IhqbL0q1pKDv8IscPQ4y73FQ3P0i6rtWgc8qIw9UZ3A,1123
+tests/test_version.py,sha256=fQfKYRuHnzCttihCzNHFc3ebRQbONOrS27v6dEfOKM4,1208
+mailjet_rest-1.4.0rc1.post1.dev6.dist-info/METADATA,sha256=7vg6TM1oiOFuaWsMv3wQprVNXQlDh2gjuiOio_xSP3Q,14437
+mailjet_rest-1.4.0rc1.post1.dev6.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+mailjet_rest-1.4.0rc1.post1.dev6.dist-info/top_level.txt,sha256=UNQHiRMj3lnCY50vg2ew_ZixlgP9p_O4Q90St2KK1yA,19
+mailjet_rest-1.4.0rc1.post1.dev6.dist-info/RECORD,,
