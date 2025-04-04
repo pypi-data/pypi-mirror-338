@@ -1,0 +1,8 @@
+README.md
+pyproject.toml
+jade/__init__.py
+jadelib.egg-info/PKG-INFO
+jadelib.egg-info/SOURCES.txt
+jadelib.egg-info/dependency_links.txt
+jadelib.egg-info/requires.txt
+jadelib.egg-info/top_level.txt
