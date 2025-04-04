@@ -1,0 +1,32 @@
+Metadata-Version: 2.4
+Name: zipsar
+Version: 0.1.0
+Summary: A Python package for Zipsar.
+Author: pk
+Author-email: 
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Dynamic: author
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: requires-python
+Dynamic: summary
+
+# Zipsar
+
+[![PyPI version](https://badge.fury.io/py/zipsar.svg)](https://pypi.org/project/zipsar/)
+[![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/zipsar/zipsar/blob/main/LICENSE)
+
+**Zipsar** is a Python package designed to [describe package functionality here].  
+It provides [brief feature summary].  
+
+## ðŸš€ Installation
+
+You can install **Zipsar** directly from PyPI:
+
+```sh
+pip install zipsar
