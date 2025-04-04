@@ -1,0 +1,10 @@
+README.md
+pyproject.toml
+mcp_excel_server/__init__.py
+mcp_excel_server/server.py
+mcp_excel_server.egg-info/PKG-INFO
+mcp_excel_server.egg-info/SOURCES.txt
+mcp_excel_server.egg-info/dependency_links.txt
+mcp_excel_server.egg-info/requires.txt
+mcp_excel_server.egg-info/top_level.txt
+test/test.py
