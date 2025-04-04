@@ -1,0 +1,15 @@
+pyproject.toml
+Qt/QtCore.py
+Qt/QtGui.py
+Qt/QtMultimedia.py
+Qt/QtNetwork.py
+Qt/QtWebEngineCore.py
+Qt/QtWebEngineWidgets.py
+Qt/QtWidgets.py
+Qt/__init__.py
+Qt/promote_enums.py
+qtshim.egg-info/PKG-INFO
+qtshim.egg-info/SOURCES.txt
+qtshim.egg-info/dependency_links.txt
+qtshim.egg-info/requires.txt
+qtshim.egg-info/top_level.txt

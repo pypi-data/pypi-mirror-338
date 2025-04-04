@@ -1,0 +1,10 @@
+
+[pyqt6]
+PyQt6
+PyQt6-Qt6
+PyQt6-WebEngine
+PyQt6-sip
+
+[pyside6]
+PySide6
+shiboken6
