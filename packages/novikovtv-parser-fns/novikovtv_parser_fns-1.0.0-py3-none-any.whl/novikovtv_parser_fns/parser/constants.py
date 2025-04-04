@@ -1,0 +1,2 @@
+SEARCH_PAGE_RANGE = range(1, 6)
+RPS = 1
