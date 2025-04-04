@@ -1,0 +1,33 @@
+Metadata-Version: 2.4
+Name: vigilante
+Version: 0.1.2
+Summary: Dark Web Killer
+Home-page: https://github.com/realyavuzbey/vigilante
+Author: Yavuz Bey
+Requires-Python: >=3.8
+License-File: LICENSE
+Requires-Dist: requests[socks]
+Requires-Dist: beautifulsoup4
+Requires-Dist: stem
+Requires-Dist: lxml
+Requires-Dist: opencv-python
+Requires-Dist: rstr
+Requires-Dist: numpy
+Requires-Dist: torpy
+Requires-Dist: faker
+Requires-Dist: click
+Requires-Dist: pillow
+Requires-Dist: yt-dlp
+Requires-Dist: colorama
+Requires-Dist: aiohttp
+Requires-Dist: pycountry
+Requires-Dist: dnspython
+Requires-Dist: tldextract
+Requires-Dist: python-whois
+Requires-Dist: fake-useragent
+Dynamic: author
+Dynamic: home-page
+Dynamic: license-file
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
