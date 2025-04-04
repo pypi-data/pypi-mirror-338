@@ -1,0 +1,8 @@
+ecole-fork
+pyscipopt==5.0.1
+torch
+torchvision
+torchaudio
+torch_geometric
+matplotlib
+latextable
