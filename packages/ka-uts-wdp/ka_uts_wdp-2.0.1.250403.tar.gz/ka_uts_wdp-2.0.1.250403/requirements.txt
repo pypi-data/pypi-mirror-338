@@ -1,0 +1,4 @@
+ka_uts_com>=1.0.1.250131
+ka_uts_dic>=1.0.2.250210
+ka_uts_obj>=1.0.1.250131
+watchdog>=6.0.0
