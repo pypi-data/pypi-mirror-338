@@ -1,0 +1,12 @@
+fractaly/__init__.py,sha256=tfNwdtJ4CLndzWFJ0sGsC4nehBcNWJrLXqjx5XFYoCg,340
+fractaly/core1.py,sha256=AxQL9jw1kXF7-1j9hplZBSwPv05WBtf95i0_tqI9JIQ,8478
+fractaly/py.typed,sha256=LsbmfDOe21H3Ny7oCaqagYN7aqOOjbdX9hispKLfPiU,121
+fractaly/_internal/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fractaly/_internal/core2.py,sha256=umIyTim2hP0WEP4OMckt6TEl0FgzFxK_HXhRvaWRWJ0,5677
+fractaly/lib/linux64/libfractal_maths.so,sha256=w2rp0LHAPodmTF5-jGBhG2hf-ysvWxV6dbkR8gi9iKM,103936
+fractaly/lib/win64/fractal_maths.dll,sha256=w2rp0LHAPodmTF5-jGBhG2hf-ysvWxV6dbkR8gi9iKM,103936
+fractaly/src/test_fractal_maths.py,sha256=-ORfG-dPRr9gKH3t1Y01MO7_KzGr3FY0Spezu2Ax5lg,481
+fractaly-0.1.0.dist-info/METADATA,sha256=G3cWY3YM1SbeCu5gq4vu-W6Ew1a3wx5T61WI4Vkup7s,886
+fractaly-0.1.0.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+fractaly-0.1.0.dist-info/top_level.txt,sha256=BpJA8chnmRWlIW6Jp0KzBSPqKLEYuDzradcvaB-JnGc,9
+fractaly-0.1.0.dist-info/RECORD,,

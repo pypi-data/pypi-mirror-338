@@ -1,0 +1,28 @@
+Metadata-Version: 2.4
+Name: fractaly
+Version: 0.1.0
+Summary: A package for fractal creation and display them
+Home-page: https://github.com/masoud-najafi/fractaly-project
+Author: Masoud NAJAFI
+Author-email: Masoud NAJAFI <your.email@example.com>
+Project-URL: Homepage, https://github.com/masoud-najafi/fractaly-project
+Project-URL: Documentation, https://docs.example.com
+Project-URL: Repository, https://github.com/masoud-najafi/fractaly-project
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Classifier: Typing :: Typed
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: numpy>=1.27.0
+Dynamic: author
+Dynamic: home-page
+Dynamic: requires-python
+
+import wx
+import fractaly
+ 
+#if __name__ == "__main__":
+app = wx.App(False)
+frame = fractaly.FractalFrame()
+frame.Show()
+app.MainLoop()
