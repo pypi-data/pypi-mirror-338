@@ -1,0 +1,15 @@
+README.md
+pyproject.toml
+setup.py
+autoenv_tool/__init__.py
+autoenv_tool/cli.py
+autoenv_tool.egg-info/PKG-INFO
+autoenv_tool.egg-info/SOURCES.txt
+autoenv_tool.egg-info/dependency_links.txt
+autoenv_tool.egg-info/entry_points.txt
+autoenv_tool.egg-info/requires.txt
+autoenv_tool.egg-info/top_level.txt
+autoenv_tool/utils/__init__.py
+autoenv_tool/utils/env.py
+tests/__init__.py
+tests/test_autoenv.py
