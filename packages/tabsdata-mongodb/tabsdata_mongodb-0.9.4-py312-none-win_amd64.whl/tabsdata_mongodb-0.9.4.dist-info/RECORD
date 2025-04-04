@@ -1,0 +1,13 @@
+tabsdata_mongodb/__init__.py,sha256=BWnzx_LlXff6fDQuUrYeNGMAxR7e0bNLFK-gY8m63Ew,136
+tabsdata_mongodb/connector.py,sha256=xqj4pLaokVl3uiDNSi-qU3b2oPhkcPgzNDAiM52FHow,19639
+tabsdata_mongodb/assets/manifest/BANNER,sha256=7eZyJ42aLsl2JTwraY-HOHBedEwCLkxBzQmsbCGaHug,458
+tabsdata_mongodb/assets/manifest/LICENSE,sha256=qB7RVWAy9shXckkTUApEQN3JvgIOsp8cEKYhMSmK5e8,427
+tabsdata_mongodb/assets/manifest/README-PyPi.md,sha256=PVu9yIuSDb_N7-JGSNiF5nSr7i5zb9dEhA8r4waN83g,222
+tabsdata_mongodb/assets/manifest/RELEASE-NOTES,sha256=pavRJMA9tjD03j1k2yREWrMbVaaYkERGlPiFoGr7mR0,67
+tabsdata_mongodb/assets/manifest/THIRD-PARTY,sha256=oM4c5TnJ8glAq3SQ0hBEWkYpLsSaH9XfAA6_YPXdcE0,187
+tabsdata_mongodb/assets/manifest/VERSION,sha256=kmssUh_jBmXKd7uBdJ8-J1cmOAfpOCkJqknsHaQYpcg,5
+tabsdata_mongodb-0.9.4.dist-info/licenses/tabsdata_mongodb/assets/manifest/LICENSE,sha256=qB7RVWAy9shXckkTUApEQN3JvgIOsp8cEKYhMSmK5e8,427
+tabsdata_mongodb-0.9.4.dist-info/METADATA,sha256=h6C5nesZpB3wU-59-9bH9zUzcAb1c3pPgqM2pOLqcQ0,723
+tabsdata_mongodb-0.9.4.dist-info/WHEEL,sha256=JqPI5ejMbg-eIP-klu1LalTYAZLgSX0ig_ZyklpSG2M,99
+tabsdata_mongodb-0.9.4.dist-info/top_level.txt,sha256=VPqEXIrW7D_EG9QzqS4Z3ReoLTdsQQ3qcdLf1P6HD9s,17
+tabsdata_mongodb-0.9.4.dist-info/RECORD,,
