@@ -1,0 +1,10 @@
+folium
+geopandas
+ipyleaflet
+numpy
+
+[all]
+geopop[extra]
+
+[extra]
+pandas
