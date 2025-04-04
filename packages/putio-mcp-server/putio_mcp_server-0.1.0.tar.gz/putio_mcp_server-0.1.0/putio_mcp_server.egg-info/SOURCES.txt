@@ -1,0 +1,9 @@
+LICENSE
+README.md
+main.py
+pyproject.toml
+putio_mcp_server.egg-info/PKG-INFO
+putio_mcp_server.egg-info/SOURCES.txt
+putio_mcp_server.egg-info/dependency_links.txt
+putio_mcp_server.egg-info/requires.txt
+putio_mcp_server.egg-info/top_level.txt
