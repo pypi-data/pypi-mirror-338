@@ -1,0 +1,17 @@
+Metadata-Version: 2.4
+Name: pkg_peiwen
+Version: 0.1.4
+Summary: This is the description string in the pyproject.toml file
+Author-email: Peiwen <pwshyu@gmail.com>
+Project-URL: Homepage, https://github.com/peiwen-shyu/pkg
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+# Readme file for the example package
+
+This is an example package to demonstrate how to create a Python package.
+
+It contains a simple function  `add_one`  that adds one to a number.
