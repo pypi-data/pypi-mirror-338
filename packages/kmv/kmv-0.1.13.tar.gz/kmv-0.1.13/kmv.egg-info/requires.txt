@@ -1,0 +1,21 @@
+attrs
+imageio
+mujoco
+mujoco_mjx
+numpy
+omegaconf
+Pillow
+colorlogging
+dearpygui
+pynput
+
+[:platform_system == "Darwin"]
+pyobjc-core>=8.5
+pyobjc-framework-Cocoa>=8.5
+
+[dev]
+black
+darglint
+mypy
+pytest
+ruff
