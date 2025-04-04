@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+OTMODE/OTMODE_code.py
+OTMODE/__init__.py
+OTMODE.egg-info/PKG-INFO
+OTMODE.egg-info/SOURCES.txt
+OTMODE.egg-info/dependency_links.txt
+OTMODE.egg-info/not-zip-safe
+OTMODE.egg-info/requires.txt
+OTMODE.egg-info/top_level.txt
