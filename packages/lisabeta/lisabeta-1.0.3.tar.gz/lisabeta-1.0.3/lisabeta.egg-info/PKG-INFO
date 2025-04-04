@@ -1,0 +1,7 @@
+Metadata-Version: 2.4
+Name: lisabeta
+Version: 1.0.3
+Summary: Library to analyze gravitational-wave signals in LISA and LIGO-type detectors.
+Author: Sylvain Marsat and John Baker and ...
+Author-email: Sylvain Marsat <sylvain.marsat@l2it.in2p3.fr>, John Baker <john.g.baker@nasa.gov>
+Dynamic: author
