@@ -1,0 +1,10 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+crew_guardrails/__init__.py
+crew_guardrails.egg-info/PKG-INFO
+crew_guardrails.egg-info/SOURCES.txt
+crew_guardrails.egg-info/dependency_links.txt
+crew_guardrails.egg-info/top_level.txt
+tests/__init__.py
