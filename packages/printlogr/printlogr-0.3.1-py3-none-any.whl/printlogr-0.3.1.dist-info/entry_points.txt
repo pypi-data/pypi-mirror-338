@@ -1,0 +1,2 @@
+[console_scripts]
+printlogr = printlogr.cli:main
