@@ -1,0 +1,2 @@
+[console_scripts]
+mcp-ola-maps = mcp_ola_maps.main:main
