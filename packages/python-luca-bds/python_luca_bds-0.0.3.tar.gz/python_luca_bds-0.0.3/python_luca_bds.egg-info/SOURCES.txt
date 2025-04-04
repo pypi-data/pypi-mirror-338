@@ -1,0 +1,10 @@
+README.md
+pyproject.toml
+luca/__init__.py
+luca/connectors.py
+luca/querys.py
+python_luca_bds.egg-info/PKG-INFO
+python_luca_bds.egg-info/SOURCES.txt
+python_luca_bds.egg-info/dependency_links.txt
+python_luca_bds.egg-info/requires.txt
+python_luca_bds.egg-info/top_level.txt
