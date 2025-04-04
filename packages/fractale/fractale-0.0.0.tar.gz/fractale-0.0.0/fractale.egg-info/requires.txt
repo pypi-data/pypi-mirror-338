@@ -1,0 +1,11 @@
+jsonschema
+compspec
+compspec-spack
+compspec-modules
+
+[all]
+jsonschema
+compspec
+compspec-spack
+compspec-modules
+pytest>=4.6.2
