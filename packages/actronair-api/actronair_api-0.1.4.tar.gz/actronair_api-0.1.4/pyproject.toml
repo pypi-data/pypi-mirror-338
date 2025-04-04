@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "actronair-api"
+version = "0.1.4"
+authors = [
+  { name="Jagadish Dhanamjayam", email="jagadish.dhanamjayam@actronair.com.au" },
+]
+description = "ActronAir Cloud Platform API for Neo control"
+readme = "README.md"
+requires-python = ">=3.10"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+license = {text = "GNU-3.0"}
+
+[project.urls]
+Homepage = "https://github.com/orgs/Actron-Air/projects/1"
+Issues = "https://github.com/orgs/Actron-Air/projects/1"

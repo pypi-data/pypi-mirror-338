@@ -1,0 +1,17 @@
+Metadata-Version: 2.4
+Name: actronair-api
+Version: 0.1.4
+Summary: ActronAir Cloud Platform API for Neo control
+Author-email: Jagadish Dhanamjayam <jagadish.dhanamjayam@actronair.com.au>
+License: GNU-3.0
+Project-URL: Homepage, https://github.com/orgs/Actron-Air/projects/1
+Project-URL: Issues, https://github.com/orgs/Actron-Air/projects/1
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Dynamic: license-file
+
+# ActronAirAPI
+Python wrapper library for accessing Actron Cloud Platform APIs by HASS integration
