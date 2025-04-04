@@ -1,0 +1,22 @@
+Metadata-Version: 2.4
+Name: decora_wifi
+Version: 1.5
+Summary: Python API for controlling Leviton Decora Smart WiFi switches
+Home-page: http://github.com/tlyakhov/python-decora_wifi
+Author: Tim Lyakhovetskiy
+Author-email: tlyakhov@gmail.com
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+License-File: LICENSE
+Requires-Dist: requests
+Requires-Dist: inflect
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: home-page
+Dynamic: license-file
+Dynamic: requires-dist
+Dynamic: summary
