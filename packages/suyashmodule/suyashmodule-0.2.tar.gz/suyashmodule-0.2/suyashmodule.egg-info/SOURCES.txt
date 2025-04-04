@@ -1,0 +1,6 @@
+mymodule.py
+setup.py
+suyashmodule.egg-info/PKG-INFO
+suyashmodule.egg-info/SOURCES.txt
+suyashmodule.egg-info/dependency_links.txt
+suyashmodule.egg-info/top_level.txt
