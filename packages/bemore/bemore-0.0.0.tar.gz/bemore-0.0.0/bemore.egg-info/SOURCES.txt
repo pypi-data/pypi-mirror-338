@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+bemore/__init__.py
+bemore/math.py
+bemore.egg-info/PKG-INFO
+bemore.egg-info/SOURCES.txt
+bemore.egg-info/dependency_links.txt
+bemore.egg-info/top_level.txt
