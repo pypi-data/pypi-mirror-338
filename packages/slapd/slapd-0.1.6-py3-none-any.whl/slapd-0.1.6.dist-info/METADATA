@@ -1,0 +1,50 @@
+Metadata-Version: 2.4
+Name: slapd
+Version: 0.1.6
+Summary: Controls a slapd process in a pythonic way
+Project-URL: homepage, https://slapd.readthedocs.io/en/latest
+Project-URL: documentation, https://slapd.readthedocs.io/en/latest
+Project-URL: repository, https://gitlab.com/python-ldap/python-slapd
+Author-email: python-ldap team <python-ldap@python.org>
+Maintainer-email: Éloi Rivard <eloi.rivard@aquilenet.fr>
+License-Expression: MIT
+License-File: LICENSE.md
+Keywords: ldap,slapd
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+
+# python-slapd [![Documentation Status](https://readthedocs.org/projects/slapd/badge/?version=latest)](https://slapd.readthedocs.io/en/latest/?badge=latest)
+Controls your OpenLDAP process in a pythonic way.
+
+```
+pip install slapd
+```
+
+```python
+>>> import slapd
+>>> process = slapd.Slapd()
+>>> process.start()
+>>> process.init_tree()
+>>> process.ldapwhoami().stdout.decode("utf-8")
+'dn:cn=manager,dc=slapd-test,dc=python-ldap,dc=org\n'
+>>> process.stop()
+```
+
+# Troubleshooting
+
+On distributions like Ubuntu, apparmor may restrict *slapd* to access some files that
+*python-slapd* has generated. This situation can be solved by passing slapd in complain mode:
+
+```bash
+sudo apt install --yes apparmor-utils
+sudo aa-complain /usr/sbin/slapd
+```
