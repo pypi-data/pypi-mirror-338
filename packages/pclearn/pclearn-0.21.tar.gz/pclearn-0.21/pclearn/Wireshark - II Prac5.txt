@@ -1,0 +1,19 @@
+Open Wireshark and load the provided packet capture (PCAP) file.  
+
+To find the web server software used by www.snopes.com, apply an HTTP filter, select any HTTP request, expand the **Hypertext Transfer Protocol** section, right-click the **Host** header, and apply it as a column.  
+Right-click the packet again, select **Follow → TCP Stream**, and find the **Server** header showing **Microsoft IIS 5.0**.  
+
+To find the cell phone issue, apply the filter `frame matches "cell"`.  
+Check HTTP requests containing the keyword "cell"; the issue is about **cell phone charging**.  
+
+To discover what instrument Ryan will learn to play from Zillow, apply `frame matches "zillow"`.  
+Select the Zillow packet, expand the **TCP** tab, right-click, go to **Protocol Preferences**, and enable **Allow subdissector to reassemble TCP stream**.  
+Then go to **File → Export Objects → HTTP**, save all, and check the saved Flash file which reveals Ryan is learning the **saxophone**.  
+
+To find how many web servers are running Apache, apply the filter `http.response`.  
+Right-click any response packet, apply **Server** as a column.  
+Then apply `http.server contains "Apache"`, go to **Statistics → Endpoints**, and enable the **limit to display filter** to view the number of Apache servers.  
+
+To find the IPs related to the “jokes” phrase, apply `frame matches "jokes"`.  
+Expand the **Hypertext Transfer Protocol** section to read the text.  
+The IP addresses 173.241.244.153, 173.241.244.99, and 173.241.244.7 reference jokes being more entertaining when explained.

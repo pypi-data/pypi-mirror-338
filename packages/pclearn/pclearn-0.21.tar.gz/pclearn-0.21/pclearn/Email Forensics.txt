@@ -1,0 +1,27 @@
+Open **Forensic Toolkit** and click on **File → New Case**.  
+
+Fill in the required details and click **Next**.  
+
+Ensure that all checkboxes are checked and click **Next**.  
+
+Select **All** and click **Next**.  
+
+Choose **Email Emphasis** and click **Next**.  
+
+Click on **Add Evidence**, check **Individual File**, and select the **.pst** file.  
+
+Fill in the required details and click **OK**.  
+
+Click **Next**, then **Finish**.  
+
+Select **From Email**.  
+
+Choose any message and export it as a file.  
+
+Right-click on the message file and select **Export File**.  
+
+Check **Export HTML view if available** and click **OK**.  
+
+The deleted message is recovered at the specified location.  
+
+Click on the **.html file**, which will open in the browser showing the email content.

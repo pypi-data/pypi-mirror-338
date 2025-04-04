@@ -1,0 +1,19 @@
+Open **Browser History Examiner** and click on **File → Capture History**.  
+
+Select **Capture history from this computer** and click **Next**.  
+
+Choose the **destination folder** where the captured files will be saved and click **Capture**.  
+
+A window will appear asking to load the captured data; click **Yes**.  
+
+Captured data from browsers will be organized into **Artefact classes** on the left pane.  
+
+View the captured **Bookmarks, Cached Files, Cookies, Email Addresses, Favicons, Searches, and Website Visits**.  
+
+Click on **File → Export → Export to HTML**.  
+
+Enter the **file name** and click **Save**.  
+
+The **HTML file** will be saved successfully in the specified location.  
+
+Open the saved **HTML file**, and it will open in the default browser.

@@ -1,0 +1,18 @@
+setup.py
+pclearn/Autopsy 3.txt
+pclearn/Data Acquisition prac2.txt
+pclearn/Email Forensics.txt
+pclearn/FTK Imager.txt
+pclearn/Mobile Forensic.txt
+pclearn/Recovering and Inspecting deleted files prac7.txt
+pclearn/Sysinternals 6.txt
+pclearn/Web Browser Forensics.txt
+pclearn/Wireshark - I prac4.txt
+pclearn/Wireshark - II Prac5.txt
+pclearn/__init__.py
+pclearn/folder.py
+pclearn.egg-info/PKG-INFO
+pclearn.egg-info/SOURCES.txt
+pclearn.egg-info/dependency_links.txt
+pclearn.egg-info/entry_points.txt
+pclearn.egg-info/top_level.txt

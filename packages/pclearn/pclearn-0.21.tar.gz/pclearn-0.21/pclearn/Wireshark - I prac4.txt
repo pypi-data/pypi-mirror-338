@@ -1,0 +1,18 @@
+Open Wireshark and right-click on the **Ethernet** interface.  
+
+Click **Start Capture** to begin traffic recording.  
+
+Open a browser and visit **httpforever.com**, then perform some actions.  
+
+Return to Wireshark and stop the capture.  
+
+Use filters to analyze the packets:  
+
+- `ip.addr == 192.168.1.106` to display packets based on a specific IP address.  
+- `ip.src == 192.168.1.106` to display packets coming from a specific IP address.  
+- `ip.dst == 142.250.192.14` to display packets going to a specific IP address.  
+- `http` to filter packets using the HTTP protocol.  
+- `http.request` to display HTTP requests.  
+- `http.response.code == 200` to filter packets with successful connections.  
+- `tcp.port==80 || udp.port==443` to show packets using ports 80 or 443.  
+- `tcp contains facebook` to find packets containing the keyword "facebook".  

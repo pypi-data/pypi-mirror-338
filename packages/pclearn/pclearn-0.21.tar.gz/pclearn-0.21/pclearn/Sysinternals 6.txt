@@ -1,0 +1,13 @@
+Click on **Filter → Process Monitor filter** in Procmon.  
+
+Click on **Tool → Process Tree** to view live processes.  
+
+Open **Tcpview tool** to capture TCP/UDP packets.  
+
+Right-click on any file and select **Who is** to get details.  
+
+Open **RAMMap tool** to monitor the hard disk.  
+
+Open **VMMap tool** to monitor virtual memory.  
+
+Open **Cacheset tool** to monitor cache memory.

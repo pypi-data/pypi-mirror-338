@@ -1,0 +1,21 @@
+Open Autopsy and click on **New Case**.  
+
+Add case details.  
+
+Select the image file, click **Next**, and browse the file path.  
+
+Configure the **Ingest Modules** by selecting **All** options.  
+
+Click **Finish** to proceed.  
+
+Analyze the image file.  
+
+Go to **Views > Deleted Files > All**.  
+
+Select a deleted file, right-click, and click **Extract Files**.  
+
+Choose a path to save the extracted file.  
+
+To generate a report, click **Tools > Generate Report**.  
+
+Select **Excel Report**, configure **Artifact Reports**, and select **All Results**.
