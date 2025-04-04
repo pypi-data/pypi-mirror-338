@@ -1,0 +1,8 @@
+setup.py
+disquest/__init__.py
+disquest/disquestmain.py
+disquest.egg-info/PKG-INFO
+disquest.egg-info/SOURCES.txt
+disquest.egg-info/dependency_links.txt
+disquest.egg-info/requires.txt
+disquest.egg-info/top_level.txt
