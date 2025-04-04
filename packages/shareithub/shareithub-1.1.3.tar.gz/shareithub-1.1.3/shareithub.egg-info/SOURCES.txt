@@ -1,0 +1,9 @@
+README.md
+setup.py
+shareithub/__init__.py
+shareithub/cli.py
+shareithub.egg-info/PKG-INFO
+shareithub.egg-info/SOURCES.txt
+shareithub.egg-info/dependency_links.txt
+shareithub.egg-info/entry_points.txt
+shareithub.egg-info/top_level.txt
