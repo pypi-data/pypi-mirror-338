@@ -1,0 +1,66 @@
+Metadata-Version: 2.4
+Name: delta-cli
+Version: 0.1.0
+Summary: Delta CLI - Ağ yönetimi ve AI asistanı için komut satırı aracı
+Home-page: https://github.com/yourusername/delta-cli
+Author: Fırat Deniz
+Author-email: firatdeniz@example.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: openai
+Requires-Dist: colorama
+Requires-Dist: rich
+Requires-Dist: tabulate
+Requires-Dist: speedtest-cli
+Requires-Dist: dnspython
+Requires-Dist: requests
+Requires-Dist: psutil
+Requires-Dist: cryptography
+Requires-Dist: wmi
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: license-file
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+# Delta CLI
+
+Ağ yönetimi ve AI asistanı için gelişmiş komut satırı aracı.
+
+## Özellikler
+
+- Ağ tarama ve analizi
+- Dosya paylaşımı
+- AI asistanı
+- Sistem monitörü
+- Port tarama
+- DNS sorgulama
+- Hız testi
+
+## Kurulum
+
+```bash
+pip install delta-cli
+```
+
+## Kullanım
+
+```bash
+# AI Asistanı
+delta ai "Merhaba"
+
+# Ağ taraması
+delta network scan
+
+# Dosya paylaşımı
+delta share file.txt
+```
