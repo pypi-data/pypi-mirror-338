@@ -1,0 +1,13 @@
+Metadata-Version: 2.4
+Name: JustSimplePy
+Version: 2025.0.0.1
+Summary: A library for Easy & Simple Python codes
+Author: Kshiraj Vij
+Author-email: vij.kshiraj@outlook.com
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: psycopg2

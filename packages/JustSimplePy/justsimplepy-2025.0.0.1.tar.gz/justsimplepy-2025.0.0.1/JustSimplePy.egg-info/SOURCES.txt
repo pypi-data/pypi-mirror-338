@@ -1,0 +1,10 @@
+pyproject.toml
+JustSimplePy/SimpleMath.py
+JustSimplePy/__init__.py
+JustSimplePy/basicsetup.py
+JustSimplePy/launch.py
+JustSimplePy.egg-info/PKG-INFO
+JustSimplePy.egg-info/SOURCES.txt
+JustSimplePy.egg-info/dependency_links.txt
+JustSimplePy.egg-info/requires.txt
+JustSimplePy.egg-info/top_level.txt
