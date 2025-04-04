@@ -1,0 +1,7 @@
+README.md
+pyproject.toml
+src/embedl_hub/__init__.py
+src/embedl_hub.egg-info/PKG-INFO
+src/embedl_hub.egg-info/SOURCES.txt
+src/embedl_hub.egg-info/dependency_links.txt
+src/embedl_hub.egg-info/top_level.txt

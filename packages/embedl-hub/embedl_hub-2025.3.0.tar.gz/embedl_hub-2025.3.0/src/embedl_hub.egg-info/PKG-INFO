@@ -1,0 +1,10 @@
+Metadata-Version: 2.4
+Name: embedl_hub
+Version: 2025.3.0
+Summary: The efficient edge AI platform
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+
+# Embedl Hub
+
+The efficient edge AI platform.
