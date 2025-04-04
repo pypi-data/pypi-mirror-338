@@ -1,0 +1,2 @@
+[console_scripts]
+bitunixautotrade = src.bitunix:main
