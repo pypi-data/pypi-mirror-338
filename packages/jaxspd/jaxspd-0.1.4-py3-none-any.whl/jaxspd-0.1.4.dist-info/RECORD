@@ -1,0 +1,11 @@
+jaxspd/__init__.py,sha256=raEZsn-kpRp_F5XKg8dtMm_6O258mhz0Q5Fh25XQQHA,877
+jaxspd/gpu.py,sha256=PLqlhXlT_DrqTbWzyxG9jlqg9X6GnG65mvj54NQH2EM,2298
+jaxspd/jit.py,sha256=wgn6p8sw0ZQ3-AXuepHCGmMFyiLSw1Nbtzkv5lkIfNo,1440
+jaxspd/optimizations.py,sha256=sQaSjYBvl4AvH2VufIw9pwRbgbiXf7Jlo767mNRcO24,5000
+jaxspd/profiling.py,sha256=JEQvc_wlomKQfK_Dsg32-24LfPgA4f20Xn4ZzTXU0OI,4692
+jaxspd/utils.py,sha256=aXwqkWboGZtnBpgAcBOWNrJvpwJsOobbJyLnebAMfXQ,3001
+jaxspd-0.1.4.dist-info/licenses/LICENSE,sha256=aUtihkVL6DTzLvJ-gcXMJhGZI9uIpF1xi3sWF_KWhKQ,1072
+jaxspd-0.1.4.dist-info/METADATA,sha256=9bJkqwr5EP-HQ2rYYr9XCy1F1i0I8iCqI-i6CCwizT8,2932
+jaxspd-0.1.4.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+jaxspd-0.1.4.dist-info/top_level.txt,sha256=2ZcJQA0HRKNWgb3I-QZWbqtWhkrxVwT_hXVhtHQ6ZFE,7
+jaxspd-0.1.4.dist-info/RECORD,,
