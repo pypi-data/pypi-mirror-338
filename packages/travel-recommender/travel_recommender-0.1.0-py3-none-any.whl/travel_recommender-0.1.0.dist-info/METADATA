@@ -1,0 +1,20 @@
+Metadata-Version: 2.2
+Name: travel_recommender
+Version: 0.1.0
+Summary: A Python library for travel recommendations using OpenAI
+Home-page: https://github.com/yourusername/travel_recommender
+Author: Your Name
+Author-email: your.email@example.com
+Keywords: travel,recommendations,openai,chatgpt
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Requires-Dist: google-generativeai>=0.8.4
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: home-page
+Dynamic: keywords
+Dynamic: requires-dist
+Dynamic: summary
