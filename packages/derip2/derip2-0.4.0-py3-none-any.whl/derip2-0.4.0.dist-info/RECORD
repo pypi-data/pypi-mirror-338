@@ -1,0 +1,13 @@
+derip2/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+derip2/_version.py,sha256=l5eo51MdCumDFCp44TFT1JH8yCDo1krag-GJubLxnVo,511
+derip2/aln_ops.py,sha256=btK6Xu6SZ3cXyX_QLIMuyhviMLDOoLO2b36ZZfaW0s4,54610
+derip2/app.py,sha256=11v_t54qvSTI6X6a2rrNK8CFsl9GeuuX4OMqNzXJrJE,11798
+derip2/derip.py,sha256=kTu9zDeGXH1-0NzhpP6fdvg73ts1aUuWIbloPmZ8pEk,52658
+derip2/plotting/minialign.py,sha256=dKxAcs4MTOVCIM-zjv2l-cFmggOB01uvfi3L_98ssX8,41857
+derip2/utils/checks.py,sha256=GdBlyF_c7ck7kRAIH5uxkzB61b4Q9MXmCvftFHPcoAU,3285
+derip2/utils/logs.py,sha256=XfA5G9kDFJrgCm40jmwNyktSku7CShlgi9b7dhRWbyM,7722
+derip2-0.4.0.dist-info/METADATA,sha256=ed_Jk1StazNdansixBQk76YoxINfGW9okjo3XK5ds4U,11794
+derip2-0.4.0.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+derip2-0.4.0.dist-info/entry_points.txt,sha256=97FJ1_pwn-CGJWZHoZgHA2-Xa1xoP--BxJ2dBWvQ0ao,43
+derip2-0.4.0.dist-info/licenses/LICENSE,sha256=-eNqXP7WDQbXy-tq1kxASuvA2CKlmpEzM2nx8-I0kWU,1074
+derip2-0.4.0.dist-info/RECORD,,
