@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: ennikkai
+Version: 1.2.6
+Summary: Client Python pour le réseau Constellation.
+Author-Email: Julien Jean Malard-Adam <julien.malard@mail.mcgill.ca>
+License: AGPL-3.0
+Requires-Python: <4.0,>=3.12
+Requires-Dist: nuchabal>=0.1.3
+Description-Content-Type: text/markdown
+
