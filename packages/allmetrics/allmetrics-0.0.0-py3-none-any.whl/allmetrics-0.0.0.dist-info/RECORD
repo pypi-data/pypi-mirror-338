@@ -1,0 +1,13 @@
+Test/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+allmetrics/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+allmetrics/classification.py,sha256=pzbJvFCVpxbHJlqEQWjR82Dd5O5z-h9DIdxJfzKlVy8,41624
+allmetrics/clustering.py,sha256=AW_hvFxyug21Z2OD5vZSi7Cf_kQPUtHKc4uAp9CrvFk,29372
+allmetrics/imagetoimage.py,sha256=1Kk51dSgLyNy6TUDUzHnHZN0um9RsMH5XSwjdYF_Gpc,4739
+allmetrics/regression.py,sha256=e9W3m8ePxRUNhcRCfp8ErgufZkt_KrULoDRaWfZIQws,72653
+allmetrics/segmentation.py,sha256=Sk686Yk6NwNz5XvQ0DLPnd_olExLW9fAAqsgEoLNng0,8999
+allmetrics/utils.py,sha256=Ar3XQ9vPa-H8HqZE31c4peIOQwv9SKhPd0rozBKJxfo,34769
+allmetrics-0.0.0.dist-info/licenses/LICENSE,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+allmetrics-0.0.0.dist-info/METADATA,sha256=BCFAxgPKJz9cjFrwEFl-0YjtMqoCqeamLBlMfkQXMVM,574
+allmetrics-0.0.0.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+allmetrics-0.0.0.dist-info/top_level.txt,sha256=t9YtSGmhrgXbMJLn0i53p8g7sJP014seKCuljLjKvKg,16
+allmetrics-0.0.0.dist-info/RECORD,,
