@@ -1,0 +1,15 @@
+ttkode/__init__.py,sha256=1dPjW2YbQQY9frlHE2uI6Cct4_eHF-mreTY4HkwXiG8,1271
+ttkode/__main__.py,sha256=sExdGgl_Pay5lPYjaUm5dClgqPRAl_eD6HEaQVYE5mM,1242
+ttkode/app/__init__.py,sha256=KNXEUDYetWS2oi7AZz7sqwRuqDQ6_vtg4zE17elmlLs,1290
+ttkode/app/about.py,sha256=PsYP3C5dPxpzOyu5fOReSzak_lLJmFhPwZBqSACvkEg,2817
+ttkode/app/cfg.py,sha256=W1UHTl_fh1D-PV9JI5f7hInRNAYEHbfmVTTNF9bgwLA,2150
+ttkode/app/kodeformatter.py,sha256=H3wUXIwe0-y74Q3X8a_E_VtnD8U1tpd5FIrlQS_VLYg,6442
+ttkode/app/kodetextdocument.py,sha256=a0TPUjO0XcjkSViWXQkwoNYRHaCClxt0NK48ffGCiPc,6182
+ttkode/app/kodetextedit.py,sha256=i9GDe_EaNohawi9YspEdmUe8H6Y9DHktQcnHnOTQCfw,1440
+ttkode/app/main.py,sha256=9vlRgemVDfTFmnjVBMlIh5PSJgYDcavAwasB3eBRa1o,6165
+ttkode/app/options.py,sha256=6pbXYOFS5jYLCSq6KqHZg2lZpVY_rqd_IpGJVjdHg3I,3182
+ttkode-0.2.15a2.dist-info/METADATA,sha256=BW7ZMpVTGiNZy87a1Y1VMd5t6iL_acRpY4vSK9gyTQ4,2668
+ttkode-0.2.15a2.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+ttkode-0.2.15a2.dist-info/entry_points.txt,sha256=PZUvi8Hik70MdV0tO3_W8kEdxLVqzIwKOKgpfiMb-JQ,39
+ttkode-0.2.15a2.dist-info/top_level.txt,sha256=3roaMxCJxq71pW2MdaZCzuclyaWN0lfQMCShdCOiOPc,7
+ttkode-0.2.15a2.dist-info/RECORD,,
