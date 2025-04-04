@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: CTkExtendedGraph
+Version: 1.0.0
+Summary: CTkExtendedGraph is a CustomTkinter widget for displaying stacked bar charts. Built on Matplotlib, it allows easy integration into Tkinter apps, with features like dynamic data updates, resizability, and customization of categories, colors, and units. Ideal for flexible, interactive data visualization.
+Home-page: https://github.com/iLollek/CTkExtendedGraph
+Author: Loris Dante
+Author-email: loris_06@yahoo.de
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+License-File: LICENSE
+Requires-Dist: customtkinter
+Requires-Dist: matplotlib
+Requires-Dist: numpy
+
