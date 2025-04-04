@@ -1,0 +1,15 @@
+.gitignore
+makefile
+pypi_requirements.txt
+requirements.txt
+setup.py
+test_requirements.txt
+crit_est/__init__.py
+crit_est/criterion.py
+crit_est.egg-info/PKG-INFO
+crit_est.egg-info/SOURCES.txt
+crit_est.egg-info/dependency_links.txt
+crit_est.egg-info/top_level.txt
+tests/__init__.py
+tests/music.py
+tests/test_estimator.py
