@@ -1,0 +1,43 @@
+[build-system]
+requires = ["setuptools>=61", "wheel", "setuptools-git-versioning"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "retry-decorator-mt"
+description = "Decorator to allow for retry of th decorated object if a given exception is raised"
+authors = [
+  {name = "Vincent Martel", email = "vincent.martel.11235@gmail.com"},
+]
+license = {text = "MIT"}
+dynamic = ["version", "readme"]
+requires-python = ">=3.9"
+dependencies = [
+]
+
+keywords = [
+  "decorator",
+  "utilities",
+  "retry",
+  "error handling",
+  "timeout",
+  "error",
+  "quality of life"
+]
+
+classifiers = [
+  # How mature is this project? Common values are
+  #   3 - Alpha
+  #   4 - Beta
+  #   5 - Production/Stable
+  "Development Status :: 5 - Production/Stable",
+
+  # Indicate who your project is intended for
+  "Intended Audience :: Developers",
+
+  # Specify the Python versions you support here.
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+]
