@@ -1,0 +1,70 @@
+Metadata-Version: 2.4
+Name: powermap
+Version: 0.1.0
+Summary: Client for PowerMap geospatial API services
+Home-page: 
+Author: PowerMap
+Author-email: 
+Keywords: powermap,grid
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests>=2.25.0
+Requires-Dist: shapely>=2.0.0
+Requires-Dist: openlocationcode>=1.0.0
+Dynamic: author
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: keywords
+Dynamic: license-file
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+# PowerMap
+
+A Python client for PowerMap geospatial API services.
+
+## Installation
+
+```bash
+pip install powermap
+```
+
+## Usage
+
+```python
+from powermap import PowerMapClient
+
+# Initialize client with your API token
+client = PowerMapClient(token="your_api_token")
+
+# Get grid of plus codes for a geographical zone
+codes = client.grid(geozone="ercot_rto", resolution=0.02)
+print(f"Found {len(codes)} locations in the zone")
+```
+
+## Authentication
+
+To use this client, you need a valid API token. Contact PowerMap to obtain your token.
+
+## Features
+
+- Generate grids of plus codes for geographical zones
+- Configurable resolution for grid generation
+- Professional error handling
+- Simple, intuitive API
+
+## License
+
+MIT

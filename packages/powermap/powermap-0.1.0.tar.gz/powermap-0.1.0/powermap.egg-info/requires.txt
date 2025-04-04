@@ -1,0 +1,3 @@
+requests>=2.25.0
+shapely>=2.0.0
+openlocationcode>=1.0.0
