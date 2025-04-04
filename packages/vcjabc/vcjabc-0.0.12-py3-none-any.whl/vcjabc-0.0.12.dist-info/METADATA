@@ -1,0 +1,20 @@
+Metadata-Version: 2.4
+Name: vcjabc
+Version: 0.0.12
+Summary: A minimal package for DOCX/DOCM operations
+Author-email: Sphynkx <sfynkx@gmail.com>
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Operating System :: OS Independent
+
+This is small and minimal project fot DOCX/DOCM formats manipulation.
+
+## Install
+
+    pip install vcjabc
+
