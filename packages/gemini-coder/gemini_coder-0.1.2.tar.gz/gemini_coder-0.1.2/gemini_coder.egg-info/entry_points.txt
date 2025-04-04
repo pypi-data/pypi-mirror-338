@@ -1,0 +1,2 @@
+[console_scripts]
+gemini-coder = gemini_coder.cli:cli
