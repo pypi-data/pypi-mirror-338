@@ -1,0 +1,15 @@
+excel_dbapi/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+excel_dbapi/connection.py,sha256=3EZ6CJwH0DXb4PddX7DmC2XstRk7T4dktYhNqjI6TQM,3043
+excel_dbapi/cursor.py,sha256=-wo9jvRjZCdV_jOUUkskarLnfhkdEXxhAmRfckTnTfg,2305
+excel_dbapi/exceptions.py,sha256=VAYITb65CNukfRiXZgnO719xRQLJHl-uJSoUpdewEtM,947
+excel_dbapi/engine/__init__.py,sha256=sjthvisu4dHIrxrwbr46Fjn4cQ1y03OEEDjJHxQYle4,173
+excel_dbapi/engine/base.py,sha256=y7XDwYNBCdEn32O-do06y5AbT4FUBt5r5GqkpXj_1Hk,396
+excel_dbapi/engine/executor.py,sha256=7Je6jf8FpDWC1tuaW7oK1EkiOrpSQYqJ2U1L1j7vEJ0,1252
+excel_dbapi/engine/openpyxl_engine.py,sha256=W3uJFw5sUCtxwVymdYKfPd_K8FhY9KeoTm35L_3a8zU,1132
+excel_dbapi/engine/pandas_engine.py,sha256=XJZIdKw6mqaXGvPRFCxGg4zuuhfgL3umwO7Tiq_o90E,1562
+excel_dbapi/engine/parser.py,sha256=cITDEUiBNCqOQWgt5VfUmIzMnW8GXJT063sjBUIqQ3c,1642
+excel_dbapi-2.0.0.dist-info/licenses/LICENSE,sha256=gBTzk1NFKuyZKqa5-8leVY816k7POZUMpw2_PKl2MsY,1071
+excel_dbapi-2.0.0.dist-info/METADATA,sha256=mSiLB4mB2IKROnV5XtQyqbpuUpeuxzSJ9ekHZbACYNc,883
+excel_dbapi-2.0.0.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+excel_dbapi-2.0.0.dist-info/top_level.txt,sha256=AKqafjFBnlnITWNMjDqLNynG3qxhf-zBKEC2beCfov8,12
+excel_dbapi-2.0.0.dist-info/RECORD,,
