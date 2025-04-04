@@ -1,0 +1,12 @@
+lab_auto_pulumi/__init__.py,sha256=9dOXar3Wg5ZbV8iHr_Oi35gkriQMnuBLYsn6q0XCWgY,2404
+lab_auto_pulumi/constants.py,sha256=zNTzIcl6VCAYiEaIaoTXKWJ-bi9ILcSs43znMsUT5us,1004
+lab_auto_pulumi/ec2.py,sha256=kknIF2yvLz4FfvF2grv_gtksg1ZM5lPb-NNvMlL9C4k,4825
+lab_auto_pulumi/lib.py,sha256=kJtXfAbgjtjR4zV2U-iRr_X8aDVuNgQJiXtf70mwSEc,1648
+lab_auto_pulumi/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+lab_auto_pulumi/permissions/__init__.py,sha256=U5xu81glLlj3N9Anm6qstNgCuvUhYyL0LzRKcQ8Sd-Y,332
+lab_auto_pulumi/permissions/lib.py,sha256=fv5kjgMqlUsgsaGQRSok3d7ICVvxjSI5pK7UdsvVJSw,2706
+lab_auto_pulumi/permissions/permissions.py,sha256=ORi9fDv_7g4JZ3pdzoaAHfKq1tP9EdryXr8OrLhUXtg,5138
+lab_auto_pulumi-0.1.6.dist-info/METADATA,sha256=Jgm2H6heAsxYGfVBF7_RteY5laAJqFMdfbFO1iGP77Q,2986
+lab_auto_pulumi-0.1.6.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+lab_auto_pulumi-0.1.6.dist-info/top_level.txt,sha256=gbrqBYxRky3Ag6JOpVB3_dm3IjTuoQ7i7rwxfF4V3ng,16
+lab_auto_pulumi-0.1.6.dist-info/RECORD,,

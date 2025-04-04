@@ -1,0 +1,18 @@
+GENERIC_CENTRAL_VPC_NAME = "generic-central"
+GENERIC_CENTRAL_PUBLIC_SUBNET_NAME = "generic-central-public"
+GENERIC_CENTRAL_PRIVATE_SUBNET_NAME = "generic-central-private"
+ORG_MANAGED_SSM_PARAM_PREFIX = "/org-managed"
+WORKLOAD_INFO_SSM_PARAM_PREFIX = f"{ORG_MANAGED_SSM_PARAM_PREFIX}/logical-workloads"
+MANAGEMENT_ACCOUNT_ID_PARAM_NAME = f"{ORG_MANAGED_SSM_PARAM_PREFIX}/management-account-id"
+
+CENTRAL_NETWORKING_SSM_PREFIX = f"{ORG_MANAGED_SSM_PARAM_PREFIX}/central-networking"
+
+MANUAL_SECRETS_PREFIX = "/manually-entered-secrets"
+MANUAL_IAC_SECRETS_PREFIX = f"{MANUAL_SECRETS_PREFIX}/iac"
+GITHUB_DEPLOY_TOKEN_SECRET_NAME = f"{MANUAL_IAC_SECRETS_PREFIX}/github-deploy-access-token"
+GITHUB_PREVIEW_TOKEN_SECRET_NAME = f"{MANUAL_IAC_SECRETS_PREFIX}/github-preview-access-token"
+
+USER_ACCESS_TAG_DELIMITER = "--"
+
+TAG_KEY_FOR_SSO_INTO_EC2_WRITE_ACCESS = "AllowWrite-SsoIntoEc2"  # typically used for S3 buckets
+TAG_KEY_FOR_SSO_INTO_EC2_READ_ACCESS = "AllowRead-SsoIntoEc2"  # typically used for S3 buckets
