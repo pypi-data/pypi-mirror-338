@@ -1,0 +1,10 @@
+Metadata-Version: 2.4
+Name: embedl_sdk
+Version: 2025.3.0
+Summary: Efficient Deep Learning for the edge.
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+
+# Embedl SDK
+
+Efficient Deep Learning for the edge.

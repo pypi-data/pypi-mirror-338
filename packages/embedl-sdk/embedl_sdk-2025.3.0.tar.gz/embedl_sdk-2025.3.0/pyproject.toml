@@ -1,0 +1,10 @@
+[build-system]
+requires = ["setuptools >= 40.6.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "embedl_sdk"
+version = "2025.3.0"
+description = "Efficient Deep Learning for the edge."
+readme = "README.md"
+requires-python = ">=3.10"
