@@ -1,0 +1,33 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+
+[project]
+name = "iterative-lattice-analysis"
+version = "0.0.1"
+description = "Iterative method for accelerator lattice analysis."
+readme = { file = "README.md", content-type = "text/markdown" }
+requires-python = ">=3.10"
+authors = [{ name = "Kelly Anderson", email = "kjanderson24@proton.me" }]
+dependencies = [
+    "numpy>=1.2",
+    "sympy",
+    "madx-ptc-utils",
+    "scipy",
+    "sqrmat-method",
+]
+license = { file = "LICENSE" }
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+    "License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)",
+]
+
+[project.urls]
+Homepage = "https://github.com/anderske-msu/iterative-lattice-analysis"
+"Bug Tracker" = "https://github.com/anderske-msu/iterative-lattice-analysis/issues"
+
+# TODO Improve README.md with better instructions

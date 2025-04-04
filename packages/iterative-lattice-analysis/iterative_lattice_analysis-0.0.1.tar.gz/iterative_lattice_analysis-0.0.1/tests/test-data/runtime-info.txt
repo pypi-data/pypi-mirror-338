@@ -1,0 +1,8 @@
+2023-12-18 13:58
+Number of Cores: 4
+Total Time: 15.768009096000242 s
+Square Matrix Order: 3
+Number of Points: 150
+Number of Angle Sample Points: 256
+X Range: -0.035, 0.03
+Y Range: 0.0, 0.013
