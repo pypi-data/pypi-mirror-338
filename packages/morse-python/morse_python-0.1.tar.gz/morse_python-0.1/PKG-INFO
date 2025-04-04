@@ -1,0 +1,29 @@
+Metadata-Version: 2.4
+Name: morse_python
+Version: 0.1
+Summary: Library for coding in Python with morse code
+Home-page: https://github.com/ame-tisto/morse_python
+Author: Mattia Capuano AKA: Ametisto
+Author-email: mattia.capuano1508@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: requires-python
+Dynamic: summary
+
+**_MORSE + PYTHON!_**
+
+this library lets developers that know morse code flex their skill...coding in morse code!
+
+in this version (v1.0) you can:     
+transform morse to text with `morse_to_text`  
+transform text to morse with `text_to_morse`  
+execute morse text with `execute_morse_code`
