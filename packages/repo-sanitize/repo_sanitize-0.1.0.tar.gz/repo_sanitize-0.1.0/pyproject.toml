@@ -1,0 +1,36 @@
+[project]
+name = "repo-sanitize"
+version = "0.1.0"
+description = "Basic package to clean up github repos, removing secrets or env variables that arent supposed to be there."
+authors = [
+    {name = "0rac130fD31phi",email = "william.astley@algebraicwealth.com"}
+]
+license = {text = "MIT"}
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "rich (>=14.0.0,<15.0.0)",
+    "dotenv (>=0.9.9,<0.10.0)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+packages = [{ include = "repo_sanitize" }]
+name = "repo-sanitize"
+readme = "README.md"
+[tool.poetry.group.dev.dependencies]
+sphinx = "^8.2.3"
+sphinx-autobuild = "^2024.10.3"
+sphinx-rtd-theme = "^3.0.2"
+furo = "^2024.8.6"
+nox = "^2025.2.9"
+sphinx-copybutton = "^0.5.2"
+myst-parser = "^4.0.1"
+pytest = "^8.3.5"
+
+[project.scripts]
+repo-sanitize = "repo_sanitize.cli:main"
