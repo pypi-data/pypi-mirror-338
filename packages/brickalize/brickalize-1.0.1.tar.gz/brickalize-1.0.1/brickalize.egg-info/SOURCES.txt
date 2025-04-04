@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+brickalize/__init__.py
+brickalize/bricks.py
+brickalize/converter.py
+brickalize/model.py
+brickalize/visualizer.py
+brickalize.egg-info/PKG-INFO
+brickalize.egg-info/SOURCES.txt
+brickalize.egg-info/dependency_links.txt
+brickalize.egg-info/requires.txt
+brickalize.egg-info/top_level.txt
