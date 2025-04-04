@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: purecpp_embed
+Version: 0.0.6
+Summary: C++ embeddings generator for RAG and other structures. This package is a part of the PureCPP ecosystem.
+Home-page: https://github.com/pureai-ecosystem/purecpp
+Author: PureAI
+Author-email: contato@pureai.com.br
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: POSIX :: Linux
+Requires-Dist: purecpp-libs
+Requires-Dist: torch
+Requires-Dist: transformers
+Requires-Dist: onnx
+Requires-Dist: onnxruntime
+Requires-Dist: optimum
+
