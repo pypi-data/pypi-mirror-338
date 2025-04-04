@@ -1,0 +1,9 @@
+wagtail_draftail_plugins/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+wagtail_draftail_plugins/locale/es/LC_MESSAGES/django.mo,sha256=N1pb17IfLd0ASiKO8d68-B4ygSpDkhKOCs8YTzMXQo0,380
+wagtail_draftail_plugins/locale/es/LC_MESSAGES/django.po,sha256=xaT5IPIRZtD14-0I7YENA4L0xvmMN8_YFO5pkxYq7kw,1017
+wagtail_draftail_plugins/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+wagtail_draftail_plugins/wagtail_hooks.py,sha256=llEXNokKpCvkPVXHZc0RBNetr4NSYQ1wsb-N3sQ6yOw,5519
+wagtail_draftail_plugins-0.4.0.dist-info/LICENSE,sha256=ooJkVQA8UFewY2nGLrri2vRN4OtnN0yq_NFFFi2z73M,744
+wagtail_draftail_plugins-0.4.0.dist-info/METADATA,sha256=IyW9GaCgATtWHB3QA8_Md4NGJDMLZhGB6YfLBzqkxDg,1168
+wagtail_draftail_plugins-0.4.0.dist-info/WHEEL,sha256=fGIA9gx4Qxk2KDKeNJCbOEwSrmLtjWCwzBz351GyrPQ,88
+wagtail_draftail_plugins-0.4.0.dist-info/RECORD,,
