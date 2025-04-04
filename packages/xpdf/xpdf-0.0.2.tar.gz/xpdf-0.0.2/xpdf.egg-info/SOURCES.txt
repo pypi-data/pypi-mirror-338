@@ -1,0 +1,15 @@
+README.md
+pyproject.toml
+requirements.txt
+topdf/__init__.py
+topdf/cmdline.py
+topdf/mdtopdf.py
+topdf/server.py
+topdf/static/Monospace.ttf
+topdf/static/index.html
+xpdf.egg-info/PKG-INFO
+xpdf.egg-info/SOURCES.txt
+xpdf.egg-info/dependency_links.txt
+xpdf.egg-info/entry_points.txt
+xpdf.egg-info/requires.txt
+xpdf.egg-info/top_level.txt
