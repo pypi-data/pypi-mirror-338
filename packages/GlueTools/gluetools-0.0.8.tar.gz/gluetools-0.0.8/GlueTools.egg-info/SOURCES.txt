@@ -1,0 +1,9 @@
+README.md
+setup.py
+GlueTools/__init__.py
+GlueTools/myfunctions.py
+GlueTools.egg-info/PKG-INFO
+GlueTools.egg-info/SOURCES.txt
+GlueTools.egg-info/dependency_links.txt
+GlueTools.egg-info/requires.txt
+GlueTools.egg-info/top_level.txt
