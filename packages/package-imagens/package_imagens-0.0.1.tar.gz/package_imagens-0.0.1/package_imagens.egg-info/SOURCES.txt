@@ -1,0 +1,9 @@
+README.md
+setup.py
+package_imagens.egg-info/PKG-INFO
+package_imagens.egg-info/SOURCES.txt
+package_imagens.egg-info/dependency_links.txt
+package_imagens.egg-info/top_level.txt
+package_name/__init__.py
+package_name/file1_name.py
+package_name/file2_name.py
