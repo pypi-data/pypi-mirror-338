@@ -1,0 +1,25 @@
+Metadata-Version: 2.4
+Name: disquest
+Version: 0.2
+Summary: A Discord API Wrapper often used for automation
+Author: PlutoGuy
+Keywords: python,requests,json,emoji
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+Requires-Dist: opencv-python
+Requires-Dist: pyautogui
+Requires-Dist: pyaudio
+Dynamic: author
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: keywords
+Dynamic: requires-dist
+Dynamic: summary
+
+Create scripts that interact with Discord API for automation. You do not need to worry about using requests and you can simply interact with Discord API without hastle.
