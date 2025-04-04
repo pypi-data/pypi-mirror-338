@@ -1,0 +1,16 @@
+README.md
+pyproject.toml
+setup.py
+fractaly/__init__.py
+fractaly/core1.py
+fractaly/py.typed
+fractaly.egg-info/PKG-INFO
+fractaly.egg-info/SOURCES.txt
+fractaly.egg-info/dependency_links.txt
+fractaly.egg-info/requires.txt
+fractaly.egg-info/top_level.txt
+fractaly/_internal/__init__.py
+fractaly/_internal/core2.py
+fractaly/lib/linux64/libfractal_maths.so
+fractaly/lib/win64/fractal_maths.dll
+fractaly/src/test_fractal_maths.py
