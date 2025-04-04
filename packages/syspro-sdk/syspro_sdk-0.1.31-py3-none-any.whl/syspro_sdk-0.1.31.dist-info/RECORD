@@ -1,0 +1,16 @@
+syspro/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+syspro/client.py,sha256=lHr0C1ATjL7CaKpbEb4OzU2kt3QJ7Rsu3vJrcWRnLig,2248
+syspro/errors.py,sha256=JKIr79j4ZOHzHyxcaRkpk37Lg5KfARYtor9PZLY3cwg,654
+syspro/utils.py,sha256=M1CLYLgSiZl6D7ewUKboiWt2xXCTvGHpdRx7OYnBkVs,9575
+syspro/models/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+syspro/models/base.py,sha256=gCK0JxdGW4XNUWd4L7eNuBJc99mPmBHgjrVxtkEVKeI,8277
+syspro/models/contract.py,sha256=L3dXrDN8iZN7WkYBUpn2wCxZbMsbC20sTQuzleCeoBU,1984
+syspro/models/purchaseorder.py,sha256=AYEgPLdsnYgFBsvMZm56XrSRKCVNimU0NB2uZzuJB8Y,1964
+syspro/models/requisition.py,sha256=5l4Hj6LINoU96fpAEnG-P6NgJlVNwQocaFgq2kVl15M,9648
+syspro/models/stockcode.py,sha256=0HyUMAmM6dORTFInJhag6cew8H8Nry5e_0r4c3iv7Og,3121
+syspro/models/table.py,sha256=l5oByoFYBXq6QHsdZYzLIOyfkgNFrhdMNdZisF5Nv1A,1173
+syspro_sdk-0.1.31.dist-info/licenses/LICENSE,sha256=kqxQE_GwtUixkjG2VwsXzIS0OAJxh2hDYUqVklp0mKQ,3991
+syspro_sdk-0.1.31.dist-info/METADATA,sha256=BYZ9FVQJvB5SlKctxGhwVPdkz5xAqjOT6jLF2e93Fcc,2663
+syspro_sdk-0.1.31.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+syspro_sdk-0.1.31.dist-info/top_level.txt,sha256=12mKriebHSMggCYEEJ4srTaxN0bLqpiBRVopaZTpUBo,7
+syspro_sdk-0.1.31.dist-info/RECORD,,
