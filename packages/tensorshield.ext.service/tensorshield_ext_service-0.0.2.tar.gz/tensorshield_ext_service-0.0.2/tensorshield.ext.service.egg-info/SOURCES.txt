@@ -1,0 +1,15 @@
+MANIFEST.in
+VERSION
+setup.py
+tensorshield.ext.service.egg-info/PKG-INFO
+tensorshield.ext.service.egg-info/SOURCES.txt
+tensorshield.ext.service.egg-info/dependency_links.txt
+tensorshield.ext.service.egg-info/requires.txt
+tensorshield.ext.service.egg-info/top_level.txt
+tensorshield/ext/service/__init__.py
+tensorshield/ext/service/_service.py
+tensorshield/ext/service/package.json
+tensorshield/ext/service/models/__init__.py
+tensorshield/ext/service/models/_identifiedrequestprincipal.py
+tensorshield/ext/service/params/__init__.py
+tensorshield/ext/service/params/_subtensor.py
