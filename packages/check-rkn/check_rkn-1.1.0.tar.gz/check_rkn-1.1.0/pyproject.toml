@@ -1,0 +1,30 @@
+[tool.poetry]
+name = "check-rkn"
+version = "1.1.0"
+description = "Library that check blocked website on blocklist.rkn.gov.ru"
+license = "Apache-2.0"
+authors = ["IvanyaK <ivanrus200519@gmail.com>"]
+readme = "README.md"
+repository = "https://codeberg.org/IvanyaK/check-rkn"
+packages = [{include = "check_rkn"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+anticaptchaofficial = "^1.0.53"
+selenium = "^4.10.0"
+
+
+[tool.poetry.group.dev.dependencies]
+mypy = "^1.4.1"
+flake8 = "^6.0.0"
+flake8-bugbear = "^23.6.5"
+flake8-builtins = "^2.1.0"
+pep8-naming = "^0.13.3"
+flake8-variables-names = "^0.0.6"
+flake8-import-order = "^0.18.2"
+black = "^23.3.0"
+python-dotenv = "^1.0.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
