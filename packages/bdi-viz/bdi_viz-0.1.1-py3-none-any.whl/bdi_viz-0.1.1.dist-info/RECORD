@@ -1,0 +1,10 @@
+bdi_viz-0.1.1.dist-info/licenses/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+bdiviz/__init__.py,sha256=ozxXvXBhbpfh4tPka5Nobl6AnYq9CdjJlYmNpTRwwNs,77
+bdiviz/api.py,sha256=BYDvoYkYK0MJ6FGMzGdm-cTU2BsEPQhmNrYbjAipCrw,49704
+bdiviz/utils.py,sha256=jYYVi6ABrWkqQw89xq2ExJtu9GItzN6zmtuvogeDkKI,1002
+bdiviz/resource/gdc_table.csv,sha256=IhnBvrrM-Eg1keQ8Kvv-oIJTE67NoXdS9w4a_5gafus,135546
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+bdi_viz-0.1.1.dist-info/METADATA,sha256=ExZthPXaEJik1Ou1K25I3VSgsXSP-VxLbRTkEqMYmPU,4146
+bdi_viz-0.1.1.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+bdi_viz-0.1.1.dist-info/top_level.txt,sha256=2BpghgyfLIGxxNOXvdRSI_6VVRG9Q0X0n83G-TBv410,13
+bdi_viz-0.1.1.dist-info/RECORD,,
