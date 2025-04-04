@@ -1,0 +1,8 @@
+README.md
+pyproject.toml
+src/pytetradplus.py
+src/pytetrad_plus.egg-info/PKG-INFO
+src/pytetrad_plus.egg-info/SOURCES.txt
+src/pytetrad_plus.egg-info/dependency_links.txt
+src/pytetrad_plus.egg-info/requires.txt
+src/pytetrad_plus.egg-info/top_level.txt
