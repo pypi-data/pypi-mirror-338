@@ -1,0 +1,11 @@
+installcheck/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+installcheck/checker.py,sha256=-Gzzziz1aFkZeC9K4mZnMP40rMxNgouxVjy8XJ3zS8I,841
+installcheck/cli.py,sha256=MjoG02b2POQeRQIgzs1bydehsY_FRlN6mgIlpqMPuuc,895
+installcheck/reporter.py,sha256=P_2EsFP3XTRr6YEMVZFDfde9kZcpmIXXuSSxMU_sr6A,1685
+installcheck/utils.py,sha256=PP8bSFqPl22iohRiM_MpbAs6YkdGsAsCTKaAsIM3A3o,1489
+installcheck-0.1.0.dist-info/licenses/LICENSE,sha256=zeq_bpz26uL3CgReMLLjK7fOgtj75aQwngvHOZSavEE,1070
+installcheck-0.1.0.dist-info/METADATA,sha256=obSGRxYhX_LV5UchfKV6_TLm6HEpEAAzc_bujT_ZSGE,3176
+installcheck-0.1.0.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+installcheck-0.1.0.dist-info/entry_points.txt,sha256=QhqOYOeRkRLyFKIKh1CTSEtoOv38tnt1gAiW2aeX0xU,55
+installcheck-0.1.0.dist-info/top_level.txt,sha256=14UX0q2NEzmbUNkVQ4SoThG5uZuuDC7EcF6jhDQV93Y,13
+installcheck-0.1.0.dist-info/RECORD,,
