@@ -1,0 +1,292 @@
+Metadata-Version: 2.4
+Name: pgcolpos
+Version: 1.0.0
+Summary: A tool to add or move columns to specific positions in PostgreSQL tables
+Home-page: https://github.com/lmousom/pgcolpos
+Author: Latiful Mousom
+Author-email: Latiful Mousom <latifulmousom@gmail.com>
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Dynamic: author
+Dynamic: home-page
+Dynamic: license-file
+Dynamic: requires-python
+
+# PostgreSQL Column Position Tool (pgcolpos)
+
+[![PyPI version](https://badge.fury.io/py/pgcolpos.svg)](https://badge.fury.io/py/pgcolpos)
+[![Python Versions](https://img.shields.io/pypi/pyversions/pgcolpos.svg)](https://pypi.org/project/pgcolpos/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+A command-line tool to add or move columns to specific positions in PostgreSQL tables while preserving all constraints, indexes, and permissions.
+
+## Problem
+
+PostgreSQL doesn't support the `AFTER` clause for column positioning like MySQL does. With standard PostgreSQL, new columns are always added at the end of a table, and there's no direct way to reposition existing columns.
+
+## Solution
+
+`pgcolpos` solves this by providing multiple approaches for tables of any size:
+
+1. **Standard Approach**: Full table recreation (best for small tables)
+2. **Batched Approach**: Processes data in batches (best for medium tables)
+3. **View Approach**: Creates a view with the desired column order (instantaneous, presentation only)
+4. **pg_repack Approach**: Uses pg_repack extension (best for very large tables)
+
+## Installation
+
+```bash
+pip install pgcolpos
+```
+
+## Usage
+
+### Analyzing Tables First (Recommended)
+
+Before performing operations on large tables, analyze them to get recommendations:
+
+```bash
+pgcolpos analyze users --db="postgresql://user:pass@localhost/mydb"
+```
+
+This will provide size information and recommend the best approach:
+
+```
+Table Analysis Results:
+=======================
+
+Table: users
+Total Size: 1.2 GB
+Table Size: 850 MB
+Index Size: 350 MB
+Row Count: 5,000,000
+
+Estimated Operation Times:
+Standard Approach: 8 minutes
+Batched Approach: 5 minutes
+View Approach: less than 1 second
+pg_repack Approach: 4 minutes
+
+Recommended Approach: batched_approach
+```
+
+### Adding a New Column After a Specific Position
+
+```bash
+# Auto-select the best method based on table size
+pgcolpos add users email varchar(255) after username --method=auto --db="postgresql://user:pass@localhost/mydb"
+
+# Standard approach (complete table recreation)
+pgcolpos add users email varchar(255) after username --method=standard --db="postgresql://user:pass@localhost/mydb"
+
+# Batched approach for large tables
+pgcolpos add users email varchar(255) after username --method=batched --batch-size=50000 --db="postgresql://user:pass@localhost/mydb"
+
+# View approach (fastest but only affects presentation)
+pgcolpos add users email varchar(255) after username --method=view --db="postgresql://user:pass@localhost/mydb"
+
+# pg_repack approach (requires pg_repack extension)
+pgcolpos add users email varchar(255) after username --method=pg_repack --db="postgresql://user:pass@localhost/mydb"
+```
+
+### Moving an Existing Column After a Specific Position
+
+```bash
+# Auto-select the best method
+pgcolpos move products description after name --method=auto --db="postgresql://user:pass@localhost/mydb"
+
+# Batched approach for large tables
+pgcolpos move products description after name --method=batched --batch-size=50000 --db="postgresql://user:pass@localhost/mydb"
+```
+
+### Help
+
+```bash
+pgcolpos --help
+```
+
+## API Usage
+
+The tool can also be used programmatically in your Python code:
+
+```python
+from pgcolpos import add_column, move_column, add_column_batched, add_column_view, estimate_migration_time
+import psycopg2
+
+# Establish connection
+conn = psycopg2.connect("postgresql://user:pass@localhost/mydb")
+
+# Analyze table to determine best approach
+analysis = estimate_migration_time(conn, "users")
+print(f"Recommended approach: {analysis['recommended_approach']}")
+
+# Standard approach (small tables)
+add_column(conn, "users", "email", "varchar(255)", "username")
+
+# Batched approach (medium-large tables)
+add_column_batched(conn, "users", "email", "varchar(255)", "username", batch_size=50000)
+
+# View approach (instant, presentation only)
+add_column_view(conn, "users", "email", "varchar(255)", "username")
+
+# Close connection
+conn.close()
+```
+
+## Performance Comparison
+
+| Method | Best For | Performance | Physical Change? | Downtime | Notes |
+|--------|----------|-------------|------------------|----------|-------|
+| Standard | Small tables (<100K rows) | Slow | Yes | High | Simple but locks table |
+| Batched | Medium-large tables | Medium | Yes | Medium | Splits work into batches |
+| View | Any size table | Instantaneous | No | None | Presentation only |
+| pg_repack | Large tables (>1M rows) | Fast | Yes | Low | Requires extension |
+
+## Integration with Other Languages/Frameworks
+
+### Node.js
+
+```javascript
+const { exec } = require('child_process');
+
+function addColumnAfter(table, newColumn, dataType, afterColumn, connectionString, method = 'auto') {
+  return new Promise((resolve, reject) => {
+    exec(`pgcolpos add ${table} ${newColumn} "${dataType}" after ${afterColumn} --method=${method} --db="${connectionString}"`, 
+      (error, stdout, stderr) => {
+        if (error) {
+          reject(error);
+          return;
+        }
+        resolve(stdout);
+      });
+  });
+}
+
+// Usage
+addColumnAfter('users', 'email', 'varchar(255)', 'username', 'postgresql://user:pass@localhost/mydb', 'batched')
+  .then(console.log)
+  .catch(console.error);
+```
+
+### PHP
+
+```php
+<?php
+function addColumnAfter($table, $newColumn, $dataType, $afterColumn, $connectionString, $method = 'auto') {
+    $command = "pgcolpos add {$table} {$newColumn} \"{$dataType}\" after {$afterColumn} --method={$method} --db=\"{$connectionString}\"";
+    $output = shell_exec($command);
+    return $output;
+}
+
+// Usage
+$result = addColumnAfter('users', 'email', 'varchar(255)', 'username', 'postgresql://user:pass@localhost/mydb', 'batched');
+echo $result;
+?>
+```
+
+### Java
+
+```java
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+
+public class PostgresColumnTool {
+    public static String addColumnAfter(String table, String newColumn, String dataType, 
+                                     String afterColumn, String connectionString, String method) throws Exception {
+        ProcessBuilder processBuilder = new ProcessBuilder(
+            "pgcolpos", "add", table, newColumn, dataType, "after", afterColumn, 
+            "--method=" + method, "--db=" + connectionString);
+        
+        Process process = processBuilder.start();
+        
+        BufferedReader reader = 
+            new BufferedReader(new InputStreamReader(process.getInputStream()));
+        
+        StringBuilder output = new StringBuilder();
+        String line;
+        while ((line = reader.readLine()) != null) {
+            output.append(line).append("\n");
+        }
+        
+        int exitCode = process.waitFor();
+        if (exitCode != 0) {
+            throw new Exception("Command failed with exit code: " + exitCode);
+        }
+        
+        return output.toString();
+    }
+    
+    // Usage
+    public static void main(String[] args) {
+        try {
+            String result = addColumnAfter("users", "email", "varchar(255)", "username", 
+                                        "postgresql://user:pass@localhost/mydb", "batched");
+            System.out.println(result);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+}
+```
+
+### Ruby on Rails
+
+In a migration file:
+
+```ruby
+def change
+  # Using the command-line tool from a Rails migration
+  connection_string = "postgresql://#{ENV['DB_USER']}:#{ENV['DB_PASS']}@#{ENV['DB_HOST']}/#{ENV['DB_NAME']}"
+  
+  # First analyze the table
+  system("pgcolpos analyze users --db=\"#{connection_string}\"")
+  
+  # Add column after specific position using a batched approach for large tables
+  system("pgcolpos add users email varchar(255) after username --method=batched --db=\"#{connection_string}\"")
+end
+```
+
+## Recommendations for Large Tables
+
+1. **Always analyze first**: Run `pgcolpos analyze` before performing operations on large tables
+2. **For truly massive tables**: Consider using the view approach initially, followed by a scheduled physical change during off-hours
+3. **Batch size tuning**: Adjust batch size based on your server's memory capacity (larger values = faster but more memory intensive)
+4. **Test in staging**: Always test on a staging environment before running on production
+5. **Backups**: Always create a backup before running operations on important tables
+
+## Permissions
+
+### Required Permissions
+
+The database user needs either:
+1. **Ownership of the table** being modified (recommended), or
+2. **Superuser privileges**
+
+
+For detailed information about permissions, see [PERMISSIONS.md](./PERMISSIONS.md).
+
+
+## Warning
+
+This tool modifies your table structure. It's recommended to:
+
+1. Run this during low-traffic periods
+2. Take a backup before using the tool
+3. Test in a development environment first
+
+## License
+
+MIT
+
+## Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
