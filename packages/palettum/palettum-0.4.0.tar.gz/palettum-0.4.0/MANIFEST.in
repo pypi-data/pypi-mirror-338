@@ -1,0 +1,17 @@
+include CMakeLists.txt
+
+graft src
+graft include
+
+include external/mtpng/build/libmtpng.dylib
+include external/mtpng/c/mtpng.h
+
+include setup.py
+
+global-exclude *.py[cod] __pycache__
+prune build
+prune dist
+prune external/vcpkg
+prune external/mtpng/target
+prune *.egg-info
+
