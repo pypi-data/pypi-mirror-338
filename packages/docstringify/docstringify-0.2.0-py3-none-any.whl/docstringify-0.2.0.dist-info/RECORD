@@ -1,0 +1,15 @@
+docstringify/__init__.py,sha256=F8wAs3yjndnNfOVnCZIiCk86BQIwxiAGx7fXe15mxNE,124
+docstringify/__main__.py,sha256=A5Xq9jCZwHnQVVGklF9ueL-ad-hInsceHQNgze3Yq6E,96
+docstringify/cli.py,sha256=U2G97RihJC2HMR2MCWDNadcU5erBuFDlIDrIOQ4lJSM,2230
+docstringify/components.py,sha256=7Q__cuBTWNAqLDTil_91Q7T-zIzr7YpbX2TcmXrfph0,471
+docstringify/visitor.py,sha256=qF6T6lqbK93RArbkDhqZYOQNAuvi6miMehO0U9tdNJM,7019
+docstringify/converters/__init__.py,sha256=iZXA6m689j3yqpfZjkoAcONXxAR7s-4GUQFEYxDPAyc,267
+docstringify/converters/base.py,sha256=1QWFE5ckS_Rbwi9TyRM-rKCA7MCwHgZ4Ok8ugMyvMgA,1507
+docstringify/converters/google.py,sha256=ytel_pqqUNV5wR8nVV1F8yczFA3Tj1f9_nkfJA4Kq04,1751
+docstringify/converters/numpydoc.py,sha256=iv5smFrHFBc0rHvLhgh66PaV2OEI3va_piRZ3_y2Ig8,1773
+docstringify-0.2.0.dist-info/licenses/LICENSE,sha256=E5RHv_qfCZPwnlJ_ZQb-WKOOy07LaJBA2a160OGtT3U,1071
+docstringify-0.2.0.dist-info/METADATA,sha256=QvPrAwX5TnbG6y7XpK6grHqohENJ2doN3i0WiHipECk,5362
+docstringify-0.2.0.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+docstringify-0.2.0.dist-info/entry_points.txt,sha256=dJVPsbclB7stLE8g0d4WbO2NaZQLJXSLEVl6oeROAqI,55
+docstringify-0.2.0.dist-info/top_level.txt,sha256=3RFmaFG0rYs4HkqRljatGQtY4BcNN7mqjK4tSznYdnQ,13
+docstringify-0.2.0.dist-info/RECORD,,
