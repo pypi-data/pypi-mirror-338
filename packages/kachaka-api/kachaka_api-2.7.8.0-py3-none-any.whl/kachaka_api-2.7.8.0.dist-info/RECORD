@@ -1,0 +1,15 @@
+kachaka_api/__init__.py,sha256=-5wrtV3PKzMbD-z6OwLKCCwnTfNRnBTpQUoiUtk3_4I,1017
+kachaka_api/base.py,sha256=exwACmPNosEtp2E7K7_fRqd83W6uoZrsWgeh26y0j8M,17227
+kachaka_api/aio/__init__.py,sha256=NSf7jY2jubnTSt9JCM8hOh2WUQanyg0oy8YZJrdEReM,8058
+kachaka_api/aio/base.py,sha256=PPAuRNMdcbc3pEtFq9EEBhUb0Q0aBTAxnbzDWXhj7oE,18011
+kachaka_api/generated/kachaka_api_pb2.py,sha256=KNL_DcfklUVz5Ro2RniIcXR7SMAbjQI-b7ooOPgLLoQ,30174
+kachaka_api/generated/kachaka_api_pb2.pyi,sha256=-qFQ8OiLDwW1yTi4Ayr_65jH9l8KE_fKdV_jwJgXzDY,38745
+kachaka_api/generated/kachaka_api_pb2_grpc.py,sha256=jM1MF-TluQJ-Za3amGwsqkMaoPDTIp0hLG9MJYL2jeo,58784
+kachaka_api/util/command.py,sha256=FVB1qwOz7GvOfheVpukXiAq0GohokKI7c3I2YIVXAJc,2033
+kachaka_api/util/geometry.py,sha256=KeSPMq77oaRKq0R3VcoCTqUFFqEDyuFWd-c-zdkSXHg,2145
+kachaka_api/util/layout.py,sha256=nZN7DVtKbjKO8zsJfI5aqdnEBdgsa1XfyRhB6Xkd43g,2378
+kachaka_api/util/vision.py,sha256=4JaahcRirVHOxyqj8LXGDiL1YlbMJsXV1FP3xDKAqMM,1001
+kachaka_api-2.7.8.0.dist-info/METADATA,sha256=OkpJWuFNbAdS-Ju4FZH-YehAzOgjmsoJS3S3gd6pW7o,831
+kachaka_api-2.7.8.0.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+kachaka_api-2.7.8.0.dist-info/licenses/LICENSE,sha256=bj0OvKi6rYHUbTfnt9tVZXYluEhKSlqSQzAlHNPWeaI,11354
+kachaka_api-2.7.8.0.dist-info/RECORD,,
