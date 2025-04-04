@@ -1,0 +1,10 @@
+abstract_modules/__init__.py,sha256=w1nrsptIMKKUAM9vDPU8xco812SSBf6RPnG8Laz1mT8,68
+abstract_modules/create_module.py,sha256=dRIyVUrSidSHTPghZRABnRDwgh9Qqyxm9ZXoNNonLBs,54305
+abstract_modules/create_module_folder.py,sha256=dj_3lU4QcsOwe0b0bPfKtNPm58jMIkmChNxJdlMr7j0,37952
+abstract_modules/main.py,sha256=zrkeuBjXVoW_DfUx2uVV-mEWDUsnGgpwWPdkSYqhoT0,1290
+abstract_modules/module_utils.py,sha256=UQIsjVBIGheSLA2wu8Fi4MZk2aiGRXUQkJc71mCpfJc,9682
+abstract_modules/upload_utils.py,sha256=t8zPVWCSKwsiwX_wIekc5Ut_geWcGbNqnADKLkLMaR0,23746
+abstract_modules-0.0.3.79.dist-info/METADATA,sha256=9C_MczJnFnBPYorJZ9iz9o6lKsf4aIpgxMfcW__Hy8M,5057
+abstract_modules-0.0.3.79.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+abstract_modules-0.0.3.79.dist-info/top_level.txt,sha256=f9o4Vw5Mulr8ed3JeHE83u5oi5GQ3By2vY_v5nbAEMM,17
+abstract_modules-0.0.3.79.dist-info/RECORD,,
