@@ -1,0 +1,8 @@
+setup.py
+sawadbot/__init__.py
+sawadbot/sawadbot.py
+sawadbot.egg-info/PKG-INFO
+sawadbot.egg-info/SOURCES.txt
+sawadbot.egg-info/dependency_links.txt
+sawadbot.egg-info/requires.txt
+sawadbot.egg-info/top_level.txt
