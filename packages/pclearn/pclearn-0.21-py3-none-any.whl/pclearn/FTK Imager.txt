@@ -1,0 +1,12 @@
+Open FTK Imager.  
+Create Disk Image from the Files menu.  
+Select Physical Drive and click Next.  
+Choose the storage device and click Finish.  
+Tick checkboxes and click Add.  
+Select Image Type as Raw (dd) and click Next.  
+Enter Evidence Information.  
+Select Image Destination, browse the folder, and name the file.  
+Click Finish and then Start to begin imaging.  
+Wait for the process to complete and verify data integrity.  
+Check the destination folder for the created image file.  
+(Optional) Click Summary to view the forensic imaging report.

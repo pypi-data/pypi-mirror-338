@@ -1,0 +1,27 @@
+Open AccessData FTK Imager and click **File → Create Disk Image**.  
+
+Select the source evidence type and click **Next**.  
+
+Choose the source evidence drive and specify the path.  
+
+Click **Add** to set the image destination.  
+
+In the **Image Destination Folder**, enter the path or browse to the desired location.  
+
+Click **Finish** to start the image processing and create the disk image.  
+
+Open **Forensic Toolkit** and click **Start a new case**.  
+
+Fill in the case details and click **Next**.  
+
+Click **Next** again and add the acquired image of the drive.  
+
+Fill in the required details and click **OK**.  
+
+Click **Next** and then **Finish**, allowing the process to complete.  
+
+Let the carving process finish to identify deleted files.  
+
+Locate the deleted files and extract them.  
+
+Click **OK**, and the deleted files will be recovered at the specified location.

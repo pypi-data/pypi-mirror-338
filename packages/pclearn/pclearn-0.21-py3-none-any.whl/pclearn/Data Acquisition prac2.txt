@@ -1,0 +1,16 @@
+Open Registry.  
+
+This will open Registry Editor, navigate to the key:  
+Computer\HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control  
+
+Right-click on the Control key in the left panel, select New > Key.  
+
+Name it as StorageDevicePolicies.  
+
+Right-click on StorageDevicePolicies, add New > Key > DWORD.  
+
+Name it as WriteBlocker and modify the value from 0 to 1.  
+
+Now an error message will show when you try to copy or move a document to USB.  
+
+To revert the changes, modify the value from 1 to 0.
