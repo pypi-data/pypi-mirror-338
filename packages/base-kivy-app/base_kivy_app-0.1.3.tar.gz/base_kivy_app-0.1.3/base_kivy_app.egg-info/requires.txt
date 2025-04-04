@@ -1,0 +1,19 @@
+ruamel.yaml
+kivy
+plyer
+tree-config
+more-kivy-app
+
+[:sys_platform == "darwin"]
+pyobjus
+
+[:sys_platform == "win32"]
+pywin32
+
+[dev]
+pytest>=3.6
+pytest-cov
+flake8
+sphinx-rtd-theme
+coveralls
+sphinx
