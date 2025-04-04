@@ -1,0 +1,2 @@
+[console_scripts]
+rds-encryptor = rds_encryptor.cli:main
