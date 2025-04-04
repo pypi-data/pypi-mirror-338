@@ -1,0 +1,7 @@
+LICENSE
+README.md
+pyproject.toml
+trainar.egg-info/PKG-INFO
+trainar.egg-info/SOURCES.txt
+trainar.egg-info/dependency_links.txt
+trainar.egg-info/top_level.txt
