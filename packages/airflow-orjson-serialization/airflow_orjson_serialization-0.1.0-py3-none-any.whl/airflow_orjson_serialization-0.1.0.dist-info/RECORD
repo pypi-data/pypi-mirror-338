@@ -1,0 +1,8 @@
+airflow_orjson_serialization/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+airflow_orjson_serialization/cli.py,sha256=oHwygD9kA84WUbLgOncHZmNAKz5QUrkkFEVY50iYKcU,1541
+airflow_orjson_serialization/json.py,sha256=lzirOfZCbTqpathtcEOcNQN6P6FOwqorBU1z26lvOIU,340
+airflow_orjson_serialization-0.1.0.dist-info/METADATA,sha256=xPNpyt2eLlDdDrNsmrumuLQ7V6bgIBBETrNKdLhmSEM,1335
+airflow_orjson_serialization-0.1.0.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+airflow_orjson_serialization-0.1.0.dist-info/entry_points.txt,sha256=zv5TrYYJyhJeX_SfLR0IAFRdmQfOmyQzc3ZTP9XX3Gs,73
+airflow_orjson_serialization-0.1.0.dist-info/top_level.txt,sha256=hY_xmlADAX9zZz7dF5AKTgZWaoWaU_FNBVBoAjXbHAM,29
+airflow_orjson_serialization-0.1.0.dist-info/RECORD,,
