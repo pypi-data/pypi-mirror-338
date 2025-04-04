@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+src/polydevenc/__init__.py
+src/polydevenc/polydev.py
+src/polydevenc.egg-info/PKG-INFO
+src/polydevenc.egg-info/SOURCES.txt
+src/polydevenc.egg-info/dependency_links.txt
+src/polydevenc.egg-info/top_level.txt
