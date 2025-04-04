@@ -1,0 +1,6 @@
+cirq
+numpy
+pandas
+matplotlib
+memory_profiler
+pytest
