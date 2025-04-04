@@ -1,0 +1,10 @@
+regexkit/__init__.py,sha256=cYaRwjLfrufsEwMp8hstwxRTvaHCe3IlRQ1UHfhQ4Ss,62
+regexkit/patterns.py,sha256=twUDos__pqsq1G9wzE13Oy_5h1tqk4P8EVOSTLQsHHY,4422
+regexkit/regexkit.py,sha256=qc6vuZ2934QJkYzG-_QIXn5Q-r2NGbF3hKA5n3E3QmY,2632
+regexkit-0.1.dist-info/licenses/LICENSE,sha256=0Crn2FbA15q7syPltJpXopiLU7jYgnRwlIf6tLky50I,1069
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_patterns.py,sha256=ldOE-DvgfBnFSM2a_M1OcMHHdeba1U4B_PXwbN1bbxg,2527
+regexkit-0.1.dist-info/METADATA,sha256=G2QLlMSGrdOG3Fh6tuArxY71k3mqNLM8HkvSQp20wd0,2177
+regexkit-0.1.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+regexkit-0.1.dist-info/top_level.txt,sha256=vWmUwAKjcImCgSTj8wWt3RAhseZBxr4BVILPZeooeos,15
+regexkit-0.1.dist-info/RECORD,,
