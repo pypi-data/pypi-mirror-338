@@ -1,0 +1,9 @@
+Metadata-Version: 2.4
+Name: inf_STT
+Version: 0.1
+Summary: Speech to Text Conversion package created by Ashish Kumar
+Author: Ashish Kumar
+Author-email: ar6858439@gmail.com
+Dynamic: author
+Dynamic: author-email
+Dynamic: summary
