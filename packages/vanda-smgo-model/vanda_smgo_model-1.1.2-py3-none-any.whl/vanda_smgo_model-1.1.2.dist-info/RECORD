@@ -1,0 +1,7 @@
+smgo_model/__init__.py,sha256=6nOs_MU6kLGuWjH42uAxyf_AVsXptVfx1dNcuGfHmZM,59
+smgo_model/models/__init__.py,sha256=IxnL7cCSK0tFwXBX3b7ZM9_9I-Ibxhs3yJ45G6oOwdE,52
+smgo_model/models/entidad.py,sha256=rmiGYvfyy_494CC14zgf--rO2lt2EOt6gN8KiLIrV6o,1754
+vanda_smgo_model-1.1.2.dist-info/METADATA,sha256=x0SqmIxJLPz1rZvRvoOq-DirYZfg8GDs1px7odMYDFY,520
+vanda_smgo_model-1.1.2.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+vanda_smgo_model-1.1.2.dist-info/top_level.txt,sha256=3TxkCW-JBlSFRMrJa-qRGnR6-yeCZNwEBfASBfoHq4A,11
+vanda_smgo_model-1.1.2.dist-info/RECORD,,
