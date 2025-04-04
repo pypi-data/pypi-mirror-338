@@ -1,0 +1,11 @@
+poetry_analysis-0.3.4.dist-info/METADATA,sha256=ZgBvqWE84Qi1R-KuJhrXbAXDV0A9_WqEi6ZoVxcZiEw,569
+poetry_analysis-0.3.4.dist-info/WHEEL,sha256=thaaA2w1JzcGC48WYufAs8nrYZjJm8LqNfnXFOFyCC4,90
+poetry_analysis-0.3.4.dist-info/entry_points.txt,sha256=6OYgBcLyFCUgeqLgnvMyOJxPCWzgy7se4rLPKtNonMs,34
+poetry_analysis-0.3.4.dist-info/licenses/LICENSE,sha256=28CSBFCRXSF4D6TL8FCotW7Z-CSBjBfa6xj-kpuz7yU,15674
+poetry_analysis/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+poetry_analysis/alliteration.py,sha256=jCyQvQtNfU08CG4EVqUizgAM85vtCWbLHAUHE97H_N0,3456
+poetry_analysis/anaphora.py,sha256=s7MA7cNAcQuVujM3f6HOPSqb6OWxnS3eJFvN2Tc1FSg,6352
+poetry_analysis/lyrical_subject.py,sha256=kmGfollHr18KUeNz8RTw06O7ZGzuRtbVLfKhd4hzDUc,1863
+poetry_analysis/rhyme_detection.py,sha256=vlnMlL_ajyk0tjL8bTc3N3LS73I_0hnKtkuT50vu_dk,12420
+poetry_analysis/utils.py,sha256=yWu8O_MZ02qZ9h7aDan0oex_4cUsdwtkRtJ_aC_Gtn8,7611
+poetry_analysis-0.3.4.dist-info/RECORD,,
