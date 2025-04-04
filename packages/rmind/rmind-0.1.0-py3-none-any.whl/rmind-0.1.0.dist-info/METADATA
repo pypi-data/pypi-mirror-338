@@ -1,0 +1,13 @@
+Metadata-Version: 2.4
+Name: rmind
+Version: 0.1.0
+Summary: PyTorch library to train end-to-end models from multimodal robotics dataset
+Requires-Python: >=3.13
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: rbyte>=0.16.1
+Requires-Dist: torch>=2.6.0
+Dynamic: license-file
+
+# rmind
+Robot mind
