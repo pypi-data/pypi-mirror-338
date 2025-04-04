@@ -1,0 +1,61 @@
+interactions:
+- request:
+    body: '{"nonce":1743703613501.856,"request":"/api/v4/main-account/transfer","nonceWindow":true,"from":"main","to":"spot","ticker":"USDT","amount":"5"}'
+    headers:
+      accept:
+      - '*/*'
+      accept-encoding:
+      - gzip, deflate
+      connection:
+      - keep-alive
+      content-length:
+      - '143'
+      content-type:
+      - application/json
+      host:
+      - whitebit.com
+      user-agent:
+      - python-httpx/0.28.1
+      x-txc-payload:
+      - eyJub25jZSI6MTc0MzcwMzYxMzUwMS44NTYsInJlcXVlc3QiOiIvYXBpL3Y0L21haW4tYWNjb3VudC90cmFuc2ZlciIsIm5vbmNlV2luZG93Ijp0cnVlLCJmcm9tIjoibWFpbiIsInRvIjoic3BvdCIsInRpY2tlciI6IlVTRFQiLCJhbW91bnQiOiI1In0=
+    method: POST
+    uri: https://whitebit.com/api/v4/main-account/transfer
+  response:
+    body:
+      string: !!binary |
+        H4sIAAAAAAAAA4uOBQApu0wNAgAAAA==
+    headers:
+      CF-RAY:
+      - 92aa809c7c8ad344-FRA
+      Cache-Control:
+      - no-cache, private
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Length:
+      - '22'
+      Content-Type:
+      - application/json
+      Date:
+      - Thu, 03 Apr 2025 18:06:52 GMT
+      Server:
+      - cloudflare
+      Set-Cookie:
+      - __cf_bm=muruwm8pl9qB9_hifbNnF_F32pZ6vkU1Y9rFSRqAQEc-1743703612-1.0.1.1-TVlqJIhdCzaDbkAkcLsKYEe_f9FJcZ0zajc3K2vBviF_OVRG3rHe1hOjxTXWmp7BpCMdtBZ4oVEB.7SMGiLw0HQGdZHkHpXnpUs9tbM.8GQ;
+        path=/; expires=Thu, 03-Apr-25 18:36:52 GMT; domain=.whitebit.com; HttpOnly;
+        Secure; SameSite=None
+      Strict-Transport-Security:
+      - max-age=15552000; includeSubDomains; preload
+      X-Content-Type-Options:
+      - nosniff
+      alt-svc:
+      - h3=":443"; ma=86400
+      cf-cache-status:
+      - DYNAMIC
+      vary:
+      - Accept-Encoding
+    status:
+      code: 201
+      message: Created
+version: 1

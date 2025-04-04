@@ -1,0 +1,114 @@
+interactions:
+- request:
+    body: '{"request":"/api/v4/order/market","nonce":1743706907501.2317,"nonceWindow":true,"market":"TRX_USDT","side":"buy","amount":"10","clientOrderId":null,"stp":null}'
+    headers:
+      accept:
+      - '*/*'
+      accept-encoding:
+      - gzip, deflate
+      connection:
+      - keep-alive
+      content-length:
+      - '159'
+      content-type:
+      - application/json
+      host:
+      - whitebit.com
+      user-agent:
+      - python-httpx/0.28.1
+      x-txc-payload:
+      - eyJyZXF1ZXN0IjoiL2FwaS92NC9vcmRlci9tYXJrZXQiLCJub25jZSI6MTc0MzcwNjkwNzUwMS4yMzE3LCJub25jZVdpbmRvdyI6dHJ1ZSwibWFya2V0IjoiVFJYX1VTRFQiLCJzaWRlIjoiYnV5IiwiYW1vdW50IjoiMTAiLCJjbGllbnRPcmRlcklkIjpudWxsLCJzdHAiOm51bGx9
+    method: POST
+    uri: https://whitebit.com/api/v4/order/market
+  response:
+    body:
+      string: '{"code":36,"errors":{"clientOrderId":["The ClientOrderId must be a
+        string."]},"message":"Validation failed"}'
+    headers:
+      CF-RAY:
+      - 92aad10c7b73364a-FRA
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '108'
+      Content-Type:
+      - application/json
+      Date:
+      - Thu, 03 Apr 2025 19:01:47 GMT
+      Server:
+      - cloudflare
+      Set-Cookie:
+      - __cf_bm=5_kcNiccvw5lGLbP4k1PfsIsGaWt1iye0ak_CpY60mk-1743706907-1.0.1.1-S21yugJmmGGVwMDqgdiI_NyEf9oYWZln9OwyTlHhDjP6ciBHomL8nNA0MWsgZHShLHvGiqzVC9sMDukSiIi_W3yjkk.kNdO7VOfb1XD6HUk;
+        path=/; expires=Thu, 03-Apr-25 19:31:47 GMT; domain=.whitebit.com; HttpOnly;
+        Secure; SameSite=None
+      Strict-Transport-Security:
+      - max-age=15552000; includeSubDomains; preload
+      X-Content-Type-Options:
+      - nosniff
+      alt-svc:
+      - h3=":443"; ma=86400
+      cf-cache-status:
+      - DYNAMIC
+    status:
+      code: 422
+      message: Unprocessable Entity
+- request:
+    body: '{"request":"/api/v4/order/market","nonce":1743707248870.1604,"nonceWindow":true,"market":"TRX_USDT","side":"buy","amount":"10","clientOrderId":"0254d6ab-d427-4c75-8767-64f1ad1599fc"}'
+    headers:
+      accept:
+      - '*/*'
+      accept-encoding:
+      - gzip, deflate
+      connection:
+      - keep-alive
+      content-length:
+      - '182'
+      content-type:
+      - application/json
+      host:
+      - whitebit.com
+      user-agent:
+      - python-httpx/0.28.1
+      x-txc-payload:
+      - eyJyZXF1ZXN0IjoiL2FwaS92NC9vcmRlci9tYXJrZXQiLCJub25jZSI6MTc0MzcwNzI0ODg3MC4xNjA0LCJub25jZVdpbmRvdyI6dHJ1ZSwibWFya2V0IjoiVFJYX1VTRFQiLCJzaWRlIjoiYnV5IiwiYW1vdW50IjoiMTAiLCJjbGllbnRPcmRlcklkIjoiMDI1NGQ2YWItZDQyNy00Yzc1LTg3NjctNjRmMWFkMTU5OWZjIn0=
+    method: POST
+    uri: https://whitebit.com/api/v4/order/market
+  response:
+    body:
+      string: !!binary |
+        H4sIAAAAAAAAA02LXWuDMABF/8t9jhJjPkzeCl1BcHS0HWxPJTURpGpE44OM/ffh2sEe77nnfCFM
+        zk+lg8mYZBmTBZWFyAnqrvVDPP69oExwJ+0tcZyphNdKJIWSKpG8yazLhNZNDYLeTncfYXA5fVzf
+        z/sLCObWeRjclhUEcR238fQIYtv7Odp+hMkUzxVVjBepoIoLTeC87V7D4FcY6FQXWvG8wIOfY6jv
+        MOAsZRoEtg/LEB+ippRurPPNRmhKKWVSsGd68P5BOftN21DDNLabPcEcbVxmGLztTpdyV1Wf10NZ
+        VS97EIxhjsehW//JIwyGgO8fqo2wmUoBAAA=
+    headers:
+      CF-RAY:
+      - 92aad95f086b1907-FRA
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/json
+      Date:
+      - Thu, 03 Apr 2025 19:07:28 GMT
+      Server:
+      - cloudflare
+      Set-Cookie:
+      - __cf_bm=miRR7k.RQVm3cfy6nmi39NnMZQ.Nl5LhbrHk_nEKABo-1743707248-1.0.1.1-CCZ250k3Z8NqHv5JoEsQ4POuNnuN17GoiiAcjavLtB31TvJKhqdaAdOhOjGeAtG.ukL8.tNkeIKerEv.NCdxDajw_aok6efYst.0LrNHkHY;
+        path=/; expires=Thu, 03-Apr-25 19:37:28 GMT; domain=.whitebit.com; HttpOnly;
+        Secure; SameSite=None
+      Strict-Transport-Security:
+      - max-age=15552000; includeSubDomains; preload
+      Transfer-Encoding:
+      - chunked
+      X-Content-Type-Options:
+      - nosniff
+      alt-svc:
+      - h3=":443"; ma=86400
+      cf-cache-status:
+      - DYNAMIC
+    status:
+      code: 200
+      message: OK
+version: 1

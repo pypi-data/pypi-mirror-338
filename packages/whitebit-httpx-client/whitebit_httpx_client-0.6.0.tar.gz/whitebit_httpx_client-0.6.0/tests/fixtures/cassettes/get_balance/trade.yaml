@@ -1,0 +1,84 @@
+interactions:
+- request:
+    body: '{"nonce":1743703953276.9978,"request":"/api/v4/trade-account/balance","nonceWindow":true}'
+    headers:
+      accept:
+      - '*/*'
+      accept-encoding:
+      - gzip, deflate
+      connection:
+      - keep-alive
+      content-length:
+      - '89'
+      content-type:
+      - application/json
+      host:
+      - whitebit.com
+      user-agent:
+      - python-httpx/0.28.1
+      x-txc-payload:
+      - eyJub25jZSI6MTc0MzcwMzk1MzI3Ni45OTc4LCJyZXF1ZXN0IjoiL2FwaS92NC90cmFkZS1hY2NvdW50L2JhbGFuY2UiLCJub25jZVdpbmRvdyI6dHJ1ZX0=
+    method: POST
+    uri: https://whitebit.com/api/v4/trade-account/balance
+  response:
+    body:
+      string: !!binary |
+        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
+        L9mIf2raOAAA
+    headers:
+      CF-RAY:
+      - 92aa88ec6ee98f3c-FRA
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/json
+      Date:
+      - Thu, 03 Apr 2025 18:12:33 GMT
+      Server:
+      - cloudflare
+      Set-Cookie:
+      - __cf_bm=pWZgzfJkKeQNkGoip9EeE1sx3uAfQ3iMSuOyndELJtk-1743703953-1.0.1.1-hsg6ppGItDDsTMTgnjb8xhib73XZCI4yeuK7PkqoJ87MWW4.KSih82n1lGZ2il_Kdm4dDrtP_1CjBy6akAp0_ci_9u9iZV05LVTOLqwH_dI;
+        path=/; expires=Thu, 03-Apr-25 18:42:33 GMT; domain=.whitebit.com; HttpOnly;
+        Secure; SameSite=None
+      Strict-Transport-Security:
+      - max-age=15552000; includeSubDomains; preload
+      Transfer-Encoding:
+      - chunked
+      X-Content-Type-Options:
+      - nosniff
+      alt-svc:
+      - h3=":443"; ma=86400
+      cf-cache-status:
+      - DYNAMIC
+      vary:
+      - Accept-Encoding
+    status:
+      code: 200
+      message: OK
+version: 1
