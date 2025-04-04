@@ -1,0 +1,11 @@
+README.md
+pyproject.toml
+ner_data_processor/Corefer.py
+ner_data_processor/Ner_Data_Preparation.py
+ner_data_processor/__init__.py
+ner_data_processor.egg-info/PKG-INFO
+ner_data_processor.egg-info/SOURCES.txt
+ner_data_processor.egg-info/dependency_links.txt
+ner_data_processor.egg-info/requires.txt
+ner_data_processor.egg-info/top_level.txt
+test/test_core.py
