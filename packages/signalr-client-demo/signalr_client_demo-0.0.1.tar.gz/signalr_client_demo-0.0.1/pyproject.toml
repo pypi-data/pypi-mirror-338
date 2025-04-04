@@ -1,0 +1,60 @@
+[project]
+name = "signalr-client-demo"
+version = "0.0.1"
+description = "Python SignalR async client"
+authors = [{name = "Sam Mosleh", email = "sam.mosleh@ut.ac.ir"}]
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">=3.9"
+dependencies = [
+  "aiohttp>=3.11.16",
+  "msgpack>=1.1.0",
+]
+keywords = ["SignalR", "SignalR client", "Real-time messaging"]
+urls = {homepage = "https://github.com/sam-mosleh/signalr-async"}
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=8.3.5",
+  "pytest-cov>=6.1.0",
+  "pre-commit>=4.2.0",
+  "black>=25.1.0",
+  "isort>=6.0.1",
+  "autoflake>=2.3.1",
+  "pytest-asyncio>=0.26.0",
+  "aioresponses>=0.7.8",
+  "pytest-mock>=3.14.0",
+  "msgpack-types>=0.5.0",
+  "mypy>=1.15.0",
+]
+
+[tool.isort]
+profile = "black"
+
+[tool.mypy]
+# --strict
+disallow_any_generics = true
+disallow_subclassing_any = true
+disallow_untyped_calls = true
+disallow_untyped_defs = true
+disallow_incomplete_defs = true
+check_untyped_defs = true
+disallow_untyped_decorators = true
+no_implicit_optional = true
+warn_redundant_casts = true
+warn_unused_ignores = true
+warn_return_any = true
+implicit_reexport = false
+strict_equality = true
+# --strict end
+
+[tool.pytest.ini_options]
+addopts = [
+  "--strict-config",
+  "--strict-markers",
+]
+xfail_strict = true
+
+[build-system]
+requires = ["setuptools>=61.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
