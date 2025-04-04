@@ -1,0 +1,17 @@
+odoo/addons/energetica_cooperator/.gitignore,sha256=QBwk6AXlTToU5QlfnRdOGxY2yK44GoUfjpBlvdNsrXA,81
+odoo/addons/energetica_cooperator/__init__.py,sha256=jQ-fltIs1ohXt7udDkkJwzh7ckauQW2rbmv1Wtg3SjQ,47
+odoo/addons/energetica_cooperator/__manifest__.py,sha256=ilriv2a_ljiuXnMvgyaXrNJGZpNMAeHplBMOcYzVHqI,615
+odoo/addons/energetica_cooperator/controllers/__init__.py,sha256=4KFqEP2QHFbPN66eQJMdGsmNz2v7ywWv_FR1pW_kkLk,19
+odoo/addons/energetica_cooperator/controllers/main.py,sha256=HpxbsohL17JwNRdwUOG8VPVcige_OqIw_7kce8BeDYI,824
+odoo/addons/energetica_cooperator/i18n/energetica_cooperator.pot,sha256=huPZnVX0Yvyizi3DtjJxHJQiF6vpAd-GnwF5YEkIDBg,9207
+odoo/addons/energetica_cooperator/i18n/es.po,sha256=7lbXEr4SoIVcGmmeowmp0jGh7bzcu_CMQR29Uj7ItlY,10635
+odoo/addons/energetica_cooperator/models/__init__.py,sha256=oow36PTVnsU6TGil-33KDiEz7YSk1zvt5l8WSdpmGnM,61
+odoo/addons/energetica_cooperator/models/res_partner.py,sha256=pBJXjsIZggBL0fvY3uFtrhEhw4nVAxxdRYG39E6GmSI,215
+odoo/addons/energetica_cooperator/models/subscription_request.py,sha256=keeHbYClZyY3zvLx8EyhN8MfFOgWIw85hceiPsp4mtM,330
+odoo/addons/energetica_cooperator/views/res_partner.xml,sha256=VO3BpoW7jYUsyFmZ5UcHNQ9rpktsO1hARUbqs3bhORU,637
+odoo/addons/energetica_cooperator/views/subscription_request.xml,sha256=1u3yYK9SjUEUgSlA1yw13DthJMScezFfDg4eQiZNEQI,858
+odoo/addons/energetica_cooperator/views/subscription_template.xml,sha256=HIuZkelZOdTaDM3PfCgrhNMrn0Z5mYO6MbcsF-s7J2I,4574
+odoo_addon_energetica_cooperator-16.0.2.0.0.1.dist-info/METADATA,sha256=pjzPNHEiBtbkrSA-w-zjb0T2y8zjD5NoZFZY-dS37ns,646
+odoo_addon_energetica_cooperator-16.0.2.0.0.1.dist-info/WHEEL,sha256=9fEMia4zL7ZuZbnCOrcYogUhmn4XFIVaJ8G4YGI31xc,81
+odoo_addon_energetica_cooperator-16.0.2.0.0.1.dist-info/top_level.txt,sha256=QE6RBQ0QX5f4eFuUcGgU5Kbq1A_qJcDs-e_vpr6pmfU,4
+odoo_addon_energetica_cooperator-16.0.2.0.0.1.dist-info/RECORD,,
