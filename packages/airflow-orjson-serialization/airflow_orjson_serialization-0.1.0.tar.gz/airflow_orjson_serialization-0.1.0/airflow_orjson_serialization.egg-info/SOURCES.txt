@@ -1,0 +1,12 @@
+README.md
+pyproject.toml
+airflow_orjson_serialization/__init__.py
+airflow_orjson_serialization/cli.py
+airflow_orjson_serialization/json.py
+airflow_orjson_serialization.egg-info/PKG-INFO
+airflow_orjson_serialization.egg-info/SOURCES.txt
+airflow_orjson_serialization.egg-info/dependency_links.txt
+airflow_orjson_serialization.egg-info/entry_points.txt
+airflow_orjson_serialization.egg-info/requires.txt
+airflow_orjson_serialization.egg-info/top_level.txt
+tests/test_json.py

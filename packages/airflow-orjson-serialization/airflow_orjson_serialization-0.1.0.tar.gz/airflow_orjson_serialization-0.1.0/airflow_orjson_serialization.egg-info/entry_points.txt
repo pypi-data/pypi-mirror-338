@@ -1,0 +1,2 @@
+[console_scripts]
+airflow-orjson = airflow_orjson_serialization.cli:main

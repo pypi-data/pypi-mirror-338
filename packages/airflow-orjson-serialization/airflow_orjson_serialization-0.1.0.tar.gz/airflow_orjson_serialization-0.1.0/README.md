@@ -1,0 +1,44 @@
+# airflow-orjson-serialization
+
+A fast and simple drop-in JSON serialization module for Apache Airflow, using [`orjson`](https://github.com/ijl/orjson).
+
+## 🚀 Features
+
+- Drop-in replacement for Airflow's JSON handling
+- Based on `orjson` for maximum performance
+- Easy integration via `airflow_local_settings.py`
+
+## 🔧 Installation
+
+```bash
+pip install airflow-orjson-serialization
+```
+
+## ⚙️ Usage
+
+After installing, run the following command to generate your `airflow_local_settings.py`:
+
+```bash
+airflow-orjson init
+```
+
+Optionally specify a custom home directory:
+
+```bash
+airflow-orjson init -H /path/to/your/airflow/home
+```
+
+This will create a file like:
+
+```python
+from airflow_orjson_serialization.json import ORJson
+json = ORJson()
+```
+
+Make sure this file is located in `$AIRFLOW_HOME/airflow_local_settings.py` or set via:
+
+```bash
+export AIRFLOW__CORE__AIRFLOW_LOCAL_SETTINGS=/your/path/airflow_local_settings.py
+```
+
+Then restart your Airflow components
