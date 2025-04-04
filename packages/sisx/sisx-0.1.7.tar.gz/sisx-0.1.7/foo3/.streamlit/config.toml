@@ -1,0 +1,20 @@
+[theme]
+primaryColor = "#FF4B4B"
+backgroundColor = "#FFFFFF"
+secondaryBackgroundColor = "#F0F2F6"
+textColor = "#262730"
+font = "sans serif"
+
+[browser]
+gatherUsageStats = false
+
+[client]
+toolbarMode = "minimal"
+
+[server]
+enableStaticServing = true
+
+[pages]
+home = "🏠"
+usage_metrics = "📊"
+cost_analysis = "💰"
