@@ -1,0 +1,1 @@
+from .sawadbot import sstart

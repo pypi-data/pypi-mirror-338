@@ -1,0 +1,9 @@
+Metadata-Version: 2.2
+Name: sawadbot
+Version: 3.9.7
+Summary: Tele : @B_Q_5
+Author: B_Q_5
+Requires-Dist: pyTelegramBotAPI
+Dynamic: author
+Dynamic: requires-dist
+Dynamic: summary
