@@ -1,0 +1,8 @@
+aiohttp
+yarl
+telethon
+cryptg
+python-dotenv
+
+[fast]
+cryptg>=0.2
