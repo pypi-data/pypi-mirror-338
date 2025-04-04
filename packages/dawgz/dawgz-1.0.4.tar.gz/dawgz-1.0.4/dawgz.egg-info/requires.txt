@@ -1,0 +1,5 @@
+cloudpickle>=2.0.0
+tabulate>=0.8.0
+
+[lint]
+ruff==0.9.9
