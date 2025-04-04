@@ -1,0 +1,90 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "ffmpeg-converter"
+dynamic = ["version"]
+description = "基于 FFmpeg 的音视频格式转换工具"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = []
+
+[tool.hatch.version]
+path = "src/__init__.py"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src"]
+
+[tool.ruff]
+line-length = 88
+target-version = "py311"
+
+[tool.ruff.format]
+quote-style = "double"
+indent-style = "space"
+skip-magic-trailing-comma = false
+line-ending = "auto"
+
+[tool.ruff.lint]
+select = [
+    "E",  # pycodestyle
+    "F",  # pyflakes
+    "I",  # isort
+    "N",  # pep8-naming
+    "UP", # pyupgrade
+    "B",  # flake8-bugbear
+    "C4", # flake8-comprehensions
+]
+
+[tool.mypy]
+python_version = "3.11"
+strict = true
+warn_return_any = true
+warn_unused_configs = true
+disallow_untyped_defs = true
+check_untyped_defs = true
+packages = ["src"]
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+pythonpath = [".", "src"]
+addopts = "--cov=src --cov-report=html --cov-report=xml"
+
+[dependency-groups]
+dev = [
+    "ruff>=0.3.0",
+    "mypy>=1.9.0",
+    "pytest>=8.3.5",
+    "pytest-asyncio>=0.26.0",
+    "pytest-cov>=4.1.0",
+    "pre-commit>=3.6.2",
+    "python-semantic-release>=9.21.0",
+]
+
+[tool.semantic_release]
+version_variable = ["src/__init__.py:__version__"]
+branch = "main"
+changelog_file = "CHANGELOG.md"
+build_command = "python -m build"
+upload_to_repository = true
+commit_parser = "conventional"
+tag_format = "v{version}"
+
+[tool.semantic_release.version]
+write_version = true
+source = "commit"
+
+[tool.semantic_release.commit]
+message_template = "chore(release): {version} [skip ci]"
+
+[tool.semantic_release.changelog]
+changelog_sections = [
+    { type = "feat", section = "✨ Features", hidden = false },
+    { type = "fix", section = "🐛 Bug Fixes", hidden = false },
+    { type = "docs", section = "📝 Documentation", hidden = false },
+    { type = "refactor", section = "♻️ Code Refactoring", hidden = false },
+    { type = "perf", section = "⚡️ Performance", hidden = false },
+]
