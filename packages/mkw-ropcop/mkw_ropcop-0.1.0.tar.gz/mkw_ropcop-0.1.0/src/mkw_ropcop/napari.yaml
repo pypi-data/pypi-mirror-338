@@ -1,0 +1,10 @@
+name: mkw-ropcop
+display_name: mKw RopSeg
+contributions:
+  commands:
+    - id: mkw-ropcop.make_dock_widget
+      python_name: mkw_ropcop._dock_widget:napari_experimental_provide_dock_widget
+      title: Make mKw RopCop Widget
+  widgets:
+    - command: mkw-ropcop.make_dock_widget
+      display_name: mKw RopSeg

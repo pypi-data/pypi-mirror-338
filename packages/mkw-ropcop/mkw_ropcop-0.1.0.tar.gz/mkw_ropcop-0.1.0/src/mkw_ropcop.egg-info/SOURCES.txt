@@ -1,0 +1,15 @@
+README.md
+pyproject.toml
+setup.cfg
+src/mkw_ropcop/__init__.py
+src/mkw_ropcop/_dock_widget.py
+src/mkw_ropcop/_version.py
+src/mkw_ropcop/napari.yaml
+src/mkw_ropcop/ropcop_browser_gui.py
+src/mkw_ropcop/ropcop_segmenter_widget.py
+src/mkw_ropcop.egg-info/PKG-INFO
+src/mkw_ropcop.egg-info/SOURCES.txt
+src/mkw_ropcop.egg-info/dependency_links.txt
+src/mkw_ropcop.egg-info/entry_points.txt
+src/mkw_ropcop.egg-info/requires.txt
+src/mkw_ropcop.egg-info/top_level.txt

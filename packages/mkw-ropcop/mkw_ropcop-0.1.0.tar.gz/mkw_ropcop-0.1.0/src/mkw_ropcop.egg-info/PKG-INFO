@@ -1,0 +1,64 @@
+Metadata-Version: 2.4
+Name: mkw-ropcop
+Version: 0.1.0
+Summary: Napari plugin for ROP data copying and segmentation assistance.
+Author-email: "Mani K. Woodward" <maniwoodward@gmail.com>
+License: BSD-3-Clause
+Project-URL: Bug Tracker, https://github.com/Wuketan/mKw-RopCop/issues
+Project-URL: Documentation, https://github.com/Wuketan/mKw-RopCop#readme
+Project-URL: Source Code, https://github.com/Wuketan/mKw-RopCop
+Project-URL: User Support, https://github.com/Wuketan/mKw-RopCop/issues
+Classifier: Development Status :: 3 - Alpha
+Classifier: Framework :: napari
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Scientific/Engineering :: Image Processing
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+Requires-Dist: napari[all]>=0.4.18
+Requires-Dist: qtpy
+Requires-Dist: numpy
+Requires-Dist: scikit-image
+Requires-Dist: polars
+
+# mKw RopCop
+
+Napari plugin for ROP data copying and segmentation assistance.
+
+Provides tools for:
+- Copying scan data based on a study parquet file.
+- Loading local scan data into Napari.
+- Basic segmentation tools (add layer, brush size, paint/erase).
+- ROI-based Otsu thresholding.
+- Full-view edge detection labeling.
+
+## Installation
+
+For development, install in editable mode:
+
+```bash
+cd Mani_Tools_plugins/mKw-RopCop
+pip install -e .
+```
+
+Or install using the provided script:
+
+```bash
+python Mani_Tools_plugins/mKw-RopCop/install_dev.py
+```
+
+## Usage
+
+Launch Napari. The "mKw RopCop" widget should appear in the Plugins menu.
+
+Alternatively, launch with the helper script:
+
+```bash
+python Mani_Tools_plugins/mKw-RopCop/launch_ropcop.py

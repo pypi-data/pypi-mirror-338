@@ -1,0 +1,61 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mkw-ropcop"
+authors = [
+    { name = "Mani K. Woodward", email = "maniwoodward@gmail.com" }, # <-- Update email if desired
+]
+description = "Napari plugin for ROP data copying and segmentation assistance."
+readme = "README.md"
+license = { text = "BSD-3-Clause" } # Or your preferred license
+requires-python = ">=3.9"
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Framework :: napari",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: BSD License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Topic :: Scientific/Engineering :: Image Processing",
+]
+dependencies = [
+    "napari[all]>=0.4.18", # Minimum napari version
+    "qtpy",
+    "numpy",
+    "scikit-image",
+    "polars", # Added dependency
+]
+dynamic = ["version"] # Version is read from _version.py
+
+[project.entry-points."napari.manifest"]
+mkw-ropcop = "mkw_ropcop:napari.yaml"
+
+# Add entry point for the standalone browser GUI
+[project.scripts]
+ropcop-browser = "mkw_ropcop.ropcop_browser_gui:main"
+
+[project.urls]
+"Bug Tracker" = "https://github.com/Wuketan/mKw-RopCop/issues"
+"Documentation" = "https://github.com/Wuketan/mKw-RopCop#readme" #
+"Source Code" = "https://github.com/Wuketan/mKw-RopCop"
+"User Support" = "https://github.com/Wuketan/mKw-RopCop/issues"
+
+[tool.setuptools]
+py-modules = []
+include-package-data = true
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+"*" = ["*.yaml"]
+
+[tool.setuptools.dynamic]
+version = {attr = "mkw_ropcop._version.__version__"}
