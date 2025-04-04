@@ -1,0 +1,25 @@
+[project]
+name = "yanxi0830-package"
+version = "0.2.0"
+description = "Add your description here"
+authors = [
+    { name = "Xi Yan", email = "xiyan@meta.com" }
+]
+dependencies = []
+readme = "README.md"
+requires-python = ">= 3.8"
+license = {text = "MIT"}
+
+[build-system]
+requires = ["hatchling==1.26.3", "hatch-fancy-pypi-readme"]
+build-backend = "hatchling.build"
+
+[tool.rye]
+managed = true
+dev-dependencies = []
+
+[tool.hatch.metadata]
+allow-direct-references = true
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/yanxi0830_package"]
