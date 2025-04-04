@@ -1,0 +1,8 @@
+parseutil/__init__.py,sha256=_MOmy02CPgDfY540fdkDzWY4xzDJHz12KeClpLPunG4,259
+parseutil/diff.py,sha256=_N7U0e7vslyo8m3CI01vLRG7O0OC1Zvd_5dwMtQXJ8M,5283
+parseutil/text.py,sha256=31m1V_6PhtwJHhUSzGPWgdUlxcNCETLigdDQxK5zvRc,23915
+parseutil/time.py,sha256=wOBJkFK8vrO4d6Mq_YsukE5QD-YXEw-rpHtq7XpT4vo,12392
+parseutil/types.py,sha256=e31Kx4EGNwKU8Sxsv9wd1JiYwUS6idC787FzsRGyyjw,973
+parseutil-0.1.1.dist-info/METADATA,sha256=iTR7eBGCsX8zyulL020ImTo7PiPnpH5uiO7Y-lYWjys,1230
+parseutil-0.1.1.dist-info/WHEEL,sha256=fGIA9gx4Qxk2KDKeNJCbOEwSrmLtjWCwzBz351GyrPQ,88
+parseutil-0.1.1.dist-info/RECORD,,
