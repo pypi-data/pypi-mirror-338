@@ -1,0 +1,11 @@
+[profile.default]
+default-filter = "not test(/test_k8s_integration_/)"
+
+[profile.k8s_integration]
+default-filter = "test(/test_k8s_integration_/)"
+
+[profile.ci.junit]
+path = "junit.xml"
+
+[profile.ci_k8s_integration.junit]
+path = "junit.xml"
