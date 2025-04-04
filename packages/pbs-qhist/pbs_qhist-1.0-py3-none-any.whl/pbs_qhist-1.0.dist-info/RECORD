@@ -1,0 +1,10 @@
+pbs_qhist-1.0.dist-info/licenses/LICENSE,sha256=NpIo2uwzdmDuCjHd_1z636N62JDWCfjOJS-2bHfrB2E,1097
+qhist/__init__.py,sha256=LH_gbBWr_JFuywprlz6iwagUhsTXzpmZpkiX-jfR4YQ,20
+qhist/qhist.py,sha256=uvIESiwtkEptZSSFXF3XrqGW5gVxBUe4ebYfionufMI,23970
+qhist/cfg/default.json,sha256=vZqUalUY_U2s1-n27havpvbVzdaELj_PmU4ayeW5Nlc,4038
+qhist/cfg/example.json,sha256=_UyEloB0KY7WWq93ENWPK1hhGFD9A5R0Ojc4wdryviE,59
+pbs_qhist-1.0.dist-info/METADATA,sha256=04CvwnSGPev6lVgHpxUZ2KwQREsxV5XXc_TDNzPwe8A,4644
+pbs_qhist-1.0.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+pbs_qhist-1.0.dist-info/entry_points.txt,sha256=w9aEbj_IBougW3Nz0S9znYS9cXHmsnPIvbrf3YRgEWs,43
+pbs_qhist-1.0.dist-info/top_level.txt,sha256=2VwNhDQWc-yhib_qRpG9HEv9aYjolelhWNzM2wAWAVE,6
+pbs_qhist-1.0.dist-info/RECORD,,
