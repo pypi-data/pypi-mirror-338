@@ -1,0 +1,8 @@
+*.zarr
+*cache
+logs/
+*.log
+
+gefs/
+era5/
+replay/
