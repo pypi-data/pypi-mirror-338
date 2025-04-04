@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+termfx/__init__.py
+termfx/core.py
+termfx.egg-info/PKG-INFO
+termfx.egg-info/SOURCES.txt
+termfx.egg-info/dependency_links.txt
+termfx.egg-info/requires.txt
+termfx.egg-info/top_level.txt
