@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: rusticai-redis
+Version: 0.0.1
+Summary: Redis package for Rustic AI
+Home-page: https://www.rustic.ai/
+License: Apache-2.0
+Author: Dragonscale Industries Inc.
+Author-email: dev@dragonscale.ai
+Requires-Python: >=3.12,<4.0
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Dist: redis[hiredis] (>=5.2.1,<6.0.0)
+Requires-Dist: rusticai-core (>=0.0.2,<0.1.0)
+Project-URL: Repository, https://github.com/rustic-ai/python-framework
+Project-URL: Rustic AI Core, https://pypi.org/project/rusticai-core/
+Description-Content-Type: text/markdown
+
+# Rustic AI Redis
+
+It provides a Redis based implementations of [rusticai-core](https://pypi.org/project/rusticai-core/)'s messaging backend, key value store, etc.
+
+## Installing
+
+```shell
+pip install rusticai-redis
+```
+
+## Building from Source
+
+```shell
+poetry install --with dev
+poetry build
+```
