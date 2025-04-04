@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/encryptpolydev/__init__.py
+src/encryptpolydev/polydev.py
+src/encryptpolydev.egg-info/PKG-INFO
+src/encryptpolydev.egg-info/SOURCES.txt
+src/encryptpolydev.egg-info/dependency_links.txt
+src/encryptpolydev.egg-info/top_level.txt
