@@ -1,0 +1,10 @@
+oas_patch/__init__.py,sha256=HAmQIAahb9pEmJ4881WDANbAafVtJSY_XAC_DRT1yVY,338
+oas_patch/file_utils.py,sha256=_1At0uTQdcThfnUMxRJ6c1MDeblRxaL7o1S-gLT0wUM,2566
+oas_patch/oas_patcher_cli.py,sha256=WcfVC5T1gcJIUaVjO_ehZOP4C4lZF575ma4mQeSkwdI,2291
+oas_patch/overlay.py,sha256=RnzUa4dBNsplo106UUu-xpBf5TdBCTRPWarJm33sE4M,3160
+oas_patch-0.0.3.dist-info/licenses/LICENSE,sha256=5kss5L1o9m8Xd23U23MiqPnODujANK4ReMYTUQleUO4,1075
+oas_patch-0.0.3.dist-info/METADATA,sha256=gMM62uyjZrkbg_RZx03QUu0JuxA4inZ8woDPfDWucqk,562
+oas_patch-0.0.3.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+oas_patch-0.0.3.dist-info/entry_points.txt,sha256=n9MT1z196E-HuHyYMWCdaKFujEyou-1n2cU7GoWYlcA,60
+oas_patch-0.0.3.dist-info/top_level.txt,sha256=KYHOQ6CQ7Pi7rMAtM3ORtjftmQ1kOeAsYcfsQXC6jPg,10
+oas_patch-0.0.3.dist-info/RECORD,,
