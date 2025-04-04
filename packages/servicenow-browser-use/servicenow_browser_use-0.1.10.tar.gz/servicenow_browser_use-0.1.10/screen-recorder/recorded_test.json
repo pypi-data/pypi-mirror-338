@@ -1,0 +1,28 @@
+{
+  "id": "recording_20250327_094417",
+  "version": "1.0",
+  "name": "Recorded Test",
+  "url": "screen_recording",
+  "tests": [
+    {
+      "id": "1743048857.550032",
+      "name": "Recorded Test",
+      "commands": []
+    }
+  ],
+  "urls": [],
+  "plugins": [],
+  "variables": {},
+  "suites": [
+    {
+      "id": "suite_1",
+      "name": "Default Suite",
+      "persistSession": false,
+      "parallel": false,
+      "timeout": 300,
+      "tests": [
+        "test_1"
+      ]
+    }
+  ]
+}

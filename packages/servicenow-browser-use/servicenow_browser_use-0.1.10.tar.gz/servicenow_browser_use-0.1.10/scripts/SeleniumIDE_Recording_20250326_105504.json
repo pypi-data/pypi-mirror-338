@@ -1,0 +1,21 @@
+{
+  "version": "2.0",
+  "id": "selenium-ide-recording",
+  "name": "Browser Actions Recording",
+  "url": "http://localhost:8080",
+  "tests": [
+    {
+      "id": "test-1",
+      "name": "Browser Actions",
+      "commands": [
+        {
+          "type": "verify",
+          "target": "",
+          "value": "Successfully logged in with username 'admin' and password 'admin', then navigated to Workflow Studio and verified the page loaded.",
+          "timestamp": 51.06269812583923,
+          "is_shadow": false
+        }
+      ]
+    }
+  ]
+}
