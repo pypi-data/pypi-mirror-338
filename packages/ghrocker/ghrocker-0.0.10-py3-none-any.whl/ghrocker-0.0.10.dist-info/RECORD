@@ -1,0 +1,10 @@
+ghrocker/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ghrocker/ghpages_extension.py,sha256=Jvg2FT9UEBo9U9M-dTR715dWZmqfBgRU41NRSpkrO4U,1679
+ghrocker/ghrocker.py,sha256=5cGns7FiO96XEJRul7AHRmCiuQL7Ycwz8BQqe87mB2k,3838
+ghrocker/templates/ghpages_snippet.Dockerfile.em,sha256=iBhA7hb0DNZl1_pLVRlEvHBiCEv32uB6B_1aqk9UBCI,280
+ghrocker-0.0.10.dist-info/licenses/LICENSE,sha256=z8d0m5b2O9McPEK1xHG_dWgUBT6EfBDz6wA0F7xSPTA,11358
+ghrocker-0.0.10.dist-info/METADATA,sha256=zxybBQBgD29Tk6Lzjz2EAm66Dm4Eiwt5KWJAV83r_Lo,891
+ghrocker-0.0.10.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+ghrocker-0.0.10.dist-info/entry_points.txt,sha256=XVwNoyJxuDb_yqWWgIVGMIZRE6GFbm8xGN-Do02-azU,187
+ghrocker-0.0.10.dist-info/top_level.txt,sha256=7Ge0FQyI5PEJEmuHP0XX5oeXTzxiXhCENe7lL3t_HyM,9
+ghrocker-0.0.10.dist-info/RECORD,,

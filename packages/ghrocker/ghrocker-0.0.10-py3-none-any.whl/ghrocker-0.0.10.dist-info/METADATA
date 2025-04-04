@@ -1,0 +1,34 @@
+Metadata-Version: 2.4
+Name: ghrocker
+Version: 0.0.10
+Summary: A rocker extension to locally test github pages.
+Author-email: Tully Foote <tfoote@osrfoundation.org>
+License: Apache 2.0
+Project-URL: Homepage, https://github.com/tfoote/ghrocker
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: empy
+Requires-Dist: rocker>=0.2.13
+Dynamic: license-file
+
+# ghrocker
+
+## Overview
+
+This is an extension for rocker https://github.com/osrf/rocker
+
+It provides bindings to locally test a site expected to be hosted in github pages locally. 
+
+## Usage
+
+    ghrocker PATH_TO_GH_PAGES_REPOSITORY
+
+
+The browse to http://localhost:4000
+Or launch it via:
+
+    sensible-browser http://localhost:4000
