@@ -1,0 +1,10 @@
+main.py,sha256=GaanWD-xIWOmsf9XcEQaK0FlFtMZuilLQiUcwBYSCok,454
+segmentmesher/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+segmentmesher/geometry.py,sha256=nsMWVtPyljhP6fWEGuss5eJydYC7O49kwRYfi471HB8,3397
+segmentmesher/mesh.py,sha256=dt_i5FpP-gPMBzsG5s4ozpBQPMD1IhedD8UYc5Jw7h4,1170
+segmentmesher/test_data.py,sha256=WaRFX9gk7SebcoAvdpcYrKuANW8hn0xRvfQ_BsxNtI4,559
+segmentmesher-0.1.0.dist-info/METADATA,sha256=5XrpY-8nu4DGIywPSLN6uEa60-_0EVNC_cxzAiE70Mc,1023
+segmentmesher-0.1.0.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+segmentmesher-0.1.0.dist-info/entry_points.txt,sha256=_cJcedboZ8YNfmx1l69-9939rY3OA1x2TWeFixNKr3w,57
+segmentmesher-0.1.0.dist-info/top_level.txt,sha256=t81qVcTvEu8bqxNIBGM8YW_Jm1S5gjP7G0dBfBC2w80,19
+segmentmesher-0.1.0.dist-info/RECORD,,

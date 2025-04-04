@@ -1,0 +1,37 @@
+Metadata-Version: 2.4
+Name: segmentmesher
+Version: 0.1.0
+Summary: Add your description here
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+Requires-Dist: numpy>=2.1.2
+Requires-Dist: pillow>=11.0.0
+Requires-Dist: pyvista[all]>=0.44.1
+Requires-Dist: scikit-image>=0.24.0
+Requires-Dist: wildmeshing>=0.4
+
+# SegmentMesher
+
+Segmentmesher is a small python-application for creating labeled 2D meshes from segmented png-images.
+A few example images are located in the `resources`-folder.
+
+To install run
+
+```bash
+pip install .
+```
+
+and to run:
+
+```
+segmentmesher -i resources/pixelbrain.png -o 2dbrain.vtu --visualize
+```
+
+which will first open a pyplot-window showing the input image, then upon closing the pyplot-window the segments will be meshed and stored to the file `2dbrain.vtu` which will be visualized in a pyvista-window.
+If you drop the `--visualize`-flag nothing will be shown underways, and the mesh can be inspected by e.g. `paraview`.
+
+To see possible arguments, run
+
+```
+segmentmesher --help
+```
