@@ -1,0 +1,13 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "openlosh"
+version = "0.0.0"
+authors = [{ name = "Your Name", email = "attentionmech@gmail.com" }]
+description = "A dummy package named OpenLosh."
+readme = "README.md"
+requires-python = ">=3.6"
+license = { file = "LICENSE" }
+dependencies = []

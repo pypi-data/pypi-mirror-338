@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+openlosh/__init__.py
+openlosh/main.py
+openlosh.egg-info/PKG-INFO
+openlosh.egg-info/SOURCES.txt
+openlosh.egg-info/dependency_links.txt
+openlosh.egg-info/top_level.txt
