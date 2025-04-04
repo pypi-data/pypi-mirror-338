@@ -1,0 +1,24 @@
+Metadata-Version: 2.4
+Name: adidnsdump
+Version: 1.4.0
+Summary: Active Directory Integrated DNS dumping by any authenticated user
+Home-page: https://github.com/dirkjanm/adidnsdump
+Author: Dirk-jan Mollema (@_dirkjan)
+Author-email: dirkjan@dirkjanm.io
+License: MIT
+Classifier: Intended Audience :: Information Technology
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+License-File: LICENSE
+Requires-Dist: impacket
+Requires-Dist: ldap3!=2.5.0,!=2.5.2,!=2.6,>=2.5
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: home-page
+Dynamic: license
+Dynamic: license-file
+Dynamic: requires-dist
+Dynamic: summary
