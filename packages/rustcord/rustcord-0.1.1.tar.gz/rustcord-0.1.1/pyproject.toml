@@ -1,0 +1,41 @@
+[build-system]
+requires = ["setuptools>=42"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "rustcord"
+version = "0.1.1"
+description = "An asynchronous Python library with Rust core for high-performance Discord API interactions"
+readme = "README.md"
+requires-python = ">=3.8"
+license = { text = "MIT" }
+keywords = ["discord", "api", "async", "rust"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Rust",
+    "Intended Audience :: Developers",
+    "Topic :: Software Development :: Libraries",
+    "Topic :: Communications :: Chat",
+]
+dependencies = [
+    "asyncio>=3.4.3",
+    "aiohttp>=3.8.0",
+    "websockets>=10.0",
+    "setuptools>=75.3.2",
+    "gunicorn>=23.0.0",
+    "build>=1.2.2.post1",
+    "twine>=6.1.0",
+    "wheel>=0.45.1",
+]
+
+[project.urls]
+Repository = "https://github.com/user/rustcord"
+Documentation = "https://github.com/user/rustcord#documentation"
+
+[tool.maturin]
+python-source = "."
+module-name = "rustcord._rust"
