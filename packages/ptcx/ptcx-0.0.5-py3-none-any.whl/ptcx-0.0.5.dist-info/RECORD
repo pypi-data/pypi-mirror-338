@@ -1,0 +1,12 @@
+ptcx/__init__.py,sha256=EOzchUvQXNRtnXYGD5eqHWrkbvVetuo3vdm3d4y6Eas,1716
+ptcx/__main__.py,sha256=FhOBWiFABEvktjc2kjAVrcr0QCeQWqZZSNFNvLk-Pk0,950
+ptcx/patch.py,sha256=N4R3HoPNfFr47MtXohyFFhuFPRw_uNxrEkgtwjk8CkQ,2630
+ptcx/utils/fs.py,sha256=pv-cqeew-tBJwp1GPcfBjMDJh0_t3xL2gQoj8sSQEm8,407
+ptcx/utils/imprt.py,sha256=ff0wvWLzXfMEHegecUl3VA5jZNmYeX0OkDD00XR3h5Q,479
+ptcx/utils/wrap.py,sha256=bh-LRuaksUOeJNHiL4kWaqsh6bSABPDtOyeI2BCXhxg,2059
+ptcx-0.0.5.dist-info/licenses/LICENSE,sha256=P7jYDuFCvrHSeytLePBodzQLYd28XE88DTh1zD9ok8w,1493
+ptcx-0.0.5.dist-info/METADATA,sha256=YkB0L-KT3M9h82dokbS0_DKyYdN3TWS_W4M6IIAJ6Ec,955
+ptcx-0.0.5.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+ptcx-0.0.5.dist-info/entry_points.txt,sha256=lRL6gGaoWX94VAvv1JKYIyRNoRUMknsHKU1KfSPZCw8,43
+ptcx-0.0.5.dist-info/top_level.txt,sha256=5caQ5k_2975FqkCSZkvuMyO4QZ1j5LzLaRx0RigTC8k,5
+ptcx-0.0.5.dist-info/RECORD,,
