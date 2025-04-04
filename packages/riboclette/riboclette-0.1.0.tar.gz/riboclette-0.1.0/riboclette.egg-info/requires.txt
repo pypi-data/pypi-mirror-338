@@ -1,0 +1,9 @@
+numpy>=1.26.4
+transformers>=4.38.0
+captum>=0.8.0
+
+[cpu]
+torch==2.6.0
+
+[cuda]
+torch==2.6.0+cu118
