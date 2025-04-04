@@ -1,0 +1,223 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "probly"
+version = "0.2.0"
+dynamic = ["readme"]
+description = "Uncertainty Representation and Quantification for Machine Learning"
+license = "MIT"
+requires-python = ">=3.10"
+dependencies = [
+    # core
+    "matplotlib>=3.10.1",
+    "mpltern>=1.0.4",
+    "numpy<=2.1.2,>=2.0.0",
+    "torch>=2.6.0",
+    "torchvision>=0.21.0",
+]
+authors = [
+    {name = "Paul Hofman", email = "paul.hofman@ifi.lmu.de"},
+    {name = "Timo Löhr"},
+    {name = "Maximilian Muschalik"},
+    {name = "Clemens Damke"},
+    {name = "Alireza Javanmardi"}
+]
+classifiers = [
+    "Development Status :: 2 - Pre-Alpha",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Science/Research",
+    "Topic :: Scientific/Engineering",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    'Operating System :: Microsoft :: Windows',
+    'Operating System :: Unix',
+    'Operating System :: MacOS',
+    'Programming Language :: Python :: 3',
+    'Programming Language :: Python :: 3.10',
+    'Programming Language :: Python :: 3.11',
+    'Programming Language :: Python :: 3.12',
+    'Programming Language :: Python :: 3.13',
+]
+
+[tool.setuptools.packages.find]
+where = ["./src"]
+include = ["probly*"]
+
+[tool.setuptools.dynamic]
+readme = {file = ["README.md", "CHANGELOG.md"], content-type = "text/markdown"}
+
+[project.urls]
+# documentation = TODO: we need to add the documentation
+source = "https://github.com/pwhofman/probly"
+tracker = "https://github.com/pwhofman/probly/issues"
+changelog = "https://github.com/pwhofman/probly/blob/main/CHANGELOG.md"
+
+[project.scripts]
+probly = "probly:main"
+
+[project.optional-dependencies]
+cpu = ["torch==2.6.0"]
+cuda12 = ["torch==2.6.0"]
+
+[tool.uv]
+conflicts = [[{ extra = "cpu" }, { extra = "cuda12" }]]
+
+[tool.uv.sources]
+torch = [
+    { index = "torch-cpu", extra = "cpu" },
+    { index = "torch-cuda12", extra = "cuda12" },
+]
+
+[[tool.uv.index]]
+name = "torch-cpu"
+url = "https://download.pytorch.org/whl/cpu"
+explicit = true
+
+[[tool.uv.index]]
+name = "torch-cuda12"
+url = "https://download.pytorch.org/whl/cu124"
+explicit = true
+
+[dependency-groups]
+test = [
+    "pytest>=8.3.5",  # for testing
+    "pytest-cov>=6.0.0",  # for coverage
+    "pytest-xdist>=3.6.1",  # for parallel testing
+]
+
+lint = [
+    "ruff>=0.11.2",  # for linting
+    "pre-commit>=4.2.0",  # for running the linters pre-commit hooks
+]
+
+dev = [
+    "ipykernel>=6.29.5",
+    "notebook>=7.3.3",
+    "ipywidgets",
+    {include-group = "test"},
+    {include-group = "lint"},
+]
+
+
+[tool.ruff]
+line-length = 120
+target-version = "py310"
+output-format = "full"
+
+[tool.ruff.lint]
+select = [
+    "E",
+    "F",
+    "I",
+    "UP",
+    "A",
+    "D",
+    "ANN",
+    "ARG",
+    "B",
+    "BLE",
+    "C4",
+    "ERA",
+    "FBT",
+    "INP",
+    "N",
+    "NPY",
+    "PD",
+    "PLC",
+    "PLE",
+    "PLR",
+    "PLW",
+    "PIE",
+    "PT",
+    "PTH",
+    "Q",
+    "PGH004",
+    "RET",
+    "RUF",
+    "C90",
+    "S",
+    "SIM",
+    "T10",
+    "T20",
+    "TID",
+    "TCH",
+    "W",
+    "YTT",
+]
+ignore = [
+    "N812", # Checks for lowercase imports that are aliased to non-lowercase names (e.g. torch.nn.functional as F)
+    "RET504", # Unnecessary assignment to {name} before return statement
+    "PLR2004", # Magic value used in comparison, consider replacing {value} with a constant variable
+    "FBT", # enforce keyword for bool
+    "PLR0913", # too many arguments (>5)
+]
+# Exclude a variety of commonly ignored directories.
+exclude = [
+    ".bzr",
+    ".direnv",
+    ".eggs",
+    ".git",
+    ".git-rewrite",
+    ".hg",
+    ".ipynb_checkpoints",
+    ".mypy_cache",
+    ".nox",
+    ".pants.d",
+    ".pyenv",
+    ".pytest_cache",
+    ".pytype",
+    ".ruff_cache",
+    ".svn",
+    ".tox",
+    ".venv",
+    ".vscode",
+    "__pypackages__",
+    "_build",
+    "buck-out",
+    "build",
+    "dist",
+    "node_modules",
+    "site-packages",
+    "venv",
+]
+
+[tool.ruff.lint.pydocstyle]
+convention = "google"
+
+#[tool.ruff.lint]
+# Extend what ruff is allowed to fix, even it it may break
+# This is okay given we use it all the time and it ensures
+# better practices. Would be dangerous if using for first
+# time on established project.
+# extend-safe-fixes = ["ALL"] # TODO use at some point
+
+# Exclude a variety of commonly ignored directories.
+[tool.ruff.lint.per-file-ignores]
+"tests/*.py" = [
+    "S101",
+    "INP001",
+    "D101",
+    "D102",
+    "D103",
+    "D404",
+    "ANN001",
+    "ANN201",
+    "FBT001",
+    "D100",
+    "PLR2004",
+    "PD901",   #  X is a bad variable name. (pandas)
+    "TCH",
+    "N803",
+    "C901",  # Too complex
+]
+"__init__.py" = ["I002"]
+"*.ipynb" = ["T20", "NPY002"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+minversion = "8.0"
+
+[tool.coverage.report]
+fail_under = 0
+directory = "tests"
