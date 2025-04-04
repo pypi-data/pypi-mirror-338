@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+gummypy.egg-info/PKG-INFO
+gummypy.egg-info/SOURCES.txt
+gummypy.egg-info/dependency_links.txt
+gummypy.egg-info/top_level.txt
+src/gummypy/__init__.py
+src/gummypy/gum.py
