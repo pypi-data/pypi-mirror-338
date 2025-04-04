@@ -1,0 +1,12 @@
+README.md
+pyproject.toml
+src/__init__.py
+src/client.py
+src/config.py
+src/helper.py
+src/local_mcp_server.egg-info/PKG-INFO
+src/local_mcp_server.egg-info/SOURCES.txt
+src/local_mcp_server.egg-info/dependency_links.txt
+src/local_mcp_server.egg-info/entry_points.txt
+src/local_mcp_server.egg-info/requires.txt
+src/local_mcp_server.egg-info/top_level.txt
