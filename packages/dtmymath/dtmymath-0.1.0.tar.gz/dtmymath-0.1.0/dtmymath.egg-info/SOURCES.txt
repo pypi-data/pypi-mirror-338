@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+dtmymath.egg-info/PKG-INFO
+dtmymath.egg-info/SOURCES.txt
+dtmymath.egg-info/dependency_links.txt
+dtmymath.egg-info/top_level.txt
+mymath/__init__.py
+mymath/calculator.py
