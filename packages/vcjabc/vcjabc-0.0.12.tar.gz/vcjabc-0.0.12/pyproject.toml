@@ -1,0 +1,27 @@
+[build-system]
+requires = ["flit_core >=3.2"]
+build-backend = "flit_core.buildapi"
+
+[project]
+name = "vcjabc"
+version = "0.0.12"
+description = "A minimal package for DOCX/DOCM operations"
+readme = "README.md"
+requires-python = ">=3.8"
+authors = [
+  { name="Sphynkx", email="sfynkx@gmail.com" }
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Operating System :: OS Independent"
+]
+
+[tool.flit.sdist]
+include = [
+    "vcjabc/bin/handler_linux",
+    "vcjabc/bin/handler_windows.exe"
+]
