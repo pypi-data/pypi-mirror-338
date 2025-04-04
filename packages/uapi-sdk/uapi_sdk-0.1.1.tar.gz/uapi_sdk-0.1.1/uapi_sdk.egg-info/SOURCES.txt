@@ -1,0 +1,12 @@
+README.md
+setup.py
+uapi/__init__.py
+uapi/client.py
+uapi/config.py
+uapi/core.py
+uapi/version.py
+uapi_sdk.egg-info/PKG-INFO
+uapi_sdk.egg-info/SOURCES.txt
+uapi_sdk.egg-info/dependency_links.txt
+uapi_sdk.egg-info/requires.txt
+uapi_sdk.egg-info/top_level.txt
