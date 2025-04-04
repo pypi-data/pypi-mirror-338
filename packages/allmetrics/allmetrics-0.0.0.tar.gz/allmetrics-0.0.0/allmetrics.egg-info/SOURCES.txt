@@ -1,0 +1,16 @@
+LICENSE
+README.md
+setup.py
+Test/__init__.py
+allmetrics/__init__.py
+allmetrics/classification.py
+allmetrics/clustering.py
+allmetrics/imagetoimage.py
+allmetrics/regression.py
+allmetrics/segmentation.py
+allmetrics/utils.py
+allmetrics.egg-info/PKG-INFO
+allmetrics.egg-info/SOURCES.txt
+allmetrics.egg-info/dependency_links.txt
+allmetrics.egg-info/requires.txt
+allmetrics.egg-info/top_level.txt
