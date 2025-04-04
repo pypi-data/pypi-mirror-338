@@ -1,0 +1,6 @@
+udbserver/__init__.py,sha256=nKgoQPLwcw4CYaJN_oR3pmdJzLZKXh9uEQC_Bk_516Q,639
+udbserver/libudbserver.so,sha256=y3DW4cYcckOt_TKxSbSdcmwv816lG7k4oPVu5kssuUE,621712
+udbserver-0.2.0.dist-info/METADATA,sha256=pD7ze4QruTL8nJS8sRuw3rpb9jZPwdTPh8eXRID9IsQ,1163
+udbserver-0.2.0.dist-info/WHEEL,sha256=EZDBLhh--ie-kaseoZHhSumtTSIOojLq3bawHT0D70o,109
+udbserver-0.2.0.dist-info/top_level.txt,sha256=pABQ3QS701pKPXPzjNZAduS-pcQ9k3b22z5INoq3CcU,10
+udbserver-0.2.0.dist-info/RECORD,,
