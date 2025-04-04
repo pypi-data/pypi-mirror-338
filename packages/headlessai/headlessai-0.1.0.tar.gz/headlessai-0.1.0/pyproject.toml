@@ -1,0 +1,11 @@
+[project]
+name = "headlessai"
+version = "0.1.0"
+description = "Core framework for HeadlessAI — an extensible AI pipeline runtime"
+authors = [{ name = "DeepStoneAI" }]
+license = "MIT"
+readme = "README.md"
+
+[project.urls]
+Homepage = "https://deepst.one/headlessai"
+Repository = "https://github.com/DeepStoneAI/headlessai-core"
