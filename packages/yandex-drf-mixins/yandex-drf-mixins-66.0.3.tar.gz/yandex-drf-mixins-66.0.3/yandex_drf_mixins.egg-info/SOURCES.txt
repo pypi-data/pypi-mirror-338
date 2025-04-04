@@ -1,0 +1,6 @@
+README.md
+setup.py
+yandex_drf_mixins.egg-info/PKG-INFO
+yandex_drf_mixins.egg-info/SOURCES.txt
+yandex_drf_mixins.egg-info/dependency_links.txt
+yandex_drf_mixins.egg-info/top_level.txt
