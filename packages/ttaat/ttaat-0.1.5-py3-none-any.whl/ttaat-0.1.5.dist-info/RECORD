@@ -1,0 +1,10 @@
+ttaat/__init__.py,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+ttaat/cli.py,sha256=NSJeUKGzbKGbZ1sE26Sj1mmnzKVs_ilneno6Ae6wank,4035
+ttaat/db.py,sha256=buLKCa4iObBySJXpob9swM6uHKTb4v4xzisZltG8mG4,7368
+ttaat/mcp.py,sha256=NfkQfVh-WcZba5c-ByJo22-aOEd6nO0QXLzLcgvzpXg,13958
+ttaat/version.py,sha256=RBBGSeIpm2kTlzVnfP_VCRBBbGw0Fk-HaM_e9T5YaVY,44
+ttaat-0.1.5.dist-info/METADATA,sha256=pR1xEAUgA4ZfeZblcDOTNjni8k_eyo1vfhFbr884PvI,3391
+ttaat-0.1.5.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+ttaat-0.1.5.dist-info/entry_points.txt,sha256=xb5XcBQwGx8q7lmgrpS-nJDouqN8jNzfbQ6wa1NJKpQ,41
+ttaat-0.1.5.dist-info/licenses/LICENSE,sha256=CcAKeEqrRbL416VzcHs-OEIBxXgifJRHnjZjS7agJBg,1069
+ttaat-0.1.5.dist-info/RECORD,,
