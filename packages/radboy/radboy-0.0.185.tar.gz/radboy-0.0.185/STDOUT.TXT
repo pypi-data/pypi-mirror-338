@@ -1,0 +1,8 @@
+#USER INPUT# -> :"t"
+#USER INPUT# -> :"q"
+#USER INPUT# -> :"e"
+#USER INPUT# -> :"utcmd"
+#USER INPUT# -> :"export list"
+#USER INPUT# -> :"1"
+#USER INPUT# -> :"q"
+#USER INPUT# -> :"e"
