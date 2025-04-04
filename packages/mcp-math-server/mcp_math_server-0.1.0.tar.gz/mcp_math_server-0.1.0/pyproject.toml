@@ -1,0 +1,29 @@
+[project]
+name = "mcp-math-server"
+version = "0.1.0"
+description = "An MCP server that provides basic math operations (add, subtract, multiply, divide) for LLM integration."
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [
+  {name = "Ajinkya", email = "ajinkyasambare259@gmail.com"}
+]
+dependencies = [
+  "mcp[cli]>=1.6.0"
+]
+keywords = ["MCP", "LLM", "math", "AI", "Claude", "tools"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+  "Development Status :: 3 - Alpha",
+  "Intended Audience :: Developers",
+  "Topic :: Software Development :: Libraries",
+]
+
+[project.scripts]
+mcp-math = "mcp_math.server:main"
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
