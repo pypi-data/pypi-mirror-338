@@ -1,0 +1,7 @@
+remote_mcp_server/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+remote_mcp_server/config.py,sha256=RzUe5J4S3GECeUt5FQLWFs48NjIl9I0Pxk8cYLzPcF8,1940
+remote_mcp_server/logger.py,sha256=00x9KXXAK2ajrHs7BjQGkgAhMN_6kQElemw-VxjW9s8,92
+remote_mcp_server/server.py,sha256=awcQUL0hi344rH1V42jPxc-MX0vpbX2WQrO1B1cWusA,8417
+remote_mcp_server_new_new-0.1.1.dist-info/METADATA,sha256=MoGsQPcLoWblMtYuCFMym-y4iPF_DirHrvaLnHI6ki4,6999
+remote_mcp_server_new_new-0.1.1.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+remote_mcp_server_new_new-0.1.1.dist-info/RECORD,,
