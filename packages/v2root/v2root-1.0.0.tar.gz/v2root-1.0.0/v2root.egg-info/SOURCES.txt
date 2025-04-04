@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+v2root/__init__.py
+v2root/v2root.py
+v2root.egg-info/PKG-INFO
+v2root.egg-info/SOURCES.txt
+v2root.egg-info/dependency_links.txt
+v2root.egg-info/requires.txt
+v2root.egg-info/top_level.txt
+v2root/lib/libv2root.dll
+v2root/lib/v2ray.exe
+v2root/lib/v2root_core.c
+v2root/lib/v2root_core.h
