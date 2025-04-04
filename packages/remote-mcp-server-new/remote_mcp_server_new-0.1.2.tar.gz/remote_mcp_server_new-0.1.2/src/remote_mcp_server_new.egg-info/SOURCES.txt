@@ -1,0 +1,9 @@
+README.md
+pyproject.toml
+setup.py
+src/server.py
+src/remote_mcp_server_new.egg-info/PKG-INFO
+src/remote_mcp_server_new.egg-info/SOURCES.txt
+src/remote_mcp_server_new.egg-info/dependency_links.txt
+src/remote_mcp_server_new.egg-info/requires.txt
+src/remote_mcp_server_new.egg-info/top_level.txt

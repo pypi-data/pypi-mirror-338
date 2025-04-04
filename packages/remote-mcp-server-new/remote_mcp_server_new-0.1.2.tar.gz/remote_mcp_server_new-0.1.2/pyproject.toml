@@ -1,0 +1,15 @@
+[project]
+name = "remote_mcp_server_new"
+version = "0.1.2"
+description = "Remote MCP Server"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "fastapi[standard]>=0.115.12",
+    "httpx>=0.28.1",
+    "mcp[cli]>=1.6.0",
+    "pydantic>=2.11.1",
+    "requests>=2.32.3",
+    "setuptools>=78.1.0",
+    "uvicorn[standard]>=0.34.0",
+]
