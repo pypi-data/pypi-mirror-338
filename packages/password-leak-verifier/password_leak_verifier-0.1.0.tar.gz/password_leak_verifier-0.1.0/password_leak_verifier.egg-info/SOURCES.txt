@@ -1,0 +1,10 @@
+README.md
+setup.py
+com/__init__.py
+com/danilo/__init__.py
+com/danilo/checkmypass.py
+password_leak_verifier.egg-info/PKG-INFO
+password_leak_verifier.egg-info/SOURCES.txt
+password_leak_verifier.egg-info/dependency_links.txt
+password_leak_verifier.egg-info/requires.txt
+password_leak_verifier.egg-info/top_level.txt
