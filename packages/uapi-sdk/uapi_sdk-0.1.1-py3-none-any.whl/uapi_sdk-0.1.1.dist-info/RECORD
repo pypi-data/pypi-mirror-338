@@ -1,0 +1,9 @@
+uapi/__init__.py,sha256=85Xe2nP6C7F8HI5qS-7-UTegp_qoiBraEOburPouUJ4,1154
+uapi/client.py,sha256=iZp7smrjUC175i5aij3U_HrtMlYaALrz6_O_qfiVhlI,1534
+uapi/config.py,sha256=Js8d2o6ciepZk2a3mTSzVFcGQIHZYCsVe3gHV1MWS0M,678
+uapi/core.py,sha256=Df7Mlut6RbLF4f5Zc9DXyyROEE194EgH7sjp5_VrZ-g,2164
+uapi/version.py,sha256=kZ7BeBFqw_33Nen-0o1Xp_1_kKUFVi1VZyOkZRXbGoA,67
+uapi_sdk-0.1.1.dist-info/METADATA,sha256=pHiJpNDq-hqtytgzr_ABkd-LncWv5QOJ19czJorCGhM,278
+uapi_sdk-0.1.1.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+uapi_sdk-0.1.1.dist-info/top_level.txt,sha256=0TrPOLLMqin88fxqxR9T5piS4dSoyju9HFiPu1oPEUU,5
+uapi_sdk-0.1.1.dist-info/RECORD,,
