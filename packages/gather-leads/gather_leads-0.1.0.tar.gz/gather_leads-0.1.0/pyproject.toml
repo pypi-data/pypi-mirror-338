@@ -1,0 +1,39 @@
+[build-system]
+requires = ["setuptools", "setuptools-scm"]
+build-backend =  "setuptools.build_meta"
+
+
+[project]
+name = "gather-leads"
+description = "Utility to create an Excel file from a text query to Google Places"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "openpyxl>=3.1.5",
+    "pandas>=2.2.3",
+    "requests>=2.32.3",
+]
+dynamic = ["version"]
+license = "MIT"
+license-files = ["LICENSE"]
+
+[project.scripts]
+gather-leads = "gather_leads.cli:cli"
+
+[project.urls]
+Repository = "https://github.com/papanikos/gather-leads.git"
+
+[tool.uv]
+package = true
+
+[dependency-groups]
+build = [
+    "setuptools>=78.1.0",
+    "setuptools-scm>=8.2.0",
+]
+dev = [
+    "pytest>=8.3.5",
+]
+
+[tool.setuptools_scm]
+version_file = "src/gather_leads/_version.py"

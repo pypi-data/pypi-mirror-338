@@ -1,0 +1,2 @@
+[console_scripts]
+gather-leads = gather_leads.cli:cli
