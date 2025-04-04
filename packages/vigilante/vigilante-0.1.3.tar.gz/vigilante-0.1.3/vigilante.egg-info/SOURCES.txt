@@ -1,0 +1,16 @@
+LICENSE
+README.md
+setup.py
+vigilante/__init__.py
+vigilante/config.py
+vigilante/core.py
+vigilante/nightcrawler.py
+vigilante/scraptor.py
+vigilante/session.py
+vigilante/utils.py
+vigilante/version.py
+vigilante.egg-info/PKG-INFO
+vigilante.egg-info/SOURCES.txt
+vigilante.egg-info/dependency_links.txt
+vigilante.egg-info/requires.txt
+vigilante.egg-info/top_level.txt
