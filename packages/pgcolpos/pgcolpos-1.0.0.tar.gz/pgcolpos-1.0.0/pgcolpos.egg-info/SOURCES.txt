@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+PERMISSIONS.md
+README.md
+pyproject.toml
+setup.py
+pgcolpos/__init__.py
+pgcolpos/cli.py
+pgcolpos/main.py
+pgcolpos.egg-info/PKG-INFO
+pgcolpos.egg-info/SOURCES.txt
+pgcolpos.egg-info/dependency_links.txt
+pgcolpos.egg-info/top_level.txt
+tests/__init__.py
+tests/test_pgcolpos.py
