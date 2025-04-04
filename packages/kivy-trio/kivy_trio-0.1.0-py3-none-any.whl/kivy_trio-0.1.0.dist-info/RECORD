@@ -1,0 +1,11 @@
+kivy_trio/__init__.py,sha256=HjGKl24VGolZtWcU-PWY4kZhdKMjIquXlBCeX5WFeCM,59
+kivy_trio/context.py,sha256=82HK9z32ZRixLgfhCRA3avM29IRoOFmb3iLRjUkppl0,19107
+kivy_trio/to_kivy.py,sha256=5t2glkMV2__ub4FeW4EVAFNZN7niS5xgZBYmZBnB4Qg,30402
+kivy_trio/to_trio.py,sha256=D8MXjkzoMffpH38E_AYyAQwDBmHvWeQ1Ef7kpQfR3AU,26445
+kivy_trio/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+kivy_trio/tests/test_context.py,sha256=gOiSWZc0cODIXVQf6bu2ALsELmRjlBlu42MRfHK7m7k,31
+kivy_trio-0.1.0.dist-info/licenses/LICENSE,sha256=vVTeBI9EbrjMS7XcSKlnTAnh5fz6DhVWITDg4WQqXs4,1063
+kivy_trio-0.1.0.dist-info/METADATA,sha256=rVlTODqbi3eox-uqCXC2ya_gn0NF51LavPl7LulTNcg,2281
+kivy_trio-0.1.0.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+kivy_trio-0.1.0.dist-info/top_level.txt,sha256=5oXilMWthnalQ34M_0u-NULJLFHjusCs7HCGGnorXsg,10
+kivy_trio-0.1.0.dist-info/RECORD,,

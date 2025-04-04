@@ -1,0 +1,65 @@
+Metadata-Version: 2.4
+Name: kivy_trio
+Version: 0.1.0
+Summary: A Kivy - Trio integration and scheduling library.
+Home-page: https://github.com/matham/kivy-trio
+Author: Matthew Einhorn
+Author-email: matt@einhorn.dev
+License: MIT
+Project-URL: Bug Reports, https://github.com/matham/kivy-trio/issues
+Project-URL: Source, https://github.com/matham/kivy-trio
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+License-File: LICENSE
+Requires-Dist: kivy>=2.0.0
+Requires-Dist: trio
+Requires-Dist: outcome
+Provides-Extra: dev
+Requires-Dist: pytest>=3.6; extra == "dev"
+Requires-Dist: pytest-cov; extra == "dev"
+Requires-Dist: sphinx-rtd-theme; extra == "dev"
+Requires-Dist: coveralls; extra == "dev"
+Requires-Dist: setuptools; extra == "dev"
+Requires-Dist: sphinx; extra == "dev"
+Requires-Dist: flake8; extra == "dev"
+Requires-Dist: wheel; extra == "dev"
+Requires-Dist: pytest-trio; extra == "dev"
+Requires-Dist: sphinxcontrib-trio; extra == "dev"
+Requires-Dist: sphinx-autodoc-typehints; extra == "dev"
+Requires-Dist: pytest-kivy; extra == "dev"
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: home-page
+Dynamic: license
+Dynamic: license-file
+Dynamic: project-url
+Dynamic: summary
+
+kivy-trio
+=============
+
+kivy_trio is a friendly Kivy - Trio integration and scheduling library.
+
+For more information: https://matham.github.io/kivy-trio/index.html
+
+.. image:: https://img.shields.io/pypi/pyversions/kivy-trio.svg
+    :target: https://pypi.python.org/pypi/kivy-trio/
+    :alt: Supported Python versions
+
+.. image:: https://img.shields.io/pypi/v/kivy-trio.svg
+    :target: https://pypi.python.org/pypi/kivy-trio/
+    :alt: Latest Version on PyPI
+
+.. image:: https://coveralls.io/repos/github/matham/kivy-trio/badge.svg?branch=master
+    :target: https://coveralls.io/github/matham/kivy-trio?branch=master
+    :alt: Coverage status
+
+.. image:: https://github.com/matham/kivy-trio/workflows/Python%20application/badge.svg
+    :target: https://github.com/matham/kivy-trio/actions
+    :alt: Github action status
