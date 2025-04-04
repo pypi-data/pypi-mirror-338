@@ -1,0 +1,7 @@
+python_viu_api/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+python_viu_api/viu_api_pb2.py,sha256=HmoLanr3JICb17BThbdVpLdhsr1iXpqCtUfT24QFkTA,3243
+python_viu_api/viu_api_pb2_grpc.py,sha256=CB7OyXxaA0bhqipVzTJZbAE3UHxbLuumj9veInREp3o,7982
+python_viu_api-0.3.54.dist-info/METADATA,sha256=Rf7hnjmAb5O1V7WLE8VGicXrBfwnLOsctPgk15QJR7M,1659
+python_viu_api-0.3.54.dist-info/WHEEL,sha256=tZoeGjtWxWRfdplE7E3d45VPlLNQnvbKiYnx7gwAy8A,92
+python_viu_api-0.3.54.dist-info/top_level.txt,sha256=wMUJCze_RZ9DsI0jcuSPmazNFFAq-7P_gMocqUo44uU,15
+python_viu_api-0.3.54.dist-info/RECORD,,
