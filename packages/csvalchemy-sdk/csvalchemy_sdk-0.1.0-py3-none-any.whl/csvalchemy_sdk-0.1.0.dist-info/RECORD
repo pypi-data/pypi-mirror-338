@@ -1,0 +1,15 @@
+CSValchemy_sdk/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+CSValchemy_sdk/main.py,sha256=ve2dXSXTt6exSLcJv8YC6nxT_adVKzLSEIafwj4tb_0,3320
+CSValchemy_sdk/api/__init__.py,sha256=1ITGMNx-Bl1HPBy_7_o6abA04LqBwVTMA0J4GDARh3g,51
+CSValchemy_sdk/api/v1/__init__.py,sha256=SN0L-OTUhZStloxygyUlmc1_bpBldPx6fMSfANLGx6A,68
+CSValchemy_sdk/api/v1/endpoints.py,sha256=A09wbHk1_Gn1jpevCCEHuoU1C0Y7V6GglNuMh-d33Ck,1745
+CSValchemy_sdk/config/__init__.py,sha256=C2X1A4cuk712iyaCnVnYN02CssmZU3u6zAqi65r7510,129
+CSValchemy_sdk/config/default_config.py,sha256=AjeK0yD47uG5vZmtW6TegQ8LHRrWZGE7fDEl-AJV0kk,2926
+CSValchemy_sdk/core/__init__.py,sha256=r_KpKcANmiBPg3B9a8eb-UEPUlqZVmcM-m7yUPWim78,705
+CSValchemy_sdk/core/spreadsheet_parser.py,sha256=hj44SYbdGjnWXI_R3D2bUx0jPqfcG09YjYzTu4lXVkQ,19429
+CSValchemy_sdk/utils/__init__.py,sha256=lYzbmpJh_-faFauW_3LOulKpcbgmeaKdVTR5k1PC6EU,307
+CSValchemy_sdk/utils/excel.py,sha256=L4Ja0FJs-8PH88mzRnJBgRFySVBICpai4KBZSx6G3bw,6720
+csvalchemy_sdk-0.1.0.dist-info/METADATA,sha256=miprZpf-NMts5TNebN08yFlwsTXh12FdKdFaY07DL6M,1092
+csvalchemy_sdk-0.1.0.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+csvalchemy_sdk-0.1.0.dist-info/top_level.txt,sha256=JiYSLXppomNW5xaGIZ2vhsB0_n3nl89C1270zM_ejas,15
+csvalchemy_sdk-0.1.0.dist-info/RECORD,,
