@@ -1,0 +1,7 @@
+README.md
+pyproject.toml
+src/mosses/__init__.py
+src/mosses.egg-info/PKG-INFO
+src/mosses.egg-info/SOURCES.txt
+src/mosses.egg-info/dependency_links.txt
+src/mosses.egg-info/top_level.txt

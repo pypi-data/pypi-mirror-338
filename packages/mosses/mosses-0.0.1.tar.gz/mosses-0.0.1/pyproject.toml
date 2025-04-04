@@ -1,0 +1,12 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mosses"
+version = "0.0.1"
+description = "This is a placeholder package to reserve the name."
+readme = "README.md"
+requires-python = ">=3.7"
+authors = [{name = "Gian Marco Ghiandoni", email = "ghiandoni.g@gmail.com"}]
+license = {text = "MIT"}
