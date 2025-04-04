@@ -1,0 +1,15 @@
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_conection.py,sha256=bi3WMhw8K9J6sK3zWFYX3J6JIDrOhAxQbrXkd7CUhas,438
+tests/test_metadata.py,sha256=bVdTl_yZkC1XgRm2A6eDmOciyllhNLxfzZeFQF3RjJs,516
+tests/test_utils.py,sha256=5hqpN6KKd7z3hjhV4mkxCbGDaL_1AOoRjjVRPssB1fk,235
+usebcrp/__init__.py,sha256=aD-y2mIz671zjn-Ms9fm6JFUGMnDNHon4LC46Xvxgi4,7457
+usebcrp/__version__.py,sha256=ry5O5SW74ugwOUMKSV2_LbWjYa8B0IEvUm7S-lHPA2c,23
+usebcrp/conection.py,sha256=FneiyYnBlkhqSQKHplaJsguPTnT4-vHl5f9NwIO3CF0,1830
+usebcrp/metadata.py,sha256=8Ug9kb2CNijyE3RXgUq2cYEtirSl0bLjNA_5xvVuJOs,3664
+usebcrp/table.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+usebcrp/utils.py,sha256=aA7zL4syVC09p6AQYZPe3ENr_vikuPFSZ02uH3MryCg,2442
+usebcrp-1.0.0.dist-info/LICENSE,sha256=q_cq9WLCpqk0V73IH269lXoenZlKkCFHVpHD-c5yGLM,1108
+usebcrp-1.0.0.dist-info/METADATA,sha256=QJCyn67SAqaDL_GvC1fQhNxtPVT4z-4lO30hZe6FFTE,22393
+usebcrp-1.0.0.dist-info/WHEEL,sha256=tZoeGjtWxWRfdplE7E3d45VPlLNQnvbKiYnx7gwAy8A,92
+usebcrp-1.0.0.dist-info/top_level.txt,sha256=6ireBj2-HLlgn9PhIBBPMDGYDPlKTB1xnKAIHaPMxUU,14
+usebcrp-1.0.0.dist-info/RECORD,,
