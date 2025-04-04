@@ -1,0 +1,2 @@
+[console_scripts]
+pingsweeper = main.new_sweep:main
