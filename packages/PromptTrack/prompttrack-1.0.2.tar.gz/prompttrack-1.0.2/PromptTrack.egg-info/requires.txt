@@ -1,0 +1,11 @@
+numpy
+timm
+transformers
+matplotlib
+lap
+scikit-image
+opencv-python
+nms
+torch
+torchvision
+torchaudio
