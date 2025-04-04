@@ -1,0 +1,127 @@
+Metadata-Version: 2.3
+Name: kstpy
+Version: 1.0.0
+Summary: A Python package for Knowledge Space Theory
+License: LGPL-3.0-or-later
+Keywords: Knowledge Space Theory,Knowledge Structures,Psychology
+Author: Cord Hockemeyer
+Author-email: cord.hockemeyer@uni-graz.at
+Requires-Python: >=3.11,<4.0
+Classifier: Development Status :: 4 - Beta
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Dist: matplotlib (>=3.10,<4.0)
+Requires-Dist: more_itertools (>=10.6,<11.0)
+Requires-Dist: networkx (>=3.4,<4.0)
+Requires-Dist: numpy (>=2.2,<3.0)
+Project-URL: Documentation, https://resources.cord-hockemeyer.info/techreports/kstpy.pdf
+Project-URL: Homepage, https://www.cord-hockemeyer.info/en/knowledge-space-theory/resources-on-knowledge-space-theory/#python
+Description-Content-Type: text/markdown
+
+# _kstpy_
+
+## General package informaation
+
+### Remarks
+
+- Please note that is an early stage package.
+- Especially the functions in the `kstpy.basics` module may be rather inefficient.
+
+### Installation from PyPI
+
+```bash
+$ pip install kstpy
+```
+
+### License
+
+`kstpy` was created by Cord Hockemeyer. It is licensed under the terms of the GNU General Public License v3.0 license.
+
+### Credits
+
+- The `graphicx` module is a copy of Simon Hegele's `hasseNetworkx` module from GitHub. I opted for this way because I did not find any comparable Python package.
+- `kstpy` was created with [`cookiecutter`](https://cookiecutter.readthedocs.io/en/latest/) and the `py-pkgs-cookiecutter` [template](https://github.com/py-pkgs/py-pkgs-cookiecutter).
+
+## Modules and functions overview
+
+Gwenerally, knowledge spaces and structures are stored as sets of kstFrozensets (see below).
+
+### Module kstpy.helpers
+
+This module provides several small functions and some classes to be used by the other modules.
+
+A core element is the `kstFrozenset` class, a derivative of the builtin `frozenset` class. The diference is just the way of printing: the 'frozenset' is omitted and `kstFroszenset`s are printed like normal `set`s.
+
+The functions of this module are
+
+- `itemname`: Produce an itemname corresponding to a number. We start with single lowercase letter ('a' to 'z'), then two-letter string ('aa' to 'zz') and finally three-letter strings ('aaa' to 'zzz'). This gives a some 18,000 different item names---and that should suffice.
+- `nitemnames`: Produce a list of `count`item names.
+- `domain`: Determine the domain of a knowledge structure or data set, i.e. the union of all `kstF>rozenset`s in a given set or list.
+- `srdomain`: Determine the domain of a surmise relation, i.e. all elements in a set of 2-tuples.
+- `reduceSR`: DSelete transitivities from a relation.
+- `powerset`: Produce the power set for a given domain.
+- `vector2kstFrozenset`: The `kstFrozenset` for a set specified as binary vector. This is used for reading structure files.
+- `kstFrozenset2vecrtor`: A Binary vector corresponding to a `kstFrozenset`. This is used for writing structure files.
+
+### Module kstpy.basics
+
+The `basics`module focuses on functions working with the different represenatations of knowledge spaces.
+
+- `constr`: Closing a knowledge structure und union, i.e. computing the corresponding knowledge space.
+- `basis`: The counterpart computing the basis for a knowledge space (or structure).
+- `surmiserelation`: Compiutes the surmise relation for a knowledge structure. (Surmise) relations are stored as sets of 2-tuples.
+- `sr2basis`: Determine the basis of the knowledge space corresponding to a giben surmise relation.
+- `neighbourhood`: The neighbourhood is the set of neighbouring knowledge states within a knowledge structure.
+- `fringe`: The fringe is the set of items by which a knowledge ste differs from its neighbours. We distinguish the _inner fringe,_ i.e. the set of items distinguishing a state from its smaller neighbours, and the _outer fringe,_ i.e. the set of items distinguishing a state from its larger neighbours.
+- `equivalence`: Determine the equivalence classes of items for a knowledge structure, i.e. the groups of items which are exactly in the same knowledge states.
+- `gradations` and `learningpaths`: A gradation is a path from a smaller state s1 to a larger state s2 where each step means adding exactly one item. Learning paths are gradations from the empty set to the full set.
+- `trace`: The trace of a knowledge structure/space is its reduction to a subset of items.
+
+### Module kstpy.graphics
+
+Most parts of this module were taken from teh internet (see Credits above). The following functions are meant for the end user:
+
+- `hasse` draws a Hasse diagram for a knowledge structure/space.
+- `sr_hasse` does the same for a surmise relation.
+
+### Module kstpy.io
+
+Functions for reading and writing KST files.
+
+The classical format starts with a line cotaining the number of items and a line with the number of states/patterns. Then there follows a binary matrix describing the structure/data with columns for items and rows for states/patterns. This matrix does not contain any spaces.
+
+The reading functions also accept a leading line starting with a hash sign ('#') thus allowing for the SRBT file formats.
+
+- `readPatterns`: Read a data file. Data are internally stored as lists of `kstFrozensets`.
+- `readstructure`: Read a knowledge structure or basis (more generally, any family of sets)
+- `writekst`: Write a structure of data file.
+
+### Module kstpy.simulation
+
+This module contains functions for BLIM--based (Basic Local Independence Model) simulations.
+
+- `simpleSimulation`: Simulate with a beta and an eta value equal for all items
+- `simulation`: Simulate with beta and eta values different for each item.
+
+
+### Module kstpy.validation
+
+- `distvec`: Compute a list of distances between the response patterns and the knowledge structure
+- `difreq`: Determine the frequency distribution within the distance vector
+- `di`: Compute the _Discrepancy Index_ between data set and knowledge structure.
+- `da`: Compute the _Distance Agreement Coefficient_ between data set and knowledge structure.
+
+## Usage
+
+```python
+from kstpy.data import xpl_base
+from kstpy.basics import constr
+
+print(constr(xpl_base))
+```
+For further information, please have a look at the API reference.
+
+```
+print(constr(xpl_base))
+```
+
+
