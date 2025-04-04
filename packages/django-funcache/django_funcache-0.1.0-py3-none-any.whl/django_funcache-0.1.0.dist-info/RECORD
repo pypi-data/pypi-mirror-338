@@ -1,0 +1,11 @@
+django_funcache-0.1.0.dist-info/licenses/LICENCE.txt,sha256=rNSEsnkoGDqhAxiO-dzec6OdevXuSShw3SyR89aqZso,1088
+django_funcache-0.1.0.dist-info/licenses/LICENSE,sha256=OHp7oYGn37bmxLkFWDThaAKECDP9U06WEbq1Jiiywxo,1068
+funcache/__init__.py,sha256=V3HHcZdoWnClaZO7l8L5Vx9eI-12T4L6Q90zFB-TcHg,248
+funcache/apps.py,sha256=fMICNmZ9NPgHAw3xjSZUQGiO1o-r7rlSE-CH352LmWw,289
+funcache/signals.py,sha256=K4ZWVXSb4nWgrpJFmAqKi4YZTGddGQzDhKQkbR4z-UA,475
+funcache/utils.py,sha256=tUGnQwW6fofecF_tQQA8R-sAOXsgc5yoJBZYZL1mPcY,2676
+funcache/migrations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_funcache-0.1.0.dist-info/METADATA,sha256=kbn9QyqUu1lUw5U4otBpq04-a8hFM73B2sbkfDxsIxs,1809
+django_funcache-0.1.0.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+django_funcache-0.1.0.dist-info/top_level.txt,sha256=OI1NnGDROD7QRagKYsCK-Eh5HipM8UqG-uLgVV--iMs,9
+django_funcache-0.1.0.dist-info/RECORD,,
