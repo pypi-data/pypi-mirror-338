@@ -1,0 +1,12 @@
+mn2/__init__.py,sha256=ePPu539SkrPhnhXltWejw4St1SSSyveRZ2e7ebfugt8,198
+mn2/models.py,sha256=TueROtcvD1WsfpG22AhGhptNAd3fTEtq_Z00VA5yffc,3828
+mn2/structures.py,sha256=LNycOuuxud8twqUBDP3Gv1qqt3_0qy8JKxEHPe_o1KM,3296
+mn2/variances.py,sha256=p7GeBrdm-zaId3VqYpL80ttGPxPPfKfDwmFZOKCdCQk,858
+mn2/data/evt12.csv,sha256=tYFZKgz1x6zeSRyIb4KKxIcTLnaZuhCDKp5Zxif1CGU,39142
+mn2/data/oats.csv,sha256=R8xZP9xTdyEvj4CqLPhigGjP4MIEuzoFF2-8ux5OSos,1307
+mn2/sample/oats.py,sha256=wYda038Qb7Tao1UMEJa6rno0RI1q49aZFHxK1JYfUZo,494
+mn2-0.0.15.dist-info/LICENSE,sha256=gXf5dRMhNSbfLPYYTY_5hsZ1r7UU1OaKQEAQUhuIBkM,18092
+mn2-0.0.15.dist-info/METADATA,sha256=9jMCDiUB_AU31pYrkP5WjsBXWAgloVb9nBgJ4dXTKqA,1158
+mn2-0.0.15.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+mn2-0.0.15.dist-info/top_level.txt,sha256=Q90Wy1H1GP68cJzGy1LNsNFZLf9sxuEwT_Y4bZbeZBk,4
+mn2-0.0.15.dist-info/RECORD,,
