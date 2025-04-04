@@ -1,0 +1,11 @@
+nakv.py,sha256=21h5JJ3TG-JtBO5dQuiaB5GfHzZzbvgKKyc1J2pZZrg,50251
+sql/__init__.py,sha256=6f20bSIj_ARV0jhKjbCR2Vfb7ygHXUU0nrIfkV2P3ic,82
+sql/metadata.sql,sha256=QGZuW7cD2qDcSx51VSg9k8nPBO5msP5rjhObPbx_P-s,771
+storage_backends/__init__.py,sha256=N44Ezc4Bylns53ygmpAo9TQhHjO-cBxwemQjap-pjw0,2241
+storage_backends/fs.py,sha256=81BVgJKt3CZI2RxffSlNo2O8RKHc4p7688oWuWXpx6s,11940
+storage_backends/memcache.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+storage_backends/redis.py,sha256=BwQHpIB9yNR57k0IgUU0JHQ_zPpzBcy0frlo17QDaLw,30999
+nadb-0.1.2.dist-info/METADATA,sha256=_GHtvzz1Op9sL6dDjRlWEu9m59qgm6rcrf4S29MrGmk,9259
+nadb-0.1.2.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+nadb-0.1.2.dist-info/top_level.txt,sha256=kbNStQe6ecpf2sYcffwrHJGTOq2-sfkaxfQh0FX0SpA,26
+nadb-0.1.2.dist-info/RECORD,,
