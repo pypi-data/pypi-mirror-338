@@ -1,0 +1,12 @@
+[flake8]
+max-line-length = 127
+exclude = .venv,*.egg-info,__pycache__,build,dist
+ignore = E302,E303,E305,W291,W292,W293,W503,W504
+max-complexity = 10
+per-file-ignores =
+    # imported but unused
+    __init__.py: F401
+    # line too long
+    tests/*: E501
+    # continuation line under-indented
+    tests/*: E128 
