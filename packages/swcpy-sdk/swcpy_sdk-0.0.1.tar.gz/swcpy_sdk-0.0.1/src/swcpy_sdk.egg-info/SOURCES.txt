@@ -1,0 +1,14 @@
+README.md
+pyproject.toml
+src/swcpy_sdk/__init__.py
+src/swcpy_sdk/swc_client.py
+src/swcpy_sdk/swc_config.py
+src/swcpy_sdk.egg-info/PKG-INFO
+src/swcpy_sdk.egg-info/SOURCES.txt
+src/swcpy_sdk.egg-info/dependency_links.txt
+src/swcpy_sdk.egg-info/requires.txt
+src/swcpy_sdk.egg-info/top_level.txt
+src/swcpy_sdk/schemas/__init__.py
+src/swcpy_sdk/schemas/schemas.py
+tests/test_swcpy.py
+tests/test_swcpy_expanded.py
