@@ -1,0 +1,53 @@
+Metadata-Version: 2.1
+Name: webengage-csv-split
+Version: 0.1.0
+Summary: Webengage internal tool to split CSV files having huge data into multiple parts
+Home-page: https://www.webengage.com/
+Author: Nipun Patel
+Author-email: nipunp27@gmail.com
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: pandas
+
+# WebEngage CSV Splitter
+
+## Overview
+
+WebEngage CSV Splitter is an internal tool designed to **split large CSV files** into smaller parts. It ensures that a master spreadsheet containing extensive data is divided into multiple files while maintaining data integrity.
+
+## How It Works
+
+- Splits **CSV files into multiple smaller files** in real-time.
+- Allows users to define the **number of splits** for the master file.
+- The process takes approximately **5-10 minutes** depending on the file size.
+- The split files are saved in the **splits folder**, with filenames appended by an **iteration number**.
+
+## Installation
+
+To install the package, run:
+
+```sh
+pip install webengage-csv-split
+```
+
+## Usage
+
+Run the following command to split a CSV file:
+
+```sh
+we --split <filename.csv> <no. of iteration>
+```
+
+Replace `<filename.csv>` with the actual file name and `<num_splits>` with the number of parts you want to split the file into.
+
+## Legal Notice
+
+This tool is an **internal property** of **WebEngage** and is strictly for **auditing purposes**. It is owned by **Nipun Patel (Copyright)** and any misuse, unauthorized distribution, or external sharing will lead to **legal consequences**.
+
+---
+
+Â© WebEngage. All rights reserved.

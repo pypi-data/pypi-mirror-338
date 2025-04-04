@@ -1,0 +1,2 @@
+[console_scripts]
+we = csv_splitter.splitter:main

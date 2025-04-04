@@ -1,0 +1,11 @@
+README.md
+pyproject.toml
+setup.py
+csv_splitter/__init__.py
+csv_splitter/splitter.py
+webengage_csv_split.egg-info/PKG-INFO
+webengage_csv_split.egg-info/SOURCES.txt
+webengage_csv_split.egg-info/dependency_links.txt
+webengage_csv_split.egg-info/entry_points.txt
+webengage_csv_split.egg-info/requires.txt
+webengage_csv_split.egg-info/top_level.txt
