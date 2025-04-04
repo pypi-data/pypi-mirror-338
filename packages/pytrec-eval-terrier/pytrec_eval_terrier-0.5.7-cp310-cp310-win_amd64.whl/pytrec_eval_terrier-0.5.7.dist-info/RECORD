@@ -1,0 +1,7 @@
+pytrec_eval_ext.cp310-win_amd64.pyd,sha256=9wh91MlQzXmMP4rUhLhLg25rMOvTytaH5UDcxn6v0lM,129024
+pytrec_eval/__init__.py,sha256=Lwp5OVRZk5ESX8mWSLGZ3TV2khaWoBuW4-4L_K0cAgQ,3641
+pytrec_eval_terrier-0.5.7.dist-info/licenses/LICENSE,sha256=Gi1maoi3BmzrPHtrPTdTmAKsRi6-9pyRuOeJWngiH_M,1106
+pytrec_eval_terrier-0.5.7.dist-info/METADATA,sha256=Opkc0VXhGXafpXoonzCpeJquijRdJqA0zRW5MTpivPk,1011
+pytrec_eval_terrier-0.5.7.dist-info/WHEEL,sha256=xtqxYTqke_XhXNhgwydvlroVayIzBVjJDMBpIgge99s,101
+pytrec_eval_terrier-0.5.7.dist-info/top_level.txt,sha256=A0p5dmQFCEMc4etKus3pSkji8P6X_9NsKAv4TAXy89A,28
+pytrec_eval_terrier-0.5.7.dist-info/RECORD,,
