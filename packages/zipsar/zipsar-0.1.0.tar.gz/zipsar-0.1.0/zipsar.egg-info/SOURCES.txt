@@ -1,0 +1,8 @@
+README.md
+setup.py
+zipsar/__init__.py
+zipsar/main.py
+zipsar.egg-info/PKG-INFO
+zipsar.egg-info/SOURCES.txt
+zipsar.egg-info/dependency_links.txt
+zipsar.egg-info/top_level.txt
