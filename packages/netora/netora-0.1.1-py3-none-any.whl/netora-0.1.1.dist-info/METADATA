@@ -1,0 +1,125 @@
+Metadata-Version: 2.3
+Name: netora
+Version: 0.1.1
+Summary: Quickly uncover details and geolocation for any IP address
+Keywords: geolocation,IP,OSINT
+Author: nativevoid
+Author-email: 0x4E56@proton.me
+Maintainer: nativevoid
+Maintainer-email: 0x4E56@proton.me
+Requires-Python: >=3.13
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Information Technology
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Security
+Requires-Dist: colorama (>=0.4.1)
+Requires-Dist: requests (>=2.22.0)
+Project-URL: Bug Tracker, https://github.com/nativevoid/netora/issues
+Project-URL: Homepage, https://yourhomepage.com
+Project-URL: Repository, https://github.com/nativevoid/netora
+Description-Content-Type: text/markdown
+
+# Netra
+
+<p align="center">
+  <img src="/docs/images/netra-logo.png">
+</p>
+
+<p align="center">
+  <b>Quickly uncover details and geolocation for any IP address</b>
+</p>
+
+<p align="center">
+  <a href="#installation">Installation</a>
+  &nbsp;&nbsp;&nbsp;•&nbsp;&nbsp;&nbsp;
+  <a href="#usage">Usage</a>
+  &nbsp;&nbsp;&nbsp;•&nbsp;&nbsp;&nbsp;
+</p>
+
+<br><br>
+
+
+<p align="center">
+  <img src="/docs/images/demo.png">
+
+
+---
+
+### Installation
+
+**Clone the repository**
+
+```bash
+git clone https://github.com/nativevoid/Netra
+cd Netra
+```
+
+**Install requirements**
+
+```bash
+pip install -r requirements.txt
+```
+
+### Usage
+
+**Lookup an IP address**
+
+```bash
+python netra.py --target 178.157.253.24
+```
+
+**Export results to a file**
+
+```bash
+python netra.py --target 178.157.253.24 --output test.txt
+```
+
+&nbsp;
+```console
+
+
+$$\   $$\            $$\
+$$$\  $$ |           $$ |
+$$$$\ $$ | $$$$$$\ $$$$$$\    $$$$$$\  $$$$$$\
+$$ $$\$$ |$$  __$$\_$$  _|  $$  __$$\ \____$$\
+$$ \$$$$ |$$$$$$$$ | $$ |    $$ |  \__|$$$$$$$ |
+$$ |\$$$ |$$   ____| $$ |$$\ $$ |     $$  __$$ |
+$$ | \$$ |\$$$$$$$\  \$$$$  |$$ |     \$$$$$$$ |
+\__|  \__| \_______|  \____/ \__|      \_______|
+
+
+
+===============================================================================================
+usage: netra.py [-h] [--version] -trg TARGET [-o OUTPUT]
+
+Netra: A tool for IP lookup and network information gathering (Version: 0.1.0)
+
+options:
+  -h, --help            show this help message and exit
+  --version             Display version information.
+  -trg, --target TARGET
+                        IP address for location and network info lookup.
+  -o, --output OUTPUT   Output file to save results (.txt or .md only).
+```
+
+<br>
+
+### Feature Requests & Bug Reporting
+
+Want to suggest a new feature? Open a request using our [Feature Request Template](../.github/ISSUE_TEMPLATE/feature-request.yaml).
+
+Found a bug? Report it using our [Bug Report Template](../.github/ISSUE_TEMPLATE/bug-report.yaml).
+
+<br>
+
+### Disclaimer
+
+This tool is for educational purposes only and is intended to help with IP lookups. Users are responsible for complying with applicable laws.
+
+By using this tool, you accept all risks associated with its use. Nativevoid is not liable for any consequences resulting from using this tool.
+
+
+
