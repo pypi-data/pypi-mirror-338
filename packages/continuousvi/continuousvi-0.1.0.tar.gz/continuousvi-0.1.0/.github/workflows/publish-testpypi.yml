@@ -1,0 +1,59 @@
+# .github/workflows/publish-testpypi.yml
+name: Publish to TestPyPI
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out code
+        uses: actions/checkout@v3
+
+      - name: Set up Python (for parsing)
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+
+      - name: Install dependencies (toml etc.)
+        run: |
+          pip install toml
+
+      - name: Parse pyproject.toml
+        id: parse_toml
+        run: |
+          python scripts/parse_pyproject.py > parse_output.txt
+          while IFS= read -r line; do
+            echo "$line" >> $GITHUB_OUTPUT
+          done < parse_output.txt
+
+      # ここでパースした python_version を使ってPythonを再セットアップ
+      - name: Re-Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: ${{ steps.parse_toml.outputs.python_version }}
+
+      - name: Install hatch
+        run: |
+          pip install --upgrade pip
+          pip install hatch
+
+      - name: Build distribution
+        run: |
+          hatch build
+
+      - name: Publish to TestPyPI
+        env:
+          TWINE_USERNAME: ${{ secrets.TEST_PYPI_USERNAME }}
+          TWINE_PASSWORD: ${{ secrets.TEST_PYPI_PASSWORD }}
+        run: |
+          hatch publish --repo continuousVI
+          echo $TWINE_USERNAME
+
+      - name: Show final version
+        run: |
+          echo "Deployed version is: ${{ steps.parse_toml.outputs.version }}"
