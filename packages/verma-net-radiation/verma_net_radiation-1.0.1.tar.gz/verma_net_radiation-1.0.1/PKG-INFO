@@ -1,0 +1,34 @@
+Metadata-Version: 2.4
+Name: verma-net-radiation
+Version: 1.0.1
+Summary: Net Radiation and Daily Upscaling Remote Sensing in Python
+Author-email: Gregory Halverson <gregory.h.halverson@jpl.nasa.gov>
+Project-URL: Homepage, https://github.com/JPL-Evapotranspiration-Algorithms/verma-net-radiation
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: rasters
+Provides-Extra: dev
+Requires-Dist: build; extra == "dev"
+Requires-Dist: pytest>=6.0; extra == "dev"
+Requires-Dist: pytest-cov; extra == "dev"
+Requires-Dist: jupyter; extra == "dev"
+Requires-Dist: pytest; extra == "dev"
+Requires-Dist: twine; extra == "dev"
+Dynamic: license-file
+
+# Net Radiation and Daily Upscaling Remote Sensing in Python
+
+This Python package implements the net radiation and daily upscaling methods described in Verma et al 2016.
+
+[Gregory H. Halverson](https://github.com/gregory-halverson-jpl) (they/them)<br>
+[gregory.h.halverson@jpl.nasa.gov](mailto:gregory.h.halverson@jpl.nasa.gov)<br>
+Lead developer<br>
+NASA Jet Propulsion Laboratory 329G
+
+## References  
+
+Verma, M., Fisher, J. B., Mallick, K., Ryu, Y., Kobayashi, H., Guillaume, A., Moore, G., Ramakrishnan, L., Hendrix, V. C., Wolf, S., Sikka, M., Kiely, G., Wohlfahrt, G., Gielen, B., Roupsard, O., Toscano, P., Arain, A., & Cescatti, A. (2016). Global surface net-radiation at 5 km from MODIS Terra. *Remote Sensing, 8*, 739. [Link](https://api.semanticscholar.org/CorpusID:1517647)
