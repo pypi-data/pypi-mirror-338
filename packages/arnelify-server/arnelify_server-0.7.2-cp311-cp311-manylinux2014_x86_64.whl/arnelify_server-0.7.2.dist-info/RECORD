@@ -1,0 +1,10 @@
+arnelify-server-ffi.cpython-311-x86_64-linux-gnu.so,sha256=yTK6KQPx5qeOVoqKodb_NoL4Kaw6FgGHNEgo0ABXeFg,1706888
+arnelify_server/__init__.py,sha256=0VQeMg1Z_DphtL0cOqLSCYFuj_bIpnrd9JR2EPaMH6U,33
+arnelify_server/index.py,sha256=Pdgq5KYSa_vLomwRtkL-P-q6lxkJT_ODMo8_TlyeAY0,2759
+arnelify_server/contracts/__init__.py,sha256=9YMBR4RkxK4YXcC3GG4sC-BMAV_PDo7wyzIERA0svQQ,20
+arnelify_server/contracts/res.py,sha256=0hnQIe4RDCST_y32rdTS4smtycrFXd0VS5phRVpwKwo,1289
+arnelify_server-0.7.2.dist-info/licenses/LICENSE,sha256=90ICTIbz06ne8FhjKIlBkbafJwq7ch8fgnzWc_hlpXY,1089
+arnelify_server-0.7.2.dist-info/METADATA,sha256=5hPj25RI_lvGbw3JVKv4bI6dYLhqtA-sXh2Of6ed17s,5201
+arnelify_server-0.7.2.dist-info/WHEEL,sha256=D8HU9Hs8QHijgm8ULg8HXKT3tVxVO1klE17WRk4qGVw,112
+arnelify_server-0.7.2.dist-info/top_level.txt,sha256=34uYanJNokXVnJrakKW9GLUX1fTMSVywJi2sRyUPkqs,36
+arnelify_server-0.7.2.dist-info/RECORD,,
