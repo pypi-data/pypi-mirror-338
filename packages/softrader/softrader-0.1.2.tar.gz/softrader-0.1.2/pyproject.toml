@@ -1,0 +1,23 @@
+[project]
+name = "softrader"
+version = "0.1.2"
+description = "All-in-one trading broker software"
+authors = [
+    {name = "Jose_Henrique_V"}
+]
+
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "MetaTrader5==5.0.4874", 
+    "alpaca-py==0.39.1", 
+    "ib_insync==0.9.86"
+]
+
+[tool.poetry]
+packages = [{include = "softrader", from = "src"}]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
