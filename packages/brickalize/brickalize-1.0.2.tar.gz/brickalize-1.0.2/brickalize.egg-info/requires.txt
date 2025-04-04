@@ -1,0 +1,7 @@
+numpy
+open3d
+trimesh
+tqdm
+opencv-python
+scipy
+rtree
