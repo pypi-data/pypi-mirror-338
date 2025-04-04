@@ -1,0 +1,14 @@
+tgfilestream/__init__.py,sha256=oAbVfn9N5IS-34e_phsD6Kz3yqS1bX5shZXYRkfPw2o,70
+tgfilestream/__main__.py,sha256=BeNViCmoPp-Rq4-9CWQijYkClm7opmaevH7OprtA1ZM,2272
+tgfilestream/config.py,sha256=waG3L78jMbnV8XvW3KRw4t-74kxQn3pJBQzB4SJwAGI,3233
+tgfilestream/log.py,sha256=p5Y8PA_SvGsGMLloxeEQZRUy67t9t3KjfBP6bAntbGQ,1094
+tgfilestream/paralleltransfer.py,sha256=52tuyMhRvaT3HLoCN2rr8J-d0e7j-RG2up-l08PQq-I,8134
+tgfilestream/telegram.py,sha256=NEb0Vr8sRi95cDdKjGpO1SfJLTBroSEBOMyQH9TX_I8,1746
+tgfilestream/util.py,sha256=bcPLKWUDa6ePYz33KHfuLouEmDDKBYHMtlcZK6_KpLw,2623
+tgfilestream/web_routes.py,sha256=bMj_IZlbiotjN3oIiD7nz6KD3jSDmqR0YsL0W34tJ1Q,3764
+tgfilestream-0.1.0.dist-info/licenses/LICENSE,sha256=DZak_2itbUtvHzD3E7GNUYSRK6jdOJ-GqncQ2weavLA,34523
+tgfilestream-0.1.0.dist-info/METADATA,sha256=qHJhtEei1uNxgVla0tlla7a3STCA5ENsd-SA5Ta8_nk,2988
+tgfilestream-0.1.0.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+tgfilestream-0.1.0.dist-info/entry_points.txt,sha256=YoXy1EpzeeEo4QDjiZ2IEzqEIyKmTvk9Co_Gx_JSzAc,60
+tgfilestream-0.1.0.dist-info/top_level.txt,sha256=uVGqAKbASjPq1Ge6GxDad-KiajSWODp0out6gUXu6lI,13
+tgfilestream-0.1.0.dist-info/RECORD,,
