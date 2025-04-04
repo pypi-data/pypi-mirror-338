@@ -1,0 +1,26 @@
+Metadata-Version: 2.3
+Name: pinger-cli
+Version: 0.1.0
+Summary: pinger
+License: MIT
+Keywords: pinger,platform,engineering
+Author: engineering
+Author-email: engineering@pinger.com
+Requires-Python: >=3.9,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Dist: pydantic (>=2.11.2,<3.0.0)
+Requires-Dist: pyyaml (>=6.0.2,<7.0.0)
+Requires-Dist: typer (>=0.15.2,<0.16.0)
+Project-URL: Homepage, https://github.com/drzln/pinger
+Project-URL: Repository, https://github.com/drzln/pinger
+Description-Content-Type: text/markdown
+
+# pinger
+the pinger cli
+
