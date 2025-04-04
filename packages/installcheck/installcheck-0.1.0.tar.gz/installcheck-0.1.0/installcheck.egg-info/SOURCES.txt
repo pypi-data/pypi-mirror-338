@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+installcheck/__init__.py
+installcheck/checker.py
+installcheck/cli.py
+installcheck/reporter.py
+installcheck/utils.py
+installcheck.egg-info/PKG-INFO
+installcheck.egg-info/SOURCES.txt
+installcheck.egg-info/dependency_links.txt
+installcheck.egg-info/entry_points.txt
+installcheck.egg-info/top_level.txt
