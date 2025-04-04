@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: forexy
+Version: 2025.4.3
+Summary: EXFOR utility codes
+Home-page: https://nds.iaea.org/nrdc/
+Author: Naohiko Otsuka
+Author-email: n.otsuka@iaea.org
+License: MIT
+Keywords: EXFOR JSON
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+Requires-Dist: pylatexenc
+Requires-Dist: pyspellchecker
+Requires-Dist: requests
+
+# ForEXy
+Utility codes for the EXFOR Library
+
+## Requirements
+* pylatexenc
+* pyspellchecker
+* requests
+
+## Input files
+The following input files are available on the ForEXy zipped file on the [NRDC Software website](https://nds.iaea.org/nrdc/nrdc_soft/):
+* JSON dictionary (e.g., dict_9131.json)
+* Supplemental dictionary file for DIC227 (e.g., dict_arc_sup.227)
+* Supplemental dictionary file for REFBIB (dict_arc_new.044)
+
+## Installation
+```
+pip install forexy
+```
+
+## Reference
+* Naohiko Otuka, "ForEXy: Utility Codes for EXFOR Library", Report [IAEA-NDS-0244](https://doi.org/10.61092/iaea.hz1z-0dx3), International Atomic Energy Agency, 2025.
+
+
