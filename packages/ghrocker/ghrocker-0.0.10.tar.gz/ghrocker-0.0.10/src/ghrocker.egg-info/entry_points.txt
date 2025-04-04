@@ -1,0 +1,6 @@
+[console_scripts]
+generate_ghrocker_dockerfile = ghrocker.ghrocker:generate_dockerfile
+ghrocker = ghrocker.ghrocker:main
+
+[rocker.extensions]
+ghpages = ghrocker.ghpages_extension:GHPages
