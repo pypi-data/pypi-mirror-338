@@ -1,0 +1,59 @@
+[build-system]
+requires = ["setuptools>=42.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "napari-svetlana"
+version = "1.3.0"
+description = "A classification plugin for the ROIs of a segmentation mask."
+readme = "README.md"
+license = {text = "GPL-3.0-only"}
+authors = [
+  {name = "Clément Cazorla", email = "clement.cazorla31@gmail.com"},
+]
+classifiers = [
+  "Development Status :: 2 - Pre-Alpha",
+  "Framework :: napari",
+  "Intended Audience :: Developers",
+  "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+  "Operating System :: OS Independent",
+  "Programming Language :: Python",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.9",
+]
+requires-python = ">=3.9"
+dependencies = [
+  "napari-plugin-engine>=0.1.4",
+  "numpy",
+  "albumentations==1.0.3",
+  "joblib==1.2.0",
+  "light-the-torch",
+  "matplotlib",
+  "opencv-python==4.8.1.78",
+  "pyqtgraph==0.13.3",
+  "PyQt5",
+  "cucim==23.10.0; platform_system == 'Linux'",
+  "cupy-cuda115==10.6.0",
+  "xlsxwriter",
+  "pandas",
+  "npe2",
+  "pooch",
+]
+
+[project.urls]
+"Bug Tracker" = "https://bitbucket.org/koopa31/napari_svetlana/issues?status=new&status=open"
+"Documentation" = "https://svetlana-documentation.readthedocs.io/en/latest/"
+"Source Code" = "https://bitbucket.org/koopa31/napari_svetlana/src/main/"
+"User Support" = "https://bitbucket.org/koopa31/napari_svetlana/issues?status=new&status=open"
+
+[project.entry-points."napari.manifest"]
+napari_svetlana = "napari_svetlana:napari.yaml"
+
+[tool.setuptools]
+include-package-data = true
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+"napari_svetlana" = ["napari.yaml"]
