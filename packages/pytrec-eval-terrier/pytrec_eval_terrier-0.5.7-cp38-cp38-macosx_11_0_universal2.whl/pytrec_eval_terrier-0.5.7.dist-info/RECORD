@@ -1,0 +1,7 @@
+pytrec_eval_ext.cpython-38-darwin.so,sha256=13sPkVfa_1RlnFTh6Xcw4Dt4D-HWkI5JIhkfkS5zZ-4,455480
+pytrec_eval/__init__.py,sha256=c6BV_LPuQ4gxoZ__eHrgyFJRPsCEebxL2k4QVpnCW0I,3537
+pytrec_eval_terrier-0.5.7.dist-info/LICENSE,sha256=jul1y04B4xdQkK4TNyS29CzHf05s3YszmoL-YGNT4oE,1086
+pytrec_eval_terrier-0.5.7.dist-info/METADATA,sha256=JTJz8vpiamAi2ddharbmuclbOEde9UoIfnaJp8SoZDo,804
+pytrec_eval_terrier-0.5.7.dist-info/WHEEL,sha256=nT5BuRnW92pm9uhxZXHpKBiS1eG9akwsiG9M0ZjkHwI,112
+pytrec_eval_terrier-0.5.7.dist-info/top_level.txt,sha256=A0p5dmQFCEMc4etKus3pSkji8P6X_9NsKAv4TAXy89A,28
+pytrec_eval_terrier-0.5.7.dist-info/RECORD,,
