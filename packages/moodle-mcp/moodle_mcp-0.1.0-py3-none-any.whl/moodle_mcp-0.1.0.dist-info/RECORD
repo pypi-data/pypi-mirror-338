@@ -1,0 +1,11 @@
+moodle_mcp/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+moodle_mcp/api.py,sha256=ziZArFGwdLEvBB6WLBvXqJ18t1IuG7NTxMld3lfkKQM,1262
+moodle_mcp/logger.py,sha256=tFYrRY9bUKfhzScXIeX1rFzmFnVLTFnolS_2oi0hsH8,212
+moodle_mcp/moodle.py,sha256=OOxKVPYR-NKVvFM78tpkuiuKSHTT72NF9OxojwxrviU,1080
+moodle_mcp/server.py,sha256=sw4Mn0wKRmoke6-P0eFiQQlB5GjNqldCLjgKrXqgEXw,387
+moodle_mcp/utils.py,sha256=Q3HdXISbJL-aWYG7qeDXLNCbQnmU5RkdC2i4ezT8dk0,521
+moodle_mcp-0.1.0.dist-info/METADATA,sha256=yLaP9_qy2vboK0gbY3sBJih2OzGr8gzdDPwYOLIDDmI,1394
+moodle_mcp-0.1.0.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+moodle_mcp-0.1.0.dist-info/entry_points.txt,sha256=p_9TgglV27O1ZhoDZ0upBWux-SF3PtjE4kBrcZWLS94,54
+moodle_mcp-0.1.0.dist-info/top_level.txt,sha256=UbzCyG8C8iTYSznka8uWtgmxn_wONQay2bGIhw3kKQI,11
+moodle_mcp-0.1.0.dist-info/RECORD,,
