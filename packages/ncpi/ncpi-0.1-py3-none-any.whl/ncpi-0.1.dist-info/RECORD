@@ -1,0 +1,11 @@
+ncpi/Analysis.py,sha256=w-ZtD3hgtq1ZQtnpdd-YVS23DYyXSXF6e2zxtK-iHQs,22877
+ncpi/Features.py,sha256=iB_LMVs9TfCTcUll53Rpm8A2UyS1IXYvZ0zz2FmEouA,32310
+ncpi/FieldPotential.py,sha256=pqlPXy4yAxbwz9E8Vs2y1ak2wG_8EhttouVPlBytga0,34502
+ncpi/Inference.py,sha256=CNI4HFAtYtrxJiX8WcQzzXC1wCrS0Gqy8EgCqAKpebU,22910
+ncpi/Simulation.py,sha256=vJqRCkHqs9l7nfm4kmgUlxcC_pUISaU3jSC8JwEOj3g,2357
+ncpi/__init__.py,sha256=l0dvxPTQQfPVhIZGW8A45-FQl2gsns37o8J1n53JeCA,200
+ncpi/tools.py,sha256=5_iK6nYXB6k2dM_mYYsbxJD4DP5bi8xsDpBB-OhxYiw,2366
+ncpi-0.1.dist-info/METADATA,sha256=s8ihUhTZ352GkcwsQ1ILIkRA46EyhsjEnkZDm57oIbE,1290
+ncpi-0.1.dist-info/WHEEL,sha256=iAkIy5fosb7FzIOwONchHf19Qu7_1wCWyFNR5gu9nU0,91
+ncpi-0.1.dist-info/top_level.txt,sha256=_y8SRYbAdSRct9S-lPgsZO5WTeY_LAqU4ljmnFqKQuE,5
+ncpi-0.1.dist-info/RECORD,,
