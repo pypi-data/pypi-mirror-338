@@ -1,0 +1,18 @@
+Metadata-Version: 2.4
+Name: utf8convert
+Version: 0.1.0
+Summary: A CLI tool to convert files (.cpp, .h, etc.) to UTF-8 encoding.
+Author-email: HanByul Yang <hanbyul.yang@gmail.com>
+License: MIT License
+        
+        Copyright (c) 2025
+License-File: LICENSE
+Requires-Python: >=3.7
+Requires-Dist: chardet
+Requires-Dist: rich
+Requires-Dist: typer[all]
+Description-Content-Type: text/markdown
+
+# utf8convert
+
+A command-line tool to convert source files to UTF-8 encoding.
