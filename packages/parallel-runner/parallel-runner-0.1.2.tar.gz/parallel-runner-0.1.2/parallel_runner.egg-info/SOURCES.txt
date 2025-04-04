@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+parallel_runner/__init__.py
+parallel_runner/parallel_runner.py
+parallel_runner.egg-info/PKG-INFO
+parallel_runner.egg-info/SOURCES.txt
+parallel_runner.egg-info/dependency_links.txt
+parallel_runner.egg-info/requires.txt
+parallel_runner.egg-info/top_level.txt
