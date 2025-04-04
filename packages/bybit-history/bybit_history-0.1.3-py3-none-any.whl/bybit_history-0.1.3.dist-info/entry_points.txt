@@ -1,0 +1,4 @@
+[console_scripts]
+bump=increment_version:main
+start=bybit_history.bybit_data_downloader:main
+
