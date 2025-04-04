@@ -1,0 +1,2 @@
+[console_scripts]
+qfetch = qfetch.qfetch:main
