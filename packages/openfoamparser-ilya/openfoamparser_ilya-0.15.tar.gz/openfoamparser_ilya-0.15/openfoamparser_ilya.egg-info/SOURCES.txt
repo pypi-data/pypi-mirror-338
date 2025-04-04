@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+openfoamparser_ilya.egg-info/PKG-INFO
+openfoamparser_ilya.egg-info/SOURCES.txt
+openfoamparser_ilya.egg-info/dependency_links.txt
+openfoamparser_ilya.egg-info/requires.txt
+openfoamparser_ilya.egg-info/top_level.txt
+openfoamparser_mai/__init__.py
+openfoamparser_mai/field_parser.py
+openfoamparser_mai/mesh_parser.py
+openfoamparser_mai/utils.py
