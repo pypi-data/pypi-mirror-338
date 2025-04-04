@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.py
+regexkit/__init__.py
+regexkit/patterns.py
+regexkit/regexkit.py
+regexkit.egg-info/PKG-INFO
+regexkit.egg-info/SOURCES.txt
+regexkit.egg-info/dependency_links.txt
+regexkit.egg-info/not-zip-safe
+regexkit.egg-info/top_level.txt
+tests/__init__.py
+tests/test_patterns.py
