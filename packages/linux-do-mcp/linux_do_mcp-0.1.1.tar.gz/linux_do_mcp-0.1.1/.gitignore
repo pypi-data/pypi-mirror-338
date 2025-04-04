@@ -1,0 +1,14 @@
+src/linux-do-mcp/node/dist
+src/linux-do-mcp/node/node_modules
+
+src/linux-do-mcp/python/.venv/
+src/linux-do-mcp/python/.pypirc
+src/linux-do-mcp/python/__pycache__/
+src/linux-do-mcp/python/build/
+src/linux-do-mcp/python/dist/
+src/linux-do-mcp/python/wheels/
+src/linux-do-mcp/python/*.py[oc]
+src/linux-do-mcp/python/*.egg-info
+
+.vscode/
+.env
