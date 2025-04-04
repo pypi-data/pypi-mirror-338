@@ -1,0 +1,13 @@
+LICENCE
+README.md
+pyproject.toml
+setup.py
+meetscribe/__init__.py
+meetscribe/core.py
+meetscribe/main.py
+meetscribe.egg-info/PKG-INFO
+meetscribe.egg-info/SOURCES.txt
+meetscribe.egg-info/dependency_links.txt
+meetscribe.egg-info/entry_points.txt
+meetscribe.egg-info/requires.txt
+meetscribe.egg-info/top_level.txt

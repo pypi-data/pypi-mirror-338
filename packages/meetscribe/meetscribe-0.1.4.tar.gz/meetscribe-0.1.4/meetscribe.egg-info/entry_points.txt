@@ -1,0 +1,2 @@
+[console_scripts]
+meetscribe = meetscribe.main:main
