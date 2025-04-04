@@ -1,0 +1,70 @@
+Metadata-Version: 2.4
+Name: pymoa
+Version: 1.0.0
+Summary: Scientific platform for running experiments.
+Home-page: https://github.com/matham/pymoa
+Author: Matthew Einhorn
+Author-email: moiein2000@gmail.com
+License: MIT
+Project-URL: Bug Reports, https://github.com/matham/pymoa/issues
+Project-URL: Source, https://github.com/matham/pymoa
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Libraries
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: System :: Hardware
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+License-File: LICENSE
+Requires-Dist: kivy
+Requires-Dist: trio
+Requires-Dist: pymoa_remote
+Requires-Dist: kivy_trio
+Requires-Dist: tree_config
+Provides-Extra: dev
+Requires-Dist: pytest>=3.6; extra == "dev"
+Requires-Dist: pytest-cov; extra == "dev"
+Requires-Dist: flake8; extra == "dev"
+Requires-Dist: sphinx-rtd-theme; extra == "dev"
+Requires-Dist: coveralls; extra == "dev"
+Requires-Dist: pytest-trio; extra == "dev"
+Requires-Dist: sphinxcontrib-trio; extra == "dev"
+Requires-Dist: setuptools; extra == "dev"
+Requires-Dist: sphinx; extra == "dev"
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: home-page
+Dynamic: license
+Dynamic: license-file
+Dynamic: project-url
+Dynamic: provides-extra
+Dynamic: requires-dist
+Dynamic: summary
+
+PyMoa
+=====
+
+PyMoa is a framework for describing and running experiments.
+
+For more information: https://matham.github.io/pymoa/index.html
+
+To install https://matham.github.io/pymoa/installation.html
+
+.. image:: https://img.shields.io/pypi/pyversions/pymoa.svg
+    :target: https://pypi.python.org/pypi/pymoa/
+    :alt: Supported Python versions
+
+.. image:: https://img.shields.io/pypi/v/pymoa.svg
+    :target: https://pypi.python.org/pypi/pymoa/
+    :alt: Latest Version on PyPI
+
+.. image:: https://coveralls.io/repos/github/matham/pymoa/badge.svg?branch=master
+    :target: https://coveralls.io/github/matham/pymoa?branch=master
+    :alt: Coverage status
+
+.. image:: https://github.com/matham/pymoa/workflows/Python%20application/badge.svg
+    :target: https://github.com/matham/pymoa/actions
+    :alt: Github action status

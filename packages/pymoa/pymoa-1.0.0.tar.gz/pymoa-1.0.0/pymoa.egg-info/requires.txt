@@ -1,0 +1,16 @@
+kivy
+trio
+pymoa_remote
+kivy_trio
+tree_config
+
+[dev]
+pytest>=3.6
+pytest-cov
+flake8
+sphinx-rtd-theme
+coveralls
+pytest-trio
+sphinxcontrib-trio
+setuptools
+sphinx
