@@ -1,0 +1,3 @@
+- fix missing uv in bump version on merge
+- add workflow_dispatch to build-python
+- investigate bump-my-version moveable tags
