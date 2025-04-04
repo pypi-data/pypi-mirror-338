@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+mn2/__init__.py
+mn2/models.py
+mn2/structures.py
+mn2/variances.py
+mn2.egg-info/PKG-INFO
+mn2.egg-info/SOURCES.txt
+mn2.egg-info/dependency_links.txt
+mn2.egg-info/requires.txt
+mn2.egg-info/top_level.txt
+mn2/data/evt12.csv
+mn2/sample/rcbd.py
