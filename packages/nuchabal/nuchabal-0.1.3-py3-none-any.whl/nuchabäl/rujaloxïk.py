@@ -1,0 +1,2 @@
+class Rujaloxïk(object):
+    pass
