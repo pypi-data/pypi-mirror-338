@@ -1,0 +1,21 @@
+name: hairloom
+channels:
+  - conda-forge
+  - r
+  - bioconda
+dependencies:
+  - numpy
+  - pandas
+  - matplotlib
+  - pysam
+  - pyfaidx
+  - scipy
+  - pip
+  - pip:
+    - click
+    - myst-parser
+    - pydata-sphinx-theme
+    - sphinxcontrib-napoleon
+    - sphinx-autodoc-typehints
+    - PyYAML
+    - pytest
