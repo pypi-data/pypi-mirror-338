@@ -1,0 +1,13 @@
+pydsdl>=1.22.2
+
+[config]
+pyyaml
+
+[python_requires >]
+3.8
+
+[shell]
+argcomplete
+
+[zip_safe]
+False

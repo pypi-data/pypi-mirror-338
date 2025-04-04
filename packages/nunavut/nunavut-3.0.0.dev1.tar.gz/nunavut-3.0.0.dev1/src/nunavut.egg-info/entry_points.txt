@@ -1,0 +1,2 @@
+[console_scripts]
+nnvg = nunavut.cli.runners:main
