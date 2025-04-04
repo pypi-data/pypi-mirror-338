@@ -1,0 +1,9 @@
+local_mcp_server/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+local_mcp_server/cli.py,sha256=vrBTsOJyMo6oyKSdk9N85lP8pqofvondZCtNK6X0sYo,2594
+local_mcp_server/client.py,sha256=N2L3GtWwSfRPSSM3KIVNkAnoeU6VWtIqNXWoFscbbJ8,8708
+local_mcp_server/config.py,sha256=C2hsOLjoyIt3QjtJrLgNZTcpdHA2I9XQBVSvFkxX_C8,116
+local_mcp_server/helper.py,sha256=Fu94Q1UEvWjPqv5sjbVVDW55M_bL1MAqE5xlH2zGaz4,2682
+local_mcp_server-0.2.2.dist-info/METADATA,sha256=qKaCTuka74aGl1HiFlPQeIFJHNgY1O5E3OON8slG3q4,6871
+local_mcp_server-0.2.2.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+local_mcp_server-0.2.2.dist-info/entry_points.txt,sha256=maqlM6C0hcjgRcw8K6B5-fizPkN4HUUA7GsNICdxAPI,63
+local_mcp_server-0.2.2.dist-info/RECORD,,
