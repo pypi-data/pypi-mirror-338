@@ -1,0 +1,46 @@
+Metadata-Version: 2.4
+Name: ice-python
+Version: 0.1.2
+Summary: Interactive Connectivity Establishment (ICE) in Python
+Home-page: https://github.com/yetiman45/ice_connect
+Author: Dipin Niroula
+Author-email: dipinniroula@hotmail.com
+License: MIT
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: stun
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: license
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+# Interactive Connectivity Establishment (ICE) in Python
+
+This project implements ICE (RFC 5245) in Python to establish connections between two servers behind NAT.
+
+## Features
+- STUN-based public IP discovery
+- ICE candidate gathering
+- Signaling mechanism for exchanging candidates
+- NAT traversal using UDP
+- Sends a "Hello" message upon successful connection
+
+## Installation
+```sh
+pip install ice-python
+```
+
+## Usage
+```sh
+python main.py
+```
+
+## License
+This project is licensed under the MIT License.
