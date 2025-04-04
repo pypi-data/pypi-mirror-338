@@ -1,0 +1,36 @@
+Metadata-Version: 2.4
+Name: continuousvi
+Version: 0.1.0a0
+Summary: Add your description here
+Author-email: ysato <yuya.sato.jp@gmail.com>
+Requires-Python: >=3.10.12
+Requires-Dist: fa2-modified>=0.3.10
+Requires-Dist: igraph>=0.11.8
+Requires-Dist: leidenalg>=0.10.2
+Requires-Dist: numpy>=2.0.2
+Requires-Dist: openpyxl>=3.1.5
+Requires-Dist: pandas>=2.2.3
+Requires-Dist: patsy>=1.0.1
+Requires-Dist: polars>=1.26.0
+Requires-Dist: requests>=2.32.3
+Requires-Dist: scanpy==1.11.0
+Requires-Dist: scvi-tools==1.3.0
+Description-Content-Type: text/markdown
+
+# Continuous VI
+
+Continuous
+
+## Developer
+
+1. install dependencies
+
+```sh
+uv sync
+```
+
+2. activating venv
+
+```sh
+. .venv/bin/activate
+```
