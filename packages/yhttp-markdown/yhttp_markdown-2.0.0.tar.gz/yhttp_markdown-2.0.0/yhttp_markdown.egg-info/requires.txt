@@ -1,0 +1,7 @@
+yhttp<8,>=7.0.1
+pymlconf
+easycli
+markdown2
+mako
+pygments
+libsass
