@@ -1,0 +1,85 @@
+# SignNow SmolAgents Tools
+
+A collection of tools and agents for integrating with the [SignNow](https://www.signnow.com/) API using the [SmolAgents](https://github.com/smol-ai/smol-agents) framework.
+
+## Features
+
+This package provides:
+
+- **Agents with authorization** using login/password and app key
+- **Tool collection** (`ToolCollection`) for interacting with SignNow’s core API:
+  - Upload local documents
+  - Retrieve templates
+  - Create documents from templates
+  - Get detailed document information
+  - Fetch contacts
+  - Send invites for signing
+
+You can use:
+- A full agent (`SignNowSmolagentsCodeAgent` or `SignNowSmolagentsToolCallingAgent`)
+- Just the tool collection (`SignNowSmolagentsToolset`)
+- Or individual tools separately
+
+## Installation
+
+```bash
+pip install -r requirements.txt
+```
+
+## Usage Example
+
+### Get Access Token
+
+```python
+from sn_smolagent_tools_demo import access_token_from_login_password
+
+token = access_token_from_login_password("your_login", "your_password", "your_app_key")
+```
+
+### Using the Agent
+
+```python
+from sn_smolagent_tools_demo import SignNowSmolagentsCodeAgent
+
+agent = SignNowSmolagentsCodeAgent(access_token=token)
+result = agent.run("Upload the file 'contract.pdf' and send it for signature to John Smith")
+```
+
+### Using an Individual Tool
+
+```python
+from sn_smolagent_tools_demo import UploadLocalFileTool
+
+tool = UploadLocalFileTool(access_token=token)
+doc_id = tool.forward(file_path="contract.pdf", filename="Contract with John")
+```
+
+### Using the Tool Collection
+
+```python
+from sn_smolagent_tools_demo import SignNowSmolagentsToolset
+
+tools = SignNowSmolagentsToolset(access_token=token).tools
+for tool in tools:
+    print(tool.name)
+```
+
+## Available Tools
+
+- `get_template_list`
+- `upload_local_file_to_signnow`
+- `get_contacts_from_signnow`
+- `create_document_from_template`
+- `get_document_info`
+- `send_invite`
+
+## TODO
+
+- Add wrappers for more SignNow APIs
+- Add logging and debugging features
+- Improve error handling and retries
+
+## License
+
+MIT License
+
