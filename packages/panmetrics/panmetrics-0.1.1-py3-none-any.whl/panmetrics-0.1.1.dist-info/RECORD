@@ -1,0 +1,13 @@
+Test/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+panmetrics/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+panmetrics/classification.py,sha256=EUOMjMr8Rdc-EE6OGJMfjDPWN3k6-w-hIIw2whAAOL4,41624
+panmetrics/clustering.py,sha256=zpyMZEx5bjQXHNXPHJNbA7dbb0yI1w-wpa2OuEcuJOY,29372
+panmetrics/imagetoimage.py,sha256=NLZIbNRZsq8FG-ko5-tb7jb5fIJ90vHCfDk9nNg7_xE,4739
+panmetrics/regression.py,sha256=8A_nAiJJmaRyse557KulOrMpGb3FSrGkabtnWKMfiOQ,72653
+panmetrics/segmentation.py,sha256=gH-EFX1iNGnhSd2Ih2lygAQa98on_yU9hrdI8H4qZjE,8999
+panmetrics/utils.py,sha256=Ar3XQ9vPa-H8HqZE31c4peIOQwv9SKhPd0rozBKJxfo,34769
+panmetrics-0.1.1.dist-info/licenses/LICENSE,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+panmetrics-0.1.1.dist-info/METADATA,sha256=PoWNj-CJdTHisY3gnpDi82cutM-VaRKlLigAhr12RAk,574
+panmetrics-0.1.1.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+panmetrics-0.1.1.dist-info/top_level.txt,sha256=oT1s_3S4j0jnpS_8hwXTCFITaY8h40Rfp1r5CTT1EG8,16
+panmetrics-0.1.1.dist-info/RECORD,,
