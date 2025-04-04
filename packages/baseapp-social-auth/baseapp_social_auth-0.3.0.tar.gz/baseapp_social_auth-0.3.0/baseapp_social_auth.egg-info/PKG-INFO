@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: baseapp-social-auth
+Version: 0.3.0
+Summary: Authentication for facebook, linkedin and twitter
+Home-page: https://github.com/silverlogic/baseapp-backend
+Author: The SilverLogic
+Author-email: dev@tsl.io
+License: BSD-3-Clause
+Description: # BaseApp Social Auth - Django
+        
+        This package has been moved to [baseapp-packend](https://pypi.org/project/baseapp-backend/) package.
+        
+Platform: UNKNOWN
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django
+Classifier: Framework :: Django :: 4.2
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
