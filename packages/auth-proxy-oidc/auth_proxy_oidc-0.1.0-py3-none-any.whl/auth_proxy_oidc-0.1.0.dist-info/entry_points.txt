@@ -1,0 +1,2 @@
+[auth_proxy.plugins]
+oidc = auth_proxy_oidc.plugin:OIDCAuthPlugin

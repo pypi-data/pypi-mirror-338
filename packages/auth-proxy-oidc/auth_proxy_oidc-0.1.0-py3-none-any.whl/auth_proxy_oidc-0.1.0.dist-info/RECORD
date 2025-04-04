@@ -1,0 +1,7 @@
+auth_proxy_oidc/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+auth_proxy_oidc/plugin.py,sha256=E1KzKX8yuYDzoD4a0Yu_kMcdh_Gvy8_VpsexfOxIiH4,29808
+auth_proxy_oidc-0.1.0.dist-info/METADATA,sha256=z94DlnUhE1z4mSLnk5raHdlGDjQ_tPZF5o-74OOY-dQ,352
+auth_proxy_oidc-0.1.0.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+auth_proxy_oidc-0.1.0.dist-info/entry_points.txt,sha256=a7Cu68ETfULO42KX1Ksm0jF--W1SOezpjk_7EvZKar8,66
+auth_proxy_oidc-0.1.0.dist-info/licenses/LICENSE,sha256=hM7rX9N4fbvJbE6TE9iz746L0W6F1TRTGUno7j5gNR4,1089
+auth_proxy_oidc-0.1.0.dist-info/RECORD,,
