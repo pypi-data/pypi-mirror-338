@@ -1,0 +1,7 @@
+dist
+docs
+docs_env
+examples
+rag_colls
+samples
+tests
