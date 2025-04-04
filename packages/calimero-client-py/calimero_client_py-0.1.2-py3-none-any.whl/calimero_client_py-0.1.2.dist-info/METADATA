@@ -1,0 +1,124 @@
+Metadata-Version: 2.4
+Name: calimero-client-py
+Version: 0.1.2
+Summary: Python client SDK for Calimero Network
+Home-page: https://github.com/calimero-network/calimero-client-py
+Author: Calimero Network
+Author-email: Calimero Network <support@calimero.network>
+License: MIT
+Project-URL: Homepage, https://github.com/calimero-network/calimero-client-py
+Project-URL: Documentation, https://docs.calimero.network/python-sdk
+Project-URL: Repository, https://github.com/calimero-network/calimero-client-py
+Project-URL: Issues, https://github.com/calimero-network/calimero-client-py/issues
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests>=2.31.0
+Requires-Dist: websockets>=12.0
+Requires-Dist: base58>=2.1.1
+Requires-Dist: pydantic>=2.5.0
+Requires-Dist: aiohttp>=3.9.0
+Requires-Dist: toml>=0.10.2
+Requires-Dist: pynacl>=1.5.0
+Provides-Extra: test
+Requires-Dist: pytest>=7.0.0; extra == "test"
+Requires-Dist: pytest-asyncio>=0.21.0; extra == "test"
+Requires-Dist: pytest-cov>=4.0.0; extra == "test"
+Requires-Dist: pytest-mock>=3.10.0; extra == "test"
+Dynamic: author
+Dynamic: home-page
+Dynamic: license-file
+Dynamic: requires-python
+
+# Calimero Network Python Client SDK
+
+The **Calimero Python Client SDK** helps developers interact with decentralized apps by handling server communication. It simplifies the process, letting you focus on building your app while the SDK manages the technical details.
+
+## Features
+
+- JSON-RPC client for sending queries and updates to Calimero nodes
+- WebSocket client for real-time subscriptions
+- Authentication handling with Ed25519 keypairs
+- Configuration management
+- Type hints and comprehensive documentation
+
+## Installation
+
+```bash
+pip install calimero-client-py
+```
+
+## Quick Start
+
+### Using JsonRpcClient
+
+```python
+from calimero import JsonRpcClient
+
+client = JsonRpcClient(
+    base_url="http://localhost:2428",
+    endpoint="/jsonrpc"
+)
+
+params = {
+    "applicationId": "your_application_id",
+    "method": "create_post",
+    "argsJson": {"title": "My First Post", "text": "This is my first post"}
+}
+
+response = await client.mutate(params)
+print(response)
+```
+
+### Using WsSubscriptionsClient
+
+```python
+from calimero import WsSubscriptionsClient
+
+client = WsSubscriptionsClient(
+    base_url="http://localhost:2428",
+    endpoint="/ws"
+)
+
+await client.connect()
+client.subscribe(["your_application_id"])
+
+def callback(data):
+    print(data)
+
+client.add_callback(callback)
+```
+
+## Documentation
+
+For detailed documentation, please visit [our documentation site](https://docs.calimero.network).
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details. 
+
+## Test Dependencies and Commands
+
+To run tests, you need to install the test dependencies and then run the tests.
+
+```bash
+# Install test dependencies
+pip install -e ".[test]"
+
+# Run tests
+pytest
+
+# Run tests with coverage
+pytest --cov=calimero
+
+# Run specific test file
+pytest tests/test_keypair.py
+``` 
