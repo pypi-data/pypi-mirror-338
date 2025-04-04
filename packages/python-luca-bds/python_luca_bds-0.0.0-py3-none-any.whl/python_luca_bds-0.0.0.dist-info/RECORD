@@ -1,0 +1,7 @@
+luca/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+luca/connectors.py,sha256=F3qa3sIZqAzoz1ObiDgpkO2M6dgKK4E-lg6NEG_84BA,4312
+luca/querys.py,sha256=BMHQ4CTbRiLRChPEyU-NFi_jIK0iWzk0NRPi1l8dquU,7180
+python_luca_bds-0.0.0.dist-info/METADATA,sha256=dIm8GLijUt6qQixtnopZPR0C4dpUWVzCN9BcWiwTlGI,1750
+python_luca_bds-0.0.0.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+python_luca_bds-0.0.0.dist-info/top_level.txt,sha256=4KHFRfSKKYj97oohkA4-qH8PUq1ZsE35pOmpRWzUZtg,5
+python_luca_bds-0.0.0.dist-info/RECORD,,

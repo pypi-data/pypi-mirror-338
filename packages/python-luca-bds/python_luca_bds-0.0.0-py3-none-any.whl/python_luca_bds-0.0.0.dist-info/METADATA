@@ -1,0 +1,69 @@
+Metadata-Version: 2.4
+Name: python-luca-bds
+Version: 0.0.0
+Summary: This Python library includes some LUCA BDS functionality
+Author-email: Marcos Cobo Carrillo <mcobo@cic.es>
+Description-Content-Type: text/markdown
+Requires-Dist: requests
+Requires-Dist: pytest
+Requires-Dist: python-keycloak
+Requires-Dist: pandas
+
+# LUCA BDS Client
+
+LUCA BDS Client is a tool to interact with the LUCA-BDS API. It allows you to perform queries and execute operations in the LUCA environment using secure connections.
+
+## Installation
+
+You can install the library via PyPI. Make sure to have Python installed on your machine, then run:
+
+```bash
+pip install python-luca-bds
+```
+
+## Usage
+
+Below is an example of how to use the LUCA BDS client to connect to the server and test some functionality:
+
+```python
+from luca.connectors import LucaConnection, KeycloakConnection
+from luca.querys import query
+
+# Keycloak connection configuration
+keycloak_conn = KeycloakConnection(
+    server_url='https://luca-bds-domain/auth',
+    realm_name='realm',
+    client_id='client_id'
+)
+
+# LUCA connection configuration
+luca_conn = LucaConnection(
+    server_url='https://luca-bds-domain/luca-api',
+    keycloak_connection=keycloak_conn,
+    username='user',
+    password='pass'
+)
+
+# Retrieve connection information
+info = luca_conn.info()
+print(info)
+
+# Execute a query by name
+result, pagination, state = query(
+    conn=luca_conn,
+    name='query',
+    environment='DEV'
+)
+print(result)
+
+# Execute a query by ID
+result, pagination, state = query(
+    conn=luca_conn,
+    id=111,
+    environment='DEV',
+    input_variables=[{'User': 'luca', 'System': 'LUCA'}]
+)
+print(result)
+print(pagination)
+print(state)
+```
