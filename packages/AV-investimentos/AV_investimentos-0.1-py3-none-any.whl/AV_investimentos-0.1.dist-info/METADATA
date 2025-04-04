@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: AV-investimentos
+Version: 0.1
+Summary: Uma biblioteca para cálculos de investimentos.
+Home-page: https://github.com/Antonio-AV/AV_investimentos
+Author: Antonio Victor M Fonseca
+Author-email: anvimefo0123@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+License-File: LICENSE
+
