@@ -1,0 +1,15 @@
+frads/__init__.py,sha256=sjLkte3Dz8KoaA4tzy4tfvr2c-9lqmVB8D0fQHNhXkA,4234
+frads/ep2rad.py,sha256=lrQQewX-kjIlDI7jAwc5ayBCgIM2hgkHrBE8w_z4Nhc,29429
+frads/eplus.py,sha256=9uy859KeCVmIRsQZOo-UJC66TbaRpMJ9NyVNsOueH34,27315
+frads/eplus_model.py,sha256=QB8ze0WclpgRzi6xot4-iFaSJkOpISRlxgdJwAZ1peA,9413
+frads/geom.py,sha256=wg-9M4vfEKbPTjmQv0FybjIlxY40ZEdN5cG9hordFNU,15423
+frads/matrix.py,sha256=i9KNyWqglT2jAJFN42IcDFjzmJVU3H3GuJmLUkQ9QB4,28968
+frads/methods.py,sha256=r-P4zsZAUMqlHvakT9hjdBzMrUfsE-4iMSNGch8f54Y,67193
+frads/room.py,sha256=B8HB_1mfg52IBpXaoGNwPeGgBw-vu3bA1Nh8xah8Ti4,13731
+frads/sky.py,sha256=gfvBHwKy0FTe65viw_tg3wXO5OYERzIhms3RKhTDsIo,12795
+frads/utils.py,sha256=kBlLHDtc1lUixhglxD5iygHHFL3xPmcf47NOiGchdIA,7407
+frads/window.py,sha256=7Xjqfey99uT06U_016lCuKytlJBwOo5C0RM8mk696IU,29966
+frads-2.0.2.dist-info/METADATA,sha256=oWyGtJIL3B3ppisgJ0xLBLKxqZbbtCOQiIDgW30Kckk,7833
+frads-2.0.2.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+frads-2.0.2.dist-info/top_level.txt,sha256=nvMRXGDY6TeLLsbDb6adWz6ozk5D-5Am1xU_tzzWxvQ,6
+frads-2.0.2.dist-info/RECORD,,
