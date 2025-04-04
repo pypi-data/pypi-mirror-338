@@ -1,0 +1,11 @@
+pymatching/__init__.py,sha256=TYWtIQraaemo2iWk4eKSsjOG9N8_O8M0bjb9-cjw5J8,896
+pymatching/_cli_argv.py,sha256=mtF9IG1IFu9m_7KO_rSt1oDCPo5acMhEeqUdAbtnre8,106
+pymatching/_cpp_pymatching.cp37-win32.pyd,sha256=9We-Y9PoLzJeLAx1sd8LbYU462qLquF5k2asS1BCUK4,644608
+pymatching/_version.py,sha256=qLIKrdlpdDFIBL6t5km8z_eTd9rqs0sSL2924GrcO6M,44
+pymatching/matching.py,sha256=SesU5MJpGTY9UaJmyUcR1kw0SwCum8BOTLtjJJFi75c,95152
+PyMatching-2.2.2.dist-info/LICENSE,sha256=HrhfyXIkWY2tGFK11kg7vPCqhgh5DcxleloqdhrpyMY,11558
+PyMatching-2.2.2.dist-info/METADATA,sha256=Sk39P3dEL3hUsLZiqSkWUcWYYRkqNTD83HGuG9DM0Ls,16873
+PyMatching-2.2.2.dist-info/WHEEL,sha256=-4e2_5zQjKFRyJsP6SfWXi5m1fmK3VBANPdPzrOxl7c,97
+PyMatching-2.2.2.dist-info/entry_points.txt,sha256=W3nERSQCJJx_xhGyWPpziuv0PzB6jOugiUOelNDvwC4,61
+PyMatching-2.2.2.dist-info/top_level.txt,sha256=Bwoj_tdrVKgNF3MVQ1IdXkFwSRIXkVHiNDk3dGKbTWI,11
+PyMatching-2.2.2.dist-info/RECORD,,
