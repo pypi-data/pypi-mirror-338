@@ -1,0 +1,41 @@
+[project]
+name = "loggle"
+version = "0.1.2"
+description = "Type-safe, customizable logging configuration for Python"
+authors = [
+    { name = "Kieran Lock", email = "kieran.lock@outlook.com" }
+]
+keywords = ["logging", "type-safety", "uvicorn"]
+
+readme = "README.md"
+license = "MIT"
+
+[project.urls]
+homepage = "https://github.com/Kieran-Lock/loggle/"
+repository = "https://github.com/Kieran-Lock/loggle/"
+documentation = "https://github.com/Kieran-Lock/loggle/"
+
+
+[tool.poetry]
+package-mode = true
+
+[tool.poetry.dependencies]
+python = "^3.13"
+pydantic = "^2.9.2"
+dill = "^0.3.9"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.3.3"
+mypy = "^1.15.0"
+
+
+[tool.mypy]
+python_version = "3.13"
+strict = true
+disallow_untyped_defs = true
+follow_untyped_imports = true
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
