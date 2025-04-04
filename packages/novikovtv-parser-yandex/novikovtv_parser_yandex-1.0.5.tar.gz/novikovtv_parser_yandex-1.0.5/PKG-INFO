@@ -1,0 +1,97 @@
+Metadata-Version: 2.4
+Name: novikovtv-parser-yandex
+Version: 1.0.5
+Summary: This is the yandex search engine parser
+Project-URL: Homepage, https://github.com/asianetsievskaya/parser-yandex
+Author-email: domster704 <domster704@mail.ru>
+License-Expression: MIT
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.12
+Requires-Python: >=3.12.0
+Description-Content-Type: text/markdown
+
+# Парсер поисковой выдачи Яндекса
+
+# Описание классов
+
+## `SiteParser`
+
+**Описание**: Основной класс для парсинга контактных данных с веб-страниц. Извлекает телефоны, email, адреса и ссылки на соцсети.
+
+### Методы:
+- `async parse(links: list[str]) -> list[SiteParserData]` - Асинхронно обрабатывает список URL и возвращает структурированные данные
+- `__parse_link(link: str)` - Внутренний метод парсинга отдельной страницы
+- `__try_parse_link(link: str)` - Обертка с обработкой ошибок для `__parse_link`
+
+## `YandexSearchLinksParser`
+
+**Описание**: Парсер для извлечения ссылок из HTML-выдачи Яндекса с фильтрацией нежелательных доменов.
+
+### Поля:
+- `IGNORE_LINKS` - Список игнорируемых доменов (yandex.ru, youtube.com и др.)
+
+### Методы:
+- `parse() -> list[str]` - Основной метод извлечения и фильтрации ссылок
+- `is_ignored(domain: str) -> bool` - Проверяет домен на наличие в черном списке
+- `_links` (property) - Возвращает все найденные ссылки в HTML
+
+## `YandexAPI`
+
+**Описание**: Базовый клиент для работы с API Yandex Cloud с IAM-аутентификацией.
+
+### Особенности:
+- Автоматическое обновление IAM-токенов
+- Кэширование токенов в БД
+- Поддержка асинхронных запросов
+
+### Методы:
+- `async create() -> YandexAPI` - Фабричный метод инициализации
+- `__refresh_IAM_token()` - Обновление токена при необходимости
+- `__get_IAM_token_from_db()` - Получение токена из БД
+- `__write_IAM_token_to_db()` - Сохранение токена в БД
+
+## `YandexSearchTextApiV1`
+
+**Описание**: Клиент для работы с Yandex Search API (версия 1).
+
+### Особенности:
+- Поддержка дневного/ночного парсинга
+- Ограничение запросов (RPS control)
+- Сохранение результатов в файлы и БД
+
+### Методы:
+- `async search(query_text: str, p_type: ParserType, search_id: int)` - Основной метод поиска
+- `__fetch()` - Выполнение запроса к API
+- `__try_search()` - Обертка с обработкой ошибок для `__fetch`
+
+## `ParserRouter`
+
+**Описание**: FastAPI роутер для обработки запросов парсинга.
+
+### Эндпоинты:
+- `POST /parser/request/create` - Запуск нового парсинга
+- `GET /parser/csv/{search_id}` - Получение результатов в CSV
+- `GET /parser/search/status` - Проверка статуса выполнения
+
+## `DB Models`
+
+### Основные модели:
+- `Search` - Поисковые запросы пользователей
+- `RequestResult` - Результаты парсинга страниц
+- `SiteParserData` - Извлеченные контактные данные
+- `IAM` - Токены для API Яндекса
+
+## `UnitOfWork`
+
+**Описание**: Паттерн Unit of Work для управления транзакциями БД.
+
+### Особенности:
+- Асинхронная работа с SQLAlchemy
+- Автоматическое управление сессиями
+- Поддержка репозиториев
+
+## Деплой проекта на PyPi
+
+https://packaging.python.org/en/latest/tutorials/packaging-projects/
