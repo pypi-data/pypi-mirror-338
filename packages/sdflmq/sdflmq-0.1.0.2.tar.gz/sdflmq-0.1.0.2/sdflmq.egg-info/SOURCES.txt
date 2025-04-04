@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+sdflmq/__init__.py
+sdflmq.egg-info/PKG-INFO
+sdflmq.egg-info/SOURCES.txt
+sdflmq.egg-info/dependency_links.txt
+sdflmq.egg-info/entry_points.txt
+sdflmq.egg-info/requires.txt
+sdflmq.egg-info/top_level.txt
