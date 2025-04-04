@@ -1,0 +1,10 @@
+*pycache*
+*egg-info*
+.vscode/
+.eggs/
+build/
+dist/
+*ipynb_checkpoints*
+examples/data/
+data/untracked_data/
+.DS_Store
