@@ -1,0 +1,10 @@
+[code2_assist]
+analyze = code2.plugins.assist.analyze:Analyze
+ask = code2.plugins.assist.ask:Ask
+hack = code2.plugins.assist.hack:Hack
+
+[code2_llm]
+litellm = code2.plugins.llm.litellm:LiteLLM
+
+[console_scripts]
+code2 = code2.cli:cli.entry_point
