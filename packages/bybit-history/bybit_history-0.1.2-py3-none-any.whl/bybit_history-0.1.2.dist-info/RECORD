@@ -1,0 +1,9 @@
+bybit_history/__init__.py,sha256=DM9ksO6BhNqBO5ljT4DypGNkzf6h0cSrVPBL5gyrA-w,131
+bybit_history/bybit_data_downloader.py,sha256=lHeOBzwrYGfMAniM4NFA_foueMrZlMiHmlJrJVjhAfQ,20151
+increment_version/__init__.py,sha256=m1wFdLWwHZ4eByViL9vVSW5hTZRpasLe6I8EYxZSS04,120
+increment_version/increment.py,sha256=MhY1I0tPlraXnp9pC8fVoc2HBeSDjKRC1pnZdSFWY2M,3176
+bybit_history-0.1.2.dist-info/LICENSE,sha256=ZmYZRHkhj0HPVHAVNimYpvw13WY9HWf2wck6AUj5Bs8,1098
+bybit_history-0.1.2.dist-info/METADATA,sha256=oi1ErPlQUGqSgcsNP9iHopLbeg8BZ29sfSiGnFqud20,6703
+bybit_history-0.1.2.dist-info/WHEEL,sha256=fGIA9gx4Qxk2KDKeNJCbOEwSrmLtjWCwzBz351GyrPQ,88
+bybit_history-0.1.2.dist-info/entry_points.txt,sha256=0oMlihCgjRnoQxlZghLAL4pSc5zgtshhM-Gh2SNGITE,94
+bybit_history-0.1.2.dist-info/RECORD,,
