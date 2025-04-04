@@ -1,0 +1,365 @@
+ SystemMessage 
+You are a precise browser automation agent that interacts with websites through structured commands. Your role is to:
+1. Analyze the provided webpage elements and structure
+2. Plan a sequence of actions to accomplish the given task
+3. Respond with valid JSON containing your action sequence and state assessment
+
+Current date and time: 2025-04-01 10:32
+
+
+INPUT STRUCTURE:
+1. Current URL: The webpage you're currently on
+2. Available Tabs: List of open browser tabs
+3. Interactive Elements: List in the format:
+   index[:]<element_type>element_text</element_type>
+   - index: Numeric identifier for interaction
+   - element_type: HTML element type (button, input, etc.)
+   - element_text: Visible text or element description
+
+Example:
+33[:]<button>Submit Form</button>
+_[:] Non-interactive text
+
+
+Notes:
+- Only elements with numeric indexes are interactive
+- _[:] elements provide context but cannot be interacted with
+
+
+
+1. RESPONSE FORMAT: You must ALWAYS respond with valid JSON in this exact format:
+   {
+     "current_state": {
+       "evaluation_previous_goal": "Success|Failed|Unknown - Analyze the current elements and the image to check if the previous goals/actions are successful like intended by the task. Ignore the action result. The website is the ground truth. Also mention if something unexpected happened like new suggestions in an input field. Shortly state why/why not",
+       "memory": "Description of what has been done and what you need to remember until the end of the task",
+       "next_goal": "What needs to be done with the next actions"
+     },
+     "action": [
+       {
+         "one_action_name": {
+           // action-specific parameter
+         }
+       },
+       // ... more actions in sequence
+     ]
+   }
+
+2. ACTIONS: You can specify multiple actions in the list to be executed in sequence. But always specify only one action name per item.
+
+   Common action sequences:
+   - Form filling: [
+       {"input_text": {"index": 1, "text": "username"}},
+       {"input_text": {"index": 2, "text": "password"}},
+       {"click_element": {"index": 3}},
+     ]
+   - Navigation and extraction: [
+       {"open_new_tab": {}},
+       {"go_to_url": {"url": "https://example.com"}},
+       {"extract_page_content": {}}
+     ]
+   - Custom prompt mapping:Use custom prompt with the following mapping:[
+    {"prompt": "hihop to the instance 'abc'", "action": "Open link https://hihop.service-now.com/hop.do?mode=readwrite&sysparm_instance=ys2wfs wait for the page to load"}
+    {"prompt": "login with username 'a' and password 'b'", "action": "Open https://k8s0722360-node1.thunder.devsnc.com/now/workflow-studio/home/process ,then wait for page to load. login with username: a, password: b then click on login button."},
+    {"prompt": "navigate to Workflow Studio", "action": "Open https://k8s0722360-node1.thunder.devsnc.com ,then wait for page to load. Click on 'All' which is at the top left of the screen in the dropdown of 'All' write 'Workflow Studio' in the 'filter' box wait for 10 seconds. then navigate to Workflow Studio"},
+    {"prompt": "enter a unique flow name", "action": "Enter a flow name: 'demo flow'+ date + time(in seconds) at the moment"},
+	 {"prompt": "create a flow", "action": "wait for 5 more seconds and click on the + 'Create' button on the top left, wait for 5 seconds and click on 'flow' button."}]
+
+
+3. ELEMENT INTERACTION:
+   - Only use indexes that exist in the provided element list
+   - Each element has a unique index number (e.g., "33[:]<button>")
+   - Elements marked with "_[:]" are non-interactive (for context only)
+
+4. NAVIGATION & ERROR HANDLING:
+   - If no suitable elements exist, use other functions to complete the task
+   - If stuck, try alternative approaches
+   - Handle popups/cookies by accepting or closing them
+   - Use scroll to find elements you are looking for
+
+5. TASK COMPLETION:
+   - Use the done action as the last action as soon as the task is complete
+   - Don't hallucinate actions
+   - If the task requires specific information - make sure to include everything in the done function. This is what the user will see.
+   - If you are running out of steps (current step), think about speeding it up, and ALWAYS use the done action as the last action.
+
+6. VISUAL CONTEXT:
+   - When an image is provided, use it to understand the page layout
+   - Bounding boxes with labels correspond to element indexes
+   - Each bounding box and its label have the same color
+   - Most often the label is inside the bounding box, on the top right
+   - Visual context helps verify element locations and relationships
+   - sometimes labels overlap, so use the context to verify the correct element
+
+7. Form filling:
+   - If you fill an input field and your action sequence is interrupted, most often a list with suggestions popped up under the field and you need to first select the right element from the suggestion list.
+
+8. ACTION SEQUENCING:
+   - Actions are executed in the order they appear in the list
+   - Each action should logically follow from the previous one
+   - If the page changes after an action, the sequence is interrupted and you get the new state.
+   - If content only disappears the sequence continues.
+   - Only provide the action sequence until you think the page will change.
+   - Try to be efficient, e.g. fill forms at once, or chain actions where nothing changes on the page like saving, extracting, checkboxes...
+   - only use multiple actions if it makes sense.
+
+9. SELENIUM SCRIPT GENERATION:
+   - At the end of the task, generate a Selenium Java script for all the successful actions performed during the task.
+   - The script should include:
+     - Browser initialization
+     - URL navigation
+     - Element interaction (e.g., clicking, form filling)
+     - Handling errors, delays, and waits if needed
+   - Use XPath or CSS selectors based on the element index if specified.
+   - Make sure the script is well-commented and ready for execution.
+   - Example:
+```java
+   import org.openqa.selenium.By;
+   import org.openqa.selenium.WebDriver;
+   import org.openqa.selenium.WebElement;
+   import org.openqa.selenium.chrome.ChromeDriver;
+   import java.util.concurrent.TimeUnit;
+
+   public class WebAutomation {
+       public static void main(String[] args) {
+           // Set Chrome driver path
+           System.setProperty("webdriver.chrome.driver", "/path/to/chromedriver");
+
+           // Initialize WebDriver
+           WebDriver driver = new ChromeDriver();
+           driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+
+           // Open URL
+           driver.get("https://example.com");
+
+           // Fill in username
+           WebElement username = driver.findElement(By.xpath("//input[@id='username']"));
+           username.sendKeys("myusername");
+
+           // Fill in password
+           WebElement password = driver.findElement(By.xpath("//input[@id='password']"));
+           password.sendKeys("mypassword");
+
+           // Click login button
+           WebElement loginButton = driver.findElement(By.xpath("//button[@id='login']"));
+           loginButton.click();
+
+           // Close the browser
+           driver.quit();
+       }
+   }
+
+
+   - use maximum 10 actions per sequence
+
+Functions:
+Complete task: 
+{done: {'text': {'type': 'string'}}}
+Search Google in the current tab: 
+{search_google: {'query': {'type': 'string'}}}
+Navigate to URL in the current tab: 
+{go_to_url: {'url': {'type': 'string'}}}
+Go back: 
+{go_back: {}}
+Click element: 
+{click_element: {'index': {'type': 'integer'}, 'xpath': {'anyOf': [{'type': 'string'}, {'type': 'null'}], 'default': None}}}
+Input text into a input interactive element: 
+{input_text: {'index': {'type': 'integer'}, 'text': {'type': 'string'}, 'xpath': {'anyOf': [{'type': 'string'}, {'type': 'null'}], 'default': None}}}
+Switch tab: 
+{switch_tab: {'page_id': {'type': 'integer'}}}
+Open url in new tab: 
+{open_tab: {'url': {'type': 'string'}}}
+Extract page content to get the pure text or markdown with links if include_links is set to true: 
+{extract_content: {'include_links': {'type': 'boolean'}}}
+Scroll down the page by pixel amount - if no amount is specified, scroll down one page: 
+{scroll_down: {'amount': {'anyOf': [{'type': 'integer'}, {'type': 'null'}], 'default': None}}}
+Scroll up the page by pixel amount - if no amount is specified, scroll up one page: 
+{scroll_up: {'amount': {'anyOf': [{'type': 'integer'}, {'type': 'null'}], 'default': None}}}
+Send strings of special keys like Backspace, Insert, PageDown, Delete, Enter, Shortcuts such as `Control+o`, `Control+Shift+T` are supported as well. This gets used in keyboard.press. Be aware of different operating systems and their shortcuts: 
+{send_keys: {'keys': {'type': 'string'}}}
+If you dont find something which you want to interact with, scroll to it: 
+{scroll_to_text: {'text': {'type': 'string'}}}
+Get all options from a native dropdown: 
+{get_dropdown_options: {'index': {'type': 'integer'}}}
+Select dropdown option for interactive element index by the text of the option you want to select: 
+{select_dropdown_option: {'index': {'type': 'integer'}, 'text': {'type': 'string'}}}
+
+Remember: Your responses must be valid JSON matching the specified format. Each action in the sequence must be valid.
+
+ HumanMessage 
+Your ultimate task is: login with username: admin, password: admin click on 'New' button and check if 'Flow' tab is present. If you achieved your ultimate task, stop everything and use the done action in the next step to complete the task. If not, continue as usual.
+
+ AIMessage 
+
+
+ ToolMessage 
+Browser started
+
+ AIMessage 
+
+
+ ToolMessage 
+
+
+ HumanMessage 
+Action result: 🔗  Navigated to https://k8s0722360-node1.thunder.devsnc.com
+
+ AIMessage 
+
+
+ ToolMessage 
+
+
+ HumanMessage 
+Action result: ⌨️  Input "admin" into index 1
+
+ HumanMessage 
+Action result: ⌨️  Input "admin" into index 3
+
+ HumanMessage 
+Action result: 🖱️  Clicked button with index 5: Log in
+
+ AIMessage 
+
+
+ ToolMessage 
+
+
+ HumanMessage 
+Action result: 🖱️  Clicked button with index 3: All
+
+ AIMessage 
+
+
+ ToolMessage 
+
+
+ HumanMessage 
+Action result: ⌨️  Input "Workflow Studio" into index 3
+
+ HumanMessage 
+Action result: ⌨️  Sent keys: Enter
+
+ AIMessage 
+
+
+ ToolMessage 
+
+
+ HumanMessage 
+Action result: 🖱️  Clicked button with index 2:
+
+ AIMessage 
+
+
+ ToolMessage 
+
+
+ HumanMessage 
+Action result: ⌨️  Sent keys: PageDown
+
+ HumanMessage 
+Action result: 🖱️  Clicked button with index 0:
+
+ AIMessage 
+
+
+ ToolMessage 
+
+
+ HumanMessage 
+Action result: 🔍  Scrolled down the page by 100 pixels
+
+ HumanMessage 
+Action result: 🔍  Scrolled down the page by 100 pixels
+
+ HumanMessage 
+Action result: 🖱️  Clicked button with index 19:
+
+ AIMessage 
+
+
+ ToolMessage 
+
+
+ HumanMessage 
+Action result: ⌨️  Input "Workflow Studio" into index 13
+
+ HumanMessage 
+Action result: ⌨️  Sent keys: Enter
+
+ AIMessage 
+
+
+ ToolMessage 
+
+
+ HumanMessage 
+Action result: 🖱️  Clicked button with index 3: All
+
+ AIMessage 
+
+
+ ToolMessage 
+
+
+ HumanMessage 
+Action result: ⌨️  Input "Workflow Studio" into index 3
+
+ HumanMessage 
+Action result: ⌨️  Sent keys: Enter
+
+ AIMessage 
+
+
+ ToolMessage 
+
+
+ HumanMessage 
+Action result: 🖱️  Clicked button with index 7: All
+
+ HumanMessage 
+Current url: https://k8s0722360-node1.thunder.devsnc.com/now/nav/ui/search/0f8b85d0c7922010099a308dc7c2606a/params/search-term/Workflow%20Studio/global-search-data-config-id/c861cea2c7022010099a308dc7c26041/back-button-label/Home/search-context/now%2Fnav%2Fui
+Available tabs:
+[TabInfo(page_id=0, url='https://k8s0722360-node1.thunder.devsnc.com/now/nav/ui/search/0f8b85d0c7922010099a308dc7c2606a/params/search-term/Workflow%20Studio/global-search-data-config-id/c861cea2c7022010099a308dc7c26041/back-button-label/Home/search-context/now%2Fnav%2Fui', title='Search Results | Workflow Studio | ServiceNow')]
+Interactive elements from current page view:
+[Start of page]
+0[:]<div role="button" tabindex="0" aria-label="My ServiceNow landing page"></div>
+1[:]<img alt="ServiceNow Service Management"></img>
+_[:]Enter search term to filter All menu
+2[:]<input type="text" placeholder="Filter"></input>
+3[:]<button aria-label="Clear filter"></button>
+4[:]<button aria-label="Refresh menu items"></button>
+5[:]<button aria-label="Pin All menu"></button>
+6[:]<div role="menu"></div>
+7[:]<div role="menuitem" tabindex="0" aria-expanded="false" aria-label="All">All</div>
+8[:]<div role="menuitem" tabindex="0" aria-expanded="false" aria-label="Favorites">Favorites</div>
+9[:]<div role="menuitem" tabindex="0" aria-expanded="false" aria-label="History">History</div>
+10[:]<div role="menuitem" aria-label="More menus" aria-expanded="false" tabindex="0"></div>
+_[:]Search Results - Workflow Studio
+11[:]<span role="button" tabindex="0" aria-label="Create favorite for Search Results - Workflow Studio"></span>
+12[:]<input type="text" name="sncwsgs-typeahead-input" placeholder="Search" aria-label="Search" aria-expanded="true" role="combobox" value="Workflow Studio"></input>
+_[:]No exact match. Press Enter for full results.
+13[:]<span role="button" tabindex="0" aria-label="Scope selectors" aria-expanded="false"></span>
+14[:]<span role="button" tabindex="0" aria-label="Sidebar discussions" aria-expanded="false"></span>
+15[:]<span role="button" tabindex="0" aria-label="Overflow Menus" aria-expanded="false"></span>
+16[:]<div tabindex="0" role="button" aria-label="System Administrator: Available" aria-expanded="false"></div>
+17[:]<img alt="System Administrator is Available"></img>
+_[:]Skip to results sorted by category
+_[:]Searching for "Workflow Studio"
+[End of page]
+
+ RESPONSE
+{
+  "current_state": {
+    "evaluation_previous_goal": "Success - Searched for 'Workflow Studio,' navigated to the search results page.",
+    "memory": "Navigated to Workflow Studio search results page. Need verification of 'New' button and 'Flow' tab.",
+    "next_goal": "Confirm 'New' button presence and create a flow."
+  },
+  "action": [
+    {
+      "click_element": {
+        "index": 0
+      }
+    }
+  ]
+}

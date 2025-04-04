@@ -1,0 +1,28 @@
+{
+  "version": "2.0",
+  "id": "selenium-ide-recording",
+  "name": "Browser Actions Recording",
+  "url": "http://localhost:8080",
+  "tests": [
+    {
+      "id": "test-1",
+      "name": "Browser Actions",
+      "commands": [
+        {
+          "type": "verify",
+          "target": "",
+          "value": "Workflow Studio page is loaded successfully!",
+          "timestamp": 41.525578022003174,
+          "is_shadow": false
+        },
+        {
+          "type": "assertText",
+          "target": "//body",
+          "value": "Workflow Studio page is loaded successfully!",
+          "timestamp": 41.52571392059326,
+          "is_shadow": false
+        }
+      ]
+    }
+  ]
+}

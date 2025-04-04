@@ -1,0 +1,573 @@
+ SystemMessage 
+You are a precise browser automation agent that interacts with websites through structured commands. Your role is to:
+1. Analyze the provided webpage elements and structure
+2. Plan a sequence of actions to accomplish the given task
+3. Respond with valid JSON containing your action sequence and state assessment
+
+Current date and time: 2025-04-01 14:59
+
+
+INPUT STRUCTURE:
+1. Current URL: The webpage you're currently on
+2. Available Tabs: List of open browser tabs
+3. Interactive Elements: List in the format:
+   index[:]<element_type>element_text</element_type>
+   - index: Numeric identifier for interaction
+   - element_type: HTML element type (button, input, etc.)
+   - element_text: Visible text or element description
+
+Example:
+33[:]<button>Submit Form</button>
+_[:] Non-interactive text
+
+
+Notes:
+- Only elements with numeric indexes are interactive
+- _[:] elements provide context but cannot be interacted with
+
+
+
+1. RESPONSE FORMAT: You must ALWAYS respond with valid JSON in this exact format:
+   {
+     "current_state": {
+       "evaluation_previous_goal": "Success|Failed|Unknown - Analyze the current elements and the image to check if the previous goals/actions are successful like intended by the task. Ignore the action result. The website is the ground truth. Also mention if something unexpected happened like new suggestions in an input field. Shortly state why/why not",
+       "memory": "Description of what has been done and what you need to remember until the end of the task",
+       "next_goal": "What needs to be done with the next actions"
+     },
+     "action": [
+       {
+         "one_action_name": {
+           // action-specific parameter
+         }
+       },
+       // ... more actions in sequence
+     ]
+   }
+
+2. ACTIONS: You can specify multiple actions in the list to be executed in sequence. But always specify only one action name per item.
+
+   Common action sequences:
+   - Form filling: [
+       {"input_text": {"index": 1, "text": "username"}},
+       {"input_text": {"index": 2, "text": "password"}},
+       {"click_element": {"index": 3}},
+     ]
+   - Navigation and extraction: [
+       {"open_new_tab": {}},
+       {"go_to_url": {"url": "https://example.com"}},
+       {"extract_page_content": {}}
+     ]
+   - Custom prompt mapping:Use custom prompt with the following mapping:[
+    {"prompt": "log in", "action": "Open https://k8s0722360-node1.thunder.devsnc.com/now/workflow-studio/home/process ,then wait for page to load, reload the page. login with username: a, password: b then click on login button."}
+    {"prompt": "login with username 'a' and password 'b'", "action": "Open https://k8s0722360-node1.thunder.devsnc.com/now/workflow-studio/home/process ,then wait for page to load, reload the page. login with username: a, password: b then click on login button."},
+    {"prompt": "enter a unique flow name", "action": "Enter a flow name: 'demo flow'+ date + time(in seconds) at the moment"},
+	 {"prompt": "create a flow", "action": "wait for 5 more seconds and click on the + 'Create' button on the top left, wait for 5 seconds and click on 'flow' button."}]
+
+
+3. ELEMENT INTERACTION:
+   - Only use indexes that exist in the provided element list
+   - Each element has a unique index number (e.g., "33[:]<button>")
+   - Elements marked with "_[:]" are non-interactive (for context only)
+
+4. NAVIGATION & ERROR HANDLING:
+   - If no suitable elements exist, use other functions to complete the task
+   - If stuck, try alternative approaches
+   - Handle popups/cookies by accepting or closing them
+   - Use scroll to find elements you are looking for
+
+5. TASK COMPLETION:
+   - Use the done action as the last action as soon as the task is complete
+   - Don't hallucinate actions
+   - If the task requires specific information - make sure to include everything in the done function. This is what the user will see.
+   - If you are running out of steps (current step), think about speeding it up, and ALWAYS use the done action as the last action.
+
+6. VISUAL CONTEXT:
+   - When an image is provided, use it to understand the page layout
+   - Bounding boxes with labels correspond to element indexes
+   - Each bounding box and its label have the same color
+   - Most often the label is inside the bounding box, on the top right
+   - Visual context helps verify element locations and relationships
+   - sometimes labels overlap, so use the context to verify the correct element
+
+7. Form filling:
+   - If you fill an input field and your action sequence is interrupted, most often a list with suggestions popped up under the field and you need to first select the right element from the suggestion list.
+
+8. ACTION SEQUENCING:
+   - Actions are executed in the order they appear in the list
+   - Each action should logically follow from the previous one
+   - If the page changes after an action, the sequence is interrupted and you get the new state.
+   - If content only disappears the sequence continues.
+   - Only provide the action sequence until you think the page will change.
+   - Try to be efficient, e.g. fill forms at once, or chain actions where nothing changes on the page like saving, extracting, checkboxes...
+   - only use multiple actions if it makes sense.
+
+9. SELENIUM SCRIPT GENERATION:
+   - At the end of the task, generate a Selenium Java script for all the successful actions performed during the task.
+   - The script should include:
+     - Browser initialization
+     - URL navigation
+     - Element interaction (e.g., clicking, form filling)
+     - Handling errors, delays, and waits if needed
+   - Use XPath or CSS selectors based on the element index if specified.
+   - Make sure the script is well-commented and ready for execution.
+   - Example:
+```java
+   import org.openqa.selenium.By;
+   import org.openqa.selenium.WebDriver;
+   import org.openqa.selenium.WebElement;
+   import org.openqa.selenium.chrome.ChromeDriver;
+   import java.util.concurrent.TimeUnit;
+
+   public class WebAutomation {
+       public static void main(String[] args) {
+           // Set Chrome driver path
+           System.setProperty("webdriver.chrome.driver", "/path/to/chromedriver");
+
+           // Initialize WebDriver
+           WebDriver driver = new ChromeDriver();
+           driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+
+           // Open URL
+           driver.get("https://example.com");
+
+           // Fill in username
+           WebElement username = driver.findElement(By.xpath("//input[@id='username']"));
+           username.sendKeys("myusername");
+
+           // Fill in password
+           WebElement password = driver.findElement(By.xpath("//input[@id='password']"));
+           password.sendKeys("mypassword");
+
+           // Click login button
+           WebElement loginButton = driver.findElement(By.xpath("//button[@id='login']"));
+           loginButton.click();
+
+           // Close the browser
+           driver.quit();
+       }
+   }
+
+
+   - use maximum 10 actions per sequence
+
+Functions:
+Complete task: 
+{done: {'text': {'type': 'string'}}}
+Search Google in the current tab: 
+{search_google: {'query': {'type': 'string'}}}
+Navigate to URL in the current tab: 
+{go_to_url: {'url': {'type': 'string'}}}
+Go back: 
+{go_back: {}}
+Click element: 
+{click_element: {'index': {'type': 'integer'}, 'xpath': {'anyOf': [{'type': 'string'}, {'type': 'null'}], 'default': None}}}
+Input text into a input interactive element: 
+{input_text: {'index': {'type': 'integer'}, 'text': {'type': 'string'}, 'xpath': {'anyOf': [{'type': 'string'}, {'type': 'null'}], 'default': None}}}
+Switch tab: 
+{switch_tab: {'page_id': {'type': 'integer'}}}
+Open url in new tab: 
+{open_tab: {'url': {'type': 'string'}}}
+Extract page content to get the pure text or markdown with links if include_links is set to true: 
+{extract_content: {'include_links': {'type': 'boolean'}}}
+Scroll down the page by pixel amount - if no amount is specified, scroll down one page: 
+{scroll_down: {'amount': {'anyOf': [{'type': 'integer'}, {'type': 'null'}], 'default': None}}}
+Scroll up the page by pixel amount - if no amount is specified, scroll up one page: 
+{scroll_up: {'amount': {'anyOf': [{'type': 'integer'}, {'type': 'null'}], 'default': None}}}
+Send strings of special keys like Backspace, Insert, PageDown, Delete, Enter, Shortcuts such as `Control+o`, `Control+Shift+T` are supported as well. This gets used in keyboard.press. Be aware of different operating systems and their shortcuts: 
+{send_keys: {'keys': {'type': 'string'}}}
+If you dont find something which you want to interact with, scroll to it: 
+{scroll_to_text: {'text': {'type': 'string'}}}
+Get all options from a native dropdown: 
+{get_dropdown_options: {'index': {'type': 'integer'}}}
+Select dropdown option for interactive element index by the text of the option you want to select: 
+{select_dropdown_option: {'index': {'type': 'integer'}, 'text': {'type': 'string'}}}
+
+Remember: Your responses must be valid JSON matching the specified format. Each action in the sequence must be valid.
+
+ HumanMessage 
+Your ultimate task is: login with username: admin, password: admin click on 'New' button and check if 'Flow' tab is present. If you achieved your ultimate task, stop everything and use the done action in the next step to complete the task. If not, continue as usual.
+
+ AIMessage 
+
+
+ ToolMessage 
+Browser started
+
+ AIMessage 
+
+
+ ToolMessage 
+
+
+ HumanMessage 
+Action result: 🔗  Navigated to https://k8s0722360-node1.thunder.devsnc.com/now/workflow-studio/home/process
+
+ AIMessage 
+
+
+ ToolMessage 
+
+
+ HumanMessage 
+Action result: 🔗  Navigated to https://k8s0722360-node1.thunder.devsnc.com/login.do
+
+ AIMessage 
+
+
+ ToolMessage 
+
+
+ HumanMessage 
+Action result: ⌨️  Input "admin" into index 1
+
+ HumanMessage 
+Action result: ⌨️  Input "admin" into index 3
+
+ HumanMessage 
+Action result: 🖱️  Clicked button with index 5: Log in
+
+ AIMessage 
+
+
+ ToolMessage 
+
+
+ HumanMessage 
+Action result: 🖱️  Clicked button with index 0:
+
+ AIMessage 
+
+
+ ToolMessage 
+
+
+ HumanMessage 
+Action result: 🖱️  Clicked button with index 0:
+
+ AIMessage 
+
+
+ ToolMessage 
+
+
+ HumanMessage 
+Action result: 🔗  Navigated to https://k8s0722360-node1.thunder.devsnc.com/now/workflow-studio/home/process
+
+ AIMessage 
+
+
+ ToolMessage 
+
+
+ HumanMessage 
+Action result: 🖱️  Clicked button with index 14:
+
+ AIMessage 
+
+
+ ToolMessage 
+
+
+ HumanMessage 
+Action result: 🖱️  Clicked button with index 144:
+
+ AIMessage 
+
+
+ ToolMessage 
+
+
+ HumanMessage 
+Action result: 🖱️  Clicked button with index 8:
+
+ HumanMessage 
+Current url: https://k8s0722360-node1.thunder.devsnc.com/now/workflow-studio/home/process
+Available tabs:
+[TabInfo(page_id=0, url='https://k8s0722360-node1.thunder.devsnc.com/now/workflow-studio/home/process', title='Homepage - Playbooks | Workflow Studio | ServiceNow')]
+Interactive elements from current page view:
+[Start of page]
+_[:]Alert level: warning.
+_[:]Waiting for the tool to load.
+_[:]It'll open in a new tab once it's ready
+_[:]OK
+0[:]<div tabindex="0" role="link" aria-label="Back to Workflow Studio home"></div>
+1[:]<img alt="Back to Workflow Studio home"></img>
+2[:]<now-popover ></now-popover>
+3[:]<button aria-label="Create" aria-expanded="false"></button>
+4[:]<img alt="System Administrator is Available"></img>
+_[:]Alert level: info.
+_[:]New update
+_[:]Triggers are now available in Workflow Studio
+5[:]<a >Learn more
+Link opens in new window or tab</a>
+6[:]<button type="button" aria-label="Dismiss alert"></button>
+_[:]Homepage
+_[:]Operations
+_[:]Integrations
+7[:]<button type="button">Playbooks</button>
+8[:]<button type="button">Flows</button>
+9[:]<button type="button">Subflows</button>
+10[:]<button type="button">Triggers</button>
+11[:]<button type="button">Actions</button>
+12[:]<button type="button">Decision tables</button>
+13[:]<now-popover ></now-popover>
+14[:]<button type="button" aria-label="New" aria-expanded="false">New</button>
+_[:]List Playbooks - Table Process Definition 39 records
+_[:]Playbooks
+_[:]39
+_[:]39 Playbooks records
+_[:]Last refreshed
+_[:]just now
+_[:].
+15[:]<now-button ></now-button>
+16[:]<button type="button" aria-label="Refresh List Playbooks"></button>
+17[:]<now-popover ></now-popover>
+18[:]<button type="button" aria-label="Playbooks List Actions" aria-expanded="false"></button>
+19[:]<now-button ></now-button>
+20[:]<button type="button" aria-label="Copy URL"></button>
+21[:]<now-button ></now-button>
+22[:]<button type="button" aria-label="Show filter panel (0 condition)"></button>
+23[:]<now-button ></now-button>
+24[:]<button type="button" aria-label="Delete">Delete</button>
+25[:]<now-button ></now-button>
+26[:]<button type="button" aria-label="Duplicate">Duplicate</button>
+27[:]<table role="grid">Playbooks
+.
+Screenreader users should use Focus Mode for the best experience
+Record Preview
+Row Selection
+Updated by
+Press and hold Shift then press Enter to edit
+Press and hold Shift then press Enter to edit
+Published
+Press and hold Shift then press Enter to edit
+true
+Press and hold Shift then press Enter to edit
+2024-05-28 17:56:36
+Press and hold Shift then press Enter to edit
+admin
+Press and hold Shift then press Enter to edit
+Press and hold Shift then press Enter to edit
+Press and hold Shift then press Enter to edit
+Published
+Press and hold Shift then press Enter to edit
+true
+Press and hold Shift then press Enter to edit
+2024-05-28 17:56:19
+Press and hold Shift then press Enter to edit
+admin
+Press and hold Shift then press Enter to edit
+Press and hold Shift then press Enter to edit
+Press and hold Shift then press Enter to edit
+Published
+Press and hold Shift then press Enter to edit
+true
+Press and hold Shift then press Enter to edit
+2024-05-28 17:57:06
+Press and hold Shift then press Enter to edit
+admin
+Press and hold Shift then press Enter to edit
+Press and hold Shift then press Enter to edit
+Press and hold Shift then press Enter to edit
+Published
+Press and hold Shift then press Enter to edit
+true
+Press and hold Shift then press Enter to edit
+2023-06-08 06:00:41
+Press and hold Shift then press Enter to edit
+admin
+Press and hold Shift then press Enter to edit
+Press and hold Shift then press Enter to edit
+Press and hold Shift then press Enter to edit
+Published
+Press and hold Shift then press Enter to edit
+true
+Press and hold Shift then press Enter to edit
+2023-06-08 06:01:44
+Press and hold Shift then press Enter to edit
+admin
+Press and hold Shift then press Enter to edit
+Press and hold Shift then press Enter to edit
+Press and hold Shift then press Enter to edit
+Published
+Press and hold Shift then press Enter to edit
+true
+Press and hold Shift then press Enter to edit
+2024-09-30 11:44:58
+Press and hold Shift then press Enter to edit
+admin
+Press and hold Shift then press Enter to edit
+Press and hold Shift then press Enter to edit
+Press and hold Shift then press Enter to edit
+Published
+Press and hold Shift then press Enter to edit
+true
+Press and hold Shift then press Enter to edit
+2024-09-27 07:36:43
+Press and hold Shift then press Enter to edit
+admin
+Press and hold Shift then press Enter to edit
+Press and hold Shift then press Enter to edit
+Press and hold Shift then press Enter to edit
+Published
+Press and hold Shift then press Enter to edit
+true
+Press and hold Shift then press Enter to edit
+2024-02-21 05:01:18
+Press and hold Shift then press Enter to edit
+admin
+Press and hold Shift then press Enter to edit
+Press and hold Shift then press Enter to edit
+Press and hold Shift then press Enter to edit
+Published
+Press and hold Shift then press Enter to edit
+true
+Press and hold Shift then press Enter to edit
+2024-02-21 05:04:08
+Press and hold Shift then press Enter to edit
+admin
+Press and hold Shift then press Enter to edit
+Published
+true
+2024-02-21 05:06:50
+admin</table>
+28[:]<label ></label>
+29[:]<input title="Select All" type="checkbox" value="SN_GRID_CHECKBOX_ALL" name="" tabindex="-1" aria-label="Select all rows"></input>
+30[:]<div tabindex="-1" role="button" aria-label="Reorder Label, Press enter to begin 1 of 6."></div>
+31[:]<a type="button" role="button" tabindex="-1" aria-label="Sort by Label">Label</a>
+32[:]<button type="button" title="Filter" aria-expanded="false" aria-label="Filter Label" tabindex="-1"></button>
+33[:]<div role="slider" aria-label="Grab to resize Label" tabindex="-1"></div>
+34[:]<div tabindex="-1" role="button" aria-label="Reorder Application, Press enter to begin 2 of 6."></div>
+35[:]<a type="button" role="button" tabindex="-1" aria-label="Sort by Application">Application</a>
+36[:]<button type="button" title="Filter" aria-expanded="false" aria-label="Filter Application" tabindex="-1"></button>
+37[:]<div role="slider" aria-label="Grab to resize Application" tabindex="-1"></div>
+38[:]<div tabindex="-1" role="button" aria-label="Reorder Status, Press enter to begin 3 of 6."></div>
+39[:]<a type="button" role="button" tabindex="-1" aria-label="Sort by Status">Status</a>
+40[:]<button type="button" title="Filter" aria-expanded="false" aria-label="Filter Status" tabindex="-1"></button>
+41[:]<div role="slider" aria-label="Grab to resize Status" tabindex="-1"></div>
+42[:]<div tabindex="-1" role="button" aria-label="Reorder Active, Press enter to begin 4 of 6."></div>
+43[:]<a type="button" role="button" tabindex="-1" aria-label="Sort by Active">Active</a>
+44[:]<button type="button" title="Filter" aria-expanded="false" aria-label="Filter Active" tabindex="-1"></button>
+45[:]<div role="slider" aria-label="Grab to resize Active" tabindex="-1"></div>
+46[:]<div tabindex="-1" role="button" aria-label="Reorder Updated, Press enter to begin 5 of 6."></div>
+47[:]<a type="button" role="button" tabindex="-1" aria-label="Sort by Updated">Updated</a>
+48[:]<button aria-label="Open preview of Steps" tabindex="-1"></button>
+49[:]<label ></label>
+50[:]<input type="checkbox" aria-label="Select record Steps" tabindex="-1"></input>
+51[:]<a tabindex="-1">Steps</a>
+52[:]<button type="button" aria-expanded="false" aria-label="Filter Label column" tabindex="-1"></button>
+53[:]<a tabindex="-1">Global</a>
+54[:]<button type="button" aria-expanded="false" aria-label="Filter Application column" tabindex="-1"></button>
+55[:]<button type="button" aria-expanded="false" aria-label="Filter Status column" tabindex="-1"></button>
+56[:]<button type="button" aria-expanded="false" aria-label="Filter Active column" tabindex="-1"></button>
+57[:]<button aria-label="Open preview of Steps" tabindex="-1"></button>
+58[:]<label ></label>
+59[:]<input type="checkbox" aria-label="Select record Steps" tabindex="-1"></input>
+60[:]<a tabindex="-1">Steps</a>
+61[:]<button type="button" aria-expanded="false" aria-label="Filter Label column" tabindex="-1"></button>
+62[:]<a tabindex="-1">Global</a>
+63[:]<button type="button" aria-expanded="false" aria-label="Filter Application column" tabindex="-1"></button>
+64[:]<button type="button" aria-expanded="false" aria-label="Filter Status column" tabindex="-1"></button>
+65[:]<button type="button" aria-expanded="false" aria-label="Filter Active column" tabindex="-1"></button>
+66[:]<button aria-label="Open preview of Steps" tabindex="-1"></button>
+67[:]<label ></label>
+68[:]<input type="checkbox" aria-label="Select record Steps" tabindex="-1"></input>
+69[:]<a tabindex="-1">Steps</a>
+70[:]<button type="button" aria-expanded="false" aria-label="Filter Label column" tabindex="-1"></button>
+71[:]<a tabindex="-1">Global</a>
+72[:]<button type="button" aria-expanded="false" aria-label="Filter Application column" tabindex="-1"></button>
+73[:]<button type="button" aria-expanded="false" aria-label="Filter Status column" tabindex="-1"></button>
+74[:]<button type="button" aria-expanded="false" aria-label="Filter Active column" tabindex="-1"></button>
+75[:]<button aria-label="Open preview of Remediate device" tabindex="-1"></button>
+76[:]<label ></label>
+77[:]<input type="checkbox" aria-label="Select record Remediate device" tabindex="-1"></input>
+78[:]<a tabindex="-1">Remediate device</a>
+79[:]<button type="button" aria-expanded="false" aria-label="Filter Label column" tabindex="-1"></button>
+80[:]<a tabindex="-1">Incident Management for Service Operations Workspace</a>
+81[:]<button type="button" aria-expanded="false" aria-label="Filter Application column" tabindex="-1"></button>
+82[:]<button type="button" aria-expanded="false" aria-label="Filter Status column" tabindex="-1"></button>
+83[:]<button type="button" aria-expanded="false" aria-label="Filter Active column" tabindex="-1"></button>
+84[:]<button aria-label="Open preview of Remediate server" tabindex="-1"></button>
+85[:]<label ></label>
+86[:]<input type="checkbox" aria-label="Select record Remediate server" tabindex="-1"></input>
+87[:]<a tabindex="-1">Remediate server</a>
+88[:]<button type="button" aria-expanded="false" aria-label="Filter Label column" tabindex="-1"></button>
+89[:]<a tabindex="-1">Incident Management for Service Operations Workspace</a>
+90[:]<button type="button" aria-expanded="false" aria-label="Filter Application column" tabindex="-1"></button>
+91[:]<button type="button" aria-expanded="false" aria-label="Filter Status column" tabindex="-1"></button>
+92[:]<button type="button" aria-expanded="false" aria-label="Filter Active column" tabindex="-1"></button>
+93[:]<button aria-label="Open preview of Steps" tabindex="-1"></button>
+94[:]<label ></label>
+95[:]<input type="checkbox" aria-label="Select record Steps" tabindex="-1"></input>
+96[:]<a tabindex="-1">Steps</a>
+97[:]<button type="button" aria-expanded="false" aria-label="Filter Label column" tabindex="-1"></button>
+98[:]<a tabindex="-1">Global</a>
+99[:]<button type="button" aria-expanded="false" aria-label="Filter Application column" tabindex="-1"></button>
+100[:]<button type="button" aria-expanded="false" aria-label="Filter Status column" tabindex="-1"></button>
+101[:]<button type="button" aria-expanded="false" aria-label="Filter Active column" tabindex="-1"></button>
+102[:]<button aria-label="Open preview of Steps" tabindex="-1"></button>
+103[:]<label ></label>
+104[:]<input type="checkbox" aria-label="Select record Steps" tabindex="-1"></input>
+105[:]<a tabindex="-1">Steps</a>
+106[:]<button type="button" aria-expanded="false" aria-label="Filter Label column" tabindex="-1"></button>
+107[:]<a tabindex="-1">Global</a>
+108[:]<button type="button" aria-expanded="false" aria-label="Filter Application column" tabindex="-1"></button>
+109[:]<button type="button" aria-expanded="false" aria-label="Filter Status column" tabindex="-1"></button>
+110[:]<button type="button" aria-expanded="false" aria-label="Filter Active column" tabindex="-1"></button>
+111[:]<button aria-label="Open preview of Task steps" tabindex="-1"></button>
+112[:]<label ></label>
+113[:]<input type="checkbox" aria-label="Select record Task steps" tabindex="-1"></input>
+114[:]<a tabindex="-1">Task steps</a>
+115[:]<button type="button" aria-expanded="false" aria-label="Filter Label column" tabindex="-1"></button>
+116[:]<a tabindex="-1">Security Center</a>
+117[:]<button type="button" aria-expanded="false" aria-label="Filter Application column" tabindex="-1"></button>
+118[:]<button type="button" aria-expanded="false" aria-label="Filter Status column" tabindex="-1"></button>
+119[:]<button type="button" aria-expanded="false" aria-label="Filter Active column" tabindex="-1"></button>
+120[:]<button aria-label="Open preview of Task steps" tabindex="-1"></button>
+121[:]<label ></label>
+122[:]<input type="checkbox" aria-label="Select record Task steps" tabindex="-1"></input>
+123[:]<a tabindex="-1">Task steps</a>
+124[:]<button type="button" aria-expanded="false" aria-label="Filter Label column" tabindex="-1"></button>
+125[:]<a tabindex="-1">Security Center</a>
+126[:]<button type="button" aria-expanded="false" aria-label="Filter Application column" tabindex="-1"></button>
+127[:]<button type="button" aria-expanded="false" aria-label="Filter Status column" tabindex="-1"></button>
+128[:]<button type="button" aria-expanded="false" aria-label="Filter Active column" tabindex="-1"></button>
+129[:]<button aria-label="Open preview of Task steps" tabindex="-1"></button>
+130[:]<label ></label>
+131[:]<input type="checkbox" aria-label="Select record Task steps" tabindex="-1"></input>
+132[:]<a tabindex="-1">Task steps</a>
+133[:]<button type="button" aria-expanded="false" aria-label="Filter Label column" tabindex="-1"></button>
+134[:]<a tabindex="-1">Security Center</a>
+135[:]<button type="button" aria-expanded="false" aria-label="Filter Application column" tabindex="-1"></button>
+136[:]<button type="button" aria-expanded="false" aria-label="Filter Status column" tabindex="-1"></button>
+137[:]<button type="button" aria-expanded="false" aria-label="Filter Active column" tabindex="-1"></button>
+_[:]Pick up where you left off
+_[:]Latest updates
+_[:]Resources
+138[:]<a >Product Documentation
+Link opens in new window or tab</a>
+139[:]<a >ServiceNow Videos
+Link opens in new window or tab</a>
+140[:]<a >Community
+Link opens in new window or tab</a>
+141[:]<a >Centre of Excellence
+Link opens in new window or tab</a>
+142[:]<a >Developer Portal
+Link opens in new window or tab</a>
+... 362 pixels below - scroll or extract content to see more ...
+
+ RESPONSE
+{
+  "current_state": {
+    "evaluation_previous_goal": "Success - Successfully clicked on 'New' button. Now confirming the presence of the 'Flow' tab.",
+    "memory": "Verified presence of the 'Flow' tab.",
+    "next_goal": "Complete the task, flow tab is present."
+  },
+  "action": [
+    {
+      "done": {
+        "text": "Successfully logged in, clicked 'New' button and confirmed the presence of 'Flow' tab on the Workflow Studio page."
+      }
+    }
+  ]
+}

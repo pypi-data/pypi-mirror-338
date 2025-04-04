@@ -1,0 +1,229 @@
+[
+  {
+    "timestamp": "2025-04-02T14:24:02.031561",
+    "action": "type",
+    "element": null,
+    "error": "Element not found: <button class=\"pointerhand icon-stop-watch btn btn-icon btn-response-time\" type=\"button\" aria-controls=\"glide:timing_widget\" title=\"Response time(ms): 3731, Network: 1173, Server: 313, Browser: 2245\" aria-label=\"Response Time\"> [interactive, top, highlight:0]"
+  },
+  {
+    "timestamp": "2025-04-02T14:24:03.042143",
+    "action": "type",
+    "element": null,
+    "error": "Element not found: <button class=\"pointerhand icon-stop-watch btn btn-icon btn-response-time\" type=\"button\" aria-controls=\"glide:timing_widget\" title=\"Response time(ms): 3731, Network: 1173, Server: 313, Browser: 2245\" aria-label=\"Response Time\"> [interactive, top, highlight:0]"
+  },
+  {
+    "timestamp": "2025-04-02T14:24:04.046744",
+    "action": "type",
+    "element": null,
+    "error": "Element not found: <button class=\"pointerhand icon-stop-watch btn btn-icon btn-response-time\" type=\"button\" aria-controls=\"glide:timing_widget\" title=\"Response time(ms): 3731, Network: 1173, Server: 313, Browser: 2245\" aria-label=\"Response Time\"> [interactive, top, highlight:0]"
+  },
+  {
+    "timestamp": "2025-04-02T14:24:07.537930",
+    "action": "type",
+    "element": {
+      "tagName": "input",
+      "id": "user_name",
+      "classes": [
+        "form-control"
+      ],
+      "attributes": {
+        "type": "text",
+        "class": "form-control",
+        "id": "user_name",
+        "name": "user_name",
+        "value": "",
+        "autocomplete": "off",
+        "style": ""
+      },
+      "text": "",
+      "value": "admin",
+      "type": "text",
+      "name": "user_name",
+      "role": null,
+      "ariaLabel": null,
+      "ariaDescribedBy": null,
+      "ariaLabelledBy": null,
+      "isVisible": true,
+      "isInteractive": true,
+      "xpath": "//*[@id=\"user_name\"]",
+      "hasShadowDOM": false,
+      "shadowRoot": null,
+      "shadowElements": [],
+      "elementsWithShadowDOM": [],
+      "rect": {
+        "x": 495,
+        "y": 246,
+        "width": 290,
+        "height": 32
+      },
+      "computedStyle": {
+        "display": "flex",
+        "visibility": "visible",
+        "opacity": "1",
+        "position": "static",
+        "zIndex": "auto"
+      },
+      "actions": [
+        "type"
+      ]
+    },
+    "text": "admin"
+  },
+  {
+    "timestamp": "2025-04-02T14:24:08.594282",
+    "action": "type",
+    "element": {
+      "tagName": "input",
+      "id": "user_password",
+      "classes": [
+        "form-control"
+      ],
+      "attributes": {
+        "class": "form-control",
+        "type": "password",
+        "id": "user_password",
+        "name": "user_password",
+        "autocomplete": "off",
+        "style": "",
+        "browser-user-highlight-id": "playwright-highlight-3"
+      },
+      "text": "",
+      "value": "admin",
+      "type": "password",
+      "name": "user_password",
+      "role": null,
+      "ariaLabel": null,
+      "ariaDescribedBy": null,
+      "ariaLabelledBy": null,
+      "isVisible": true,
+      "isInteractive": true,
+      "xpath": "//*[@id=\"user_password\"]",
+      "hasShadowDOM": false,
+      "shadowRoot": null,
+      "shadowElements": [],
+      "elementsWithShadowDOM": [],
+      "rect": {
+        "x": 495,
+        "y": 305,
+        "width": 259,
+        "height": 32
+      },
+      "computedStyle": {
+        "display": "flex",
+        "visibility": "visible",
+        "opacity": "1",
+        "position": "relative",
+        "zIndex": "2"
+      },
+      "actions": [
+        "type"
+      ]
+    },
+    "text": "admin"
+  },
+  {
+    "timestamp": "2025-04-02T14:24:09.716827",
+    "action": "click",
+    "element": {
+      "tagName": "button",
+      "id": "sysverb_login",
+      "classes": [
+        "btn",
+        "btn-primary"
+      ],
+      "attributes": {
+        "name": "not_important",
+        "id": "sysverb_login",
+        "class": "btn btn-primary",
+        "type": "submit",
+        "onclick": "loginPage.sys_action.value=this.id;",
+        "browser-user-highlight-id": "playwright-highlight-5"
+      },
+      "text": "Log in",
+      "value": "",
+      "type": "submit",
+      "name": "not_important",
+      "role": null,
+      "ariaLabel": null,
+      "ariaDescribedBy": null,
+      "ariaLabelledBy": null,
+      "isVisible": true,
+      "isInteractive": true,
+      "xpath": "//*[@id=\"sysverb_login\"]",
+      "hasShadowDOM": false,
+      "shadowRoot": null,
+      "shadowElements": [],
+      "elementsWithShadowDOM": [],
+      "rect": {
+        "x": 495,
+        "y": 357,
+        "width": 290,
+        "height": 32
+      },
+      "computedStyle": {
+        "display": "inline-flex",
+        "visibility": "visible",
+        "opacity": "1",
+        "position": "static",
+        "zIndex": "auto"
+      },
+      "actions": [
+        "click"
+      ]
+    }
+  },
+  {
+    "timestamp": "2025-04-02T14:24:23.427067",
+    "action": "click",
+    "element": {
+      "tagName": "div",
+      "id": "",
+      "classes": [
+        "logo-area"
+      ],
+      "attributes": {
+        "tabindex": "0",
+        "role": "link",
+        "class": "logo-area",
+        "aria-label": "Back to Workflow Studio home",
+        "browser-user-highlight-id": "playwright-highlight-0"
+      },
+      "text": "",
+      "value": null,
+      "type": null,
+      "name": null,
+      "role": "link",
+      "ariaLabel": "Back to Workflow Studio home",
+      "ariaDescribedBy": null,
+      "ariaLabelledBy": null,
+      "isVisible": true,
+      "isInteractive": false,
+      "xpath": "//*[@id=\"undefined\"]/div[1]/div[1]",
+      "hasShadowDOM": true,
+      "shadowRoot": null,
+      "shadowElements": [],
+      "elementsWithShadowDOM": [
+        {
+          "tagName": "macroponent-d469c54f433f61106c4bb0117fb8f267",
+          "id": "",
+          "classes": [],
+          "xpath": "/html/body/macroponent-d469c54f433f61106c4bb0117fb8f267[1]"
+        }
+      ],
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "width": 185,
+        "height": 52
+      },
+      "computedStyle": {
+        "display": "flex",
+        "visibility": "visible",
+        "opacity": "1",
+        "position": "static",
+        "zIndex": "auto"
+      },
+      "actions": []
+    }
+  }
+]
