@@ -1,0 +1,9 @@
+Change Log
+===========
+0.0.10 (April 3, 2024)
+-------------------------
+- Tenth Release
+
+Notes:
+------
+Fixed an error in the linear_std_curve class, where the indices of the covariance matrix were inverted relative to  the intended functionality.
