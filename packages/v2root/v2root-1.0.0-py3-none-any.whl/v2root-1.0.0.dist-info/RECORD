@@ -1,0 +1,11 @@
+v2root/__init__.py,sha256=r8lrRBfVlvOtGeS1ES0wN9R-oeYWgEGBZwi0jD7dI3c,1109
+v2root/v2root.py,sha256=6ZBytu0t21xLB-87p627tM9bXoZlMmI7h8rgcjT6ydk,15237
+v2root/lib/libv2root.dll,sha256=aLDBQIMA4IDuICx7YeL4VDb8q1--mK3r0NpQP6VD7Qo,435530
+v2root/lib/v2ray.exe,sha256=D4x7Vh4Ak87p4mwkhQcQcDjle-m7ytCkSigCsN5-5ro,35675648
+v2root/lib/v2root_core.c,sha256=AjhERAliozwNgQl9kGVcHbdXNuzE6-aF6jnzIdtc4Tw,25750
+v2root/lib/v2root_core.h,sha256=ru9mVcHXAxyhqF6V6TJ7ljmhucQQrxc99kG-_JTcLYE,4516
+v2root-1.0.0.dist-info/LICENSE,sha256=22c8yCaxXgq8W6BEBr83fY4HWqnEd_Si2F4s9VXh3Cc,1095
+v2root-1.0.0.dist-info/METADATA,sha256=_yN-9yOkSt2A1WPF7hZxGxZyon1CMPy-dOvfgFQCAn8,2400
+v2root-1.0.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+v2root-1.0.0.dist-info/top_level.txt,sha256=NaFvHnmqbLyeP8oq4n7DXFmtg6WknOmcyDS4FMS3PWA,7
+v2root-1.0.0.dist-info/RECORD,,
