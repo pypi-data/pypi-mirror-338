@@ -1,0 +1,12 @@
+ldcpy/__init__.py,sha256=VlhRu09F2iBXXIRvrKPjxEOulD-aV7_rIPpZL-HTnXY,644
+ldcpy/calcs.py,sha256=fGh-HOgwTz_12y5wWvsi0D_kZPhypemzDuYDSJJjcEg,107756
+ldcpy/collect_datasets.py,sha256=PEi9eLEGivVWpmC4sNWRbb7QLHrHYBL5F1OO4ki-ffI,3005
+ldcpy/comp_checker.py,sha256=-UtNNCikRwgwvGoKGy0z89-lzUvRZxuMMr2Ku0YvAUw,6246
+ldcpy/derived_vars.py,sha256=dZuKBFl6qCZ9mdIE-cYsUI6Qpx9tNKtLous9fF0xuG8,7295
+ldcpy/plot.py,sha256=MghSL76CqtAwr9scZBsiRPxsS5MlsM6yQr_U2YLbbu0,45958
+ldcpy/util.py,sha256=44Hze_bTYqRbN0B7tjkUlsZ3B0IDtENA8H4k5IsR1vk,31895
+ldcpy-0.20.dist-info/licenses/LICENSE.txt,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+ldcpy-0.20.dist-info/METADATA,sha256=CbBc17ba4CDkuUMo5lg9gY88Y-j-uHGt-Jz5mPlxQmw,6034
+ldcpy-0.20.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+ldcpy-0.20.dist-info/top_level.txt,sha256=kVVUW44n4RhC_mlQgQQi251j1S2AfUK_lDHOtgw9YpI,6
+ldcpy-0.20.dist-info/RECORD,,
