@@ -1,0 +1,277 @@
+# icsDV - initions Data Validation Tool
+
+## Introduction
+
+The icsDataValidation tool identifies data mismatches between two databases.
+The functionalities are specifically geared to support migration projects.
+It helps to find data issues in tables and views in comparison of a source and a target system.
+
+### What is "generic" about the tool?
+
+The icsDataValidation tool (icsDV) is in particular structered in a way that it is easily expandable.
+The main code is used by all different database options.
+Specifics for each supported database are implemented in a database service per database.
+
+The different database services are very similar.
+They hold the same methods with the same input and output parameters.
+Each method is aligned with the syntax and the settings of the database it is created for.
+Each core implementation includes connections setup, object comparison functionality and the result preparation.
+
+### Supported Databases
+
+The icsDV supports comparisons between the following databases:
+
+- Snowflake
+- Teradata
+- Azure SQL Server
+- Exasol
+- Oracle
+- Databricks with and without Unity Catalog
+
+Comparison results can be written to either Snowflake or Databricks.
+
+### Features
+
+The key features of the tool are:
+
+- Comparison of tables and views between a source and a target system.
+- Pipeline integration in Azure DevOps or GitLab
+- Multiple verification/comparison steps:
+  - Row count comparison
+  - Column names comparison
+  - Aggregation comparison (depending on data type)
+  - "group by" comparison
+  - Pandas DataFrame comparison (with a threshold for the size of the object)
+  - Pandas DataFrame sample comparison (with a random sample of the object)
+- Detailed representation of the comparison result
+  - "high-level" result (for each pipeline/execution)
+  - "object-level" result (for each table/view)
+  - "column-level" result (for each column)
+- Parallelization for performance enhancement of the comparison of a large number of objects
+- Input testsets (white-listing of objects)
+- Object filter (black-listing of objects)
+- Object mappings between the source and the target system
+- Comparison result saved and displayed in multiple instances
+  - saved as JSON files in the repository
+  - export to result tables in the target system (Snowflake or Databricks)
+  - export to Azure Blob Storage or AWS S3 Bucket
+
+### Repository Structure
+
+The repository is structured in the following sections:
+
+- **icsDataValidation**
+  > This is where all code files are stored.
+
+- **icsDataValidation/main.py**
+  > Entry point for python.
+
+- **icsDataValidation/core**
+    > Main code files for the parts independent on the source and target system.
+
+- **icsDataValidation/services/database_services**
+    > Database services for all supported systems can be found here.
+    Each file contains a class that is identically structured in comparison to the other database service classes.
+    Each database service class contains methods to query metadata, create aggregations, and retrieve data for the comparison step.
+
+- **icsDataValidation/connection_setups**
+    > The connection setups are database dependent.
+    They define how the credentials for the database connections are retrieved.
+
+- **examples/comparison_results**
+    > The comparison results are saved here.
+    One JSON file with all results is saved for each execution/pipeline run.
+    Additionally there are live comparison results saved for each compared object as a failsafe.
+
+- **examples**
+    > This folder contains all files defining a specific validation setup.
+      - A file named `migration_config.json` contains configurations about the source system, the target system and the mapping of objects between both. It contains the blacklists and "group by" aggregation settings.
+      - A file named `ics_data_validation_config.json` specifies the source system, the target system and the results system. Most importantly, this includes the names of the results tables and the connection configurations (Server, Port, Secrets) of source and target system.
+      - A file named `manual_execution_params.py` is only relevant for local execution of the code. It contains settings which would otherwise be defined in the pipeline setup, i.e. limits on the size of objects to compare and the numeric precision.
+      - The folder `testsets` contains JSON files specifying whitelists of objects to compare.
+
+    For all the files here, empty `*.template.*` files are available and may serve as a starting point.
+    This repo stores only template files.
+    The actual files used for each setup should not be committed here.
+    They are stored in [a separate repository.](https://dev.azure.com/initions-consulting/icsDataValidation/_git/icsDataValidation%20-%20workflow%20demo).
+
+- **examples/pipeline**
+    > Files defining the pipelines that execute the icsDV are stored here. For example, YML files for Azure DevOps pipelines.
+
+## icsDV - Execution Manual
+
+## icsDV - Input Parameters
+
+There are four types of input parameters:
+
+1. Pipeline Parameters - which are defined as input parameters of a pipeline (Azure DevOps Pipeline or Gitlab Pipeline).
+2. Manual Execution Parameters - defined in the code (testing_tool.py).
+They correspond to the Pipeline Parameters and are used when executing the code directly without a pipeline instead of the Pipeline Parameters.
+3. Global Parameters - directly defined in the TestingToolParams class. They are used in pipeline runs and for manual executions.
+4. Environmental Parameters - Stored either in Azure DevOps in a variable group, in Gitlab, or, for manual executions, in a `*.env` file in a location that can be specified in the `manual_execution_params.py`.
+
+Additionally the parameters can be categorized into 3 groups:
+
+1. Setup Parameters - these are parameters which are usually just set once when setting up the icsDV.
+2. Configuration Parameters - are used to configure the general settings but can be adjusted to the conditions of the workload on the fly.
+3. Execution Parameters - are set individually for each execution of the icsDV, e.g. the selection of objects to be tested.
+
+### Setup Parameters
+
+Stored in `ics_data_validation_config.json`:
+
+| Parameter                             | Description                                                                                                                                                                                                                                                                     | Input Type                                       |
+|---------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------|
+| source_system_selection               | Name of the source system as defined in the database_config.json as a key.                                                                                                                                                                                                      | Pipeline Parameter or Manual Execution Parameter |
+| target_system_selection               | Name of the target system as defined in the database_config.json as a key.                                                                                                                                                                                                      | Pipeline Parameter or Manual Execution Parameter |
+| result_system_selection               | Name of the result system as defined in the database_config.json as a key.                                                                                                                                                                                                      | Pipeline Parameter or Manual Execution Parameter |
+| azure_devops_pipeline                 | Azure DevOps Pipeline support. Set to "True" to push the changes of a run to the GIT repository.                                                                                                                                                                                | Global Parameter - TestingToolParams             |
+| gitlab_pipeline                       | Gitlab Pipeline support. Set to "True" to push the changes of a run to the GIT repository.                                                                                                                                                                                      | Global Parameter - TestingToolParams             |
+| result_database_name                  | Name of the database or catalog the results are written to                                                                                                                                                                                                                      | Global Parameter - TestingToolParams             |
+| result_schema_name                    | Name of the schema the results are written to                                                                                                                                                                                                                                   | Global Parameter - TestingToolParams             |
+| result_table_highlevel_name           | Name of the high-level results table                                                                                                                                                                                                                                            | Global Parameter - TestingToolParams             |
+| result_table_objectlevel_name         | Name of the object-level results table                                                                                                                                                                                                                                          | Global Parameter - TestingToolParams             |
+| result_table_columnlevel_name         | Name of the column-level results table                                                                                                                                                                                                                                          | Global Parameter - TestingToolParams             |
+| result_meta_data_schema_name          | Name of the schema the full results are written to                                                                                                                                                                                                                              | Global Parameter - TestingToolParams             |
+| result_table_name                     | Name of the table the full results are written to                                                                                                                                                                                                                               | Global Parameter - TestingToolParams             |
+| result_live_table_name                | Name of the table the live results are written to                                                                                                                                                                                                                               | Global Parameter - TestingToolParams             |
+| results_folder_name                   | Folder that in which the results are stored in JSON format. Default: `examples/comparison_results/`                                                                                                                                                                             | Global Parameter - TestingToolParams             |
+| remaining_mapping_objects_folder_name | Output folder that holds information about source system objects which are not covered by the mapping and are therefor not included in the comparison. Default: `examples/remaining_mapping_objects/`                                                                           | Global Parameter - TestingToolParams             |
+| testset_folder_name                   | Folder that holds the test set files in JSON format. Default: `examples/testsets/`                                                                                                                                                                                              | Global Parameter - TestingToolParams             |
+| stage_schema                          | Name of the Snowflake Schema where the stage is created to upload the comparison results to Snowflake. Only needed if the `upload_result_to_result_database` functionality is used with Snowflake as target system.                                                             | Global Parameter - TestingToolParams             |
+| stage_name_prefix                     | Prefix of the name of the Snowflake Stage which is used to upload the comparison results to Snowflake. The name is complemented by a run_guid which is a unique uuid for each icsDV execution. Only needed if the `upload_result_to_result_database` functionality is used.     | Global Parameter - TestingToolParams             |
+| container_name                        | Name of the Azure Storage Container to upload the comparison results into the blob storage. Note: Only needed if the `upload_result_to_blob` functionality is used.                                                                                                             | Global Parameter - TestingToolParams             |
+| bucket_name                           | Name of the AWS S3 Bucket to upload the comparison results into the AWS. Note: Only needed if the `upload_result_to_bucket` functionality is used.                                                                                                                              | Global Parameter - TestingToolParams             |
+
+### Configuration Parameters
+
+Stored in `manual_execution_params.py`:
+
+| Parameter                        | Description                                                                                                                                               | Input Type                                        |
+|----------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------|
+| ENV_FILEPATH                     | Absolute path to the `*.env` file containing secrets, passwords and tokens.                                                                               | Pipeline Parameter or Manual Execution Parameters |
+| UPLOAD_RESULT_TO_BLOB            | Set to "True" to upload the comparison results to an Azure Blob Storage. An `azure_storage_connection_string` is needed if set to "True".                 | Pipeline Parameter or Manual Execution Parameters |
+| UPLOAD_RESULT_TO_BUCKET          | Set to "True" to upload the comparison results to an AWS S3 Bucket. An `aws_bucket_access_key` and an `aws_bucket_secret_key` is needed if set to "True". | Pipeline Parameter or Manual Execution Parameter  |
+| UPLOAD_RESULT_TO_RESULT_DATABASE | Set to "True" to upload the comparison results to Snowflake or Databricks. A `result_system_selection` is needed if set to "True".                        | Pipeline Parameter or Manual Execution Parameter  |
+| MAX_OBJECT_SIZE                  | Limits Pandas comparison to objects of a size smaller than `MAX_OBJECT_SIZE` bytes. Data type is String. Default: `str(-1)`, no limit.                    | Pipeline Parameter or Manual Execution Parameter  |
+| MAX_ROW_NUMBER                   | Limits Pandas comparison to objects with less than `MAX_ROW_NUMBER` rows. Data type is String. Default: `str(-1)`, no limit.                              | Pipeline Parameter or Manual Execution Parameter  |
+| EXECUTE_GROUP_BY_COMPARISON      | Set to "True" to execute group-by comparisons. See sec. "Group-By-Aggregation" for details.                                                               | Pipeline Parameter or Manual Execution Parameter  |
+| USE_GROUP_BY_COLUMNS             | Set to "True" to activate group-by columns. See sec. "Group-By-Aggregation" for details.                                                                  | Pipeline Parameter or Manual Execution Parameter  |
+| MIN_GROUP_BY_COUNT_DISTINCT      | Minimum expected number of group-by counts. See sec. "Group-By-Aggregation" for details.                                                                  | Pipeline Parameter or Manual Execution Parameter  |
+| MAX_GROUP_BY_COUNT_DISTINCT      | Maximum expected number of group-by counts. See sec. "Group-By-Aggregation" for details.                                                                  | Pipeline Parameter or Manual Execution Parameter  |
+| MAX_GROUP_BY_SIZE                | Maximum size of the group-by query. See sec. "Group-By-Aggregation" for details.                                                                          | Pipeline Parameter or Manual Execution Parameter  |
+| NUMERIC_SCALE                    | Number of digits to compare. Data type is String. Default: `str(2)`, i.e. deviations below 0.01 are tolerated.                                            | Pipeline Parameter or Manual Execution Parameter  |
+
+### Execution Parameters
+
+Stored in `manual_execution_params.py`:
+
+| Parameter               | Description                                                                                                                                               | Input Type                                       |
+|-------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------|
+| DATABASE_NAME           | Filters the test set on a specific database/catalog. For no filter set "None" as a Manual Execution Parameter and leave it empty as a Pipeline Parameter. | Pipeline Parameter or Manual Execution Parameter |
+| SCHEMA_NAME             | Filters the test set on a specific schema. For no filter set "None" as a Manual Execution Parameter and leave it empty as a Pipeline Parameter.           | Pipeline Parameter or Manual Execution Parameter |
+| TESTSET_FILE_NAMES      | File names of the test set as defined in the folder testset_folder_name (see Setup Parameters) as JSON files.                                             | Pipeline Parameter or Manual Execution Parameter |
+| OBJECT_TYPE_RESTRICTION | Filters the testset to only tables (`"include_only_tables"`), only views (`"include_only_views"`) or all tables and views (`"include_all"`).              | Pipeline Parameter or Manual Execution Parameter |
+| MAX_NUMBER_OF_THREADS   | Maximum number of threads used. Values larget than the default, `str(1)`, activate parallelization.                                                       | Pipeline Parameter or Manual Execution Parameter |
+
+## icsDV - Configuration
+
+### Blacklists
+
+### Whitelists (Testsets)
+
+### Mapping
+
+### Group-By-Aggregation
+
+The Group-By-Aggregation is a feature to pinpoint the differences in the data.
+It can be activiated by setting the parameter `EXECUTE_GROUP_BY_COMPARISON` to TRUE.
+If activated an additional comparison step is performed.
+Each table is queried with a group-by-statement including aggregations depending on the data type.
+Those aggregations are consequently compared.
+As a result the differences in the data can be narrowed down to certain grouping values.
+
+There are three options to define the column over which the group-by is executed.
+
+1. "group-by-columns-per-table" defined as multiple lists for specific tables. Activated with the `USE_GROUP_BY_COLUMNS` parameter and `GROUP_BY_COLUMNS_PER_TABLE` defined in the `migration_config.json`.
+2. "group-by-columns" from a predifined list for all tables by a validation. Activated with the `USE_GROUP_BY_COLUMNS` parameter and `GROUP_BY_COLUMNS` defined in the `migration_config.json`.
+3. "group-by-columns" evaluated from all existing columns by a validation
+
+The validation consists of a number of tests and can be configured by a number of parameters to either easily find columns to group by over or to only select columns which add a definite value for pinpointing the differences in the data.
+
+The validation tests for the "group-by-columns" are:
+
+  1. Number of distinct values of the column is more than 1.
+  2. Number of distinct values of the column is less than the rowcount of the table.
+  3. Number of distinct values of the column exceeds the `MIN_GROUP_BY_COUNT_DISTINCT` parameter.
+  4. Number of distinct values of the column is below the `MAX_GROUP_BY_COUNT_DISTINCT` parameter.
+  5. The size of the expected result of the group-by-query is below the `MAX_GROUP_BY_SIZE` parameter.
+  (The size is defined by "Number of distinct values" * "Number of columns")
+
+All tests are executed on source and target.
+
+> Note: The group by comparison can be activated by setting the `execute_group_by_comparison` parameter to TRUE.
+The `migration_config.json` has to include the follwing keys when the parameter use_group_by_columns is set to TRUE.
+
+    "GROUP_BY_AGGREGATION":{
+      "GROUP_BY_COLUMNS_PER_TABLE": {},
+      "GROUP_BY_COLUMNS":[]
+    }
+The values of those keys can be empty.
+
+## icsDV - Comparison Results
+
+### JSON Results
+
+- Complete Comparison Result JSONs
+- Live Comparison Result JSONs
+
+### Target System Result Tables
+
+- High-Level Result
+- Object-Level Result
+- Column-Level Result
+
+### Result Export in a File Storage
+
+## icsDV - Setup
+
+### Code setup
+
+- To handle the code, we recommend using VS Code.
+- The code is written in python. The tool is compatible with version 3.11
+- It is recommended to use a project-specific python environment.
+  You can create one with `python -m venv .env` in the root folder of this repo.
+  After creating it, you should activate it (`source .env/bin/activate`), select the python binary `.env/bin/python` therein as your python interpreter in VSC and make sure that python libraries are read from and installed to this environment, i.e. `export PYTHONPATH=$(pwd)/.env/lib/python3.8/site-packages`.
+- In this environment, install the packages listed in the `requirements.txt` and the `requirements-dev.txt`. i.e. run `pip install -r requirements.txt`.
+
+### Setup for manual execution
+
+### Setup as Azure DevOps pipeline
+
+### Setup as GitLab pipeline
+
+## authentication
+
+The following auth methods to snowflake are supported:
+
+- password, provided via PASSWORD_NAME
+- private key with/without encryption, provided via PRIVATE_KEY_NAME with/without PRIVATE_KEY_PASSPHRASE_NAME
+- path to private key file with/without encryption, provided via PRIVATE_KEY_FILE_PATH with/without PRIVATE_KEY_FILE_PASSWORD
+
+## devcontainer
+
+run with uv as follows in devcontainer:
+```bash
+uv run -s  icsDataValidation/main.py
+```
+
+Inside the [devcontainer config](.devcontainer/devcontainer.json) the mounts setting is used to bring a .env from the host system into the devcontainer.
+
+```bash
+"mounts": [
+        "source=/home/Documents/Generic_Testing_Tool/generic_testing_tool_password.env,target=/workspaces/icsDataValidation/examples/generic_testing_tool_password.env,type=bind"
+    ]
+```
+
+To use this feature either create the .env under the source path on your host or adjust this path to another path on the host system. The target path do no need adjustment!
