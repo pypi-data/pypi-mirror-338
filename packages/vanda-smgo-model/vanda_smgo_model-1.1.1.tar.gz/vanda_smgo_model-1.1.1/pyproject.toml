@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "vanda_smgo_model"
+version = "1.1.1"
+description = "Test de librería pip"
+readme = "README.md"
+authors = [
+    {name = "Vanda Dev", email = "kevins.villatoro@vanda.cl"},
+]
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/SmartGO-Inc/smartgo-model-libreria.git"
+"Bug Tracker" = "https://github.com/SmartGO-Inc/smartgo-model-libreria/issues"
