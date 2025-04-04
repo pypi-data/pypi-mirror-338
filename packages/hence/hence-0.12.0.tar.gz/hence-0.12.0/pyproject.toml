@@ -1,0 +1,42 @@
+[project]
+name = "hence"
+version = "0.12.0"
+description = "Hence, a powerful framework designed to streamline data pipeline, scraping, automation workflow orchestration."
+
+authors = [{name = "HSN", email = "hasanlock@gmail.com"}]
+license = { text = "AGPL-3.0-or-later" }
+readme = "README.md"
+
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Intended Audience :: Developers",
+  "License :: OSI Approved :: GNU Affero General Public License v3 or later (AGPLv3+)",
+  "Operating System :: OS Independent",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: 3.13",
+  "Topic :: Software Development :: Libraries",
+  "Topic :: Utilities",
+]
+
+requires-python = ">=3.11,<3.14"
+
+[tool.poetry.dependencies]
+pydantic = "^2.11"
+paradag = "^1.2.0"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.3.5"
+ruff = "^0.11.2"
+icecream = "^2.1.4"
+loguru = "^0.7.3"
+
+[project.urls]
+Homepage = "https://github.com/0hsn/hence"
+Documentation = "https://github.com/0hsn/hence"
+Repository = "https://github.com/0hsn/hence"
+Issues = "https://github.com/0hsn/hence/issues"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
