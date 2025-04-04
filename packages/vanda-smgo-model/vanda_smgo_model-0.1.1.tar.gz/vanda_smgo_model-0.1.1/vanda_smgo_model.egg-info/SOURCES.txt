@@ -1,0 +1,11 @@
+README.md
+setup.py
+smgo_model/__init__.py
+smgo_model/requerimiento.py
+smgo_model/models/__init__.py
+smgo_model/models/entidad.py
+smgo_model/models/test.py
+vanda_smgo_model.egg-info/PKG-INFO
+vanda_smgo_model.egg-info/SOURCES.txt
+vanda_smgo_model.egg-info/dependency_links.txt
+vanda_smgo_model.egg-info/top_level.txt
