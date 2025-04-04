@@ -1,0 +1,12 @@
+LICENSE.txt
+README.md
+pyproject.toml
+setup.py
+algepy/DiscreteFunctions.py
+algepy/QuadraticStructures.py
+algepy/SingletonStructures.py
+algepy/__init__.py
+algepy_tools.egg-info/PKG-INFO
+algepy_tools.egg-info/SOURCES.txt
+algepy_tools.egg-info/dependency_links.txt
+algepy_tools.egg-info/top_level.txt
