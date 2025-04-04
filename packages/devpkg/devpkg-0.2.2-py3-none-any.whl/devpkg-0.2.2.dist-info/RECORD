@@ -1,0 +1,15 @@
+devpkg/__init__.py,sha256=KpKVS8EbnU-cR7Z_Ht5q8O-P4o_oF-KC8ZnaIqtbS6Q,206
+devpkg/arguer.py,sha256=R_IiMkmV5GhaqUOAKuOHcveqyI1K4RWAS5lS_xlxOIU,9481
+devpkg/colors.py,sha256=rhUvNw2ej7GE1Ma07nKPqrvY5Lk-r8-kOoZFAAnvBSI,781
+devpkg/decorators.py,sha256=n4Mgrl_gr-mcJN0mYsJnl3lembV6HKZU10sjT4hLr14,4377
+devpkg/deprecate.py,sha256=g1y-mc5duACW98Z22Jxer9i8TamtIAy7TVx7fd5S9MQ,4162
+devpkg/is_literal.py,sha256=hWVY1etJ6jgBSfVr_8U9AKclzliGRXWAfFeCQ_V_uQo,249
+devpkg/platform.py,sha256=1q6k2Zr1_tT6pVKtN2W5jkvQS-p68iD1TuWKKvdaY8o,1408
+devpkg/setup.py,sha256=qewzdbxt8hb3GkHvzJJwC9UmWPLyfetKlPU0EFWuW0c,1318
+devpkg/singleton.py,sha256=QVZbcIOacQct4JaFf0c36h18kobqKPI5JOLHF_HdGDM,1811
+devpkg/traceback.py,sha256=l-YXdxdQV2bRKmylD6x7nwfaOuxn-bhfDFu6d7jiC9Y,1287
+devpkg/versions.py,sha256=_PNhGD-E0RbFbtMeFJhL-g7_P8Zf7IHexjg6i71mAbs,17666
+devpkg-0.2.2.dist-info/LICENSE,sha256=61YZatIAr3Zh_GyMzZmVpnkIoBaLqzezIw8Q4t2jNnI,1070
+devpkg-0.2.2.dist-info/METADATA,sha256=ceiDOYW1f-D8hLMhK6smge7pQfZbUct0TVLBB8rOxX8,799
+devpkg-0.2.2.dist-info/WHEEL,sha256=fGIA9gx4Qxk2KDKeNJCbOEwSrmLtjWCwzBz351GyrPQ,88
+devpkg-0.2.2.dist-info/RECORD,,
