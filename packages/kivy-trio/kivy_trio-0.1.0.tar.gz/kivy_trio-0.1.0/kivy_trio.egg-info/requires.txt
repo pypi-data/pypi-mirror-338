@@ -1,0 +1,17 @@
+kivy>=2.0.0
+trio
+outcome
+
+[dev]
+pytest>=3.6
+pytest-cov
+sphinx-rtd-theme
+coveralls
+setuptools
+sphinx
+flake8
+wheel
+pytest-trio
+sphinxcontrib-trio
+sphinx-autodoc-typehints
+pytest-kivy
