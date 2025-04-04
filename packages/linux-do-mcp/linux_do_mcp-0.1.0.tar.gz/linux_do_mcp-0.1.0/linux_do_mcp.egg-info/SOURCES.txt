@@ -1,0 +1,8 @@
+README.md
+main.py
+pyproject.toml
+linux_do_mcp.egg-info/PKG-INFO
+linux_do_mcp.egg-info/SOURCES.txt
+linux_do_mcp.egg-info/dependency_links.txt
+linux_do_mcp.egg-info/requires.txt
+linux_do_mcp.egg-info/top_level.txt
