@@ -1,0 +1,17 @@
+plothist/__init__.py,sha256=00yQZBIlyvZxdimTgPMHK_ZH5pNVadyi-fu6ezuXRQs,2760
+plothist/_version.py,sha256=rcWNYDlh913lujUvTfOu9iOIPdrTXg64R9wl7ENLjFU,511
+plothist/_version.pyi,sha256=o7uNL6MhuJoiqpEnriU7rBT6TmkJZA-i2qMoNz9YcgQ,82
+plothist/comparison.py,sha256=dHB83vz18RdDNR5PBDLtV2kzjD1c2WGB-0nD0g3BOBI,17464
+plothist/default_style.mplstyle,sha256=7MmB2uiXmD_DSqFHeH1xxC-lTctBD_EASxMdSOsPep0,1574
+plothist/histogramming.py,sha256=Z5XgN3xsIxLQX15yf_Wyf0uTOb9aKAJJJ_HK1L1HpGM,10328
+plothist/plothist_style.py,sha256=AwT7vCeeEcPm5RBnxWl-seRy4fpea8mz-_var0Ke6w8,12780
+plothist/plotters.py,sha256=H6dqjJRkX5G3hH0005fiYh-d2G74pGuhuX82TJquyJo,43841
+plothist/variable_registry.py,sha256=wQ-a-enGfdw2Z1PCiQBA7V2nY3nk75lHFAocQY-aZ5g,10157
+plothist/scripts/__init__.py,sha256=a3gSwGAB4t_vPPweppJx_TsJKtuEuIk-jcO8sDxf6Ds,94
+plothist/scripts/make_examples.py,sha256=mhk7tQUt43fcyZgL7Vq22GvqVXMTcmFae6QPBDAHBoY,7342
+plothist-1.4.0.dist-info/METADATA,sha256=GP-LTKQ_yWyDVWaJaFpxlFg7si4C6l2Riy9279ZSkNc,4737
+plothist-1.4.0.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+plothist-1.4.0.dist-info/entry_points.txt,sha256=XPdmI8l_6EHMQl_3J_N1AVNNDGCatSQn86bMs1iu8K0,88
+plothist-1.4.0.dist-info/licenses/AUTHORS.md,sha256=02x3_8PNyTsXcRs0IlJeCTOmpGNRqymcJ71-2QtR37E,111
+plothist-1.4.0.dist-info/licenses/LICENSE,sha256=bfaEdGehofQDaw-zDdVMHNUKo1FrOm6oGUEF-ltrp6w,1523
+plothist-1.4.0.dist-info/RECORD,,
