@@ -1,0 +1,12 @@
+Metadata-Version: 2.4
+Name: novikovtv-parser-fns
+Version: 1.0.1
+Summary: This is the fns parser
+Project-URL: Homepage, https://github.com/asianetsievskaya/parser-fns
+Author-email: domster704 <domster704@mail.ru>
+License-Expression: MIT
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.11
+Requires-Python: ==3.11.0
