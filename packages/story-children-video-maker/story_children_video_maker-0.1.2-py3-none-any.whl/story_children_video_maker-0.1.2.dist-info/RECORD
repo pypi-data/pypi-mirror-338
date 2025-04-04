@@ -1,0 +1,8 @@
+story_children_video_maker/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+story_children_video_maker/config/config.json,sha256=uBG-QN70ZXa38FihXSPJqYQxkVEECCnTRtIHCpqLBD0,274
+story_children_video_maker/pipeToMaker.py,sha256=exAQ-B3tIZVm-iemUKta-vzA3Exhjht0ok8Gai72jMk,3788
+story_children_video_maker/utils/__init__.py,sha256=lYwjhmRHX35J66QRKjM63xJUMfYVUiwBbGGG_8wb-58,77
+story_children_video_maker/utils/setup.py,sha256=UPBmyznKslsn04cDsgMUElpEy6yD5uRrD9czCy6QqHQ,3434
+story_children_video_maker-0.1.2.dist-info/METADATA,sha256=jsefZzdZS2blNvW0SWTbTcbTfeYWFwj1EJ82PKe1lCc,1342
+story_children_video_maker-0.1.2.dist-info/WHEEL,sha256=fGIA9gx4Qxk2KDKeNJCbOEwSrmLtjWCwzBz351GyrPQ,88
+story_children_video_maker-0.1.2.dist-info/RECORD,,
