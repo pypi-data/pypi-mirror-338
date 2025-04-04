@@ -1,0 +1,17 @@
+kissllm/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+kissllm/client.py,sha256=vlpz_CB2-AfhyXZJ4KTMXcW1a9AKXJ6OvKd2HcTka6A,3786
+kissllm/stream.py,sha256=1S_t9mhNcVKOT-6Ij4u5K4sPjUBw6Q0r9REzjXRpmPQ,5059
+kissllm/tools.py,sha256=vNchY0ijiK9rvtOao8CO3csl66lVz9JILDu_L6T8Mk0,16819
+kissllm/utils.py,sha256=oqm-lNZjGtfUd2AyDpmtah0Tl6oZbJabfjQ0c6BI6C8,104
+kissllm/observation/__init__.py,sha256=NvfVecUteeV258Go-M0kJFPh3h179vTQ8rwFDZW4GsY,1048
+kissllm/observation/base.py,sha256=xU28PNzhxVsmSjZAdRtPbVOFIgFrPxqREfxmEVBeHwk,564
+kissllm/observation/decorators.py,sha256=ev5ifUt4oILCj4EehuDc3S9v7d9KD48oePxYnxGoKVs,1531
+kissllm/observation/langfuse.py,sha256=Pw-K7fKXPAmUJatpBYNsU5Au4vojf01L0gI4nxpOqoA,2183
+kissllm/providers/__init__.py,sha256=0kL2bpTqsLpEoz4D4DkXJo0RiFUtlUzlaggDnKl8te0,1241
+kissllm/providers/base.py,sha256=NXJt8_LJKdlZXJziLYiWwN8Mly1UB7WZwp-JZGiJ86c,817
+kissllm/providers/openai.py,sha256=mhshkuE22gyYuZ3lBsMkOKj1owNuCj1GPhgJhZqZdH8,2000
+kissllm-0.0.1.dist-info/licenses/LICENSE,sha256=CeipvOyAZxBGUsFoaFqwkx54aPnIKEtm9a5u2uXxEws,10142
+kissllm-0.0.1.dist-info/METADATA,sha256=bfp0VNowYeB4aZRPI-Op4yDdhlsKuJfge-Ew-OIRiUY,2320
+kissllm-0.0.1.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+kissllm-0.0.1.dist-info/top_level.txt,sha256=vd3ROpb0v5AVv2DGdEX4v0r9TGDHmHgCTlgDfF6-9ew,8
+kissllm-0.0.1.dist-info/RECORD,,
