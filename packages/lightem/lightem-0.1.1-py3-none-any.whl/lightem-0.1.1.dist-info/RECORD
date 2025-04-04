@@ -1,0 +1,12 @@
+lightem/EntityMatcher.py,sha256=oebLPAJq6HGsvd8TP5NcinBdqF1cTfXWm8ME1ofSnhY,4207
+lightem/__init__.py,sha256=Cn2vFarTDiNxF1-Sc1mn_BZ0fSK3tWoZQOkDcEt14uA,237
+lightem/modules/Clusterer.py,sha256=93UVMbT0pE0zmyIHan0UcJ4or_aYdH_HRDtVL6neLu4,1773
+lightem/modules/Embedder.py,sha256=3ADE3hXyUNmVDDx5dXiGEmnSOTItyPibyRd_Z2fTfss,2884
+lightem/modules/Matcher.py,sha256=0vz716cU3wFPHmPw1TjzelSLjCFrrgkwxcRBs_ehqwc,4684
+lightem/modules/Table.py,sha256=bIhfdcy9RNH5NqtchV0LVpZjYBuMiqfGKnxT3Xa06S0,4182
+lightem/modules/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+lightem-0.1.1.dist-info/LICENSE,sha256=HBWpN7sWOHNJvjNxy6-uJR81qfdvvrDmkaw8yI2NOlg,1104
+lightem-0.1.1.dist-info/METADATA,sha256=r50rlyAJTQrtmcNW7cuC9EkP87FspuhRkD3Zb96bO48,795
+lightem-0.1.1.dist-info/WHEEL,sha256=tZoeGjtWxWRfdplE7E3d45VPlLNQnvbKiYnx7gwAy8A,92
+lightem-0.1.1.dist-info/top_level.txt,sha256=L0SJ_XD63vm44u1B2XOwkrJ80zmk2P-m-CkwoIe6WTQ,8
+lightem-0.1.1.dist-info/RECORD,,
