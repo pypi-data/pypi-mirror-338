@@ -1,0 +1,17 @@
+README.md
+setup.py
+botpapy/__init__.py
+botpapy/botpapy.py
+botpapy/color.py
+botpapy/config.py
+botpapy/crangeTester.py
+botpapy/helpers.py
+botpapy/image.py
+botpapy/match.py
+botpapy/rect.py
+botpapy/selectWindow.py
+botpapy.egg-info/PKG-INFO
+botpapy.egg-info/SOURCES.txt
+botpapy.egg-info/dependency_links.txt
+botpapy.egg-info/requires.txt
+botpapy.egg-info/top_level.txt
