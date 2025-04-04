@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ner-data-processor"
+version = "0.0.1"
+description = "A NER Data Preparing Tool"
+readme = "README.md"
+requires-python = ">=3.7"
+license = { text = "MIT" }
+authors = [{ name = "boopathiraj", email = "boopathiraj.aideveloper@gmail.com" }]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = ["numpy", "spacy", "datasets", "tqdm", "pandas"]
+
+[project.urls]
+Homepage = "https://github.com/rajboopathiking/ner-data-processor"
+Repository = "https://github.com/rajboopathiking/ner-data-processor"

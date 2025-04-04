@@ -1,0 +1,8 @@
+README.md
+pyproject.toml
+src/ner_data_processor.egg-info/PKG-INFO
+src/ner_data_processor.egg-info/SOURCES.txt
+src/ner_data_processor.egg-info/dependency_links.txt
+src/ner_data_processor.egg-info/requires.txt
+src/ner_data_processor.egg-info/top_level.txt
+test/test_core.py
