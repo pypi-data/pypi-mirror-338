@@ -1,0 +1,10 @@
+README.md
+setup.py
+smgo_model/__init__.py
+smgo_model/entidad.py
+smgo_model/main.py
+smgo_model/requerimiento.py
+smgo_model.egg-info/PKG-INFO
+smgo_model.egg-info/SOURCES.txt
+smgo_model.egg-info/dependency_links.txt
+smgo_model.egg-info/top_level.txt
