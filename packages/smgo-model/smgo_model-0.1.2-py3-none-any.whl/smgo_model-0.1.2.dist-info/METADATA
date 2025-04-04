@@ -1,0 +1,16 @@
+Metadata-Version: 2.4
+Name: smgo_model
+Version: 0.1.2
+Summary: Test de librería pip
+Home-page: https://github.com/SmartGO-Inc/smartgo-model-libreria.git
+Author: Vanda Dev
+Author-email: kevins.villatoro@vanda.cl
+Description-Content-Type: text/markdown
+Dynamic: author
+Dynamic: author-email
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: summary
+
+# Prueba de creación de librería.
