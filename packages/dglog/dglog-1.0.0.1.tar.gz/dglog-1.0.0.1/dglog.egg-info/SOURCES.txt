@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+dglog/__init__.py
+dglog/py.typed
+dglog.egg-info/PKG-INFO
+dglog.egg-info/SOURCES.txt
+dglog.egg-info/dependency_links.txt
+dglog.egg-info/not-zip-safe
+dglog.egg-info/top_level.txt
