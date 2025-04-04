@@ -1,0 +1,13 @@
+fsspec>=2024.10.0
+numpy<3.0.0,>=2.0.0
+pydantic<3.0.0,>=2.9.2
+pydantic-settings<3.0.0,>=2.6.1
+numba<0.70.0,>=0.61.0
+pandas<3.0.0,>=2.2.2
+typer<0.14.0,>=0.13.1
+rapidfuzz<4.0.0,>=3.10.1
+
+[cloud]
+s3fs>=2024.10.0
+gcsfs>=2024.10.0
+adlfs>=2024.7.0
