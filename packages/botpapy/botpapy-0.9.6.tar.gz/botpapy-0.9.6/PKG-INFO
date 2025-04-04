@@ -1,0 +1,59 @@
+Metadata-Version: 2.4
+Name: botpapy
+Version: 0.9.6
+Summary: Python Library to automate tasks with template matching in (non-visible) windows
+Home-page: https://github.com/Alpel99/botpapy
+Author: Alpel
+Author-email: Alpel@gmx.net
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+Requires-Dist: opencv_python
+Requires-Dist: Pillow
+Requires-Dist: pywin32
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: requires-dist
+Dynamic: summary
+
+# Python Library to automate tasks with template matching in (non-visible) windows 
+heavily inspired by [Botfather](https://botfather.io/)  
+uses win32gui -> only works on windows
+
+# Features
+* List window titles
+* Select window by name/title
+    * if multiple found -> choice dialogue
+* Taking Screenshots of window
+* Use python cv2 wrapper for template matching
+* Send mouse/keyboard events to window
+* Isolate color ranges for better template matching
+
+# Documentation
+* on [GithubPages](https://alpel99.github.io/botpapy/)
+* [Example](https://alpel99.github.io/botpapy/#tutorial)
+
+# General
+* Some windows don't take input the way this is programmed (new Windows "Apps", Explorer etc.)
+* Some windows might not generate any image while minimized:
+    * move them to a second desktop in windows `âŠž Win + Tab`
+    * keep them "open" there
+* If there are only black squares as pictures try a different layer variable for _checkWindowNames_
+* This is (not yet) tested on a bigger scale:
+    * definitely not full functionality for controls
+    * might have bugs
+    * performance might not be optimal
+
+# Dependencies
+* `pip install numpy opencv-python Pillow pywin32`
+* hope nothing is missing
+
+# Usage
+* `git submodule add -b master https://github.com/Alpel99/botpapy`
+* `git submodule init`
+* update: `git submodule update --remote`
