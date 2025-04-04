@@ -1,0 +1,28 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:browser="http://namespaces.zope.org/browser"
+    xmlns:plone="http://namespaces.plone.org/plone"
+    i18n_domain="collective.volto.sitesettings"
+    >
+
+  <!-- helpers views for @site endpoint -->
+  <browser:page
+      name="registry-images"
+      for="plone.app.layout.navigation.interfaces.INavigationRoot"
+      class=".site_helpers_views.RegistryImagesView"
+      permission="zope.Public"
+      />
+  <browser:page
+      name="images"
+      for="collective.volto.sitesettings.interfaces.IRegistryImagesView"
+      class=".site_helpers_views.ImagesView"
+      permission="zope.Public"
+      />
+  <browser:page
+      name="download"
+      for="collective.volto.sitesettings.interfaces.IRegistryImagesView"
+      class=".site_helpers_views.ImagesView"
+      permission="zope.Public"
+      />
+
+</configure>
