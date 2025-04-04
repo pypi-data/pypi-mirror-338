@@ -1,0 +1,8 @@
+README.md
+pyproject.toml
+jadex/__init__.py
+jadex.egg-info/PKG-INFO
+jadex.egg-info/SOURCES.txt
+jadex.egg-info/dependency_links.txt
+jadex.egg-info/requires.txt
+jadex.egg-info/top_level.txt
