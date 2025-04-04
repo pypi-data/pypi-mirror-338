@@ -1,0 +1,86 @@
+Metadata-Version: 2.1
+Name: deeprails
+Version: 0.1.0
+Summary: Python client library for deeprails.ai
+Home-page: https://github.com/yourusername/deeprails
+Author: Your Name or Organization
+Author-email: your.email@example.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests (>=2.0.0)
+
+# DeepRails
+
+A Python client library for interacting with the [DeepRails.ai](https://deeprails.ai) API. This package exposes high-level methods for creating and fetching evaluations, as well as creating monitors and logging monitor events.
+
+## Features
+
+- **Evaluation**:  
+  - `client.evaluate.create(data)` – Create an evaluation
+  - `client.evaluate.fetch(eval_id)` – Retrieve the status and results of an evaluation
+
+- **Monitor**:  
+  - `client.monitor.create(data)` – Create a monitor
+  - `client.monitor.log(monitor_id, data)` – Log an event under a monitor
+
+## Installation
+
+Install via [PyPI](https://pypi.org/) using:
+
+```bash
+pip install deeprails
+```
+
+## Quick Start
+```python
+from deeprails import DeepRails
+
+# Initialize the client (replace "YOUR_TOKEN" with a valid token)
+client = DeepRails(token="YOUR_TOKEN")
+
+# 1) Create an evaluation
+eval_request_data = {
+    "model_input": {"user_prompt": "Write a poem about winter"},
+    "model_output": "A frosty greeting on a snowy morn...",
+    "type": "text",
+    "guardrails_metrics": ["correctness", "completeness"],
+    "score_format": "continuous",
+    "webhook": None
+}
+eval_response = client.evaluate.create(eval_request_data)
+print("Evaluation created:", eval_response)
+
+# 2) Fetch the evaluation by ID
+evaluation = client.evaluate.fetch(eval_response["eval_id"])
+print("Fetched evaluation:", evaluation)
+
+# 3) Create a new monitor
+monitor_data = {
+    "name": "My Example Monitor",
+    "description": "Track LLM usage in production",
+    "metrics": ["correctness", "completeness"]
+}
+monitor_resp = client.monitor.create(monitor_data)
+monitor_id = monitor_resp["monitor_id"]
+print("Monitor created:", monitor_resp)
+
+# 4) Log an event under that monitor
+event_data = {
+    "model_input": {"user_prompt": "Tell me a joke"},
+    "model_output": {"response": "Why did the chicken cross the road..."},
+    "temperature": 0.7,
+    "top_p": 1.0,
+    "model": "gpt-3.5-turbo"
+}
+event_resp = client.monitor.log(monitor_id, event_data)
+print("Monitor event logged:", event_resp)
+```
+
+
+

@@ -1,0 +1,9 @@
+deeprails/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+deeprails/client.py,sha256=28vSTSp2tWzFLJq4racWW4lXMXOyF3W9hEvROhZd5VU,983
+deeprails/evaluate.py,sha256=HJ3QtGiCho169r8dx1LXV6U7xjbreTr1X2BjDEfFwuw,1647
+deeprails/monitor.py,sha256=XYtl5TdNqRHtrUetSYHxAOJNisFE_uLmbFSa__q08kA,1743
+deeprails-0.1.0.dist-info/LICENSE,sha256=GsV7lN6fihCcDgkJbfs0rq1q9d6IyB0TFQ8HLKUpSXM,1077
+deeprails-0.1.0.dist-info/METADATA,sha256=kmaiXXtnBuZQhT_tV0vKJH1P3Z3RVU3Npk-dRkg4cj8,2578
+deeprails-0.1.0.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+deeprails-0.1.0.dist-info/top_level.txt,sha256=8-3gictPOXqg2k5S_yW66DdO8EqZ-YFab0LNarWUv4Q,10
+deeprails-0.1.0.dist-info/RECORD,,
