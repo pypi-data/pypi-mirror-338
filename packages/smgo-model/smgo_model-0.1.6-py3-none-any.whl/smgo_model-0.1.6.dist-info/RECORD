@@ -1,0 +1,9 @@
+smgo_model/__init__.py,sha256=MhJjnqHVX-1-Jc-kykwPloE8OvKcE-sjvKVs80DVaDE,103
+smgo_model/requerimiento.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+smgo_model/models/__init__.py,sha256=xKsi-3lgUsx-1hYKbjTythp-Wz1SPMYYaSvl46Ohqjg,88
+smgo_model/models/entidad.py,sha256=CGrGPDK9VEPx5MkpkblLbZGq9UxqGCOx6kyIsxpJ638,1739
+smgo_model/models/test.py,sha256=OSi6jNhWxF9zVhPFprsWyQo_58K8FfngdGtD64jGOKc,127
+smgo_model-0.1.6.dist-info/METADATA,sha256=fJ5ug3zYE5GKLzVGlNxgXPeoqj1m3DZGyvF2e7nh5s4,418
+smgo_model-0.1.6.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+smgo_model-0.1.6.dist-info/top_level.txt,sha256=3TxkCW-JBlSFRMrJa-qRGnR6-yeCZNwEBfASBfoHq4A,11
+smgo_model-0.1.6.dist-info/RECORD,,
