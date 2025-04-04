@@ -1,0 +1,9 @@
+README.md
+setup.cfg
+setup.py
+src/confidence_interval.egg-info/PKG-INFO
+src/confidence_interval.egg-info/SOURCES.txt
+src/confidence_interval.egg-info/dependency_links.txt
+src/confidence_interval.egg-info/requires.txt
+src/confidence_interval.egg-info/top_level.txt
+tests/test_core.py

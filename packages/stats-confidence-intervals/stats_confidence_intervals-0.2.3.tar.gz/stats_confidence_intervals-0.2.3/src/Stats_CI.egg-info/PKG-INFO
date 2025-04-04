@@ -1,0 +1,137 @@
+Metadata-Version: 2.1
+Name: Stats_CI
+Version: 0.2.0
+Summary: A comprehensive library for calculating and visualizing statistical confidence intervals.
+Home-page: http://pypi.python.org/pypi/confidence_interval/
+Author: Subashanan Nair
+Author-email: subaashnair12gmail.com
+License: LICENSE.txt
+Keywords: statistics,confidence intervals,data analysis,visualization
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Education
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Scientific/Engineering :: Mathematics
+Classifier: Topic :: Scientific/Engineering :: Statistics
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: numpy>=1.20.0
+Requires-Dist: scipy>=1.7.0
+Requires-Dist: matplotlib>=3.4.0
+
+# Confidence Interval Library
+
+A comprehensive Python library for calculating and visualizing confidence intervals for various statistical metrics. This library simplifies the process of estimating confidence intervals around sample statistics, with support for means, proportions, and visualization tools.
+
+## Installation
+
+You can install the Confidence Interval Library directly from PyPI:
+
+```bash
+pip install confidence_interval
+```
+
+## Features
+
+- **Mean Confidence Intervals**: Calculate confidence intervals for sample means using t-distribution
+- **Proportion Confidence Intervals**: Calculate confidence intervals for proportions using Wilson score or normal approximation methods
+- **Visualization Tools**: Built-in plotting functions for visualizing confidence intervals
+- **Input Validation**: Robust input validation and error handling
+- **Type Hints**: Full Python type hint support for better IDE integration
+- **Customizable Confidence Levels**: Support for any confidence level between 0 and 1
+
+## Usage
+
+### Calculating Mean Confidence Interval
+
+```python
+from confidence_interval import mean_confidence_interval
+
+# Calculate 95% confidence interval for a sample mean
+data = [1, 2, 3, 4, 5]
+ci = mean_confidence_interval(data)
+print(f"Mean: {ci.estimate:.2f}")
+print(f"95% CI: ({ci.lower_bound:.2f}, {ci.upper_bound:.2f})")
+
+# Calculate 90% confidence interval
+ci_90 = mean_confidence_interval(data, confidence=0.90)
+print(f"90% CI: ({ci_90.lower_bound:.2f}, {ci_90.upper_bound:.2f})")
+```
+
+### Calculating Proportion Confidence Interval
+
+```python
+from confidence_interval import proportion_confidence_interval
+
+# Calculate confidence interval for a proportion using Wilson score method
+successes = 7
+total = 10
+ci = proportion_confidence_interval(successes, total, method='wilson')
+print(f"Proportion: {ci.estimate:.2f}")
+print(f"95% CI: ({ci.lower_bound:.2f}, {ci.upper_bound:.2f})")
+
+# Using normal approximation method
+ci_normal = proportion_confidence_interval(successes, total, method='normal')
+print(f"95% CI (normal): ({ci_normal.lower_bound:.2f}, {ci_normal.upper_bound:.2f})")
+```
+
+### Visualizing Confidence Intervals
+
+```python
+from confidence_interval import mean_confidence_interval, plot_confidence_interval
+
+data = [1, 2, 3, 4, 5]
+ci = mean_confidence_interval(data)
+plot_confidence_interval(ci, label="Sample Mean")
+```
+
+## Requirements
+
+- Python 3.7+
+- NumPy >= 1.20.0
+- SciPy >= 1.7.0
+- Matplotlib >= 3.4.0
+
+## Contributing
+
+Contributions are welcome! Here are some ways you can contribute:
+
+- Report bugs and request features by creating issues
+- Submit pull requests to fix bugs or add new features
+- Improve documentation
+- Add new statistical methods or visualizations
+
+Please read our contributing guidelines before submitting pull requests.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Authors
+
+- **Subashanan Nair** - *Initial work* - [SubaashNair](https://github.com/SubaashNair)
+
+## Acknowledgments
+
+- To my students
+- Logic and Mathematics
+- Life
+
+## Changelog
+
+### 0.2.0
+- Added proportion confidence intervals
+- Added visualization capabilities
+- Added input validation
+- Added type hints
+- Updated documentation
+
+### 0.1.2
+- Initial release with mean confidence intervals
+
+```
+

@@ -1,0 +1,11 @@
+README.md
+setup.cfg
+setup.py
+src/Stats_CI/__init__.py
+src/Stats_CI/core.py
+src/Stats_CI.egg-info/PKG-INFO
+src/Stats_CI.egg-info/SOURCES.txt
+src/Stats_CI.egg-info/dependency_links.txt
+src/Stats_CI.egg-info/requires.txt
+src/Stats_CI.egg-info/top_level.txt
+tests/test_core.py
