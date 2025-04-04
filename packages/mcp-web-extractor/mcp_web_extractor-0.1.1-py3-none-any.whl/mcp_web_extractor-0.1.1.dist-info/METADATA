@@ -1,0 +1,31 @@
+Metadata-Version: 2.4
+Name: mcp-web-extractor
+Version: 0.1.1
+Summary: MCP server that extracts content from web pages for LLMs
+Author-email: Sridevi <sridevi@devrel.cloud>
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: mcp>=1.2.0
+Requires-Dist: requests
+Requires-Dist: beautifulsoup4
+Dynamic: license-file
+
+# Web Extractor
+
+An MCP server that allows Claude and other LLMs to extract and read content from web pages.
+
+## Why Use Web Extractor?
+
+- **Enable Web Access**: Let LLMs read content from websites even in regions where direct web browsing isn't available
+- **Clean Content**: Extract only the main content, removing scripts, ads, and other distractions
+- **Simple Integration**: Works with Claude Desktop and other MCP clients
+
+## Installation
+
+```bash
+pip install web-extractor
