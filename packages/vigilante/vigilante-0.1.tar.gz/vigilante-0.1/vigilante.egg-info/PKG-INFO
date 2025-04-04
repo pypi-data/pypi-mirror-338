@@ -1,0 +1,16 @@
+Metadata-Version: 2.4
+Name: vigilante
+Version: 0.1
+Summary: Dark web crawler & intelligence toolkit
+Author: Yavuz Bey
+Requires-Python: >=3.8
+License-File: LICENSE
+Requires-Dist: requests[socks]
+Requires-Dist: beautifulsoup4
+Requires-Dist: stem
+Requires-Dist: lxml
+Dynamic: author
+Dynamic: license-file
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
