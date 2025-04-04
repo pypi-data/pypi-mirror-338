@@ -1,0 +1,11 @@
+Metadata-Version: 2.4
+Name: traopy_util
+Version: 0.1.1
+Summary: Library module for exec-container environment of traO-Judge
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown; charset=UTF-8; variant=GFM
+
+# traopy_util
+
+Describe your project here.
+
