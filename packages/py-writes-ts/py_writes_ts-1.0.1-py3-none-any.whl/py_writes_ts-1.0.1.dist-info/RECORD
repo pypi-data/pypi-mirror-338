@@ -1,0 +1,12 @@
+py_writes_ts/__init__.py,sha256=fPbOTNBRNjdXlBfhrOr6vU4ofwz24elwv0v2Na2NbL0,238
+py_writes_ts/class_to_interface.py,sha256=NSM7187SjmrTs3H29WfCiRObivD4sV50tt_eTa2rve0,8262
+py_writes_ts/example_types.py,sha256=4sv7ecOg9-6-aD7e5XCcjYM3MU1PybWC379aZJvu_JA,911
+py_writes_ts/function_generator.py,sha256=BWPO0qllNLyzslEAYfwR3896cIyboNmLpREGLuVvZ7M,903
+py_writes_ts/import_generator.py,sha256=AciyWZEPenqNQIN9ePcw4ohxjyMr9viIH-BnDHd3TSI,570
+py_writes_ts/rename_interfaces.py,sha256=f82icg6gFTIPpLtm48GXQJ-c7d4mJADl8Aig6WDs-NE,1022
+py_writes_ts/writer.py,sha256=GtSTJIgQUl00vXdM3TDN1sv_hfZU4-v3I69ii0y6xuM,1505
+py_writes_ts-1.0.1.dist-info/licenses/LICENSE.txt,sha256=aPXgi5POpTP44Rw-_MxhPhePJBi5tDZnL2O8uRx6y-w,1094
+py_writes_ts-1.0.1.dist-info/METADATA,sha256=_d1QCP2pMhdkSLGSJuqSKK43IezDII2kpyL7UApVXTc,3866
+py_writes_ts-1.0.1.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+py_writes_ts-1.0.1.dist-info/top_level.txt,sha256=mS6Ae2nu9EQFXjJkHf5JYCzdeeupH-ZgasBEf9ZRE8A,13
+py_writes_ts-1.0.1.dist-info/RECORD,,
