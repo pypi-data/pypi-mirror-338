@@ -1,0 +1,8 @@
+click
+gradio
+pandas
+numpy
+rapidfuzz
+sentence-transformers
+sentencepiece
+gradio_huggingfacehub_search
