@@ -1,0 +1,3 @@
+[console_scripts]
+irt2=irt2.cli:entry
+
