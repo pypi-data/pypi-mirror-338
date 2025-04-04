@@ -1,0 +1,20 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "auth-proxy-oidc"
+version = "0.1.0"
+description = "OpenID Connect authentication plugin for auth-proxy"
+requires-python = ">=3.8"
+dependencies = [
+    "python-auth-proxy",
+    "authlib>=1.0.0",
+    "requests",
+    "cryptography>=36.0.0",
+    "pyjwt[crypto]>=2.4.0",
+    "redis>=4.2.0",
+]
+
+[project.entry-points."auth_proxy.plugins"]
+oidc = "auth_proxy_oidc.plugin:OIDCAuthPlugin"
