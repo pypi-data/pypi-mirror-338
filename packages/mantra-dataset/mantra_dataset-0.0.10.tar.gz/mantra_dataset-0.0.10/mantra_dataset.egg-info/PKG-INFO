@@ -1,0 +1,126 @@
+Metadata-Version: 2.4
+Name: mantra-dataset
+Version: 0.0.10
+Summary: A package for working with higher-order datasets like manifold triangulations.
+Author-email: Ernst Röell <ernst.roeell@helmholtz-munich.de>, Bastian Rieck <bastian.rieck@helmholtz-munich.de>
+Maintainer-email: Ernst Röell <ernst.roeell@helmholtz-munich.de>
+License: Copyright (c) 2024 Ernst Röell, Daniel Bin Schmid and Bastian Rieck
+        
+        Redistribution and use in source and binary forms, with or without
+        modification, are permitted provided that the following conditions are
+        met:
+        
+        1. Redistributions of source code must retain the above copyright
+           notice, this list of conditions and the following disclaimer.
+        
+        2. Redistributions in binary form must reproduce the above copyright
+           notice, this list of conditions and the following disclaimer in the
+           documentation and/or other materials provided with the distribution.
+        
+        3. Neither the name of the copyright holder nor the names of its
+           contributors may be used to endorse or promote products derived from
+           this software without specific prior written permission.
+        
+        THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS
+        IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED
+        TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+        A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT
+        HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+        SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED
+        TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR
+        PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF
+        LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING
+        NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+        SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+        
+Keywords: topology,deep learning,tda,tdl,topological machine learning,topological data analysis,topological deep learning
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE.md
+Requires-Dist: black>=22.0
+Requires-Dist: numpy
+Requires-Dist: torch
+Requires-Dist: torch_geometric
+Dynamic: license-file
+
+# MANTRA: The Manifold Triangulations Assemblage
+
+
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.14103581.svg)](https://doi.org/10.5281/zenodo.14103581) [![Maintainability](https://api.codeclimate.com/v1/badges/82f86d7e2f0aae342055/maintainability)](https://codeclimate.com/github/aidos-lab/MANTRA/maintainability) ![GitHub contributors](https://img.shields.io/github/contributors/aidos-lab/MANTRA) [![CHANGELOG](https://img.shields.io/badge/Changelog--default)](https://github.com/aidos-lab/mantra/blob/main/CHANGELOG.md) ![License](https://img.shields.io/github/license/aidos-lab/MANTRA) 
+
+![image](_static/manifold_triangulation_orbit.gif)
+
+MANTRA is a dataset consisting of *combinatorial triangulations* of
+manifolds. It can be used to create novel algorithms in topological
+deep learning or debug existing ones. See our [ICLR 2025 paper](https://openreview.net/pdf?id=X6y5CC44HM) for more details on potential experiments.
+
+Please use the following citation for our work:
+
+```bibtex
+@inproceedings{Ballester25a,
+  title         = {{MANTRA}: {T}he {M}anifold {T}riangulations {A}ssemblage},
+  author        = {Rubén Ballester and Ernst Röell and Daniel Bīn Schmid and Mathieu Alain and Sergio Escalera and Carles Casacuberta and Bastian Rieck},
+  year          = 2025,
+  eprint        = {2410.02392},
+  archiveprefix = {arXiv},
+  primaryclass  = {cs.LG},
+  booktitle     = {International Conference on Learning Representations},
+  url           = {https://openreview.net/forum?id=X6y5CC44HM},
+}
+```
+
+## Getting the Dataset
+
+The raw MANTRA dataset consisting of $2$- and $3$-manifolds with up to $10$ vertices 
+is provided [here](https://github.com/aidos-lab/mantra/releases/latest). 
+For machine-learning applications and research, we provide a custom
+dataset loader, which can be installed via the following command:
+
+```python
+pip install mantra-dataset
+```
+
+After installation, the dataset can be used like this:
+
+```python
+from mantra.datasets import ManifoldTriangulations
+
+dataset = ManifoldTriangulations(root="./data", manifold="2", version="latest")
+```
+
+To add random node features to the dataset, we can add it as a transform to the dataset.
+
+```python
+# Load all required packages. 
+from torch_geometric.transforms import Compose, FaceToEdge
+
+# Load the mantra dataset
+from mantra.datasets import ManifoldTriangulations
+from mantra.transforms import NodeIndex, RandomNodeFeatures
+
+dataset = ManifoldTriangulations(root="./data", manifold="2", version="latest",
+                                 transform=Compose([
+                                        NodeIndex(),
+                                        RandomNodeFeatures(),
+                                        FaceToEdge(remove_faces=False),
+                                        ]
+                                    ),
+                                    force_reload=True,
+                                )
+
+```
+
+## Examples 
+
+Under the `examples` folder we have included two notebooks. The first notebook 
+contains an example for training a Graph Neural Network with the MANTRA dataset while  
+the second notebook contains an analysis of the data distribution.
+
+
+## Acknowledgements
+
+This work is dedicated to [Frank H. Lutz](https://www3.math.tu-berlin.de/IfM/Nachrufe/Frank_Lutz/stellar/),
+who passed away unexpectedly on November 10, 2023. May his memory be
+a blessing.
