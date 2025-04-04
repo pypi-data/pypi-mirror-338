@@ -1,0 +1,2 @@
+[console_scripts]
+putio-mcp-server = putio_mcp_server.main:main
