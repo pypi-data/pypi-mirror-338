@@ -1,0 +1,10 @@
+openai
+colorama
+rich
+tabulate
+speedtest-cli
+dnspython
+requests
+psutil
+cryptography
+wmi
