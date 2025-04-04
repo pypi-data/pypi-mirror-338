@@ -1,0 +1,11 @@
+pymatching/_cli_argv.py,sha256=L11i8i-C2mA_o8tWk0GjOQ4PjuIaT-nKyy1KCCcRWWk,99
+pymatching/_version.py,sha256=bbDBlWBZe3T0exr8RPxxSV7_NxT2qJzYLZu0KlzQmtU,43
+pymatching/__init__.py,sha256=y1OeuGd2LV9xXmSFPAIY7SDnQBRe4wO-nctqx4nw074,876
+pymatching/matching.py,sha256=6SBvFyQKnYs7_PNNvWPXfqNQNz8DgxHjgDuU1B3e_N8,93399
+pymatching/_cpp_pymatching.cpython-39-darwin.so,sha256=d-hBZniq3k4RqtaW6lHiLyoDU9cYwWeQ9_H-th74T88,946584
+pymatching-2.2.2.dist-info/RECORD,,
+pymatching-2.2.2.dist-info/WHEEL,sha256=FboJ0Cz9a_rfxawXs16J0Lc7cujUA8cVtdbQGj76DJw,135
+pymatching-2.2.2.dist-info/entry_points.txt,sha256=W3nERSQCJJx_xhGyWPpziuv0PzB6jOugiUOelNDvwC4,61
+pymatching-2.2.2.dist-info/top_level.txt,sha256=Bwoj_tdrVKgNF3MVQ1IdXkFwSRIXkVHiNDk3dGKbTWI,11
+pymatching-2.2.2.dist-info/METADATA,sha256=YbZV3z736EspguoDEWRdd7D57pn_Q48utHUq0uQSkHQ,16742
+pymatching-2.2.2.dist-info/licenses/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
