@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+synthra/__init__.py
+synthra/logger.py
+synthra.egg-info/PKG-INFO
+synthra.egg-info/SOURCES.txt
+synthra.egg-info/dependency_links.txt
+synthra.egg-info/requires.txt
+synthra.egg-info/top_level.txt
