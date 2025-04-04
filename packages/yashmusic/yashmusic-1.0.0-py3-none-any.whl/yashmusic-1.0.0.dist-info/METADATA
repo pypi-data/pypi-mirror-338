@@ -1,0 +1,26 @@
+Metadata-Version: 2.4
+Name: yashmusic
+Version: 1.0.0
+Summary: A simple MP3 music player built with Python using pygame and tkinter.
+Author: Yashovardhan
+Author-email: Yashovardhan <your_email@example.com>
+License: MIT
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: pygame
+
+# 🎵 Yashovardhan Music Player
+
+A simple MP3 music player built with Python using **pygame** and **tkinter**.
+
+## 🚀 Features
+- Play, pause, stop, and switch between tracks.
+- Volume control (increase/decrease).
+- GUI-based music selection from a folder.
+- Displays the current playing song.
+
+## 🛠 Installation
+
+### **1️⃣ Install via pip**
+```bash
+pip install yashmusic
