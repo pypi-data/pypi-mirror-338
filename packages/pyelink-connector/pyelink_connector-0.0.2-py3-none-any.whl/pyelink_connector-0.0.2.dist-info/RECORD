@@ -1,0 +1,12 @@
+pyelink_connector/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pyelink_connector/utils.py,sha256=6hb0T2CtLlYmidmG-G-n4pCadHTbpCrmv6RE5C1B2K4,683
+pyelink_connector/pygame/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pyelink_connector/pygame/connector.py,sha256=TFVeOnw3C0iqYYbTm6GkFqcfXQzrOqtivt6I1452LV4,28040
+pyelink_connector/pygame/utils.py,sha256=XusuOIQbvav1xsOdlDEbUf2ujwNrtzwW3UgXng-emGg,3716
+pyelink_connector/pyglet/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pyelink_connector/pyglet/connector.py,sha256=mNqKTcwQYBiFGjx4TJ7RMX0NpmYwuX9dwbY6NVcVcK0,22888
+pyelink_connector/pyglet/utils.py,sha256=xw9DIZgXEU_dz46V-k-_1XZlpJgc2l2zAVEbnczFUmY,974
+pyelink_connector-0.0.2.dist-info/METADATA,sha256=eNuvnZkZcd3Cqn31n1gVGngOw0Oq_HRnVGoVr2uWw8Y,4929
+pyelink_connector-0.0.2.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+pyelink_connector-0.0.2.dist-info/licenses/LICENSE,sha256=6kbiFSfobTZ7beWiKnHpN902HgBx-Jzgcme0SvKqhKY,1091
+pyelink_connector-0.0.2.dist-info/RECORD,,
