@@ -1,0 +1,14 @@
+tabsdata_salesforce/__init__.py,sha256=i9zTLT1SiyOZ_mmML5Qt6504-r3cUs8-cl-BkNILHFQ,135
+tabsdata_salesforce/connector.py,sha256=kLyJRl5xp_S1MmkpGd6XynchuKECiqL_DyJe4xvi19k,10905
+tabsdata_salesforce/assets/manifest/BANNER,sha256=7eZyJ42aLsl2JTwraY-HOHBedEwCLkxBzQmsbCGaHug,458
+tabsdata_salesforce/assets/manifest/LICENSE,sha256=qB7RVWAy9shXckkTUApEQN3JvgIOsp8cEKYhMSmK5e8,427
+tabsdata_salesforce/assets/manifest/README-PyPi.md,sha256=0Vmn0mzv80ux_uQg5z45FhpiQXE-wRPzA4hWon16OvM,225
+tabsdata_salesforce/assets/manifest/RELEASE-NOTES,sha256=pavRJMA9tjD03j1k2yREWrMbVaaYkERGlPiFoGr7mR0,67
+tabsdata_salesforce/assets/manifest/SOURCETRACK.yaml,sha256=xoRRbjgHu3FLpByXyJFm1r77rQocF8Gh6gslYl9woSk,893
+tabsdata_salesforce/assets/manifest/THIRD-PARTY,sha256=oM4c5TnJ8glAq3SQ0hBEWkYpLsSaH9XfAA6_YPXdcE0,187
+tabsdata_salesforce/assets/manifest/VERSION,sha256=kmssUh_jBmXKd7uBdJ8-J1cmOAfpOCkJqknsHaQYpcg,5
+tabsdata_salesforce-0.9.4.dist-info/licenses/tabsdata_salesforce/assets/manifest/LICENSE,sha256=qB7RVWAy9shXckkTUApEQN3JvgIOsp8cEKYhMSmK5e8,427
+tabsdata_salesforce-0.9.4.dist-info/METADATA,sha256=CgQzLMknR70ek6Y_RK0dWqP5DkgLal4ylSaXLAj0c8g,742
+tabsdata_salesforce-0.9.4.dist-info/WHEEL,sha256=JqPI5ejMbg-eIP-klu1LalTYAZLgSX0ig_ZyklpSG2M,99
+tabsdata_salesforce-0.9.4.dist-info/top_level.txt,sha256=Lo2OJixqzr2oDrBdMq6-2remTXTFFOfB8RUDuVz8JV0,20
+tabsdata_salesforce-0.9.4.dist-info/RECORD,,
