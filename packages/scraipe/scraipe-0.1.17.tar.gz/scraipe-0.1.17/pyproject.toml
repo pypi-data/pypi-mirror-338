@@ -1,0 +1,37 @@
+[tool.poetry]
+name = "scraipe"
+version = "0.1.17"
+description = "AI web scraping workflow."
+readme = "README.md"
+license = "MIT"
+authors = ["Nibs"]
+homepage = "https://github.com/snpm/scraipe"
+
+[tool.poetry.dependencies]
+python = ">=3.10,"  # Correct placement of Python version requirement
+requests = "*"
+pydantic = ">=2.10.6"
+pandas = ">=2.2.3"
+tqdm = "*"
+bs4 = "0.0.2"
+nest_asyncio = { version = "1.6.0"}
+
+# scraipe[extras] dependencies
+openai = {version = "1.68.2", optional = true, extras = ["async"] }
+trafilatura = { version = "2.0.0", markers = "python_version < '4'" , optional = true }
+telethon = { version = "1.39.0", optional = true }
+python-dotenv = { version = "1.1.0", optional = true }
+aiohttp = { version = "3.11.16", optional = true }
+
+[tool.poetry.extras]
+extras = [
+    "telethon", "trafilatura", "openai",
+    "python-dotenv", "aiohttp"
+    ]
+
+[tool.poetry.group.dev.dependencies]
+pytest = "*"
+asdftimer = "*"
+pytest-asyncio = "*"
+pytest-cov = "*"
+pytest-mock = "*"
