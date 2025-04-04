@@ -1,0 +1,82 @@
+\documentclass[fontsize=11pt,paper=a4,pagesize,DIV=13,titlepage=false]{scrartcl}
+
+\usepackage{fontspec}
+\usepackage{polyglossia}
+\usepackage{microtype}
+\usepackage[bookmarksnumbered=true,colorlinks=true,linkcolor=red,citecolor=red]{hyperref}
+
+\setmainlanguage[variant=uk]{english}
+
+\defaultfontfeatures{Ligatures=TeX,Numbers=Lining}
+\setkomafont{disposition}{\normalcolor\sffamily}
+
+\pagenumbering{arabic}
+
+\setcounter{tocdepth}{3}
+\setcounter{secnumdepth}{3}
+
+\hypersetup{
+  bookmarksnumbered=true,
+  colorlinks=true,
+  linkcolor=red,
+  citecolor=red,
+  pdftitle={{ title }},
+  pdfauthor={{ author }},
+  pdfsubject=dfl-patchday,
+}
+
+{{ title | latex_command("title") }}
+{{ subtitle | default("") | latex_command("subtitle") }}
+{{ author | default("") | latex_command("author") }}
+{{ date | latex_command("date") }}
+
+\begin{document}
+
+\maketitle
+\tableofcontents
+\pagebreak
+
+{% for epic in changes.epics %}
+{{ epic | latex_heading(level=1) }}
+
+{% if epic.description %}
+{{ "Description" | latex_heading(level=2) }}
+{{ epic.description }}
+
+{% endif %}
+{{ "Tickets" | latex_heading(level=2) }}
+{% for story in epic.stories %}
+{{ story | latex_heading(level=3) }}
+
+{% if show_descriptions | default(True) %}
+{% for message in story.messages %}
+{{ message.tagline | latex_heading(level=4) }}
+{% if message.descriptions %}
+{{ message.descriptions | join_newline | latex_escape }}
+{% endif %}
+{% endfor %}
+{% else %}
+{{ story.messages | map("format_message") | latex_list }}
+{% endif %}
+
+{% endfor %}
+{% if not epic.impact.empty %}
+{{ "Changes" | latex_heading(level=2) }}
+{% for k in tag_names if k != "tests" %}
+{% if (epic.impact[k]) %}
+{{ k | capitalize() | latex_heading(level=3) }}
+{{ epic.impact[k] | map("latex_monospace") | latex_list }}
+
+{% endif %}
+{% endfor %}
+{% if epic.impact["tests"] %}
+{{ "Validation" | latex_heading(level=2) }}
+{{ epic.impact["tests"] | latex_enumeration }}
+
+{% endif %}
+{% endif %}
+{{ "Authors" | latex_heading(level=2) }}
+{{ epic.authors | map("format_author") | latex_list }}
+{% endfor %}
+
+\end{document}

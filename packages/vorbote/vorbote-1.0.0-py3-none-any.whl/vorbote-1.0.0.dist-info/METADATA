@@ -1,0 +1,318 @@
+Metadata-Version: 2.4
+Name: vorbote
+Version: 1.0.0
+Summary: Communicate releases/changes via Git annotations
+Author-email: rmk2 <ryko@rmk2.org>
+License-Expression: Apache-2.0
+Project-URL: Repository, https://gitlab.com/rmk2/vorbote
+Requires-Python: >=3.13
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: gitpython~=3.1
+Requires-Dist: jinja2~=3.1
+Requires-Dist: pyyaml~=6.0
+Requires-Dist: jsonschema~=4.17
+Requires-Dist: tomli~=2.0
+Requires-Dist: skabelon~=1.0
+Dynamic: license-file
+
+# vorbote
+
+Vorbote ([ˈfoː̯ɐˌboːtə]), from the German word for "harbinger", is a python application that renders commit information
+and commit annotations from a GIT repository into various formats. Different output formats can be templated using
+[Jinja2](https://jinja.palletsprojects.com/en/3.1.x/) templates.
+
+The project itself contains a lean parser to extract information from GIT objects, as well as a small command-line
+application to render data from a repository into the specified template structure. Example templates for Markdown and
+LaTeX export are included under [templates](vorbote/templates).
+
+## Usage
+
+Upon installation, this project installs a Python command-line application `vorbote`. The application
+supports a number of command-line arguments, which can be listed via --help:
+
+```
+usage: vorbote [-h] ...
+
+options:
+  -h, --help            show this help message and exit
+  -T TEMPLATE_PATH, --template-path TEMPLATE_PATH
+                        Jinja2 template path (precludes: -t)
+  -t TEMPLATE_NAME, --template-name TEMPLATE_NAME
+                        Jinja2 template name (precludes: -T)
+
+config:
+  -c CONFIG, --config CONFIG, --config-path CONFIG
+                        Config file path (default: None)
+
+input:
+  -s, --schema, --no-schema
+                        Toggle JSON schema validation for annotations
+                        (default: True)
+  -v, --validate, --no-validate
+                        Toggle GIT commit/message validation (default: False)
+
+output:
+  -o OUTPUT_PATH, --output OUTPUT_PATH, --output-path OUTPUT_PATH
+                        Output path (default: None)
+  -d, --descriptions, --no-descriptions
+                        Toggle showing commit descriptions (default: True)
+  --title OUTPUT_TITLE  Document title (default: 'Change Notes')
+  --author OUTPUT_AUTHOR
+                        Document author (default: 'Vorbote')
+  --date OUTPUT_DATE    Document author (default: 2023-07-18, format: YYYY-MM-
+                        DD)
+
+annotation:
+  -a ANNOTATIONS, --annotation ANNOTATIONS, --annotation-path ANNOTATIONS
+                        Annotation YAML path(s) (default: [])
+
+repository:
+  -r REPOSITORY_REVISION, --revision REPOSITORY_REVISION, --revision-range REPOSITORY_REVISION
+                        Git revision range
+  -R REPOSITORY_PATH, --repository REPOSITORY_PATH, --repository-path REPOSITORY_PATH
+                        Git repository path (default: '.')
+
+project:
+  -P PROJECT_KEYS [PROJECT_KEYS ...], --project PROJECT_KEYS [PROJECT_KEYS ...]
+                        Project keys (default: [])
+
+tags:
+  --sorted-tag TAGS_SORTED
+                        Tag(s) honouring input order (default: [])
+  --tag TAGS_UNSORTED   Tag discarding input order (default: [])
+
+exclude:
+  -b, --exclude-bare, --no-exclude-bare
+                        Toggle exclusion of bare commits (default: False)
+  -m, --exclude-merges, --no-exclude-merges
+                        Toggle exclusion of merge commits (default: True)
+
+whitespace:
+  -S, --strip-whitespace, --no-strip-whitespace
+                        Toggle stripping preceding whitespace from template
+                        blocks (default: False)
+  -W, --trim-whitespace, --no-trim-whitespace
+                        Toggle trimming surrounding whitespace from template
+                        blocks (default: False)
+```
+
+### Configuration files
+
+The application can additionally be configured via a configuration file, whose location has to be specified on the
+command-line via `-c` or `--config`. Configuration files support YAML or TOML syntax.
+
+An example YAML file might look like this:
+```yaml
+annotations: []
+
+tags:
+  sorted:
+    - tests
+  unsorted:
+    - deployment
+    - components
+
+template:
+  path: ""
+  name: ""
+
+project:
+  keys:
+    - "FOO"
+    - "ABC"
+
+input:
+  schema: true
+  validate: true
+
+output:
+  path: ""
+  descriptions: true
+  title: ""
+  author: ""
+  date: ""
+
+repository:
+  path: ""
+  revision: ""
+
+exclude:
+  bare: true
+  merges: false
+
+whitespace:
+  strip: false
+  trim: false
+```
+
+An example TOML file might look like this:
+```toml
+annotations = []
+
+[input]
+schema = true
+validate = true
+
+[output]
+path = ""
+descriptions = true
+title = ""
+author = ""
+date = ""
+
+[project]
+keys = ["FOO", "ABC"]
+
+[repository]
+path = ""
+revision = ""
+
+[tags]
+unsorted = [
+    "deployment",
+    "components",
+]
+sorted = ["tests"]
+
+[template]
+path = ""
+name = ""
+
+[exclude]
+bare = true
+merges = false
+
+[whitespace]
+strip = false
+trim = false
+```
+
+Both YAML and TOML files are checked against a JSON schema as defined in [config.schema](vorbote/schemas/config.schema).
+All keys except for `tags` are optional if configuration files are used. 
+
+## Git commit annotations
+
+Git has a system for annotations called [trailers](https://git-scm.com/docs/git-interpret-trailers), which is most
+commonly used for fields such as `Signed-By` etc. However, trailers encompass essentially arbitrary key/value-pairs
+which can be added to the bottom of a commit message. This project makes assumptions about a predefined set of these
+trailers, in order to gather additional contextual information about GIT commits that is unrelated to the specific
+diffs themselves, such as relationships to epics, stories etc.
+
+### Sample commit message
+
+A fully-fledged commit message might look like this:
+
+```
+ABC-100: A short description of things the current commit changes
+
+A longer, freeform description can be added here, which might give additional
+background, list some features, discuss why a certain change was implemented
+this way, if any known TODOs remain, and why it's okay to have these TODOs
+around for the time being.
+
+If necessary, things can be broken down, i.e.:
+- Take care when committing
+- Check that the ticket number is listed
+- Make sure a short description is added
+- Ask if you are unsure
+- Read further for how to use "tags"
+- Git calls these hints "trailers", by the way...
+
+Machine-readable hints can be added to commits as key-value pairs, separated
+with a colon (i.e. ":"). Multiple values can be separated via commas.
+
+Additionally, tests or validations can be added with a loosely formed list,
+with each list item on a separate line, prefixed with "  +", i.e. two spaces
+and a plus sign. Finally, an "epic" can be specified as such, just as well.
+Unsure how that works? Have a look!
+
+epic: Cleaner GIT
+deployment: manual
+components: foo, bar, baz
+tests:
+  + First test
+  + Second test
+  + Check this thing last
+```
+
+This sample commit message consists of:
+
+- A ticket reference (`ABC-100`)
+- A short description for the given commit
+- A longer description with arbitrary content
+- Additional context information via a set of key/value pairs (as trailers)
+    - An epic relationship (`Cleaner GIT`)
+    - A deployment hit (`manual`)
+    - A list of components (`foo`, `bar`, `baz`)
+    - A list of tests (`First test`, `Second test`, `Check this thing last`)
+
+While any kind of relationship can theoretically be modelled via trailers, it makes sense to decide on a common set of
+trailers and their potential content, so that they can be supplied to this tool via config or on the command-line.
+
+## Repository annotations
+
+In addition to GIT commit annotations using trailers, users might want to supply additional repository-level annotations
+which are to be merged with information read from commits before rendering the combined output.
+
+These repository annotations can be supplied as YAML files, which are checked against a JSON schema as defined in
+[annotations.schema](vorbote/schemas/annotations.schema). Currently, entire epics (with associated stories and
+commits) can be supplied. A sample annotations file might look like this:
+
+```yaml
+epics:
+  - name: Cleaner GIT
+    stories:
+      - reference: ABC-1230
+        tickets:
+          - tagline: Commit 1
+      - reference: ABC-1231
+        tickets:
+          - tagline: Commit 2
+            description: Single Line
+          - tagline: Commit 3
+            description: |
+              Line 1
+              Line 2
+              Line 3
+  - name: Explore Annotations
+    description: >
+      Let's explore some
+      annotations
+      that we added
+      very much
+      manually
+    stories:
+      - reference: ABC-1234
+        tickets:
+          - tagline: Commit 4
+    authors:
+      - name: Foo
+        email: foo@example.com
+    tags:
+      roles:
+        - foo
+        - bar
+```
+
+This would add the following elements to the combined output:
+
+- An epic `Cleaner GIT` without description
+    - A story `ABC-1230`
+        - A commit `Commit 1` without description
+    - A story `ABC-1231`
+        - A commit `Commit 2` with a single-line description
+        - A commit `Commit 3` with a multi-line description
+- An epic `Explore Annotations` with a single-line description (folded via `>`)
+    - A Story `ABC-1234`
+        - A commit `Commit 4` without description
+    - An additional author `Foo`
+    - Additional impacted roles `foo` & `bar`
+- Two certificate changes for the servers `foo.example.com` & `bar.example.com`
+
+If an epic already exists, any subordinate stories (and tickets) will get merged recursively.
+
+## Development
+
+This project is written in python3. It uses `pipenv` for dependency management, `pytest` for testing, and `black` for
+formatting.

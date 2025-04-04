@@ -1,0 +1,54 @@
+# {{ title }}
+{% if subtitle %}
+***{{ subtitle }}***
+{% endif %}
+
+{% if author %}
+Author: {{ author }}
+{% endif %}
+{% if date %}
+Date: {{ date }}
+{% endif %}
+
+{% for epic in changes.epics %}
+# {{ epic }}
+
+{% if epic.description %}
+## "Description"
+{{ epic.description }}
+
+{% endif %}
+## Tickets
+{% for story in epic.stories %}
+### {{ story }}
+
+{% if show_descriptions | default(True) %}
+{% for message in story.messages %}
+#### {{ message.tagline }}
+{% if message.descriptions %}
+{{ message.descriptions | join_newline }}
+{% endif %}
+{% endfor %}
+{% else %}
+{{ story.messages | map("format_message") | markdown_list }}
+{% endif %}
+
+{% endfor %}
+{% if not epic.impact.empty %}
+## Changes
+{% for k in tag_names if k != "tests" %}
+{% if (epic.impact[k]) %}
+### {{ k | capitalize() }}
+{{ epic.impact[k] | markdown_list }}
+
+{% endif %}
+{% endfor %}
+{% if epic.impact["tests"] %}
+## Validation
+{{ epic.impact["tests"] | markdown_enumeration }}
+
+{% endif %}
+{% endif %}
+## Authors
+{{ epic.authors | map("format_author") | markdown_list }}
+{% endfor %}

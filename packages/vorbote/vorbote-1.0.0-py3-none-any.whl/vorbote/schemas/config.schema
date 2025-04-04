@@ -1,0 +1,168 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$ref": "#/definitions/Config",
+    "definitions": {
+        "Config": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "annotations": {
+                    "type": "array",
+                    "items": {}
+                },
+                "tags": {
+                    "$ref": "#/definitions/Tags"
+                },
+                "template": {
+                    "$ref": "#/definitions/Template"
+                },
+                "project": {
+                    "$ref": "#/definitions/Project"
+                },
+                "input": {
+                    "$ref": "#/definitions/Input"
+                },
+                "output": {
+                    "$ref": "#/definitions/Output"
+                },
+                "repository": {
+                    "$ref": "#/definitions/Repository"
+                },
+                "exclude": {
+                    "$ref": "#/definitions/Exclude"
+                },
+                "whitespace": {
+                    "$ref": "#/definitions/Whitespace"
+                }
+            },
+            "required": [
+                "tags"
+            ],
+            "title": "Config"
+        },
+        "Exclude": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "bare": {
+                    "type": "boolean"
+                },
+                "merges": {
+                    "type": "boolean"
+                }
+            },
+            "title": "Exclude"
+        },
+        "Input": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "schema": {
+                    "type": "boolean"
+                },
+                "validate": {
+                    "type": "boolean"
+                }
+            },
+            "title": "Input"
+        },
+        "Output": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "path": {
+                    "type": "string"
+                },
+                "descriptions": {
+                    "type": "boolean"
+                },
+                "title": {
+                    "type": "string"
+                },
+                "author": {
+                    "type": "string"
+                },
+                "date": {
+                    "type": "string"
+                }
+            },
+            "title": "Output"
+        },
+        "Project": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "keys": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    }
+                }
+            },
+            "title": "Project"
+        },
+        "Repository": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "path": {
+                    "type": "string"
+                },
+                "revision": {
+                    "type": "string"
+                }
+            },
+            "title": "Repository"
+        },
+        "Tags": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "sorted": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    }
+                },
+                "unsorted": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    }
+                }
+            },
+            "required": [
+                "sorted",
+                "unsorted"
+            ],
+            "title": "Tags"
+        },
+        "Template": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "path": {
+                    "type": "string"
+                },
+                "name": {
+                    "type": "string"
+                }
+            },
+            "title": "Template"
+        },
+        "Whitespace": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "strip": {
+                    "type": "boolean"
+                },
+                "trim": {
+                    "type": "boolean"
+                }
+            },
+            "title": "Whitespace"
+        }
+    }
+}
+

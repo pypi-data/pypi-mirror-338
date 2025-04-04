@@ -1,0 +1,113 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$ref": "#/definitions/Welcome7",
+    "definitions": {
+        "Welcome7": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "epics": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/Epic"
+                    }
+                }
+            },
+            "required": [],
+            "title": "Welcome7"
+        },
+        "Epic": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "name": {
+                    "type": "string"
+                },
+                "authors": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/Author"
+                    }
+                },
+                "description": {
+                    "type": "string"
+                },
+                "stories": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/Story"
+                    }
+                },
+                "tags": {
+                    "$ref": "#/definitions/Tags"
+                }
+            },
+            "required": [
+                "name",
+                "stories",
+                "authors"
+            ],
+            "title": "Epic"
+        },
+        "Author": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "name": {
+                    "type": "string"
+                },
+                "email": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "email",
+                "name"
+            ],
+            "title": "Author"
+        },
+        "Story": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "reference": {
+                    "type": "string"
+                },
+                "tickets": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/Ticket"
+                    }
+                }
+            },
+            "required": [
+                "reference",
+                "tickets"
+            ],
+            "title": "Story"
+        },
+        "Ticket": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "tagline": {
+                    "type": "string"
+                },
+                "description": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "tagline"
+            ],
+            "title": "Ticket"
+        },
+        "Tags": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {},
+            "required": [],
+            "title": "Tags"
+        }
+    }
+}
