@@ -1,0 +1,6 @@
+pandas>=2.2.3
+patsy>=1.0.1
+pip>=23.0.1
+scipy>=1.15.2
+setuptools>=66.1.1
+torch>=2.6.0
