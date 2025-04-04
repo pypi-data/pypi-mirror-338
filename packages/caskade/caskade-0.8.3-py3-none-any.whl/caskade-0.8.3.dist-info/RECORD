@@ -1,0 +1,15 @@
+caskade/__init__.py,sha256=8RF3R1k3RQPc8ftmsCt8W8x7_OH7xlSm2EQdK0QY0xs,1347
+caskade/_version.py,sha256=I_fzTO52A7X9h4fttULxySS6f_KgOl2rqyT1fEmwEGY,511
+caskade/base.py,sha256=zJUaLmmmctV94OznEEJtEN66RNYLcfwOOcFb5F9NCHA,14428
+caskade/collection.py,sha256=KE3kk2iZoRZ1cR2Uk8VPJgDOaWXiWHB-O_zeOGyF-Fg,4123
+caskade/context.py,sha256=ieJpUW1t9MquhbB8LrQJ48H98vQJgtFrqfCRsfC7JVo,2492
+caskade/decorators.py,sha256=OwhTAg9E3A6EO71OuBSuX_a6h0EN1Y-8PmGli9ha3ys,3075
+caskade/errors.py,sha256=WPQkcv5wPp7DNF2WYDzIDpuXymn8LG5bfxLSwDrEELc,3835
+caskade/module.py,sha256=0R6bncddxh9uUHWeTLq4Ddt1ZQwsU4cop42S6TEkHSQ,20162
+caskade/param.py,sha256=yMsHdlAWHtbMpYZwvdYpxXDPgJ7p9QjNwERDBEjHTM4,19674
+caskade/tests.py,sha256=9XxvHVXiK8ZXDOYhh4V5lABaWNui2btACccwhlwdBNg,1282
+caskade/warnings.py,sha256=u3A_dSdZiwVvWVPh2fChgr0gM2ei50OfHvN-yWxkQs0,766
+caskade-0.8.3.dist-info/METADATA,sha256=ehX3qEzbi3CajDPt8vin07S54J8A-sSGwzni6ZNswKs,4849
+caskade-0.8.3.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+caskade-0.8.3.dist-info/licenses/LICENSE,sha256=LSU9RKlizfhpJiFNnlbEIxgtbq0CRfdFGIP-f78Tp30,1074
+caskade-0.8.3.dist-info/RECORD,,
