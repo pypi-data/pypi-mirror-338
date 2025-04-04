@@ -1,0 +1,7 @@
+grpcio<2.0.0,>=1.56.0
+protobuf<6.31.0,>=4.23.0
+
+[dev]
+build>=1.2.2.post1
+grpcio-tools>=1.68.0
+pytest>=8.3.3
