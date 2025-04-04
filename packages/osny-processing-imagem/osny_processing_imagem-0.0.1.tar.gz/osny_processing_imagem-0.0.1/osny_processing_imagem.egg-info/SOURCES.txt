@@ -1,0 +1,13 @@
+README.md
+setup.py
+osny_processing_imagem/__init__.py
+osny_processing_imagem.egg-info/PKG-INFO
+osny_processing_imagem.egg-info/SOURCES.txt
+osny_processing_imagem.egg-info/dependency_links.txt
+osny_processing_imagem.egg-info/top_level.txt
+osny_processing_imagem/processing/__init__.py
+osny_processing_imagem/processing/combination.py
+osny_processing_imagem/processing/transformation.py
+osny_processing_imagem/utils/__init__.py
+osny_processing_imagem/utils/io.py
+osny_processing_imagem/utils/plot.py
