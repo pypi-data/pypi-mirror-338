@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: mosses
+Version: 0.0.1
+Summary: This is a placeholder package to reserve the name.
+Author-email: Gian Marco Ghiandoni <ghiandoni.g@gmail.com>
+License: MIT
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+# mosses
+
+This is a placeholder package.
