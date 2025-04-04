@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: ultrasound_processing_package
+Version: 0.1.0
+Summary: Ultrasound image processing package for noise removal and curved-to-flat transformation.
+Author: A Te Neved
+Author-email: te@email.com
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
