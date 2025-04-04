@@ -1,0 +1,42 @@
+Metadata-Version: 2.4
+Name: autoenv-tool
+Version: 0.6
+Home-page: https://github.com/Husanjonazamov/autoenv-tool
+Author: Husanjon Azamov
+Author-email: azamovhusanboy@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: requests
+Requires-Dist: environs
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: requires-dist
+
+# Autoenv
+
+Autoenv - bu terminal orqali `.env` faylini o'qish va tahrirlashni osonlashtiradigan paket.
+
+## O'rnatish 
+
+```bash
+pip install autoenv-tool
+```
+
+## Ishga tushirish  
+
+```bash
+autoenv
+```
+
+
+
+
+
+
+
