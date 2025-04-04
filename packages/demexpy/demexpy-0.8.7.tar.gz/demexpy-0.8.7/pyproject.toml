@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "demexpy"
+description = "Python implementation of the DeMeX protocol"
+readme = "READMEPYPI.md"
+version = "0.8.7"
+requires-python = ">= 3.8"
+dependencies = [
+    "requests",
+    "cryptography", 
+]
+authors = [
+    {name = "Abdullah Alam", email="abdullah@sentient-pixels.com"}
+]
+maintainers = [
+    {name = "Abdullah Alam", email="abdullah@sentient-pixels.com"}
+]
+license = "MIT"
+license-files = ["LICENSE"]
+keywords = ["demex", "message broker", "decentralised", "decentralized", "send messages"]
+
+[project.scripts]
+new_demex_node = "demexpy:new_demex_node"
+
+[project.urls]
+Homepage = "https://github.com/sentientpixels/demexpy"
+Documentation = "https://github.com/sentientpixels/demexpy/blob/main/docs/index.md"
+Repository = "https://github.com/sentientpixels/demexpy"
+
