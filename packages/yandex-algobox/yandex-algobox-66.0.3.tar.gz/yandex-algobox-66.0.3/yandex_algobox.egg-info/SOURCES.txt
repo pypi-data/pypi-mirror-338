@@ -1,0 +1,6 @@
+README.md
+setup.py
+yandex_algobox.egg-info/PKG-INFO
+yandex_algobox.egg-info/SOURCES.txt
+yandex_algobox.egg-info/dependency_links.txt
+yandex_algobox.egg-info/top_level.txt
