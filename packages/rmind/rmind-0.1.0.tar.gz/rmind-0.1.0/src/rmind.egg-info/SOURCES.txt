@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+src/rmind/__init__.py
+src/rmind/py.typed
+src/rmind.egg-info/PKG-INFO
+src/rmind.egg-info/SOURCES.txt
+src/rmind.egg-info/dependency_links.txt
+src/rmind.egg-info/requires.txt
+src/rmind.egg-info/top_level.txt
