@@ -1,0 +1,12 @@
+FastWrite/__init__.py,sha256=yUFYzWDlz9ik7hMHVHHahwKP8MFJtbFZgsL3G61n6RE,370
+FastWrite/__main__.py,sha256=JGy6N5T3YtnwfNBDCEDiRVipbxVgQzruiQ9nzVdyjCo,2047
+FastWrite/bleu.py,sha256=MZHptZjZYPPUBcC2l_2cIWVQ14AbOCtSGw83dRhKMG0,656
+FastWrite/config.py,sha256=Nqb9WnSHg_og433R9j94XsUsZIhE-wmvC-XmlvHWIzM,1115
+FastWrite/data_flow.py,sha256=kGfHfa0pXZJOqav6DY2by99ven_10eGAv7QHjVqPhWE,1463
+FastWrite/doc_generator.py,sha256=IPRBqOZzOAhU5WkEYYDKNq9GNfZpVhcLfmFqMcJISNU,3937
+FastWrite/file_processor.py,sha256=oCkD8n6i2k25IWq9vzIvgLYGUZFILOlJmUBtAptRnKY,1204
+fastwrite-1.0.7.dist-info/licenses/LICENSE,sha256=1_090nr9uXU4Th2niCJZKWP80b6Xp9VZyXFhUFxuXOA,1058
+fastwrite-1.0.7.dist-info/METADATA,sha256=QFnq-nU1Bf1ajUMTPVQ2R0F4SPIR3LfbKYaioRP0mCQ,6064
+fastwrite-1.0.7.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+fastwrite-1.0.7.dist-info/top_level.txt,sha256=hp2qNuXnuRG5CQ6qD7sxa6Uq_zQY62MLgk8JWgeQHWc,10
+fastwrite-1.0.7.dist-info/RECORD,,
