@@ -1,0 +1,13 @@
+httpx
+libtensorshield>=0.0.7
+libcanonical>=0.0.43
+canonical.ext.jose>=0.0.1
+pydantic>=2
+
+[develop]
+bittensor>=9.0.0
+pytest
+pytest_asyncio
+coverage
+twine
+watchdog
