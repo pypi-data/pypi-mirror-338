@@ -1,0 +1,11 @@
+geopop/__init__.py,sha256=PW7fVcF4tTp30WPdihMY7ZMwtGDQs6hJWU2jv3tEDGc,125
+geopop/common.py,sha256=Rw6d9qmZDu3dUGTyJto1Y97S7-QA-m2p-pbCNvMDrm4,184
+geopop/foliummap.py,sha256=BZSw2pOQGSuVLZXjtbdRnQxaXu4U2ApbFFfKmX8UZlY,3328
+geopop/geopop.py,sha256=h0hwdogXGFqerm-5ZPeT-irPn91pCcQRjiHThXsRzEk,19
+geopop/ipyleafletmap.py,sha256=D7bV1vCbxQPFO2NHcbQVFWORY6s38N27XQ5DzJJIGTI,4194
+geopop-0.0.3.dist-info/licenses/LICENSE,sha256=kK-ZPKq8m41idAS0e3iiQocsLKhd0CaCMs9I608T8Go,1069
+geopop-0.0.3.dist-info/METADATA,sha256=raBCZRpTy28NLmYRcEVcEW2vtptlHxpS9v6heIudn4w,1274
+geopop-0.0.3.dist-info/WHEEL,sha256=MAQBAzGbXNI3bUmkDsiV_duv8i-gcdnLzw7cfUFwqhU,109
+geopop-0.0.3.dist-info/entry_points.txt,sha256=tI-rfA-Di4_4JDtrXXiJ1Y3rShhxTfknyMAQjX3TX4Y,43
+geopop-0.0.3.dist-info/top_level.txt,sha256=1lhiqfFl5_Z0bDsDBYTVB7YkiN80URbi_LSH5ueQfzs,7
+geopop-0.0.3.dist-info/RECORD,,

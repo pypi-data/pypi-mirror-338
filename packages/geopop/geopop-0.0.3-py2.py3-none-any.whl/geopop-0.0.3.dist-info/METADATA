@@ -1,0 +1,46 @@
+Metadata-Version: 2.4
+Name: geopop
+Version: 0.0.3
+Summary: Python Package
+Author-email: John Riedl <john.riedl@icloud.com>
+License: MIT License
+Project-URL: Homepage, https://github.com/jriedl1/geopop
+Keywords: geopop
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: folium
+Requires-Dist: geopandas
+Requires-Dist: ipyleaflet
+Requires-Dist: numpy
+Provides-Extra: all
+Requires-Dist: geopop[extra]; extra == "all"
+Provides-Extra: extra
+Requires-Dist: pandas; extra == "extra"
+Dynamic: license-file
+
+# geopop
+
+
+[![image](https://img.shields.io/pypi/v/geopop.svg)](https://pypi.python.org/pypi/geopop)
+[![image](https://img.shields.io/conda/vn/conda-forge/geopop.svg)](https://anaconda.org/conda-forge/geopop)
+
+
+**Python Package**
+
+
+-   Free software: MIT License
+-   Documentation: https://jriedl1.github.io/geopop
+
+
+## Features
+
+-   TODO
