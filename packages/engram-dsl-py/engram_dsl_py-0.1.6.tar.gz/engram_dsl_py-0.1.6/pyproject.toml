@@ -1,0 +1,12 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "engram-dsl-py"
+version = "0.1.6"
+description = "Python bindings generated from engram-dsl (Rust)"
+authors = [{ name="Zoetrope", email="zoetro@example.pe" }]
+
+[tool.setuptools.packages.find]
+where = ["engram_dsl_py"]

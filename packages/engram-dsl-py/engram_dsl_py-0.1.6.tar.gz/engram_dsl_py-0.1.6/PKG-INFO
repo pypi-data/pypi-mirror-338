@@ -1,0 +1,5 @@
+Metadata-Version: 2.4
+Name: engram-dsl-py
+Version: 0.1.6
+Summary: Python bindings generated from engram-dsl (Rust)
+Author-email: Zoetrope <zoetro@example.pe>

@@ -1,0 +1,5 @@
+pyproject.toml
+engram_dsl_py/engram_dsl_py.egg-info/PKG-INFO
+engram_dsl_py/engram_dsl_py.egg-info/SOURCES.txt
+engram_dsl_py/engram_dsl_py.egg-info/dependency_links.txt
+engram_dsl_py/engram_dsl_py.egg-info/top_level.txt
