@@ -1,0 +1,9 @@
+bioscan_dataset/__init__.py,sha256=-BlBAqX7uBI71IoL5Y6lduTw-GLRKd0mHr_CsGunL9A,264
+bioscan_dataset/__meta__.py,sha256=lsCQmh9SurZZrUqMTTpee9QGsVSfc3JLZeC4IHB0lJ4,311
+bioscan_dataset/bioscan1m.py,sha256=qffOClVyE1-p48izxvdhw_hmsqk3AgLoLJuPCO0IJpM,46199
+bioscan_dataset/bioscan5m.py,sha256=EDotepuGIBWy_GQWFlEQbsWhxDZg4CyM6Ok5x-GeE8U,31366
+bioscan_dataset-1.2.0.dist-info/licenses/LICENSE,sha256=IgwT6UTwgwnkO9kj1c3-AFYrXfJmX78EWvpzimo9s9g,1072
+bioscan_dataset-1.2.0.dist-info/METADATA,sha256=PLR7L75_MdEQVrDQDXz2JyEYavc4mYTUGg_h62v2AH8,20427
+bioscan_dataset-1.2.0.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+bioscan_dataset-1.2.0.dist-info/top_level.txt,sha256=e9CTpgckuZm6JUysgJYdo5KzHwZtzPz6kNLp3HKmeaI,16
+bioscan_dataset-1.2.0.dist-info/RECORD,,
