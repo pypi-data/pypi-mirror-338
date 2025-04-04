@@ -1,0 +1,5 @@
+[console_scripts]
+ropcop-browser = mkw_ropcop.ropcop_browser_gui:main
+
+[napari.manifest]
+mkw-ropcop = mkw_ropcop:napari.yaml

@@ -1,0 +1,11 @@
+mkw_ropcop/__init__.py,sha256=y9gJq7uJd1xzWNne84UcZY99EJQ-fXuJonDCAE6Rqog,100
+mkw_ropcop/_dock_widget.py,sha256=ll3dB9OLtFiV0Dc2GP_wDKu-07SXbmrHLzC0IBEZFSM,916
+mkw_ropcop/_version.py,sha256=fceR-ISBrdAHEk65E6i_ra86S7J_KivUUrLd2aGJd2I,23
+mkw_ropcop/napari.yaml,sha256=wb6OwTr1SjqEYAdF4kt2Jm95nFAL2ToaLJcpXB0bJQc,311
+mkw_ropcop/ropcop_browser_gui.py,sha256=4r6AAqH3hd9rHZAjhOEfWqUnZdmd_qRflhI_Weu0CNw,28466
+mkw_ropcop/ropcop_segmenter_widget.py,sha256=qYboDN_tQ1iIb3FmMF7qvxP26WgBnBnqtNwN1qxouDc,53349
+mkw_ropcop-0.1.0.dist-info/METADATA,sha256=kQs93Eith_6_HkNZM17LEweP3NrCWyunR6gS68JcC8M,2003
+mkw_ropcop-0.1.0.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+mkw_ropcop-0.1.0.dist-info/entry_points.txt,sha256=saSSEdFZtqzfiYa137dgojVL8TmilwAmxKN1kN-ZzZM,125
+mkw_ropcop-0.1.0.dist-info/top_level.txt,sha256=A1L_z4aUlTq3wvAIyA8lkw8AACC7nDTpqzuSLOQbhrQ,11
+mkw_ropcop-0.1.0.dist-info/RECORD,,
