@@ -1,0 +1,11 @@
+Metadata-Version: 2.4
+Name: headlessai
+Version: 0.1.0
+Summary: Core framework for HeadlessAI — an extensible AI pipeline runtime
+Author: DeepStoneAI
+License-Expression: MIT
+Project-URL: Homepage, https://deepst.one/headlessai
+Project-URL: Repository, https://github.com/DeepStoneAI/headlessai-core
+Description-Content-Type: text/markdown
+
+Core framework for HeadlessAI — an extensible AI pipeline runtime
