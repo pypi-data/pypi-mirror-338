@@ -1,0 +1,12 @@
+rustcord/__init__.py,sha256=kYwJN2zk5qcgQdhefs59-IEWZIdpiyG-eNqrvh_vUb4,1553
+rustcord/_rust.py,sha256=kH7VzKS6HHziIaCW3aRKpabu3EJt_VWQ1-LW-08Sq7Y,43015
+rustcord/client.py,sha256=NCxP9Zj0PdWuo0mGy_rh76sWG1IPvB59EkzF5ckoSUA,27690
+rustcord/embeds.py,sha256=svnifNgTo_VB9Yco185yPa54UqzHacWrt048RhjhwC4,11056
+rustcord/errors.py,sha256=mahrO6BG1EhE0d3kWOvpG7RefQsobX-Lnt0AXGoGRDo,1374
+rustcord/gateway.py,sha256=cB409r2PmJEoheJoJquCKonosaTjkjxwxQbNWIqKB-Q,3622
+rustcord/models.py,sha256=IZdQHTnr44dVrFW2E0u1NydMF02oczyDwqGmjHHG464,33145
+rustcord-0.1.1.dist-info/licenses/LICENSE,sha256=4a0W9tFYAWBFKdEaO5O_K7jMDW_kDpUA-9IMt8-auoU,1072
+rustcord-0.1.1.dist-info/METADATA,sha256=S3L6k4Nj8EYPToPbXycIHBdEpRBqeFu8B3gfNuMViuw,19915
+rustcord-0.1.1.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+rustcord-0.1.1.dist-info/top_level.txt,sha256=7BhOFZccSM5y1l5DInVjA9qp1OzHDS_NxWN2xN_VG9Y,9
+rustcord-0.1.1.dist-info/RECORD,,
