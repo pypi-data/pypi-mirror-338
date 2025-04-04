@@ -1,0 +1,58 @@
+aif_custom_tools.tools.custom_llm_tool.custom_llm:
+  name: AIF Custom LLM Tool
+  type: custom_llm
+  inputs:
+    connection:
+      type:
+        - CustomConnection 
+    api:
+      type:
+        - string        
+    model_name:
+      type:
+        - string
+    temperature:
+      type:
+        - double
+    top_p:
+      default: 1
+      type:
+        - double
+      ui_hints:
+        text_box_size: xs
+      advanced: true
+    max_tokens:
+      default: ""
+      type:
+        - int
+      ui_hints:
+        text_box_size: xs
+    presence_penalty:
+      default: ""
+      type:
+        - double
+      advanced: true
+    response_format:
+      type:
+      - object
+      enabled_by: api
+      enabled_by_value:
+      - chat
+      advanced: false
+      ui_hints:
+        text_box_size: lg
+      enum:
+      - type: json_object
+      - type: text
+      allow_manual_entry: true
+      default: ""
+    frequency_penalty:
+      type:
+      - int
+      default: ""
+      advanced: true
+      ui_hints:
+        text_box_size: xs
+  description: This is a custom AIF tool      
+  module: aif_custom_tools.tools.custom_llm_tool    
+  function: custom_llm
