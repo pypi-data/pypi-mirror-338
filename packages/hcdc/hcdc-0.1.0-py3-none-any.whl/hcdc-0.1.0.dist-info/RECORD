@@ -1,0 +1,12 @@
+hcdc-0.1.0.dist-info/licenses/AUTHORS,sha256=1nVSbDvVtw_1yguJm0zP2bWq7rh5Dbz8JBMSH23C4ig,259
+hcdc-0.1.0.dist-info/licenses/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+src/__init__.py,sha256=EhrAEwaY2Kw-2P5zNLJb8kva29gKHVnTSMGei7SATV8,610
+src/image_processing.py,sha256=2QT-t0qc3uMywPODg0En8uBBrQvu5gF5x3aRbDl_-VA,6001
+src/main.py,sha256=34qFho3fB5H1wLHCeuL_Vqm6XHqUEk6wwgDqyCs57GU,4813
+src/text_processing.py,sha256=k0P9mw8pK1KAibeU1OALSBo8KMlMWqnLWlF8sGmdJT8,3570
+hcdc-0.1.0.dist-info/METADATA,sha256=vIUfgGionhL022PG_a7MF8kA5kn3QA2XQRr7sPMG1Xw,3608
+hcdc-0.1.0.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+hcdc-0.1.0.dist-info/entry_points.txt,sha256=A0LIhwYe9RHrXog3qD189yBE2MYgtLWw0Ca4hFHWj_s,39
+hcdc-0.1.0.dist-info/pbr.json,sha256=xnFV7nKFA8CKF-zd8l2z14nJvYfeawYV38kZc96XTsU,47
+hcdc-0.1.0.dist-info/top_level.txt,sha256=74rtVfumQlgAPzR5_2CgYN24MB0XARCg0t-gzk6gTrM,4
+hcdc-0.1.0.dist-info/RECORD,,
