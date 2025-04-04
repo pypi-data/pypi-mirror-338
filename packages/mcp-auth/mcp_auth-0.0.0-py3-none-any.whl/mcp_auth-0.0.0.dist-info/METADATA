@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: mcp-auth
+Version: 0.0.0
+Keywords: mcp,modelcontextprotocol,auth,authentication,authorization
+Author-Email: "Silverhand Inc." <contact@silverhand.io>, Logto <contact@logto.io>
+License: MIT
+Project-URL: homepage, https://mcp-auth.dev/
+Project-URL: repository, https://github.com/mcp-auth/python
+Project-URL: documentation, https://mcp-auth.dev/
+Requires-Python: <4.0,>=3.8
+Description-Content-Type: text/markdown
+
+# MCP Auth
