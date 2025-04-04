@@ -1,0 +1,12 @@
+buildingregulariser/__init__.py,sha256=BuK-bsWpdLVT7lj1o26P9FSmyeXvmcJO6VkOdbSrRMU,297
+buildingregulariser/__version__.py,sha256=C69ADlbQREQlR15trneyA2sk8x0-oH4rDAX5fsv19_U,22
+buildingregulariser/chunk_processing.py,sha256=qiOnag8uefElu7QJIIZCgVw8i5XeZ0MFCUhgNZj0ccA,7076
+buildingregulariser/gdf_operations.py,sha256=fiFFI5M75ZW9-g7cnzxj8L0NbR3NUBamjOrunsusHNA,4568
+buildingregulariser/geometry_utils.py,sha256=V9LUWCMYy-MzJIuqTf_Cn8tnSMkuaSNb_IOLt2Nb5Dc,2206
+buildingregulariser/line_operations.py,sha256=43Vox1d0Zwp-IM8AC-zcNsKVLkJOpjQM63EdOvkQ5SY,3353
+buildingregulariser/regularization.py,sha256=f78tcAaMao4KdDY-hLWvYK0j4N6J1qfoiXFFnnASrUM,29685
+buildingregulariser/rotation.py,sha256=jvSpHsgn5wDY1UfV_1TylC9Ihi1j61sNtCWAhvMG6j4,1056
+buildingregulariser-0.1.8.dist-info/METADATA,sha256=YbPXfZsU3g3YWNkI-RQ8LzoD7bv8cwf3TYS2ZmdVwuI,5957
+buildingregulariser-0.1.8.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+buildingregulariser-0.1.8.dist-info/top_level.txt,sha256=Ax4OLEx6ekbP-QOXRgR7A8EQvDoRS6qAoxXjTWPavt8,20
+buildingregulariser-0.1.8.dist-info/RECORD,,
