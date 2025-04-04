@@ -1,0 +1,10 @@
+README.md
+pyproject.toml
+mcp_math/__init__.py
+mcp_math/server.py
+mcp_math_server.egg-info/PKG-INFO
+mcp_math_server.egg-info/SOURCES.txt
+mcp_math_server.egg-info/dependency_links.txt
+mcp_math_server.egg-info/entry_points.txt
+mcp_math_server.egg-info/requires.txt
+mcp_math_server.egg-info/top_level.txt
