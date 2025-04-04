@@ -1,0 +1,3 @@
+[console_scripts]
+spdf = topdf.server:serve
+topdf = topdf.cmdline:convert
