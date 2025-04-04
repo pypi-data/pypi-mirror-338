@@ -1,0 +1,7 @@
+LICENSE
+README.md
+pyproject.toml
+morphing.egg-info/PKG-INFO
+morphing.egg-info/SOURCES.txt
+morphing.egg-info/dependency_links.txt
+morphing.egg-info/top_level.txt
