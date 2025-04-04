@@ -1,0 +1,69 @@
+Metadata-Version: 2.1
+Name: rapid-kit
+Version: 0.1.2
+Summary: Real-time Audio-visual Platform for IoT Devices
+Home-page: https://tange.ai/
+Author: TANGE.AI
+Author-email: fengjun.dev@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Software Development :: Libraries
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# RAPID Kit
+
+Real-time Audio-visual Platform for IoT Devices.
+> 为物联网视觉设备提供一个高效的跨平台音视频解决方案。
+
+Go to [TIVS](https://tange-ai.feishu.cn/wiki/YGniwMYTSiM22lkLEWmcA8LbnGe) for more details.
+
+## License
+
+MIT License 
+
+## Changelog
+
+# Changelog
+
+所有项目的显著变更都将记录在此文件中。
+
+格式基于 [Keep a Changelog](https://keepachangelog.com/zh-CN/1.0.0/)，
+并且本项目遵循 [语义化版本](https://semver.org/lang/zh-CN/)。
+
+## [0.0.1] - 2025-04-03
+
+### 新增
+- 初始版本发布
+- 添加 Core 库接口
+- 添加 Media 库接口，包括 MediaPlayer, MediaChat 等功能
+- 添加 SDL 接口，支持音视频输入输出
+
+### 优化
+- 初始化函数支持平台和语言配置
+- 自动日志目录创建
+
+### 修复
+- 无
+
+## [未发布]
+
+### 新增
+- 无
+
+### 优化
+- 无
+
+### 修复
+- 无 
+
