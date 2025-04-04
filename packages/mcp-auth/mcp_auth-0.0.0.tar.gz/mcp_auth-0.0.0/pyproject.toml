@@ -1,0 +1,45 @@
+[project]
+name = "mcp-auth"
+version = "0.0.0"
+authors = [
+    { name = "Silverhand Inc.", email = "contact@silverhand.io" },
+    { name = "Logto", email = "contact@logto.io" },
+]
+requires-python = "<4.0,>=3.8"
+readme = "README.md"
+keywords = [
+    "mcp",
+    "modelcontextprotocol",
+    "auth",
+    "authentication",
+    "authorization",
+]
+
+[project.license]
+text = "MIT"
+
+[project.urls]
+homepage = "https://mcp-auth.dev/"
+repository = "https://github.com/mcp-auth/python"
+documentation = "https://mcp-auth.dev/"
+
+[build-system]
+requires = [
+    "pdm-backend",
+]
+build-backend = "pdm.backend"
+
+[tool.coverage.run]
+branch = true
+omit = [
+    "*_test.py",
+]
+source = [
+    "src/mcp-auth",
+]
+
+[tool.pdm]
+distribution = true
+
+[tool.pdm.build]
+includes = []
