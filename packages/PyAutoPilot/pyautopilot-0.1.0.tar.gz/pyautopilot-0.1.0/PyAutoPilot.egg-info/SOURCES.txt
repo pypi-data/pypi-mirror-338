@@ -1,0 +1,7 @@
+PyAutoPilot.py
+README.md
+setup.py
+PyAutoPilot.egg-info/PKG-INFO
+PyAutoPilot.egg-info/SOURCES.txt
+PyAutoPilot.egg-info/dependency_links.txt
+PyAutoPilot.egg-info/top_level.txt
