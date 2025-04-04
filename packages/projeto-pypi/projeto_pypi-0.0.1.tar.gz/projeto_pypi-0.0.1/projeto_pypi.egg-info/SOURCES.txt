@@ -1,0 +1,9 @@
+License.txt
+README.md
+setup.py
+projeto_pypi/__init__.py
+projeto_pypi/funcoes.py
+projeto_pypi.egg-info/PKG-INFO
+projeto_pypi.egg-info/SOURCES.txt
+projeto_pypi.egg-info/dependency_links.txt
+projeto_pypi.egg-info/top_level.txt
