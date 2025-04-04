@@ -1,0 +1,7 @@
+.idea
+test*
+**/__pycache__
+api/.env
+venv
+**/*.sqlite
+dist/*
