@@ -1,0 +1,13 @@
+LICENSE.txt
+README.md
+pyproject.toml
+setup.py
+py_writes_ts.egg-info/PKG-INFO
+py_writes_ts.egg-info/SOURCES.txt
+py_writes_ts.egg-info/dependency_links.txt
+py_writes_ts.egg-info/requires.txt
+py_writes_ts.egg-info/top_level.txt
+tests/test_function_generator.py
+tests/test_rename_interfaces.py
+tests/test_sdk_generator_example.py
+tests/test_turn_dataclass_to_interface.py
