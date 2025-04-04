@@ -1,0 +1,44 @@
+[package]
+name = "qoqo_qiskit_devices"
+version = "0.10.1"
+authors = ["HQS Quantum Simulations <info@quantumsimulations.de>"]
+license = "Apache-2.0"
+edition = "2021"
+rust-version = "1.76"
+categories = ["science", "simulation"]
+readme = "README.md"
+repository = "https://github.com/HQSquantumsimulations/qoqo_qiskit"
+description = "IBM's Qiskit devices interface for qoqo python quantum computing toolkit"
+include = ["src*", "LICENSE", "README.md"]
+
+[lib]
+name = "qoqo_qiskit_devices"
+path = "src/lib.rs"
+doctest = false
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+ndarray = "0.16"
+bincode = "1.3"
+numpy = "0.23"
+
+qoqo = { version = "~1.19", default-features = false }
+roqoqo = "~1.19"
+
+roqoqo_qiskit_devices = { path = "../roqoqo_qiskit_devices", version = "~0.10" }
+
+[dev-dependencies]
+test-case = "3.0"
+
+[dependencies.pyo3]
+version = "0.23"
+features = ["num-complex"]
+
+[build-dependencies]
+pyo3-build-config = "0.23"
+pyo3 = "0.23"
+
+[features]
+extension-module = ["pyo3/extension-module"]
+default = ["extension-module"]
