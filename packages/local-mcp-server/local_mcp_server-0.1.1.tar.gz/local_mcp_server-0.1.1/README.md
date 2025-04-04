@@ -1,0 +1,277 @@
+# Remote MCP Server
+
+A server implementation for Model Context Protocol (MCP) that enables remote access to MCP capabilities, developed by Fetcch.
+
+## Overview
+
+Remote MCP Server extends the traditional local-only MCP implementation by providing a HTTP API interface, allowing any MCP to be accessed remotely. This enables distributed architectures where MCP-powered tools, resources, and prompts can be accessed over a network.
+
+## Features
+
+- Remote access to MCP tools, resources, and prompts
+- RESTful API interface
+- Easy configuration and setup
+- Compatible with existing MCP clients
+
+## Installation
+
+```bash
+# Using uv (recommended)
+uv pip install remote-mcp-server
+
+# Or using pip
+pip install remote-mcp-server
+```
+
+## Creating an MCP Server
+
+Creating a remote MCP server is straightforward. Here's a basic example:
+
+```python
+from remote_mcp_server.server.config import Config
+from remote_mcp_server.server.main import MCPServer
+from mcp.types import ServerCapabilities
+
+# Initialize server configuration
+config = Config(
+    warn_on_duplicates=True, 
+    capabilities=ServerCapabilities(), 
+    name="MyRemoteMCP", 
+    version="1.0.0"
+)
+
+# Create server instance
+server = MCPServer(config=config)
+
+# Start the server
+app = server.start_server()
+
+# Run with uvicorn
+# uvicorn my_server:app --host 0.0.0.0 --port 8000
+```
+
+## Adding Tools
+
+Tools are functions that can be called remotely through the MCP protocol:
+
+```python
+async def add_numbers(a: int, b: int) -> str:
+    """Adds two integers and returns the result as a string."""
+    return str(a + b)
+
+server.add_tool(
+    name="add",
+    description="Add two numbers together",
+    input_schema={
+        "title": "InputSchema",
+        "type": "object",
+        "properties": {
+            "a": {"title": "a", "type": "integer"},
+            "b": {"title": "b", "type": "integer"}
+        },
+        "required": ["a", "b"]
+    },
+    fn=add_numbers
+)
+```
+
+## Adding Resources
+
+Resources are data that can be accessed remotely:
+
+```python
+async def read_text_resource(uri: str) -> list[ReadResourceResult]:
+    """Read a text resource by URI."""
+    return [
+        ReadResourceResult(contents=[
+            TextResourceContents(
+                uri=uri, 
+                mimeType="text/plain", 
+                text="Resource content here"
+            )
+        ])
+    ]
+
+def list_text_resources() -> list[Resource]:
+    """List available text resources."""
+    return [
+        Resource(
+            uri="text:///example",
+            name="ExampleText",
+            description="An example text resource",
+            mimeType="text/plain"
+        )
+    ]
+
+resource = ResourceModel(
+    uri="text:///example",
+    name="ExampleText",
+    description="An example text resource",
+    mime_type="text/plain",
+    size=123,
+    list_fn=list_text_resources,
+    read_fn=read_text_resource
+)
+
+server.add_resource(resource)
+```
+
+## Adding Prompts
+
+Prompts are template messages that can be customized with arguments:
+
+```python
+def generate_greeting(args: Dict[str, str]) -> list[PromptMessage]:
+    """Generate a greeting based on provided name."""
+    name = args.get("name", "Guest")
+    return [
+        PromptMessage(
+            role="assistant", 
+            content=TextContent(
+                type="text", 
+                text=f"Hello, {name}! How can I help you today?"
+            )
+        )
+    ]
+
+greeting_prompt = PromptModel(
+    name="greeting",
+    description="Generates a personalized greeting",
+    arguments=[
+        ArgumentModel(
+            name="name",
+            description="The name to greet",
+            required=False
+        )
+    ],
+    prompt_fn=generate_greeting
+)
+
+server.add_prompt(greeting_prompt)
+```
+
+## Running the Server
+
+To run a remote MCP server:
+
+```python
+# Save as server.py
+from remote_mcp_server.server.config import Config
+from remote_mcp_server.server.main import MCPServer
+from mcp.types import ServerCapabilities
+import uvicorn
+
+# Initialize server with configuration
+config = Config(
+    warn_on_duplicates=True, 
+    capabilities=ServerCapabilities(), 
+    name="MyRemoteMCP", 
+    version="1.0.0"
+)
+server = MCPServer(config=config)
+
+# Add your tools, resources, and prompts here...
+
+# Start the server
+app = server.start_server()
+
+if __name__ == "__main__":
+    uvicorn.run(app, host="0.0.0.0", port=8000)
+```
+
+Then run:
+
+```bash
+python server.py
+```
+
+## Configuring MCP Client
+
+To connect to a remote MCP server from an MCP client, add the following to your `config.json`:
+
+```json
+{
+  "mcpServers": {
+    "client-mcp": {
+      "command": "/path/to/uv",
+      "args": [
+        "--directory", 
+        "/path/to/mcp-servers",
+        "run",
+        "/path/to/mcp-servers/mcp-local-server/cli.py",
+        "http://localhost:8000"  // URL of your remote MCP server
+      ]
+    }
+  }
+}
+```
+
+## Example
+
+A complete example server with an add tool and welcome prompt:
+
+```python
+# examples/add_with_prompt.py
+from remote_mcp_server.server.config import Config, ResourceModel, PromptModel, ArgumentModel
+from mcp.types import ServerCapabilities, ReadResourceResult, TextResourceContents, Resource, PromptMessage, TextContent
+from typing import Dict
+import asyncio
+from remote_mcp_server.server.main import MCPServer
+import uvicorn
+
+# Initialize server configuration
+config = Config(
+    warn_on_duplicates=True, 
+    capabilities=ServerCapabilities(), 
+    name="ExampleMCP", 
+    version="1.0.0"
+)
+server = MCPServer(config=config)
+
+# Add tool implementation
+async def add(a: int, b: int) -> str:
+    return str(a + b)
+
+server.add_tool(
+    "add",
+    "add 2 numbers", 
+    {
+        "title": "InputSchema",
+        "type": "object",
+        "properties": {
+            "a": {"title": "a", "type": "integer"},
+            "b": {"title": "b", "type": "integer"}
+        },
+        "required": ["a", "b"]
+    }, 
+    add
+)
+
+# Add welcome prompt
+def generate_welcome_prompt(args: Dict[str, str]) -> list[PromptMessage]:
+    name = args.get("username", "Guest")
+    return [PromptMessage(
+        role="assistant", 
+        content=TextContent(type="text", text=f"Welcome aboard, {name}!")
+    )]
+
+welcome_prompt = PromptModel(
+    name="welcome_message",
+    description="Generates a welcome message for users",
+    arguments=[
+        ArgumentModel(
+            name="username",
+            description="The username to welcome",
+            required=False
+        )
+    ],
+    prompt_fn=generate_welcome_prompt
+)
+server.add_prompt(welcome_prompt)
+
+# Start the server
+app = server.start_server()
+
+if __name__ == "__main__":
+    uvicorn.run(app, host="0.0.0.0", port=8000)
+```
