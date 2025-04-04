@@ -1,0 +1,12 @@
+auto_python_toolkit/README.md,sha256=ZoxYLWwOmhdXeliEFMT0Do-A2YbbsDeKq_KQ5-9zy-Y,920
+auto_python_toolkit/__init__.py,sha256=buR8KG0H4Vy-_FfgB1tnBOSf1SSziP8JH33PCGRjTHc,117
+auto_python_toolkit/__main__.py,sha256=wy2H9rDa_sdIEITra-d7BYo2414n07oHcm5HZ3ViHdY,242
+auto_python_toolkit/cli.py,sha256=w3AAzcZHmqoiAYEKhvWhY1fMsImd2iweBCW88jz4ngA,1064
+auto_python_toolkit/dependency_analyzer.py,sha256=cPOSi66frR0E-MnQJd3is0Ie4sOgLxKp3cviYSnfI_A,9378
+auto_python_toolkit/i18n.py,sha256=pzD9BrjtYVwh2P6KYUYzuWc35AgPIAbN5JNi4MvPMio,5146
+auto_python_toolkit/toolkit.py,sha256=7NF7UpT7mTIHyQEjA4xiCKKtM1Izp-MLFOEPu8v43Lw,12092
+auto_python_toolkit-0.1.0.dist-info/METADATA,sha256=D-sLcb9siqtg8BMfknkEjsYFvBDdB6U1P2FaM1QVQZI,7980
+auto_python_toolkit-0.1.0.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+auto_python_toolkit-0.1.0.dist-info/entry_points.txt,sha256=Iv3X15bJypia_0eETo_YQ2O8azqFQawUETRdjBU1ozU,69
+auto_python_toolkit-0.1.0.dist-info/licenses/LICENSE,sha256=trTxEgvbXOKAk0gCaNDsnUjQM4DXupI-sGaR3vZfWHE,1084
+auto_python_toolkit-0.1.0.dist-info/RECORD,,

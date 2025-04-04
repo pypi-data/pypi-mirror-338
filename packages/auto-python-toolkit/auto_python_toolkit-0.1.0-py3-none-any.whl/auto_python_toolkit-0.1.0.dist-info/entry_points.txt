@@ -1,0 +1,2 @@
+[console_scripts]
+auto-python-toolkit = auto_python_toolkit.cli:main
