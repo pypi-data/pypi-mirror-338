@@ -1,0 +1,139 @@
+name: CI
+on:
+  push:
+    branches:
+      - "*"
+  pull_request:
+    branches:
+      - "*"
+  schedule:
+    - cron: "0 0 * * *" # Daily “At 00:00” UTC
+  workflow_dispatch: # allows you to trigger the workflow run manually
+
+jobs:
+  build:
+    if: |
+      github.repository == 'NCAR/ldcpy'
+    name: Build (${{ matrix.python-version }}, ${{ matrix.os }})
+    runs-on: ${{ matrix.os }}
+    defaults:
+      run:
+        shell: bash -l {0}
+    strategy:
+      fail-fast: false
+      matrix:
+        os: ["ubuntu-latest"]
+        #        python-version: ['3.7', '3.8', '3.9']
+        python-version: ["3.10", "3.11", "3.12"]
+    steps:
+      - name: Cancel previous runs
+        uses: styfle/cancel-workflow-action@0.12.1
+        with:
+          access_token: ${{ github.token }}
+      - uses: actions/checkout@v4
+      - uses: mamba-org/setup-micromamba@v2
+        with:
+          channels: conda-forge
+          environment-file: ci/environment.yml
+          activate-environment: ldcpy
+
+      - name: Install ldcpy
+        run: |
+          conda install ldcpy
+          conda list
+
+      - name: Run Tests
+        run: |
+          pytest --cov=./ --cov-report=xml
+
+      - name: Upload code coverage to Codecov
+        uses: codecov/codecov-action@v5.4.0
+        with:
+          file: ./coverage.xml
+          flags: unittests
+          env_vars: OS,PYTHON
+          name: codecov-umbrella
+          fail_ci_if_error: false
+
+  #  build:
+  #    if: |
+  #      github.repository == 'NCAR/ldcpy'
+  #    name: Build (${{ matrix.python-version }}, ${{ matrix.os }})
+  #    runs-on: ${{ matrix.os }}
+  #    defaults:
+  #      run:
+  #        shell: bash -l {0}
+  #    strategy:
+  #      fail-fast: false
+  #      matrix:
+  #        os: ['ubuntu-latest']
+  #        #        python-version: ['3.7', '3.8', '3.9']
+  #        python-version: ['3.10', '3.11', '3.12']
+  #    steps:
+  #      - name: Cancel previous runs
+  #        uses: styfle/cancel-workflow-action@0.12.1
+  #        with:
+  #          access_token: ${{ github.token }}
+  #      - uses: actions/checkout@v4
+  #      - uses: conda-incubator/setup-miniconda@v3
+  #        with:
+  #          channels: conda-forge
+  #          channel-priority: strict
+  #          mamba-version: '*'
+  #          activate-environment: ldcpy # Defined in ci/environment.yml
+  #          auto-update-conda: false
+  #          python-version: ${{ matrix.python-version }}
+  #          environment-file: ci/environment.yml
+  #
+  #      - name: Install ldcpy
+  #        run: |
+  #          conda install ldcpy
+  #          conda list
+  #
+  #      - name: Run Tests
+  #        run: |
+  #          pytest --cov=./ --cov-report=xml
+  #
+  #      - name: Upload code coverage to Codecov
+  #        uses: codecov/codecov-action@v5.4.0
+  #        with:
+  #          file: ./coverage.xml
+  #          flags: unittests
+  #          env_vars: OS,PYTHON
+  #          name: codecov-umbrella
+  #          fail_ci_if_error: false
+
+  upstream-dev:
+    if: |
+      github.repository == 'NCAR/ldcpy'
+    name: upstream-dev-py311
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        shell: bash -l {0}
+    continue-on-error: true # Allow this job to fail without failing the workflow
+    steps:
+      - name: Cancel previous runs
+        uses: styfle/cancel-workflow-action@0.12.1
+        with:
+          access_token: ${{ github.token }}
+      - uses: actions/checkout@v4
+      #   - uses: conda-incubator/setup-miniconda@v3
+      - uses: mamba-org/setup-micromamba@v2
+        with:
+          channels: conda-forge
+          #       channel-priority: strict
+          mamba-version: "*"
+          activate-environment: ldcpy # Defined in ci/environment.yml
+          #       auto-update-conda: false
+          python-version: 3.11
+          environment-file: ci/upstream-dev-environment.yml
+
+      - name: Install ldcpy
+        run: |
+          conda install ldcpy
+          conda list
+
+      - name: Run Tests
+        run: |
+          pytest --cov=./ --cov-report=xml

@@ -1,0 +1,17 @@
+cmocean
+cartopy
+dask[complete]
+matplotlib
+netcdf4
+numpy
+scikit-image
+scipy
+xarray
+xrft
+cf_xarray
+cartopy
+pandas
+astropy
+ipython
+pooch
+statsmodels
