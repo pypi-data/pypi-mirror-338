@@ -1,0 +1,44 @@
+[project]
+name = "secretauth"
+version = "1.0.0"
+description = "secretauth is a secure, unified solution for generating and validating tokens using secret from multiple cloud platforms."
+authors = [
+    {name = "abhinavkaurav"},
+    {name = "cloudinduscom"}
+]
+license = {text = "MIT"}
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+    "boto3==1.37.24"
+]
+classifiers = [
+    "Intended Audience :: Developers",
+    "Intended Audience :: Education",
+    "License :: OSI Approved :: MIT License",
+    "Natural Language :: English",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Programming Language :: Python :: Implementation :: CPython",
+    "Programming Language :: Python :: Implementation :: PyPy",
+    "Topic :: Software Development :: Libraries",
+    "Topic :: Security :: Cryptography"
+]
+
+[project.urls]
+homepage = "https://github.com/cloudinduscom/secretauth"
+source = "https://github.com/cloudinduscom/secretauth"
+issues = "https://github.com/cloudinduscom/secretauth/issues"
+
+[project.optional-dependencies]
+test = [
+    "pytest >=7.4.0",
+    "pytest-cov >=3.0.0",
+    "pytest-mock >=3.9.0"
+]
