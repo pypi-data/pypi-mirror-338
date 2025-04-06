@@ -1,0 +1,2 @@
+yhttp<8,>=7.0.1
+psycopg2
