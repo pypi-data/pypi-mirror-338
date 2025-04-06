@@ -1,0 +1,13 @@
+Metadata-Version: 2.4
+Name: mcp-telegram
+Version: 0.1.10
+Summary: MCP server for Telegram
+Author: Yeabsira Driba
+Maintainer-email: Yeabsira Driba <dryeab@gmail.com>
+License: MIT
+License-File: LICENSE
+Keywords: automation,git,llm,mcp,telegram
+Requires-Python: >=3.10
+Requires-Dist: mcp[cli]>=1.6.0
+Requires-Dist: telethon>=1.39.0
+Requires-Dist: typer>=0.15.2
