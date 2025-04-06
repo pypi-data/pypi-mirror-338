@@ -1,0 +1,9 @@
+musica.cpython-312-i386-linux-gnu.so,sha256=Jx5FdEkly05pkSO_vxuzkODDJm8ODmvScr6VFPalwl0,2787800
+lib/libmusica.a,sha256=nUHbzLyDTDepbP1fmfnXZFv_-ErpfjW8JUNr8pi_4kg,1417036
+lib/libyaml-cpp.a,sha256=D4CAvK1mPLw9d5TReLV75FCdNSdu2rkrGtdlPqMH1Oc,940936
+lib/libmechanism_configuration.a,sha256=s10ez1M8W6yoQnzAGjOXOR4FwzmyRKiOGeoyZRkvoKU,4020270
+musica/_version.py,sha256=bHntqcPWXccay2mqtMV8KmAJTT6QSFLl8QetUuZMqR8,19
+musica-0.10.0.dist-info/WHEEL,sha256=6AG75H5ZFq5ukDqY1Dw1MICmbIFCGwsCmRY32it8fmk,152
+musica-0.10.0.dist-info/RECORD,,
+musica-0.10.0.dist-info/METADATA,sha256=Xs9j8gSDQ9rUBj7BSCIkKkBMcbnEsWvgQMbKzBqOTIY,20175
+musica-0.10.0.dist-info/licenses/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
