@@ -1,0 +1,10 @@
+compspec_spack/__init__.py,sha256=LZLSAQQsLSSPo3h6eqDNs0ZQLIbetDbW9muvlBX1h9A,60
+compspec_spack/defaults.py,sha256=hc0xg8csAMj9Z24nSb8iEBNjlSzpzsFiWbeMlW6pRS0,91
+compspec_spack/plugin.py,sha256=6COs26pIP6g9r6_5UVnO7bI5usnjbZyxKSMaJhjl0Lc,5766
+compspec_spack/version.py,sha256=b-3LCEOzqjPKJkWtFI7T9KPxobcxJUWgR0LGw35xLO4,716
+compspec_spack-0.0.11.dist-info/licenses/LICENSE,sha256=c-Qv229c0h91p7gWC7TG2cjSnxzPKHxqkMTnZlcl6l8,1103
+compspec_spack-0.0.11.dist-info/licenses/NOTICE,sha256=9CR93geVKl_4ZrJORbXN0fzkEM2y4DglWhY1hn9ZwQw,1167
+compspec_spack-0.0.11.dist-info/METADATA,sha256=w_M5g2NCjQt7SIEX9uJC7-D56T-3nHH1LjRPuBhQCDs,5567
+compspec_spack-0.0.11.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+compspec_spack-0.0.11.dist-info/top_level.txt,sha256=YrbOuGd-xjXR6VW3SMQOkCry8k2nnuIsJAz-7jh0240,15
+compspec_spack-0.0.11.dist-info/RECORD,,
