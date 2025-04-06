@@ -1,0 +1,11 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    i18n_domain="senaite.microorganism">
+
+  <!-- 1.2.0 -->
+  <include file="v01_02_000.zcml"/>
+
+  <!-- 1.1.0 -->
+  <include file="v01_01_000.zcml"/>
+
+</configure>
