@@ -1,0 +1,7 @@
+jax
+numpy
+
+[tests]
+absl-py
+chex
+pytest
