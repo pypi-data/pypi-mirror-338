@@ -1,0 +1,74 @@
+Metadata-Version: 2.3
+Name: purepress
+Version: 0.10.0
+Summary: A simple static blog generator.
+License: MIT
+Keywords: Static Blog Generator,Static Blog,Blog,Blog Engine
+Author: Richard Chien
+Author-email: richardchienthebest@gmail.com
+Requires-Python: >=3.12,<3.14
+Classifier: Development Status :: 4 - Beta
+Classifier: Framework :: Flask
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Classifier: Programming Language :: Python :: 3 :: Only
+Requires-Dist: Flask (>=3.1.0,<3.2.0)
+Requires-Dist: Markdown (>=3.7,<3.8)
+Requires-Dist: MarkupSafe (>=3.0.2,<3.1.0)
+Requires-Dist: PyYAML (>=6.0.2,<6.1.0)
+Requires-Dist: Werkzeug (>=3.1.3,<3.2.0)
+Requires-Dist: click (>=8.1.8,<8.2.0)
+Requires-Dist: colorama (>=0.4.6,<0.5.0)
+Requires-Dist: feedgen (>=1.0.0,<1.1.0)
+Requires-Dist: html-toc (>=0.1.2,<0.2.0)
+Requires-Dist: py-gfm (>=2.0.0,<2.1.0)
+Requires-Dist: pytz (>=2025.2,<2025.3)
+Requires-Dist: toml (>=0.10.2,<0.11.0)
+Project-URL: Repository, https://github.com/verilab/purepress
+Description-Content-Type: text/markdown
+
+# PurePress
+
+[![PyPI](https://img.shields.io/pypi/v/purepress.svg)](https://pypi.python.org/pypi/purepress/)
+![Python](https://img.shields.io/badge/python-3.6%2B-blue.svg)
+
+**PurePress** is a very simple static blog generator.
+
+## Usage
+
+```sh
+pip install purepress
+
+mkdir my-blog
+cd my-blog
+
+purepress init  # init the blog
+git clone https://github.com/verilab/purepress-theme-default.git theme  # install a theme
+
+purepress preview  # preview the blog
+purepress build  # build the blog
+```
+
+See [richardchien/blog](https://github.com/richardchien/blog) for more.
+
+## Minimality
+
+```sh
+❯ cloc purepress
+       3 text files.
+       3 unique files.
+       3 files ignored.
+
+github.com/AlDanial/cloc v 1.94  T=0.01 s (346.3 files/s, 74444.9 lines/s)
+-------------------------------------------------------------------------------
+Language                     files          blank        comment           code
+-------------------------------------------------------------------------------
+Python                           3             91             51            503
+-------------------------------------------------------------------------------
+SUM:                             3             91             51            503
+-------------------------------------------------------------------------------
+```
+

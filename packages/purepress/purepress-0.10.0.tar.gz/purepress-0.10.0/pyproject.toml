@@ -1,0 +1,41 @@
+[tool.poetry]
+name = "purepress"
+version = "0.10.0"
+description = "A simple static blog generator."
+license = "MIT"
+authors = ["Richard Chien <richardchienthebest@gmail.com>"]
+readme = "README.md"
+repository = "https://github.com/verilab/purepress"
+keywords = ["Static Blog Generator", "Static Blog", "Blog", "Blog Engine"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Framework :: Flask",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+]
+
+[tool.poetry.scripts]
+purepress = "purepress.__main__:cli.main"
+
+[tool.poetry.dependencies]
+python = ">=3.12,<3.14"
+Werkzeug = "~3.1.3"
+Flask = "~3.1.0"
+PyYAML = "~6.0.2"
+click = "~8.1.8"
+colorama = "~0.4.6"
+feedgen = "~1.0.0"
+pytz = "~2025.2"
+Markdown = "~3.7"
+py-gfm = "~2.0.0"
+toml = "~0.10.2"
+html-toc = "~0.1.2"
+MarkupSafe = "~3.0.2"
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
+
+[tool.black]
+line-length = 120
