@@ -1,0 +1,13 @@
+[project]
+name = "pyonceperday"
+version = "0.1.1"
+description = "A lil something for me"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "pytest>=8.3.5",
+    "pytz>=2025.2",
+]
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
