@@ -1,0 +1,13 @@
+ptcx/__init__.py,sha256=5IofVmKyOhNMWQ98KBgDJVcYn-tCMRU6e2px0Ws8s_s,3449
+ptcx/__main__.py,sha256=FhOBWiFABEvktjc2kjAVrcr0QCeQWqZZSNFNvLk-Pk0,950
+ptcx/patch.py,sha256=b02syspC0YmGqyBMew7thmTEP-psSjiBIVRSpJaSvU4,3190
+ptcx/utils/fs.py,sha256=pv-cqeew-tBJwp1GPcfBjMDJh0_t3xL2gQoj8sSQEm8,407
+ptcx/utils/imprt.py,sha256=ff0wvWLzXfMEHegecUl3VA5jZNmYeX0OkDD00XR3h5Q,479
+ptcx/utils/langs.py,sha256=jFBfWZRjkawMuDVijvKlAFGud1gJhW5nLe7gxeiZGSY,3116
+ptcx/utils/wrap.py,sha256=bh-LRuaksUOeJNHiL4kWaqsh6bSABPDtOyeI2BCXhxg,2059
+ptcx-0.0.7.dist-info/licenses/LICENSE,sha256=P7jYDuFCvrHSeytLePBodzQLYd28XE88DTh1zD9ok8w,1493
+ptcx-0.0.7.dist-info/METADATA,sha256=lnRozmtj2vcs6zUe1RG6XdkEMELcdTGvWwibjWmup5w,1034
+ptcx-0.0.7.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+ptcx-0.0.7.dist-info/entry_points.txt,sha256=lRL6gGaoWX94VAvv1JKYIyRNoRUMknsHKU1KfSPZCw8,43
+ptcx-0.0.7.dist-info/top_level.txt,sha256=5caQ5k_2975FqkCSZkvuMyO4QZ1j5LzLaRx0RigTC8k,5
+ptcx-0.0.7.dist-info/RECORD,,
