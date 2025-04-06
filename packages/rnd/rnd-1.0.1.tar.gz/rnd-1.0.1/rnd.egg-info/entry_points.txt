@@ -1,0 +1,2 @@
+[console_scripts]
+rnd = rnd.__main__:main

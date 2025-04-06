@@ -1,0 +1,26 @@
+[project]
+name = "rnd"
+version = "1.0.1"
+description = "An advanced, customizable random string generator without using random or string."
+readme = "README.md"
+authors = [
+    { name = "Crazy", email = "demonking0688@gmail.com" }
+]
+license = { text = "MIT" }
+requires-python = ">=3.7"
+keywords = ["random", "string", "generator", "emojis", "secure", "password", "rnd"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://pypi.org/project/rnd/"
+
+[project.scripts]
+rnd = "rnd.__main__:main"
+
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
