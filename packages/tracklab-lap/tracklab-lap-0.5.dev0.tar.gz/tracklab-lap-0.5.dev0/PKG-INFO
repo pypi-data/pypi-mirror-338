@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: tracklab-lap
+Version: 0.5.dev0
+Summary: Linear Assignment Problem solver (LAPJV/LAPMOD).
+Home-page: https://github.com/TrackingLaboratory/lap
+Maintainer: Victor Joos
+Maintainer-email: victorjoosdtb@gmail.com
+License: BSD (2-clause)
+Download-URL: https://github.com/TrackingLaboratory/lap
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: C
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS
+License-File: LICENSE
+
+
+**lap** is a linear assignment problem solver using Jonker-Volgenant
+algorithm for dense (LAPJV) or sparse (LAPMOD) matrices.
+
+

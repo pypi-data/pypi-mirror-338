@@ -1,0 +1,6 @@
+[build-system]
+requires = ["setuptools<60.0", "numpy<=1.23.5", "cython"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+license_files = []
