@@ -1,0 +1,15 @@
+seaborn>=0.7
+matplotlib>=2.0.0
+libsvmdata>=0.3
+scikit-learn>=1.0
+xarray
+download
+tqdm
+
+[doc]
+numpydoc
+pandas
+pillow
+furo
+sphinx-copybutton
+sphinx-gallery
