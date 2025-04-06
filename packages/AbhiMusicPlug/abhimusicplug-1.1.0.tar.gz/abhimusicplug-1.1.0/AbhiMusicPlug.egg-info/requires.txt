@@ -1,0 +1,8 @@
+pyrofork
+py-tgcalls
+youtube-search-python
+yt-dlp
+tgcrypto
+httpx
+speedtest-cli
+ffprobe
