@@ -1,0 +1,12 @@
+date62/__init__.py,sha256=V9VivG62EuAc3--4qAx8SePN6FDkDs50wit0kgXf07M,520
+date62/__main__.py,sha256=khd8owI10hI4Bf_aoM5QHrOZKecQD94sMXG60D35H1E,3010
+date62/__version__.py,sha256=FVHPBGkfhbQDi_z3v0PiKJrXXqXOx0vGW_1VaqNJi7U,22
+date62/base62.py,sha256=GXO7xFi_WvSL6KpTImOLBPLBXegMHcv6HsTqaX1i6u4,686
+date62/codec.py,sha256=YMlFD_M4BKeMXJbArCUMdU0cWS1VF_He7SrlzzIezK4,4842
+date62/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+date62/wrap.py,sha256=TuIAssndTGaDbtCRMNJZp99SHb3fGlonJacAO9WUW5Q,675
+date62-0.2.0.dist-info/METADATA,sha256=a2RM74VCYaQnvaKh15mMUZQVDmfILBoaXceFRpEeSdE,8752
+date62-0.2.0.dist-info/WHEEL,sha256=tkmg4JIqwd9H8mL30xA7crRmoStyCtGp0VWshokd1Jc,105
+date62-0.2.0.dist-info/entry_points.txt,sha256=A_F26VAXw_TMW1rKkzO42QJ1bkcTrtmeF3GjCFcJULA,47
+date62-0.2.0.dist-info/licenses/LICENSE,sha256=t_Gu2JtigM6r4p3F6rb24Trtok3JmJJrEhfSTfgK8JU,1072
+date62-0.2.0.dist-info/RECORD,,
