@@ -1,0 +1,64 @@
+Metadata-Version: 2.4
+Name: mkdocs-nbstore
+Version: 0.1.0
+Summary: Jupyter notebook store for mkdocs
+Project-URL: Documentation, https://daizutabi.github.io/mkdocs-nbstore/
+Project-URL: Source, https://github.com/daizutabi/mkdocs-nbstore
+Project-URL: Issues, https://github.com/daizutabi/mkdocs-nbstore/issues
+Project-URL: Changelog, https://github.com/daizutabi/mkdocs-nbstore/blob/main/CHANGELOG.md
+Author-email: daizutabi <daizutabi@gmail.com>
+License: MIT License
+        
+        Copyright (c) 2025 Daizu
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+License-File: LICENSE
+Keywords: jupyter,mkdocs,notebook
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Classifier: Topic :: Documentation
+Classifier: Topic :: Software Development :: Documentation
+Classifier: Topic :: Text Processing :: Markup :: Markdown
+Requires-Python: >=3.10
+Requires-Dist: mkdocs>=1.6
+Requires-Dist: nbstore
+Description-Content-Type: text/markdown
+
+# nbstore
+
+[![PyPI Version][pypi-v-image]][pypi-v-link]
+[![Python Version][python-v-image]][python-v-link]
+[![Build Status][GHAction-image]][GHAction-link]
+[![Coverage Status][codecov-image]][codecov-link]
+
+nbstore is a tool for storing and managing images and other files in Jupyter notebooks.
+
+<!-- Badges -->
+[pypi-v-image]: https://img.shields.io/pypi/v/mkdocs-nbstore.svg
+[pypi-v-link]: https://pypi.org/project/mkdocs-nbstore/
+[python-v-image]: https://img.shields.io/pypi/pyversions/mkdocs-nbstore.svg
+[python-v-link]: https://pypi.org/project/mkdocs-nbstore
+[GHAction-image]: https://github.com/daizutabi/mkdocs-nbstore/actions/workflows/ci.yaml/badge.svg?branch=main&event=push
+[GHAction-link]: https://github.com/daizutabi/mkdocs-nbstore/actions?query=event%3Apush+branch%3Amain
+[codecov-image]: https://codecov.io/github/daizutabi/mkdocs-nbstore/coverage.svg?branch=main
+[codecov-link]: https://codecov.io/github/daizutabi/mkdocs-nbstore?branch=main
