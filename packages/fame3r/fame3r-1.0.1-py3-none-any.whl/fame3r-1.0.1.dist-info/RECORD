@@ -1,0 +1,13 @@
+fame3r/__init__.py,sha256=KBUDl0HvsppSAG2QxRMUuRKYg0ksrVWYT72Wqog0Gbo,255
+fame3r/compute_descriptors.py,sha256=IFnHSHuFUs3Bwo3Rotp0eQSS2tffj_cKr9FqaJsEUjQ,14121
+fame3r/fame_scores.py,sha256=3A8rSQennxP_dw4lVabdb65MgCE5ShnJNEIh9z01OEo,2370
+fame3r/performance_metrics.py,sha256=ofmtsFcZNSaDr6B8F8iwAFU06Y8lrWpys--Tm7DtPFs,1865
+scripts/cv_hp_search.py,sha256=0YqTydJ9jwQda53q0jsLg0bj4eTD-PEGNg0owpjHRjA,7079
+scripts/infer.py,sha256=H0lAP_ok4ugIug57jdNArl6llqlPeI0VHMvw_AMf1lA,4119
+scripts/test.py,sha256=-e0eD_8prHgoLp0hZWdFUq2981DIVZDgHW8m9TZvwYU,6290
+scripts/train.py,sha256=dx_PSy6Moan6eY3XmG82tstxNEL2PhsxohDT_mzti-g,2566
+fame3r-1.0.1.dist-info/METADATA,sha256=DZM7rZdLeDWOCjQy0KlAAOZ4DCwdTVeJmElSnNHx1Dc,1754
+fame3r-1.0.1.dist-info/WHEEL,sha256=9QBuHhg6FNW7lppboF2vKVbCGTVzsFykgRQjjlajrhA,87
+fame3r-1.0.1.dist-info/entry_points.txt,sha256=jY9XkN7rJBTmM-hog-opCIC0yKkilyV1qIw6-Dh2m3s,166
+fame3r-1.0.1.dist-info/licenses/LICENSE,sha256=D6XaPeZ3sM586egOb_ZulaXjQXmnELC2BEQZ1mJnEms,1084
+fame3r-1.0.1.dist-info/RECORD,,
