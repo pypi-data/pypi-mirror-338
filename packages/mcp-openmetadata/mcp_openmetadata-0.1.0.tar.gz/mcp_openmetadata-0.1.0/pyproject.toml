@@ -1,0 +1,56 @@
+[project]
+name = "mcp-openmetadata"
+version = "0.1.0"
+description = "MCP server providing OpenMetadata APIs"
+authors = [
+    {name = "Dongyong Lee", email = "pfldy2850@gmail.com"},
+]
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+keywords = ["mcp", "fastmcp", "openmetadata", "metadata", "integration"]
+dependencies = [
+    "fastmcp>=0.4.1",
+    "httpx>=0.28.1",
+    "pydantic-settings>=2.8.1",
+]
+py_modules = ["mcp_openmetadata"]
+
+[project.urls]
+Homepage = "https://github.com/pfldy2850/mcp-openmetadata"
+Repository = "https://github.com/pfldy2850/mcp-openmetadata"
+Documentation = "https://github.com/pfldy2850/mcp-openmetadata#readme"
+"Bug Tracker" = "https://github.com/pfldy2850/mcp-openmetadata/issues"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build]
+include = [
+    "mcp_openmetadata/**/*.py",
+    "README.md",
+    "LICENSE",
+]
+exclude = [
+    "**/__pycache__",
+    "**/*.py[cod]",
+    "**/*.so",
+]
+[tool.hatch.build.targets.wheel]
+packages = ["mcp_openmetadata"]
+
+
+[dependency-groups]
+dev = [
+    "build>=1.2.2.post1",
+    "ruff>=0.11.3",
+    "twine>=6.1.0",
+]
+
+[tool.ruff]
+line-length = 120
+target-version = "py310"
+select = [
+    "I",  # isort
+]
