@@ -1,0 +1,9 @@
+musica.cpython-37m-darwin.so,sha256=_48z1fp2JkzRFDk5OZ2cvbcM5ns3jHY0aM8mHZNxJsA,1452952
+musica-0.10.0.dist-info/RECORD,,
+musica-0.10.0.dist-info/WHEEL,sha256=YQZYTAwHa0IY4dDoUftsX5nEtLM6DHikR5cLJTC0O-A,115
+musica-0.10.0.dist-info/METADATA,sha256=kq36KtheA1HW7ikdvVD-61pwLaQAbNVIwTz3nqFvfPc,20025
+musica-0.10.0.dist-info/licenses/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+lib/libyaml-cpp.a,sha256=fkDApwwYtkJfSIDhn00Fx0uC-OOK_u48et1aM6TB1sA,797840
+lib/libmechanism_configuration.a,sha256=Qxnt46Ax4fwhAzf85ykA-ZFfIwUkbSELdQvV-TJ-MZc,3366392
+lib/libmusica.a,sha256=S09BU6BxypAxSFCkNe1Ia1Dh3yDBYAxnwCDGfSzgTiY,1292576
+musica/_version.py,sha256=bHntqcPWXccay2mqtMV8KmAJTT6QSFLl8QetUuZMqR8,19
