@@ -1,0 +1,93 @@
+Metadata-Version: 2.4
+Name: robot-fight-package
+Version: 0.0.1
+Summary: Simulação de combate entre robôs lutadores
+Home-page: https://github.com/Draky-Rollgard/Robot_Fight
+Author: Cleiton
+Author-email: cleitonguilhermite@gmail.com
+Requires-Python: >=3.12.9
+Description-Content-Type: text/markdown
+Dynamic: author
+Dynamic: author-email
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: requires-python
+Dynamic: summary
+
+<h1 style="color: darkblue;">robot-fight-package</h1>
+
+<h2 style="color: darkred;"> 📃 Description</h2>
+
+The robot-fight-package is a Python package that simulates combat between robot fighters. It includes logic for attack, healing, and robot reprodution, making it ideal for learning object-oriented programing concepts in a playful and interactive way.
+
+- Simulates robot fights with random attributes.
+ - Includes medical robots that heal others.
+ - Enable robot "reproductions" using operator overloading.
+
+<h2 style="color: darkred;">⚙️ Installation</h2>
+
+Use the package manager [pip](https://pip.pypa.io/en/stable/) to install package_name
+
+```bash
+pip install robot-fight-package
+```
+
+### Prerequisites
+- Python ≥ 3.8 (recommended: Python 3.12.9)
+- `pip` updated
+- Operrating System Compatible with virtual environments (Windows, Linux ou macOS)
+
+### Check the version of Python and pip
+
+```bash
+python --version
+pip --version
+```
+If it is not installed or outdated, use:
+```bash
+python -m ensurepip --upgrade
+python -m pip install --upgrade pip
+```
+
+Create a virtual environment, activate, and install dependencies.
+
+```bash
+python -m venv venv
+.\venv\Scripts\Activate.ps1   # For Windows
+source venv/bin/activate  # For Linux/macOS
+```
+
+```bash
+pip install setuptools wheel
+```
+Package installation locally in development mode.
+```bash
+pip install -e .
+```
+If there is a UnicodeDecodeError
+```powershell
+$OutputEncoding = [System.Text.UTF8Encoding]::new()
+```
+Finish by checking and running the program.
+```bash
+python setup.py --version
+```
+```bash
+python main.py
+```
+
+<h2 style="color: darkred;">⛏️ Usage</h2>
+
+```
+from robots.robo_base import Robo
+from robots.robo_lutador import RoboLutador
+from robots.robo_medico import RoboMedico
+```
+
+<h2 style="color: darkred;">Author</h2>
+Cleiton da Silva Guilhermite
+
+<h2 style="color: darkred;">License</h2>
+This project has no license. All rights reserved.
+If you wish to reuse it, please contact me.

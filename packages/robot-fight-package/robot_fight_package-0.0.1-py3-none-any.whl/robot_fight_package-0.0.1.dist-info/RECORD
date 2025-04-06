@@ -1,0 +1,8 @@
+robots/__init__.py,sha256=M0NZuQ7-112l8K2h1eayVvSmvQrufrOcD5AYKgIf_Is,1
+robots/robo_base.py,sha256=pa6-nvc-FGpitp3M_IiQZOm4aRbjDmZ9_HbP2ldcguA,686
+robots/robo_lutador.py,sha256=0D1mrzSWIvMkcSLKGdYccNS27__IX6vGNEwdWqMn7sg,811
+robots/robo_medico.py,sha256=mKaB32Gz7ayf5NPl7eOZF4jbCH-DegszsENaGlI6ecU,772
+robot_fight_package-0.0.1.dist-info/METADATA,sha256=_cRtIUrxtPXPggnx3IlYtdo6cQDMof_YxQ2fpjkIuyg,2518
+robot_fight_package-0.0.1.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+robot_fight_package-0.0.1.dist-info/top_level.txt,sha256=XJinDVfJzHKU_bYg5poDH-4wQdoPDmEC-yr3MFhHh6Y,7
+robot_fight_package-0.0.1.dist-info/RECORD,,
