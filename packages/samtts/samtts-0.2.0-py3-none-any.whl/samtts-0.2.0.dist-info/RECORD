@@ -1,0 +1,11 @@
+samtts/__init__.py,sha256=TxCMwRLQDcoAGqDTH6Alg5bTuyvy_LZJvw3780IKXUQ,381
+samtts/__main__.py,sha256=f56OgWN4RmkUV3BBg1uRpT5K1yL-cL_8yzEf96HUxEg,4721
+samtts/processor.py,sha256=Cw8sxXaz7ns1sSBIq_W_xPSXzivGvIDPu3DXqBZ5TsI,38853
+samtts/reciter.py,sha256=4qeP5aTshCRezHg2osZ4bIAx3d6Ren4DzFhk4yOAeKI,63023
+samtts/renderer.py,sha256=PiytUQzxJlRpfmVCgJGGjyuBTsNtDdtcoi7ZNhzq9jA,65620
+samtts/samtts.py,sha256=fo3CjeVZ1Q6PfbZ3ODSTBbQxlGEq4CgSpRQNuYssgdo,18547
+samtts-0.2.0.dist-info/METADATA,sha256=peBBjX-2nYTN40ukS2z9HVAQ2HuoXKxd8wQWO5rKLiM,1291
+samtts-0.2.0.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+samtts-0.2.0.dist-info/entry_points.txt,sha256=-haQ7ixbErYw-F75JLILxYWfLX6ntGw5Fp8JlA-HANo,48
+samtts-0.2.0.dist-info/top_level.txt,sha256=eiE08C1Gx2GLAhTGP_8jAuKKSe26KGtCi6KHJH8qad4,7
+samtts-0.2.0.dist-info/RECORD,,

@@ -1,0 +1,2 @@
+[console_scripts]
+samtts = samtts.__main__:main
