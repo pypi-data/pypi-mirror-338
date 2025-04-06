@@ -1,0 +1,41 @@
+[project]
+name = "fastapi-header-versions"
+version = "0.2.2"
+description = "Fastapi versioning package with accept header"
+requires-python = ">=3.12"
+readme = "README.md"
+dependencies = [
+    "fastapi>=0.100",
+]
+
+[project.urls]
+repository = "https://github.com/mxnoob/fastapi-header-versions"
+
+[dependency-groups]
+dev = [
+    "black>=25.1.0",
+    "httpx>=0.28.1",
+    "isort>=6.0.1",
+    "pytest>=8.3.5",
+    "pytest-asyncio>=0.25.3",
+]
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+include = ["fastapi_header_version*"]
+
+[tool.black]
+line-length = 120
+
+[tool.isort]
+profile = "black"
+line_length = 120
+combine_as_imports = true
+include_trailing_comma = true
+remove_redundant_aliases = true
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
