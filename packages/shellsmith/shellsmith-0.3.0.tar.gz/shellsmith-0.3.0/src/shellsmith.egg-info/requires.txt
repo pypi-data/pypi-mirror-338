@@ -1,0 +1,16 @@
+pydantic-settings
+pyyaml
+requests
+typer
+
+[neo4j]
+neo4j
+
+[test]
+mkdocs
+mkdocs-material
+pytest
+pytest-cov
+pytest-dotenv
+ruff
+termynal
