@@ -1,0 +1,8 @@
+xmlvalidator/__init__.py,sha256=5kxSsQ1XkpyeYSdcZvZlnSpnbRPiyd1w3hb8l-G0BtQ,2293
+xmlvalidator/xml_validator_results.py,sha256=r2QvkNoFRkEYcS_J8yMDjX4pwqyYJAFmSvbMkqEnLkY,13119
+xmlvalidator/xml_validator_utils.py,sha256=jjZ7hwSmEpNQTP_fxECqIMriyvr5xr0RWibakpnEPmo,17830
+xmlvalidator/XmlValidator.py,sha256=9kAzacpQixC5hIs_LZIl5oSr96Ze4pVwh_m4bMJUMVs,71829
+robotframework_xmlvalidator-1.0.0.dist-info/LICENSE,sha256=HrhfyXIkWY2tGFK11kg7vPCqhgh5DcxleloqdhrpyMY,11558
+robotframework_xmlvalidator-1.0.0.dist-info/METADATA,sha256=xWZDdS0cmZSf-ZFTWaRdhsxsmffxCiq3db_W6rrY0XM,30798
+robotframework_xmlvalidator-1.0.0.dist-info/WHEEL,sha256=XbeZDeTWKc1w7CSIyre5aMDU_-PohRwTQceYnisIYYY,88
+robotframework_xmlvalidator-1.0.0.dist-info/RECORD,,
