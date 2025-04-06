@@ -1,0 +1,9 @@
+mcp_obsidian_remote/__init__.py,sha256=pEMuum1BYqCDvNe8n5Or0P_hnHR2UaHd3LwnRXFrlj0,461
+mcp_obsidian_remote/obsidian.py,sha256=ugkE5-m8i7Tqh6Of1kYIAPb45e12qU0rTqz55AWxgBo,8864
+mcp_obsidian_remote/server.py,sha256=EPys3nWaizkm-wIdI09p0fODFjlRLsmf1nm8Irviy4o,2694
+mcp_obsidian_remote/tools.py,sha256=X7Cilc4BR_jfKuunJjxa-WxDCMeDklstJmc7ADS_PEk,19698
+mcp_obsidian_remote-0.1.7.dist-info/METADATA,sha256=tGu5gKZ2UK60_MEVbok27KQNzOiB7CTejPswa7kJPYA,4179
+mcp_obsidian_remote-0.1.7.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+mcp_obsidian_remote-0.1.7.dist-info/entry_points.txt,sha256=wpc6FWIQl24wrg-kyx4_EuYwNS1iob2AHZkkpUxo0jg,65
+mcp_obsidian_remote-0.1.7.dist-info/licenses/LICENSE,sha256=aobgw57x81e_H9rAkS7f3nBK8dQvzTTcX5tHJNIcP4U,1074
+mcp_obsidian_remote-0.1.7.dist-info/RECORD,,
