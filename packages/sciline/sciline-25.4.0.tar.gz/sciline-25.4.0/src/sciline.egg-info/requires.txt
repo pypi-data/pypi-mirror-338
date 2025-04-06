@@ -1,0 +1,13 @@
+cyclebane>=24.06.0
+
+[progress]
+rich
+
+[test]
+pytest
+dask
+graphviz
+jsonschema
+numpy
+pandas
+rich
