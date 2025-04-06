@@ -1,0 +1,9 @@
+importlib-metadata
+numpy
+
+[testing]
+setuptools
+pytest
+pytest-cov
+numpy
+scipy
