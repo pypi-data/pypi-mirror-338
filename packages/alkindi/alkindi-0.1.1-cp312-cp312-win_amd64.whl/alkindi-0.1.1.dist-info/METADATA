@@ -1,0 +1,154 @@
+Metadata-Version: 2.4
+Name: alkindi
+Version: 0.1.1
+Summary: A Python library for post-quantum cryptography
+Home-page: https://github.com/alraddady/alkindi
+Author: Khalid Alraddady
+Author-email: k.alraddady@outlook.sa
+License: LGPL-3.0-or-later
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v3 or later (LGPLv3+)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Security :: Cryptography
+Classifier: Intended Audience :: Developers
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: cffi>=1.15
+Provides-Extra: dev
+Requires-Dist: pytest; extra == "dev"
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: license
+Dynamic: license-file
+Dynamic: provides-extra
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+
+# Alkindi
+
+**Alkindi** is named in honor of the 9th-century Arab polymath [Al-Kindi](https://www.britannica.com/biography/al-Kindi), recognized for his early contributions to cryptography, mathematics, and philosophy. He is often associated with the origins of cryptanalysis, and his work on ciphers and codebreaking represents one of the earliest documented studies in the field. These contributions are considered significant milestones in the history of secure communication.
+
+---
+
+## Overview
+
+As quantum computing continues to evolve, the cryptographic algorithms securing today's digital world are increasingly vulnerable. **Alkindi** is a Python library that delivers **NIST-aligned, quantum-safe cryptographic solutions**, including secure key generation, encryption, and digital signatures.
+
+Designed with developer productivity in mind, Alkindi abstracts away complex low-level operations, allowing you to use advanced post-quantum cryptography through a clean and intuitive Python API—**no C code, compilation, or build configuration required.**
+
+---
+
+## Features
+
+- 🔐 **Quantum‑Safe Cryptography:** Provides protection against quantum attacks through **NIST-standardized** key encapsulation and digital signature algorithms. These are implemented by leading cryptographic experts and built on trusted, **leading libraries in the field**—see [liboqs](https://openquantumsafe.org/liboqs/) for contributor details.
+- ⚙️ **Zero-Hassle Integration:** Integrates easily into Python applications with no dependency on native compilation or low-level build steps.
+
+---
+
+## Applications
+
+Quantum computing is advancing fast—putting today’s cryptography at risk. Transitioning to quantum-safe security is **not optional, just inevitable**. Alkindi helps you get there **before vulnerabilities become liabilities**.
+
+Use Alkindi to secure:
+
+- 🔒 **Communications** – Email, messaging, VoIP  
+- 💳 **Finance** – Banking, blockchain, digital signatures  
+- 🏥 **Healthcare** – Patient data, regulatory compliance  
+- 🛡️ **Government & Defense** – Confidential data, secure channels  
+- ☁️ **Cloud Services** – Encrypted storage, APIs  
+
+> **Don’t wait until the last minute—future-proof your systems today.**
+---
+
+## Installation
+
+```bash
+pip install alkindi
+# or with uv (optional)
+uv pip install alkindi
+```
+
+---
+
+## Usage
+
+Alkindi exposes high-level classes for working with **Key Encapsulation Mechanisms (KEM)** and **Digital Signatures**. These classes wrap native cryptographic operations and manage sensitive resources such as memory and cryptographic keys.
+
+> ⚠️ **Important:** Always use `with` when working with `KEM` or `Signature` instances. This ensures proper cleanup of native resources and secure erasure of sensitive material.
+
+### 🔐 **Key Encapsulation (KEM):**
+```python
+from alkindi import KEM
+
+# Use a context manager to ensure secure cleanup
+with KEM("ML-KEM-1024") as kem:
+    # Generate a public and secret key pair
+    public_key, secret_key = kem.generate_keypair()
+
+    # Sender encapsulates a shared secret using the recipient's public key
+    ciphertext, shared_secret_sender = kem.encaps(public_key)
+
+    # Recipient decapsulates the shared secret using their secret key
+    shared_secret_recipient = kem.decaps(ciphertext, secret_key)
+
+    print("🔑 Shared Secret Match:", shared_secret_sender == shared_secret_recipient)
+```
+
+
+### ✍️ **Digital Signatures:**
+```python
+from alkindi import Signature
+
+# Use a context manager to securely manage native resources
+with Signature("ML-DSA-87") as sig:
+    # Generate a public and secret key pair for signing
+    public_key, secret_key = sig.generate_keypair()
+
+    # Sign a message using the secret key
+    message = b"Hello, World!"
+    signature = sig.sign(message, secret_key)
+
+    # Verify the signature using the public key
+    is_valid = sig.verify(message, signature, public_key)
+
+    print("✅ Signature valid:", is_valid)
+```
+
+---
+
+## Contributing
+
+Whether it’s a bug fix, documentation update, or new feature, your input helps advance the project. 
+To contribute, please open an issue or submit a pull request.
+
+---
+
+## License
+
+All rights are reserved to their respective authors and contributors. This applies to all source code, documentation, bindings, tests, cryptographic implementations, and any other content included in the Alkindi project. Usage must comply with the terms of the [LGPLv3 license](https://www.gnu.org/licenses/lgpl-3.0.en.html), and proper attribution is required where applicable.
+
+---
+
+## Acknowledgments
+
+Alkindi stands on the shoulders of giants—built upon the groundbreaking work of countless teams and individual contributors. We extend our sincere gratitude to all those whose dedication and innovation have laid the foundation for today’s essential tools in post-quantum security.
+
+---
+
+## Contact
+
+For inquiries, contributions, or collaboration opportunities, please reach out:
+
+**Khalid Alraddady**  
+📧 [k.alraddady@outlook.sa](mailto:k.alraddady@outlook.sa)
