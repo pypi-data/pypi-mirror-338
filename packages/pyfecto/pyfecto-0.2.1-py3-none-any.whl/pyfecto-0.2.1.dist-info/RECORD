@@ -1,0 +1,8 @@
+pyfecto/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pyfecto/app.py,sha256=AbD2PnHbo8J__nwneCa0JobU1rFDItHKb2rRnxElDyM,2437
+pyfecto/pyio.py,sha256=4JPlHtJeYxQwrWcy-rspMsFEUZ_4r08JQ4wLaMKl_hc,11472
+pyfecto/runtime.py,sha256=T4kLi76ON3L_GJu9aSDhZTdgGvJLNe9ZsjclxmfFBRg,6269
+pyfecto-0.2.1.dist-info/LICENSE,sha256=ivVeZbRBoZSN4-5zPbYiDJGYgBC97x0AeyihJoM0SoE,1065
+pyfecto-0.2.1.dist-info/METADATA,sha256=vT1LHkmjPQzIl0qGm8WMWSvj_B7b5K1j0pz1l6wN4Ng,7231
+pyfecto-0.2.1.dist-info/WHEEL,sha256=XbeZDeTWKc1w7CSIyre5aMDU_-PohRwTQceYnisIYYY,88
+pyfecto-0.2.1.dist-info/RECORD,,
