@@ -1,0 +1,13 @@
+openalgo/__init__.py,sha256=d1oluPyf14P8r39BqshI4Jw94XNVJy4oeRfJe7NZYZI,314
+openalgo/account.py,sha256=Oavr23X3LR5MUxyicWKVzAWTcSbwBCbvq_ixFYGuEHE,6710
+openalgo/base.py,sha256=LGArwfJsZoyA32mmn6sjtV9ayurK0NjumeQNEz8aXR4,794
+openalgo/data.py,sha256=Xm8CggPunTeBR7ChWh2hSWqFtgRxNxjrf4XmXQnNgLw,7791
+openalgo/orders.py,sha256=u7Nx6ez8mcwH-5iAEEztaM-Saxq1bkSSCSAQixiD2pE,15351
+openalgo/strategy.py,sha256=apiFWK63U4WgqHGmWVYsVW7RD_GphSP7RgkJmbqufcw,2178
+openalgo-1.0.10.dist-info/licenses/LICENSE,sha256=ARhQqSkyKbUYzeEhaKh1sSY2DoUAAGzOMl3u-8KHarg,677
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_orders.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+openalgo-1.0.10.dist-info/METADATA,sha256=hVuGrQNbbhllPN4dDYee6Bf01nmnxjgZEVuH1CE6wOQ,9795
+openalgo-1.0.10.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+openalgo-1.0.10.dist-info/top_level.txt,sha256=VCWOEdtpT-0MzRlyb29SJxC5a3Z3mdp4DP9YiAdbglQ,15
+openalgo-1.0.10.dist-info/RECORD,,
