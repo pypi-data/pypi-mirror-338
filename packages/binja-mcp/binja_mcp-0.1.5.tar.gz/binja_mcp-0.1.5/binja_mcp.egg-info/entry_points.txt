@@ -1,0 +1,2 @@
+[console_scripts]
+binja-mcp = binja_mcp.server:main
