@@ -1,0 +1,2 @@
+[console_scripts]
+llamadb = llamadb.cli.main:main
