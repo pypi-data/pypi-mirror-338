@@ -1,0 +1,39 @@
+Metadata-Version: 2.4
+Name: pystocknow
+Version: 0.1.2
+Summary: Python programming interface for read StockNow platform marketing data and insights.
+Author-email: StockNowAdmin <support@stocknow.xyz>
+Project-URL: Homepage, https://github.com/ISTOCKNOW-Platform/stocknow-api-python-sdk
+Project-URL: Bug Tracker, https://github.com/ISTOCKNOW-Platform/stocknow-api-python-sdk/issues
+Keywords: StockNow,Data,Insights,Python API
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests
+Dynamic: license-file
+
+# StockNow Platform data &amp; insights API Client Library for Python
+## Install package
+```
+pip3 install pystocknow
+```
+
+## Sample code of access StockNow platform provided data and insights
+```
+from pystocknow import sndata
+import json
+
+SNClient = sndata.SNClient
+
+#
+# get API key from https://stocknow.xyz
+# after you signin, run https://stocknow.xyz/v1/apikey in browser, you will get an apikey
+# To get an apikey for programming purpose, please follow instruction ...
+#
+snclient = SNClient(apikey="")
+data = snclient.get_news()
+print(json.dumps(data, indent=2))
+```
