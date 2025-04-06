@@ -1,0 +1,126 @@
+Metadata-Version: 2.4
+Name: pyroid
+Version: 0.1.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Rust
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Summary: High-performance Rust functions for Python
+Author: Pyroid Team
+Author-email: Pyroid Team <support@ataiva.com>
+License: MIT
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown; charset=UTF-8; variant=GFM
+Project-URL: Homepage, https://github.com/ao/pyroid
+Project-URL: Bug Tracker, https://github.com/ao/pyroid/issues
+
+# 📌 Pyroid: Python on Rust-Powered Steroids
+
+⚡ Blazing fast Rust-powered utilities to eliminate Python's performance bottlenecks.
+
+## 🔹 Why Pyroid?
+
+- ✅ Rust-powered acceleration for CPU-heavy tasks
+- ✅ True parallel computing (no GIL limits!)
+- ✅ Async I/O & multithreading for real speed boosts
+- ✅ Easy Python imports—just pip install pyroid
+
+## Features
+
+- 🚀 **Speed up CPU-heavy operations** - Fast math, string processing, and data manipulation
+- ⚡ **Parallel processing** - Utilizes Rayon for efficient multithreading
+- 🔄 **Async capabilities** - Leverages Tokio for non-blocking operations
+- 🐍 **Pythonic API** - Easy to use from Python with familiar interfaces
+
+## Installation
+
+```bash
+pip install pyroid
+```
+
+## Usage Examples
+
+### Parallel Math Operations
+
+```python
+import pyroid
+
+# Parallel sum of a large list
+numbers = list(range(1_000_000))
+result = pyroid.parallel_sum(numbers)
+print(f"Sum: {result}")
+```
+
+### Fast String Processing
+
+```python
+import pyroid
+
+# Parallel regex replacement
+text = "Hello world! " * 1000
+result = pyroid.parallel_regex_replace(text, r"Hello", "Hi")
+print(f"Modified text length: {len(result)}")
+
+# Process multiple strings in parallel
+texts = ["Hello world!"] * 1000
+cleaned = pyroid.parallel_text_cleanup(texts)
+print(f"Cleaned {len(cleaned)} strings")
+```
+
+### Async HTTP Requests
+
+```python
+import asyncio
+import pyroid
+
+async def main():
+    # Create an async client
+    client = pyroid.AsyncClient()
+    
+    # Fetch a single URL
+    response = await client.fetch("https://example.com")
+    print(f"Status: {response['status']}")
+    
+    # Fetch multiple URLs concurrently
+    urls = ["https://example.com", "https://google.com", "https://github.com"]
+    responses = await client.fetch_many(urls, concurrency=3)
+    
+    for url, response in responses.items():
+        if isinstance(response, dict):
+            print(f"{url}: Status {response['status']}")
+        else:
+            print(f"{url}: Error - {response}")
+
+asyncio.run(main())
+```
+
+## Performance Benchmarks
+
+pyroid significantly outperforms pure Python implementations:
+
+| Operation | Pure Python | pyroid | Speedup |
+|-----------|-------------|---------|---------|
+| Sum 10M numbers | 1000ms | 50ms | 20x |
+| Regex on 10MB text | 2500ms | 200ms | 12.5x |
+| 100 HTTP requests | 5000ms | 500ms | 10x |
+
+## Requirements
+
+- Python 3.8+
+- Supported platforms: Windows, macOS, Linux
+
+## License
+
+MIT
+
+## Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
