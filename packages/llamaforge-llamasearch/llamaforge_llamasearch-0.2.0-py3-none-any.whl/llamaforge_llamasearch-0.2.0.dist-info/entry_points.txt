@@ -1,0 +1,2 @@
+[console_scripts]
+llamaforge = llamaforge.main:main
