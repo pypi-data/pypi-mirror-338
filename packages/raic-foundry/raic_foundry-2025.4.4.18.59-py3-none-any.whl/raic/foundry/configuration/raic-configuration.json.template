@@ -1,0 +1,18 @@
+{
+    "prod": {
+        "name": "Prod",
+        "AuthZeroTenantName": "[AuthZeroTenantName]",
+        "AuthZeroV2ClientId": "[CliAuthClientId]",
+        "AuthZeroAudience": "https://synthetaic.raic.ai",
+        "AuthZeroAlgorithms": "['RS256']",
+        "ApiRoot": "https://api.raic.ai",
+        "BlobStorageBaseUrl": "https://prdstraicscussynth.blob.core.windows.net",
+        "PostgresHostName": "[PostgresHostName]",
+        "PostgresAdminUsername": "[PostgresAdminUsername]",
+        "PostgresAdminPassword": "[PostgresAdminPassword]",
+        "MonitoringContainerSasUrl": "",
+        "MonitoringServiceBusConnectionString": "[ServiceBusConnectionString]",
+        "ServiceUserAuthClientId": "evz3fnLQtYg7TadjB9h4xov6APgT3A1c",
+        "ServiceUserAuthClientSecret": "[ServiceUserAuthClientSecretPrd]"
+    }
+}
