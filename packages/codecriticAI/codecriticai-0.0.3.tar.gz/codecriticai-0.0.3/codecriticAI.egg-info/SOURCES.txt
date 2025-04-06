@@ -1,0 +1,17 @@
+LICENSE
+README.md
+setup.py
+codecriticAI/__init__.py
+codecriticAI/main.py
+codecriticAI.egg-info/PKG-INFO
+codecriticAI.egg-info/SOURCES.txt
+codecriticAI.egg-info/dependency_links.txt
+codecriticAI.egg-info/entry_points.txt
+codecriticAI.egg-info/requires.txt
+codecriticAI.egg-info/top_level.txt
+codecriticAI/aireviewer/__init__.py
+codecriticAI/aireviewer/reviewer.py
+codecriticAI/gitops/__init__.py
+codecriticAI/gitops/git_ops.py
+codecriticAI/reportgenerator/__init__.py
+codecriticAI/reportgenerator/html_generator.py
