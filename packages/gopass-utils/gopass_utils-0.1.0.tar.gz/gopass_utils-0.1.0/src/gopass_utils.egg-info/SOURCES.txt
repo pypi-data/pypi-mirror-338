@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+src/gopass_utils/__init__.py
+src/gopass_utils/gopass_utils.py
+src/gopass_utils.egg-info/PKG-INFO
+src/gopass_utils.egg-info/SOURCES.txt
+src/gopass_utils.egg-info/dependency_links.txt
+src/gopass_utils.egg-info/top_level.txt
