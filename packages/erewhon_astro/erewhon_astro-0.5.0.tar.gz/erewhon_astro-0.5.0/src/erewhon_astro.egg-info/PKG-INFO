@@ -1,0 +1,21 @@
+Metadata-Version: 2.4
+Name: erewhon_astro
+Version: 0.5.0
+Summary: Astronomy-related code that I find helpful for my projects
+Author-email: Erewhon <erewhon@flatland.org>
+License-Expression: MIT
+Project-URL: Homepage, https://github.com/erewhon/astro
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.12
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: astropy[recommended]>=7.0.1
+Requires-Dist: astroquery>=0.4.10
+Requires-Dist: pydantic>=2.11.2
+Requires-Dist: pydantic-settings>=2.8.1
+Dynamic: license-file
+
+# astro
+
+Various astronomy-related code
