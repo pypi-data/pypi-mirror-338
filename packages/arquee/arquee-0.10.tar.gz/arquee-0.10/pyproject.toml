@@ -1,0 +1,32 @@
+[project]
+name = "arquee"
+version = "0.10"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "flask>=3.1.0",
+    "pyspark>=3.5.5",
+    "python-dotenv>=1.1.0",
+    "waitress>=3.0.2",
+]
+
+# [tool.setuptools.packages.find]
+# include = ["arquee"]
+# exclude = ["arquee_utils"]
+
+[project.scripts]
+arquee-init-server = "arquee.cli:start_server"
+arquee-init-utils = "arquee.cli:set_environment_utils"
+arquee-clean-logs = "arquee.cli:clean_logs"
+arquee-create-datalake = "arquee.utils:create_datalake"
+
+
+[dependency-groups]
+dev = [
+    "build>=1.2.2.post1",
+    "ipykernel>=6.29.5",
+    "setuptools>=75.8.0",
+    "twine>=6.1.0",
+    "wheel>=0.45.1",
+]
