@@ -1,0 +1,27 @@
+# Python-Github-Release-Update-Checker
+A simple GUI-based update notifier in Python   
+   
+## Requirements
+requests | https://github.com/psf/requests | https://github.com/psf/requests/blob/main/LICENSE   
+   
+## Example   
+```py
+PGRUC("user/repo","2024-01-20T11:13:05Z",True)
+![Example](https://raw.githubusercontent.com/1325ok/Python-Github-Release-Update-Checker/main/ext/image2.png)
+```
+## Install
+```console
+$ python -m pip install github-release-update-checker
+```
+   
+:param repo: Github Repo ex: 1325ok/pgruc   
+:param creasted_at: Now version date ex: 2025-04-03T18:00:49   
+:param updateChanges: Show update changes: True/False   
+
+## Parameter
+
+| Parameter  | Description |
+| ------------- |:-------------:|
+| repo      | Github Repo ex) 1325ok/pgruc     |
+| creasted_at     | Now version date ex) 2025-04-03T18:00:49       |
+| updateChanges      | Show update changes: True/False       |
