@@ -1,0 +1,7 @@
+langchain_litellm/__init__.py,sha256=Kd3CI9Pi85B6SVDbKub9U3EGadXpML6KqxV7X5F44Kg,377
+langchain_litellm/chat_models.py,sha256=lH6wLdleFKQR9jJcGkY91xZg4LdnZaZk503yDuOa_MI,23029
+langchain_litellm/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+langchain_litellm-0.1.3.dist-info/LICENSE,sha256=qwjPfwuNR-R00uZuAhLxj2xw9Ql_QE3oo1xmUBLJsZk,1093
+langchain_litellm-0.1.3.dist-info/METADATA,sha256=Ja-tzSCByaid7JcD5jLHC_x5WAIk0z5p1cCEdoEuAXk,2241
+langchain_litellm-0.1.3.dist-info/WHEEL,sha256=fGIA9gx4Qxk2KDKeNJCbOEwSrmLtjWCwzBz351GyrPQ,88
+langchain_litellm-0.1.3.dist-info/RECORD,,
