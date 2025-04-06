@@ -1,0 +1,3 @@
+[console_scripts]
+coverage = scripts.coverage:main
+test = pytest:main
