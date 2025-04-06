@@ -1,0 +1,12 @@
+Metadata-Version: 2.4
+Name: composable-dataloader
+Version: 0.0.3
+Summary: Add your description here
+Classifier: Development Status :: 7 - Inactive
+Requires-Python: >=3.12
+Requires-Dist: azure-identity>=1.21.0
+Requires-Dist: databricks-sdk>=0.49.0
+Requires-Dist: ibis-framework[deltalake,duckdb]>=10.4.0
+Requires-Dist: pyyaml>=6.0.2
+Requires-Dist: typer-config>=1.4.2
+Requires-Dist: typer>=0.15.2
