@@ -1,0 +1,115 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "ffmpeg-converter"
+dynamic = ["version"]
+description = "基于 FFmpeg 的音视频格式转换工具"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = []
+
+[tool.hatch.version]
+path = "src/__init__.py"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src"]
+
+[tool.ruff]
+line-length = 88
+target-version = "py311"
+
+[tool.ruff.format]
+quote-style = "double"
+indent-style = "space"
+skip-magic-trailing-comma = false
+line-ending = "auto"
+
+[tool.ruff.lint]
+select = [
+    "E",  # pycodestyle
+    "F",  # pyflakes
+    "I",  # isort
+    "N",  # pep8-naming
+    "UP", # pyupgrade
+    "B",  # flake8-bugbear
+    "C4", # flake8-comprehensions
+]
+
+[tool.mypy]
+python_version = "3.11"
+strict = true
+warn_return_any = true
+warn_unused_configs = true
+disallow_untyped_defs = true
+check_untyped_defs = true
+packages = ["src"]
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+pythonpath = [".", "src"]
+addopts = "--cov=src --cov-report=html --cov-report=xml"
+
+[dependency-groups]
+dev = [
+    "ruff>=0.3.0",
+    "mypy>=1.9.0",
+    "pytest>=8.3.5",
+    "pytest-asyncio>=0.26.0",
+    "pytest-cov>=4.1.0",
+    "pre-commit>=3.6.2",
+    "python-semantic-release>=9.21.0",
+    "build>=1.1.1",
+]
+
+[tool.semantic_release]
+version_variable = ["src/__init__.py:__version__"]
+branch = "main"
+changelog_file = "CHANGELOG.md"
+build_command = "python -m build"
+dist_path = "dist/"
+remove_dist = true
+commit_parser = "conventional"
+tag_format = "v{version}"
+major_on_zero = true
+
+[tool.semantic_release.version]
+write_version = true
+source = "commit"
+
+[tool.semantic_release.commit]
+message_template = "chore(release): {version} [skip ci]"
+parse_scope = true
+
+[tool.semantic_release.publish]
+upload_to_repository = true
+upload_to_release = true
+upload_to_pypi = true
+
+# 添加分支策略以支持预发布版本
+[tool.semantic_release.branches.main]
+match = "main"
+prerelease = false  # 主分支发布正式版本
+
+[tool.semantic_release.branches.beta]  # 添加beta分支
+match = "beta"
+prerelease = true
+prerelease_token = "beta"  # 生成如 1.0.0-beta.1 的版本号
+
+[tool.semantic_release.branches.alpha]  # 添加alpha分支
+match = "alpha"
+prerelease = true
+prerelease_token = "alpha"  # 生成如 1.0.0-alpha.1 的版本号
+
+[tool.semantic_release.branches.rc]  # 添加release candidate分支
+match = "rc"
+prerelease = true
+prerelease_token = "rc"  # 生成如 1.0.0-rc.1 的版本号
+
+[tool.semantic_release.branches.dev]  # 添加开发分支
+match = "(dev|develop)"
+prerelease = true
+prerelease_token = "dev"  # 生成如 1.0.0-dev.1 的版本号
