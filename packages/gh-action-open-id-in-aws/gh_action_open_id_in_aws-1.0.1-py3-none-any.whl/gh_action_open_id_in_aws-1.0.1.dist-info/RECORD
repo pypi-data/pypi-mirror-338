@@ -1,0 +1,17 @@
+gh_action_open_id_in_aws/__init__.py,sha256=91jqwa6UIinipz7S0hF5_qpjjB9MUONExbvbLt7UTys,289
+gh_action_open_id_in_aws/_version.py,sha256=NChX2P1Y_dpMK1v7-jag7Fru-wY_idJkhjR1reKXQSs,501
+gh_action_open_id_in_aws/api.py,sha256=Agg09-lM5aQ0Rq_Co4RHMKCww_Qn1Xf4idf4fBWNvUc,89
+gh_action_open_id_in_aws/cf.py,sha256=Vnnc1Qxm_A_qnLcZBeYqb2XE4zxUjWf16CywVy34T4g,4026
+gh_action_open_id_in_aws/cft-2025-04-04.json,sha256=mcz-9cYIZRyaupxlbZrxbx49J7Y2zMm9UnzPu1cfkYw,3852
+gh_action_open_id_in_aws/docs/__init__.py,sha256=f-E2GGaAOnea7U51BKWcRtFHZ6p2iPnvGoXR6VvBtGg,43
+gh_action_open_id_in_aws/impl.py,sha256=Xd7vR5wFSlm6iuZmfwbZOlkNIjzfmz-rd-xuGoPCT5c,4432
+gh_action_open_id_in_aws/paths.py,sha256=9aEGHmURxTSgDlakG21FNiC_qc0MNhNSYR9ZeJ7hfGU,914
+gh_action_open_id_in_aws/tests/__init__.py,sha256=gFgqX6DZpHJxTpjtkmx2jIIuPYveXG9wZ54EH6Vx0eg,73
+gh_action_open_id_in_aws/tests/helper.py,sha256=mcQ97SN6aes4eDifoAGnzn60z9lFlVwaKH2C27uIT6Q,636
+gh_action_open_id_in_aws/vendor/__init__.py,sha256=O9CT1B2F-cVB8elT0EoCJbgkcffjvlmqteqavs4giDg,25
+gh_action_open_id_in_aws/vendor/pytest_cov_helper.py,sha256=H2BJtFq3bwJHZtt-bxZ1yF9LnXHVDRZZ0NH-OvkRJdE,4063
+gh_action_open_id_in_aws-1.0.1.dist-info/AUTHORS.rst,sha256=oo38V9AD_y57Ac69mKmiItWquV29SRi2aTCdKQo531A,767
+gh_action_open_id_in_aws-1.0.1.dist-info/LICENSE.txt,sha256=C3YEBb2edz21DVioRlpHHiDC4Ql0giU-zKM9jg8iXPs,1084
+gh_action_open_id_in_aws-1.0.1.dist-info/METADATA,sha256=nvR5l7X_hOi0sGdsB3uyDlMLhuLIKU2DFfbUftoL7aA,7692
+gh_action_open_id_in_aws-1.0.1.dist-info/WHEEL,sha256=XbeZDeTWKc1w7CSIyre5aMDU_-PohRwTQceYnisIYYY,88
+gh_action_open_id_in_aws-1.0.1.dist-info/RECORD,,
