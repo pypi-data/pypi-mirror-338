@@ -1,0 +1,5 @@
+src/nso_client/__init__.py,sha256=kfYMhYyu7ibhzLdu-zCaT0lKWCWsG6C4kw7IAuUbKKQ,26190
+src/nso_client/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+python_nso_client-0.0.0.dist-info/METADATA,sha256=GMRPBQBRdUiJzW07TcxxwOkox_M53tVc3V11gto9pl8,355
+python_nso_client-0.0.0.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+python_nso_client-0.0.0.dist-info/RECORD,,
