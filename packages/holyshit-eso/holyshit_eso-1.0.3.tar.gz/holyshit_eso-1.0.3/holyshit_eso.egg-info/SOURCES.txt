@@ -1,0 +1,12 @@
+pyproject.toml
+holyshit_eso/__init__.py
+holyshit_eso/hs.py
+holyshit_eso/interpreter.py
+holyshit_eso/lexer.py
+holyshit_eso/parser.py
+holyshit_eso.egg-info/PKG-INFO
+holyshit_eso.egg-info/SOURCES.txt
+holyshit_eso.egg-info/dependency_links.txt
+holyshit_eso.egg-info/entry_points.txt
+holyshit_eso.egg-info/requires.txt
+holyshit_eso.egg-info/top_level.txt
