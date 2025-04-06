@@ -1,0 +1,9 @@
+{% extends "djangoquran2/base.html" %}
+{% load extra_filters %}
+{% block body %}
+<div class="well arab" style="font-size: 100px;">
+	{{ word.token|buckwalter_decode }} 
+	<small><span class="label label-default">{{word.meaning}}</span></small>
+</div> 
+{% include "djangoquran2/_table.html" with items=word.lemma.word_set.all %}
+{% endblock %} 
