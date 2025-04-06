@@ -1,0 +1,32 @@
+[project]
+name = "logician"
+version = "0.3.4"
+description = "The logical choice for Python logging"
+authors = [{ name = "Danny Stewart", email = "danny@stewart.cc" }]
+readme = "README.md"
+license = "LGPL-3.0-or-later"
+license-files = ["LICENSE"]
+requires-python = ">=3.12"
+dependencies = ["polykit (>=0.1.1)"]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: GNU Lesser General Public License v3 or later (LGPLv3+)",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: System :: Logging",
+]
+
+[tool.poetry.group.dev.dependencies]
+mypy = ">=1.15.0"
+pdoc = ">=15.0.1"
+pre-commit = ">=4.2.0"
+ruff = ">=0.11.4"
+enviromancer = { path = "../enviromancer", develop = true }
+polykit = { path = "../polykit", develop = true }
+walking-man = { path = "../walking-man", develop = true }
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
