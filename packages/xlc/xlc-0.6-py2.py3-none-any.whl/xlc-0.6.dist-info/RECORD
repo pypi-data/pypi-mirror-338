@@ -1,0 +1,16 @@
+xlc/__init__.py,sha256=2cfhEqohBKRH4-6kYpEBOijaH1ZfZpyfOhfgRTbMUWQ,480
+xlc/attribute.py,sha256=7LdaJUlMepqs_Ab3AMDpGQUF69yXiuKSna5SpqjIQas,290
+xlc/database/__init__.py,sha256=y6p0VWZjTWYBE8TxrJNXSASme9SUI5Cf8xHC3IfWbvA,405
+xlc/database/langmark.toml,sha256=jWKo_pcoOmPC1i604_h2ZtbiezUW9lCa6jPhKXfA_9Q,1015
+xlc/database/langtags.py,sha256=A6CSEIFNYiZPifgQZr1THMYzu8dtJ7IQie0EWTE_D7M,8837
+xlc/database/langtags.toml,sha256=CCswt-TOYUiyOsoF44ArOBITwao__T6-BnqX4trbMzs,928
+xlc/database/subtags.py,sha256=roifJ3E6gnOm644G6Ij3GY9ooepj_Y3dIpYSMzI0yUk,2856
+xlc/language/__init__.py,sha256=YsHCrgAJzow99mq-2qI9HzvnZVoTyOeChxW_yXIxluQ,178
+xlc/language/message.py,sha256=qhXOEbBalRLn62TpEnpvkhPmF7feQcr1M7vLr0N4i_E,1972
+xlc/language/segment.py,sha256=F3agfw3ANPccZQMXwGIbFPzCemf7euvaBuHKDQNQuwc,3344
+xlc-0.6.dist-info/LICENSE,sha256=gXf5dRMhNSbfLPYYTY_5hsZ1r7UU1OaKQEAQUhuIBkM,18092
+xlc-0.6.dist-info/METADATA,sha256=qNAgo8GYHyBM76qXOyU7tpaP9Exv0txtcHIJB9Rz7WE,2048
+xlc-0.6.dist-info/WHEEL,sha256=pWvVuNuBTVmNV7Lp2jMAgt1NplTICeFdl1SW8U3MWN4,109
+xlc-0.6.dist-info/top_level.txt,sha256=4QCvaHERrtj3mNLCsgHuWpk3HnPfDWlPu1sHKvi2ia4,4
+xlc-0.6.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+xlc-0.6.dist-info/RECORD,,
