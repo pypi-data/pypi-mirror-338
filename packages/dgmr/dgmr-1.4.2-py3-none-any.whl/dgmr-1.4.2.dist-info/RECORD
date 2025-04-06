@@ -1,0 +1,17 @@
+dgmr/__init__.py,sha256=yaf913Alg9ZjRR_KdkJpuqSC1oSeWCGh-Gw0Fflz5yM,249
+dgmr/common.py,sha256=u7ORUFSkEnEDEMRPWoiK2UOqhbneaX4c54odQtYKTR0,18161
+dgmr/dgmr.py,sha256=xvgNNF6RWKUb1cugUUnIqFLI5V0buOkA9dT3i_Zna48,14467
+dgmr/discriminators.py,sha256=wzb-qkBVXuHTusrJStA7p9ZgmM0bKRIe_eYykfcg5Gg,9945
+dgmr/generators.py,sha256=6lnN0SVhKaDlvJrFEB0bRi5AL_NZmCvlbYpAwBehng8,8189
+dgmr/hub.py,sha256=aiDn4balwnXtCB2pnrxxnvtMvzV7LfVsOMvSbjksgQE,4511
+dgmr/losses.py,sha256=Tyvbqc9EVSre4d-vHHEVNAY7YMOgRo332wEckJMoiBM,12865
+dgmr/layers/Attention.py,sha256=J1URZy1hxC71M6nb4rLTwKDZ1roHXVBfOwYLeH6soyE,2823
+dgmr/layers/ConvGRU.py,sha256=jpfn343uqj5Jc2X7tZMrGnri0Tz4Jlb4LixA2ZhcfkE,3474
+dgmr/layers/CoordConv.py,sha256=4HbV1QNLzxvIoWaT-7-ONI6DtlOZxmJQ2ta5xrvNmRU,2482
+dgmr/layers/__init__.py,sha256=TQ4UADEIrUhMwj6WHVF188Ja9JrcKUfqnCpvzThjLSQ,133
+dgmr/layers/utils.py,sha256=wub4q8I9NbktzHxOHh7jChaw6q9BOdNrqYUsx1iunPA,537
+dgmr-1.4.2.dist-info/licenses/LICENSE,sha256=apuQBDvX5oNtuaWBJcgRQaTuS4pTiqvjP23FGA7P8J8,1073
+dgmr-1.4.2.dist-info/METADATA,sha256=B1UEFBOaHJsgcrFQJu66-oqsIUvICro3km7PKaXUPWs,10910
+dgmr-1.4.2.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+dgmr-1.4.2.dist-info/top_level.txt,sha256=6CgNKc4Kde17oXiEbcUOffixtzYaCbnzXcpkjnkDASw,5
+dgmr-1.4.2.dist-info/RECORD,,
