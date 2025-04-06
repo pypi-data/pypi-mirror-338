@@ -1,0 +1,3 @@
+[mkdocs.plugins]
+publish-control=mkdocs_publish_control:PublishControlPlugin
+
