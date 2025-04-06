@@ -1,0 +1,36 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:genericsetup="http://namespaces.zope.org/genericsetup">
+
+  <genericsetup:upgradeStep
+      title="SENAITE AST 1.2.0: Restore ResultType for AST-like services"
+      description="Restore ResultType for AST-like services"
+      source="1202"
+      destination="1203"
+      handler="senaite.ast.upgrade.v01_02_000.restore_ast_result_type"
+      profile="senaite.ast:default"/>
+
+  <genericsetup:upgradeStep
+      title="SENAITE AST 1.2.0: Revoke edit permissions for AST setup objects"
+      description="Revoke edit permissions for AST setup objects"
+      source="1201"
+      destination="1202"
+      handler="senaite.ast.upgrade.v01_02_000.revoke_setup_permissions"
+      profile="senaite.ast:default"/>
+
+  <genericsetup:upgradeStep
+      title="SENAITE AST 1.2.0: Setup transition for antibiotic rejection"
+      description="Setup transition for antibiotic rejection"
+      source="1200"
+      destination="1201"
+      handler="senaite.ast.upgrade.v01_02_000.setup_reject_antibiotics"
+      profile="senaite.ast:default"/>
+
+  <genericsetup:upgradeStep
+      title="Upgrade to SENAITE AST 1.2.0"
+      source="1104"
+      destination="1200"
+      handler="senaite.ast.upgrade.v01_02_000.upgrade"
+      profile="senaite.ast:default"/>
+
+</configure>
