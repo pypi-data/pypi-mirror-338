@@ -1,0 +1,9 @@
+ibrahimiq_qcmd-1.0.0.dist-info/licenses/LICENSE,sha256=dUhuoK-TCRQMpuLEAdfme-qPSJI0TlcH9jlNxeg9_EQ,1056
+qcmd_cli/__init__.py,sha256=mLHW0yZyV4kuJ5CyyFFHeoFQSgTBUjBMvSGQBObzFqo,84
+qcmd_cli/qcmd-completion.bash,sha256=7TC54EcIcr_QFeXtd8UuMiiA2Dt92r0sZgvh8-nTwGw,3049
+qcmd_cli/qcmd.py,sha256=pNxVh2wYkNJMSlolTqFNvLgeMlId0j4uwUH6FDDaphU,79523
+ibrahimiq_qcmd-1.0.0.dist-info/METADATA,sha256=hMMz12IvlwU3_hjuncI5uzYoh7XZzX0Cz6JW8a85Yz0,9155
+ibrahimiq_qcmd-1.0.0.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+ibrahimiq_qcmd-1.0.0.dist-info/entry_points.txt,sha256=bAfPp9NGJH8W7sgA7cjfr5PFkGkKdtWnKLnFwwxCCYg,44
+ibrahimiq_qcmd-1.0.0.dist-info/top_level.txt,sha256=USzqicIERax27h3jwI0fIllrGZOeVzXNBrQY8tLH9kk,9
+ibrahimiq_qcmd-1.0.0.dist-info/RECORD,,
