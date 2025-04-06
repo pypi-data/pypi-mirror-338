@@ -1,0 +1,9 @@
+pyproject.toml
+fcs_package/__init__.py
+fcs_package/fcs_last_digit.py
+fcs_package/fcs_square.py
+fcs_package.egg-info/PKG-INFO
+fcs_package.egg-info/SOURCES.txt
+fcs_package.egg-info/dependency_links.txt
+fcs_package.egg-info/requires.txt
+fcs_package.egg-info/top_level.txt
