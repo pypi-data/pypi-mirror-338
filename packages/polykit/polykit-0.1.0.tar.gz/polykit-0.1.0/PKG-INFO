@@ -1,0 +1,37 @@
+Metadata-Version: 2.3
+Name: polykit
+Version: 0.1.0
+Summary: Python toolkit
+License: MIT
+Author: Danny Stewart
+Author-email: danny@stewart.cc
+Requires-Python: >=3.12
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: System :: Shells
+Classifier: Topic :: System :: System Shells
+Classifier: Topic :: Utilities
+Requires-Dist: halo (>=0.0.31)
+Requires-Dist: logician (>=0.3.3)
+Requires-Dist: packaging (>=24.2)
+Requires-Dist: requests (>=2.32.3)
+Description-Content-Type: text/markdown
+
+# Polykit
+
+A wide variety of Python tools and helpers.
+
+## General Guide
+
+- If it's about displaying something to the user or processing CLI input → `cli/`
+- If it's a fundamental utility or pattern → `core/`
+- If it's about transforming or extracting data → `parse/`
+- If it's about interacting with the OS → `shell/`
+- If it's about version checking or management → `version/`
+
