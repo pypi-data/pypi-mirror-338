@@ -1,0 +1,60 @@
+# CCD Deidentification
+
+This Python project is designed to de-identify Continuity of Care Documents (CCDs), which are XML files used in
+healthcare to encode patient information.
+
+## Features
+
+- Masks sensitive information in various parts of the CCD, such as names, IDs, birth times, addresses, and telecom
+  values.
+- Uses spaCy for natural language processing to mask free-text sections.
+- Consistently masks the same original text with the same masked value.
+- Logs details about masked items.
+- Can convert the log of masked items into a Spark DataFrame.
+- Can parse a CCD XML string, de-identify sensitive info, and return modified XML.
+
+## Dependencies
+
+This project depends on several Python packages, including:
+
+- lxml
+- spacy
+- pydantic
+- jinja2
+- markupsafe2
+
+These can be installed using pip:
+
+```sh
+pip install -r requirements.txt
+```
+
+## Usage
+
+First, create an instance of `CCDDeidentifier`:
+
+```python
+from ccd_deidentification.deidentifier import CCDDeidentifier
+
+deidentifier = CCDDeidentifier()
+```
+
+Then, you can use the `deidentify_ccd_xml` method to de-identify a CCD XML string:
+
+```python
+deidentified_xml = deidentifier.deidentify_ccd_xml(original_xml)
+```
+
+The `deidentify_ccd_xml` method returns a new XML string with sensitive information masked.
+
+You can also use the `mask_map_to_data_frame` method to convert the log of masked items into a Spark DataFrame:
+
+```python
+df = deidentifier.mask_map_to_data_frame()
+```
+
+## Note
+
+This project is designed for production use in Health Information Exchanges or similar environments. As with any
+software that handles sensitive data, it should be thoroughly reviewed and tested to ensure it meets all relevant legal
+and ethical standards for data handling and privacy.
