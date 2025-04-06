@@ -1,0 +1,54 @@
+[build-system]
+requires = ["flit_core >=3.11,<4"]
+build-backend = "flit_core.buildapi"
+
+[project]
+name = "cfel_fmt"
+description = "Parsing file formats associated with CFEL software projects"
+authors = [
+    {name = "Coherent Imaging Division, CFEL", email = "sc@cfel.de"}
+]
+maintainers = [
+    {name = "European XFEL GmbH", email="da-support@xfel.eu"}
+]
+readme = "README.md"
+license = "GPL-3.0-or-later"
+license-files = ["LICENSE"]
+requires-python = ">= 3.9"
+dependencies = [
+    "numpy",
+    "pandas",
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Intended Audience :: Science/Research",
+]
+dynamic = ["version"]
+
+[project.urls]
+Source = "https://gitlab.desy.de/cfel-sc-public/cfelpyutils"
+
+[project.optional-dependencies]
+test = [
+    "pytest",
+    "pytest-cov",
+]
+lint = [
+    "black",
+    "pylint",
+    "pylint-gitlab",
+    "mypy",
+]
+docs = [
+    "sphinx",
+    "furo",
+    "m2r2",
+    # https://github.com/CrossNox/m2r2/issues/63
+    "setuptools",
+    # as per https://github.com/CrossNox/m2r2/issues/68
+    "docutils<0.21",
+]
+
+[tool.flit.sdist]
+include = ["docs", "tests", "*.md"]
+exclude = ["docs/_build"]
