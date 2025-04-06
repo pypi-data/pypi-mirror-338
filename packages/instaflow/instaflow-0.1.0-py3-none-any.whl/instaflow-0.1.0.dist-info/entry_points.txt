@@ -1,0 +1,2 @@
+[console_scripts]
+instaflow = instaflow.cli:main
