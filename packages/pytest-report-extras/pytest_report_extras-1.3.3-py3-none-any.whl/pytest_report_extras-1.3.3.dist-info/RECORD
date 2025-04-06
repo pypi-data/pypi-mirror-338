@@ -1,0 +1,16 @@
+pytest_report_extras/__init__.py,sha256=0bL8lI0oE_nBRwMY62bvN3UG4u7wIR_ET9c6hgh31Oc,43
+pytest_report_extras/attachment.py,sha256=9aUc2BbHuWgafNW0Cb0Rry17hEdbQk_QYZzYjFzWpas,12895
+pytest_report_extras/decorators.py,sha256=scokwUTH780Ua5bgmKd0xqi-8_BBHbFG1aHerxEL1Gw,12445
+pytest_report_extras/extras.py,sha256=Lmcc1L0IHlZvQkF9ZauvnF9VwzGaW_vc3Rn6sjx0hzs,17345
+pytest_report_extras/link.py,sha256=wSnJak61sv3mvD5FUrdbf6KzHC40Z1fwHE-C28YRHgY,532
+pytest_report_extras/mime.py,sha256=e5IlP7FED8C1UQmPF_0H9Yz9dWVaVberVF0vco3_h4o,4541
+pytest_report_extras/plugin.py,sha256=kdQbjxNcN1qsrxoLfM5q7zxqzGYY1RFKPf-dzD9O3no,10726
+pytest_report_extras/status.py,sha256=p_COjamIOIqOVC99TPQlfDhH4PWW3IN8Gj9MjUX3v_Q,267
+pytest_report_extras/utils.py,sha256=ll1u6ATw0RdgrubwV4LxGVo1ru87UCF7F5yhTwTqjzQ,17007
+pytest_report_extras/resources/error.png,sha256=Ttdm4ND-UU-B5lahTCYmX-3jnCjOgoxoAc57Z7EcR9o,12536
+pytest_report_extras/resources/style.css,sha256=ZghGRsQ8QWjoA8TK0TXqGUBusM1yRKh-u68NZImb7n0,3033
+pytest_report_extras-1.3.3.dist-info/entry_points.txt,sha256=FeoWl5TSxNCOVeGZFcMhAAuH_F2UL4IAH_bQN__2JdY,61
+pytest_report_extras-1.3.3.dist-info/licenses/LICENSE,sha256=-o0JbDVYDA95dyPeP6rvKfgU5jly257zLvXKGVMvUXc,1074
+pytest_report_extras-1.3.3.dist-info/WHEEL,sha256=G2gURzTEtmeR8nrdXUJfNiB3VYVxigPQ-bEQujpNiNs,82
+pytest_report_extras-1.3.3.dist-info/METADATA,sha256=OXKxbsawE80Q1QXTn1ZhreG9pgPXUd2BiBf3h3ytkYQ,1311
+pytest_report_extras-1.3.3.dist-info/RECORD,,
