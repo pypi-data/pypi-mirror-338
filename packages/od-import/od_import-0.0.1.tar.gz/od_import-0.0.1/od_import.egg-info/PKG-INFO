@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: od-import
+Version: 0.0.1
+Summary: A Python package for remote, in-memory Python package/module importing via HTTP/S, FTP, or SMB.
+Author: rkbennett
+Author-email: r.k.bennett@hotmail.com
+Requires-Python: >=3.6
+License-File: LICENSE
