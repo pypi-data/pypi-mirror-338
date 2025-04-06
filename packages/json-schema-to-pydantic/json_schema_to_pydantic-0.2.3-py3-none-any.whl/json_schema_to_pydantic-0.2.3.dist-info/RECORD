@@ -1,0 +1,12 @@
+json_schema_to_pydantic/__init__.py,sha256=yYD2oqrgY8PDtfcbG_aLFnTY-POIUL7u4gwed2iKzXw,1334
+json_schema_to_pydantic/builders.py,sha256=6WniPWEO7zXFBGv_bsFa8eEslr5jVtY2OqKIqO6HLYM,3976
+json_schema_to_pydantic/exceptions.py,sha256=jnE5xUePrOJJxraKxH4KW_THUUUiw4LM6ZwfDRG2A4A,333
+json_schema_to_pydantic/handlers.py,sha256=WzV6gclWfX5kl7JtMGQ6lr5phBPrRYZYTUULTH6uReo,7649
+json_schema_to_pydantic/interfaces.py,sha256=VkDuIUHSdJo-P5BUFNBx29FKuyStLYXVYuXdQUj9a2Y,1990
+json_schema_to_pydantic/model_builder.py,sha256=EnDbOX0u_2SveWJbT9q8id8olnjf3Q4Ics9VcQ9MFq8,5174
+json_schema_to_pydantic/models.py,sha256=_DZYZksmd3_Um1qRkBy7gS-aApNUVj9hcmZz7iBIk_Y,860
+json_schema_to_pydantic/resolvers.py,sha256=z2uzrRplEJ_Hh2yo_Uwa-uw9fB0WrY1ld8-YV_58jOY,5151
+json_schema_to_pydantic-0.2.3.dist-info/METADATA,sha256=dn5HdN3AblJnMDrDNVREr0zZTc7xtvItpwwYnpUlyx4,4037
+json_schema_to_pydantic-0.2.3.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+json_schema_to_pydantic-0.2.3.dist-info/licenses/LICENSE,sha256=MaaIVMfW0LecJaq1PVC5VhoR1vrh04ksQLIuYgx2WIQ,1072
+json_schema_to_pydantic-0.2.3.dist-info/RECORD,,
