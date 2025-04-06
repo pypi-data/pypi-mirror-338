@@ -1,0 +1,9 @@
+matplotlib
+numba
+numpy<2.0.0
+pandas
+scikit-sparse>=0.4.12
+scipy>=1.12
+
+[dev]
+pytest
