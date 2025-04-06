@@ -1,0 +1,10 @@
+README.md
+setup.py
+robot_fight_package.egg-info/PKG-INFO
+robot_fight_package.egg-info/SOURCES.txt
+robot_fight_package.egg-info/dependency_links.txt
+robot_fight_package.egg-info/top_level.txt
+robots/__init__.py
+robots/robo_base.py
+robots/robo_lutador.py
+robots/robo_medico.py
