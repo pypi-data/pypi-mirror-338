@@ -1,0 +1,9 @@
+Metadata-Version: 2.4
+Name: tesseral-flask
+Version: 0.0.1
+Summary: Tesseral SDK for Flask
+Author-email: Ulysse Carion <ulysse.carion@tesseral.com>
+Requires-Python: >=3.9
+Requires-Dist: flask>=2.0.0
+Requires-Dist: httpx>=0.28.1
+Requires-Dist: tesseral-sdk>=0.0.7

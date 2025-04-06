@@ -1,0 +1,43 @@
+name: ci
+
+on: [ push ]
+jobs:
+  compile:
+    runs-on: ubuntu-20.04
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v3
+      - name: Set up python
+        uses: actions/setup-python@v4
+        with:
+          python-version: 3.8
+      - name: Install uv
+        uses: astral-sh/setup-uv@v5
+      - name: Install dependencies
+        run: uv sync --all-extras --dev
+      - name: Compile
+        run: uv run mypy .
+      - name: Style check
+        run: |
+          uv run ruff check
+          uv run ruff format --check
+  publish:
+    needs: [ compile ]
+    if: github.event_name == 'push' && contains(github.ref, 'refs/tags/')
+    runs-on: ubuntu-20.04
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v3
+      - name: Set up python
+        uses: actions/setup-python@v4
+        with:
+          python-version: 3.8
+      - name: Install uv
+        uses: astral-sh/setup-uv@v5
+      - name: Install dependencies
+        run: uv sync --all-extras --dev
+      - name: Publish to PyPI
+        run: uv publish pypi --username "$PYPI_USERNAME" --password "$PYPI_PASSWORD"
+        env:
+          PYPI_USERNAME: ${{ secrets.PYPI_USERNAME }}
+          PYPI_PASSWORD: ${{ secrets.PYPI_PASSWORD }}
