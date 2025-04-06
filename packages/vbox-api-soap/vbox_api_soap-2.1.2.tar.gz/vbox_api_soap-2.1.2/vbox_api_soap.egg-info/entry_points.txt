@@ -1,0 +1,4 @@
+[console_scripts]
+vbox-api-cli = vbox_api.cli.__main__:main
+vbox-api-gui = vbox_api.http.gui:main
+vbox-api-http = vbox_api.http.__main__:main

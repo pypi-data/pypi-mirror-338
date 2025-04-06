@@ -1,0 +1,54 @@
+[build-system]
+requires = ["setuptools >= 61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "vbox-api-soap"
+description = "Python bindings to the VirtualBox SOAP API."
+version = "2.1.2"
+readme = "README.md"
+license = "MIT"
+authors = [
+  {name = "Zack Didcott"}
+]
+maintainers = [
+  {name = "Zack Didcott"}
+]
+dependencies = [
+  "Flask",
+  "pillow",
+  "zeep",
+  "psutil",
+  "websockify"
+]
+requires-python = ">= 3.10"
+keywords = ["virtualbox", "api", "soap", "zeep", "flask"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "Operating System :: OS Independent"
+]
+
+[project.optional-dependencies]
+tests = ["pytest"]
+gui = ["flaskwebgui"]
+
+[project.urls]
+Homepage = "https://github.com/Zedeldi/vbox-api"
+Repository = "https://github.com/Zedeldi/vbox-api.git"
+Issues = "https://github.com/Zedeldi/vbox-api/issues"
+
+[project.scripts]
+vbox-api-cli = "vbox_api.cli.__main__:main"
+vbox-api-http = "vbox_api.http.__main__:main"
+vbox-api-gui = "vbox_api.http.gui:main"
+
+[tool.djlint]
+close_void_tags = true
+indent = 2
+profile = "jinja"
+
+[tool.isort]
+profile = "black"
+
+[tool.setuptools.packages.find]
+include = ["vbox_api*"]

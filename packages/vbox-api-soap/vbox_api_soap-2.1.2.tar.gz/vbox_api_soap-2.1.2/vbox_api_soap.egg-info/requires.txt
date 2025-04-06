@@ -1,0 +1,11 @@
+Flask
+pillow
+zeep
+psutil
+websockify
+
+[gui]
+flaskwebgui
+
+[tests]
+pytest
