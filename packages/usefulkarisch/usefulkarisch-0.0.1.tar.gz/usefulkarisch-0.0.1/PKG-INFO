@@ -1,0 +1,13 @@
+Metadata-Version: 2.4
+Name: usefulkarisch
+Version: 0.0.1
+Summary: Useful functions for me
+Author-email: Jack Karisch <jwkthrowaway@gmail.com>
+License-Expression: MIT
+License-File: LICENSE
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+
+Package with useful stuff for me. No one else needs to spend any time with this.
