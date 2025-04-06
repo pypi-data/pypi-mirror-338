@@ -1,0 +1,7 @@
+langchain_cloudflare/__init__.py,sha256=2iwBG24WN405Lab8Zqv-atNORODmPrUcoGvf_3bHf-4,1117
+langchain_cloudflare/vectorstores.py,sha256=UzFTI5dufzzhCNLCT4vb5MFqAZdAcWo0hWc-fIsGIew,96241
+langchain_cloudflare/vectorstores_2.py,sha256=8ikVhOOjXhDQNqkat4BjEe9QR6syDW-ddmGwnkQdKJk,14309
+langchain_cloudflare-0.1.0.dist-info/LICENSE,sha256=2btS8uNUDWD_UNjw9ba6ZJt_00aUjEw9CGyK-xIHY8c,1072
+langchain_cloudflare-0.1.0.dist-info/METADATA,sha256=6MWjRWka_CoedhJKKaoKr7EUGmON67KEc6gVppcTzFM,2065
+langchain_cloudflare-0.1.0.dist-info/WHEEL,sha256=fGIA9gx4Qxk2KDKeNJCbOEwSrmLtjWCwzBz351GyrPQ,88
+langchain_cloudflare-0.1.0.dist-info/RECORD,,
