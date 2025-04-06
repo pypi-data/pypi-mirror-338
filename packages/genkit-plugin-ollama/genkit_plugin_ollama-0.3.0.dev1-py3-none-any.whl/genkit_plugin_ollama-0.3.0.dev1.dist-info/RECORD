@@ -1,0 +1,15 @@
+genkit/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+genkit/plugins/ollama/__init__.py,sha256=-C8SNjCmvndAWp3aFpqlwBIkxc1IfonPu-hw6lpGlQo,995
+genkit/plugins/ollama/constants.py,sha256=mm8Oi5eoP2kBNQXLb2Y7uRYSwhADov8M7VG2kuUBvi8,856
+genkit/plugins/ollama/embedders.py,sha256=dwL-PkHXLzJCU2DXkzXTB6hGhHx7PJhdNqRNB_fCzXc,1499
+genkit/plugins/ollama/models.py,sha256=CP41GjO3pc6Z3RKBpErzCxbpvNGA_X6bml9OWZYq9rI,12913
+genkit/plugins/ollama/plugin_api.py,sha256=i8SQ9-WzRUsBVt8-7nclUlZ1l_5865F4ffpjxH4Gn4k,3105
+genkit/plugins/ollama/__init__.py,sha256=-C8SNjCmvndAWp3aFpqlwBIkxc1IfonPu-hw6lpGlQo,995
+genkit/plugins/ollama/constants.py,sha256=mm8Oi5eoP2kBNQXLb2Y7uRYSwhADov8M7VG2kuUBvi8,856
+genkit/plugins/ollama/embedders.py,sha256=dwL-PkHXLzJCU2DXkzXTB6hGhHx7PJhdNqRNB_fCzXc,1499
+genkit/plugins/ollama/models.py,sha256=CP41GjO3pc6Z3RKBpErzCxbpvNGA_X6bml9OWZYq9rI,12913
+genkit/plugins/ollama/plugin_api.py,sha256=i8SQ9-WzRUsBVt8-7nclUlZ1l_5865F4ffpjxH4Gn4k,3105
+genkit_plugin_ollama-0.3.0.dev1.dist-info/METADATA,sha256=2u94_grofCuIXYinRMlC2FBlCqqjUsN3kX4XUmHTxc0,1903
+genkit_plugin_ollama-0.3.0.dev1.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+genkit_plugin_ollama-0.3.0.dev1.dist-info/licenses/LICENSE,sha256=bsvE5_qSn_2LH2G-haMvT_AoIeINhX6fvzZTlyq2xJY,11340
+genkit_plugin_ollama-0.3.0.dev1.dist-info/RECORD,,
