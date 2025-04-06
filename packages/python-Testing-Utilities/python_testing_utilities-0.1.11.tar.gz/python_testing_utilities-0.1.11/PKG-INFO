@@ -1,0 +1,16 @@
+Metadata-Version: 2.2
+Name: python_Testing_Utilities
+Version: 0.1.11
+Summary: Testing utilities for python apps
+Home-page: https://github.com/rmetcalf9/python_Testing_Utilities
+Author: Robert Metcalf
+Author-email: rmetcalf9@googlemail.com
+License: MIT
+License-File: LICENSE
+Requires-Dist: requests==2.31.0
+Dynamic: author
+Dynamic: author-email
+Dynamic: home-page
+Dynamic: license
+Dynamic: requires-dist
+Dynamic: summary
