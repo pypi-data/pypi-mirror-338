@@ -1,0 +1,45 @@
+Metadata-Version: 2.4
+Name: parking-utils-aec
+Version: 0.1.0
+Summary: A utility library for parking applications with AWS integration
+Author: Harish Challa
+Author-email: x23417498@student.ncirl.ie
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9,<3.14
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: Pillow==10.4.0
+Requires-Dist: boto3==1.37.23
+Requires-Dist: tenacity==9.0.0
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: license-file
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+# Parking Utils Library
+
+A utility library for parking applications with AWS integration.
+
+## Installation
+```bash
+
+## python version required 3.9
+
+## extract the zip folder and open any code editor
+
+python3 -m venv venv
+
+source venv/bin/activate
+
+pip install -r requiremeents.txt
+
+pip install -i https://test.pypi.org/simple/ parking-utils-aec
+
+run the server
