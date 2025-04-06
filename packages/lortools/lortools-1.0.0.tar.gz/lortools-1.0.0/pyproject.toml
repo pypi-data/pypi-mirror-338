@@ -1,0 +1,32 @@
+[build-system]
+requires      = ["setuptools>=61.0.0", "wheel", "Cython"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = [
+    'lortools',
+    'lortools.array',
+    'lortools.search',
+    'lortools.sort'
+]
+
+[tool.setuptools.dynamic]
+version = {attr = "lortools.VERSION"}
+readme = {file = ["README.md"]}
+
+[project]
+name = "lortools"
+version = "1.0.0"
+description = "LorTools: A Collection of Nifty Sort And Search Tools."
+readme = "README.md"
+authors = [{ name = "Laurent Mertens"}]
+maintainers = [{ name = "Laurent Mertens"}]
+license = { file = "LICENSE.md" }
+keywords = ["Binary search"]
+dependencies = []
+requires-python = ">=3.6"
+
+[project.urls]
+Homepage = "https://github.com/LaurentMertens/LorTools"
+
+[project.scripts]
