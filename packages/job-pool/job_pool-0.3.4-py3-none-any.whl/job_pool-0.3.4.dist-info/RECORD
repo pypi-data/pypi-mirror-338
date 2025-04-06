@@ -1,0 +1,7 @@
+job_pool/__init__.py,sha256=JuxiSKRwQNk-wwP2n_dCLKw6SHnYdKt3HIXUFLIscMA,1556
+job_pool/job_pool.py,sha256=dwSpLB05HdaOP7i_CIsk1Ez9-VvBpOKypxANf31ogyo,8773
+job_pool/tqdm_logger.py,sha256=91mfiMhIxnYThB_A6u0-y4yezEskljnqGZHY-LevIN0,569
+job_pool-0.3.4.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+job_pool-0.3.4.dist-info/METADATA,sha256=SF6PtoqgOE4SeA3A33qfYNWO_4BOY5eVs4Ih3f0Q8jY,2132
+job_pool-0.3.4.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+job_pool-0.3.4.dist-info/RECORD,,
