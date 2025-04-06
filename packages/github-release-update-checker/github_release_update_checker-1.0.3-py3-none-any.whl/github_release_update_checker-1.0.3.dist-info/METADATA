@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: github-release-update-checker
+Version: 1.0.3
+Summary: A simple GUI-based update notifier in Python
+Home-page: https://github.com/1325ok/Python-Github-Release-Update-Checker
+Author: 1325OK
+Author-email: 1325ok.help@gmail.com
+Keywords: github,release,update,checker,tkinter,gui
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests
+
+# Python-Github-Release-Update-Checker
+A simple GUI-based update notifier in Python   
+   
+## Requirements
+requests | https://github.com/psf/requests | https://github.com/psf/requests/blob/main/LICENSE   
+   
+## Example   
+```py
+PGRUC("user/repo","2024-01-20T11:13:05Z",True)
+```
+![Example](https://raw.githubusercontent.com/1325ok/Python-Github-Release-Update-Checker/main/ext/image2.png)
+## Install
+https://pypi.org/project/github-release-update-checker/
+```console
+$ python -m pip install github-release-update-checker
+```
+
+## Parameter
+
+| Parameter  | Description |
+| ------------- |:-------------:|
+| repo      | Github Repo ex) 1325ok/pgruc     |
+| creasted_at     | Now version date ex) 2025-04-03T18:00:49       |
+| updateChanges      | Show update changes: True/False       |
