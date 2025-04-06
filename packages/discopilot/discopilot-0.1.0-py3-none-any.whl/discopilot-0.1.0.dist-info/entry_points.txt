@@ -1,0 +1,3 @@
+[console_scripts]
+discopilot-run = discopilot.scripts.run_bot:main
+discopilot-setup = discopilot.scripts.setup:main
