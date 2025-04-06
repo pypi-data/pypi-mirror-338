@@ -1,0 +1,89 @@
+# Copyright (C) 2022 ASTRON (Netherlands Institute for Radio Astronomy)
+# SPDX-License-Identifier: GPL-3.0-or-later
+
+# base
+FROM ubuntu:22.04
+RUN export DEBIAN_FRONTEND="noninteractive" && \
+	apt-get update && \
+	apt-get upgrade -y && \
+	apt-get -y install \
+		bison \
+		clang-format-14 \
+		doxygen \
+		flex \
+		g++ \
+		gcovr \
+		gfortran \
+		git \
+		graphviz \
+		libblas-dev \
+		libboost-dev \
+		libboost-python-dev \
+		libboost-test-dev \
+		libgsl-dev \
+		libcfitsio-dev \
+		libfftw3-dev \
+		libgtkmm-3.0-dev \
+		libhdf5-dev \
+		libncurses-dev \
+		liblapack-dev \
+		libpng-dev \
+		libpython3-dev \
+		libreadline-dev \
+		libxml2-dev \
+		make \
+		ninja-build \
+		python3-breathe \
+		python3-casacore \
+		python3-myst-parser \
+		python3-pandas \
+		python3-pip \
+		python3-sphinx \
+		python3-sphinx-rtd-theme \
+		wcslib-dev \
+		wget \
+	&& \
+	rm -rf /var/lib/apt/lists/*
+RUN pip3 install \
+		aptly-api-client \
+		astropy \
+		black~=24.0 \
+		cmake \
+		cmake-format \
+		h5py \
+		isort \
+		lofarantpos \
+		matplotlib \
+		'numpy<2' \
+		pytest \
+		scipy \
+		tqdm \
+	;
+# Putting the 2.5 GB LOBES coefficients in the docker image avoids downloading
+# them in the jobs that use this image.
+RUN mkdir -p /coeffs/lobes && \
+  wget -P /coeffs/lobes -r -nH -nd --no-parent -A 'LOBES_*.h5' https://support.astron.nl/software/lobes/
+
+# Install the casacore measures data. We purposely do not install these from
+# the Ubuntu repository, but download the latest version directly from the
+# ASTRON ftp site.
+# Note: The file on the ftp site is updated daily. When warnings regarding
+# leap seconds appear, ignore them or regenerate the docker image.
+RUN mkdir -p /usr/share/casacore/data && \
+    ln -s /usr/share/casacore /var/lib/casacore && \
+    wget -qO - https://astron.nl/iers/WSRT_Measures.ztar | \
+        tar -C /usr/share/casacore/data -xzf -
+
+# The casacore version in Ubuntu is too old to support C++20, so install a more recent one.
+RUN  mkdir /external && \
+  cd /external && \
+  git clone https://github.com/casacore/casacore.git && \
+  cd /external/casacore && \
+  git checkout v3.6.0 && \
+  mkdir build && \
+  cd build && \
+  cmake .. -DCMAKE_POLICY_VERSION_MINIMUM=3.5 -DBUILD_PYTHON=OFF -DBUILD_TESTING=OFF -DDATA_DIR=/usr/share/casacore/data && \
+  make -j`nproc` && \
+  make install -j`nproc` && \
+  cd /external && \
+  rm -rf /external/casacore

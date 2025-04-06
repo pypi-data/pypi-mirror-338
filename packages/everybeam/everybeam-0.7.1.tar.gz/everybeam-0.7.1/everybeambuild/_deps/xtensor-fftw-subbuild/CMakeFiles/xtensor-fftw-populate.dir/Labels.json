@@ -1,0 +1,46 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/var/scratch/dijkema/everybeambuild/_deps/xtensor-fftw-subbuild/CMakeFiles/xtensor-fftw-populate"
+		},
+		{
+			"file" : "/var/scratch/dijkema/everybeambuild/_deps/xtensor-fftw-subbuild/CMakeFiles/xtensor-fftw-populate.rule"
+		},
+		{
+			"file" : "/var/scratch/dijkema/everybeambuild/_deps/xtensor-fftw-subbuild/CMakeFiles/xtensor-fftw-populate-complete.rule"
+		},
+		{
+			"file" : "/var/scratch/dijkema/everybeambuild/_deps/xtensor-fftw-subbuild/xtensor-fftw-populate-prefix/src/xtensor-fftw-populate-stamp/xtensor-fftw-populate-build.rule"
+		},
+		{
+			"file" : "/var/scratch/dijkema/everybeambuild/_deps/xtensor-fftw-subbuild/xtensor-fftw-populate-prefix/src/xtensor-fftw-populate-stamp/xtensor-fftw-populate-configure.rule"
+		},
+		{
+			"file" : "/var/scratch/dijkema/everybeambuild/_deps/xtensor-fftw-subbuild/xtensor-fftw-populate-prefix/src/xtensor-fftw-populate-stamp/xtensor-fftw-populate-download.rule"
+		},
+		{
+			"file" : "/var/scratch/dijkema/everybeambuild/_deps/xtensor-fftw-subbuild/xtensor-fftw-populate-prefix/src/xtensor-fftw-populate-stamp/xtensor-fftw-populate-install.rule"
+		},
+		{
+			"file" : "/var/scratch/dijkema/everybeambuild/_deps/xtensor-fftw-subbuild/xtensor-fftw-populate-prefix/src/xtensor-fftw-populate-stamp/xtensor-fftw-populate-mkdir.rule"
+		},
+		{
+			"file" : "/var/scratch/dijkema/everybeambuild/_deps/xtensor-fftw-subbuild/xtensor-fftw-populate-prefix/src/xtensor-fftw-populate-stamp/xtensor-fftw-populate-patch.rule"
+		},
+		{
+			"file" : "/var/scratch/dijkema/everybeambuild/_deps/xtensor-fftw-subbuild/xtensor-fftw-populate-prefix/src/xtensor-fftw-populate-stamp/xtensor-fftw-populate-test.rule"
+		},
+		{
+			"file" : "/var/scratch/dijkema/everybeambuild/_deps/xtensor-fftw-subbuild/xtensor-fftw-populate-prefix/src/xtensor-fftw-populate-stamp/xtensor-fftw-populate-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"xtensor-fftw-populate"
+		],
+		"name" : "xtensor-fftw-populate"
+	}
+}

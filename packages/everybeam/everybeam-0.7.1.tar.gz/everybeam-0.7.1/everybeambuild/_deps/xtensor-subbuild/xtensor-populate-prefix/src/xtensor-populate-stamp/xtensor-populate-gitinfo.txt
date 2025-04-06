@@ -1,0 +1,3 @@
+repository='https://github.com/xtensor-stack/xtensor.git'
+module=''
+tag='origin'

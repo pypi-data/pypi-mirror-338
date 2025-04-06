@@ -1,0 +1,3 @@
+repository='https://github.com/xtensor-stack/xtensor-blas.git'
+module=''
+tag='origin'

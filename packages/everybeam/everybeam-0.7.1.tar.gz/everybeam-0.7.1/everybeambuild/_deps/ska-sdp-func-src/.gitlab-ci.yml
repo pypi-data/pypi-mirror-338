@@ -1,0 +1,230 @@
+variables:
+  GIT_SUBMODULE_STRATEGY: recursive
+  DEBIAN_FRONTEND: "noninteractive"
+  CUDA_ARCH: "7.0;8.0"
+
+stages:
+  - lint
+  - scan
+  - build
+  - test
+  - publish
+  - pages
+
+# Include CI templates
+include:
+  # Conan
+  - project: "ska-telescope/templates-repository"
+    file: "gitlab-ci/includes/conan.gitlab-ci.yml"
+
+  # Python package
+  - project: "ska-telescope/templates-repository"
+    file: "gitlab-ci/includes/python.gitlab-ci.yml"
+
+  # Release automation
+  - project: "ska-telescope/templates-repository"
+    file: "gitlab-ci/includes/release.gitlab-ci.yml"
+
+  # Docs pages
+  - project: "ska-telescope/templates-repository"
+    file: "gitlab-ci/includes/docs.gitlab-ci.yml"
+
+  # .post step finalisers e.g. badges
+  - project: "ska-telescope/templates-repository"
+    file: "gitlab-ci/includes/finaliser.gitlab-ci.yml"
+
+.reports: &ready_reports
+  - mkdir -p build/reports/
+
+.add-cuda-key: &cuda_key
+  - rm /etc/apt/sources.list.d/cuda.list
+  - apt-key del 7fa2af80
+  - apt-get update && apt-get install -y --no-install-recommends wget
+  - wget https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2004/x86_64/cuda-keyring_1.0-1_all.deb
+  - dpkg -i cuda-keyring_1.0-1_all.deb
+
+.install-cuda-packages-centos: &cuda_packages_centos
+  - yum install -y yum-utils
+  - yum-config-manager --add-repo https://developer.download.nvidia.com/compute/cuda/repos/rhel7/x86_64/cuda-rhel7.repo
+  - yum clean all
+  - yum install -y cuda-nvcc-11-4 cuda-cudart-devel-11-4 libcufft-devel-11-4
+
+.build-manylinux-wheels: &build_wheels
+  - yum install -y zip
+  - for PYBIN in /opt/python/cp*/bin; do
+      ln -s $PYBIN/python3 /usr/local/bin/python3;
+      python3 --version;
+      make python-build PYTHON_BUILD_TYPE="tag_setup";
+      rm -f /usr/local/bin/python3;
+    done
+  - for whl in ./dist/*.whl; do
+      auditwheel repair "$whl" -w wheelhouse;
+    done
+
+cpp-lint:
+  stage: lint
+  image: ubuntu:20.04
+  before_script:
+    - *ready_reports
+    - apt-get -y update
+    - apt-get -y install build-essential clang-tidy cmake
+    - mkdir release
+    - cd release/
+    - cmake ../ -DCMAKE_EXPORT_COMPILE_COMMANDS=ON
+  script:
+    - echo "Running lint check"
+    - run-clang-tidy -quiet | tee clang-tidy.out
+    - cat clang-tidy.out | ../scripts/clang-tidy-to-junit/clang-tidy-to-junit.py ../ > linting.xml
+  after_script:
+    - mv release/linting.xml build/reports/
+  artifacts:
+    paths:
+      - build/
+
+cpp-format:
+  stage: lint
+  image: alpine:3.16  # Use Uncrustify-0.75.1_f
+  before_script:
+    - apk update
+    - apk add uncrustify
+  script:
+    - find src tests -iname '*.h' -o -iname '*.cpp' -o -iname '*.c' -o -iname '*.cu' | xargs uncrustify -c uncrustify.cfg -l CPP --check
+
+# Need to override the template as it doesn't appear to work with this repo.
+python-gemnasium-scan:
+  rules:
+    - when: never
+
+python-gemnasium-scan-legacy:
+  rules:
+    - when: never
+
+build-test-debug:
+  stage: test
+  image: nvidia/cuda:12.2.0-devel-ubuntu20.04
+  tags: [k8srunner-gpu-v100]
+  before_script:
+    - *ready_reports
+    - *cuda_key
+    - apt-get -y update
+    - apt-get -y install build-essential cmake lcov python3
+    - nvidia-smi
+    - mkdir debug
+    - cd debug/
+    - cmake ../ -DCOVERAGE_REPORT=ON -DCUDA_ARCH=$CUDA_ARCH
+  script:
+    - make -j
+    - make coverage
+  after_script:
+    - mv debug/coverage.xml build/reports/code-coverage.xml
+    - mv debug/coverage/ ./
+  artifacts:
+    paths:
+      - build/
+      - coverage/
+    reports:
+      coverage_report:
+        coverage_format: cobertura
+        path: build/reports/code-coverage.xml
+
+build-test-release:
+  stage: test
+  image: nvidia/cuda:12.2.0-devel-ubuntu20.04
+  tags: [k8srunner-gpu-v100]
+  before_script:
+    - *ready_reports
+    - *cuda_key
+    # We need CMake >= 3.21.0 for the --output-junit option on CTest.
+    - apt-get -y update
+    - apt-get -y install build-essential gpg wget
+    - wget -O - https://apt.kitware.com/keys/kitware-archive-latest.asc 2>/dev/null | gpg --dearmor - | tee /usr/share/keyrings/kitware-archive-keyring.gpg >/dev/null
+    - echo 'deb [signed-by=/usr/share/keyrings/kitware-archive-keyring.gpg] https://apt.kitware.com/ubuntu/ focal main' | tee /etc/apt/sources.list.d/kitware.list >/dev/null
+    - apt-get -y update
+    - rm /usr/share/keyrings/kitware-archive-keyring.gpg
+    - apt-get -y install kitware-archive-keyring
+    - apt-get -y install cmake
+    - cmake --version
+    - nvidia-smi
+    - mkdir release
+    - cd release/
+    - cmake ../ -DCUDA_ARCH=$CUDA_ARCH
+  script:
+    - make -j
+    - ctest --rerun-failed --output-on-failure --output-junit unit-tests.xml
+  after_script:
+    - mv release/unit-tests.xml build/reports/
+  artifacts:
+    paths:
+      - build/
+    reports:
+      junit: build/reports/unit-tests.xml
+
+# Need to override the template as we have to use setup.py instead of poetry
+# to build the package.
+# This is handled by "python-build-for-development-legacy"
+# instead of the stage below.
+python-build-for-development:
+  rules:
+    - when: never
+
+# Need to override the template stage because we want to run this on a GPU.
+python-test:
+  stage: test
+  image: nvidia/cuda:12.2.0-devel-ubuntu20.04
+  tags: [k8srunner-gpu-v100]
+  before_script:
+    - echo "Running Python test stage"
+    - *cuda_key
+    - apt-get -y update
+    - apt-get -y install build-essential cmake python3 python3-pip
+    - pip3 install numpy pytest pytest-benchmark cupy-cuda12x
+    - CMAKE_ARGS="-DCUDA_ARCH=${CUDA_ARCH}" pip3 install .
+  script:
+    - pytest --junitxml=build/reports/unit-tests.xml tests/
+
+pages:
+  stage: publish
+  image: alpine
+  dependencies:
+    - build-test-debug
+  script:
+    - rm -rf public
+    - mkdir -p public
+    - mv coverage/ public/
+  artifacts:
+    paths:
+      - public
+
+# Need to override the template stage because of auditwheel repair.
+# We can't use Poetry either, as setup.py is used to build the library.
+python-publish-to-car:
+  stage: publish
+  image: quay.io/pypa/manylinux2014_x86_64
+  allow_failure: true
+  before_script:
+    - *cuda_packages_centos
+    - python3.10 -m pip install twine
+  script:
+    - *build_wheels
+    - python3.10 -m twine upload --username ${CAR_PYPI_USERNAME} --password ${CAR_PYPI_PASSWORD} --repository-url ${CAR_PYPI_REPOSITORY_URL} wheelhouse/*
+  rules:
+    - if: '$CI_COMMIT_TAG'
+      exists:
+        - setup.py
+
+# Need to override the template stage because of auditwheel repair.
+# We can't use Poetry either, as setup.py is used to build the library.
+python-publish-to-gitlab:
+  stage: publish
+  image: quay.io/pypa/manylinux2014_x86_64
+  allow_failure: true
+  before_script:
+    - *cuda_packages_centos
+    - python3.10 -m pip install twine
+  script:
+    - *build_wheels
+    - python3.10 -m twine upload --username gitlab-ci-token --password ${CI_JOB_TOKEN} --repository-url https://gitlab.com/api/v4/projects/${CI_PROJECT_ID}/packages/pypi wheelhouse/*
+  rules:
+    - if: '$CI_COMMIT_TAG'
+      exists:
+        - setup.py

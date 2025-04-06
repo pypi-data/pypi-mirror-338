@@ -1,0 +1,46 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/var/scratch/dijkema/everybeambuild/_deps/xtensor-subbuild/CMakeFiles/xtensor-populate"
+		},
+		{
+			"file" : "/var/scratch/dijkema/everybeambuild/_deps/xtensor-subbuild/CMakeFiles/xtensor-populate.rule"
+		},
+		{
+			"file" : "/var/scratch/dijkema/everybeambuild/_deps/xtensor-subbuild/CMakeFiles/xtensor-populate-complete.rule"
+		},
+		{
+			"file" : "/var/scratch/dijkema/everybeambuild/_deps/xtensor-subbuild/xtensor-populate-prefix/src/xtensor-populate-stamp/xtensor-populate-build.rule"
+		},
+		{
+			"file" : "/var/scratch/dijkema/everybeambuild/_deps/xtensor-subbuild/xtensor-populate-prefix/src/xtensor-populate-stamp/xtensor-populate-configure.rule"
+		},
+		{
+			"file" : "/var/scratch/dijkema/everybeambuild/_deps/xtensor-subbuild/xtensor-populate-prefix/src/xtensor-populate-stamp/xtensor-populate-download.rule"
+		},
+		{
+			"file" : "/var/scratch/dijkema/everybeambuild/_deps/xtensor-subbuild/xtensor-populate-prefix/src/xtensor-populate-stamp/xtensor-populate-install.rule"
+		},
+		{
+			"file" : "/var/scratch/dijkema/everybeambuild/_deps/xtensor-subbuild/xtensor-populate-prefix/src/xtensor-populate-stamp/xtensor-populate-mkdir.rule"
+		},
+		{
+			"file" : "/var/scratch/dijkema/everybeambuild/_deps/xtensor-subbuild/xtensor-populate-prefix/src/xtensor-populate-stamp/xtensor-populate-patch.rule"
+		},
+		{
+			"file" : "/var/scratch/dijkema/everybeambuild/_deps/xtensor-subbuild/xtensor-populate-prefix/src/xtensor-populate-stamp/xtensor-populate-test.rule"
+		},
+		{
+			"file" : "/var/scratch/dijkema/everybeambuild/_deps/xtensor-subbuild/xtensor-populate-prefix/src/xtensor-populate-stamp/xtensor-populate-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"xtensor-populate"
+		],
+		"name" : "xtensor-populate"
+	}
+}

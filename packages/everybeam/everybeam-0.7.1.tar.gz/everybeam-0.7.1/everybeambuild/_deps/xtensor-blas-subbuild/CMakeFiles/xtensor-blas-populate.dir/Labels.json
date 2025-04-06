@@ -1,0 +1,46 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/var/scratch/dijkema/everybeambuild/_deps/xtensor-blas-subbuild/CMakeFiles/xtensor-blas-populate"
+		},
+		{
+			"file" : "/var/scratch/dijkema/everybeambuild/_deps/xtensor-blas-subbuild/CMakeFiles/xtensor-blas-populate.rule"
+		},
+		{
+			"file" : "/var/scratch/dijkema/everybeambuild/_deps/xtensor-blas-subbuild/CMakeFiles/xtensor-blas-populate-complete.rule"
+		},
+		{
+			"file" : "/var/scratch/dijkema/everybeambuild/_deps/xtensor-blas-subbuild/xtensor-blas-populate-prefix/src/xtensor-blas-populate-stamp/xtensor-blas-populate-build.rule"
+		},
+		{
+			"file" : "/var/scratch/dijkema/everybeambuild/_deps/xtensor-blas-subbuild/xtensor-blas-populate-prefix/src/xtensor-blas-populate-stamp/xtensor-blas-populate-configure.rule"
+		},
+		{
+			"file" : "/var/scratch/dijkema/everybeambuild/_deps/xtensor-blas-subbuild/xtensor-blas-populate-prefix/src/xtensor-blas-populate-stamp/xtensor-blas-populate-download.rule"
+		},
+		{
+			"file" : "/var/scratch/dijkema/everybeambuild/_deps/xtensor-blas-subbuild/xtensor-blas-populate-prefix/src/xtensor-blas-populate-stamp/xtensor-blas-populate-install.rule"
+		},
+		{
+			"file" : "/var/scratch/dijkema/everybeambuild/_deps/xtensor-blas-subbuild/xtensor-blas-populate-prefix/src/xtensor-blas-populate-stamp/xtensor-blas-populate-mkdir.rule"
+		},
+		{
+			"file" : "/var/scratch/dijkema/everybeambuild/_deps/xtensor-blas-subbuild/xtensor-blas-populate-prefix/src/xtensor-blas-populate-stamp/xtensor-blas-populate-patch.rule"
+		},
+		{
+			"file" : "/var/scratch/dijkema/everybeambuild/_deps/xtensor-blas-subbuild/xtensor-blas-populate-prefix/src/xtensor-blas-populate-stamp/xtensor-blas-populate-test.rule"
+		},
+		{
+			"file" : "/var/scratch/dijkema/everybeambuild/_deps/xtensor-blas-subbuild/xtensor-blas-populate-prefix/src/xtensor-blas-populate-stamp/xtensor-blas-populate-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"xtensor-blas-populate"
+		],
+		"name" : "xtensor-blas-populate"
+	}
+}

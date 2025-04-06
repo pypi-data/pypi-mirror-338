@@ -1,0 +1,157 @@
+# Copyright (C) 2021 ASTRON (Netherlands Institute for Radio Astronomy)
+# SPDX-License-Identifier: GPL-3.0-or-later
+
+workflow:
+  rules:
+    # Don't create a pipeline if a branch has open merge requests, since the MR
+    # also starts a pipeline.
+    - if: $CI_PIPELINE_SOURCE == "push" && $CI_COMMIT_BRANCH && $CI_OPEN_MERGE_REQUESTS
+      when: never
+    - when: always
+
+stages:
+  - versioning
+  - prepare
+  - linting
+  - build
+  - test
+
+# The 'IMAGE' variables allow reusing docker images between different pipelines.
+# See https://confluence.skatelescope.org/display/SE/Caching+Docker+images+using+GitLab+CI+registry
+versioning:
+  stage: versioning
+  image: bitnami/git
+  script:
+    # Unshallowing ensures that 'git log' works
+    - git fetch --unshallow
+    - echo BASE_IMAGE_2004=${CI_REGISTRY_IMAGE}/base_2004:$(git log -n 1 --pretty=format:%H -- docker/ubuntu_20_04_base) >> versions.env
+    - echo BASE_IMAGE_2204=${CI_REGISTRY_IMAGE}/base_2204:$(git log -n 1 --pretty=format:%H -- docker/ubuntu_22_04_base) >> versions.env
+    - cat versions.env
+  artifacts:
+    reports:
+      dotenv: versions.env
+
+.prepare:
+  stage: prepare
+  needs: ["versioning"]
+  image: docker:20.10
+  tags:
+    - dind
+  before_script:
+    - echo $CI_REGISTRY_PASSWORD | docker login -u $CI_REGISTRY_USER --password-stdin $CI_REGISTRY
+  script:
+    - |
+      if ! docker manifest inspect $DOCKER_IMAGE > /dev/null; then
+        docker build $DOCKER_BUILD_ARG --tag $DOCKER_IMAGE -f $DOCKER_FILE .
+        docker push $DOCKER_IMAGE
+      fi
+  # Skip the job if there are no changes to the Docker file. This shortcut only
+  # works for push and merge request jobs.
+  # A manual pipeline run will thus create missing docker images.
+  #
+  # This is disabled since the detections of the changes by GitLab seems flaky.
+  # TODO(AST-887) Reenable this to test whether it's no longer flaky.
+  #
+  #rules:
+  #  - changes:
+  #    - $DOCKER_FILE
+
+prepare-base-2004:
+  extends: .prepare
+  variables:
+    DOCKER_IMAGE: $BASE_IMAGE_2004
+    DOCKER_FILE: docker/ubuntu_20_04_base
+
+prepare-base-2204:
+  extends: .prepare
+  variables:
+    DOCKER_IMAGE: $BASE_IMAGE_2204
+    DOCKER_FILE: docker/ubuntu_22_04_base
+
+.needs-2004:
+  needs:
+    - job: versioning
+    - job: prepare-base-2004
+      optional: true
+  image: $BASE_IMAGE_2004
+
+.needs-2204:
+  needs:
+    - job: versioning
+    - job: prepare-base-2204
+      optional: true
+  image: $BASE_IMAGE_2204
+
+format:
+  extends: .needs-2204
+  stage: linting
+  script:
+    # Since schaapcommon does not include aocommon as git submodule, it has a
+    # copy of the format.sh script, which allows running run-format.sh
+    # in the source directory. Verify that the copy of format.sh equals
+    # the most recent version from aocommon.
+    - wget -O aocommon-format.sh https://gitlab.com/aroffringa/aocommon/raw/master/scripts/format.sh
+    - diff aocommon-format.sh scripts/format.sh
+    # Run the formatter
+    - ./scripts/run-format.sh
+
+clang-tidy:
+  extends: .needs-2204
+  stage: linting
+  variables:
+    CLANG_TIDY_FIXES: clang-tidy-fixes.yml
+  before_script:
+    - git clone https://gitlab.com/aroffringa/aocommon.git
+  script:
+    - mkdir build && cd build
+    - cmake -DAOCOMMON_INCLUDE_DIR=../aocommon/include -DCLANG_TIDY_FIXES_FILE=${CLANG_TIDY_FIXES} -DCLANG_TIDY_WERROR=ON -DBUILD_TESTING=ON ..
+    - make check-clang-tidy
+  artifacts:
+    when: on_failure
+    paths:
+      - build/${CLANG_TIDY_FIXES}
+
+.build:
+  stage: build
+  before_script:
+    - git clone https://gitlab.com/aroffringa/aocommon.git
+  script:
+    - mkdir build && cd build
+    - cmake -DAOCOMMON_INCLUDE_DIR=../aocommon/include -DBUILD_TESTING=ON -DCMAKE_CXX_FLAGS="${CXX_FLAGS}" -DCMAKE_EXE_LINKER_FLAGS="${LINKER_FLAGS}" ..
+    - make -j`nproc` install
+  artifacts:
+    paths:
+      - aocommon
+      - build
+
+build-2004:
+  extends: [".needs-2004",".build"]
+
+build-2204:
+  extends: [".needs-2204",".build"]
+  variables:
+    CXX_FLAGS: -coverage -fprofile-update=atomic
+    LINKER_FLAGS: -coverage
+
+test-2004:
+  stage: test
+  needs: ["versioning","build-2004"]
+  image: $BASE_IMAGE_2004
+  script:
+    - cd build/
+    - ctest -j`nproc` --output-on-failure -T test
+
+test-2204:
+  stage: test
+  needs: ["versioning","build-2204"]
+  image: $BASE_IMAGE_2204
+  script:
+    - cd build
+    - ctest -j`nproc` --output-on-failure -T test
+    - gcovr -j`nproc` -r .. -e '.*/external/.*' -e '.*/CompilerIdCXX/.*' -e '.*/test/.*' --txt --xml coverage.xml .
+  coverage: /^TOTAL.*\s+(\d+\%)$/
+  artifacts:
+    reports:
+      coverage_report:
+        coverage_format: cobertura
+        path: build/coverage.xml

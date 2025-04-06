@@ -1,0 +1,3 @@
+repository='https://github.com/ska-telescope/ska-sdp-func.git'
+module=''
+tag='origin'

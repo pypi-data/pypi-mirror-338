@@ -1,0 +1,41 @@
+file(REMOVE_RECURSE
+  "CMakeFiles/schaapcommon.dir/src/facets/boundingbox.cc.o"
+  "CMakeFiles/schaapcommon.dir/src/facets/boundingbox.cc.o.d"
+  "CMakeFiles/schaapcommon.dir/src/facets/facet.cc.o"
+  "CMakeFiles/schaapcommon.dir/src/facets/facet.cc.o.d"
+  "CMakeFiles/schaapcommon.dir/src/facets/facetimage.cc.o"
+  "CMakeFiles/schaapcommon.dir/src/facets/facetimage.cc.o.d"
+  "CMakeFiles/schaapcommon.dir/src/fft/compositefft.cc.o"
+  "CMakeFiles/schaapcommon.dir/src/fft/compositefft.cc.o.d"
+  "CMakeFiles/schaapcommon.dir/src/fft/convolution.cc.o"
+  "CMakeFiles/schaapcommon.dir/src/fft/convolution.cc.o.d"
+  "CMakeFiles/schaapcommon.dir/src/fft/resampler.cc.o"
+  "CMakeFiles/schaapcommon.dir/src/fft/resampler.cc.o.d"
+  "CMakeFiles/schaapcommon.dir/src/fft/restoreimage.cc.o"
+  "CMakeFiles/schaapcommon.dir/src/fft/restoreimage.cc.o.d"
+  "CMakeFiles/schaapcommon.dir/src/fitters/gaussianfitter.cc.o"
+  "CMakeFiles/schaapcommon.dir/src/fitters/gaussianfitter.cc.o.d"
+  "CMakeFiles/schaapcommon.dir/src/fitters/nlplfitter.cc.o"
+  "CMakeFiles/schaapcommon.dir/src/fitters/nlplfitter.cc.o.d"
+  "CMakeFiles/schaapcommon.dir/src/fitters/polynomialchannelfitter.cc.o"
+  "CMakeFiles/schaapcommon.dir/src/fitters/polynomialchannelfitter.cc.o.d"
+  "CMakeFiles/schaapcommon.dir/src/fitters/polynomialfitter.cc.o"
+  "CMakeFiles/schaapcommon.dir/src/fitters/polynomialfitter.cc.o.d"
+  "CMakeFiles/schaapcommon.dir/src/fitters/spectralfitter.cc.o"
+  "CMakeFiles/schaapcommon.dir/src/fitters/spectralfitter.cc.o.d"
+  "CMakeFiles/schaapcommon.dir/src/h5parm/gridinterpolate.cc.o"
+  "CMakeFiles/schaapcommon.dir/src/h5parm/gridinterpolate.cc.o.d"
+  "CMakeFiles/schaapcommon.dir/src/h5parm/h5parm.cc.o"
+  "CMakeFiles/schaapcommon.dir/src/h5parm/h5parm.cc.o.d"
+  "CMakeFiles/schaapcommon.dir/src/h5parm/jonesparameters.cc.o"
+  "CMakeFiles/schaapcommon.dir/src/h5parm/jonesparameters.cc.o.d"
+  "CMakeFiles/schaapcommon.dir/src/h5parm/soltab.cc.o"
+  "CMakeFiles/schaapcommon.dir/src/h5parm/soltab.cc.o.d"
+  "libschaapcommon.a"
+  "libschaapcommon.pdb"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang CXX)
+  include(CMakeFiles/schaapcommon.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()

@@ -1,0 +1,79 @@
+Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
+Change Dir: /var/scratch/dijkema/everybeambuild/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_cec45/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_cec45.dir/build.make CMakeFiles/cmTC_cec45.dir/build
+gmake[1]: Entering directory '/var/scratch/dijkema/everybeambuild/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_cec45.dir/src.c.o
+/var/software/spack/opt/spack/linux-rocky8-zen2/gcc-9.4.0/gcc-9.4.0-ljb4ejaog46e2soro4seyp3ueya2uvyc/bin/gcc -DCMAKE_HAVE_LIBC_PTHREAD  -fPIE -o CMakeFiles/cmTC_cec45.dir/src.c.o -c /var/scratch/dijkema/everybeambuild/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_cec45
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_cec45.dir/link.txt --verbose=1
+/var/software/spack/opt/spack/linux-rocky8-zen2/gcc-9.4.0/gcc-9.4.0-ljb4ejaog46e2soro4seyp3ueya2uvyc/bin/gcc CMakeFiles/cmTC_cec45.dir/src.c.o -o cmTC_cec45 
+CMakeFiles/cmTC_cec45.dir/src.c.o: In function `main':
+src.c:(.text+0x2f): undefined reference to `pthread_create'
+src.c:(.text+0x3b): undefined reference to `pthread_detach'
+src.c:(.text+0x47): undefined reference to `pthread_cancel'
+src.c:(.text+0x58): undefined reference to `pthread_join'
+collect2: error: ld returned 1 exit status
+gmake[1]: *** [CMakeFiles/cmTC_cec45.dir/build.make:99: cmTC_cec45] Error 1
+gmake[1]: Leaving directory '/var/scratch/dijkema/everybeambuild/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_cec45/fast] Error 2
+
+
+Source file was:
+#include <pthread.h>
+
+static void* test_func(void* data)
+{
+  return data;
+}
+
+int main(void)
+{
+  pthread_t thread;
+  pthread_create(&thread, NULL, test_func, NULL);
+  pthread_detach(thread);
+  pthread_cancel(thread);
+  pthread_join(thread, NULL);
+  pthread_atfork(NULL, NULL, NULL);
+  pthread_exit(NULL);
+
+  return 0;
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /var/scratch/dijkema/everybeambuild/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_ffdf4/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_ffdf4.dir/build.make CMakeFiles/cmTC_ffdf4.dir/build
+gmake[1]: Entering directory '/var/scratch/dijkema/everybeambuild/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_ffdf4.dir/CheckFunctionExists.c.o
+/var/software/spack/opt/spack/linux-rocky8-zen2/gcc-9.4.0/gcc-9.4.0-ljb4ejaog46e2soro4seyp3ueya2uvyc/bin/gcc   -DCHECK_FUNCTION_EXISTS=pthread_create -fPIE -o CMakeFiles/cmTC_ffdf4.dir/CheckFunctionExists.c.o -c /usr/share/cmake/Modules/CheckFunctionExists.c
+Linking C executable cmTC_ffdf4
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ffdf4.dir/link.txt --verbose=1
+/var/software/spack/opt/spack/linux-rocky8-zen2/gcc-9.4.0/gcc-9.4.0-ljb4ejaog46e2soro4seyp3ueya2uvyc/bin/gcc  -DCHECK_FUNCTION_EXISTS=pthread_create CMakeFiles/cmTC_ffdf4.dir/CheckFunctionExists.c.o -o cmTC_ffdf4  -lpthreads 
+/usr/bin/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+gmake[1]: *** [CMakeFiles/cmTC_ffdf4.dir/build.make:99: cmTC_ffdf4] Error 1
+gmake[1]: Leaving directory '/var/scratch/dijkema/everybeambuild/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_ffdf4/fast] Error 2
+
+
+
+Determining if the function sgemm_ exists failed with the following output:
+Change Dir: /var/scratch/dijkema/everybeambuild/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_f0645/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_f0645.dir/build.make CMakeFiles/cmTC_f0645.dir/build
+gmake[1]: Entering directory '/var/scratch/dijkema/everybeambuild/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_f0645.dir/CheckFunctionExists.c.o
+/var/software/spack/opt/spack/linux-rocky8-zen2/gcc-9.4.0/gcc-9.4.0-ljb4ejaog46e2soro4seyp3ueya2uvyc/bin/gcc   -DCHECK_FUNCTION_EXISTS=sgemm_ -o CMakeFiles/cmTC_f0645.dir/CheckFunctionExists.c.o -c /usr/share/cmake/Modules/CheckFunctionExists.c
+Linking C executable cmTC_f0645
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f0645.dir/link.txt --verbose=1
+/var/software/spack/opt/spack/linux-rocky8-zen2/gcc-9.4.0/gcc-9.4.0-ljb4ejaog46e2soro4seyp3ueya2uvyc/bin/gcc  -DCHECK_FUNCTION_EXISTS=sgemm_ CMakeFiles/cmTC_f0645.dir/CheckFunctionExists.c.o -o cmTC_f0645 
+CMakeFiles/cmTC_f0645.dir/CheckFunctionExists.c.o: In function `main':
+CheckFunctionExists.c:(.text+0x10): undefined reference to `sgemm_'
+collect2: error: ld returned 1 exit status
+gmake[1]: *** [CMakeFiles/cmTC_f0645.dir/build.make:99: cmTC_f0645] Error 1
+gmake[1]: Leaving directory '/var/scratch/dijkema/everybeambuild/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_f0645/fast] Error 2
+
+
+
