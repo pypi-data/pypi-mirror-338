@@ -1,0 +1,166 @@
+Metadata-Version: 2.4
+Name: youtube-mcp
+Version: 0.1.1
+Summary: MCP для загрузки транскрипций YouTube видео
+Project-URL: Homepage, https://github.com/yourusername/youtube-mcp
+Project-URL: Bug Tracker, https://github.com/yourusername/youtube-mcp/issues
+Author-email: Nikita Panferov <nikpanfer@gmail.com>
+License: MIT
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.13
+Requires-Dist: build>=1.2.2.post1
+Requires-Dist: mcp[cli]>=1.1.3
+Requires-Dist: twine>=6.1.0
+Requires-Dist: youtube-transcript-api>=0.6.0
+Description-Content-Type: text/markdown
+
+# YouTube MCP (Media Content Processor)
+
+Модуль для получения транскрипций (субтитров) YouTube видео, интегрированный с MCP SDK.
+
+## Описание
+
+YouTube MCP предоставляет простой способ получения текстового содержания видео с YouTube по ссылке, без необходимости его просмотра. Интегрируется с MCP (Model Context Protocol) для работы с моделями ИИ.
+
+## Возможности
+
+- Извлечение ID видео из различных форматов YouTube ссылок
+- Получение транскрипции на русском или английском языке (с возможностью настройки)
+- Форматирование текста для удобного чтения
+- Полная интеграция с MCP SDK
+- Объектно-ориентированная архитектура
+
+## Установка
+
+### Из PyPI (рекомендуется)
+
+```bash
+# Установка с использованием uv
+uv pip install youtube-mcp
+
+# Или с помощью стандартного pip
+pip install youtube-mcp
+```
+
+### Локальная установка из исходного кода
+
+```bash
+# С использованием UV
+uv pip install -e .
+
+# С использованием стандартного pip
+pip install -e .
+```
+
+## Использование
+
+### Запуск сервера MCP через uvx
+
+После установки пакета вы можете запустить MCP сервер напрямую:
+
+```bash
+# Запуск сервера MCP
+uvx run mcp server youtube
+
+# Использование инструментов, предоставляемых сервером
+uvx run mcp client youtube get_transcript --url "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+uvx run mcp client youtube get_languages --url "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+```
+
+### Как MCP модуль через mcp CLI
+
+После установки вы можете использовать MCP CLI для работы с YouTube:
+
+```bash
+# Получение транскрипции
+mcp youtube --url "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+
+# С указанием языка
+mcp youtube --url "https://www.youtube.com/watch?v=dQw4w9WgXcQ" --languages "en"
+```
+
+### Через команду youtube-transcript
+
+```bash
+# Простое использование
+youtube-transcript https://www.youtube.com/watch?v=dQw4w9WgXcQ
+
+# Вывод в формате JSON
+youtube-transcript https://www.youtube.com/watch?v=dQw4w9WgXcQ --format json
+
+# Сохранение в файл
+youtube-transcript https://www.youtube.com/watch?v=dQw4w9WgXcQ --output transcript.txt
+
+# Указание языков для транскрипции
+youtube-transcript https://www.youtube.com/watch?v=dQw4w9WgXcQ --languages en,fr
+
+# Использование класса напрямую
+youtube-transcript https://www.youtube.com/watch?v=dQw4w9WgXcQ --direct
+```
+
+### Как Python модуль
+
+#### Использование функции-обертки (рекомендуется для MCP)
+
+```python
+from youtube_mcp import get_transcript
+
+# Получение транскрипции
+result = get_transcript("https://www.youtube.com/watch?v=dQw4w9WgXcQ")
+
+# Проверка результата
+if result["success"]:
+    print(result["transcript"])
+else:
+    print(f"Ошибка: {result['error']}")
+```
+
+#### Прямое использование класса
+
+```python
+from youtube_mcp import YouTubeTranscriptExtractor
+
+# Создание экземпляра класса
+extractor = YouTubeTranscriptExtractor()
+
+# Получение транскрипции
+result = extractor.process_transcript("https://www.youtube.com/watch?v=dQw4w9WgXcQ")
+
+# Проверка результата
+if result["success"]:
+    print(result["transcript"])
+else:
+    print(f"Ошибка: {result['error']}")
+```
+
+#### Использование FastMCP сервера
+
+```python
+from youtube_mcp.main import mcp
+
+# Запуск FastMCP сервера
+mcp.run()
+```
+
+## Структура проекта
+
+- `youtube_mcp/` - основной пакет
+  - `core.py` - содержит класс YouTubeTranscriptExtractor и функцию get_transcript
+  - `__init__.py` - экспортирует класс и функцию
+  - `__main__.py` - точка входа для командной строки
+  - `main.py` - FastMCP сервер для использования с uvx
+- `mcp.json` - метаданные для MCP SDK
+- `pyproject.toml` - настройки проекта и зависимости
+- `run_mcp.py` - вспомогательный скрипт для запуска в режиме разработки
+
+## Зависимости
+
+- youtube-transcript-api - для получения субтитров
+- mcp - MCP SDK для интеграции с моделями ИИ
+
+## Примечание
+
+Этот MCP предоставляет только текст транскрипции без дополнительного анализа содержания. Для дальнейшего анализа можно использовать другие MCP инструменты.
