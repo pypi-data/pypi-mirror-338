@@ -1,0 +1,2 @@
+[inventree_plugins]
+plugin = plugin:WledInventreePlugin
