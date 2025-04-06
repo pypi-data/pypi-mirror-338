@@ -1,0 +1,10 @@
+LICENSE.txt
+README.md
+pyproject.toml
+src/clippy/Clipping.py
+src/clippy/__init__.py
+src/kindle_clippy.egg-info/PKG-INFO
+src/kindle_clippy.egg-info/SOURCES.txt
+src/kindle_clippy.egg-info/dependency_links.txt
+src/kindle_clippy.egg-info/top_level.txt
+tests/test_clipping.py
