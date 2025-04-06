@@ -1,0 +1,5 @@
+pyroid-0.1.0.dist-info/METADATA,sha256=CCt44aw7oMCE9c1ZUc-JHRoCVo-Jb-AIv5dWoEd6bX0,3573
+pyroid-0.1.0.dist-info/WHEEL,sha256=tAGdc4C2KTz7B2CZ8Jf3DcKSAviAbCg44UH9ma2gYww,96
+pyroid/__init__.py,sha256=qBQ-xSKnh-_XqMDrTzhvwuIc9ZMOQ7hiBiHurNyNNO0,1226
+pyroid/pyroid.cp311-win_amd64.pyd,sha256=xU8D9TWIPv4gqtxOwezkrZg3fYYGZPlRaddfsK_cADI,5913600
+pyroid-0.1.0.dist-info/RECORD,,
