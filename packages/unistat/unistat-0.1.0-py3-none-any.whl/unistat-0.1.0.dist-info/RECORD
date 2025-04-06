@@ -1,0 +1,8 @@
+unistat/__init__.py,sha256=9Tj_Aqg6odpuIiykNeg-oUtr8GNmk5FTW16mDdCSZV4,580
+unistat/contingency.py,sha256=qWGrsdQCorWF1PlNdFMlC_X3UArrra9E7glwuDHzO8k,6433
+unistat/continuous.py,sha256=UXfi3FQ9E3zw_p7shtsOZIAR3USRYw29dhdgpwTvlpk,7318
+unistat/regression.py,sha256=6p6MoIFs602ukYgobf_-B_JxOar-dB01GJ8QdPgAncg,7609
+unistat-0.1.0.dist-info/METADATA,sha256=nH0OgMPDbk3yyEoAFEGR_p-tV5UsWbmpjwSvw2_fP8A,500
+unistat-0.1.0.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+unistat-0.1.0.dist-info/entry_points.txt,sha256=F-4lbGNlWAbOAxJ-_GwS5mL5r8L7Y030Ovmfgm5dAe0,41
+unistat-0.1.0.dist-info/RECORD,,
