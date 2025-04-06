@@ -1,0 +1,18 @@
+Metadata-Version: 2.2
+Name: coloring_py
+Version: 0.2
+Summary: A Python package for ANSI color codes and text effects.
+Home-page: https://github.com/K1ngbobb?tab=repositories
+Author: Kingbob
+Author-email: iwouldnotgive@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: home-page
+Dynamic: summary
+
+A simple library that provides ANSI color codes and text effects for terminal output.
