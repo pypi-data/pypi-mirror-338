@@ -1,0 +1,2 @@
+[console_scripts]
+tcrconvert = tcrconvert.cli:entry_point
