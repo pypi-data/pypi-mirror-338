@@ -1,0 +1,201 @@
+# Atomorph
+
+A powerful tool for converting atomic structure files between different formats.
+
+# Atomorph
+
+一个用于在不同格式之间转换原子结构文件的强大工具。
+
+## Features
+
+- Convert between various atomic structure formats (CIF, VASP, XYZ, etc.)
+- Support for multi-frame structures
+- Custom element ordering
+- Atomic constraints (fix all atoms, specific elements, layers, or indices)
+- Parallel processing for multi-frame conversion
+- Progress bar for conversion progress
+- File size limit check
+
+## 功能特点
+
+- 支持多种原子结构格式之间的转换（CIF、VASP、XYZ等）
+- 支持多帧结构
+- 自定义元素排序
+- 原子约束（固定所有原子、特定元素、层或索引）
+- 多帧转换的并行处理
+- 转换进度条显示
+- 文件大小限制检查
+
+## Installation
+
+```bash
+pip install atomorph
+```
+
+## 安装
+
+```bash
+pip install atomorph
+```
+
+## Usage
+
+Basic conversion:
+```bash
+conv input.cif output.vasp
+```
+
+Sort atoms by atomic number (ascending):
+```bash
+conv input.cif output.vasp -s ascending
+```
+
+Sort atoms by atomic number (descending):
+```bash
+conv input.cif output.vasp -s descending
+```
+
+Custom element order:
+```bash
+conv input.cif output.vasp -e Ru Si Fe
+```
+
+Fix all atoms:
+```bash
+conv input.cif output.vasp -c fixed
+```
+
+Fix specific elements:
+```bash
+conv input.cif output.vasp -c elements Fe Cu
+```
+
+Fix layers:
+```bash
+conv input.cif output.vasp -c layers 0,1 1,2
+```
+
+Fix specific atom indices:
+```bash
+conv input.cif output.vasp -c indices 1 2 3-6
+```
+
+Multi-frame conversion:
+```bash
+conv input.cif output/ -m
+```
+
+Multi-frame conversion with separate directories:
+```bash
+conv input.cif output/ -m -d
+```
+
+Multi-frame conversion with frame selection:
+```bash
+conv input.cif output/ -m -f 1 2 3-6
+```
+
+Multi-frame conversion with parallel processing:
+```bash
+conv input.cif output/ -m -p
+```
+
+## 使用方法
+
+基本转换：
+```bash
+conv input.cif output.vasp
+```
+
+按原子序数升序排序：
+```bash
+conv input.cif output.vasp -s ascending
+```
+
+按原子序数降序排序：
+```bash
+conv input.cif output.vasp -s descending
+```
+
+自定义元素顺序：
+```bash
+conv input.cif output.vasp -e Ru Si Fe
+```
+
+固定所有原子：
+```bash
+conv input.cif output.vasp -c fixed
+```
+
+固定特定元素：
+```bash
+conv input.cif output.vasp -c elements Fe Cu
+```
+
+固定特定层：
+```bash
+conv input.cif output.vasp -c layers 0,1 1,2
+```
+
+固定特定原子索引：
+```bash
+conv input.cif output.vasp -c indices 1 2 3-6
+```
+
+多帧转换：
+```bash
+conv input.cif output/ -m
+```
+
+多帧转换（分别保存到不同目录）：
+```bash
+conv input.cif output/ -m -d
+```
+
+多帧转换（选择特定帧）：
+```bash
+conv input.cif output/ -m -f 1 2 3-6
+```
+
+多帧转换（并行处理）：
+```bash
+conv input.cif output/ -m -p
+```
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 许可证
+
+本项目采用MIT许可证 - 详情请参见 [LICENSE](LICENSE) 文件。
+
+## Command Line Options
+
+- `input_path`: Input file path
+- `output_path`: Output file path
+- `-m, --mode`: Conversion mode (single/multi)
+- `-s, --sort`: Sort atoms by atomic number (ascending/descending)
+- `-e, --elements`: Custom element order
+- `-c, --constraints`: Atomic constraints
+- `-d, --separate-dirs`: Save frames in separate directories
+- `-f, --frames`: Frame selection
+- `-p, --parallel`: Use parallel processing
+- `-v, --version`: Show version information
+
+## Supported File Formats
+
+- VASP (POSCAR/CONTCAR)
+- CIF
+- XYZ
+- XSF
+- LAMMPS
+- And more...
+
+## Requirements
+
+- Python >= 3.8
+- ASE >= 3.22.0
+- NumPy >= 1.21.0
+- SciPy >= 1.7.0
+- Matplotlib >= 3.4.0
