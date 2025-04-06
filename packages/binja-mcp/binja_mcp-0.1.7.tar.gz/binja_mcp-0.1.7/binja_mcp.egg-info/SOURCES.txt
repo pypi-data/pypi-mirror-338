@@ -1,0 +1,9 @@
+README.md
+binja_mcp.py
+pyproject.toml
+binja_mcp.egg-info/PKG-INFO
+binja_mcp.egg-info/SOURCES.txt
+binja_mcp.egg-info/dependency_links.txt
+binja_mcp.egg-info/entry_points.txt
+binja_mcp.egg-info/requires.txt
+binja_mcp.egg-info/top_level.txt
