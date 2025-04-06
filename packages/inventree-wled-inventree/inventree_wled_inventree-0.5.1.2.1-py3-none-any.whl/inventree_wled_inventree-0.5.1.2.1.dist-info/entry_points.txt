@@ -1,0 +1,2 @@
+[inventree_plugins]
+inventree_wled_inventree = src.plugin:WledInventreePlugin
