@@ -1,0 +1,12 @@
+# git remote add origin git@github.com:ksatva/attentions.git
+
+/.*
+/!.gitignore
+/!updaterepo
+
+
+
+/.ipynb_checkpoints/
+/MEDCNN/models/__pycache__
+/MEDCNN/utils/__pycache__
+/traininglogs/*
