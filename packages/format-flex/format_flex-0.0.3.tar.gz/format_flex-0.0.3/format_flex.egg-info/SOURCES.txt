@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+format_flex/__init__.py
+format_flex/data_blob.py
+format_flex/generic.py
+format_flex/hierarchical.py
+format_flex/tabular.py
+format_flex.egg-info/PKG-INFO
+format_flex.egg-info/SOURCES.txt
+format_flex.egg-info/dependency_links.txt
+format_flex.egg-info/requires.txt
+format_flex.egg-info/top_level.txt
