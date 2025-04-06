@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+src/pystocknow/__init__.py
+src/pystocknow/sndata.py
+src/pystocknow/sninsights.py
+src/pystocknow.egg-info/PKG-INFO
+src/pystocknow.egg-info/SOURCES.txt
+src/pystocknow.egg-info/dependency_links.txt
+src/pystocknow.egg-info/top_level.txt
