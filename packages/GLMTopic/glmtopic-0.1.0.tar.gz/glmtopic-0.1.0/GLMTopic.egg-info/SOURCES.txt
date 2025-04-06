@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+GLMTopic/__init__.py
+GLMTopic.egg-info/PKG-INFO
+GLMTopic.egg-info/SOURCES.txt
+GLMTopic.egg-info/dependency_links.txt
+GLMTopic.egg-info/requires.txt
+GLMTopic.egg-info/top_level.txt
+GLMTopic/data/hit_stopwords.txt

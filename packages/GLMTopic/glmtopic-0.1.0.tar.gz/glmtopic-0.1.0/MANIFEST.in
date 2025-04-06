@@ -1,0 +1,2 @@
+include GLMTopic/data/hit_stopwords.txt
+recursive-include GLMTopic/data * 

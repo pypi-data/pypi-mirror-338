@@ -1,0 +1,276 @@
+Metadata-Version: 2.4
+Name: GLMTopic
+Version: 0.1.0
+Summary: Topic modeling with GLM embeddings
+Home-page: https://github.com/yourusername/GLMTopic
+Author: Junjie Chen, Wenqi Liao, Weisi Chen
+Author-email: example@example.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: torch
+Requires-Dist: scikit-learn
+Requires-Dist: sentence-transformers
+Requires-Dist: pandas
+Requires-Dist: tqdm
+Requires-Dist: umap-learn
+Requires-Dist: hdbscan
+Requires-Dist: zhipuai
+Requires-Dist: numpy
+Requires-Dist: plotly
+Requires-Dist: matplotlib
+Requires-Dist: jieba
+Requires-Dist: wordcloud
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: license-file
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+# GLMTopic
+
+GLMTopic is a Python package for topic modeling with GLM-based embeddings, providing powerful tools for text clustering, visualization, and analysis.
+
+*[中文文档](#glmtopic-中文文档)*
+
+## Features
+
+- Text embedding generation using ACGE (Advanced Chinese-English General Embedding)
+- UMAP-based dimensionality reduction for visualization
+- HDBSCAN clustering for topic identification
+- GLM-4 powered topic and keyword generation
+- Visualization tools: intertopic distance maps, hierarchical clustering dendrograms, and word clouds
+- Chinese language support with built-in stopwords
+
+## Installation
+
+```bash
+pip install GLMTopic
+```
+
+## API Key Setup
+
+GLMTopic uses ZhipuAI's GLM-4 for topic generation. You need to:
+
+1. Register at [智谱AI开放平台](https://bigmodel.cn/usercenter/apikeys)
+2. Create an API key in your user center
+3. Store your API key securely (do not expose it in your code)
+
+## Quick Start
+
+```python
+import pandas as pd
+from GLMTopic import analyze_text_clusters
+
+# Load your data
+df = pd.read_csv("your_data.csv")
+
+# Analyze text clusters with your API key
+processed_df, cluster_stats = analyze_text_clusters(
+    df=df,
+    api_key="YOUR_ZHIPUAI_API_KEY",  # Replace with your actual API key
+    text_column="text",
+    quiet=False
+)
+
+# Print cluster statistics
+print(cluster_stats)
+```
+
+## API Key Security
+
+For security, consider:
+- Using environment variables: `api_key=os.environ.get("ZHIPUAI_API_KEY")`
+- Using a config file outside version control
+- Using a secrets manager for production environments
+
+## Visualization
+
+```python
+from GLMTopic import generate_intertopic_map
+
+# Generate interactive topic map
+fig, _ = generate_intertopic_map(
+    df=cluster_stats,
+    topic_col="topic",
+    output_filename="topic_map.html"
+)
+
+# Display in notebook or save to file
+fig.write_html("topic_map.html")
+```
+
+## Advanced Features
+
+### Word Cloud Generation
+
+```python
+from GLMTopic import generate_topic_wordclouds
+
+# Generate word clouds for each topic
+wordclouds = generate_topic_wordclouds(
+    df=processed_df,
+    text_column="text",
+    topic_col="topic",
+    keywords_col="keywords"
+)
+
+# Display a specific topic's word cloud (in Jupyter notebook)
+import matplotlib.pyplot as plt
+plt.figure(figsize=(10, 8))
+plt.imshow(wordclouds["Your Topic Name"])
+plt.axis("off")
+plt.show()
+```
+
+### Hierarchical Clustering
+
+```python
+from GLMTopic import hierarchical_clustering_plot
+
+# Generate hierarchical clustering visualization
+fig = hierarchical_clustering_plot(
+    df=cluster_stats,
+    topic_col="topic",
+    count_col="count",
+    output_path="dendrogram.png"
+)
+```
+
+## Authors
+
+- Junjie Chen
+- Wenqi Liao
+- Weisi Chen
+
+## License
+
+MIT License
+
+---
+
+# GLMTopic 中文文档
+
+GLMTopic 是一个基于 GLM 嵌入的主题建模 Python 包，提供强大的文本聚类、可视化和分析工具。
+
+## 功能特点
+
+- 使用 ACGE (Advanced Chinese-English General Embedding) 生成文本嵌入
+- 基于 UMAP 的降维可视化
+- HDBSCAN 聚类进行主题识别
+- 由 GLM-4 驱动的主题和关键词生成
+- 可视化工具：主题间距离图、层次聚类树状图和词云
+- 中文支持，内置停用词
+
+## 安装方法
+
+```bash
+pip install GLMTopic
+```
+
+## API 密钥设置
+
+GLMTopic 使用智谱 AI 的 GLM-4 进行主题生成。您需要：
+
+1. 在[智谱AI开放平台](https://bigmodel.cn/usercenter/apikeys)注册账号
+2. 在用户中心创建 API 密钥
+3. 安全存储您的 API 密钥（不要在代码中直接暴露）
+
+## 快速开始
+
+```python
+import pandas as pd
+from GLMTopic import analyze_text_clusters
+
+# 加载您的数据
+df = pd.read_csv("your_data.csv")
+
+# 使用您的 API 密钥分析文本聚类
+processed_df, cluster_stats = analyze_text_clusters(
+    df=df,
+    api_key="您的智谱AI_API密钥",  # 替换为您的实际 API 密钥
+    text_column="text",
+    quiet=False
+)
+
+# 打印聚类统计信息
+print(cluster_stats)
+```
+
+## API 密钥安全
+
+为了安全考虑：
+- 使用环境变量：`api_key=os.environ.get("ZHIPUAI_API_KEY")`
+- 使用版本控制之外的配置文件
+- 在生产环境中使用密钥管理器
+
+## 可视化
+
+```python
+from GLMTopic import generate_intertopic_map
+
+# 生成交互式主题图
+fig, _ = generate_intertopic_map(
+    df=cluster_stats,
+    topic_col="topic",
+    output_filename="topic_map.html"
+)
+
+# 在笔记本中显示或保存为文件
+fig.write_html("topic_map.html")
+```
+
+## 高级功能
+
+### 词云生成
+
+```python
+from GLMTopic import generate_topic_wordclouds
+
+# 为每个主题生成词云
+wordclouds = generate_topic_wordclouds(
+    df=processed_df,
+    text_column="text",
+    topic_col="topic",
+    keywords_col="keywords"
+)
+
+# 显示特定主题的词云（在 Jupyter notebook 中）
+import matplotlib.pyplot as plt
+plt.figure(figsize=(10, 8))
+plt.imshow(wordclouds["您的主题名称"])
+plt.axis("off")
+plt.show()
+```
+
+### 层次聚类
+
+```python
+from GLMTopic import hierarchical_clustering_plot
+
+# 生成层次聚类可视化
+fig = hierarchical_clustering_plot(
+    df=cluster_stats,
+    topic_col="topic",
+    count_col="count",
+    output_path="dendrogram.png"
+)
+```
+
+## 作者
+
+- 陈俊杰 (Junjie Chen)
+- 廖文琦 (Wenqi Liao)
+- 陈维思 (Weisi Chen)
+
+## 许可证
+
+MIT 许可证 

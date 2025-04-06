@@ -1,0 +1,13 @@
+torch
+scikit-learn
+sentence-transformers
+pandas
+tqdm
+umap-learn
+hdbscan
+zhipuai
+numpy
+plotly
+matplotlib
+jieba
+wordcloud
