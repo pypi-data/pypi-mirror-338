@@ -1,0 +1,2 @@
+[console_scripts]
+mcp-server = mcp_server.bin.run_server:main
