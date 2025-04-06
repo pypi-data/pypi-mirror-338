@@ -1,0 +1,12 @@
+Metadata-Version: 2.3
+Name: poetry-common-demo
+Version: 0.1.1
+Summary: 
+Author: Jeremy Freiburger [I]
+Author-email: jfreiburger@tesla.com
+Requires-Python: >=3.13
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.13
+Description-Content-Type: text/markdown
+
+
