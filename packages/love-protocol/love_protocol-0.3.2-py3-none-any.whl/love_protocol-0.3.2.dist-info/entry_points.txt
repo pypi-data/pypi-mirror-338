@@ -1,0 +1,2 @@
+[console_scripts]
+love-validate = love_protocol.cli.validate:main
