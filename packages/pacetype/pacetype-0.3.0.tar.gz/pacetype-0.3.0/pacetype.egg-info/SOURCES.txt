@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+pacetype/__init__.py
+pacetype/pacetype.py
+pacetype.egg-info/PKG-INFO
+pacetype.egg-info/SOURCES.txt
+pacetype.egg-info/dependency_links.txt
+pacetype.egg-info/requires.txt
+pacetype.egg-info/top_level.txt
