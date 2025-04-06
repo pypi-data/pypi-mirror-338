@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+mansa/__init__.py
+mansa/linter.py
+mansa/logger.py
+mansa.egg-info/PKG-INFO
+mansa.egg-info/SOURCES.txt
+mansa.egg-info/dependency_links.txt
+mansa.egg-info/entry_points.txt
+mansa.egg-info/requires.txt
+mansa.egg-info/top_level.txt
+tests/test_linter.py
