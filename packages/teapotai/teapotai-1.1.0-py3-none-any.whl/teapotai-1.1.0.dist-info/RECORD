@@ -1,0 +1,9 @@
+teapotai/__init__.py,sha256=Nw28WhZwSPlyrLQIQJEku8rQclYvxfLsgIQlknX0PZM,47
+teapotai/teapotai.py,sha256=9hZyjjtYvZrwfwxWvex6vjh-E12vo92nZWyUxG4wnic,12481
+teapotai-1.1.0.dist-info/licenses/LICENSE,sha256=ZDk__TOWN0XTZ1wC_1DMzecUhPgGTWVYnPKZQaRYTvA,1070
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_teapotai.py,sha256=Hjzo-fs0atGVPgCSQvv4Ec2MIpzYHRLAReAOzYzIPZc,2730
+teapotai-1.1.0.dist-info/METADATA,sha256=o0_mINk-yu5O0p93Ctb17po4idWVEfCnoXJ_KgOUJCQ,12956
+teapotai-1.1.0.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+teapotai-1.1.0.dist-info/top_level.txt,sha256=UdjLTVTliC4WGQ9-3tdRiEgEB1RVU_lEpb7Jp9Er96g,15
+teapotai-1.1.0.dist-info/RECORD,,
