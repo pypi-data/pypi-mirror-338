@@ -1,0 +1,18 @@
+Metadata-Version: 2.4
+Name: logprocessor
+Version: 1.0.0.dev2
+Summary: A fully modular log metrics processor!
+Author-email: Ben Rogozinski <ben@benrogo.net>
+License-Expression: MIT
+Project-URL: Repository, https://github.com/Benrogo-Dev/Logprocessor
+Keywords: log,processor,modular
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: System :: Logging
+Classifier: Topic :: System :: Monitoring
+Classifier: Topic :: Utilities
+Requires-Python: >=3.12
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pytest>=7
+Dynamic: license-file
