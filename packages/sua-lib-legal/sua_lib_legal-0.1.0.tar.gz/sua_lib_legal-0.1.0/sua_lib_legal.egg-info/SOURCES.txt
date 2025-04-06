@@ -1,0 +1,9 @@
+README.md
+setup.py
+sua_lib_legal.egg-info/PKG-INFO
+sua_lib_legal.egg-info/SOURCES.txt
+sua_lib_legal.egg-info/dependency_links.txt
+sua_lib_legal.egg-info/top_level.txt
+teste_alyson89/__init__.py
+teste_alyson89/core.py
+tests/test_core.py
