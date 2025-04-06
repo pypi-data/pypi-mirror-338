@@ -1,0 +1,13 @@
+django_celery_boost/__init__.py,sha256=_njIflvqqRFAebW0tQIA2rzEZ4zWA0-8jL6WIJtASiQ,29
+django_celery_boost/admin.py,sha256=tDnDyzAflq7JrfC1nUj8D6G-kJMq3RarDPYfGE6DmrY,8106
+django_celery_boost/models.py,sha256=ZwYD1B5GakskqeUH7gYO7vTCOlievL3rk-i_mUEHcFs,16083
+django_celery_boost/signals.py,sha256=V5OOwndqa1OtSNOwgNteZwvUmSbE-1EGzITK5OZvjXU,177
+django_celery_boost/version.py,sha256=DhO-RAVJdQTjYPaMf0M6q_WAXdD6jcx2tWl_B9FtuhM,511
+django_celery_boost/templates/admin/celery_boost/change_form.html,sha256=aN43jp-NtQMD1fs5tbzqxpSSYYXcIG3rFCPCzg4b-EI,188
+django_celery_boost/templates/admin/celery_boost/inspect.html,sha256=bgFNGXEmOwx2WVu9uvNoIWuHzI1tnj1bviGtAgGnlWI,1518
+django_celery_boost/templates/admin/celery_boost/queue.html,sha256=OrFTZ5HcGeNdKC__fajq6diLpYWbwV8cB2Hnff3BIIQ,125
+django_celery_boost/templates/admin/celery_boost/terminate.html,sha256=OrFTZ5HcGeNdKC__fajq6diLpYWbwV8cB2Hnff3BIIQ,125
+django_celery_boost-0.6.2.dist-info/METADATA,sha256=T39w_rshlZ1E9Gh70MNrKknaS6Y0DYU_j-PI6qiiwvs,2389
+django_celery_boost-0.6.2.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+django_celery_boost-0.6.2.dist-info/licenses/LICENSE,sha256=2FCXIllXd7TKfK11gHcP8ZVkh_lVyty1dMtkbVRTl0s,1063
+django_celery_boost-0.6.2.dist-info/RECORD,,
