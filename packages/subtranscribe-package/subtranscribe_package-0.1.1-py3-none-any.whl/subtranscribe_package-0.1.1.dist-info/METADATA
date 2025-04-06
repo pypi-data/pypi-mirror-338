@@ -1,0 +1,11 @@
+Metadata-Version: 2.4
+Name: subtranscribe_package
+Version: 0.1.1
+Summary: A simple test package
+Author: Adel Mahmoud
+Author-email: adelam578568@gmail.com
+License-File: LICENSE
+Dynamic: author
+Dynamic: author-email
+Dynamic: license-file
+Dynamic: summary
