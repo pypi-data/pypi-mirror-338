@@ -1,0 +1,2 @@
+[console_scripts]
+codecriticAI = codecriticAI.main:main
