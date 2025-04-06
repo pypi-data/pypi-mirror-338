@@ -1,0 +1,20 @@
+Metadata-Version: 2.4
+Name: MEDCNN
+Version: 0.0.1
+Summary: Multiresolution Encoder-Decoder Convolutional Neural Network (MEDCNN) without attentions
+Project-URL: Homepage, https://github.com/kkt-ee/MEDCNN
+Project-URL: Issues, https://github.com/kkt-ee/MEDCNN/issues
+Author-email: Kishore Kumar Tarafdar <kishorektarafdar@gmail.com>
+License-Expression: GPL-3.0-or-later
+License-File: LICENSE
+Classifier: Intended Audience :: Science/Research
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Scientific/Engineering
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+
+# MEDCNN: Multiresolution Encoder-Decoder Convolutional Neural Network 
+
+  - This MEDCNN version is without attentions in the decoder
+  - Full paper with attentions: https://doi.org/10.1109/ICASSP49660.2025.10890832
