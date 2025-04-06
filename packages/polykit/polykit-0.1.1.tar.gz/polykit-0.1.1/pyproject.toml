@@ -1,0 +1,43 @@
+[project]
+name = "polykit"
+version = "0.1.1"
+description = "Python toolkit"
+authors = [{ name = "Danny Stewart", email = "danny@stewart.cc" }]
+readme = "README.md"
+license = "MIT"
+license-files = ["LICENSE"]
+requires-python = ">=3.12"
+dependencies = [
+    "halo (>=0.0.31)",
+    "logician (>=0.3.3)",
+    "packaging (>=24.2)",
+    "python-dateutil (>=2.9.0.post0,<3.0.0)",
+    "requests (>=2.32.3)",
+    "tzlocal (>=5.3.1)",
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Software Development :: Libraries",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: System :: Shells",
+    "Topic :: System :: System Shells",
+    "Topic :: Utilities",
+]
+
+[tool.poetry.group.dev.dependencies]
+mypy = ">=1.15.0"
+pdoc = ">=15.0.1"
+pre-commit = ">=4.2.0"
+ruff = ">=0.11.4"
+enviromancer = { path = "../enviromancer", develop = true }
+logician = { path = "../logician", develop = true }
+walking-man = { path = "../walking-man", develop = true }
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
