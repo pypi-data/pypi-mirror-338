@@ -1,0 +1,24 @@
+[project]
+name = "pdfbaker"
+version = "0.1.0"
+description = "Dummy package getting filled soon"
+authors = [
+    { name = "Danny W. Adair", email = "danny.adair@unfold.nz" }
+]
+dependencies = []
+readme = "README.md"
+requires-python = ">= 3.8"
+
+[build-system]
+requires = ["hatchling==1.26.3"]  # https://github.com/astral-sh/rye/issues/1446
+build-backend = "hatchling.build"
+
+[tool.rye]
+managed = true
+dev-dependencies = []
+
+[tool.hatch.metadata]
+allow-direct-references = true
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/pdfbaker"]
