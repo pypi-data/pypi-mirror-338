@@ -1,0 +1,2 @@
+[console_scripts]
+llama = llama_cli.main:main
