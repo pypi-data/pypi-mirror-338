@@ -1,0 +1,108 @@
+[tool.poetry]
+name = "eocube"
+version = "0.0.1"
+description = "Support tool and library for EOCube.Ro"
+license = "Apache-2.0"
+authors = [
+    "Marian Neagul <marian.neagul@e-uvt.ro>"
+]
+
+[tool.poetry.dependencies]
+python = "^3.10"  # Specify the compatible Python version
+click = "*"
+requests = "*"
+python-dateutil = "*"
+s3fs = "*"
+fsspec = "*"
+pystac = "*"
+pystac-client = "*"
+python-i18n = "*"
+
+[tool.poetry.extras]
+auth = ["authlib"]
+cli = ["keyring", "authlib", "flask"]
+raster = ["numpy", "rasterio", "xarray"]
+cube = ["numpy", "rasterio", "xarray", "authlib", "dask"]
+services = ["owslib", "geopandas"]
+dev = ["black", "pip-tools", "pip-audit", "safety", "pip-licenses"]
+
+[tool.poetry.scripts]
+eocube = "eocube.cli.main:cli"
+
+[build-system]
+requires = ["poetry-core>=1.1.0"]
+build-backend = "poetry.core.masonry.api"
+
+
+#[project]
+#name = "eocube"
+#version = "0.0.1"
+#license = {text = "Apache-2.0"}
+#
+#dependencies = [
+#    "click",
+#    "requests",
+#    "python-dateutil",
+#    "s3fs",
+#    "fsspec",
+#    "pystac",
+#    "pystac-client",
+#    "python-i18n"
+#]
+#
+#[project.optional-dependencies]
+#auth = [
+#    "authlib",
+#]
+#
+#cli = [
+#    "keyring",
+#    "authlib",
+#    "flask"
+#]
+#
+#raster = [
+#    "numpy",
+#    "rasterio",
+#    "xarray"
+#]
+#
+#cube = [
+#    "numpy",
+#    "rasterio",
+#    "xarray",
+#    "authlib",
+#    "dask[distributed]"
+#]
+#
+#services = [
+#    "owslib",
+#    "geopandas"
+#]
+#
+#dev = [
+#    "black",
+#    "pip-tools",
+#    "pip-audit",
+#    "safety",
+#    "pip-licenses"
+#]
+#
+#[project.scripts]
+#eocube = "eocube.cli.main:cli"
+#
+#[tool.black]
+#line-length = 88
+#target-version = ['py310']
+#exclude = '''
+#/(
+#    \.git
+#  | \.tox
+#  | \.venv
+#  | _build
+#  | dist
+#  | venv
+#)/
+#'''
+#
+#
