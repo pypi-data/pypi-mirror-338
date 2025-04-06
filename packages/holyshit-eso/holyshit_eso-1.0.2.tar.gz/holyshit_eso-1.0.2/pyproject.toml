@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "holyshit_eso"
+version = "1.0.2"
+description = "An terribly written esolang inspired by BrainF*ck"
+readme = "README.md"
+authors = [{ name = "BravestCheetah", email = "bravestcheetah@gmail.com" }]
+license = { file = "LICENSE" }
+dependencies = [
+    "termcolor"
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent"
+]
+requires-python = ">=3.7"
+
+[tool.setuptools]
+packages = ["holyshit_eso"]  # Make sure your folder is named exactly this
+
+[project.urls]
+"Homepage" = "https://github.com/BravestCheetah/holyshit-esolang"
+"Bug Tracker" = "https://github.com/BravestCheetah/holyshit-esolang/issues"
+
