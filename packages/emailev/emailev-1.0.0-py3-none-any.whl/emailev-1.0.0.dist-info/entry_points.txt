@@ -1,0 +1,2 @@
+[console_scripts]
+emailev = emailev_tool.main:main
