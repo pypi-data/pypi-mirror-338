@@ -1,0 +1,2 @@
+[console_scripts]
+markdone = markdone.__main__:main

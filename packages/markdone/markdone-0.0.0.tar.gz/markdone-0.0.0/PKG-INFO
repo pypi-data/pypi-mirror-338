@@ -1,0 +1,27 @@
+Metadata-Version: 2.4
+Name: markdone
+Version: 0.0.0
+Summary: cli tool to freeze your markdown document
+License-Expression: GPL-3.0-or-later
+Project-URL: Homepage, https://github.com/utility-library/markdone
+Project-URL: Source, https://github.com/utility-library/markdone
+Project-URL: Bug Tracker, https://github.com/utility-library/markdone/issues
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Classifier: Programming Language :: Python :: 3.14
+Classifier: Typing :: Typed
+Requires-Python: >3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Dynamic: license-file
+
+# markdone
+cli tool to freeze your markdown document
