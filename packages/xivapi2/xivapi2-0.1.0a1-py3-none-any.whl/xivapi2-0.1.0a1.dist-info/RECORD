@@ -1,0 +1,10 @@
+xivapi2/__init__.py,sha256=3BfqIC1xtLr_Lo811QLS5H0poWy0hnPzLsQQBD9ZgwA,219
+xivapi2/client.py,sha256=HD8t8Xwht7yfCrubYl2K55B0eu36L1AUm9oy1asDujA,14426
+xivapi2/errors.py,sha256=n20-0Lydav7zukadppSbX5P1tJRZUSU36AexcbKVhZs,650
+xivapi2/models.py,sha256=t3SCDENBX73p_oCzkGiA5ALebnJ6vAZ9jMiuf03JGyo,2909
+xivapi2/query.py,sha256=Y5zYOa2W469fT5F4cpP-f-3DMgoOemwhs9zUiwZmZKY,9782
+xivapi2/utils.py,sha256=-s2B8xkA5lgAnSaAqpidTfjv8Y__41QP4Dh0nfl4q5o,2251
+xivapi2-0.1.0a1.dist-info/METADATA,sha256=ynau0h8Hy9RHmi6NfzvivtPXiPpY-pbhjtJlzhYkB7A,3342
+xivapi2-0.1.0a1.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+xivapi2-0.1.0a1.dist-info/licenses/LICENSE,sha256=-C6_VxCdqCwdlsSetmbKx8B8WBkysA7WLtw7uGrxUr0,1063
+xivapi2-0.1.0a1.dist-info/RECORD,,
