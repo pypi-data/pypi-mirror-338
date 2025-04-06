@@ -1,0 +1,4 @@
+[console_scripts]
+generate-catalog = cryoforge.generatebulk:generate_stac_catalog
+ingest = cryoforge.ingestitem:ingest_stac
+metagen = cryoforge.generate:main
