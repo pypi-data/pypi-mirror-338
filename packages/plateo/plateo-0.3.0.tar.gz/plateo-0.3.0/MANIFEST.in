@@ -1,0 +1,3 @@
+include *.txt
+recursive-include plateo/exporters/reports/templates *
+include *.rst
