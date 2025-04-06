@@ -1,0 +1,10 @@
+webview/_dummy_holder.c,sha256=zPhRZTUzc9MmPsOrjCZlHAZlD4LqJS103Hu2hIt9DyA,154911
+webview/_webview_ffi.py,sha256=oWmL9lv9Qhpg24loH-1dRfqg0J2Rvl9T8B5rq2X2ixw,6315
+webview/__init__.py,sha256=OwV3Wcw8iCxQaOMMQLfaNiF81iF_jTdZSSt-KbEvJ-A,45
+webview/_dummy_holder.cpython-310-aarch64-linux-gnu.so,sha256=P6eoCGp85tZAO9wDBLAC9mZrHS9kw9cF93REpHGBIy0,121128
+webview/webview.py,sha256=oUNggsp8ZkkLpySQlCMw9C8raisHzPoOV2Lj3kSr_2k,3637
+webview_python-1.1.0.dist-info/WHEEL,sha256=5iX_YAPDTADha4CDUHB0eAk9BrghiUq7yn35UPQsciU,153
+webview_python-1.1.0.dist-info/RECORD,,
+webview_python-1.1.0.dist-info/top_level.txt,sha256=d5SpaV1yBkWk3tar-VrEOX-bBM9jXPlVdVNpN5FQrxA,8
+webview_python-1.1.0.dist-info/METADATA,sha256=myosq571C_cSyZjQsGM1I0i26DdmZyUhbvfZ_PsQRb8,13858
+webview_python-1.1.0.dist-info/licenses/LICENSE,sha256=I4hXdAjGE4JH-VoHpo4KKCdxNskzk_ECEhBjwP70xSU,1084
