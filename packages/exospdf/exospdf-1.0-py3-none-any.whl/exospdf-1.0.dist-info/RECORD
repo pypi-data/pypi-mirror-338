@@ -1,0 +1,8 @@
+exospdf/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+exospdf/pdf2image.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+exospdf/pdf2text.py,sha256=p9X905KIHmvqUAopyZ-h0h56MmCFBDgcSA6TQPVVA1I,38
+exospdf-1.0.dist-info/licenses/LICENSE,sha256=gcuuhKKc5-dwvyvHsXjlC9oM6N5gZ6umYbC8ewW1Yvg,35821
+exospdf-1.0.dist-info/METADATA,sha256=CyaiMQAVGAWTeuM0EQRY3rEcAABpRKyPoiqeTHGaBvA,160
+exospdf-1.0.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+exospdf-1.0.dist-info/top_level.txt,sha256=cNGTyxWVTO6zDkkghXPginbKGLQBuKLI66YpShIWaYU,8
+exospdf-1.0.dist-info/RECORD,,
