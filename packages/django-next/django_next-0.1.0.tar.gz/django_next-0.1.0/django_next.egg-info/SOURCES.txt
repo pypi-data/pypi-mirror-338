@@ -1,0 +1,7 @@
+README.md
+pyproject.toml
+django_next.egg-info/PKG-INFO
+django_next.egg-info/SOURCES.txt
+django_next.egg-info/dependency_links.txt
+django_next.egg-info/top_level.txt
+next/__init__.py
