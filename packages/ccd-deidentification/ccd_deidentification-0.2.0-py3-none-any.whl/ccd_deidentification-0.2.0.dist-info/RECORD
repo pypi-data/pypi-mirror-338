@@ -1,0 +1,10 @@
+ccd_deidentification/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ccd_deidentification/deidentifier.py,sha256=2lUQgFu_yukpwaT4lNgeL28Uq4-20GQcrTKAYv1eZ5k,11787
+ccd_deidentification/main.py,sha256=2pDw1tRTLDg6JA3bNLokymhAo49yewM7aalz5xI0oWY,465
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_deidentifier.py,sha256=Km3QmQSwJgMN32qfh_9uIAcqCIMbSMWfG9HWZGNb7uQ,3031
+ccd_deidentification-0.2.0.dist-info/METADATA,sha256=zkzAGPe7Vr-q0jv3cGaXjFiQn7P0JHq95WQLamyT-nQ,2183
+ccd_deidentification-0.2.0.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+ccd_deidentification-0.2.0.dist-info/entry_points.txt,sha256=VhzhZVQXzU0zM1SAGlUeevLfFU3J_8XVd7_nugcMcPI,60
+ccd_deidentification-0.2.0.dist-info/top_level.txt,sha256=iFqzdNH7f7o0K_6uNvz2cvOiECT8kqxDufo3vGlnOqU,27
+ccd_deidentification-0.2.0.dist-info/RECORD,,
