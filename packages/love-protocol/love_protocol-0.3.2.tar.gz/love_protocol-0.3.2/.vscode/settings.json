@@ -1,0 +1,11 @@
+{
+  "python.analysis.extraPaths": [
+    "./love_protocol"
+  ],
+  "python.defaultInterpreterPath": ".venv/bin/python",
+  "python.linting.enabled": true,
+  "python.linting.pylintEnabled": false,
+  "python.linting.ruffEnabled": true,
+  "python.testing.pytestEnabled": true,
+  "python.testing.unittestEnabled": false
+}

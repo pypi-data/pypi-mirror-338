@@ -1,0 +1,12 @@
+{
+    "protocol": "LOVE/1.0",
+    "type": "HELLO",
+    "device_id": "test-device",
+    "timestamp": 1234567890.0,
+    "capabilities": {
+      "mic": true,
+      "speaker": true,
+      "wakeword": false,
+      "tts": true
+    }
+  }
