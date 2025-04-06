@@ -1,0 +1,9 @@
+dockerpyze/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dockerpyze/builder.py,sha256=3OpfoB2H4rQPvOGOSv2qsRr1cj26Ez2DU2pbXLLLSv8,19784
+dockerpyze/poetry_plugin.py,sha256=tp4l4FMcaOgFG7y92SBtc7oB9iHwpi5KFmWSw4COdTg,1201
+dockerpyze-2.0.4.dist-info/licenses/LICENSE,sha256=RioFxXGwArtEQ9MsoH7stvtWbwBmOj0CsfyyEaGEgZk,1071
+dockerpyze-2.0.4.dist-info/METADATA,sha256=QwhKwJ5efluWaV4NqG10--t5ks5ZpOdTJYW5m5Yooqs,8846
+dockerpyze-2.0.4.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+dockerpyze-2.0.4.dist-info/entry_points.txt,sha256=03xoi-3D2gFM0j2VaB8Vzp_-pnuFOCaWD9XN1w2T87A,61
+dockerpyze-2.0.4.dist-info/top_level.txt,sha256=T16BGNXqZwzG5hE7h-5oBGtChGDctFvwOdy_V5bLwBo,11
+dockerpyze-2.0.4.dist-info/RECORD,,
