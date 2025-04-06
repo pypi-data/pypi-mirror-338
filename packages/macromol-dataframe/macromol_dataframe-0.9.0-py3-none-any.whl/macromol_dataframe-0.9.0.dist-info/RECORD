@@ -1,0 +1,12 @@
+macromol_dataframe/__init__.py,sha256=U_mVUBAAHVdCGd15zKh5b52PC8CnxjD0E9Y87giB_FU,223
+macromol_dataframe/atoms.py,sha256=E08E_SV0sOeIyaqPOx2rPjxOSq2uonwvUKpo3m3vr7U,2436
+macromol_dataframe/coords.py,sha256=z1Mia3gnHQF5fiHlecOjgWxw3hxME-ttC9Ye8FBQjV0,5214
+macromol_dataframe/error.py,sha256=1Hi5_igcy9YFTNmayEswGYtUuVRwDILlh2jw_fldX9w,953
+macromol_dataframe/mmcif.py,sha256=HhQioNUVkYMuUz8xBt0HJWcovaIiyqXDUdmMDuJyHtY,22479
+macromol_dataframe/pymol.py,sha256=cjY4LQFFY9psVWbZ0otiNThln5C9UPZDNDWjSKvrGMw,1017
+macromol_dataframe/residues.py,sha256=KG5hN8c_zZn0oAY0Njp1Tb-rWgZyjtBi6JV72VMRujA,4501
+macromol_dataframe/testing.py,sha256=F6mks4CGN-xGYRCXC7TV0eCF2-ftCSMc4yX1k5DjL7s,7120
+macromol_dataframe-0.9.0.dist-info/licenses/LICENSE.txt,sha256=XClwVjD0rW2RQli-JTtGCe3V1_MApGY6gMQ6iTZBeN0,1079
+macromol_dataframe-0.9.0.dist-info/WHEEL,sha256=G2gURzTEtmeR8nrdXUJfNiB3VYVxigPQ-bEQujpNiNs,82
+macromol_dataframe-0.9.0.dist-info/METADATA,sha256=pnd_ahqAeagSIw8iTn1XFHHVGu9aumJPW0bfqP1GrOA,5211
+macromol_dataframe-0.9.0.dist-info/RECORD,,
