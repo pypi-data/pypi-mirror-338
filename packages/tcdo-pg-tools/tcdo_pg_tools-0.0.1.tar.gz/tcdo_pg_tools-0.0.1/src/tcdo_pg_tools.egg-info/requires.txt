@@ -1,0 +1,11 @@
+sphinx
+sphinx-click
+pandas
+numpy
+click
+
+[dev]
+coverage
+mypy
+pytest
+ruff
