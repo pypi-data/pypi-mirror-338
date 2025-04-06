@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+exospdf/__init__.py
+exospdf/pdf2image.py
+exospdf/pdf2text.py
+exospdf.egg-info/PKG-INFO
+exospdf.egg-info/SOURCES.txt
+exospdf.egg-info/dependency_links.txt
+exospdf.egg-info/top_level.txt
