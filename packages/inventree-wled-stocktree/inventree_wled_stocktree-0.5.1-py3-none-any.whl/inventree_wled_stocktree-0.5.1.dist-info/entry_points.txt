@@ -1,0 +1,2 @@
+[inventree_plugins]
+plugin = inventree_wled_locator:WledInventreePlugin
