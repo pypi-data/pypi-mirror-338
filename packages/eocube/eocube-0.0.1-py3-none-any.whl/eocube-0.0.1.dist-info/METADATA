@@ -1,0 +1,28 @@
+Metadata-Version: 2.3
+Name: eocube
+Version: 0.0.1
+Summary: Support tool and library for EOCube.Ro
+License: Apache-2.0
+Author: Marian Neagul
+Author-email: marian.neagul@e-uvt.ro
+Requires-Python: >=3.10,<4.0
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Provides-Extra: auth
+Provides-Extra: cli
+Provides-Extra: cube
+Provides-Extra: dev
+Provides-Extra: raster
+Provides-Extra: services
+Requires-Dist: click
+Requires-Dist: fsspec
+Requires-Dist: pystac
+Requires-Dist: pystac-client
+Requires-Dist: python-dateutil
+Requires-Dist: python-i18n
+Requires-Dist: requests
+Requires-Dist: s3fs
