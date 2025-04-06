@@ -1,0 +1,10 @@
+loguru>=0.7.3
+pillow>=11.1.0
+pyautogui>=0.9.54
+typer>=0.15.2
+
+[dev]
+pytest>=8.3.5
+pytest-cov>=4.1.0
+black>=24.2.0
+isort>=5.13.2

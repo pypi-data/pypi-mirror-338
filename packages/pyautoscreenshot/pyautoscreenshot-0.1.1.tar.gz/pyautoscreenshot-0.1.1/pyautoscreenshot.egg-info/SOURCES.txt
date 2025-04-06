@@ -1,0 +1,12 @@
+README.md
+pyproject.toml
+pyautoscreenshot/__init__.py
+pyautoscreenshot/__main__.py
+pyautoscreenshot/main.py
+pyautoscreenshot.egg-info/PKG-INFO
+pyautoscreenshot.egg-info/SOURCES.txt
+pyautoscreenshot.egg-info/dependency_links.txt
+pyautoscreenshot.egg-info/entry_points.txt
+pyautoscreenshot.egg-info/requires.txt
+pyautoscreenshot.egg-info/top_level.txt
+tests/test_main.py
