@@ -1,0 +1,7 @@
+PandoraCore/RAG/parser.py,sha256=EPS6CTl65yPOuVmBY3h5CutB430tApxSlj68FoL_LLU,8530
+PandoraCore/STT/whisper.py,sha256=tOk7QSlIQYmFn37aHf6GN_pjAwkKNw7B5LGcb6ykcGw,2332
+PandoraCore/TTS/KokoroWrap.py,sha256=N5hg0S2BH9s_GBVTXllUd-Lv3Fz2Hza5O_-TlQAcsvU,859
+pandoracore-0.0.1.dist-info/METADATA,sha256=RIiYaDOXsUpwabDJIidUchAvao0d0JaUko2rA0Sa0wY,193
+pandoracore-0.0.1.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+pandoracore-0.0.1.dist-info/top_level.txt,sha256=o71vk851CBpGGppWoG5B9DqK47ynvaufI9fD5ZJmXnE,12
+pandoracore-0.0.1.dist-info/RECORD,,
