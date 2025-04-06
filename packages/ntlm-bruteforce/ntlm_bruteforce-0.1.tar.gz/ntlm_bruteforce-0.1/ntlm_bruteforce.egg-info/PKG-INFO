@@ -1,0 +1,54 @@
+Metadata-Version: 2.2
+Name: ntlm_bruteforce
+Version: 0.1
+Summary: Librairie Python pour bruteforce NTLM hash
+Home-page: https://github.com/noloxoyt/ntlm_bruteforce
+Author: Noloxoyt
+Author-email: noloxoyt@hotmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: requires-python
+Dynamic: summary
+
+# NTLM Bruteforce
+
+Une librairie Python pour rÃ©cupÃ©rer et brute-forcer un hash NTLM Ã  partir des fichiers SAM et SYSTEM.
+
+## Installation
+
+Pour installer la librairie, utilisez la commande suivante :
+pip install ntml_bruteforce
+
+## Exemple d'utilisation
+
+```python
+from ntlm_bruteforce import NTLMBruteforcer
+
+bruteforcer = NTLMBruteforcer(
+    sam_path="C:/Windows/System32/config/SAM",
+    system_path="C:/Windows/System32/config/SYSTEM",
+    charset="azerty123",
+    min_len=1,
+    max_len=5
+)
+bruteforcer.run()
+
+
+---
+
+### 3. Construire et publier sur PyPI (optionnel)
+
+Si tu veux publier sur **PyPI**, tu peux utiliser ces commandes pour construire et uploader ton package.
+
+#### Installer les outils nÃ©cessaires :
+```bash
+pip install setuptools wheel twine
