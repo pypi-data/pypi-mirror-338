@@ -1,0 +1,31 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "wasaclip"
+version = "0.2.0"
+authors = [
+    { name = "Jan Zatloukal", email = "zatloukal.jan@gmail.com" },
+]
+description = "Sharp like wasabi, fast like a ninja — your clipboard’s secret weapon! WasaClip takes your clipboard entries and gives them a spicy refresh! Trim, replace, reformat, or clean up text with lightning speed."
+readme = "README.md"
+requires-python = ">=3.11"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: Apache Software License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "colorama>=0.4.6",
+    "pyperclip>=1.9.0",
+]
+
+[project.scripts]
+wasaclip = "wasaclip.main:main"
+
+[project.urls]
+"Homepage" = "https://github.com/rotten77/wasaclip"
+"Bug Tracker" = "https://github.com/rotten77/wasaclip/issues"
+"Documentation" = "https://github.com/rotten77/wasaclip"
+"Examples" = "https://github.com/rotten77/wasaclip/tree/main/examples"
