@@ -1,0 +1,19 @@
+include LICENSE
+include README.md
+include CHANGES.md
+include SECURITY.md
+include CODE_OF_CONDUCT.md
+include pyproject.toml
+include Makefile
+
+recursive-include src/llamamlx_embeddings *.py
+recursive-include tests *.py
+recursive-include docs *.md *.rst *.png *.jpg *.jpeg *.svg *.gif
+recursive-include examples *.py *.md *.ipynb
+recursive-include benchmarks *.json *.png
+
+global-exclude *.pyc
+global-exclude *.pyo
+global-exclude __pycache__
+global-exclude .DS_Store
+global-exclude .git* 

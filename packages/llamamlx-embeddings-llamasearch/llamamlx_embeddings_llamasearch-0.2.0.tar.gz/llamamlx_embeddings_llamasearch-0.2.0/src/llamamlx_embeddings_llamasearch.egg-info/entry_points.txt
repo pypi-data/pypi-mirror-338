@@ -1,0 +1,2 @@
+[console_scripts]
+llamamlx-embeddings = llamamlx_embeddings.cli:main

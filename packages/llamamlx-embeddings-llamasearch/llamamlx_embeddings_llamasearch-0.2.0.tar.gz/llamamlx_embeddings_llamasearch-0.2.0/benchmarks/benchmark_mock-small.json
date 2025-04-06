@@ -1,0 +1,71 @@
+{
+  "model_id": "mock-small",
+  "embedding_size": 384,
+  "batch_sizes": [
+    1,
+    4,
+    16
+  ],
+  "text_lengths": [
+    128,
+    512
+  ],
+  "n_samples": 3,
+  "warmup_iterations": 1,
+  "measurements": [
+    {
+      "text_length": 128,
+      "batch_size": 1,
+      "avg_time_seconds": 8.598963419596355e-05,
+      "std_time_seconds": 3.0241485580508628e-06,
+      "min_time_seconds": 8.296966552734375e-05,
+      "max_time_seconds": 9.012222290039062e-05,
+      "throughput_texts_per_second": 11629.308687615527
+    },
+    {
+      "text_length": 128,
+      "batch_size": 4,
+      "avg_time_seconds": 0.0003170172373453776,
+      "std_time_seconds": 4.270880649103929e-06,
+      "min_time_seconds": 0.0003139972686767578,
+      "max_time_seconds": 0.0003230571746826172,
+      "throughput_texts_per_second": 12617.610428678867
+    },
+    {
+      "text_length": 128,
+      "batch_size": 16,
+      "avg_time_seconds": 0.0013866424560546875,
+      "std_time_seconds": 8.373913091429747e-05,
+      "min_time_seconds": 0.001322031021118164,
+      "max_time_seconds": 0.0015048980712890625,
+      "throughput_texts_per_second": 11538.662998624484
+    },
+    {
+      "text_length": 512,
+      "batch_size": 1,
+      "avg_time_seconds": 9.965896606445312e-05,
+      "std_time_seconds": 1.2581334337861918e-05,
+      "min_time_seconds": 8.702278137207031e-05,
+      "max_time_seconds": 0.00011682510375976562,
+      "throughput_texts_per_second": 10034.22009569378
+    },
+    {
+      "text_length": 512,
+      "batch_size": 4,
+      "avg_time_seconds": 0.0003276666005452474,
+      "std_time_seconds": 2.063235439578242e-06,
+      "min_time_seconds": 0.0003249645233154297,
+      "max_time_seconds": 0.0003299713134765625,
+      "throughput_texts_per_second": 12207.530439000728
+    },
+    {
+      "text_length": 512,
+      "batch_size": 16,
+      "avg_time_seconds": 0.0015306472778320312,
+      "std_time_seconds": 5.3560226585052e-06,
+      "min_time_seconds": 0.0015239715576171875,
+      "max_time_seconds": 0.0015370845794677734,
+      "throughput_texts_per_second": 10453.094080996885
+    }
+  ]
+}
