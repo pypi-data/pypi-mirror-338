@@ -1,0 +1,2 @@
+[console_scripts]
+pie = pie.scripts.group:pie_cli
