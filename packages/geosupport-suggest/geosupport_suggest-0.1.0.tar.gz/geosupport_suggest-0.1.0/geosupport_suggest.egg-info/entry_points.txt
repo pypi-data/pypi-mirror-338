@@ -1,0 +1,2 @@
+[console_scripts]
+geosupport-suggest = suggest.cli:main

@@ -1,0 +1,15 @@
+python-geosupport>=1.1.0
+nyc-parser>=0.1.0
+
+[dev]
+pytest
+pytest-cov
+black
+
+[docs]
+sphinx>=4.0.0
+sphinx_rtd_theme>=1.0.0
+
+[test]
+pytest
+pytest-cov
