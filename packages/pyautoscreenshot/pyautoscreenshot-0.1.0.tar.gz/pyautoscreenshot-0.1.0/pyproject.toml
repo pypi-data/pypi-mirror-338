@@ -1,0 +1,39 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pyautoscreenshot"
+version = "0.1.0"
+description = "Fast save screenshots every x seconds for workspace"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "loguru>=0.7.3",
+    "pillow>=11.1.0",
+    "pyautogui>=0.9.54",
+    "typer>=0.15.2",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.3.5",
+    "pytest-cov>=4.1.0",
+    "black>=24.2.0",
+    "isort>=5.13.2",
+]
+
+[project.scripts]
+pyautoscreenshot = "pyautoscreenshot.main:app"
+
+[project.urls]
+Homepage = "https://github.com/fxyz/pyautoscreenshot"
+Issues = "https://github.com/fxyz/pyautoscreenshot/issues"
+
+[tool.setuptools]
+packages = ["pyautoscreenshot"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+addopts = "-v --cov=pyautoscreenshot"

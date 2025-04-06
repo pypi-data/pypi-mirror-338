@@ -1,0 +1,2 @@
+[console_scripts]
+pyautoscreenshot = pyautoscreenshot.main:app
