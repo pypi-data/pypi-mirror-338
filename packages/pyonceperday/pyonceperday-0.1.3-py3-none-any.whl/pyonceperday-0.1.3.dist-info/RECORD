@@ -1,0 +1,9 @@
+pyonceperday/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pyonceperday/events.py,sha256=TnX8sZQFb9iAZBnPVgb5Xvnm_5CaZgf-RGlPQJ8HpCE,3653
+pyonceperday/exceptions.py,sha256=uWHgWD0tGJ1w_jA43hyhobFLaqbtNhJ0ycasNPwr2KY,85
+pyonceperday/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pyonceperday/tests/test_events.py,sha256=J16zrfXL6GGd1p6XQiI9RhDiNMcH3rJM_cCAgoEiVMA,4988
+pyonceperday-0.1.3.dist-info/METADATA,sha256=nA3DXS2UBvZgBKN6ZV85I4f35SPnsHiOtrTvDyOVlEk,209
+pyonceperday-0.1.3.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+pyonceperday-0.1.3.dist-info/top_level.txt,sha256=KT8mbbhankk2qpqLNJfpm3E62N7qgt_QEIWj5W6Q-_0,13
+pyonceperday-0.1.3.dist-info/RECORD,,
