@@ -1,0 +1,11 @@
+Metadata-Version: 2.4
+Name: character-extractor
+Version: 0.1.1
+Summary: An MCP server to extract and analyze story characters from text or PDF files
+Author-email: Akash Shivling Savalgi <asavalgi9@gmail.com>
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Requires-Dist: mcp[cli]>=1.6.0
+Requires-Dist: pypdf2>=3.0.1
+Requires-Dist: requests
+Requires-Dist: uv
