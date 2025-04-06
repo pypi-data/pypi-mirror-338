@@ -1,0 +1,198 @@
+# usernook
+
+[![PyPI version](https://badge.fury.io/py/usernook.svg)](https://badge.fury.io/py/usernook)
+
+**usernook** is a lightweight Python library that simplifies user data and settings management for your applications. It provides a consistent, reliable way to store configuration, user preferences, and application data without worrying about path handling, file operations, or settings persistence.
+
+## Features
+
+- **Zero Configuration**: Automatically uses `.nook` in the user's home directory if no path is specified
+- **Simple Settings API**: Store and retrieve settings with a clean, intuitive interface
+- **Nested Settings Support**: Organize settings hierarchically with nested keys
+- **Path Safety**: Built-in path validation to prevent common mistakes and security issues
+- **File Management**: Easily search, find, and manage user data files
+- **Context Manager Support**: Clean resource handling with Python's `with` statement
+- **Cross-Platform**: Works on Windows, macOS, and Linux
+
+## Why usernook?
+
+Many applications need to store user preferences, cache data, or maintain configuration files. UserNook handles all the common challenges:
+
+- Where to store the data (platform-specific user directories)
+- How to organize settings (nested JSON with defaults)
+- File operation safety (path validation and error handling)
+- Directory structure management
+
+## Installation
+
+```bash
+pip install usernook
+```
+
+## Quick Start
+
+### Basic Settings Usage
+
+```python
+from usernook import Nook
+
+# Create a nook with default location (~/.nook)
+with Nook() as nook:
+    # Store a simple setting
+    nook.set_setting("username", "Alice")
+    
+    # Retrieve the setting (with optional default)
+    username = nook.get_setting("username", default_value="Guest")
+    print(f"Hello, {username}!")  # Output: Hello, Alice!
+```
+
+**Resulting JSON file (~/.nook/default_settings.json):**
+```json
+{
+    "username": "Alice"
+}
+```
+
+### Nested Settings
+
+```python
+from usernook import Nook
+
+with Nook() as nook:
+    # Store nested settings
+    nook.set_setting(["app", "name"], "CodeEditor")
+    nook.set_setting(["app", "version"], "1.2.3")
+    nook.set_setting(["user", "preferences", "theme"], "dark")
+    
+    # Retrieve nested settings
+    theme = nook.get_setting(["user", "preferences", "theme"], default_value="light")
+    print(f"Using {theme} theme")  # Output: Using dark theme
+```
+
+**Resulting JSON file (~/.nook/default_settings.json):**
+```json
+{
+    "app": {
+        "name": "CodeEditor",
+        "version": "1.2.3"
+    },
+    "user": {
+        "preferences": {
+            "theme": "dark"
+        }
+    }
+}
+```
+
+### Custom Settings Location
+
+```python
+from usernook import Nook
+
+# Store settings in a specific category
+with Nook() as nook:
+    # Save high score in a game-specific file
+    nook.set_setting("high_score", 10000, path_parts=["games", "space_invaders"])
+    nook.set_setting("last_played", "2023-06-15", path_parts=["games", "space_invaders"])
+    
+    # Later, retrieve that specific setting
+    high_score = nook.get_setting("high_score", default_value=0, 
+                                 path_parts=["games", "space_invaders"])
+    print(f"High Score: {high_score}")  # Output: High Score: 10000
+```
+
+**Resulting JSON file (~/.nook/games/space_invaders.json):**
+```json
+{
+    "high_score": 10000,
+    "last_played": "2023-06-15"
+}
+```
+
+### Application Data Management
+
+```python
+from usernook import Nook
+import time
+
+# Application startup example
+with Nook("D:/MyApp/UserData") as nook:
+    # Check if this is first run
+    first_run = nook.get_setting("first_run", default_value=True)
+    
+    if first_run:
+        print("First time running the app! Setting up...")
+        # Initialize default settings
+        nook.set_settings({
+            "first_run": False,
+            "install_date": time.time(),
+            "settings": {
+                "notifications": True,
+                "auto_update": True,
+                "language": "en"
+            }
+        })
+    else:
+        # Update last run time
+        nook.set_setting("last_run", time.time())
+        
+    # Get current language setting
+    language = nook.get_setting(["settings", "language"], default_value="en")
+    print(f"App language: {language}")
+```
+
+**Resulting JSON file (D:/MyApp/UserData/default_settings.json):**
+```json
+{
+    "first_run": false,
+    "install_date": 1623742800.4567,
+    "last_run": 1623829200.1234,
+    "settings": {
+        "notifications": true,
+        "auto_update": true,
+        "language": "en"
+    }
+}
+```
+
+### File Search and Management
+
+```python
+from usernook import Nook
+
+# Working with files in the nook
+with Nook() as nook:
+    # Search for text in all files
+    results = nook.grep("important")
+    for match in results:
+        print(f"Found 'important' in {match['file']} at line {match['line_num']}")
+    
+    # Find files by pattern
+    config_files = nook.find("config")
+    print(f"Found {len(config_files['files'])} config files")
+    
+    # List all files in the nook
+    all_files = nook.get_all_files()
+    print(f"Total files in nook: {len(all_files)}")
+```
+
+## API Reference
+
+### Core
+- `Nook(path=None)`: Main class to manage user data, defaults to ~/.nook
+
+### Settings Management
+- `get_setting(key, default_value=None, path_parts=None)`: Get a setting, with optional default
+- `set_setting(key, value, path_parts=None)`: Store a setting
+- `get_settings(path_parts=None)`: Get all settings from a file
+- `set_settings(settings, path_parts=None)`: Replace all settings in a file
+
+### File Operations
+- `ensure(path=None)`: Ensure a directory exists
+- `grep(pattern)`: Search for text in files
+- `find(pattern)`: Find files and folders by name
+- `get_all_files()`, `get_all_folders()`, `get_all_content()`: List nook contents
+
+## License
+
+[MIT](LICENSE)
