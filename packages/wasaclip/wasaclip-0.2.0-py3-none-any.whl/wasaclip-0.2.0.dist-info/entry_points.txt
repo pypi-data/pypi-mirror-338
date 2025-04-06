@@ -1,0 +1,2 @@
+[console_scripts]
+wasaclip = wasaclip.main:main
