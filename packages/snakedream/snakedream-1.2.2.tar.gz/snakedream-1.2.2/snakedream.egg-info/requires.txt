@@ -1,0 +1,4 @@
+bleak
+matplotlib
+python-uinput
+PyAutoGUI
