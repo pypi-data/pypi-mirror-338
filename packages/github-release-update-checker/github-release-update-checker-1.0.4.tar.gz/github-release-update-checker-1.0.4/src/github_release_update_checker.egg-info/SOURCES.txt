@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+src/github_release_update_checker/__init__.py
+src/github_release_update_checker/main.py
+src/github_release_update_checker.egg-info/PKG-INFO
+src/github_release_update_checker.egg-info/SOURCES.txt
+src/github_release_update_checker.egg-info/dependency_links.txt
+src/github_release_update_checker.egg-info/requires.txt
+src/github_release_update_checker.egg-info/top_level.txt
