@@ -1,0 +1,26 @@
+[project]
+name = "erewhon_astro"
+version = "0.7.0"
+authors = [
+    { name="Erewhon", email="erewhon@flatland.org" }
+]
+description = "Astronomy-related code that I find helpful for my projects"
+readme = "README.md"
+requires-python = ">=3.12"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+license = "MIT"
+dependencies = [
+    "astropy[recommended]>=7.0.1",
+    "astroquery>=0.4.10",
+    "pydantic>=2.11.2",
+    "pydantic-settings>=2.8.1",
+]
+
+[project.urls]
+Homepage = "https://github.com/erewhon/astro"
+
+[tool.uv]
+package = true
