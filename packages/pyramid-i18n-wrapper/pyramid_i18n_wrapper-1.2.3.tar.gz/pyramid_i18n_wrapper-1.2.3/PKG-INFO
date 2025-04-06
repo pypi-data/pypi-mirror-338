@@ -1,0 +1,16 @@
+Metadata-Version: 2.4
+Name: pyramid_i18n_wrapper
+Version: 1.2.3
+Summary: i18n wrapper apis of pyramid framework
+Project-URL: Homepage, https://github.com/pylabs/pyramid_i18n_wrapper
+Project-URL: Issues, https://github.com/pylabs/pyramid_i18n_wrapper/issues
+Author-email: William Wu <william@pylabs.org>
+License-Expression: MIT
+License-File: LICENSE
+Classifier: Framework :: Pyramid
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Description-Content-Type: text/plain
+
+This package provides i18n wrapper apis of pyramid framwork for convinience.
