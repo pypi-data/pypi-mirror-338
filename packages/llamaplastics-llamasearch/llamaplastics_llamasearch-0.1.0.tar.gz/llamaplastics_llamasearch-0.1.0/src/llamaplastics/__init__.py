@@ -1,0 +1,1 @@
+"""LlamaPlastics - Biodegradable plastics design and property optimization."""\n\n__version__ = \"0.1.0\"\n__author__ = \"LlamaPlastics Team\"\n__email__ = \"contact@llamabench.org\"\n 
