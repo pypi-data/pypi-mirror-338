@@ -1,0 +1,14 @@
+codecriticAI/__init__.py,sha256=k5tJXhBQJ4l9fKHJ76K5w98zBHoYvNk9r-UNH6eQ2-k,21
+codecriticAI/main.py,sha256=bEUFXnJXf2q9eTODpGLfHvZ7r5pfhVIDJ6L8OIC90Es,1660
+codecriticAI/aireviewer/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+codecriticAI/aireviewer/reviewer.py,sha256=MFaeXi9SxZ4TBVOEgEnl_3robc5NroeqvlDWLTJPKQI,2681
+codecriticAI/gitops/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+codecriticAI/gitops/git_ops.py,sha256=GAkuWTmxlGYQJj1gOrrFG60ErEk6oxAE5eU9sIAO-rI,633
+codecriticAI/reportgenerator/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+codecriticAI/reportgenerator/html_generator.py,sha256=kDTMUkT0aK0IliWWp97ByqBahfT3iRtvAGQPKQWFa8M,2166
+codecriticai-0.0.3.dist-info/licenses/LICENSE,sha256=i1UGx3ZeBb205Jg6avak_pfzFisJz2WpZbqPfoOsaSs,1069
+codecriticai-0.0.3.dist-info/METADATA,sha256=y1wdgrBSmtQMcOh53IXMZwYGdN-jKzLkHCINPYUaGVM,3465
+codecriticai-0.0.3.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+codecriticai-0.0.3.dist-info/entry_points.txt,sha256=A6vhO0tbgJa-DrAazEzx1C5FVjn9H2DfWuipMvcpHGM,56
+codecriticai-0.0.3.dist-info/top_level.txt,sha256=AWtN1Lc-BViwd5K1KOlDwjVLJQ4JY6cG5H0wbWOoINI,13
+codecriticai-0.0.3.dist-info/RECORD,,
