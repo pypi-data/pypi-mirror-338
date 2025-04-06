@@ -1,0 +1,9 @@
+genkit/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+genkit/plugins/flask/__init__.py,sha256=qwnq1VyELI_hEP8wqAyzwchU1wdSZExK8lx-GTDrtyI,939
+genkit/plugins/flask/handler.py,sha256=V7ws-l1TKztdKHqkAR_EwUXuAw9R0lOAT7ahVUYH2Kc,4148
+genkit/plugins/flask/__init__.py,sha256=qwnq1VyELI_hEP8wqAyzwchU1wdSZExK8lx-GTDrtyI,939
+genkit/plugins/flask/handler.py,sha256=V7ws-l1TKztdKHqkAR_EwUXuAw9R0lOAT7ahVUYH2Kc,4148
+genkit_plugin_flask-0.3.0.dev1.dist-info/METADATA,sha256=9hoYlwrDxFYcmk5ZMv71UjvcDXUl-as-ybksMkWGtDY,1183
+genkit_plugin_flask-0.3.0.dev1.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+genkit_plugin_flask-0.3.0.dev1.dist-info/licenses/LICENSE,sha256=bsvE5_qSn_2LH2G-haMvT_AoIeINhX6fvzZTlyq2xJY,11340
+genkit_plugin_flask-0.3.0.dev1.dist-info/RECORD,,
