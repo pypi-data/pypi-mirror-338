@@ -1,0 +1,6 @@
+bisos
+bisos.b
+bisos.common
+bisos.csPlayer
+bisos.debian
+pygobject==3.50.0
