@@ -1,0 +1,9 @@
+agentwire/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+agentwire/core/__init__.py,sha256=qykmdyV60ANuUYYOmESWUix4w25mukEZ5neE6a_Wcsw,1370
+agentwire/core/events.py,sha256=V_Z8ITzexHSyfLt7PcJJCa3LUfnVI7ihszma01qgYdo,4532
+agentwire/core/types.py,sha256=Er4uU0cbAEVYDknwpeMmRFCBEgFzcg2Gh2EeWT5HynQ,2471
+agentwire/encoder/__init__.py,sha256=CSbBccr50oAVXRwExhGz6BcugvjCesZS1krtPY8EUzQ,179
+agentwire/encoder/encoder.py,sha256=YNNJ3JgKS5uT9HbMBwQ3ylfyjaI0dS86KOvrp9Y0J6M,597
+agentwire-0.1.0.dist-info/METADATA,sha256=wow0dayzk4BsRU-0fK06aGr--dZSsxKUIOFgWXOv-Zg,333
+agentwire-0.1.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+agentwire-0.1.0.dist-info/RECORD,,
