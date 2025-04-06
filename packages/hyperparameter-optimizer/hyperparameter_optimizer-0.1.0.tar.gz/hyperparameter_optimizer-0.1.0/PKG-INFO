@@ -1,0 +1,34 @@
+Metadata-Version: 2.4
+Name: hyperparameter-optimizer
+Version: 0.1.0
+Summary: A lightweight Python library for hyperparameter tuning using Metaheuristic algorithms.
+Home-page: https://github.com/real-ahmed-moussa/hyperparameter-optimizer
+Author: Dr. Ahmed Moussa
+Author-email: ahmedyosrihamdy@example.com
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+Requires-Dist: scikit-learn
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: license
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+# hyperparameter-optimizer
+A lightweight Python library for hyperparameter tuning using Metaheuristic algorithms.
+
+## Installation
+
+```bash
+pip install hyperparameter-optimizer
