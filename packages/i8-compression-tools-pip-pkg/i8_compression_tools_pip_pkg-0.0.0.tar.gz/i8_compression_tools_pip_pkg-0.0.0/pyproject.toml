@@ -1,0 +1,21 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "i8_compression_tools_pip_pkg"
+version = "0.0.0"
+authors = [{ name = "Mahdi Mir", email = "imahdimir@gmail.com" }]
+description = "compression tools"
+readme = "README.md"
+license = { file = "LICENSE" }
+dependencies = [
+    "zstandard==0.23.0",
+]
+
+keywords = [
+    "compression",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/imahdimir/i8_compression_tools_pip_pkg"
