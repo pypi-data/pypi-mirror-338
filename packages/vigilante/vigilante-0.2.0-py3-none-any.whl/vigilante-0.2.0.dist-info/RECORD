@@ -1,0 +1,13 @@
+vigilante/__init__.py,sha256=lGIWsi1iiXXtiLFoJbSgg0JFelPEzoBY9imrxkSQH8M,354
+vigilante/config.py,sha256=W3fUp6eS43sQinTRstGeR5hDJrzK_TL0awpwhXVQVRo,7290
+vigilante/core.py,sha256=dgUJUrELnE5LiE6uQ4umJiateSEkjE-jUMUS0loUpB8,8905
+vigilante/nightcrawler.py,sha256=yf1RdX3wMGxS2f4rwY7QmTTrXKpxm1K1pZeWExZ-VOs,8664
+vigilante/scraptor.py,sha256=PFdsWPjh5jgvQG7UNPsyqKXjlyhWY36Nlog3-FCF69U,20801
+vigilante/session.py,sha256=1iz-0kmez3Sa4Kwv_5KZmUkO6CLWA9x-rHvWqXviFSM,2484
+vigilante/utils.py,sha256=la5z8h9L_JrgnsByVd25Tqhf456O6bypCvn75w0ovEA,5369
+vigilante/version.py,sha256=Zn1KFblwuFHiDRdRAiRnDBRkbPttWh44jKa5zG2ov0E,22
+vigilante-0.2.0.dist-info/licenses/LICENSE,sha256=PP_fgQgr5j8-V0BgLKSFwjFS81Ad4qE8p5CmblJa9EQ,1070
+vigilante-0.2.0.dist-info/METADATA,sha256=soAmRUZGyou96YkmBkv7StaoKxDOZp-080VkVSX44Tg,1011
+vigilante-0.2.0.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+vigilante-0.2.0.dist-info/top_level.txt,sha256=Q2Vf1BckRAyPkxYxN2JNzXVAUQiSUyu2lj2eBqxdnto,10
+vigilante-0.2.0.dist-info/RECORD,,
