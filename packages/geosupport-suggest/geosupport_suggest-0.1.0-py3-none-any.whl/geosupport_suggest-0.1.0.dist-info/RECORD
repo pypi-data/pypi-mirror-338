@@ -1,0 +1,12 @@
+suggest/__init__.py,sha256=k5lFYBlyb7v_HHh6fh2HE88Y8J57p4t5l2VCTBjduJ8,72
+suggest/suggest.py,sha256=IIMFHgvL4S5xntjjH2sm2Pxlp-1L_Ton1XViUoD1z8w,15458
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_address.py,sha256=JSeVshSv4CNvEs2Z6IW1VjIR5M8hAXpGlUpllqWYnqk,2917
+tests/test_cache.py,sha256=QsMcFptY46huR3Faf4nZtf9tG1ll7kEBCl4OQEw5_F0,4963
+tests/test_formatter.py,sha256=kkMGXIgyhdLPl5lYdvicpouAIpQS2k3KUYUmE7NrYAk,2741
+tests/testcase.py,sha256=bxxQi9UmMxIGyCy8WqQiMsRUDTmFqZ-EtkwkMrAtk1E,2816
+geosupport_suggest-0.1.0.dist-info/METADATA,sha256=nZZJcAsrp5fcF26o2AlyXY46jiQXXrc_uXIQefTY0as,3710
+geosupport_suggest-0.1.0.dist-info/WHEEL,sha256=iAkIy5fosb7FzIOwONchHf19Qu7_1wCWyFNR5gu9nU0,91
+geosupport_suggest-0.1.0.dist-info/entry_points.txt,sha256=AOMnt33R8wXftyBFWTdMtJcH9DrkU4gXiFn_ndzqXiE,56
+geosupport_suggest-0.1.0.dist-info/top_level.txt,sha256=bZ5C8DdV09qEzkO_NegJc-ZnZT-Ii0XFA7_TVWMS3i4,14
+geosupport_suggest-0.1.0.dist-info/RECORD,,
