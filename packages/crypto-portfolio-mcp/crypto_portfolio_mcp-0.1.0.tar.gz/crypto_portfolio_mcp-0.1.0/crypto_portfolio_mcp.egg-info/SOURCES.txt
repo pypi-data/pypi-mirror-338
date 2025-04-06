@@ -1,0 +1,8 @@
+LICENSE
+README.md
+pyproject.toml
+crypto_portfolio_mcp.egg-info/PKG-INFO
+crypto_portfolio_mcp.egg-info/SOURCES.txt
+crypto_portfolio_mcp.egg-info/dependency_links.txt
+crypto_portfolio_mcp.egg-info/requires.txt
+crypto_portfolio_mcp.egg-info/top_level.txt
