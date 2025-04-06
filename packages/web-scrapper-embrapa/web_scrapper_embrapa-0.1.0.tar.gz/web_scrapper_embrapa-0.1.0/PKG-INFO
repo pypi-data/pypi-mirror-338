@@ -1,0 +1,23 @@
+Metadata-Version: 2.4
+Name: web_scrapper_embrapa
+Version: 0.1.0
+Summary: Web Scrapper do site embrapa para curso FIAP
+Home-page: https://github.com/tiagoparibeiro/web_scrapper_embrapa
+Author: Tiago Ribeiro
+Author-email: tiagoparibeiro@email.com
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Dynamic: author
+Dynamic: author-email
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: license-file
+Dynamic: summary
+
+# Web Scrapper Emprapa
+
+Web Scrapper que extrai dados do site da embrapa para curso FIAP
+
+## Licença
+Distribuído sob a licença MIT. Veja arquivo "licencse.txt" para maiores informações.
