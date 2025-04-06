@@ -1,0 +1,47 @@
+Metadata-Version: 2.4
+Name: fractaly
+Version: 0.2.0
+Summary: A package for creation and display three fractal types
+Home-page: https://github.com/masoud-najafi/fractaly-project
+Author: Masoud NAJAFI
+Author-email: Masoud NAJAFI <your.email@example.com>
+License: MIT
+Project-URL: Homepage, https://github.com/masoud-najafi/fractaly-project
+Project-URL: Documentation, https://docs.example.com
+Project-URL: Repository, https://github.com/masoud-najafi/fractaly-project
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Classifier: Typing :: Typed
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: wxPython>=4.2.1
+Requires-Dist: numpy>=1.26.0
+Dynamic: author
+Dynamic: home-page
+Dynamic: requires-python
+
+# Fractaly - Fractal Visualization Tool
+
+![Fractal Example](docs/images/mandelbrot.png)
+
+A cross-platform application for generating and exploring fractal images.
+
+## Features
+- Multiple fractal types (Mandelbrot, Julia, etc.)
+- Interactive zoom/pan
+- Custom color schemes
+
+## Installation
+```bash
+pip install -e . 
+```
+
+## Usage
+```python
+import wx
+import fractaly
+app = wx.App(False)
+frame = fractaly.FractalFrame()
+frame.Show()
+app.MainLoop()
+```

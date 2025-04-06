@@ -1,0 +1,94 @@
+#How to build fractaly using pyproject.toml
+#pip install -e .   or pip install .  #-e for development installation 
+#python -c "import wx;from fractaly import FractalFrame; app = wx.App(False);frame = FractalFrame();frame.Show();app.MainLoop() "
+#python -m build            # to create dist/*.gz or dist/*.whl: if 'build' is not installed do pip install build before
+#python -m build --version  # check the build
+#python -m build --wheel --outdir dist/
+
+#pip install dist/your_package-1.0.0.tar.gz  #other users can install *.gs or *.whl 
+#pip list
+#pip show fractaly
+#pip uninstall fractaly
+
+#publish on pypi:
+#twine   check dist/*    # Verify the build, if twine not installed pip install twine
+#python -m twine check dist/*  # if above command failed
+#python -m twine upload --verbose dist/*  
+#twine upload --repository testpypi dist/*
+#pip install fractaly  #then the package can be installed from PyPI
+
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "fractaly" # the name of package to be created 'name'-'version'.tar.gz used in pip install/uninstall
+version = "0.2.0"
+authors = [
+    {name = "Masoud NAJAFI", email = "your.email@example.com"},
+]
+description = "A package for creation and display three fractal types"
+readme = "README.md"
+requires-python = ">=3.7"
+license = { text = "MIT" }
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+    "Typing :: Typed",
+]
+dependencies = [
+     "wxPython>=4.2.1",
+     "numpy>=1.26.0",
+]
+
+#[project.optional-dependencies]
+#test = ["pytest>=6.0", "pytest-cov"]
+#dev = ["black", "flake8", "mypy", "ipython"]
+#docs = ["sphinx", "furo"]
+
+#[project.scripts]
+#fractaly = "fractaly.gui.wx.main:run_app"  # Point d'entree CLI
+#fractaly lancera l'application
+
+#[project.gui-scripts]
+#fractaly-gui = "fractaly.gui.wx.main:run_app"  # Point d'entree GUI
+#fractaly-gui lancera a'application gui
+
+[project.urls]
+Homepage = "https://github.com/masoud-najafi/fractaly-project"
+Documentation = "https://docs.example.com"
+Repository = "https://github.com/masoud-najafi/fractaly-project"
+
+[tool.setuptools]
+package-dir = {"" = "src"}  # If using src layout
+# Include all shared libraries in the package
+
+#or
+#data-files = [
+ #   ("lib/win64", ["lib/win64/fractal_maths.dll"]),
+   # ("lib/linux64", ["lib/linux64/fractal_maths.so"]),
+#]
+
+
+#[tool.setuptools.packages]
+#find = {}  # Auto-find packages
+# or explicitly:
+# packages = ["your_package"]
+
+[tool.setuptools.package-data]
+#non-Python assets
+#fractaly = ["py.typed"]
+#package-data = {"*" = ["*.dll", "*.so", "*.dylib"]}
+# Include all platform-specific libraries
+"fractaly.lib.win64" = ["*.dll"]
+"fractaly.lib.linux64" = ["*.so"]
+
+[tool.setuptools.packages.find]
+# Ensure the find_packages() includes your lib directory
+where = ["src"]  # Search in root directory
+include = ["fractaly*","lib*"]  # Include both Python and lib directories
+exclude = ["tests*", "docs*"]  # Exclude non-package directories
+
+#[tool.pytest.ini_options]
+#python_files = "test_*.py"
+#addopts = "--verbose"
