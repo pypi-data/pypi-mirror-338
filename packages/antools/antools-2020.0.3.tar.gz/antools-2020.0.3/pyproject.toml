@@ -1,0 +1,50 @@
+[project]
+name = "antools"
+description = "Private library which is also free to public use. Its purpose is to be useful code keeper and template for various automation projects."
+version = "2020.0.3"
+dependencies = [
+    "setuptools (>=78.1.0,<79.0.0)",
+    "pre-commit (>=4.2.0,<5.0.0)"
+]
+requires-python = ">=3.13,<4.0"
+authors = [
+  {name = "Antonin Drozda", email = "adrozda.dev@gmail.com"}
+]
+maintainers = [
+  {name = "Antonin Drozda", email = "adrozda.dev@gmail.com"}
+]
+packages = [{ include = "antools" }]
+readme = "README.md"
+license = "MIT"
+keywords = ["antools"]
+classifiers = [
+    'Framework :: IDLE',
+    'Topic :: Utilities',
+    'Development Status :: 3 - Alpha',
+    'License :: OSI Approved :: MIT License',
+    'Programming Language :: Python :: 3',
+    'Programming Language :: Python :: 3.13',
+    'Operating System :: OS Independent',
+    'Environment :: Plugins',
+    'Intended Audience :: Developers',
+    'Intended Audience :: Education',
+    'Natural Language :: English',
+]
+
+[project.urls]
+Homepage = "https://github.com/antonin-drozda/antools"
+Repository = "https://github.com/antonin-drozda/antools"
+Changelog = "https://github.com/antonin-drozda/antools/CHANGELOG.txt"
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.black]
+line-length = 88
+target-version = ["py39"]
+
+[tool.pylint]
+max-line-length = 200
+disable = ["E0401", "W0718"]  # Disable certain pylint checks
+output-format = "colorized"
