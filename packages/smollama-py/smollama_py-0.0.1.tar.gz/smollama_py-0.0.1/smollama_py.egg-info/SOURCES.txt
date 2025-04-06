@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+smollama_py/__init__.py
+smollama_py/__main__.py
+smollama_py/cli.py
+smollama_py.egg-info/PKG-INFO
+smollama_py.egg-info/SOURCES.txt
+smollama_py.egg-info/dependency_links.txt
+smollama_py.egg-info/entry_points.txt
+smollama_py.egg-info/requires.txt
+smollama_py.egg-info/top_level.txt
+tests/test_smollama_py.py
