@@ -1,0 +1,12 @@
+llamacalc/__init__.py,sha256=D819HRheV8aB3NdCB58QSg5buvURp4mf0wq5dyROV_4,567
+llamacalc/cache.py,sha256=X_gKp_gdmaq_o38otaL5U0jj0sargtLmoA6kigAUoe0,10120
+llamacalc/cli.py,sha256=Xe0i1rMuabA-U24Wfs2ykddDMhAsfd0R1mnLkiGs6dY,12574
+llamacalc/core.py,sha256=TYAMFeR73UTKSKwvfYF4KDb3XDkwjjXSTJiN_M1Ly2g,10434
+llamacalc/llamacalc.py,sha256=MUNpbO9dXdnb88b1zlBfvSB4yUeqYXc_yr1B9DaEqmk,41212
+llamacalc/test_llamacalc.py,sha256=sJ7HrEWcVdC9GtTJq4QHvla6krtk2UA3yAu7dh4Kqes,11057
+llamacalc_llamasearch-0.1.0.dist-info/licenses/LICENSE,sha256=N4wOK_iJG8YvRxmV_W9ZZ8ipI2_lsyduuOFF5ngcFW4,1080
+llamacalc_llamasearch-0.1.0.dist-info/METADATA,sha256=f841Pmrv4r_O-qV1yovQDVCfVOtHabOGzhTmTPvpgY4,7139
+llamacalc_llamasearch-0.1.0.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+llamacalc_llamasearch-0.1.0.dist-info/entry_points.txt,sha256=sUQwZMwOFAvfmOW-raCo0keyFMTrfR5oz7AQyE4z-sw,49
+llamacalc_llamasearch-0.1.0.dist-info/top_level.txt,sha256=3Oc81rYuj2K0wLeAevlsyCt9q15bCZ8Bdd2DbEvC_Ok,10
+llamacalc_llamasearch-0.1.0.dist-info/RECORD,,
