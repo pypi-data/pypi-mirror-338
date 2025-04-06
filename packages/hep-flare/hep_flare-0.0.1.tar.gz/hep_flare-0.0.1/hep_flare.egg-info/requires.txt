@@ -1,0 +1,6 @@
+b2luigi>=1.1.1
+jsonschema>=4.17.3
+PyYAML>=6.0
+
+[test]
+pytest-mock
