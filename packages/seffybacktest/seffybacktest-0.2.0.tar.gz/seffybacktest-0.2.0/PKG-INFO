@@ -1,0 +1,16 @@
+Metadata-Version: 2.4
+Name: seffybacktest
+Version: 0.2.0
+Summary: A GUI-based Python backtesting and portfolio analysis tool
+Author-email: Your Name <your.email@example.com>
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: yfinance
+Requires-Dist: pandas
+Requires-Dist: numpy
+Requires-Dist: matplotlib
+Requires-Dist: tk
+
+# SeffyBacktest
+
+A GUI-based backtesting and portfolio analytics tool built in Python.
