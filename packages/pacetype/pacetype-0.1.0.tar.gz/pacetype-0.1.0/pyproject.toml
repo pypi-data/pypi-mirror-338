@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pacetype"
+version = "0.1.0"
+authors = [
+  { name="Alex M", email="alexmalone489@gmail.com" }, 
+]
+description = "Type text and emojis character-by-character using clipboard paste."
+readme = "README.md"
+license = "MIT" # Use SPDX identifier
+keywords=["pacetype", "typing", "automation", "gui", "pyautogui", "pyperclip", "emoji", "clipboard"]
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    # "License :: OSI Approved :: MIT License", 
+    "Operating System :: OS Independent",
+    "Intended Audience :: Developers",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: Utilities",
+]
+dependencies = [
+    "pyperclip>=1.8.2",
+    "PyAutoGUI>=0.9.53", # Match case as on PyPI
+]
+
+[project.urls]
+"Homepage" = "https://github.com/AMAMazing/Pacetype" 
+"Bug Tracker" = "https://github.com/AMAMazing/Pacetype/issues" 
+"Repository" = "https://github.com/AMAMazing/Pacetype"
