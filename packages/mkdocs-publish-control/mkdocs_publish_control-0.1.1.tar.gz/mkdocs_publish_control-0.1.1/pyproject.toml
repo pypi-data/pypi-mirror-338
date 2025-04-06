@@ -1,0 +1,55 @@
+[project]
+name = "mkdocs-publish-control"
+version = "0.1.1"
+description = "MkDocs plugin to control page publishing based on metadata"
+authors = [
+    {name = "Gabriel Dornas",email = "gabrielbdornas@gmail.com"}
+]
+readme = "README.md"
+requires-python = ">=3.10,<4.0"
+license = {text = "MIT"}
+keywords = ["mkdocs", "plugin", "publishing", "metadata", "control"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Topic :: Documentation",
+    "Topic :: Software Development :: Documentation",
+]
+dependencies = [
+    "mkdocs (>=1.6.1,<2.0.0)"
+]
+
+[project.urls]
+Homepage = "https://github.com/gabrielbdornas/mkdocs-publish-control"
+Documentation = "https://github.com/gabrielbdornas/mkdocs-publish-control#readme"
+Repository = "https://github.com/gabrielbdornas/mkdocs-publish-control"
+Issues = "https://github.com/gabrielbdornas/mkdocs-publish-control/issues"
+
+[tool.poetry.plugins."mkdocs.plugins"]
+"publish-control" = "mkdocs_publish_control:PublishControlPlugin"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.0.0"
+pytest-cov = "^4.1.0"
+pytest-mock = "^3.12.0"
+python-dotenv = "^1.1.0"
+taskipy = "^1.14.1"
+
+[tool.taskipy.tasks]
+test = { cmd = "pytest", help = "Run tests with pytest" }
+build = { cmd = "poetry build", help = "Build the package distribution files" }
+publish = { cmd = "dotenv run -- sh -c 'POETRY_PYPI_TOKEN_PYPI=$PYPI_TOKEN poetry publish'", help = "Publish the package to PyPI (requires .env with PYPI_TOKEN)" }
+publish-build = { cmd = "task build && task publish", help = "Build and publish the package to PyPI (requires .env with PYPI_TOKEN)" }
+list = { cmd = "task --list", help = "List all available tasks" }
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+addopts = "--cov=mkdocs_publish_control --cov-report=term-missing"
