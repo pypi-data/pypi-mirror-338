@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+my_package/__init__.py
+my_package/test.py
+subtransss.egg-info/PKG-INFO
+subtransss.egg-info/SOURCES.txt
+subtransss.egg-info/dependency_links.txt
+subtransss.egg-info/top_level.txt
