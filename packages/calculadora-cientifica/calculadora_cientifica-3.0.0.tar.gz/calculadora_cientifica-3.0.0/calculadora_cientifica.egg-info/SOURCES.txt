@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+calculadora_cientifica.egg-info/PKG-INFO
+calculadora_cientifica.egg-info/SOURCES.txt
+calculadora_cientifica.egg-info/dependency_links.txt
+calculadora_cientifica.egg-info/requires.txt
+calculadora_cientifica.egg-info/top_level.txt
