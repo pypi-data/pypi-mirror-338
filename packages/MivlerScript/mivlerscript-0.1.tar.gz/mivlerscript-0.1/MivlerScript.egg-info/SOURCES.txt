@@ -1,0 +1,7 @@
+README.md
+setup.py
+MivlerScript/__init__.py
+MivlerScript.egg-info/PKG-INFO
+MivlerScript.egg-info/SOURCES.txt
+MivlerScript.egg-info/dependency_links.txt
+MivlerScript.egg-info/top_level.txt
