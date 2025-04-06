@@ -1,0 +1,29 @@
+[project]
+name = "mkdocs-publish-control"
+version = "0.1.0"
+description = "MkDocs plugin to control page publishing based on metadata"
+authors = [
+    {name = "Gabriel Dornas",email = "gabrielbdornas@gmail.com"}
+]
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "mkdocs (>=1.6.1,<2.0.0)"
+]
+
+[tool.poetry.plugins."mkdocs.plugins"]
+"publish-control" = "mkdocs_publish_control:PublishControlPlugin"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.0.0"
+pytest-cov = "^4.1.0"
+pytest-mock = "^3.12.0"
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+addopts = "--cov=mkdocs_publish_control --cov-report=term-missing"
