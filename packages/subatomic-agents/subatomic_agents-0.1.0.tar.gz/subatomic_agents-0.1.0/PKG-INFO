@@ -1,0 +1,29 @@
+Metadata-Version: 2.4
+Name: subatomic_agents
+Version: 0.1.0
+Summary: A powerful multi-agent framework for processing and understanding multimodal information with GenAI.
+Author-email: Karl Simon <karl@getsubatomic.ai>, Aaron Sosa <wilfredo@getsubatomic.ai>
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+Requires-Dist: langchain
+Requires-Dist: langchain_community
+Requires-Dist: langchain_google_genai
+Requires-Dist: langchain_core
+Requires-Dist: langchain_text_splitters
+Requires-Dist: python_dotenv
+Requires-Dist: google_generativeai
+Requires-Dist: langchain_openai
+Requires-Dist: pydantic
+Requires-Dist: langgraph
+Requires-Dist: langchain_chroma
+Requires-Dist: chromadb
+Requires-Dist: youtube_transcript_api
+Requires-Dist: pytube
+Requires-Dist: pypdf
+Requires-Dist: unstructured
+Requires-Dist: python-magic
+Requires-Dist: python-pptx
+Requires-Dist: docx2txt
+Requires-Dist: openpyxl
+Requires-Dist: jq
+Requires-Dist: gdown
