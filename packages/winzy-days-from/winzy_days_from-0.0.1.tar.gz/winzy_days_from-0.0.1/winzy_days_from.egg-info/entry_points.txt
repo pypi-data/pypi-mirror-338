@@ -1,0 +1,2 @@
+[winzy.plugins]
+daysfrom = winzy_days_from:daysfrom_plugin
