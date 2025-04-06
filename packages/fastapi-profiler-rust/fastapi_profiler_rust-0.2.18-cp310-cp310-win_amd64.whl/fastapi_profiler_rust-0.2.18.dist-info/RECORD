@@ -1,0 +1,5 @@
+fastapi_profiler_rust-0.2.18.dist-info/METADATA,sha256=8bJFmpfR5eCTee7RL-b_5o34zSoihu85c__azDmFW08,604
+fastapi_profiler_rust-0.2.18.dist-info/WHEEL,sha256=77DqkvxB4HqZitBRK_M49NRS207JKb0MotMEjnxEWQ8,96
+rustcore/__init__.py,sha256=BV8VGeimWoqyYpzlBlrHEO6LZgQY2ICsUFjypr91Dmo,115
+rustcore/rustcore.cp310-win_amd64.pyd,sha256=xoSRw3Q2c_HUq-qazD4ylHogggO3ZfcoK00Tch8gJNA,410624
+fastapi_profiler_rust-0.2.18.dist-info/RECORD,,
