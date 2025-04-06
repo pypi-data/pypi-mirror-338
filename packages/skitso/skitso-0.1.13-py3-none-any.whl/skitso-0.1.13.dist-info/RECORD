@@ -1,0 +1,9 @@
+skitso/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+skitso/atom.py,sha256=KQ8XN9XhnrgLKMQGwvHFKH8Ao6wLH7XI1k5B-Bg3kq8,2103
+skitso/movement.py,sha256=SH34yx1s6JdVz87m00bLl-lHQhld_G7T-206B4B71jY,6025
+skitso/scene.py,sha256=U_7LIkh6-tmdO6XU7vCLupoZjS2Wq4N3Q8HDwA2lzhc,1753
+skitso/shapes.py,sha256=nHZYpUsbaLHr6t2jaRhthfMUy8R1gtFSbP-b3xTpG4g,7930
+skitso-0.1.13.dist-info/LICENSE,sha256=VDo3-2Id0uTKCMa4ZxInCn0sXzLR61RG58RBHN2cTOY,1072
+skitso-0.1.13.dist-info/METADATA,sha256=mr8dK8yJXVfWcAhZUA1asYjZ-kERYyBTBBMGVjmZSMI,5087
+skitso-0.1.13.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+skitso-0.1.13.dist-info/RECORD,,
