@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+tests/test_main.py
+ukaddress/__init__.py
+ukaddress/generator.py
+ukaddress/parser.py
+ukaddress.egg-info/PKG-INFO
+ukaddress.egg-info/SOURCES.txt
+ukaddress.egg-info/dependency_links.txt
+ukaddress.egg-info/requires.txt
+ukaddress.egg-info/top_level.txt

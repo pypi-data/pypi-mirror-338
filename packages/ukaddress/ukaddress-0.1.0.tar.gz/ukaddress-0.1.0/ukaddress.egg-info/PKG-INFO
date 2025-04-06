@@ -1,0 +1,31 @@
+Metadata-Version: 2.4
+Name: ukaddress
+Version: 0.1.0
+Summary: Generate and parse realistic UK addresses.
+Author: Syed Ali Hamza Shah
+Author-email: sahamzashah19@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: faker
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: license-file
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+# ukaddress
+
+Generate and parse realistic fake UK addresses for testing and development.
+
+## Installation
+
+```bash
+pip install ukaddress
