@@ -1,0 +1,15 @@
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+nyc_parser.egg-info/PKG-INFO
+nyc_parser.egg-info/SOURCES.txt
+nyc_parser.egg-info/dependency_links.txt
+nyc_parser.egg-info/top_level.txt
+nycparser/__init__.py
+nycparser/nycparser.py
+tests/__init__.py
+tests/test_address.py
+tests/test_bbl.py
+tests/test_complex_address.py
+tests/testcase.py
