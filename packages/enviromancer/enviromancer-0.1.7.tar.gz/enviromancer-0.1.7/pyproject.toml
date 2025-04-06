@@ -1,0 +1,40 @@
+[project]
+name = "enviromancer"
+version = "0.1.7"
+description = "Gain mastery over your environment variables"
+authors = [{ name = "Danny Stewart", email = "danny@stewart.cc" }]
+license = "LGPL-3.0-or-later"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "logician (>=0.3.4)",
+    "polykit (>=0.1.1)",
+    "python-dotenv (>=1.1.0)",
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: GNU Lesser General Public License v3 or later (LGPLv3+)",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Software Development :: Libraries",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: System :: Shells",
+    "Topic :: System :: System Shells",
+    "Topic :: Utilities",
+]
+
+[tool.poetry.group.dev.dependencies]
+mypy = ">=1.15.0"
+pdoc = ">=15.0.1"
+pre-commit = ">=4.2.0"
+ruff = ">=0.11.4"
+logician = { path = "../logician", develop = true }
+polykit = { path = "../polykit", develop = true }
+walking-man = { path = "../walking-man", develop = true }
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
