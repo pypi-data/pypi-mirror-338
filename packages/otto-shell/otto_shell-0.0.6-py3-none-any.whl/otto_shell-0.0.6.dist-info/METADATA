@@ -1,0 +1,32 @@
+Metadata-Version: 2.4
+Name: otto-shell
+Version: 0.0.6
+Summary: Otto but in your shell!
+Project-URL: Homepage, https://github.com/ascend-io/OttoShell
+Project-URL: Bug Tracker, https://github.com/ascend-io/OttoShell/issues
+Author-email: Ascend <hello@ascend.io>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.13
+Requires-Dist: httpx[http2]
+Requires-Dist: prompt-toolkit
+Requires-Dist: pydantic
+Requires-Dist: pyperclip
+Requires-Dist: python-dotenv
+Requires-Dist: rich
+Requires-Dist: tiktoken
+Requires-Dist: typer
+Provides-Extra: dev
+Requires-Dist: ipython; extra == 'dev'
+Requires-Dist: ruff; extra == 'dev'
+Provides-Extra: test
+Requires-Dist: pytest; extra == 'test'
+Description-Content-Type: text/markdown
+
+# OttoShell
+
+Otto but in your shell!
+
+[Read the manifesto](manifesto.md).

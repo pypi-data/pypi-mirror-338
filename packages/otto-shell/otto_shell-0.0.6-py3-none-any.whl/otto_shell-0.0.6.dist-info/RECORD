@@ -1,0 +1,16 @@
+otto_shell/__init__.py,sha256=fOPnHZBjA5hh0VmloJHDO0q0GM2stYgUuddyXlOSyN0,78
+otto_shell/cli.py,sha256=09SPPnDBhTSOHbrf56_KyXKbUSRwg2Pm6-PGtjBIMVQ,1374
+otto_shell/commands.py,sha256=C2GYDy4v5flYQBUPUUkpGHguPoAIOBQ2cb82ZZ0kAks,2032
+otto_shell/hci.py,sha256=yha5i6VE6cIDwCNJb7ird3KVbvUWeSHEHj8n73GkgkY,10113
+otto_shell/openai.py,sha256=anW4CAG4uN1njeKzoiEa9Q0mZeacKJ-MZ122hjVtDfM,5547
+otto_shell/prompt.py,sha256=0V4hiJBxfB2cNI-PZHcE6xJtNeyOe0hRvsbA8OvWWNE,320
+otto_shell/repl.py,sha256=pwaoGG40s-pJ_zH9FzxBReLjiBO7RBN6XQ4ixADZgZA,8205
+otto_shell/state.py,sha256=UlaCLUt_bnGBufSCGNmCcUxSos_m4Uwm6-G2yXB2Z84,78
+otto_shell/temp.md,sha256=y2gK76KW5C7D2BK-EJ7H3JESntp1dlJ80m57qcqODrA,6227
+otto_shell/utils.py,sha256=oIhgvfvnc7LZBCuM62NMdpPElXnXbQ5OomVyS-T5zDY,2254
+otto_shell/flows/git.py,sha256=ZU6B3XOLi6XavS56G_hOhEgqdk-h76CibTs8NLy9mxg,2057
+otto_shell-0.0.6.dist-info/METADATA,sha256=Ftm8ibouZunRZ9EdLTFmok88KSVHlAuNTLZzISglpyU,923
+otto_shell-0.0.6.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+otto_shell-0.0.6.dist-info/entry_points.txt,sha256=5BjzM20JGCakQHSA5697nsomZYiqyXU4U6lmsC0XXIs,42
+otto_shell-0.0.6.dist-info/licenses/LICENSE,sha256=VfqGrd7qtf3Vc9rHGtgZacylXUh7g-lAIvhJ6iUjDf0,1068
+otto_shell-0.0.6.dist-info/RECORD,,
