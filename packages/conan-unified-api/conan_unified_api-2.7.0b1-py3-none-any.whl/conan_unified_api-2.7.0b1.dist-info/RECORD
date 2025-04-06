@@ -1,0 +1,11 @@
+conan_unified_api/__init__.py,sha256=1PIhLYJpWFvFX3S5mpRHwySv6emITx0lH-AEVRckWZM,1191
+conan_unified_api/common.py,sha256=GLH-kKkr1yXfLagnjBNpV6BzZh-dpHA0QbKv1uDsZqY,18257
+conan_unified_api/conan_v1.py,sha256=jsJlASb7RTH01IdLnF6xjOnRepwCJkAfSvi2RsZJsgE,23051
+conan_unified_api/conan_v2.py,sha256=LWwCDISajHK2fSlB7L19igYBNlAJj6VlEEmLIy92d2Y,26862
+conan_unified_api/types.py,sha256=P6giwRxGU_4atc_zZZz-HhmT2A8AaiIIU5ZMn_RiEQ8,4040
+conan_unified_api/unified_api.py,sha256=jM9d09yXGGsQYDlOgkd2fTypCxFpXLwFXGhsjytFtKQ,19597
+conan_unified_api-2.7.0b1.dist-info/licenses/LICENSE,sha256=3fbJQRK7RfO927j1UKOcNnH3kDncf5AETJ0jbsa99uo,1065
+conan_unified_api-2.7.0b1.dist-info/METADATA,sha256=NB8o1IjeQh5lcENYe6rWLWsmIR_nATvqgWbkdAg-3dE,2920
+conan_unified_api-2.7.0b1.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+conan_unified_api-2.7.0b1.dist-info/top_level.txt,sha256=3j5vNdkD12Ig6YyMsoF58Al1xZgxIt1yJlVclUUTJDI,18
+conan_unified_api-2.7.0b1.dist-info/RECORD,,
