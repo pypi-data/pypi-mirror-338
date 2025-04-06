@@ -1,0 +1,34 @@
+{
+    "type": "record",
+    "name": "TaskCompletedUpdate",
+    "namespace": "com.tacoq.task",
+    "fields": [
+      {
+        "name": "id",
+        "type": {
+          "type": "string",
+          "logicalType": "uuid"
+        }
+      },
+      {
+        "name": "completed_at",
+        "type": {
+            "type": "long",
+            "logicalType": "timestamp-micros"
+        }
+      },
+      {
+        "name": "output_data",
+        "type": "bytes"
+      },
+      {
+        "name": "is_error",
+        "type": "int"
+      },
+      {
+        "name": "update_type",
+        "type": "string"
+      }
+    ]
+}
+  
