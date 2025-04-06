@@ -1,0 +1,8 @@
+Metadata-Version: 2.4
+Name: pyonceperday
+Version: 0.1.1
+Summary: A lil something for me
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+Requires-Dist: pytest>=8.3.5
+Requires-Dist: pytz>=2025.2
