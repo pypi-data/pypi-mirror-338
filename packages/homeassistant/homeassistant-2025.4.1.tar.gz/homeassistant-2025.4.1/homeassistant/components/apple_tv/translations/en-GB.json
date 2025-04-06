@@ -1,0 +1,13 @@
+{
+    "config": {
+        "abort": {
+            "invalid_auth": "Invalid authentication"
+        },
+        "step": {
+            "restore_device": {
+                "description": "Reconfigure this device to restore its functionality.",
+                "title": "Device reconfiguration"
+            }
+        }
+    }
+}

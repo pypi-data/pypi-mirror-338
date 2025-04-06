@@ -1,0 +1,11 @@
+{
+    "state": {
+        "litterrobot__status_code": {
+            "cd": "Cat Detected",
+            "off": "Off",
+            "p": "Paused",
+            "pwrd": "Powering Down",
+            "pwru": "Powering Up"
+        }
+    }
+}

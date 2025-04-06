@@ -1,0 +1,16 @@
+{
+    "entity": {
+        "calendar": {
+            "workout": {
+                "name": "Workouts"
+            }
+        },
+        "sensor": {
+            "battery": {
+                "state": {
+                    "medium": "Gemiddeld"
+                }
+            }
+        }
+    }
+}
