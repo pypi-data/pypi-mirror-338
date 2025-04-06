@@ -1,0 +1,13 @@
+legionella_sbt/__init__.py,sha256=1mptEzQihbdyqqzMgdns_j5ZGK9gz7hR2bsgA_TnjO4,22
+legionella_sbt/_modidx.py,sha256=dL7NzqUvl6rG6CThwxz2ckYasAdjJX07Cz07hOP319g,4635
+legionella_sbt/core.py,sha256=djXJ1nExRkt7sVFs-eZ1Ql9Kk37hHKM01_H02sajtD8,8178
+legionella_sbt/leg_sbt.py,sha256=BPzdXVc8DV_AIFzgLvz9iEC1K6aN2zGs7dpznLnpoJw,45266
+legionella_sbt/some_string.py,sha256=JwmAXKbX_JgY8UGh4FAu5-7ZjezcAEhq4Q2B73pWp2M,923
+legionella_sbt/config/config.default.env,sha256=_fkVrL-fXCAxpD6LcXY5kykyMthCm5senQOX5XvnJ20,1157
+legionella_sbt/config/config.default.yaml,sha256=DVt5FztuTcfgig-Kv4KcZU2W0K_3Mq3qcWbbqSeyiH4,538
+legionella_sbt-0.0.5.dist-info/LICENSE,sha256=p6aTb6QIfqyZ2Uux2VjV4F2zthdUSHZOjB4mfwGc7fo,1094
+legionella_sbt-0.0.5.dist-info/METADATA,sha256=H8J7Xx_OkaKFL7jZN3AX0UXGmSWgxf6Ko0cCd8KycLA,2650
+legionella_sbt-0.0.5.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+legionella_sbt-0.0.5.dist-info/entry_points.txt,sha256=QIkTW4OxvgNTjSCLehqFNZXtSzxyIgmDUIux65GzCQs,113
+legionella_sbt-0.0.5.dist-info/top_level.txt,sha256=iECGN2I1JECIPYFvJaWy8SO3mzGfPca7Hstmo3vLtXM,71
+legionella_sbt-0.0.5.dist-info/RECORD,,
