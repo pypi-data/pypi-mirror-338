@@ -1,0 +1,21 @@
+Metadata-Version: 2.4
+Name: pytest-skip
+Version: 0.1.0
+Summary: A pytest plugin which allows to (de-)select or skip tests from a file.
+Keywords: pytest,test,plugin
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Plugins
+Classifier: Framework :: Pytest
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+License-File: LICENSE
+Requires-Dist: pytest
+Provides-Extra: dev
+Requires-Dist: ruff; extra == "dev"
+Requires-Dist: isort; extra == "dev"
+Requires-Dist: flake8; extra == "dev"
+Requires-Dist: pylint; extra == "dev"
+Requires-Dist: mypy; extra == "dev"
+Dynamic: license-file
