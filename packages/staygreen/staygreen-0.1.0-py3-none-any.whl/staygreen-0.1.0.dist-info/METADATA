@@ -1,0 +1,22 @@
+Metadata-Version: 2.4
+Name: staygreen
+Version: 0.1.0
+Summary: Stay green
+Project-URL: Homepage, https://codeberg.org/berk76/stay-green
+Project-URL: Repository, https://codeberg.org/berk76/stay-green
+Project-URL: Issues, https://codeberg.org/berk76/stay-green/issues
+Requires-Python: >=3.10
+Requires-Dist: pyautogui>=0.9.54
+Description-Content-Type: text/markdown
+
+# Stay Green
+
+Installation:
+```
+uv tools install mygreen
+```
+
+Run
+```
+klepadlo
+```
