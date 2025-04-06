@@ -1,0 +1,109 @@
+# Configurações de variáveis de ambiente por contexto
+
+required_vars:
+  cli:
+    - OPENAI_API_KEY
+  github:
+    - GITHUB_TOKEN
+  publish:
+    - PYPI_TOKEN
+
+optional_vars:
+  cli:
+    - OPENROUTER_KEY
+    - GEMINI_KEY
+    - ANTHROPIC_KEY
+    - LOG_LEVEL
+    - CACHE_DIR
+    - CACHE_TTL
+    - FALLBACK_ENABLED
+    - DEFAULT_MODEL
+    - ELEVATION_MODEL
+    - MODEL_TIMEOUT
+    - MAX_RETRIES
+  github: {}
+
+# Validação de tokens
+token_validation:
+  min_length: 10
+  openai_prefix: sk-
+  github_prefix: gh
+  openrouter_prefix: sk-or-v1-
+  gemini_prefix: AI
+  anthropic_prefix: sk-ant-
+  pypi_prefix: pypi-
+
+# Tipos de commit e seus impactos na versão
+commit_types:
+  breaking:
+    semver: major
+    description: Mudanças que quebram compatibilidade
+  feature:
+    semver: minor
+    description: Novas funcionalidades
+  fix:
+    semver: patch
+    description: Correções de bugs
+  docs:
+    semver: patch
+    description: Documentação
+  style:
+    semver: patch
+    description: Formatação e estilo
+  refactor:
+    semver: patch
+    description: Refatoração de código
+  test:
+    semver: patch
+    description: Testes
+  chore:
+    semver: patch
+    description: Tarefas de manutenção
+  perf:
+    semver: patch
+    description: Melhorias de performance
+  ci:
+    semver: patch
+    description: Configuração de CI
+  build:
+    semver: patch
+    description: Sistema de build
+
+# Padrões de regex para análise de commits
+patterns:
+  breaking:
+    - breaking change
+    - breaking-change
+    - incompatible
+    - nao compativel
+    - breaking
+    - major update
+  feature:
+    - add feature
+    - implement
+    - criado novo
+    - adicionado
+    - nova funcionalidade
+    - novo recurso
+  fix:
+    - fix
+    - bug fix
+    - resolve
+    - corrigido
+    - consertado
+    - correcao
+
+# Padrões para substituição de dados sensíveis em logs
+sensitive_data_patterns:
+  - pattern: '[a-zA-Z0-9-_]{20,}'
+    replacement: '***API_KEY***'
+  - pattern: 'Bearer [a-zA-Z0-9-_.]+' 
+    replacement: 'Bearer ***TOKEN***'
+  - pattern: 'github_pat_[a-zA-Z0-9_]+'
+    replacement: '***GITHUB_PAT***'
+  - pattern: 'ghp_[a-zA-Z0-9]+'
+    replacement: '***GITHUB_TOKEN***'
+  - pattern: 'sk-[a-zA-Z0-9]+'
+    replacement: '***OPENAI_API_KEY***'
+  - pattern: 'pypi-[a-zA-Z0-9]{20,}'
+    replacement: '***PYPI_TOKEN***' 
