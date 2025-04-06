@@ -1,0 +1,8 @@
+setup.py
+cgraaaj_discord_notifier.egg-info/PKG-INFO
+cgraaaj_discord_notifier.egg-info/SOURCES.txt
+cgraaaj_discord_notifier.egg-info/dependency_links.txt
+cgraaaj_discord_notifier.egg-info/requires.txt
+cgraaaj_discord_notifier.egg-info/top_level.txt
+notifier/__init__.py
+notifier/discord_notifier.py
