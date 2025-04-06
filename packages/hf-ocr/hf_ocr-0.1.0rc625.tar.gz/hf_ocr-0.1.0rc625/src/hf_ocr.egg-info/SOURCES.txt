@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+src/hf_ocr/__init__.py
+src/hf_ocr/ocr_pdf.py
+src/hf_ocr.egg-info/PKG-INFO
+src/hf_ocr.egg-info/SOURCES.txt
+src/hf_ocr.egg-info/dependency_links.txt
+src/hf_ocr.egg-info/requires.txt
+src/hf_ocr.egg-info/top_level.txt
