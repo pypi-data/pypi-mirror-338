@@ -1,0 +1,8 @@
+README.md
+setup.py
+desafio_banco/__init__.py
+desafio_banco/desafio.py
+desafio_banco.egg-info/PKG-INFO
+desafio_banco.egg-info/SOURCES.txt
+desafio_banco.egg-info/dependency_links.txt
+desafio_banco.egg-info/top_level.txt

@@ -1,0 +1,38 @@
+Metadata-Version: 2.4
+Name: desafio_banco
+Version: 0.0.1
+Summary: Desafio Banco - Projeto de Python DIO
+Home-page: https://github.com/BrunoRodri/simple-package-template
+Author: bruno_rodrigues
+Author-email: fidbruno@hotmail.com
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Dynamic: author
+Dynamic: author-email
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: requires-python
+Dynamic: summary
+
+# package_name
+
+Description. 
+The package package_name is used to:
+	- 
+	-
+
+## Installation
+
+Use the package manager [pip](https://pip.pypa.io/en/stable/) to install package_name
+
+```bash
+pip install desafio_banco
+```
+
+
+## Author
+Bruno
+
+## License
+[MIT](https://choosealicense.com/licenses/mit/)
