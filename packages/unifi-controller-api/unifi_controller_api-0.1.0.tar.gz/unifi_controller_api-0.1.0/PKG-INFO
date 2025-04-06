@@ -1,0 +1,27 @@
+Metadata-Version: 2.4
+Name: unifi-controller-api
+Version: 0.1.0
+Summary: A (read only) Python library for interacting with the Unifi Controller API
+Author-email: Tyler Woods <tyler@tylermade.net>
+License: MIT
+Project-URL: Homepage, https://github.com/tnware/unifi-controller-api
+Project-URL: Bug Tracker, https://github.com/tnware/unifi-controller-api/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: System :: Networking :: Monitoring
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Utilities
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests
+Provides-Extra: dev
+Requires-Dist: pytest>=6.0; extra == "dev"
+Requires-Dist: pytest-cov>=2.12; extra == "dev"
+Requires-Dist: pytest-mock>=3.10.0; extra == "dev"
+Requires-Dist: python-dotenv>=1.0.0; extra == "dev"
+Requires-Dist: ruff>=0.1.1; extra == "dev"
+Dynamic: license-file
+
+# unifi-controller-api
