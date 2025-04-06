@@ -1,0 +1,3 @@
+[console_scripts]
+HolyShit = holyshit_eso.hs:main
+hsEso = holyshit_eso.hs:main
