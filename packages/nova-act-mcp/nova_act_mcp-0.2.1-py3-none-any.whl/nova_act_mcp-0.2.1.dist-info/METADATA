@@ -1,0 +1,20 @@
+Metadata-Version: 2.4
+Name: nova-act-mcp
+Version: 0.2.1
+Summary: An MCP Server for Amazon Nova Act
+Author-email: Arunav Gupta <arunavgupta01@gmail.com>
+License: MIT
+License-File: LICENSE
+License-File: NOTICE.html
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Requires-Python: >=3.11
+Requires-Dist: click>=8.1.8
+Requires-Dist: mcp[cli]>=1.6.0
+Requires-Dist: nova-act>=1.0.2222.0
+Requires-Dist: pydantic>=2.11.1
+Description-Content-Type: text/markdown
+
+# Nova Act MCP Server
