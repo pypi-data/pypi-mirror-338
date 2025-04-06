@@ -1,0 +1,225 @@
+# SPDX-FileCopyrightText: 2021 Dalibo
+#
+# SPDX-License-Identifier: GPL-3.0-or-later
+
+import functools
+import sys
+from collections.abc import AsyncIterator, Callable
+from contextlib import AbstractAsyncContextManager, asynccontextmanager
+from typing import Any, overload
+
+import psycopg.conninfo
+import psycopg.errors
+import psycopg.rows
+from psycopg.abc import Params, Query
+
+from .. import ui, util
+from ..models import PostgreSQLInstance, Standby
+from ..postgresql import pq
+from . import dryrun
+
+logger = util.get_logger(__name__)
+
+Connection = psycopg.AsyncConnection[psycopg.rows.DictRow]
+
+
+async def connect_dsn(conninfo: str) -> AbstractAsyncContextManager[Connection]:
+    logger.debug(
+        "connecting to PostgreSQL instance with: %s",
+        pq.obfuscate_conninfo(conninfo),
+    )
+    return await psycopg.AsyncConnection.connect(
+        conninfo, autocommit=True, row_factory=psycopg.rows.dict_row
+    )
+
+
+@asynccontextmanager
+async def connect(
+    instance: PostgreSQLInstance,
+    *,
+    user: str | None = None,
+    password: str | None = None,
+    **kwargs: Any,
+) -> AsyncIterator[Connection]:
+    postgresql_settings = instance._settings.postgresql
+    if user is None:
+        user = postgresql_settings.surole.name
+    if password is None:
+        password = pq.environ(instance, user).get("PGPASSWORD")
+
+    build_conninfo = functools.partial(pq.dsn, instance, user=user, **kwargs)
+
+    conninfo = build_conninfo(password=password)
+    try:
+        async with await connect_dsn(conninfo) as cnx:
+            yield cnx
+    except psycopg.OperationalError as e:
+        if not e.pgconn:
+            raise
+        if e.pgconn.needs_password:
+            password = ui.prompt(f"Password for user {user}", hide_input=True)
+        elif e.pgconn.used_password:
+            password = ui.prompt(
+                f"Password for user {user} is incorrect, re-enter a valid one",
+                hide_input=True,
+            )
+        if not password:
+            raise
+        conninfo = build_conninfo(password=password)
+        async with await connect_dsn(conninfo) as cnx:
+            yield cnx
+
+
+async def primary_connect(standby: Standby) -> AbstractAsyncContextManager[Connection]:
+    """Connect to the primary of standby."""
+    kwargs = {}
+    if standby.password:
+        kwargs["password"] = standby.password.get_secret_value()
+    conninfo = psycopg.conninfo.make_conninfo(
+        standby.primary_conninfo, dbname="template1", **kwargs
+    )
+    return await connect_dsn(conninfo)
+
+
+@asynccontextmanager
+async def transaction(cnx: Connection, /) -> AsyncIterator[None]:
+    async with cnx.transaction():
+        yield None
+
+
+async def execute(
+    cnx: Connection, query: Query, params: Params | None = None, /
+) -> None:
+    if not dryrun.enabled():
+        await cnx.execute(query, params)
+
+
+async def exec_fetch(
+    cnx: Connection, query: Query, params: Params | None = None, /
+) -> tuple[str | None, list[psycopg.rows.DictRow] | None]:
+    """Execute a query and return its results or None along with the status message."""
+    cur = await cnx.execute(query, params)
+    return cur.statusmessage, await cur.fetchall() if cur.description else None
+
+
+@overload
+async def fetchone(
+    cnx: Connection,
+    query: Query,
+    params: Params | None = None,
+    /,
+    *,
+    row_factory: None = ...,
+) -> psycopg.rows.DictRow | None: ...
+
+
+@overload
+async def fetchone(
+    cnx: Connection,
+    query: Query,
+    params: Params | None = None,
+    /,
+    *,
+    row_factory: psycopg.rows.AsyncRowFactory[psycopg.rows.Row],
+) -> psycopg.rows.Row | None: ...
+
+
+async def fetchone(
+    cnx: Connection,
+    query: Query,
+    params: Params | None = None,
+    /,
+    *,
+    row_factory: psycopg.rows.AsyncRowFactory[psycopg.rows.Row] | None = None,
+) -> psycopg.rows.DictRow | psycopg.rows.Row | None:
+    cur = cnx.cursor(row_factory=row_factory) if row_factory else cnx.cursor()
+    async with cur:
+        await cur.execute(query, params)
+        return await cur.fetchone()
+
+
+@overload
+async def one(
+    cnx: Connection,
+    query: Query,
+    params: Params | None = None,
+    /,
+    *,
+    row_factory: None,
+) -> psycopg.rows.DictRow: ...
+
+
+@overload
+async def one(
+    cnx: Connection,
+    query: Query,
+    params: Params | None = None,
+    /,
+    *,
+    row_factory: psycopg.rows.AsyncRowFactory[psycopg.rows.Row],
+) -> psycopg.rows.Row: ...
+
+
+async def one(
+    cnx: Connection,
+    query: Query,
+    params: Params | None = None,
+    /,
+    *,
+    row_factory: psycopg.rows.AsyncRowFactory[psycopg.rows.Row] | None = None,
+) -> psycopg.rows.DictRow | psycopg.rows.Row:
+    r = await fetchone(cnx, query, params, row_factory=row_factory)
+    assert r is not None, f"{query!r} did not return any row"
+    return r
+
+
+@overload
+async def fetchall(
+    cnx: Connection,
+    query: Query,
+    params: Params | None = None,
+    /,
+    *,
+    row_factory: None = ...,
+) -> list[psycopg.rows.DictRow]: ...
+
+
+@overload
+async def fetchall(
+    cnx: Connection,
+    query: Query,
+    params: Params | None = None,
+    /,
+    *,
+    row_factory: psycopg.rows.AsyncRowFactory[psycopg.rows.Row],
+) -> list[psycopg.rows.Row]: ...
+
+
+async def fetchall(
+    cnx: Connection,
+    query: Query,
+    params: Params | None = None,
+    /,
+    *,
+    row_factory: psycopg.rows.AsyncRowFactory[psycopg.rows.Row] | None = None,
+) -> list[psycopg.rows.DictRow] | list[psycopg.rows.Row]:
+    cur = cnx.cursor(row_factory=row_factory) if row_factory else cnx.cursor()
+    async with cur:
+        await cur.execute(query, params)
+        return await cur.fetchall()
+
+
+def encrypt_password(cnx: Connection, /, passwd: str, user: str) -> str:
+    encoding = cnx.info.encoding
+    return cnx.pgconn.encrypt_password(
+        passwd.encode(encoding), user.encode(encoding)
+    ).decode(encoding)
+
+
+def add_notice_handler(cnx: Connection, callback: Callable[[Any], None], /) -> None:
+    cnx.add_notice_handler(callback)
+
+
+def default_notice_handler(diag: psycopg.errors.Diagnostic) -> None:
+    if diag.message_primary is not None:
+        sys.stderr.write(diag.message_primary + "\n")
