@@ -1,0 +1,14 @@
+PyMPDATA_MPI/__init__.py,sha256=yZrXG8lVe-KaDTgram1qLc4l_OV6njdaojprGGwh4tg,217
+PyMPDATA_MPI/domain_decomposition.py,sha256=fAWH2wJOsL6ob1RlaXCoikDhnyJH2t3gk5rt_7qm83c,562
+PyMPDATA_MPI/hdf_storage.py,sha256=M4uYL92VDU-ksjdMHsxGSUtf7QbKslcTAoGju5Uuj1k,672
+PyMPDATA_MPI/mpi_periodic.py,sha256=tSygGO4RTt-iyV0KfG17SP-J2bvLb3B_xBmt2nI_MNc,2023
+PyMPDATA_MPI/mpi_polar.py,sha256=NrMaz-U4TWAuIzKEwPidkmfFtZNbunoD-TXL2s9ywnU,1673
+PyMPDATA_MPI/utils.py,sha256=P2iPf5jkozHNjUQm6aYLCdnXpLKTlM1fp5G3C4dQpZM,437
+PyMPDATA_MPI/impl/__init__.py,sha256=zAFMn9diNHX2pKZU1uo7415N3jyP8pB0GIqhF5QKhXo,87
+PyMPDATA_MPI/impl/boundary_condition_commons.py,sha256=pS7mFrWkkgM5wTzO1oyP0V0sk92--gsOo2aWixJRV6M,4942
+PyMPDATA_MPI/impl/mpi_boundary_condition.py,sha256=9iVlOWRDiCDYX8iwSUA85nsbppRkH6vrHqXM5yP8hmk,1234
+pympdata_mpi-0.1.1.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+pympdata_mpi-0.1.1.dist-info/METADATA,sha256=6CxGGP8P-ynBA2w39QGqk2CTR06gBt7BX4O_Z-eoV48,13322
+pympdata_mpi-0.1.1.dist-info/WHEEL,sha256=jB7zZ3N9hIM9adW7qlTAyycLYW9npaWKLRzaoVcLKcM,91
+pympdata_mpi-0.1.1.dist-info/top_level.txt,sha256=CcO1esEwUBspScsH2HtXiaeeWJh4qFEvtzON4mTAErM,13
+pympdata_mpi-0.1.1.dist-info/RECORD,,
