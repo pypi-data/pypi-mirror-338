@@ -1,0 +1,7 @@
+numpy
+
+[all]
+GeoMT1[extra]
+
+[extra]
+pandas

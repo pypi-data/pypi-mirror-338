@@ -1,0 +1,2 @@
+[console_scripts]
+geomt1 = geomt1.cli:main
