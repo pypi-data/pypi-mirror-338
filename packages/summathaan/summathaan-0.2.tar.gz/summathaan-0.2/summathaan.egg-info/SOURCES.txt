@@ -1,0 +1,9 @@
+README.md
+setup.py
+summathaan/__init__.py
+summathaan/main.py
+summathaan.egg-info/PKG-INFO
+summathaan.egg-info/SOURCES.txt
+summathaan.egg-info/dependency_links.txt
+summathaan.egg-info/entry_points.txt
+summathaan.egg-info/top_level.txt
