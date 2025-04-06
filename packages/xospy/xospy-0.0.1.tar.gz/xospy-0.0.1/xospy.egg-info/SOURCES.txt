@@ -1,0 +1,7 @@
+run.py
+setup.py
+xospy.egg-info/PKG-INFO
+xospy.egg-info/SOURCES.txt
+xospy.egg-info/dependency_links.txt
+xospy.egg-info/requires.txt
+xospy.egg-info/top_level.txt
