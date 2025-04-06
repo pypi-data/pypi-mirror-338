@@ -1,0 +1,11 @@
+[project]
+name = "fcs_package"
+version = "1.0.1"
+description = "Last digit of squares"
+readme = "README.md"
+authors = [{name = "Csaba"}]
+dependencies = ["numpy", "pandas"]
+
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
