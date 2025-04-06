@@ -1,0 +1,7 @@
+polars_astro/__init__.py,sha256=sW4VXUcHJierS9VSoidN2oJ8jgwi6mLrZEWwu-aEu8A,37
+polars_astro/io/__init__.py,sha256=MbfrgKAeb9Jm6mF-Qa8TJz7DNOcwlUOnUF8Vb6FChNg,34
+polars_astro/io/fits.py,sha256=10cwb7lld0oIFGOGBD8xkKMmaU8D-4C6Felu-B7iJ_Y,8787
+polars_astro-0.1.2.dist-info/METADATA,sha256=mHF7q4F8rAD7fsl-2n340jFwNGqlVnOrQv1tn6lRvSQ,697
+polars_astro-0.1.2.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+polars_astro-0.1.2.dist-info/licenses/LICENSE,sha256=NjB9Ee-y4tFnw18jDP6UtfbUoDazSc5IeqV3MCgbraw,1073
+polars_astro-0.1.2.dist-info/RECORD,,
