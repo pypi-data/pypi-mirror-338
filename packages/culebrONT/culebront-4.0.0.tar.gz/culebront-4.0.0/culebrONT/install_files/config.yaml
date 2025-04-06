@@ -1,0 +1,120 @@
+# cluster params
+max-jobs-per-second: 10
+max-status-checks-per-second: 10
+jobs: 200
+
+# Snakemake params
+executor: EXECUTOR                            # slurm,slurm-jobstep,local,dryrun,touch
+software-deployment-method: DEPLOYMENT
+latency-wait: 1296000
+printshellcmds: true
+cores: 8
+keep-going: True
+rerun-incomplete: True
+restart-times: 0
+show-failed-logs: True
+rerun-triggers: ["code","input","mtime","params","software-env"]
+keep-incomplete: False
+
+# Default resources for all rules
+default-resources:
+    slurm_account: glp701
+    #slurm_extra: ""
+    slurm_partition: PARTITION
+    mem_per_cpu: 4G
+    runtime: 130h
+    threads: 1
+
+# Specific THREADS for rules
+set-threads:
+    run_flye: 10
+
+# Specific resources for some rules
+set-resources:
+    # ASSEMBLERS TOOLS
+    run_flye:
+        mem-per-cpu: 15G
+    run_canu:
+        threads: 10
+        mem-per-cpu: 25G
+    run_minimap_for_miniasm:
+        threads: 8
+        mem-per-cpu: 15G
+    run_miniasm:
+        threads: 8
+        mem-per-cpu: 15G
+    run_minipolish:
+        threads: 8
+        mem-per-cpu: 15G
+    run_raven:
+        threads: 8
+        mem-per-cpu: 15G
+    run_smartdenovo:
+        threads: 8
+        mem-per-cpu: 15G
+    run_shasta:
+        threads: 8
+        mem-per-cpu: 20G
+    
+    # CIRCULAR TOOLS
+    run_circlator:
+        threads: 8
+        mem-per-cpu: 8G
+    
+    # CORRECTION TOOLS
+    index_fasta_to_correction:
+        threads: 8
+    run_minialign_to_medaka:
+        threads: 8
+    run_medaka_train:
+        threads: 8
+    run_medaka_consensus:
+        slurm_partition: gpu
+        threads: 4
+    run_pilon_first_round:
+        threads: 2
+    run_pilon:
+        threads: 2
+    
+    # POLISHERS TOOLS
+    run_racon:
+        threads: 8
+        mem-per-cpu: 8G
+    
+    # QUALITY TOOLS
+    preparing_fasta_to_quality:
+        threads: 8
+    run_quast:
+        threads: 8
+    run_busco:
+        threads: 8
+    run_diamond:
+        threads: 8
+    run_minimap2:
+        threads: 8
+    run_merqury:
+        threads: 8
+        mem-per-cpu: 15G
+    run_bwa_mem2:
+        threads: 8
+    run_flagstat:
+        threads: 8
+    
+## rule not able to multi-threading
+# convert_fastq_to_fasta
+# tag_circular
+# tag_circular_to_minipolish
+# rotate_circular
+# run_fixstart
+# run_blobtools
+# run_mummer
+# run_assemblytics
+# combined_fastq
+# run_mauve
+# run_flagstats_stats
+# run_busco_stats
+# run_racon_version
+# run_busco_version
+# run_benchmark_time
+# stats_assembly
+# copy_final_assemblies
