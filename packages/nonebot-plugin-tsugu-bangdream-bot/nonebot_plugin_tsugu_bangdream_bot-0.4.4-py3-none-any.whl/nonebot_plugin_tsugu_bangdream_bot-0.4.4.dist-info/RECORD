@@ -1,0 +1,10 @@
+nonebot_plugin_tsugu_bangdream_bot-0.4.4.dist-info/METADATA,sha256=WoKNET7KoW-ly5T7doIKEIRfkdMbvQycjDMGn59_cqE,8007
+nonebot_plugin_tsugu_bangdream_bot-0.4.4.dist-info/WHEEL,sha256=thaaA2w1JzcGC48WYufAs8nrYZjJm8LqNfnXFOFyCC4,90
+nonebot_plugin_tsugu_bangdream_bot-0.4.4.dist-info/entry_points.txt,sha256=6OYgBcLyFCUgeqLgnvMyOJxPCWzgy7se4rLPKtNonMs,34
+nonebot_plugin_tsugu_bangdream_bot-0.4.4.dist-info/licenses/LICENSE,sha256=nGSAPQrEbmwQXDwomQZFH-5UCsiizQEgI-xbqFKS6ug,1067
+nonebot_plugin_tsugu_bangdream_bot/__init__.py,sha256=05AXpgFCBt4stYTblRpPRwcSSxTmmicHW4hjlHllTEU,30733
+nonebot_plugin_tsugu_bangdream_bot/_client.py,sha256=bVlEWFRg9nrX3aEhn5HQwpqDTISrf_-w-qBm3mpDdek,2315
+nonebot_plugin_tsugu_bangdream_bot/_commands.py,sha256=7MSfidNzJjx911UjwRab832CUwZ2Q4g7EggyejWUw_k,22463
+nonebot_plugin_tsugu_bangdream_bot/_utils.py,sha256=woyl5H2uYz8txZrTvykErBHJVNsatvaHjzcqssY7SDQ,7368
+nonebot_plugin_tsugu_bangdream_bot/config.py,sha256=iDtEVcR8HoHYDpfbhEjMD9YXPGxXsPDxqk1LMl04emU,2601
+nonebot_plugin_tsugu_bangdream_bot-0.4.4.dist-info/RECORD,,
