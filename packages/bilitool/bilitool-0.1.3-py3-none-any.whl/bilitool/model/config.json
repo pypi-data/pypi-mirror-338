@@ -1,0 +1,29 @@
+{
+    "headers": {
+        "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/63.0.3239.108"
+    },
+    "cookies": {
+        "SESSDATA": "",
+        "bili_jct": "",
+        "DedeUserID": "",
+        "DedeUserID__ckMd5": "",
+        "access_key": "",
+        "sid": ""
+    },
+    "upload": {
+        "copyright": 2,
+        "title": "",
+        "desc": "",
+        "tid": 138,
+        "tag": "bilitool",
+        "source": "\u6765\u6e90\u4e8e\u7f51\u7edc",
+        "cover": "",
+        "dynamic": ""
+    },
+    "download": {
+        "danmaku": false,
+        "quality": 64,
+        "chunksize": 1024,
+        "multiple": false
+    }
+}
