@@ -1,0 +1,17 @@
+TrainSense/__init__.py,sha256=Yz4dJSTSfNzuv5Rds3Et8RJ2T2agkH3nEYplQhvbg3s,471
+TrainSense/analyzer.py,sha256=NpiAMnjigc0AeIbm91Gy6Dwe8asbKDWtcEnSwMCktVk,4142
+TrainSense/arch_analyzer.py,sha256=fS4tR9f-s1ECmTfrtEbpNsiU9ZcVhQDq4LiFe576Uz8,2510
+TrainSense/deep_analyzer.py,sha256=RS9bmAiX1T3prVWKU_woQ5OVfVJ2JZS18Tph0_1pMgc,1633
+TrainSense/gpu_monitor.py,sha256=nIPhtZGbwqUi_VMCd3KSXE7fE96TIvtQfCCCv7V-_jE,699
+TrainSense/logger.py,sha256=HeEpr6kUBDkPIV1RpF6FGM4hvb4dXk-FCISqadKNOxY,1222
+TrainSense/model_profiler.py,sha256=b0u8kcwzESWGaO9uvJuHOM7lfT7xanSQG91KTICW66I,1218
+TrainSense/optimizer.py,sha256=9f3v_9f5vuoWvEN3S2t8f0Xgp8ZuxuhmIiZYYlZM83I,948
+TrainSense/performance_tuner.py,sha256=sR2vaCHH-NmQeei0Rd6QLDfturv5izUW9Uel5Gks6lY,1304
+TrainSense/system_config.py,sha256=x0xxNlyN5ZsLWMlfO6EcbfP2S48k_CUpLwGkHE0_yjs,1269
+TrainSense/system_diagnostics.py,sha256=eXQ_PT45caLZOhK-E_e_yGrDOYfZ1TNhjoBQ7BlohZE,519
+TrainSense/ultra_optimizer.py,sha256=rn5Pz2mb4yqZp1WWdUwtftvKLtMNLc4RS3TnvyIwB4Y,1008
+TrainSense/utils.py,sha256=9YitrDTIKsfJG3LYbHjcsTVaqwEty77ObLA24itgImE,207
+trainsense-0.0.1.dist-info/METADATA,sha256=p7zyhXNiH-LmVqsIQzxa2c7uTgZbk7ZmX_UogXK0EmI,10385
+trainsense-0.0.1.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+trainsense-0.0.1.dist-info/top_level.txt,sha256=ffwNjTybUmDPuE0n6cgdcmLRsL0275qNw8-QMw40gWc,11
+trainsense-0.0.1.dist-info/RECORD,,
