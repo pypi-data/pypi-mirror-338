@@ -1,0 +1,9 @@
+README.md
+pyproject.toml
+setup.py
+shieldmcp.egg-info/PKG-INFO
+shieldmcp.egg-info/SOURCES.txt
+shieldmcp.egg-info/dependency_links.txt
+shieldmcp.egg-info/requires.txt
+shieldmcp.egg-info/top_level.txt
+tests/test_audit.py
