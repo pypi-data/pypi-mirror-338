@@ -1,0 +1,26 @@
+{
+    "config": {
+        "step": {
+            "user": {
+                "data": {
+                    "headline_filter": "Blacklist regex to filter warning headlines"
+                }
+            }
+        }
+    },
+    "options": {
+        "error": {
+            "cannot_connect": "Failed to connect",
+            "unknown": "Unexpected error"
+        },
+        "step": {
+            "init": {
+                "data": {
+                    "area_filter": "Whitelist regex to filter warnings based on affected areas",
+                    "headline_filter": "Blacklist regex to filter warning headlines"
+                },
+                "title": "Options"
+            }
+        }
+    }
+}

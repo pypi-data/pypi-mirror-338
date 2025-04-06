@@ -1,0 +1,48 @@
+{
+    "config": {
+        "step": {
+            "user": {
+                "data": {
+                    "time": "Time",
+                    "to": "To Harbour",
+                    "weekday": "Weekdays"
+                }
+            }
+        }
+    },
+    "entity": {
+        "sensor": {
+            "departure_from": {
+                "name": "Departure from"
+            },
+            "departure_modified": {
+                "name": "Departure modified"
+            },
+            "departure_time": {
+                "name": "Departure time"
+            },
+            "departure_time_next": {
+                "name": "Departure time next"
+            },
+            "departure_time_next_next": {
+                "name": "Departure time next after"
+            },
+            "departure_to": {
+                "name": "Departure to"
+            }
+        }
+    },
+    "selector": {
+        "weekday": {
+            "options": {
+                "fri": "Friday",
+                "mon": "Monday",
+                "sat": "Saturday",
+                "sun": "Sunday",
+                "thu": "Thursday",
+                "tue": "Tuesday",
+                "wed": "Wednesday"
+            }
+        }
+    }
+}

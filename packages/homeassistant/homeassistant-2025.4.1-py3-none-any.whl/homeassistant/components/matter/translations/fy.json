@@ -1,0 +1,32 @@
+{
+    "entity": {
+        "fan": {
+            "fan": {
+                "state_attributes": {
+                    "preset_mode": {
+                        "state": {
+                            "low": "Leech"
+                        }
+                    }
+                }
+            }
+        },
+        "number": {
+            "altitude": {
+                "name": "Hichte boppe seenivo"
+            }
+        },
+        "sensor": {
+            "contamination_state": {
+                "state": {
+                    "low": "Leech"
+                }
+            },
+            "operational_state": {
+                "state": {
+                    "stopped": "Stoppe"
+                }
+            }
+        }
+    }
+}

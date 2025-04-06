@@ -1,0 +1,12 @@
+{
+    "entity": {
+        "sensor": {
+            "wi_fi_strength": {
+                "state": {
+                    "low": "Leech",
+                    "medium": "Gemiddeld"
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,29 @@
+{
+    "config": {
+        "abort": {
+            "already_configured": "Account is already configured"
+        },
+        "step": {
+            "reauth_confirm": {
+                "description": "The Jellyfin integration needs to re-authenticate your account"
+            }
+        }
+    },
+    "entity": {
+        "sensor": {
+            "watching": {
+                "name": "Active clients",
+                "unit_of_measurement": "clients"
+            }
+        }
+    },
+    "options": {
+        "step": {
+            "init": {
+                "data": {
+                    "audio_codec": "Audio codec"
+                }
+            }
+        }
+    }
+}

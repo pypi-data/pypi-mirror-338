@@ -1,0 +1,51 @@
+{
+    "entity": {
+        "binary_sensor": {
+            "state": {
+                "name": "Aktyf"
+            }
+        },
+        "sensor": {
+            "agent_version": {
+                "name": "OS Agent ferzje"
+            },
+            "apparmor_version": {
+                "name": "Apparmor ferzje"
+            },
+            "version": {
+                "name": "Ferzje"
+            },
+            "version_latest": {
+                "name": "Nijste ferzje"
+            }
+        },
+        "update": {
+            "update": {
+                "name": "Update"
+            }
+        }
+    },
+    "issues": {
+        "issue_addon_boot_fail": {
+            "fix_flow": {
+                "step": {
+                    "fix_menu": {
+                        "menu_options": {
+                            "addon_disable_boot": "Utskeakelje",
+                            "addon_execute_start": "Starte"
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "system_health": {
+        "info": {
+            "docker_version": "Docker ferzje",
+            "supervisor_api": "Supervisor API",
+            "supervisor_version": "Supervisor ferzje",
+            "supported": "Stipe",
+            "version_api": "API Ferzje"
+        }
+    }
+}

@@ -1,0 +1,13 @@
+{
+    "entity": {
+        "select": {
+            "auto_lock_time": {
+                "state": {
+                    "0": "Utskeakele",
+                    "15": "15 sekonden",
+                    "30": "30 sekonden"
+                }
+            }
+        }
+    }
+}

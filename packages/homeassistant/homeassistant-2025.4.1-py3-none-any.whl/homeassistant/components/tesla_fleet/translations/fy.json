@@ -1,0 +1,72 @@
+{
+    "entity": {
+        "select": {
+            "climate_state_seat_heater_left": {
+                "state": {
+                    "high": "Heech",
+                    "low": "Leech",
+                    "medium": "Gemiddeld",
+                    "off": "\u00dat"
+                }
+            },
+            "climate_state_seat_heater_rear_center": {
+                "state": {
+                    "high": "Heech",
+                    "low": "Leech",
+                    "medium": "Gemiddeld"
+                }
+            },
+            "climate_state_seat_heater_rear_left": {
+                "state": {
+                    "high": "Heech",
+                    "low": "Leech",
+                    "medium": "Gemiddeld"
+                }
+            },
+            "climate_state_seat_heater_rear_right": {
+                "state": {
+                    "high": "Heech",
+                    "low": "Leech",
+                    "medium": "Gemiddeld"
+                }
+            },
+            "climate_state_seat_heater_right": {
+                "state": {
+                    "high": "Heech",
+                    "low": "Leech",
+                    "medium": "Gemiddeld"
+                }
+            },
+            "climate_state_seat_heater_third_row_left": {
+                "state": {
+                    "high": "Heech",
+                    "low": "Leech",
+                    "medium": "Gemiddeld"
+                }
+            },
+            "climate_state_seat_heater_third_row_right": {
+                "state": {
+                    "high": "Heech",
+                    "low": "Leech",
+                    "medium": "Gemiddeld"
+                }
+            },
+            "climate_state_steering_wheel_heat_level": {
+                "state": {
+                    "high": "Heech",
+                    "low": "Leech"
+                }
+            }
+        },
+        "sensor": {
+            "charge_state_charging_state": {
+                "state": {
+                    "stopped": "Stoppe"
+                }
+            },
+            "version": {
+                "name": "ferzje"
+            }
+        }
+    }
+}

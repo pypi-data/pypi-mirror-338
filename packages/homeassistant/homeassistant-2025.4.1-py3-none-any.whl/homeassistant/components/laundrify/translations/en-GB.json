@@ -1,0 +1,20 @@
+{
+    "config": {
+        "abort": {
+            "already_configured": "Account is already configured"
+        },
+        "step": {
+            "reauth_confirm": {
+                "description": "The laundrify integration needs to re-authenticate.",
+                "title": "Authentication expired for {name}"
+            }
+        }
+    },
+    "entity": {
+        "binary_sensor": {
+            "wash_cycle": {
+                "name": "Cycle"
+            }
+        }
+    }
+}

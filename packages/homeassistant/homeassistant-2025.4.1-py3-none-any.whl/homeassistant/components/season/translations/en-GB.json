@@ -1,0 +1,23 @@
+{
+    "entity": {
+        "sensor": {
+            "season": {
+                "state": {
+                    "autumn": "Autumn",
+                    "spring": "Spring",
+                    "summer": "Summer",
+                    "winter": "Winter"
+                }
+            }
+        }
+    },
+    "selector": {
+        "season_type": {
+            "options": {
+                "astronomical": "Astronomical",
+                "meteorological": "Meteorological"
+            }
+        }
+    },
+    "title": "Season"
+}

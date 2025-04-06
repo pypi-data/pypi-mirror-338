@@ -1,0 +1,30 @@
+{
+    "config": {
+        "abort": {
+            "cannot_connect": "Failed to connect",
+            "max_regions": "Max 5 regions can be configured"
+        }
+    },
+    "entity": {
+        "binary_sensor": {
+            "air": {
+                "name": "Air"
+            },
+            "artillery": {
+                "name": "Artillery"
+            },
+            "chemical": {
+                "name": "Chemical"
+            },
+            "nuclear": {
+                "name": "Nuclear"
+            },
+            "unknown": {
+                "name": "Unknown"
+            },
+            "urban_fights": {
+                "name": "Urban fights"
+            }
+        }
+    }
+}

@@ -1,0 +1,24 @@
+{
+    "config": {
+        "step": {
+            "geography_by_coords": {
+                "title": "Konfigurearje in geografy"
+            },
+            "geography_by_name": {
+                "data": {
+                    "city": "St\u00ead"
+                }
+            }
+        }
+    },
+    "entity": {
+        "sensor": {
+            "pollutant_label": {
+                "state": {
+                    "p2": "PM2.5",
+                    "s2": "Sweveldiokside"
+                }
+            }
+        }
+    }
+}

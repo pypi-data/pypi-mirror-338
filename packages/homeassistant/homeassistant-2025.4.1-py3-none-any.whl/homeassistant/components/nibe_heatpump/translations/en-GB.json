@@ -1,0 +1,17 @@
+{
+    "config": {
+        "error": {
+            "address": "Invalid remote address specified. Address must be an IP address or a resolvable hostname.",
+            "address_in_use": "The selected listening port is already in use on this system.",
+            "model": "The selected model doesn't seem to support MODBUS40",
+            "read": "Error on read request from pump. Verify your `Remote read port` or `Remote address`.",
+            "unknown": "Unexpected error",
+            "write": "Error on write request to pump. Verify your `Remote write port` or `Remote address`."
+        },
+        "step": {
+            "user": {
+                "description": "Pick the connection method to your pump. In general, F-series pumps require a NibeGW custom accessory, while an S-series pump has Modbus support built-in."
+            }
+        }
+    }
+}

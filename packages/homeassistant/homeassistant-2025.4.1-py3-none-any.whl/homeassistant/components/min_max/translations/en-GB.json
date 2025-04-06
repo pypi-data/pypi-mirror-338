@@ -1,0 +1,22 @@
+{
+    "selector": {
+        "type": {
+            "options": {
+                "last": "Most recently updated",
+                "max": "Maximum",
+                "mean": "Arithmetic mean",
+                "median": "Median",
+                "min": "Minimum",
+                "range": "Statistical range",
+                "sum": "Sum"
+            }
+        }
+    },
+    "services": {
+        "reload": {
+            "description": "Reloads min/max sensors from the YAML-configuration.",
+            "name": "Reload"
+        }
+    },
+    "title": "Combine the state of several sensors"
+}

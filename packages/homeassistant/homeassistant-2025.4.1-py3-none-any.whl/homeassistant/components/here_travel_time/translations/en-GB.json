@@ -1,0 +1,40 @@
+{
+    "config": {
+        "abort": {
+            "already_configured": "Device is already configured"
+        },
+        "error": {
+            "invalid_auth": "Invalid authentication",
+            "unknown": "Unexpected error"
+        },
+        "step": {
+            "destination_coordinates": {
+                "data": {
+                    "destination": "Destination as GPS coordinates"
+                }
+            },
+            "origin_menu": {
+                "title": "Choose origin"
+            }
+        }
+    },
+    "entity": {
+        "sensor": {
+            "destination": {
+                "name": "Destination"
+            },
+            "distance": {
+                "name": "Distance"
+            },
+            "duration": {
+                "name": "Duration"
+            },
+            "duration_in_traffic": {
+                "name": "Duration in traffic"
+            },
+            "origin": {
+                "name": "Origin"
+            }
+        }
+    }
+}

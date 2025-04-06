@@ -1,0 +1,19 @@
+{
+    "common": {
+        "field_rgb_color_description": "De kleur yn RGB-formaat. In list fan trije hiele getallen tusken 0 en 255 dy't de wearden fan read, grien en blau oanjouwe.",
+        "field_rgbww_color_description": "De kleur yn RGBWW-formaat. In list fan fiif hiele getallen tusken 0 en 255 dy't de wearden fan read, grien en blau, k\u00e2ld wyt en waarm wyt oanjouwe."
+    },
+    "services": {
+        "turn_on": {
+            "fields": {
+                "rgb_color": {
+                    "description": "De kleur yn RGB-formaat. In list fan trije hiele getallen tusken 0 en 255 dy't de wearden fan read, grien en blau oanjouwe."
+                },
+                "rgbww_color": {
+                    "description": "De kleur yn RGBWW-formaat. In list fan fiif hiele getallen tusken 0 en 255 dy't de wearden fan read, grien en blau, k\u00e2ld wyt en waarm wyt oanjouwe."
+                }
+            }
+        }
+    },
+    "title": "Ljocht"
+}

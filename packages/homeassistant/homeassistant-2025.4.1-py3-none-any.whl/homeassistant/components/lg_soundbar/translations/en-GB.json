@@ -1,0 +1,14 @@
+{
+    "config": {
+        "error": {
+            "no_data": "Device did not return any data required to an entry."
+        },
+        "step": {
+            "user": {
+                "data_description": {
+                    "host": "The hostname or IP address of your LG Soundbar."
+                }
+            }
+        }
+    }
+}
