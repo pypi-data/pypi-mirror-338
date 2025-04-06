@@ -1,0 +1,5 @@
+setup.py
+langchain_lilypad.egg-info/PKG-INFO
+langchain_lilypad.egg-info/SOURCES.txt
+langchain_lilypad.egg-info/dependency_links.txt
+langchain_lilypad.egg-info/top_level.txt

@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: langchain_lilypad
+Version: 0.1.0
+Summary: The  module defines a custom chat model that interacts with the Lilypad API to generate conversational responses and bind tools for enhanced functionality, with mechanisms for parsing tool calls and customizing message payloads.
+Author: Altaga
+Author-email: altaga@protonmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
