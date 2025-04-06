@@ -1,0 +1,12 @@
+README.md
+pyproject.toml
+pyonceperday/__init__.py
+pyonceperday/events.py
+pyonceperday/exceptions.py
+pyonceperday.egg-info/PKG-INFO
+pyonceperday.egg-info/SOURCES.txt
+pyonceperday.egg-info/dependency_links.txt
+pyonceperday.egg-info/requires.txt
+pyonceperday.egg-info/top_level.txt
+pyonceperday/tests/__init__.py
+pyonceperday/tests/test_events.py
