@@ -1,0 +1,53 @@
+Metadata-Version: 2.4
+Name: AbhiMusicPlug
+Version: 1.0.0
+Summary: A Telegram Music Plugin System
+Home-page: https://github.com/NotRealAbhi/Plugins
+Author: AbhiShek
+Author-email: abhishekbanshiwal2005@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pyrofork
+Requires-Dist: py-tgcalls
+Requires-Dist: youtube-search-python
+Requires-Dist: yt-dlp
+Requires-Dist: tgcrypto
+Requires-Dist: httpx
+Requires-Dist: speedtest-cli
+Requires-Dist: ffprobe
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: license-file
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+# AbhiMusicPlug
+
+AbhiMusicPlug is a Telegram music bot plugin system powered by Pyrogram and PyTgCalls.  
+It supports multiple plugins for music playback, management, and utility features in group voice chats.
+
+---
+
+## 🚀 Features
+
+- Easy plugin management
+- Voice chat music streaming (YouTube, Spotify, JioSaavn, etc.)
+- Admin and group management tools
+- Built using Pyrogram and PyTgCalls
+
+---
+
+## 📦 Installation
+
+You can install this package directly (once published):
+
+```bash
+pip install AbhiMusicPlug
