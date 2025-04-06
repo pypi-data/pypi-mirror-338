@@ -1,0 +1,8 @@
+assets
+build
+meow
+setup
+temp
+test
+venv
+wheelhouse
