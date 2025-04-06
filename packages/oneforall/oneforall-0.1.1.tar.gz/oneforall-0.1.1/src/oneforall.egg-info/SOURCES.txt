@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/oneforall/__init__.py
+src/oneforall/bundler.py
+src/oneforall/cli.py
+src/oneforall/defaults.py
+src/oneforall/unbundler.py
+src/oneforall.egg-info/PKG-INFO
+src/oneforall.egg-info/SOURCES.txt
+src/oneforall.egg-info/dependency_links.txt
+src/oneforall.egg-info/entry_points.txt
+src/oneforall.egg-info/requires.txt
+src/oneforall.egg-info/top_level.txt
