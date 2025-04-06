@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: parking-utils-aec
+Version: 0.1.7
+Summary: A utility library for parking applications with AWS integration
+Home-page: UNKNOWN
+Author: Harish Challa
+Author-email: x23417498@student.ncirl.ie
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9,<3.14
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: Pillow==10.4.0
+Requires-Dist: boto3==1.37.23
+Requires-Dist: tenacity==9.0.0
+
+# Parking Utils Library
+
+A utility library for parking applications with AWS integration.
+
+## Installation
+```bash
+pip install parking-utils-aec
+
