@@ -1,0 +1,6 @@
+vcjabc/__init__.py,sha256=b8Xpbk8zZP8fLEzwlsWXZCwYBr6BLxTLeaIOlVcEzW4,4933
+vcjabc/bin/handler_linux,sha256=RtgYMjxxdmCwQExJa71NL65x3k4l1WcAXT5IehMDdjg,14371136
+vcjabc/bin/handler_windows.exe,sha256=GFrHGYF1oe1F3wkXm8NtDG77i0R4Ucq095DwGnSa6As,12665022
+vcjabc-0.0.14.dist-info/WHEEL,sha256=G2gURzTEtmeR8nrdXUJfNiB3VYVxigPQ-bEQujpNiNs,82
+vcjabc-0.0.14.dist-info/METADATA,sha256=0npUj0m_0DUUWxs2wg0HhyvvFInIs6PBwIks7yuVJlY,1853
+vcjabc-0.0.14.dist-info/RECORD,,
