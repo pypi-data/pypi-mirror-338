@@ -1,0 +1,13 @@
+betacode_parser/__init__.py,sha256=TQOkjXdwDi5HTGOkF_Z1tCH1-iVztX2JNHjGD8-l6oo,289
+betacode_parser/coptic_lists.py,sha256=vWUkxiSuh9eJSl6YJLHCag2DLc0wkBMIJt8yHbfLf_4,1964
+betacode_parser/coptic_parser.py,sha256=7z8Jw9oDvXivxyYzPCxm9rZPN86Z-5yFJGVCxipD9y8,747
+betacode_parser/greek_lists.py,sha256=KXBMul2dRbhG5zJSXm6ORqVXzeJBzVm6h1WCkVdlyIo,2246
+betacode_parser/greek_parser.py,sha256=kUZu4njMK9dPLNWD5MPr9DvBcBCjHn6faQfItnbz6yI,1544
+betacode_parser/hebrew_lists.py,sha256=R4mXhQcQM8m6LLDGsq7tXVSv7YcPBmVjQPtOKYwtCyY,1895
+betacode_parser/hebrew_parser.py,sha256=Wuwbssxv7I8vkLR52X3JKxAiu1jvWPYomT_HicSA68A,1921
+betacode_parser/parser.py,sha256=J0OEhIdK6tWO0h8Az7M8FZjcma2vfQZWjSMkF-3H9dw,258
+betacode_parser-1.0.0.dist-info/licenses/LICENSE,sha256=vFSVIfHXSFqZLS-ojHISTqkZvDDw1-7Euj2bASjYml8,1051
+betacode_parser-1.0.0.dist-info/METADATA,sha256=Dv7yftWFGZJm-cbJ27GKrmpj2nkzrItXLAMco1SE65g,2157
+betacode_parser-1.0.0.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+betacode_parser-1.0.0.dist-info/top_level.txt,sha256=3gTBafMncBEoqqg4OHYmZWiqQmLUZ-J4zqL_G4VZU6A,16
+betacode_parser-1.0.0.dist-info/RECORD,,
