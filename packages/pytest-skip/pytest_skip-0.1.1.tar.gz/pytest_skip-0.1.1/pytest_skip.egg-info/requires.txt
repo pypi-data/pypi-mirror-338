@@ -1,0 +1,8 @@
+pytest
+
+[dev]
+ruff
+isort
+flake8
+pylint
+mypy

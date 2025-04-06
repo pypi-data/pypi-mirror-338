@@ -1,0 +1,59 @@
+[project]
+name = "pytest-skip"
+version = "0.1.1"
+description = "A pytest plugin which allows to (de-)select or skip tests from a file."
+authors = [
+    { name = "Vlad Penkin", email="vlad.penkin@gmail.com" },
+]
+readme = "README.md"
+requires-python = ">=3.9"
+keywords = ["pytest", "test", "plugin"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Environment :: Plugins",
+    "Framework :: Pytest",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+dependencies = [
+    "pytest",
+]
+
+[project.urls]
+Source = "https://github.com/vlad-penkin/pytest-skip"
+
+[project.optional-dependencies]
+dev = [
+    "ruff",
+    "isort",
+    "flake8",
+    "pylint",
+    "mypy",
+]
+
+[project.entry-points."pytest11"]
+pytest-skip = "pytest_skip.plugin"
+
+[tool.setuptools]
+packages = ["pytest_skip"]
+
+[build-system]
+requires = ["setuptools>=75.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.flake8]
+max-line-length = 120
+ignore = ["W503"]
+
+[tool.autopep8]
+aggressive = 1
+ignore = "E501,E701,E731,W690,W503"
+max_line_length = 120
+
+[tool.ruff]
+line-length = 120
+
+[tool.ruff.lint]
+ignore = ["E501", "E701", "E731", "E741"]

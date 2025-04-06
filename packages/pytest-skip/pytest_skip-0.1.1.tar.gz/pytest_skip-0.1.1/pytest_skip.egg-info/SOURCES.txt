@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+pytest_skip/__init__.py
+pytest_skip/plugin.py
+pytest_skip.egg-info/PKG-INFO
+pytest_skip.egg-info/SOURCES.txt
+pytest_skip.egg-info/dependency_links.txt
+pytest_skip.egg-info/entry_points.txt
+pytest_skip.egg-info/requires.txt
+pytest_skip.egg-info/top_level.txt
+tests/test_pytest_skip.py
