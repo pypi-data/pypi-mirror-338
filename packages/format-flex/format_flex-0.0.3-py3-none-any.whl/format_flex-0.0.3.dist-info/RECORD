@@ -1,0 +1,10 @@
+format_flex/__init__.py,sha256=SuoWyM4ChWuBTytOAV0Sl_gGDvO9wCoXomWMrp80QXg,159
+format_flex/data_blob.py,sha256=1G5vRDY6aHAh8oV0ouqX4yYocBhRcM2ZWoIkya3FinI,1613
+format_flex/generic.py,sha256=zi-E2XxZ9NWLoN-80R88QUChjEY6LfY_xOHR-6xGG6A,3974
+format_flex/hierarchical.py,sha256=A987E-bFGlNvTwh4WiYogyakQhWg5TWs18mpvc_DX-A,13412
+format_flex/tabular.py,sha256=qYvBz8fDb34sij-RAAZd3mCarz7CUNcWLOolvxVeUAw,9579
+format_flex-0.0.3.dist-info/licenses/LICENSE,sha256=T23HPjgRraz47qQqQiQ1QhpJ67EQ8n2D3uSIhn7llNk,1069
+format_flex-0.0.3.dist-info/METADATA,sha256=iNCEqnpm2bKcDstJGNVWEVEML9-Nz4Etbzg3a6vqCAs,3282
+format_flex-0.0.3.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+format_flex-0.0.3.dist-info/top_level.txt,sha256=F1JcC9FSVaVG17_XN7xuaUWS8mWboffcZV7mqNjZ98k,12
+format_flex-0.0.3.dist-info/RECORD,,
