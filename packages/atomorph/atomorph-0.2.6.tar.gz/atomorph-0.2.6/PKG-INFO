@@ -1,0 +1,376 @@
+Metadata-Version: 2.4
+Name: atomorph
+Version: 0.2.6
+Summary: A powerful tool for converting and manipulating crystal structure files
+Home-page: https://github.com/yyxwjq/atomorph
+Author: yyxwjq
+Author-email: your.email@example.com
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Scientific/Engineering :: Physics
+Classifier: Topic :: Scientific/Engineering :: Chemistry
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy>=1.19.0
+Requires-Dist: ase>=3.21.0
+Requires-Dist: tqdm>=4.65.0
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: license-file
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+# Atomorph
+
+[English](#english) | [中文](#chinese)
+
+<a name="english"></a>
+## English
+
+### Introduction
+Atomorph is a powerful tool for converting and manipulating crystal structure files. It supports various file formats and provides flexible options for structure manipulation.
+
+### Features
+- Convert between CIF, VASP, and other crystal structure formats
+- Sort atoms by element type (alphabetical or custom order)
+- Fix specific atoms, elements, or layers
+- Support for multi-frame structures
+- Batch processing capabilities
+
+### Installation
+#### Method 1: Using pip
+```bash
+pip install atomorph==0.2.3
+```
+
+#### Method 2: Manual Installation
+1. Clone the repository:
+```bash
+git clone https://github.com/yourusername/atomorph.git
+cd atomorph
+```
+
+2. Install the package:
+```bash
+pip install -e .
+```
+
+3. Add to PATH (optional):
+Add the following line to your ~/.bashrc or ~/.zshrc:
+```bash
+export PATH=$PATH:/path/to/atomorph/bin
+```
+
+### Usage
+Basic conversion:
+```bash
+conv input.cif output.vasp
+```
+
+Sort atoms:
+```bash
+conv input.cif output.vasp -s ascending
+conv input.cif output.vasp -s descending
+```
+
+Custom element order:
+```bash
+conv input.cif output.vasp -e Fe Cu Ag Pt Au
+```
+
+Fix atoms:
+```bash
+# Fix all atoms
+conv input.cif output.vasp -c fixed
+
+# Fix specific elements
+conv input.cif output.vasp -c elements Fe Cu
+
+# Fix specific layers
+conv input.cif output.vasp -c layers 0,1 1,2
+
+# Fix specific atom indices
+conv input.cif output.vasp -c indices 1 2 3-6
+```
+
+### License
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+<a name="chinese"></a>
+## 中文
+
+### 简介
+Atomorph 是一个用于转换和操作晶体结构文件的强大工具。它支持多种文件格式，并提供灵活的结构操作选项。
+
+### 功能特点
+- 在 CIF、VASP 和其他晶体结构格式之间转换
+- 按元素类型排序（字母顺序或自定义顺序）
+- 固定特定原子、元素或层
+- 支持多帧结构
+- 批量处理功能
+
+### 安装方法
+#### 方法一：使用 pip 安装
+```bash
+pip install atomorph==0.2.3
+```
+
+#### 方法二：手动安装
+1. 克隆仓库：
+```bash
+git clone https://github.com/yourusername/atomorph.git
+cd atomorph
+```
+
+2. 安装包：
+```bash
+pip install -e .
+```
+
+3. 添加到环境变量（可选）：
+在 ~/.bashrc 或 ~/.zshrc 中添加以下行：
+```bash
+export PATH=$PATH:/path/to/atomorph/bin
+```
+
+### 使用方法
+基本转换：
+```bash
+conv input.cif output.vasp
+```
+
+原子排序：
+```bash
+conv input.cif output.vasp -s ascending
+conv input.cif output.vasp -s descending
+```
+
+自定义元素顺序：
+```bash
+conv input.cif output.vasp -e Fe Cu Ag Pt Au
+```
+
+固定原子：
+```bash
+# 固定所有原子
+conv input.cif output.vasp -c fixed
+
+# 固定特定元素
+conv input.cif output.vasp -c elements Fe Cu
+
+# 固定特定层
+conv input.cif output.vasp -c layers 0,1 1,2
+
+# 固定特定原子索引
+conv input.cif output.vasp -c indices 1 2 3-6
+```
+
+### 许可证
+本项目采用 MIT 许可证 - 详情请参见 [LICENSE](LICENSE) 文件。
+
+## Features
+
+- Convert between various atomic structure formats (CIF, VASP, XYZ, etc.)
+- Support for multi-frame structures
+- Custom element ordering
+- Atomic constraints (fix all atoms, specific elements, layers, or indices)
+- Parallel processing for multi-frame conversion
+- Progress bar for conversion progress
+- File size limit check
+
+## 功能特点
+
+- 支持多种原子结构格式之间的转换（CIF、VASP、XYZ等）
+- 支持多帧结构
+- 自定义元素排序
+- 原子约束（固定所有原子、特定元素、层或索引）
+- 多帧转换的并行处理
+- 转换进度条显示
+- 文件大小限制检查
+
+## Installation
+
+```bash
+pip install atomorph
+```
+
+## 安装
+
+```bash
+pip install atomorph
+```
+
+## Usage
+
+Basic conversion:
+```bash
+conv input.cif output.vasp
+```
+
+Sort atoms by atomic number (ascending):
+```bash
+conv input.cif output.vasp -s ascending
+```
+
+Sort atoms by atomic number (descending):
+```bash
+conv input.cif output.vasp -s descending
+```
+
+Custom element order:
+```bash
+conv input.cif output.vasp -e Ru Si Fe
+```
+
+Fix all atoms:
+```bash
+conv input.cif output.vasp -c fixed
+```
+
+Fix specific elements:
+```bash
+conv input.cif output.vasp -c elements Fe Cu
+```
+
+Fix layers:
+```bash
+conv input.cif output.vasp -c layers 0,1 1,2
+```
+
+Fix specific atom indices:
+```bash
+conv input.cif output.vasp -c indices 1 2 3-6
+```
+
+Multi-frame conversion:
+```bash
+conv input.cif output/ -m
+```
+
+Multi-frame conversion with separate directories:
+```bash
+conv input.cif output/ -m -d
+```
+
+Multi-frame conversion with frame selection:
+```bash
+conv input.cif output/ -m -f 1 2 3-6
+```
+
+Multi-frame conversion with parallel processing:
+```bash
+conv input.cif output/ -m -p
+```
+
+## 使用方法
+
+基本转换：
+```bash
+conv input.cif output.vasp
+```
+
+按原子序数升序排序：
+```bash
+conv input.cif output.vasp -s ascending
+```
+
+按原子序数降序排序：
+```bash
+conv input.cif output.vasp -s descending
+```
+
+自定义元素顺序：
+```bash
+conv input.cif output.vasp -e Ru Si Fe
+```
+
+固定所有原子：
+```bash
+conv input.cif output.vasp -c fixed
+```
+
+固定特定元素：
+```bash
+conv input.cif output.vasp -c elements Fe Cu
+```
+
+固定特定层：
+```bash
+conv input.cif output.vasp -c layers 0,1 1,2
+```
+
+固定特定原子索引：
+```bash
+conv input.cif output.vasp -c indices 1 2 3-6
+```
+
+多帧转换：
+```bash
+conv input.cif output/ -m
+```
+
+多帧转换（分别保存到不同目录）：
+```bash
+conv input.cif output/ -m -d
+```
+
+多帧转换（选择特定帧）：
+```bash
+conv input.cif output/ -m -f 1 2 3-6
+```
+
+多帧转换（并行处理）：
+```bash
+conv input.cif output/ -m -p
+```
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 许可证
+
+本项目采用MIT许可证 - 详情请参见 [LICENSE](LICENSE) 文件。
+
+## Command Line Options
+
+- `input_path`: Input file path
+- `output_path`: Output file path
+- `-m, --mode`: Conversion mode (single/multi)
+- `-s, --sort`: Sort atoms by atomic number (ascending/descending)
+- `-e, --elements`: Custom element order
+- `-c, --constraints`: Atomic constraints
+- `-d, --separate-dirs`: Save frames in separate directories
+- `-f, --frames`: Frame selection
+- `-p, --parallel`: Use parallel processing
+- `-v, --version`: Show version information
+
+## Supported File Formats
+
+- VASP (POSCAR/CONTCAR)
+- CIF
+- XYZ
+- XSF
+- LAMMPS
+- And more...
+
+## Requirements
+
+- Python >= 3.8
+- ASE >= 3.22.0
+- NumPy >= 1.21.0
+- SciPy >= 1.7.0
+- Matplotlib >= 3.4.0
