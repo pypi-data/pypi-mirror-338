@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "image-processing-mathpr"
+version = "0.1.0"
+description = "Tools for histogram matching, structural similarity, resizing, reading, saving, and plotting images."
+readme = "README.md"
+license = {file = "LICENSE"}
+authors = [
+  { name = "Matheus", email = "matherodrigues17@gmail.com" }
+]
+requires-python = ">=3.7"  # 👈 Linha adicionada!
+dependencies = [
+  "matplotlib",
+  "numpy",
+  "scikit-image >= 0.16.1"
+]
+
+[project.urls]
+Homepage = "https://github.com/MatheusPRodrigues/image-processing-package"
+"Bug Tracker" = "https://github.com/MatheusPRodrigues/image-processing-package/issues"
