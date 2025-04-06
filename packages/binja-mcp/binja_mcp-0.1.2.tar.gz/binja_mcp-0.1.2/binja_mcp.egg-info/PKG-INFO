@@ -1,0 +1,8 @@
+Metadata-Version: 2.4
+Name: binja-mcp
+Version: 0.1.2
+Summary: A Model Context Protocol server providing tools to interact with Binary Ninja programmatically via LLMs
+Author: raph0x88
+Requires-Python: >=3.12
+Description-Content-Type: text/markdown
+Requires-Dist: mcp>=1.0.0
