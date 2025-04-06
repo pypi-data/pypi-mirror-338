@@ -1,0 +1,17 @@
+[project]
+name = "derkrankesenator_toolbox"
+version = "1.0.0.0"
+authors = [
+  { name = "derkrankesenat", email = "derkrankesenator@gmail.com" }
+]
+description = "A small toolbox package"
+readme = "README.md"
+requires-python = ">=3.12"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://github.com/derkrankesenator"
+
