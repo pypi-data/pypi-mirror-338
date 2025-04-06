@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+subtranscribe_package/__init__.py
+subtranscribe_package/test.py
+subtranscribe_package.egg-info/PKG-INFO
+subtranscribe_package.egg-info/SOURCES.txt
+subtranscribe_package.egg-info/dependency_links.txt
+subtranscribe_package.egg-info/top_level.txt
