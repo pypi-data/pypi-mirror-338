@@ -1,0 +1,2 @@
+include src/raic/foundry/cli/raic-configuration.json
+include src/raic/foundry/configuration/raic-configuration.json
