@@ -1,0 +1,343 @@
+Metadata-Version: 2.4
+Name: llamasearch-pdf-llamasearch
+Version: 0.1.0
+Summary: A comprehensive PDF processing toolkit for document workflows
+Home-page: https://llamasearch.ai
+Author: LlamaSearch AI
+Author-email: llamasearch-pdf-llamasearch <nikjois@llamasearch.ai>
+License: MIT License
+        
+        Copyright (c) 2024 LlamaSearch.ai
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE. 
+Project-URL: Homepage, https://github.com/llamasearch-ai/llamasearch-pdf
+Project-URL: Documentation, https://llamasearch-pdf.readthedocs.io
+Project-URL: Repository, https://github.com/llamasearch-ai/llamasearch-pdf.git
+Project-URL: Issues, https://github.com/llamasearch-ai/llamasearch-pdf/issues
+Project-URL: Changelog, https://github.com/llamasearch-ai/llamasearch-pdf/blob/main/CHANGELOG.md
+Keywords: pdf,ocr,text-extraction,metadata,search,document-processing
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Topic :: Text Processing :: Indexing
+Classifier: Topic :: Office/Business
+Classifier: Topic :: Multimedia :: Graphics :: Capture :: Scanners
+Classifier: Topic :: Utilities
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pdfminer.six>=20201018
+Requires-Dist: PyPDF2>=2.0.0
+Requires-Dist: python-poppler>=0.3.0
+Requires-Dist: pytesseract>=0.3.8
+Requires-Dist: Pillow>=8.0.0
+Requires-Dist: tqdm>=4.50.0
+Requires-Dist: numpy>=1.20.0
+Requires-Dist: scikit-learn>=1.0.0
+Requires-Dist: nltk>=3.6.0
+Requires-Dist: click>=8.0.0
+Requires-Dist: rich>=10.0.0
+Requires-Dist: pyyaml>=6.0
+Provides-Extra: ocrmypdf
+Requires-Dist: ocrmypdf>=13.0.0; extra == "ocrmypdf"
+Provides-Extra: huggingface
+Requires-Dist: transformers>=4.15.0; extra == "huggingface"
+Requires-Dist: torch>=1.10.0; extra == "huggingface"
+Provides-Extra: search
+Requires-Dist: scikit-learn>=1.0.0; extra == "search"
+Requires-Dist: nltk>=3.6.0; extra == "search"
+Requires-Dist: scipy>=1.7.0; extra == "search"
+Provides-Extra: dev
+Requires-Dist: pytest>=6.0.0; extra == "dev"
+Requires-Dist: pytest-cov>=2.12.0; extra == "dev"
+Requires-Dist: black>=21.5b2; extra == "dev"
+Requires-Dist: isort>=5.9.0; extra == "dev"
+Requires-Dist: flake8>=3.9.0; extra == "dev"
+Requires-Dist: mypy>=0.812; extra == "dev"
+Requires-Dist: pre-commit>=2.13.0; extra == "dev"
+Provides-Extra: docs
+Requires-Dist: mkdocs>=1.3.0; extra == "docs"
+Requires-Dist: mkdocs-material>=8.2.0; extra == "docs"
+Requires-Dist: mkdocstrings[python]>=0.19.0; extra == "docs"
+Requires-Dist: mkdocs-include-markdown-plugin>=3.6.0; extra == "docs"
+Requires-Dist: markdown-include>=0.7.0; extra == "docs"
+Provides-Extra: all
+Requires-Dist: ocrmypdf>=13.0.0; extra == "all"
+Requires-Dist: transformers>=4.15.0; extra == "all"
+Requires-Dist: torch>=1.10.0; extra == "all"
+Requires-Dist: scikit-learn>=1.0.0; extra == "all"
+Requires-Dist: nltk>=3.6.0; extra == "all"
+Requires-Dist: scipy>=1.7.0; extra == "all"
+Dynamic: author
+Dynamic: home-page
+Dynamic: license-file
+Dynamic: requires-python
+
+# LlamaSearch PDF
+
+A comprehensive PDF processing toolkit for document processing workflows.
+
+## Features
+
+- **OCR (Optical Character Recognition)** - Extract text from scanned PDFs and images with support for multiple OCR engines:
+  - Tesseract OCR
+  - OCRmyPDF
+  - Hugging Face Models
+  
+- **PDF Manipulation** - Core utilities for working with PDF files:
+  - Merging multiple PDFs
+  - Splitting PDFs
+  - Converting images to PDFs
+  - Optimizing PDF file size
+  
+- **Text Extraction** - Extract and process text from PDF documents:
+  - Direct text extraction from PDF content streams
+  - OCR fallback for scanned documents
+  - Text normalization and processing options
+  
+- **Metadata Management** - Extract, update, and manage PDF document metadata:
+  - Standard document information (title, author, etc.)
+  - XMP metadata extraction
+  - Text-based metadata detection
+  
+- **Search and Indexing** - Create searchable indices for PDF documents:
+  - Full-text search with TF-IDF ranking
+  - Page-level search results with context snippets
+  - Search across multiple documents
+  - Save and load search indices
+  
+- **Batch Processing** - Process multiple files efficiently:
+  - Multi-threaded processing
+  - Directory processing with filtering
+  - Progress tracking and logging
+
+## Installation
+
+```
+pip install llamasearch-pdf
+```
+
+For additional OCR engines:
+
+```
+# For OCRmyPDF support
+pip install llamasearch-pdf[ocrmypdf]
+
+# For Hugging Face OCR support
+pip install llamasearch-pdf[huggingface]
+
+# For search example functionality
+pip install llamasearch-pdf[search]
+
+# For all features
+pip install llamasearch-pdf[all]
+```
+
+## Command-Line Usage
+
+The package provides a command-line interface for common operations:
+
+### OCR Operations
+
+```bash
+# List available OCR engines
+llamasearch-pdf ocr list-engines
+
+# OCR a single PDF file
+llamasearch-pdf ocr file document.pdf --output document_ocr.pdf
+
+# Extract text from a PDF via OCR
+llamasearch-pdf ocr file document.pdf --format text --output document_text.txt
+
+# Process a directory of PDFs
+llamasearch-pdf ocr directory ./documents --output ./documents_ocr --format pdf --recursive
+```
+
+### Text Extraction
+
+```bash
+# Extract text from a PDF
+llamasearch-pdf text extract document.pdf --output document_text.txt
+
+# Extract text with layout preservation
+llamasearch-pdf text extract document.pdf --preserve-layout --output document_text.txt
+
+# Batch extract text from a directory
+llamasearch-pdf text batch ./documents --output ./extracted_text --recursive
+```
+
+### Metadata Operations
+
+```bash
+# Extract metadata from a PDF
+llamasearch-pdf metadata extract document.pdf
+
+# Extract detailed metadata including XMP
+llamasearch-pdf metadata extract document.pdf --detailed
+
+# Update metadata in a PDF
+llamasearch-pdf metadata update document.pdf --title "New Title" --author "New Author"
+
+# Extract metadata from text content
+llamasearch-pdf metadata text document.pdf
+
+# Batch extract metadata from a directory
+llamasearch-pdf metadata batch ./documents --output ./metadata --recursive
+```
+
+### Search Operations
+
+```bash
+# Create a search index for a directory of PDFs
+llamasearch-pdf search create-index ./documents --output-path ./search_index.pkl
+
+# Search using a saved index
+llamasearch-pdf search search "quantum computing" --index-path ./search_index.pkl
+
+# Search specific PDF files directly
+llamasearch-pdf search search "neural networks" --files doc1.pdf doc2.pdf doc3.pdf
+
+# Search with custom options and JSON output
+llamasearch-pdf search search "machine learning" --index-path ./search_index.pkl --max-results 20 --min-score 0.5 --json
+```
+
+## Python API Usage
+
+### OCR Operations
+
+```python
+from llamasearch_pdf.ocr import ocr_pdf, ocr_image, process_directory
+
+# OCR a PDF file
+ocr_pdf('document.pdf', 'document_ocr.pdf')
+
+# Extract text from an image
+text = ocr_image('scan.jpg')
+
+# Process a directory of PDFs and images
+results = process_directory('documents/', 'documents_ocr/', output_format='text')
+```
+
+### Text Extraction
+
+```python
+from llamasearch_pdf.core import extract_text, TextExtractor
+
+# Simple text extraction
+text_dict = extract_text('document.pdf', preserve_layout=True)
+
+# Advanced extraction with custom options
+extractor = TextExtractor(
+    preserve_layout=True,
+    remove_hyphenation=True,
+    normalize_whitespace=True,
+    fallback_to_ocr=True
+)
+text_dict = extractor.extract_text_from_pdf('document.pdf')
+```
+
+### Metadata Operations
+
+```python
+from llamasearch_pdf.core import extract_metadata, update_metadata, MetadataManager
+
+# Extract metadata
+metadata = extract_metadata('document.pdf')
+
+# Update metadata
+new_metadata = {'/Title': 'New Document Title', '/Author': 'Document Author'}
+update_metadata('document.pdf', 'updated_document.pdf', new_metadata)
+
+# Advanced metadata operations
+manager = MetadataManager()
+metadata = manager.extract_metadata('document.pdf')
+manager.print_metadata_summary(metadata)
+
+# Extract metadata from text content
+text_dict = extract_text('document.pdf')
+text_content = "\n".join(text_dict.values())
+text_metadata = manager.extract_text_metadata(text_content)
+```
+
+### Search Operations
+
+```python
+from llamasearch_pdf.search import create_index, search_pdfs, SearchIndex
+
+# Create a search index
+index = create_index(case_sensitive=False)
+
+# Add documents to the index
+index.add_document('document1.pdf')
+index.add_document('document2.pdf')
+
+# Save the index for later use
+index.save('search_index.pkl')
+
+# Load a previously saved index
+loaded_index = create_index(index_path='search_index.pkl')
+
+# Search the index
+results = loaded_index.search('quantum computing', max_results=10)
+
+# Display search results
+for result in results:
+    print(f"Document: {result.document_path}, Page: {result.page_number}")
+    print(f"Score: {result.score}")
+    print(f"Context: {result.snippet}")
+    print()
+
+# Quick search without creating an explicit index
+results = search_pdfs('neural networks', ['doc1.pdf', 'doc2.pdf', 'doc3.pdf'])
+```
+
+### PDF Processing
+
+```python
+from llamasearch_pdf.core.processor import PDFProcessor
+
+# Initialize the processor
+processor = PDFProcessor()
+
+# Convert images to PDFs
+pdf_files = processor.batch_convert_images(['image1.jpg', 'image2.png'])
+
+# Merge PDFs
+merged_pdf = processor.merge_pdfs(pdf_files, 'merged.pdf')
+
+# Process a directory with PDFs and images
+processor.process_directory('documents/', merge=True, optimize=True)
+```
+
+## Requirements
+
+- Python 3.8+
+- For Tesseract OCR: Tesseract must be installed on your system
+- For OCRmyPDF: OCRmyPDF must be installed on your system
+- For image processing: Poppler must be installed for PDF to image conversion
+
+## License
+
+MIT 
