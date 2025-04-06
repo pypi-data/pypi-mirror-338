@@ -1,0 +1,7 @@
+i8_compression_tools_pip_pkg/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+i8_compression_tools_pip_pkg/gz_files.py,sha256=FJexrRdJ0-itvqwhD9zhpDbnExW_bmPCIhcNRPTpj3g,329
+i8_compression_tools_pip_pkg/zstd_compress_and_split.py,sha256=UVmFqnL6PGYW625eaNZ4hhzqKfhlWjclx5xUCbCB9lM,7852
+i8_compression_tools_pip_pkg-0.0.0.dist-info/METADATA,sha256=Sk-3fhAoSb8gFRAB9qeE97UHITIdIslnNqe1Z-fCeVE,1628
+i8_compression_tools_pip_pkg-0.0.0.dist-info/WHEEL,sha256=tkmg4JIqwd9H8mL30xA7crRmoStyCtGp0VWshokd1Jc,105
+i8_compression_tools_pip_pkg-0.0.0.dist-info/licenses/LICENSE,sha256=uPRgxU7YXOcDR4gQRcEzK05-SyOV1_AEyhHBAPFct9c,1062
+i8_compression_tools_pip_pkg-0.0.0.dist-info/RECORD,,
