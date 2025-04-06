@@ -1,0 +1,9 @@
+httpx_limiter/__init__.py,sha256=26TWMg4YtbUwDT2qjC6g741MMvBlJLgjsmszlEyldEQ,719
+httpx_limiter/_version.py,sha256=iB5DfB5V6YB5Wo4JmvS-txT42QtmGaWcWp3udRT7zCI,511
+httpx_limiter/async_rate_limited_transport.py,sha256=QsDw4h43iaT5fk9P_gBYWz8BVFg49SPeasDnPwgXdH4,2634
+httpx_limiter/py.typed,sha256=zwRNjZOV3leFzGdwfkbvGOfGbBoplIeeZu4g7d6P928,170
+httpx_limiter/rate.py,sha256=RTTn1NAlRpkvLT9Yu-XsuESld7CZTTIM-Uur4Z0kBEQ,1313
+httpx_limiter-0.2.0.dist-info/METADATA,sha256=I5elvZHNWjy88Du48otMexNya_ryT6ru_emowT8MTWA,5200
+httpx_limiter-0.2.0.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+httpx_limiter-0.2.0.dist-info/licenses/LICENSE,sha256=lWiisVXmasPguh_YC1K4J7lGDmz28jMSXny8qOIG3cM,10174
+httpx_limiter-0.2.0.dist-info/RECORD,,
