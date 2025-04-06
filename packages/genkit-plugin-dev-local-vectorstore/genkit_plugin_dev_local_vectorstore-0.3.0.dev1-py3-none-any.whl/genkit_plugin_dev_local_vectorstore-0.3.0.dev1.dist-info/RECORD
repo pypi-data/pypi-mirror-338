@@ -1,0 +1,16 @@
+genkit/plugins/dev_local_vector_store/__init__.py,sha256=AzWLjVzTo0eUwhqx33XJEy0d1c37TUteWJbLE_9tAnY,614
+genkit/plugins/dev_local_vector_store/constant.py,sha256=MYJOXkq3SYy_Dlrx86W6lu1C9ax4KhgFIZ181DflXCo,912
+genkit/plugins/dev_local_vector_store/indexer.py,sha256=481KxINarxuv1RJW00xV9k0l_jvyCzzhtMNfyLQ8VCY,2408
+genkit/plugins/dev_local_vector_store/local_vector_store_api.py,sha256=zRz3hxAMbH6LyoRiNTgKl812eaIz7aqU-qxro2Yx9R0,2096
+genkit/plugins/dev_local_vector_store/plugin_api.py,sha256=zuuY6P0p8MBanLT2l-Gl0E4UaFIn9lIlOJ2IgS6cUAg,4311
+genkit/plugins/dev_local_vector_store/retriever.py,sha256=Zf4klaRmeATbIr-DrogTt1W5JsWtYFeJTd3_zC-z0vg,2685
+genkit/plugins/dev_local_vector_store/__init__.py,sha256=AzWLjVzTo0eUwhqx33XJEy0d1c37TUteWJbLE_9tAnY,614
+genkit/plugins/dev_local_vector_store/constant.py,sha256=MYJOXkq3SYy_Dlrx86W6lu1C9ax4KhgFIZ181DflXCo,912
+genkit/plugins/dev_local_vector_store/indexer.py,sha256=481KxINarxuv1RJW00xV9k0l_jvyCzzhtMNfyLQ8VCY,2408
+genkit/plugins/dev_local_vector_store/local_vector_store_api.py,sha256=zRz3hxAMbH6LyoRiNTgKl812eaIz7aqU-qxro2Yx9R0,2096
+genkit/plugins/dev_local_vector_store/plugin_api.py,sha256=zuuY6P0p8MBanLT2l-Gl0E4UaFIn9lIlOJ2IgS6cUAg,4311
+genkit/plugins/dev_local_vector_store/retriever.py,sha256=Zf4klaRmeATbIr-DrogTt1W5JsWtYFeJTd3_zC-z0vg,2685
+genkit_plugin_dev_local_vectorstore-0.3.0.dev1.dist-info/METADATA,sha256=sv16CwEX0Km2wD6OMxMyvkXuKqPswSXZZjzsx5H-JH0,1212
+genkit_plugin_dev_local_vectorstore-0.3.0.dev1.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+genkit_plugin_dev_local_vectorstore-0.3.0.dev1.dist-info/licenses/LICENSE,sha256=bsvE5_qSn_2LH2G-haMvT_AoIeINhX6fvzZTlyq2xJY,11340
+genkit_plugin_dev_local_vectorstore-0.3.0.dev1.dist-info/RECORD,,
