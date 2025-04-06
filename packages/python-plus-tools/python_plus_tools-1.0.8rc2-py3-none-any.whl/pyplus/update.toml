@@ -1,0 +1,17 @@
+# Each project update log and time max reload 5 offical 
+[relase]
+main.version = "1.0.8"
+main.update_info."1.0.4" = "Add the setup.py" 
+main.update_time."1.0.4" = 2025-03-20 
+main.update_info."1.0.6" = "Fix some bug.\nAdd the Chinese documents.Update the update -- 1.1.0"
+main.update_time."1.0.6" = 2025-03-22
+main.update_info."1.0.7" = "Modify some code.\nUpdate the update -- 1.1.1"
+main.update_time."1.0.7" = 2025-03-23
+[pre-relase]
+main.version = "1.0.8b1"
+main.update_info."1.1.0b2" = "Modify some code.\nUpdate the update -- 1.1.1"
+main.update_time."1.1.0b2" = 2025-03-23
+main.update_info."1.1.0rc1" = "Add some function or method document"
+main.update_time."1.1.0rc1" = 2025-03-24
+main.update_info."1.0.8b1" = "Add the function document in the function,not in readme.\nUpdate the update -- 1.1.2"
+main.update_time."1.0.8b1" = 2025-03-29
