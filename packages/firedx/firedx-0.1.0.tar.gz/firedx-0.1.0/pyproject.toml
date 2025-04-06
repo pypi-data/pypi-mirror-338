@@ -1,0 +1,38 @@
+[project]
+name = "firedx"
+version = "0.1.0"
+description = "A data engine for modeling and analyzing fire hazard and risk to communities and built assets."
+authors = [
+  { name = "Maria Faye Theodori", email = "theodori@berkeley.edu" }
+]
+license = "Proprietary"
+readme = "README.md"
+packages = [{ include = "firedx", from = "src" }]
+requires-python = ">=3.12"
+dependencies = [
+  "geopandas",
+  "numpy",
+  "osmnx",
+  "pandas",
+  "requests",
+  "tqdm",
+  "mercantile",
+  "openpyxl"
+]
+
+[tool.poetry.group.dev.dependencies]
+black = "*"
+pytest = "*"
+pytest-cov = "^6.1.0"
+
+[tool.semantic_release]
+version_toml = [
+    "pyproject.toml:project.version",
+]                                                    # version location
+branch = "main"                                      # branch to make releases of
+changelog_file = "CHANGELOG.md"                      # changelog file
+build_command = "pip install poetry && poetry build" # build dists 
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
