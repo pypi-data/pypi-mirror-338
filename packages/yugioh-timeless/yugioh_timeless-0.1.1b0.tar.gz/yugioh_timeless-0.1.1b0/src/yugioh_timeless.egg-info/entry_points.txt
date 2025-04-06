@@ -1,0 +1,2 @@
+[console_scripts]
+timeless = yugioh_timeless:run_yugioh_timeless

@@ -1,0 +1,13 @@
+LICENSE.md
+README.md
+pyproject.toml
+src/yugioh_timeless/__init__.py
+src/yugioh_timeless/config.py
+src/yugioh_timeless/interface.py
+src/yugioh_timeless/timeless.py
+src/yugioh_timeless.egg-info/PKG-INFO
+src/yugioh_timeless.egg-info/SOURCES.txt
+src/yugioh_timeless.egg-info/dependency_links.txt
+src/yugioh_timeless.egg-info/entry_points.txt
+src/yugioh_timeless.egg-info/requires.txt
+src/yugioh_timeless.egg-info/top_level.txt
