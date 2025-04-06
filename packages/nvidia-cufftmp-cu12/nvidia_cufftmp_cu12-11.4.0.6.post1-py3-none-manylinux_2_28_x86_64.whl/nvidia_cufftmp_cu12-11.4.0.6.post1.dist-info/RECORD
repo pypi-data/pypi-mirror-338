@@ -1,0 +1,10 @@
+nvidia/cufftmp/cu12/include/cudalibxt.h,sha256=9GDuRiOzJuO61zRDhIpWpF7XHp8FXSOIlHJNoIMwOZQ,4105
+nvidia/cufftmp/cu12/include/cufft.h,sha256=jUfwUjUsyFkFbGUTnSBhYrglDBvF2baAfnUrm6YnWtA,13168
+nvidia/cufftmp/cu12/include/cufftMp.h,sha256=ngoRj8248RLW1zjqiNGENrCyhb3c8iwNtuvXSN4tZCg,9503
+nvidia/cufftmp/cu12/include/cufftXt.h,sha256=R3MUFHMNqMae71HwFKPPcShI1HTJbHJYdrr-cRvqXe8,12945
+nvidia/cufftmp/cu12/lib/libcufftMp.so.11,sha256=L-7pKISdBuTQpbp7iy1Du36K4l_sPxYu5NYm-mbauLg,318510921
+nvidia_cufftmp_cu12-11.4.0.6.post1.dist-info/licenses/LICENSE.txt,sha256=o_fqJfYdWmLShRgVABMQC4dQMYoVvQfmqslQJuosQBI,16734
+nvidia_cufftmp_cu12-11.4.0.6.post1.dist-info/METADATA,sha256=PMlnehvHP9oAnqAYMNbnUtgxj6Te2wkbzkWlP_y2z0Q,1480
+nvidia_cufftmp_cu12-11.4.0.6.post1.dist-info/WHEEL,sha256=9F_LHEuf5Trhtyhl8-QN-T_bHhPhRxbUbxDIlKa1fnM,109
+nvidia_cufftmp_cu12-11.4.0.6.post1.dist-info/top_level.txt,sha256=fTkAtiFuL16nUrB9ytDDtpytz2t0B4NvYTnRzwAhO14,7
+nvidia_cufftmp_cu12-11.4.0.6.post1.dist-info/RECORD,,
