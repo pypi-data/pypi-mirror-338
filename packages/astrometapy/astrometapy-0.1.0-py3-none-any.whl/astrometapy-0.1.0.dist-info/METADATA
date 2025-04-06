@@ -1,0 +1,65 @@
+Metadata-Version: 2.4
+Name: astrometapy
+Version: 0.1.0
+Summary: A Python package for reading, cleaning, and exporting astronomical metadata.
+Home-page: https://github.com/whiteflakes/astrometapy
+Author: Whiteflakes
+Author-email: Whiteflakes <whiteflakesdev@gmail.com>
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: astropy
+Requires-Dist: pandas
+Requires-Dist: jsonschema
+Requires-Dist: typer
+Dynamic: author
+Dynamic: home-page
+Dynamic: license-file
+Dynamic: requires-python
+
+# AstroMetaPy
+
+AstroMetaPy is a Python package designed to streamline the handling of astronomical metadata. It provides tools to:
+
+- Read metadata from FITS files, VO tables, and catalogs.
+- Clean and validate metadata against standard schemas.
+- Export metadata in various formats (CSV, JSON, VOtable).
+
+## Installation
+
+You can install AstroMetaPy via pip:
+
+```bash
+pip install astrometapy
+```
+
+## Usage
+
+### Command Line Interface
+
+After installation, you can run the CLI:
+
+```bash
+astrometapy read-fits path/to/file.fits --output header.json
+```
+
+### Programmatic Usage
+
+```python
+from astrometapy.readers import fits_reader
+
+header = fits_reader.load_fits_header("path/to/file.fits")
+print(header)
+```
+
+## Contributing
+
+Contributions are welcome! Please open an issue or submit a pull request.
+
+## License
+
+This project is licensed under the MIT License.
