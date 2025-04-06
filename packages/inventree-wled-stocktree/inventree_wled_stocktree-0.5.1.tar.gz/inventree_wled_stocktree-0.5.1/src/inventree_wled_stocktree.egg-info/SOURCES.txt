@@ -1,0 +1,9 @@
+LICENSE
+MANIFEST.in
+pyproject.toml
+src/inventree_wled_stocktree.egg-info/PKG-INFO
+src/inventree_wled_stocktree.egg-info/SOURCES.txt
+src/inventree_wled_stocktree.egg-info/dependency_links.txt
+src/inventree_wled_stocktree.egg-info/entry_points.txt
+src/inventree_wled_stocktree.egg-info/requires.txt
+src/inventree_wled_stocktree.egg-info/top_level.txt
