@@ -1,0 +1,17 @@
+Metadata-Version: 2.4
+Name: cgraaaj-discord-notifier
+Version: 0.1.0
+Summary: A simple Python library for sending Discord notifications.
+Home-page: https://github.com/cgraaaj/python-discord-notifier
+Author: cgraaaj
+Author-email: cgraaaj@example.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Dist: requests
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: home-page
+Dynamic: requires-dist
+Dynamic: summary
