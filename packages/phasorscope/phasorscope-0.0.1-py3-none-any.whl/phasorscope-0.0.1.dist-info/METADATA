@@ -1,0 +1,26 @@
+Metadata-Version: 2.4
+Name: phasorscope
+Version: 0.0.1
+Summary: Placeholder for the phasorscope project
+Home-page: https://pypi.org/project/{name}/
+Author: Christoph Gohlke
+Author-email: cgohlke@cgohlke.com
+License: BSD-3-Clause
+Platform: any
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Python: >=3.10
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: home-page
+Dynamic: license
+Dynamic: platform
+Dynamic: requires-python
+Dynamic: summary
