@@ -1,0 +1,2 @@
+[console_scripts]
+pycsv2sqlite = pycsv2sqlite.main:app

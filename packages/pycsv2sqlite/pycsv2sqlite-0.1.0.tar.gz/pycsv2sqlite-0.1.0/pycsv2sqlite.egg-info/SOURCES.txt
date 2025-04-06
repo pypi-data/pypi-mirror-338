@@ -1,0 +1,13 @@
+README.md
+pyproject.toml
+pycsv2sqlite/__init__.py
+pycsv2sqlite/__main__.py
+pycsv2sqlite/main.py
+pycsv2sqlite.egg-info/PKG-INFO
+pycsv2sqlite.egg-info/SOURCES.txt
+pycsv2sqlite.egg-info/dependency_links.txt
+pycsv2sqlite.egg-info/entry_points.txt
+pycsv2sqlite.egg-info/requires.txt
+pycsv2sqlite.egg-info/top_level.txt
+tests/test_csv_parser.py
+tests/test_sql_handler.py

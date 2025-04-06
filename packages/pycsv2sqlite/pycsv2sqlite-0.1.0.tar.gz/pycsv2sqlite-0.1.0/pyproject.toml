@@ -1,0 +1,39 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pycsv2sqlite"
+version = "0.1.0"
+description = "read csv/tsv like file/files and produce sqlite3 db file"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "pandas>=2.2.3",
+    "pytest>=8.3.5",
+    "typer>=0.15.2",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.3.5",
+    "loguru>=0.7.3",
+    "pytest-cov>=4.1.0",
+    "black>=24.2.0",
+    "isort>=5.13.2",
+]
+
+[project.scripts]
+pycsv2sqlite = "pycsv2sqlite.main:app"
+
+[project.urls]
+Homepage = "https://github.com/fxyzbtc/pycsv2sqlite"
+Issues = "https://github.com/fxyzbtc/pycsv2sqlite/issues"
+
+[tool.setuptools]
+packages = ["pycsv2sqlite"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+
