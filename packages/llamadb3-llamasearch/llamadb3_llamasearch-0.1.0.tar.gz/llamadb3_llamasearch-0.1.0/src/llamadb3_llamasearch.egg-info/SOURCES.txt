@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/llamadb3/__init__.py
+src/llamadb3/connection.py
+src/llamadb3/error_handler.py
+src/llamadb3/query_builder.py
+src/llamadb3_llamasearch.egg-info/PKG-INFO
+src/llamadb3_llamasearch.egg-info/SOURCES.txt
+src/llamadb3_llamasearch.egg-info/dependency_links.txt
+src/llamadb3_llamasearch.egg-info/requires.txt
+src/llamadb3_llamasearch.egg-info/top_level.txt
+tests/test_client.py
+tests/test_query_builder.py
