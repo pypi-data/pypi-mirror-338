@@ -1,0 +1,8 @@
+pyproject.toml
+src/PandoraCore/RAG/parser.py
+src/PandoraCore/STT/whisper.py
+src/PandoraCore/TTS/KokoroWrap.py
+src/pandoraCore.egg-info/PKG-INFO
+src/pandoraCore.egg-info/SOURCES.txt
+src/pandoraCore.egg-info/dependency_links.txt
+src/pandoraCore.egg-info/top_level.txt

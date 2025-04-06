@@ -1,0 +1,7 @@
+[project]  
+name = "pandoraCore"  
+version = "0.0.1"  
+description = "The core toolbox for AI workflows: RAG, document processing, speech, and more."  
+authors = [
+  { name="Yahir Luna", email="j.luna2016@hotmail.com" },
+]
