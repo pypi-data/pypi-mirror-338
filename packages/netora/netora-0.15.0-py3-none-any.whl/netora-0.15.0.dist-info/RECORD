@@ -1,0 +1,12 @@
+netora/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+netora/__main__.py,sha256=PfyM6K-kAm5BAKiPp59gSJid7223O-b0f947VH1U3LQ,294
+netora/connection.py,sha256=fWDWXtUacja-VYJBTze03_tPv-ctMTDJxKMltsRDtAU,1466
+netora/getinfo.py,sha256=AP3dbyoAY6yMEYIx9PoQIXQBJru1GQVfld6QUZn-RII,2027
+netora/netora.py,sha256=fgDqNzVT7Dezu41FWfLNmGwOLw5ImoAsLFiOPka5l04,10588
+netora/validation.py,sha256=COBjwei6riVv-4zYIgClBirq97du8dn-2bZTj6ExWvM,299
+netora/resources/currencies.py,sha256=rK3idHRjDryqQGmQzrhlZ6MMiqpsXCIHsG0PXU0HCoU,1298
+netora-0.15.0.dist-info/METADATA,sha256=rcz0bKbvQu7_5Na-eNqF1fu_lVoImtO_znzr7rn1Lwo,1836
+netora-0.15.0.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+netora-0.15.0.dist-info/entry_points.txt,sha256=OWQI82Sjs8J0Zuevl2pvHSDVA2ZEqpPmjwIqRm6IegE,46
+netora-0.15.0.dist-info/top_level.txt,sha256=tl9lqZfxAQM8m6HHWIWCPYYC2gJQQ_o0N19qaWP15Hg,7
+netora-0.15.0.dist-info/RECORD,,
