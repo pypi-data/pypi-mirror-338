@@ -1,0 +1,15 @@
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+ccd_deidentification/__init__.py
+ccd_deidentification/deidentifier.py
+ccd_deidentification/main.py
+ccd_deidentification.egg-info/PKG-INFO
+ccd_deidentification.egg-info/SOURCES.txt
+ccd_deidentification.egg-info/dependency_links.txt
+ccd_deidentification.egg-info/entry_points.txt
+ccd_deidentification.egg-info/requires.txt
+ccd_deidentification.egg-info/top_level.txt
+tests/__init__.py
+tests/test_deidentifier.py

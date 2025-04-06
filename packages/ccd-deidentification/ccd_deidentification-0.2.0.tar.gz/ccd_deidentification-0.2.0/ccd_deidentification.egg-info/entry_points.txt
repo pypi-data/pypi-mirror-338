@@ -1,0 +1,2 @@
+[console_scripts]
+ccd-deid = ccd_deidentification.main:main
