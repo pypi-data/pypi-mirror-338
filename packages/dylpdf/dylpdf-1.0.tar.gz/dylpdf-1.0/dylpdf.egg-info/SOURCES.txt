@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+dylpdf/__init__.py
+dylpdf/pdf2image.py
+dylpdf/pdf2text.py
+dylpdf.egg-info/PKG-INFO
+dylpdf.egg-info/SOURCES.txt
+dylpdf.egg-info/dependency_links.txt
+dylpdf.egg-info/top_level.txt
