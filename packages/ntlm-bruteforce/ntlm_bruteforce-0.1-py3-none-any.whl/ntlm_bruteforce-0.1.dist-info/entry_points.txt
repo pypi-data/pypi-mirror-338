@@ -1,0 +1,2 @@
+[console_scripts]
+ntml = ntlm_bruteforce.ntlm_bruteforce:main
