@@ -1,0 +1,2 @@
+[console_scripts]
+topsim-cli = topsim_cli:run
