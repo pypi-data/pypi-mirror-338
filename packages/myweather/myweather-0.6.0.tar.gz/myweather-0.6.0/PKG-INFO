@@ -1,0 +1,26 @@
+Metadata-Version: 2.3
+Name: myweather
+Version: 0.6.0
+Summary: An openweathermap wrapper
+License: MIT
+Keywords: openweather,weather,wrapper
+Author: tct123
+Author-email: 42028373+tct123@users.noreply.github.com
+Requires-Python: >=3.8
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Dist: requests
+Project-URL: Bug Tracker, https://github.com/tct123/MyWeather/issues
+Project-URL: Repository, https://github.com/tct123/MyWeather
+Description-Content-Type: text/markdown
+
+# MyWeather
+An openweathermap wrapper 
+## Installation
+### from PyPI:
+```bash
+pip install myweather
+```
+## from git:
+```bash
+pip install git+https://github.com/tct123/MyWeather.git
+```
