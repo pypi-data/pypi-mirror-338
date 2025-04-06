@@ -1,0 +1,2 @@
+[console_scripts]
+youtube_mcp = youtube_mcp.main:main
