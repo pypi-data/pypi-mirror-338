@@ -1,0 +1,11 @@
+amdfan/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+amdfan/__main__.py,sha256=PbGekI4ByWLUv66GxG4mkGwDU_bDJru3aX3warnLkys,493
+amdfan/commands.py,sha256=a90PLjs2fiKuNsr0wuTT1JC892loinba0zygXQkCz-s,6434
+amdfan/config.py,sha256=r8GOBYM3cA-PT_OGfKk0HykTiugP_oiW2XMbuEY9gkM,591
+amdfan/controller.py,sha256=3TFK0Lc9EHa0JggouC7-H9D9f4dJUu2-CPGwNZ5PXu0,12181
+amdfan/defaults.py,sha256=dRcuMWhvjczTnl2PLB3rwOLj_g6aR87qOyufRb4_rmY,1000
+amdfan-0.2.5.dist-info/LICENSE,sha256=gXf5dRMhNSbfLPYYTY_5hsZ1r7UU1OaKQEAQUhuIBkM,18092
+amdfan-0.2.5.dist-info/METADATA,sha256=KT_xU-8qXUoz4Td5lMBlmw-Z61oBuoc3T2xlt0qjchg,6117
+amdfan-0.2.5.dist-info/WHEEL,sha256=fGIA9gx4Qxk2KDKeNJCbOEwSrmLtjWCwzBz351GyrPQ,88
+amdfan-0.2.5.dist-info/entry_points.txt,sha256=mDnWJbK9xH4aSkk0T5vBPhAObuugKdnRqakYueW-kgw,47
+amdfan-0.2.5.dist-info/RECORD,,
