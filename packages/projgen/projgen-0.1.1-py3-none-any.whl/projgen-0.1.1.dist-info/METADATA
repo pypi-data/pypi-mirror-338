@@ -1,0 +1,23 @@
+Metadata-Version: 2.4
+Name: projgen
+Version: 0.1.1
+Summary: A CLI tool to generate project structure from a JSON file
+Author-email: Avinash Kumar Prajapati <aviavi61106@gmail.com>
+License-Expression: MIT
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Dynamic: license-file
+
+
+
+
+# ProjGen 🛠️
+
+A CLI tool to generate directory and file structures from a JSON file.
+
+## Install
+
+```bash
+pip install projgen
+
