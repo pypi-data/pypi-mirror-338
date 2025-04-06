@@ -1,0 +1,9 @@
+lib/mechanism_configuration.lib,sha256=d9vO2Ld_j3xyRHhigbdw1pzDEo9H2VFYM0z4zdIiM-U,14977926
+lib/musica.lib,sha256=FNXFsqqtNuJV4c2p8DU1M0-4x4xFrh3f0hUrnDfZ7uI,4892572
+lib/yaml-cpp.lib,sha256=PVduXeG28CXxRP-YXndPbOsQe_7CIGIi22k3Hfq99rY,2701628
+musica/_version.py,sha256=0MyPXbghZ9ec70Sg835j6WG6QAzLmht69V6ynqlDwmQ,20
+musica.cp312-win_amd64.pyd,sha256=bDSCtNkakEdftydNBBrM7vrwD3XbRjouIweidg90XeQ,1135616
+musica-0.10.0.dist-info/METADATA,sha256=Xs9j8gSDQ9rUBj7BSCIkKkBMcbnEsWvgQMbKzBqOTIY,20175
+musica-0.10.0.dist-info/WHEEL,sha256=NwgjyrmVpVzZ-osOl_ZcT-QXHLFroWlAkN7IC9J-0Pg,106
+musica-0.10.0.dist-info/licenses/LICENSE,sha256=HrhfyXIkWY2tGFK11kg7vPCqhgh5DcxleloqdhrpyMY,11558
+musica-0.10.0.dist-info/RECORD,,
