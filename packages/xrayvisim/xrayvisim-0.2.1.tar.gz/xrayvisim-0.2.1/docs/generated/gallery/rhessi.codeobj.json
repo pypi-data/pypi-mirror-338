@@ -1,0 +1,1327 @@
+{
+ "VisMeta": [
+  {
+   "is_class": true,
+   "is_explicit": false,
+   "module": "xrayvision.visibility",
+   "module_short": "xrayvision.visibility",
+   "name": "VisMeta"
+  },
+  {
+   "is_class": true,
+   "is_explicit": false,
+   "module": "xrayvision",
+   "module_short": "xrayvision",
+   "name": "VisMeta"
+  },
+  {
+   "is_class": true,
+   "is_explicit": false,
+   "module": "xrayvision.visibility",
+   "module_short": "xrayvision.visibility",
+   "name": "VisMetaABC"
+  },
+  {
+   "is_class": true,
+   "is_explicit": false,
+   "module": "xrayvision",
+   "module_short": "xrayvision",
+   "name": "VisMetaABC"
+  },
+  {
+   "is_class": true,
+   "is_explicit": false,
+   "module": "builtins",
+   "module_short": "builtins",
+   "name": "dict"
+  },
+  {
+   "is_class": true,
+   "is_explicit": false,
+   "module": "abc",
+   "module_short": "abc",
+   "name": "ABC"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "xrayvision.visibility",
+   "module_short": "xrayvision.visibility",
+   "name": "VisMeta"
+  }
+ ],
+ "Visibilities": [
+  {
+   "is_class": true,
+   "is_explicit": false,
+   "module": "xrayvision.visibility",
+   "module_short": "xrayvision.visibility",
+   "name": "Visibilities"
+  },
+  {
+   "is_class": true,
+   "is_explicit": false,
+   "module": "xrayvision",
+   "module_short": "xrayvision",
+   "name": "Visibilities"
+  },
+  {
+   "is_class": true,
+   "is_explicit": false,
+   "module": "xrayvision.visibility",
+   "module_short": "xrayvision.visibility",
+   "name": "VisibilitiesABC"
+  },
+  {
+   "is_class": true,
+   "is_explicit": false,
+   "module": "xrayvision",
+   "module_short": "xrayvision",
+   "name": "VisibilitiesABC"
+  },
+  {
+   "is_class": true,
+   "is_explicit": false,
+   "module": "abc",
+   "module_short": "abc",
+   "name": "ABC"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "xrayvision.visibility",
+   "module_short": "xrayvision.visibility",
+   "name": "Visibilities"
+  }
+ ],
+ "_": [
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "astropy.units.quantity",
+   "module_short": "astropy.units",
+   "name": "Quantity"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "astropy.units",
+   "module_short": "astropy.units",
+   "name": "Quantity"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "astropy",
+   "module_short": "astropy",
+   "name": "Quantity"
+  }
+ ],
+ "apu.Unit": [
+  {
+   "is_class": true,
+   "is_explicit": false,
+   "module": "astropy.units.core",
+   "module_short": "astropy.units",
+   "name": "Unit"
+  },
+  {
+   "is_class": true,
+   "is_explicit": false,
+   "module": "astropy.units",
+   "module_short": "astropy.units",
+   "name": "Unit"
+  },
+  {
+   "is_class": true,
+   "is_explicit": false,
+   "module": "astropy",
+   "module_short": "astropy",
+   "name": "Unit"
+  },
+  {
+   "is_class": true,
+   "is_explicit": false,
+   "module": "astropy.units.core",
+   "module_short": "astropy.units",
+   "name": "NamedUnit"
+  },
+  {
+   "is_class": true,
+   "is_explicit": false,
+   "module": "astropy.units",
+   "module_short": "astropy.units",
+   "name": "NamedUnit"
+  },
+  {
+   "is_class": true,
+   "is_explicit": false,
+   "module": "astropy",
+   "module_short": "astropy",
+   "name": "NamedUnit"
+  },
+  {
+   "is_class": true,
+   "is_explicit": false,
+   "module": "astropy.units.core",
+   "module_short": "astropy.units",
+   "name": "UnitBase"
+  },
+  {
+   "is_class": true,
+   "is_explicit": false,
+   "module": "astropy.units",
+   "module_short": "astropy.units",
+   "name": "UnitBase"
+  },
+  {
+   "is_class": true,
+   "is_explicit": false,
+   "module": "astropy",
+   "module_short": "astropy",
+   "name": "UnitBase"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "astropy.units",
+   "module_short": "astropy.units",
+   "name": "Unit"
+  }
+ ],
+ "apu.arcsec": [
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "astropy.units.core",
+   "module_short": "astropy.units",
+   "name": "Unit"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "astropy.units",
+   "module_short": "astropy.units",
+   "name": "Unit"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "astropy",
+   "module_short": "astropy",
+   "name": "Unit"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "astropy.units",
+   "module_short": "astropy.units",
+   "name": "arcsec"
+  }
+ ],
+ "apu.pix": [
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "astropy.units.core",
+   "module_short": "astropy.units",
+   "name": "IrreducibleUnit"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "astropy.units",
+   "module_short": "astropy.units",
+   "name": "IrreducibleUnit"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "astropy",
+   "module_short": "astropy",
+   "name": "IrreducibleUnit"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "astropy.units",
+   "module_short": "astropy.units",
+   "name": "pix"
+  }
+ ],
+ "apu.pixel": [
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "astropy.units.core",
+   "module_short": "astropy.units",
+   "name": "IrreducibleUnit"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "astropy.units",
+   "module_short": "astropy.units",
+   "name": "IrreducibleUnit"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "astropy",
+   "module_short": "astropy",
+   "name": "IrreducibleUnit"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "astropy.units",
+   "module_short": "astropy.units",
+   "name": "pixel"
+  }
+ ],
+ "astropy.io.fits": [
+  {
+   "is_class": false,
+   "is_explicit": true,
+   "module": "astropy.io",
+   "module_short": "astropy.io",
+   "name": "fits"
+  }
+ ],
+ "axs": [
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "builtins",
+   "module_short": "builtins",
+   "name": "list"
+  }
+ ],
+ "backproj_map": [
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "sunpy.map.mapbase",
+   "module_short": "sunpy.map",
+   "name": "GenericMap"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "sunpy.map",
+   "module_short": "sunpy.map",
+   "name": "GenericMap"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "sunpy",
+   "module_short": "sunpy",
+   "name": "GenericMap"
+  }
+ ],
+ "backproj_map.plot": [
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "sunpy.map.mapbase",
+   "module_short": "sunpy.map",
+   "name": "GenericMap.plot"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "sunpy.map",
+   "module_short": "sunpy.map",
+   "name": "GenericMap.plot"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "sunpy",
+   "module_short": "sunpy",
+   "name": "GenericMap.plot"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "astropy.nddata.nddata",
+   "module_short": "astropy.nddata.nddata",
+   "name": "NDData.plot"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "astropy.nddata",
+   "module_short": "astropy.nddata",
+   "name": "NDData.plot"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "astropy",
+   "module_short": "astropy",
+   "name": "NDData.plot"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "astropy.nddata.nddata_base",
+   "module_short": "astropy.nddata.nddata_base",
+   "name": "NDDataBase.plot"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "astropy.nddata",
+   "module_short": "astropy.nddata",
+   "name": "NDDataBase.plot"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "astropy",
+   "module_short": "astropy",
+   "name": "NDDataBase.plot"
+  }
+ ],
+ "clean_map": [
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "sunpy.map.mapbase",
+   "module_short": "sunpy.map",
+   "name": "GenericMap"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "sunpy.map",
+   "module_short": "sunpy.map",
+   "name": "GenericMap"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "sunpy",
+   "module_short": "sunpy",
+   "name": "GenericMap"
+  }
+ ],
+ "clean_map.plot": [
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "sunpy.map.mapbase",
+   "module_short": "sunpy.map",
+   "name": "GenericMap.plot"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "sunpy.map",
+   "module_short": "sunpy.map",
+   "name": "GenericMap.plot"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "sunpy",
+   "module_short": "sunpy",
+   "name": "GenericMap.plot"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "astropy.nddata.nddata",
+   "module_short": "astropy.nddata.nddata",
+   "name": "NDData.plot"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "astropy.nddata",
+   "module_short": "astropy.nddata",
+   "name": "NDData.plot"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "astropy",
+   "module_short": "astropy",
+   "name": "NDData.plot"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "astropy.nddata.nddata_base",
+   "module_short": "astropy.nddata.nddata_base",
+   "name": "NDDataBase.plot"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "astropy.nddata",
+   "module_short": "astropy.nddata",
+   "name": "NDDataBase.plot"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "astropy",
+   "module_short": "astropy",
+   "name": "NDDataBase.plot"
+  }
+ ],
+ "energy_index": [
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "numpy",
+   "module_short": "numpy",
+   "name": "ndarray"
+  }
+ ],
+ "fig": [
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "matplotlib.figure",
+   "module_short": "matplotlib.figure",
+   "name": "Figure"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "matplotlib",
+   "module_short": "matplotlib",
+   "name": "Figure"
+  }
+ ],
+ "fig.add_subplot": [
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "matplotlib.figure",
+   "module_short": "matplotlib.figure",
+   "name": "Figure.add_subplot"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "matplotlib",
+   "module_short": "matplotlib",
+   "name": "Figure.add_subplot"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "matplotlib.figure",
+   "module_short": "matplotlib.figure",
+   "name": "FigureBase.add_subplot"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "matplotlib",
+   "module_short": "matplotlib",
+   "name": "FigureBase.add_subplot"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "matplotlib.artist",
+   "module_short": "matplotlib.artist",
+   "name": "Artist.add_subplot"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "matplotlib",
+   "module_short": "matplotlib",
+   "name": "Artist.add_subplot"
+  }
+ ],
+ "fig.get_axes": [
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "matplotlib.figure",
+   "module_short": "matplotlib.figure",
+   "name": "Figure.get_axes"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "matplotlib",
+   "module_short": "matplotlib",
+   "name": "Figure.get_axes"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "matplotlib.figure",
+   "module_short": "matplotlib.figure",
+   "name": "FigureBase.get_axes"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "matplotlib",
+   "module_short": "matplotlib",
+   "name": "FigureBase.get_axes"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "matplotlib.artist",
+   "module_short": "matplotlib.artist",
+   "name": "Artist.get_axes"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "matplotlib",
+   "module_short": "matplotlib",
+   "name": "Artist.get_axes"
+  }
+ ],
+ "fits.open": [
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "builtins",
+   "module_short": "builtins",
+   "name": "function"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "astropy.io.fits",
+   "module_short": "astropy.io.fits",
+   "name": "open"
+  }
+ ],
+ "hdul": [
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "astropy.io.fits.hdu.hdulist",
+   "module_short": "astropy.io.fits",
+   "name": "HDUList"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "astropy.io.fits.hdu",
+   "module_short": "astropy.io.fits",
+   "name": "HDUList"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "astropy.io.fits",
+   "module_short": "astropy.io.fits",
+   "name": "HDUList"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "astropy.io",
+   "module_short": "astropy.io",
+   "name": "HDUList"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "astropy",
+   "module_short": "astropy",
+   "name": "HDUList"
+  }
+ ],
+ "ibig": [
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "numpy",
+   "module_short": "numpy",
+   "name": "ndarray"
+  }
+ ],
+ "isc_min": [
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "builtins",
+   "module_short": "builtins",
+   "name": "int"
+  }
+ ],
+ "mem": [
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "builtins",
+   "module_short": "builtins",
+   "name": "function"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "xrayvision.mem",
+   "module_short": "xrayvision.mem",
+   "name": "mem"
+  }
+ ],
+ "mem_map": [
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "sunpy.map.mapbase",
+   "module_short": "sunpy.map",
+   "name": "GenericMap"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "sunpy.map",
+   "module_short": "sunpy.map",
+   "name": "GenericMap"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "sunpy",
+   "module_short": "sunpy",
+   "name": "GenericMap"
+  }
+ ],
+ "mem_map.plot": [
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "sunpy.map.mapbase",
+   "module_short": "sunpy.map",
+   "name": "GenericMap.plot"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "sunpy.map",
+   "module_short": "sunpy.map",
+   "name": "GenericMap.plot"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "sunpy",
+   "module_short": "sunpy",
+   "name": "GenericMap.plot"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "astropy.nddata.nddata",
+   "module_short": "astropy.nddata.nddata",
+   "name": "NDData.plot"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "astropy.nddata",
+   "module_short": "astropy.nddata",
+   "name": "NDData.plot"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "astropy",
+   "module_short": "astropy",
+   "name": "NDData.plot"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "astropy.nddata.nddata_base",
+   "module_short": "astropy.nddata.nddata_base",
+   "name": "NDDataBase.plot"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "astropy.nddata",
+   "module_short": "astropy.nddata",
+   "name": "NDDataBase.plot"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "astropy",
+   "module_short": "astropy",
+   "name": "NDDataBase.plot"
+  }
+ ],
+ "meta": [
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "xrayvision.visibility",
+   "module_short": "xrayvision.visibility",
+   "name": "VisMeta"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "xrayvision",
+   "module_short": "xrayvision",
+   "name": "VisMeta"
+  }
+ ],
+ "model_map": [
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "sunpy.map.mapbase",
+   "module_short": "sunpy.map",
+   "name": "GenericMap"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "sunpy.map",
+   "module_short": "sunpy.map",
+   "name": "GenericMap"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "sunpy",
+   "module_short": "sunpy",
+   "name": "GenericMap"
+  }
+ ],
+ "nbig": [
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "builtins",
+   "module_short": "builtins",
+   "name": "int"
+  }
+ ],
+ "np.abs": [
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "numpy",
+   "module_short": "numpy",
+   "name": "ufunc"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "numpy",
+   "module_short": "numpy",
+   "name": "abs"
+  }
+ ],
+ "np.argwhere": [
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "numpy",
+   "module_short": "numpy",
+   "name": "_ArrayFunctionDispatcher"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "numpy",
+   "module_short": "numpy",
+   "name": "argwhere"
+  }
+ ],
+ "np.unique": [
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "numpy",
+   "module_short": "numpy",
+   "name": "_ArrayFunctionDispatcher"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "numpy",
+   "module_short": "numpy",
+   "name": "unique"
+  }
+ ],
+ "np.where": [
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "numpy",
+   "module_short": "numpy",
+   "name": "_ArrayFunctionDispatcher"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "numpy",
+   "module_short": "numpy",
+   "name": "where"
+  }
+ ],
+ "percent_lambda": [
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "astropy.units.quantity",
+   "module_short": "astropy.units",
+   "name": "Quantity"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "astropy.units",
+   "module_short": "astropy.units",
+   "name": "Quantity"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "astropy",
+   "module_short": "astropy",
+   "name": "Quantity"
+  }
+ ],
+ "plt.figure": [
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "builtins",
+   "module_short": "builtins",
+   "name": "function"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "matplotlib.pyplot",
+   "module_short": "matplotlib.pyplot",
+   "name": "figure"
+  }
+ ],
+ "plt.show": [
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "builtins",
+   "module_short": "builtins",
+   "name": "function"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "matplotlib.pyplot",
+   "module_short": "matplotlib.pyplot",
+   "name": "show"
+  }
+ ],
+ "psf_map": [
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "sunpy.map.mapbase",
+   "module_short": "sunpy.map",
+   "name": "GenericMap"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "sunpy.map",
+   "module_short": "sunpy.map",
+   "name": "GenericMap"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "sunpy",
+   "module_short": "sunpy",
+   "name": "GenericMap"
+  }
+ ],
+ "psf_map.plot": [
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "sunpy.map.mapbase",
+   "module_short": "sunpy.map",
+   "name": "GenericMap.plot"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "sunpy.map",
+   "module_short": "sunpy.map",
+   "name": "GenericMap.plot"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "sunpy",
+   "module_short": "sunpy",
+   "name": "GenericMap.plot"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "astropy.nddata.nddata",
+   "module_short": "astropy.nddata.nddata",
+   "name": "NDData.plot"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "astropy.nddata",
+   "module_short": "astropy.nddata",
+   "name": "NDData.plot"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "astropy",
+   "module_short": "astropy",
+   "name": "NDData.plot"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "astropy.nddata.nddata_base",
+   "module_short": "astropy.nddata.nddata_base",
+   "name": "NDDataBase.plot"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "astropy.nddata",
+   "module_short": "astropy.nddata",
+   "name": "NDDataBase.plot"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "astropy",
+   "module_short": "astropy",
+   "name": "NDDataBase.plot"
+  }
+ ],
+ "residual_map": [
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "sunpy.map.mapbase",
+   "module_short": "sunpy.map",
+   "name": "GenericMap"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "sunpy.map",
+   "module_short": "sunpy.map",
+   "name": "GenericMap"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "sunpy",
+   "module_short": "sunpy",
+   "name": "GenericMap"
+  }
+ ],
+ "resistant_mean": [
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "builtins",
+   "module_short": "builtins",
+   "name": "function"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "xrayvision.mem",
+   "module_short": "xrayvision.mem",
+   "name": "resistant_mean"
+  }
+ ],
+ "snr_value": [
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "astropy.units.quantity",
+   "module_short": "astropy.units",
+   "name": "Quantity"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "astropy.units",
+   "module_short": "astropy.units",
+   "name": "Quantity"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "astropy",
+   "module_short": "astropy",
+   "name": "Quantity"
+  }
+ ],
+ "time_index": [
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "numpy",
+   "module_short": "numpy",
+   "name": "ndarray"
+  }
+ ],
+ "times": [
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "numpy",
+   "module_short": "numpy",
+   "name": "ndarray"
+  }
+ ],
+ "vis": [
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "xrayvision.visibility",
+   "module_short": "xrayvision.visibility",
+   "name": "Visibilities"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "xrayvision",
+   "module_short": "xrayvision",
+   "name": "Visibilities"
+  }
+ ],
+ "vis.amplitude_uncertainty": [
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "xrayvision.visibility",
+   "module_short": "xrayvision.visibility",
+   "name": "Visibilities.amplitude_uncertainty"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "xrayvision",
+   "module_short": "xrayvision",
+   "name": "Visibilities.amplitude_uncertainty"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "xrayvision.visibility",
+   "module_short": "xrayvision.visibility",
+   "name": "VisibilitiesABC.amplitude_uncertainty"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "xrayvision",
+   "module_short": "xrayvision",
+   "name": "VisibilitiesABC.amplitude_uncertainty"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "abc",
+   "module_short": "abc",
+   "name": "ABC.amplitude_uncertainty"
+  }
+ ],
+ "vis.meta.vis_labels": [
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "xrayvision.visibility",
+   "module_short": "xrayvision.visibility",
+   "name": "Visibilities.meta"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "xrayvision",
+   "module_short": "xrayvision",
+   "name": "Visibilities.meta"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "xrayvision.visibility",
+   "module_short": "xrayvision.visibility",
+   "name": "VisibilitiesABC.meta"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "xrayvision",
+   "module_short": "xrayvision",
+   "name": "VisibilitiesABC.meta"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "abc",
+   "module_short": "abc",
+   "name": "ABC.meta"
+  }
+ ],
+ "vis.visibilities": [
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "xrayvision.visibility",
+   "module_short": "xrayvision.visibility",
+   "name": "Visibilities.visibilities"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "xrayvision",
+   "module_short": "xrayvision",
+   "name": "Visibilities.visibilities"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "xrayvision.visibility",
+   "module_short": "xrayvision.visibility",
+   "name": "VisibilitiesABC.visibilities"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "xrayvision",
+   "module_short": "xrayvision",
+   "name": "VisibilitiesABC.visibilities"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "abc",
+   "module_short": "abc",
+   "name": "ABC.visibilities"
+  }
+ ],
+ "vis_clean": [
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "builtins",
+   "module_short": "builtins",
+   "name": "function"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "xrayvision.clean",
+   "module_short": "xrayvision.clean",
+   "name": "vis_clean"
+  }
+ ],
+ "vis_data": [
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "astropy.io.fits.fitsrec",
+   "module_short": "astropy.io.fits",
+   "name": "FITS_rec"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "astropy.io.fits",
+   "module_short": "astropy.io.fits",
+   "name": "FITS_rec"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "astropy.io",
+   "module_short": "astropy.io",
+   "name": "FITS_rec"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "astropy",
+   "module_short": "astropy",
+   "name": "FITS_rec"
+  }
+ ],
+ "vis_psf_map": [
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "builtins",
+   "module_short": "builtins",
+   "name": "function"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "xrayvision.imaging",
+   "module_short": "xrayvision.imaging",
+   "name": "vis_psf_map"
+  }
+ ],
+ "vis_to_map": [
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "builtins",
+   "module_short": "builtins",
+   "name": "function"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "xrayvision.imaging",
+   "module_short": "xrayvision.imaging",
+   "name": "vis_to_map"
+  }
+ ],
+ "vunit": [
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "astropy.units.core",
+   "module_short": "astropy.units",
+   "name": "CompositeUnit"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "astropy.units",
+   "module_short": "astropy.units",
+   "name": "CompositeUnit"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "astropy",
+   "module_short": "astropy",
+   "name": "CompositeUnit"
+  }
+ ]
+}
