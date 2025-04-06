@@ -1,0 +1,22 @@
+[project]
+name = "drebedengi-sdk"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "Vlad Lapikov",email = "99816762+wh0t-is-love@users.noreply.github.com"}
+]
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "zeep (>=4.3.1,<5.0.0)",
+    "requests (>=2.32.3,<3.0.0)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.group.test.dependencies]
+pytest = "^8.3.5"
+
