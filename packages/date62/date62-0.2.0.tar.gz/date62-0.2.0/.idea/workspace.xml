@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="6c253617-6661-47d4-a343-60dfb809644e" name="Changes" comment="Fix docs" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;makukha&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/makukha/date62.git&quot;,
+    &quot;accountId&quot;: &quot;d14d8bef-cd67-4a68-a740-e3ba0a07c061&quot;
+  }
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 5
+}</component>
+  <component name="ProjectId" id="2v8fKquiBiKZmWEQWn2hYdgPNTA" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "5-release-v020",
+    "last_opened_file_path": "/home/m/repos/copython",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-1632447f56bf-JavaScript-PY-243.26053.29" />
+        <option value="bundled-python-sdk-b1dbf8ef85a6-4df51de95216-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-243.26053.29" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="6c253617-6661-47d4-a343-60dfb809644e" name="Changes" comment="" />
+      <created>1743531560258</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1743531560258</updated>
+      <workItem from="1743531561387" duration="13578000" />
+      <workItem from="1743545158038" duration="747000" />
+      <workItem from="1743545997077" duration="16813000" />
+      <workItem from="1743598325468" duration="65596000" />
+    </task>
+    <task id="LOCAL-00001" summary="Apply makukha/copython and make linters pass">
+      <option name="closed" value="true" />
+      <created>1743546084538</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1743546084538</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Fix docs">
+      <option name="closed" value="true" />
+      <created>1743546987531</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1743546987531</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Upgrade dependencies">
+      <option name="closed" value="true" />
+      <created>1743547067677</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1743547067677</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Sync project template">
+      <option name="closed" value="true" />
+      <created>1743547305140</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1743547305140</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Sync project template">
+      <option name="closed" value="true" />
+      <created>1743547549127</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1743547549127</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Sync project template">
+      <option name="closed" value="true" />
+      <created>1743653553528</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1743653553528</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Update project template">
+      <option name="closed" value="true" />
+      <created>1743755389360</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1743755389360</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Multiple changes and fixes">
+      <option name="closed" value="true" />
+      <created>1743756079989</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1743756079989</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Update dependencies">
+      <option name="closed" value="true" />
+      <created>1743757318029</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1743757318029</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Fix bug">
+      <option name="closed" value="true" />
+      <created>1743758068494</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1743758068494</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Fix bug">
+      <option name="closed" value="true" />
+      <created>1743758260694</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1743758260694</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Sync project template">
+      <option name="closed" value="true" />
+      <created>1743758633519</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1743758633519</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Sync project template">
+      <option name="closed" value="true" />
+      <created>1743758682472</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1743758682472</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Sync project template">
+      <option name="closed" value="true" />
+      <created>1743758892509</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1743758892509</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Fix bug">
+      <option name="closed" value="true" />
+      <created>1743759099337</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1743759099337</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Sync project template">
+      <option name="closed" value="true" />
+      <created>1743759215249</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1743759215249</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Sync project template">
+      <option name="closed" value="true" />
+      <created>1743769607693</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1743769607693</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Sync project template">
+      <option name="closed" value="true" />
+      <created>1743770056553</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1743770056553</updated>
+    </task>
+    <task id="LOCAL-00019" summary="Sync project template">
+      <option name="closed" value="true" />
+      <created>1743770181369</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1743770181369</updated>
+    </task>
+    <task id="LOCAL-00020" summary="Sync project template">
+      <option name="closed" value="true" />
+      <created>1743770557455</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1743770557455</updated>
+    </task>
+    <task id="LOCAL-00021" summary="Sync project template">
+      <option name="closed" value="true" />
+      <created>1743770660787</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1743770660787</updated>
+    </task>
+    <task id="LOCAL-00022" summary="Sync project template">
+      <option name="closed" value="true" />
+      <created>1743775880458</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1743775880458</updated>
+    </task>
+    <task id="LOCAL-00023" summary="Sync project template">
+      <option name="closed" value="true" />
+      <created>1743775944947</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1743775944947</updated>
+    </task>
+    <task id="LOCAL-00024" summary="Sync project template">
+      <option name="closed" value="true" />
+      <created>1743779744509</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1743779744509</updated>
+    </task>
+    <task id="LOCAL-00025" summary="Sync project template">
+      <option name="closed" value="true" />
+      <created>1743780332795</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1743780332795</updated>
+    </task>
+    <task id="LOCAL-00026" summary="Update version and changelog">
+      <option name="closed" value="true" />
+      <created>1743780587588</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1743780587588</updated>
+    </task>
+    <task id="LOCAL-00027" summary="Update docs">
+      <option name="closed" value="true" />
+      <created>1743780834906</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1743780834906</updated>
+    </task>
+    <task id="LOCAL-00028" summary="Sync project template">
+      <option name="closed" value="true" />
+      <created>1743780907594</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1743780907594</updated>
+    </task>
+    <task id="LOCAL-00029" summary="Fix docs">
+      <option name="closed" value="true" />
+      <created>1743781219767</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1743781219767</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CHECK_NEW_TODO" value="false" />
+    <MESSAGE value="Apply makukha/copython" />
+    <MESSAGE value="Apply makukha/copython and make linters pass" />
+    <MESSAGE value="Upgrade dependencies" />
+    <MESSAGE value="Update project template" />
+    <MESSAGE value="Multiple changes and fixes" />
+    <MESSAGE value="Update dependencies" />
+    <MESSAGE value="Fix bug" />
+    <MESSAGE value="Update version and changelog" />
+    <MESSAGE value="Update docs" />
+    <MESSAGE value="Sync project template" />
+    <MESSAGE value="Fix docs" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix docs" />
+  </component>
+</project>
