@@ -1,0 +1,66 @@
+[project]
+name = "strats"
+version = "0.1.1"
+description = "Strats: system trading framework"
+readme = "README.md"
+authors = [
+    { name = "Kazuki Yoshida" }
+]
+requires-python = ">=3.9"
+dependencies = [
+    "fastapi>=0.115.11",
+    "flask>=3.1.0",
+    "prometheus-client>=0.21.1",
+    "uvicorn>=0.34.0",
+    "uvloop>=0.21.0",
+    "waitress>=3.0.2",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.uv.workspace]
+members = ["example"]
+
+[tool.ruff]
+line-length = 100
+
+[tool.ruff.lint]
+select = [
+    "E",  # pycodestyle errors
+    "W",  # pycodestyle warnings
+    "F",  # pyflakes
+    "I",  # isort
+    "B",  # flake8-bugbear
+    "C4",  # flake8-comprehensions
+    "UP",  # pyupgrade
+]
+ignore = [
+    "D1",    # Allow undocumented
+    "E741",  # Allow to use variables named 'I', 'O', or 'l'
+    "B008",  # Allow FastAPI's Depends (`def hoge(a = Depends(get_a)):`)
+]
+
+[tool.tox]
+legacy_tox_ini = """
+[tox]
+envlist = lint, mypy, py39, py310, py311, py312
+
+[testenv]
+deps = pytest
+commands =
+    pytest tests -sv
+
+[testenv:lint]
+deps = ruff
+commands =
+    ruff check --fix
+    ruff format
+
+[testenv:mypy]
+deps =
+    mypy
+    types-waitress
+commands = mypy src tests
+"""
