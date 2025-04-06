@@ -1,0 +1,5 @@
+lxml>=4.9.3
+rustworkx>=0.15.1
+
+[dev]
+pytest>=8.1.1
