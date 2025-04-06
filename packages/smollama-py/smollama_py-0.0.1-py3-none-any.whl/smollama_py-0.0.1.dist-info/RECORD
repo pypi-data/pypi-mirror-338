@@ -1,0 +1,9 @@
+smollama_py/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+smollama_py/__main__.py,sha256=8hDtWlaFZK24KhfNq_ZKgtXqYHsDQDetukOCMlsbW0Q,59
+smollama_py/cli.py,sha256=vmIV1KHVE1fj0s00ytURfQnuiMZ1DlRHo83jh3d6Hnk,712
+smollama_py-0.0.1.dist-info/licenses/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+smollama_py-0.0.1.dist-info/METADATA,sha256=tO34T7U9xPnbiQeBkOi3rmZdN9CSpZhZhA1_z9DqMK4,2720
+smollama_py-0.0.1.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+smollama_py-0.0.1.dist-info/entry_points.txt,sha256=P1qkULse7QOGI87JqhejRjcWgC4nfWG_Eitw4dYv4o8,52
+smollama_py-0.0.1.dist-info/top_level.txt,sha256=Kqqm5Acz7Px85u2cyWOZ9rOc4geEHhGX_2q9Cb_r4lk,12
+smollama_py-0.0.1.dist-info/RECORD,,
