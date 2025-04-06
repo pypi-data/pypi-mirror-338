@@ -1,0 +1,10 @@
+{
+    "prod": {
+        "name": "Prod",
+        "AuthZeroTenantName": "auth.raic.ai",
+        "AuthZeroV2ClientId": "Kkp3t2H1K5hDvvIVT0WXCzejy7hK8SfZ",
+        "AuthZeroAudience": "https://synthetaic.raic.ai",
+        "AuthZeroAlgorithms": "['RS256']",
+        "ApiRoot": "https://api.raic.ai"
+    }
+}
