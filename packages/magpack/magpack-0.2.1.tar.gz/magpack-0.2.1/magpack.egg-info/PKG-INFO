@@ -1,0 +1,46 @@
+Metadata-Version: 2.4
+Name: magpack
+Version: 0.2.1
+Summary: Tools for analysing 3D magnetic simulations and reconstructions
+Author: Andreas Apseros
+License-Expression: BSD-3-Clause
+Project-URL: Homepage, https://github.com/apseros/magpack
+Project-URL: Issues, https://github.com/apseros/magpack/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: Intended Audience :: Science/Research
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/x-rst
+License-File: LICENSE.txt
+Requires-Dist: numpy
+Requires-Dist: pyevtk
+Requires-Dist: matplotlib
+Requires-Dist: pillow
+Requires-Dist: scipy
+Dynamic: license-file
+
+magpack
+=======
+magpack provides a set of tools for analyzing simulations and reconstructions of 3D vector and orientation fields.
+
+Installation
+------------
+magpack can be installed through pip:
+
+.. code-block:: console
+
+   (.venv)$ pip install magpack
+
+Examples
+--------
+magpack contains tools for:
+
+- loading and saving data in formats such as ``.mat``, ``.ovf`` and ``.vtk``.
+- performing vector operations
+- calculating and evaluating scalar and vector field rotations
+- removing image distortions, coloring complex arrays (e.g. Fourier transforms) and evaluating image resolutions using
+  Fourier shell correlation
+
+Documentation
+-------------
+Comprehensive documentation is available online at `readthedocs <https://magpack.readthedocs.io/en/latest/index.html>`_.

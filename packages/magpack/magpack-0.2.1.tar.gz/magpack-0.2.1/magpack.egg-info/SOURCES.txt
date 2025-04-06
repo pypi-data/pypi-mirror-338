@@ -1,0 +1,15 @@
+LICENSE.txt
+README.rst
+pyproject.toml
+magpack/__init__.py
+magpack/_ovf_reader.py
+magpack/image_utils.py
+magpack/io.py
+magpack/rotations.py
+magpack/structures.py
+magpack/vectorop.py
+magpack.egg-info/PKG-INFO
+magpack.egg-info/SOURCES.txt
+magpack.egg-info/dependency_links.txt
+magpack.egg-info/requires.txt
+magpack.egg-info/top_level.txt
