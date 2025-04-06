@@ -1,0 +1,32 @@
+Metadata-Version: 2.4
+Name: alkindi
+Version: 0.1.0
+Summary: A Python library for post-quantum cryptography
+Home-page: https://github.com/alraddady/alkindi
+Author: Khalid Alraddady
+Author-email: k.alraddady@outlook.sa
+License: LGPL-3.0-or-later
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v3 or later (LGPLv3+)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Security :: Cryptography
+Classifier: Intended Audience :: Developers
+Requires-Python: >=3.10
+License-File: LICENSE
+Requires-Dist: cffi>=1.15
+Provides-Extra: dev
+Requires-Dist: pytest; extra == "dev"
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: home-page
+Dynamic: license
+Dynamic: license-file
+Dynamic: provides-extra
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
