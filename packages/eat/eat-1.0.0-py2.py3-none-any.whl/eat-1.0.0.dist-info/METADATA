@@ -1,0 +1,71 @@
+Metadata-Version: 2.4
+Name: eat
+Version: 1.0.0
+Summary: A funny execute module, enjoy.
+Author-email: AYMEN||d9c <aymenmw@proton.me>
+Description-Content-Type: text/markdown
+License-Expression: GPL-3.0-or-later
+License-File: LICENSE
+Project-URL: Home, https://github.com/kkkik/eat
+
+<p align="center">
+  <img src="https://via.placeholder.com/300x100?text=EAT" alt="EAT Logo" />
+</p>
+
+<h1 align="center">🍽️ <span style="color:#d35400;">EAT</span> - Execute Analyze Transform</h1>
+
+<p align="center" style="font-size: 1.1em;">
+  <strong>مكتبة ذكية لتحليل، فحص، تشويش وتنفيذ كود بايثون بأمان</strong><br>
+</p>
+
+<hr>
+
+<h2 align="center">✨ الميزات</h2>
+
+<p align="center">
+  🔥 <strong>burn(code)</strong> - تشويش الكود وجعله غير قابل للفهم بسهولة<br>
+  📊 <strong>chew(code)</strong> - تحليل الكود وعدّ الأسطر والدوال والكلمات<br>
+  🛡️ <strong>scan(code)</strong> - كشف أوامر مشبوهة مثل <code>exec</code> أو <code>import os</code><br>
+  ⚙️ <strong>digest(code)</strong> - تنفيذ الكود داخل بيئة محمية (Sandbox)<br>
+  ♻️ <strong>full(code)</strong> - منع تكرار تنفيذ نفس الكود<br>
+  🧠 <strong>throwup()</strong> - إرجاع نتيجة آخر تنفيذ للكود<br>
+</p>
+
+<hr>
+
+<h2 align="center">🚀 الاستخدام</h2>
+
+```python
+from eat import burn, chew, digest, scan, throwup, full
+code = '''
+def hello():
+    print("Hello from EAT")
+hello()
+'''
+
+print(burn(code))
+print(chew(code))
+print(scan(code))
+
+if full(code):
+    digest(code)
+    print(throwup())
+else:
+    print("الكود تم تنفيذه مسبقاً.")
+```
+<hr><h2 align="center">🧪 مثال عملي</h2>code = "print('Welcome to EAT!')"
+if not scan(code):
+    if full(code):
+        digest(code)
+        print("✅ تم التنفيذ!")
+    else:
+        print("⚠️ تم تنفيذ الكود مسبقاً.")
+else:
+    print("❌ تم الكشف عن كود ضار!")
+
+<hr><h2 align="center">📦 التثبيت</h2>pip install eat
+
+<hr><h2 align="center">🧑‍💻 المؤلف</h2><p align="center">
+  d9c.<br>
+  هذه المكتبة تعليمية وقابلة للتوسّع في المستقبل القريب.
+</p>
