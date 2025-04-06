@@ -1,0 +1,3 @@
+[console_scripts]
+hello = summathaan:hello
+hi = summathaan:hello
