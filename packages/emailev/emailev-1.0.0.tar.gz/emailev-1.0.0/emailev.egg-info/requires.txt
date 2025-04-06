@@ -1,0 +1,7 @@
+dnspython
+PyHunter
+stem
+PySocks
+aiohttp
+colorama
+pyfiglet
