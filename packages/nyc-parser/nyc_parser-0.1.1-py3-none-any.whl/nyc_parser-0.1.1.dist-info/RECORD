@@ -1,0 +1,11 @@
+nycparser/__init__.py,sha256=kYsB1kTUQme9InSjt0zZyDWxSlgimfPF07v6CRkI_zg,30
+nycparser/nycparser.py,sha256=Mps13bBLLWa6vSiBCyq1EDvOoNFoVemryk_6KpWTEKY,6124
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_address.py,sha256=JvJdhVXl1RhhqRX0ztqpXfWY_3-zOlPiUC4-Uqxi4vg,2440
+tests/test_bbl.py,sha256=pZLhnq1_qVJX6V1AS0_lgI1mZ6-ztDCWucKg7FgAFcU,1044
+tests/test_complex_address.py,sha256=yEgJldNrcy31WAyXdoMKHPXsTfHCcnKyi_Y1MZSDwTc,1628
+tests/testcase.py,sha256=Y25VEsNRHtYAfoyEu6Hu5Whd2B8C6s9z5cBO9yINAUM,154
+nyc_parser-0.1.1.dist-info/METADATA,sha256=xHMwrMz9--JAcAjk7IOr8FmJESKSvi5BOhY2r3NT_Jc,4182
+nyc_parser-0.1.1.dist-info/WHEEL,sha256=iAkIy5fosb7FzIOwONchHf19Qu7_1wCWyFNR5gu9nU0,91
+nyc_parser-0.1.1.dist-info/top_level.txt,sha256=Caq8giY9LdGEsX9Nywzlr4hKNxo-DL4B-BO0bDoETOI,16
+nyc_parser-0.1.1.dist-info/RECORD,,
