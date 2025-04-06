@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Candlestick Chart</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-chart-financial"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-date-fns"></script>
+    <link rel="stylesheet" href="static/styles.css">
+    <link rel="stylesheet" href="static/chart.css">    
+</head>
+<body>
+    <div class="chart-body">
+        <div class="chart-grid"> 
+            <div class="right">
+                <div class="label">Symbol</div>
+                <div id='symbol'></div> 
+            </div>
+            <div class="right">
+                <div class="label">Close</div>
+                <div id='close'></div>
+            </div>
+            <div id="chart1m" class="chart-container"> </div>
+            <div id="chart5m" class="chart-container"> </div>
+            <div id="chart15m" class="chart-container"> </div>
+            <div id="chart1h" class="chart-container"> </div>
+            <div id="chart1d" class="chart-container"> </div>
+        </div>    
+    </div>
+    <script src="/static/chart.js"></script>
+    <script>
+        function getQueryParam(param) {
+            const urlParams = new URLSearchParams(window.location.search);
+            return urlParams.get(param);
+        }
+        const symbol = getQueryParam('symbol');
+
+        const host = window.location.hostname;
+        const websocket = new WebSocket(`ws://${host}:8000/wscharts?ticker=${symbol}`);
+        websocket.onopen = function() {
+            // Send a ping every 30 seconds
+            setInterval(() => {
+                if (websocket.readyState === WebSocket.OPEN) {
+                    websocket.send("ping");
+                }
+            }, 30000);                 
+        }
+        
+        websocket.onmessage = function(event) {
+            if (event.data === "pong") {
+                return;
+            }
+            const messageElement = JSON.parse(event.data);
+            document.getElementById('symbol').innerHTML = messageElement.symbol;                
+            document.getElementById('close').innerHTML = messageElement.close;   
+
+            const data1m = messageElement.chart1m;
+            const data5m = messageElement.chart5m;
+            const data15m = messageElement.chart15m;
+            const data1h = messageElement.chart1h;
+            const data1d = messageElement.chart1d;
+            const buysell = messageElement.buysell;
+            const ema_study = messageElement.ema_study;
+            const ema_chart = messageElement.ema_chart;
+            const macd_study = messageElement.macd_study;
+            const macd_chart = messageElement.macd_chart;
+            const bbm_study = messageElement.bbm_study;
+            const bbm_chart = messageElement.bbm_chart;
+            const rsi_study = messageElement.rsi_study;
+            const rsi_chart = messageElement.rsi_chart;
+
+
+            createOrUpdateChart('chart1m', data1m, buysell, ema_study, ema_chart, macd_study, macd_chart, bbm_study, bbm_chart, rsi_study, rsi_chart, 'minute'); 
+            createOrUpdateChart('chart5m', data5m, buysell, ema_study, ema_chart, macd_study, macd_chart, bbm_study, bbm_chart, rsi_study, rsi_chart, 'minute'); 
+            createOrUpdateChart('chart15m', data15m, buysell, ema_study, ema_chart, macd_study, macd_chart, bbm_study, bbm_chart, rsi_study, rsi_chart, 'minute'); 
+            createOrUpdateChart('chart1h', data1h, buysell, ema_study, ema_chart, macd_study, macd_chart, bbm_study, bbm_chart, rsi_study, rsi_chart, 'hour'); 
+            createOrUpdateChart('chart1d', data1d, buysell, ema_study, ema_chart, macd_study, macd_chart, bbm_study, bbm_chart, rsi_study, rsi_chart, 'day');
+        };
+
+        websocket.onerror = function(error) {
+        };
+
+        websocket.onclose = function() {
+            charts.forEach(chart => {
+                delete charts[chart];
+            });
+        };
+
+
+        
+        
+        
+        
+        
+
+    </script>
+</body>
+</html>

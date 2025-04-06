@@ -1,0 +1,33 @@
+# Web Framework
+fastapi
+uvicorn
+fastapi-login
+python-multipart
+
+# Template Engine
+jinja2
+
+# Environment Variables
+python-dotenv
+pydantic
+pydantic-settings
+
+# HTTP/WebSocket
+websockets
+requests
+aiohttp
+
+# Date/Time
+pytz
+
+# Security
+cryptography
+
+# Utilities
+colorama
+
+
+# Data Processing
+#TA-LIB
+pandas
+numpy
