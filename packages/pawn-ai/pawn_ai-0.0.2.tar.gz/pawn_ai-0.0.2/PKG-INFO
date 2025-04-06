@@ -1,0 +1,174 @@
+Metadata-Version: 2.4
+Name: pawn_ai
+Version: 0.0.2
+Summary: Precompiled Agents Workflow Network (P.A.W.N.) for building AI-driven, multi-agent crypto systems.
+Home-page: https://github.com/Logarithm-Labs/pawn
+Author: Logarithm Labs
+Author-email: dev@logarithm.fi
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.12
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: langgraph-supervisor==0.0.16
+Provides-Extra: hyperliquid-trader-worflow
+Requires-Dist: langchain==0.3.23; extra == "hyperliquid-trader-worflow"
+Requires-Dist: langgraph-supervisor==0.0.16; extra == "hyperliquid-trader-worflow"
+Requires-Dist: langchain_openai==0.3.12; extra == "hyperliquid-trader-worflow"
+Provides-Extra: goat-solana-worflow
+Requires-Dist: solana==0.36.6; extra == "goat-solana-worflow"
+Requires-Dist: langgraph-supervisor==0.0.16; extra == "goat-solana-worflow"
+Requires-Dist: langchain_openai==0.3.12; extra == "goat-solana-worflow"
+Requires-Dist: goat-sdk-adapter-langchain==0.1.1; extra == "goat-solana-worflow"
+Requires-Dist: goat-sdk-wallet-crossmint==0.1.11; extra == "goat-solana-worflow"
+Requires-Dist: goat-sdk-plugin-spl-token==0.1.4; extra == "goat-solana-worflow"
+Requires-Dist: goat-sdk-plugin-jupiter==0.1.3; extra == "goat-solana-worflow"
+Provides-Extra: goat-evm-worflow
+Requires-Dist: web3==7.10.0; extra == "goat-evm-worflow"
+Requires-Dist: langgraph-supervisor==0.0.16; extra == "goat-evm-worflow"
+Requires-Dist: langchain_openai==0.3.12; extra == "goat-evm-worflow"
+Requires-Dist: goat-sdk-plugin-uniswap==0.1.2; extra == "goat-evm-worflow"
+Requires-Dist: goat-sdk-adapter-langchain==0.1.1; extra == "goat-evm-worflow"
+Requires-Dist: goat-sdk-wallet-crossmint==0.1.11; extra == "goat-evm-worflow"
+Provides-Extra: llamafeed-worflow
+Requires-Dist: langgraph-supervisor==0.0.16; extra == "llamafeed-worflow"
+Requires-Dist: langchain_openai==0.3.12; extra == "llamafeed-worflow"
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: license-file
+Dynamic: provides-extra
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+# Precompiled Agents Workflows Network (P.A.W.N. ♟️)
+
+Precompiled Agents Workflows Network is a multi-package project that provides prebuilt agent workflows for blockchain and crypto agents. PAWN workflows are implemented using [Langgraph Supervisor](https://github.com/langchain-ai/langgraph-supervisor-py), ensuring maximum composability for agent systems. PAWN also allows seamless integration with various agent frameworks, such as [GOAT](https://github.com/goat-sdk/goat/tree/main#%EF%B8%8F-supported-tools-and-frameworks).
+
+---
+
+## How to Install?
+
+You can install the base package along with only the dependencies you need. For example:
+
+- **Basic installation:**
+```bash
+pip install pawn-ai
+```
+- **Installation with a specific submodule (e.g., llamafeed_worflow):**
+```bash
+  pip install pawn-ai[llamafeed_worflow]
+```
+- **Installation with multiple submodules:**
+```bash
+  pip install pawn-ai[goat_evm_workflow,goat_solana_workflow]
+```
+The extras allow you to install only the dependencies relevant to the submodules you intend to use.
+
+---
+
+## Integration
+
+PAWN offers several integration options for incorporating agent workflows into your system:
+
+### 1. Integrating with an Existing Supervisor-Based System
+
+If you already have a supervisor-based agent system, you can attach PAWN's precompiled workflows directly.
+![Supervisor-based system with PAWN worflows](docs/sb.png)
+
+For example:
+```python
+from pawn.llamafeed_workflow import LlamaFeedWorkflow
+
+team1 = ...
+team2 = LlamaFeedWorkflow()
+
+custom_workflow = create_supervisor(
+    agents=[team1, team2.workflow],
+    model=model,
+    prompt=(
+        "You are a team supervisor managing three teams:"
+        ...
+    )
+)
+```
+This approach allows you to seamlessly integrate PAWN's workflows as additional tools in your existing system. See more [here](https://github.com/langchain-ai/langgraph-supervisor-py?tab=readme-ov-file#multi-level-hierarchies).
+
+---
+
+### 2. Using the Workflow as a Tool (Agent as a Tool Pattern)
+
+PAWN workflows can also be used as tools within your agent's framework. This approach follows the "agent as a tool" pattern described in the [LangGraph documentation](https://langchain-ai.github.io/langgraph/concepts/multi_agent/#supervisor-tool-calling).
+![Workflow as a tool](docs/tool.png)
+For example using [OpenAI Agents SDK](https://github.com/openai/openai-agents-python):
+
+```python
+import asyncio
+
+from agents import Agent, Runner, function_tool
+from pawn.hyperliquid_trader_workflow import HyperliquidWorkflow
+
+
+@function_tool
+def get_price(symbol: str) -> float:
+    workflow: HyperliquidWorkflow = HyperliquidWorkflow()
+    response = workflow.invoke(f'What is the price of {symbol}?')
+    ...
+    return result
+
+
+agent = Agent(
+    name="Price Fetcher",
+    instructions="You are a helpful agent that can fetch price of crypto.",
+    tools=[get_price],
+)
+
+
+async def main():
+    result = await Runner.run(agent, input="What's the price of bitcoin?")
+    print(result.final_output)
+
+
+if __name__ == "__main__":
+    asyncio.run(main())
+```
+
+This integration leverages PAWN's workflows as modular tools that can be called by your agent system when needed.
+
+---
+
+### 3. Running the Workflow as a Standalone FastAPI or fastMCP Server
+
+You can also run a PAWN workflow as an independent service using FastAPI (or a similar framework like fastMCP). This allows you to deploy the workflow as a RESTful API. For example, using FastAPI:
+![Independent Service](docs/fast.png)
+
+```python
+from fastapi import FastAPI
+from pawn.goat_evm_workflow import EVMAgenticWorkflow
+
+app = FastAPI()
+workflow = EVMAgenticWorkflow()
+
+@app.post("/invoke")
+def invoke_workflow(payload: dict):
+    return workflow.invoke(payload)
+```
+
+This will launch a standalone server where you can access the workflow via HTTP.
+
+---
+
+## Contributing
+
+Contributions are welcome! Please ensure that your changes are well-documented and include examples.
+
+---
+
+## License
+
+This project is licensed under the MIT License. See the LICENSE file for details.
