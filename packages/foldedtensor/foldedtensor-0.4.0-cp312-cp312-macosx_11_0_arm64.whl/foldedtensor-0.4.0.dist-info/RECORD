@@ -1,0 +1,12 @@
+foldedtensor-0.4.0.dist-info/RECORD,,
+foldedtensor-0.4.0.dist-info/WHEEL,sha256=KHOVnc2vWrx65VXrDDCaawSLNQgekLqYoXzctjltp_U,136
+foldedtensor-0.4.0.dist-info/top_level.txt,sha256=JRXVkXfwS1Xcu7L_2UILFcW7635-DYEa43st-sdNO2w,49
+foldedtensor-0.4.0.dist-info/METADATA,sha256=EpHBiP_69uyAWTR3WHE27GvC4MIiQtDDE6MJmxuS5jU,8145
+foldedtensor-0.4.0.dist-info/licenses/LICENSE,sha256=X_IjjaJC1EaHgD7qLLabFb91xhyzY7-Xkq_N6-mpU1c,1485
+tests/conftest.py,sha256=EldoH8UrmUC9JmYzy9MyLXVa8mCllfozAFM2Jl72XHs,222
+tests/test_folded_tensor.py,sha256=2UB-2LuXxHubnyL1TWO4GhCfqzL_tgBswEkrmjoAsbI,11121
+tests/test_multiprocessing.py,sha256=IUbDTTtC6MsN5j0YXMk7h4F7RcdLXKOdq8fNgZswd3Q,1937
+foldedtensor/__init__.py,sha256=rOfw0EZgUipvGuT45Gk3MF41bU7vAeXuPs6wtbZx2BA,14736
+foldedtensor/_C.cpython-312-darwin.so,sha256=uqAqktCY8ah5C2TJK0U3y21kh8D_7i8ooeus7entb0g,205416
+foldedtensor/functions.cpp,sha256=QyXz4U36bL2dD9d6ndFvmVVp3NhncqcCkvKEWCiWQu0,11414
+scripts/benchmark.py,sha256=C1JCphpUsL1ihG5LNAvEC505hfUJdfasGO4llXTGKgg,8101
