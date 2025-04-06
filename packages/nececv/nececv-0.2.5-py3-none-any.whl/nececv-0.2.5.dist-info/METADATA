@@ -1,0 +1,31 @@
+Metadata-Version: 2.4
+Name: nececv
+Version: 0.2.5
+Summary: Your existing nececv package with added and optimized generative models
+Home-page: https://github.com/singhaikshitijjain/nececv
+Author: Singhai Kshitij Jain
+Author-email: singhaikshitij143@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: Pillow
+Requires-Dist: tensorflow
+Requires-Dist: opencv-python
+Requires-Dist: matplotlib
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: license-file
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+`nececv` is a Python package for advanced edge detection and object recognition using VGG16 and OpenCV.
+`Universe` text generation planetry based neural network model for english text.
