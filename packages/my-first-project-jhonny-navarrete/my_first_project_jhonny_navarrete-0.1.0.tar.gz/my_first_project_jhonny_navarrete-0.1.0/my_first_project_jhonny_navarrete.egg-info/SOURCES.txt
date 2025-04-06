@@ -1,0 +1,9 @@
+README.md
+setup.py
+hack4u/__init__.py
+hack4u/courses.py
+hack4u/utils.py
+my_first_project_jhonny_navarrete.egg-info/PKG-INFO
+my_first_project_jhonny_navarrete.egg-info/SOURCES.txt
+my_first_project_jhonny_navarrete.egg-info/dependency_links.txt
+my_first_project_jhonny_navarrete.egg-info/top_level.txt
