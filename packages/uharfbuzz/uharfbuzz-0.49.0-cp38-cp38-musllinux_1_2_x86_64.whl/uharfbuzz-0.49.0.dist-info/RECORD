@@ -1,0 +1,11 @@
+uharfbuzz/__init__.py,sha256=TFnKwHWM2lGj7oVT1auG3pruo8_mDTtkpsKsQY7HNwM,2369
+uharfbuzz/_harfbuzz.cpython-38-x86_64-linux-gnu.so,sha256=pX66GHfFKzjBJQMV7Jh5Gg0Qg-e2IAIlApEF4LjLEM0,44124809
+uharfbuzz/_harfbuzz_test.cpython-38-x86_64-linux-gnu.so,sha256=VB-oriVruDy9hnrdPq2LtBojUZoWKjqWbRZYoGs0gr4,80096
+uharfbuzz/_version.py,sha256=fCkHGsCCwO6OBR_IP_Ak2R6DT1XplJYpKdNqfxwQoYQ,513
+uharfbuzz.libs/libgcc_s-2298274a.so.1,sha256=V2IJwfUuwSSQhJqB29JtMx8hH79dCRjAvTQIGWShH-s,181737
+uharfbuzz.libs/libstdc++-08d5c7eb.so.6.0.33,sha256=k0S_imrCh_IE6WpvxrLoVPYiRyMVf15RDWRiXPIywV8,3562401
+uharfbuzz-0.49.0.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+uharfbuzz-0.49.0.dist-info/METADATA,sha256=tnn2fEkEGzj2AN2SiLmgIId_KsJuctQP4kPP6OM-SJ0,3203
+uharfbuzz-0.49.0.dist-info/WHEEL,sha256=AtKzrIIwO6LyEQPNa-CKogjoLSeXFnST8-hqmpwwZQA,110
+uharfbuzz-0.49.0.dist-info/top_level.txt,sha256=7cR_9qHUIY8Tbh9RlhqonIA5WhZTP7Fus2kSo6wEM-I,10
+uharfbuzz-0.49.0.dist-info/RECORD,,
